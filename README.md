@@ -2,18 +2,18 @@
 
 Translation project of the book "Linux From Scratch" into Brazilian Portuguese.
 
-git clone https://github.com/espindula/br-lfs.git
+git clone https://github.com/espindula/br-lfs-openrc.git
 
-git clone https://gitlab.com/jafesp/br-lfs.git
+git clone https://gitlab.com/jafesp/br-lfs-openrc.git
 
-git clone https://salsa.debian.org/jamenson/br-lfs.git
+git clone https://salsa.debian.org/jamenson/br-lfs-openrc.git
 
 
 Chave pix para doações: jafesp@gmail.com
 
-Direitos autorais (Copyright) da Obra Derivada traduzida para o idioma 
-português escrito e falado no Brasil: (c) 2022, 2023, 2024, 2025, 2026 
-Jamenson Ferreira Espindula de Almeida Melo (<jafesp@gmail.com>).
+Direitos autorais (Copyright) da Obra Derivada traduzida para o idioma
+português escrito e falado no Brasil: (c) 2026 Jamenson Ferreira Espindula de
+Almeida Melo (<jafesp@gmail.com>).
 
 # Atenção: todos os documentos aqui publicados são distribuídos sem qualquer garantia, implícita e (ou) explícita.
 
