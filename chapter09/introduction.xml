@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+  "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+  <!ENTITY % general-entities SYSTEM "../general.ent">
+  %general-entities;
+]>
+
+<sect1 id="ch-config-introduction" revision="openrc">
+  <?dbhtml filename="introduction.html"?>
+
+  <title>Introduction</title>
+
+    <para>Booting a Linux system involves several tasks.  The process must
+    mount both virtual and real file systems, initialize devices, 
+    check file systems for integrity, mount and activate any swap partitions or
+    files, set the system clock, bring up networking, start any daemons
+    required by the system, and accomplish any other custom tasks specified by
+    the user. This process must be organized to ensure the tasks are performed
+    in the correct order and executed as quickly as possible.</para>
+
+  <sect2 id='openrc-desc'>
+    <title>OpenRC</title>
+
+    <para>OpenRC combines the methodology of both SysVinit and Systemd.
+    OpenRC has the concept of services with dependency information, yet it uses
+    a run level scheme which is similar to SysVinit. OpenRC, like SysVinit and
+    Systemd, uses <command>init</command> and starts up every process and
+    daemon as required. While you can choose which run level you want to be on,
+    <literal>default</literal> has the most services and is the default. For
+    information on run levels, see <xref linkend="ch-config-usage"/>.</para>
+
+    <bridgehead renderas="sect3">Advantages</bridgehead>
+
+    <itemizedlist>
+      <listitem>
+        <para>Established, well understood system.</para>
+      </listitem>
+      <listitem>
+        <para>Easy to customize.</para>
+      </listitem>
+      <listitem>
+        <para>Well supported and backed by major Linux distributions.</para>
+      </listitem>
+      <listitem>
+        <para>Parallelized.</para>
+      </listitem>
+      <listitem>
+        <para>Cgroups support.</para>
+      </listitem>
+    </itemizedlist>
+
+    <bridgehead renderas="sect3">Disadvantages</bridgehead>
+    <itemizedlist>
+      <listitem>
+        <para>It is not as convenient as Systemd.</para>
+      </listitem>
+      <listitem>
+        <para>It does not provide the amount of tooling Systemd does.</para>
+      </listitem>
+      <listitem>
+        <para>Certain features that projects depend on that only exist in
+        Systemd may take a while before seeing parity in OpenRC.</para>
+      </listitem>
+    </itemizedlist>
+
+  </sect2>
+
+</sect1>
