@@ -9,10 +9,8 @@
   <?dbhtml filename="procps-ng.html"?>
 
   <sect1info condition="script">
-    <productname>procps-ng</productname>
-    <productnumber>&procps-ng-version;</productnumber>
-    <address>&procps-ng-url;</address>
-  </sect1info>
+<productname>procps-ng</productname>
+<productnumber>&procps-ng-version;</productnumber> <address>&procps-ng-url;</address></sect1info>
 
   <title>Procps-ng-&procps-ng-version;</title>
 
@@ -23,7 +21,7 @@
   <sect2 role="package">
     <title/>
 
-    <para>The Procps-ng package contains programs for monitoring processes.</para>
+    <para>O pacote Procps-ng contém aplicativos para monitorar processos.</para>
 
     <segmentedlist>
       <segtitle>&buildtime;</segtitle>
@@ -38,9 +36,9 @@
   </sect2>
 
   <sect2 role="installation">
-    <title>Installation of Procps-ng</title>
+    <title>Instalação do Procps-ng</title>
 
-    <para>Prepare Procps-ng for compilation:</para>
+    <para>Prepare procps-ng para compilação:</para>
 
 <screen revision="openrc"><userinput remap="configure">./configure --prefix=/usr                           \
             --docdir=/usr/share/doc/procps-ng-&procps-ng-version; \
@@ -56,76 +54,76 @@
             --with-systemd</userinput></screen>
 
     <variablelist>
-      <title>The meaning of the configure option:</title>
+      <title>O significado da opção de configure:</title>
 
       <varlistentry>
         <term><parameter>--disable-kill</parameter></term>
         <listitem>
-          <para>This switch disables building the <command>kill</command>
-          command; it will be installed from the Util-linux package.</para>
+          <para>Essa chave desabilita a construção do comando <command>kill</command>; ele
+será instalado a partir do pacote Util-linux.</para>
         </listitem>
       </varlistentry>
 
       <varlistentry>
         <term><parameter>--enable-watch8bit</parameter></term>
         <listitem>
-          <para>This switch enables the ncursesw support for the
-          <command>watch</command> command, so it can handle 8-bit
-          characters.</para>
+          <para>Essa chave habilita o suporte ncursesw para o comando
+<command>watch</command>, de forma que ele consiga manusear caracteres de 8
+bits.</para>
         </listitem>
       </varlistentry>
     </variablelist>
 
-    <para>Compile the package:</para>
+    <para>Compile o pacote:</para>
 
-<screen><userinput remap="make">make</userinput></screen>
-
-    <!-- To editors: "pmap {X,XX} with unreachable process" tests don't work
+<!-- To editors: "pmap {X,XX} with unreachable process" tests don't work
          as root.  They may seem to pass due to some Tcl/Expect/DejaGNU
          internal hazards with some "luck" though.  -->
-    <para>To run the test suite, run:</para>
+<screen><userinput remap="make">make</userinput></screen>
+
+    
+    <para>Para executar a suíte de teste, execute:</para>
 
 <screen><userinput remap="test">chown -R tester .
 su tester -c "PATH=$PATH make check"</userinput></screen>
 
-    <para>One test named
-    <literal>ps with output flag bsdtime,cputime,etime,etimes</literal>
-    is known to fail if the host kernel is not built with
-    <literal>CONFIG_BSD_PROCESS_ACCT</literal> enabled. In
-    addition, one pgrep test may fail in the chroot environment.</para>
+    <para>Um teste chamado <literal>ps com sinalizador de saída
+bsdtime,cputime,etime,etimes</literal> é conhecido por falhar se o núcleo do
+anfitrião não for construído com <literal>CONFIG_BSD_PROCESS_ACCT</literal>
+habilitado. Além disso, um teste pgrep possivelmente falhe no ambiente
+chroot.</para>
 
-    <para>Install the package:</para>
+    <para>Instale o pacote:</para>
 
 <screen><userinput remap="install">make install</userinput></screen>
 
   </sect2>
 
   <sect2 id="contents-procps" role="content">
-    <title>Contents of Procps-ng</title>
+    <title>Conteúdo do Procps-ng</title>
 
     <segmentedlist>
-      <segtitle>Installed programs</segtitle>
-      <segtitle>Installed library</segtitle>
-      <segtitle>Installed directories</segtitle>
+      <segtitle>Programas instalados</segtitle>
+      <segtitle>Biblioteca instalada</segtitle>
+      <segtitle>Diretórios instalados</segtitle>
 
       <seglistitem>
-        <seg>free, pgrep, pidof, pkill, pmap, ps, pwdx, slabtop,
-        sysctl, tload, top, uptime, vmstat, w, and watch</seg>
+        <seg>free, pgrep, pidof, pkill, pmap, ps, pwdx, slabtop, sysctl, tload, top,
+uptime, vmstat, w e watch</seg>
         <seg>libproc-2.so</seg>
-        <seg>/usr/include/procps and /usr/share/doc/procps-ng-&procps-ng-version;</seg>
+        <seg>/usr/include/procps e /usr/share/doc/procps-ng-&procps-ng-version;</seg>
       </seglistitem>
     </segmentedlist>
 
     <variablelist>
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
+      <bridgehead renderas="sect3">Descrições Curtas</bridgehead>
+      <?dbfo list-presentation="list"?> <?dbhtml list-presentation="table"?>
 
       <varlistentry id="free">
         <term><command>free</command></term>
         <listitem>
-          <para>Reports the amount of free and used memory (both physical and
-          swap memory) in the system</para>
+          <para>Informa a quantidade de memória livre e usada (ambas memória física e de
+troca) no sistema</para>
           <indexterm zone="ch-system-procps free">
             <primary sortas="b-free">free</primary>
           </indexterm>
@@ -135,7 +133,7 @@ su tester -c "PATH=$PATH make check"</userinput></screen>
       <varlistentry id="pgrep">
         <term><command>pgrep</command></term>
         <listitem>
-          <para>Looks up processes based on their name and other attributes</para>
+          <para>Procura por processos baseado nos nomes deles e outros atributos</para>
           <indexterm zone="ch-system-procps pgrep">
             <primary sortas="b-pgrep">pgrep</primary>
           </indexterm>
@@ -145,7 +143,7 @@ su tester -c "PATH=$PATH make check"</userinput></screen>
       <varlistentry id="pidof">
         <term><command>pidof</command></term>
         <listitem>
-          <para>Reports the PIDs of the given programs</para>
+          <para>Informa os PIDs dos aplicativos dados</para>
           <indexterm zone="ch-system-procps pidof">
             <primary sortas="b-pidof">pidof</primary>
           </indexterm>
@@ -155,7 +153,7 @@ su tester -c "PATH=$PATH make check"</userinput></screen>
       <varlistentry id="pkill">
         <term><command>pkill</command></term>
         <listitem>
-          <para>Signals processes based on their name and other attributes</para>
+          <para>Sinaliza processos baseado nos nomes deles e outros atributos</para>
           <indexterm zone="ch-system-procps pkill">
             <primary sortas="b-pkill">pkill</primary>
           </indexterm>
@@ -165,7 +163,7 @@ su tester -c "PATH=$PATH make check"</userinput></screen>
       <varlistentry id="pmap">
         <term><command>pmap</command></term>
         <listitem>
-          <para>Reports the memory map of the given process</para>
+          <para>Informa o mapeamento de memória do processo dado</para>
           <indexterm zone="ch-system-procps pmap">
             <primary sortas="b-pmap">pmap</primary>
           </indexterm>
@@ -175,14 +173,17 @@ su tester -c "PATH=$PATH make check"</userinput></screen>
       <varlistentry id="ps">
         <term><command>ps</command></term>
         <listitem>
-          <para>Lists the current running processes</para>
+          <para>Lista os processos em execução atualmente</para>
           <indexterm zone="ch-system-procps ps">
             <primary sortas="b-ps">ps</primary>
           </indexterm>
         </listitem>
       </varlistentry>
 
+      
+
       <!-- <varlistentry id="pwait">
+
         <term><command>pwait</command></term>
         <listitem>
           <para>Waits for a process to finish before executing.</para>
@@ -192,11 +193,10 @@ su tester -c "PATH=$PATH make check"</userinput></screen>
         </listitem>
       </varlistentry> This program no longer exists; 
       it's already been removed from the Installed programs list. -->
-
-      <varlistentry id="pwdx">
+<varlistentry id="pwdx">
         <term><command>pwdx</command></term>
         <listitem>
-          <para>Reports the current working directory of a process</para>
+          <para>Informa o diretório atual de trabalho de um processo</para>
           <indexterm zone="ch-system-procps pwdx">
             <primary sortas="b-pwdx">pwdx</primary>
           </indexterm>
@@ -206,7 +206,7 @@ su tester -c "PATH=$PATH make check"</userinput></screen>
       <varlistentry id="slabtop">
         <term><command>slabtop</command></term>
         <listitem>
-          <para>Displays detailed kernel slab cache information in real time</para>
+          <para>Exibe informação detalhada do cache slab do núcleo em tempo real</para>
           <indexterm zone="ch-system-procps slabtop">
             <primary sortas="b-slabtop">slabtop</primary>
           </indexterm>
@@ -216,7 +216,7 @@ su tester -c "PATH=$PATH make check"</userinput></screen>
       <varlistentry id="sysctl">
         <term><command>sysctl</command></term>
         <listitem>
-          <para>Modifies kernel parameters at run time</para>
+          <para>Modifica parâmetros do núcleo em tempo de execução</para>
           <indexterm zone="ch-system-procps sysctl">
             <primary sortas="b-sysctl">sysctl</primary>
           </indexterm>
@@ -226,7 +226,7 @@ su tester -c "PATH=$PATH make check"</userinput></screen>
       <varlistentry id="tload">
         <term><command>tload</command></term>
         <listitem>
-          <para>Prints a graph of the current system load average</para>
+          <para>Imprime um gráfico da média atual da carga do sistema</para>
           <indexterm zone="ch-system-procps tload">
             <primary sortas="b-tload">tload</primary>
           </indexterm>
@@ -236,8 +236,8 @@ su tester -c "PATH=$PATH make check"</userinput></screen>
       <varlistentry id="top">
         <term><command>top</command></term>
         <listitem>
-          <para>Displays a list of the most CPU intensive processes; it
-          provides an ongoing look at processor activity in real time</para>
+          <para>Exibe uma lista dos processos mais intensivos da CPU; ele fornece uma visão
+contínua da atividade do processador em tempo real</para>
           <indexterm zone="ch-system-procps top">
             <primary sortas="b-top">top</primary>
           </indexterm>
@@ -247,8 +247,8 @@ su tester -c "PATH=$PATH make check"</userinput></screen>
       <varlistentry id="uptime">
         <term><command>uptime</command></term>
         <listitem>
-          <para>Reports how long the system has been running, how many users are
-          logged on, and the system load averages</para>
+          <para>Informa há quanto tempo o sistema está executando, quantos(as) usuários(as)
+estão logados(as) e as médias de carga do sistema</para>
           <indexterm zone="ch-system-procps uptime">
             <primary sortas="b-uptime">uptime</primary>
           </indexterm>
@@ -258,9 +258,9 @@ su tester -c "PATH=$PATH make check"</userinput></screen>
       <varlistentry id="vmstat">
         <term><command>vmstat</command></term>
         <listitem>
-          <para>Reports virtual memory statistics, giving information about
-          processes, memory, paging, block Input/Output (IO), traps, and CPU
-          activity</para>
+          <para>Informa estatísticas de memória virtual, dando informação a respeito de
+processos, memória, paginação, Entrada/Saída (E/S) de bloco, armadilhas e
+atividade da CPU</para>
           <indexterm zone="ch-system-procps vmstat">
             <primary sortas="b-vmstat">vmstat</primary>
           </indexterm>
@@ -270,8 +270,7 @@ su tester -c "PATH=$PATH make check"</userinput></screen>
       <varlistentry id="w">
         <term><command>w</command></term>
         <listitem>
-          <para>Shows which users are currently logged on, where, and since
-          when</para>
+          <para>Mostra quais usuários(as) estão atualmente logados(as), onde e desde quando</para>
           <indexterm zone="ch-system-procps w">
             <primary sortas="b-w">w</primary>
           </indexterm>
@@ -281,9 +280,9 @@ su tester -c "PATH=$PATH make check"</userinput></screen>
       <varlistentry id="watch">
         <term><command>watch</command></term>
         <listitem>
-          <para>Runs a given command repeatedly, displaying the first
-          screen-full of its output; this allows a user to watch the output
-          change over time</para>
+          <para>Executa um comando dado repetidamente, exibindo a primeira tela cheia da
+saída gerada dele; isso permite que um(a) usuário(a) observe a mudança de
+saída gerada ao longo do tempo</para>
           <indexterm zone="ch-system-procps watch">
             <primary sortas="b-watch">watch</primary>
           </indexterm>
@@ -293,8 +292,7 @@ su tester -c "PATH=$PATH make check"</userinput></screen>
       <varlistentry id="libproc-2">
         <term><filename class="libraryfile">libproc-2</filename></term>
         <listitem>
-          <para>Contains the functions used by most programs in this
-          package</para>
+          <para>Contém as funções usadas pela maioria dos aplicativos nesse pacote</para>
           <indexterm zone="ch-system-procps libproc-2">
             <primary sortas="c-libproc-2">libproc-2</primary>
           </indexterm>

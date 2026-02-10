@@ -8,17 +8,20 @@
 <sect1 id="ch-materials-patches">
   <?dbhtml filename="patches.html"?>
 
-  <title>Needed Patches</title>
+  <title>Remendos Necessários</title>
 
-  <para>In addition to the packages, several patches are also required.
-  These patches correct any mistakes in the packages that should be
-  fixed by the maintainer.  The patches also make small modifications to
-  make the packages easier to work with. The following patches will be
-  needed to build an LFS system:</para>
+  <para>Adicionalmente aos pacotes, vários remendos também são exigidos. Esses
+remendos corrigem alguns erros nos pacotes que deveriam ser consertados
+pelo(a) Mantenedor(a). Os remendos também fazem pequenas modificações para
+tornar os pacotes mais fáceis de se trabalhar. Os seguintes remendos serão
+necessários para construir um sistema LFS:</para>
 
   <variablelist role="materials">
-<!--
+
+
+    <!--
     <varlistentry>
+
       <term>Autoconf Consolidated Fixes Patch - <token>&autoconf-fixes-patch-size;</token>:</term>
       <listitem>
         <para>Download: <ulink url="&patches-root;&autoconf-fixes-patch;"/></para>
@@ -36,6 +39,7 @@
 -->
 <!--
     <varlistentry>
+
       <term>Binutils Upstream Fixes Patch - <token>&binutils-upstream-patch-size;</token>:</term>
       <listitem>
         <para>Download: <ulink url="&patches-root;&binutils-upstream-patch;"/></para>
@@ -43,32 +47,38 @@
       </listitem>
     </varlistentry>
 -->
-    <varlistentry>
-      <term>Bzip2 Documentation Patch - <token>&bzip2-docs-patch-size;</token>:</term>
+<varlistentry>
+      <term>Remendo da Documentação do Bzip2 - <token>&bzip2-docs-patch-size;</token>:</term>
       <listitem>
-        <para>Download: <ulink url="&patches-root;&bzip2-docs-patch;"/></para>
-        <para>MD5 sum: <literal>&bzip2-docs-patch-md5;</literal></para>
+        <para>Transferência: <ulink url="&patches-root;&bzip2-docs-patch;"/></para>
+        <para>Soma de verificação MD5: <literal>&bzip2-docs-patch-md5;</literal></para>
       </listitem>
     </varlistentry>
 
     <varlistentry>
-      <term>Coreutils Internationalization Fixes Patch - <token>&coreutils-i18n-patch-size;</token>:</term>
+      <term>Remendo de Correções de Internacionalização do Coreutils -
+<token>&coreutils-i18n-patch-size;</token>:</term>
       <listitem>
-        <para>Download: <ulink url="&patches-root;&coreutils-i18n-patch;"/></para>
-        <para>MD5 sum: <literal>&coreutils-i18n-patch-md5;</literal></para>
+        <para>Transferência: <ulink url="&patches-root;&coreutils-i18n-patch;"/></para>
+        <para>Soma de verificação MD5: <literal>&coreutils-i18n-patch-md5;</literal></para>
       </listitem>
     </varlistentry>
 
     <varlistentry>
-      <term>Expect GCC15 Patch - <token>&expect-gcc15-patch-size;</token>:</term>
+      <term>Remendo GCC15 do Expect - <token>&expect-gcc15-patch-size;</token>:</term>
       <listitem>
         <para>Download: <ulink url="&patches-root;&expect-gcc15-patch;"/></para>
-        <para>MD5 sum: <literal>&expect-gcc15-patch-md5;</literal></para>
+        <para>Soma de verificação MD5: <literal>&expect-gcc15-patch-md5;</literal></para>
       </listitem>
    </varlistentry>
 
-<!--
+
+
+
+
+    <!--
     <varlistentry>
+
       <term>Gcc glibc-2.36 Fixes Patch - <token>&gcc-upstream-fixes-patch-size;</token>:</term>
       <listitem>
         <para>Download: <ulink url="&patches-root;&gcc-upstream-fixes-patch;"/></para>
@@ -76,9 +86,9 @@
       </listitem>
     </varlistentry>
 -->
-
 <!--
     <varlistentry>
+
       <term>Glibc Upstream Fix Patch - <token>&glibc-upstream-patch-size;</token>:</term>
       <listitem>
         <para>Download: <ulink url="&patches-root;&glibc-upstream-patch;"/></para>
@@ -86,24 +96,25 @@
       </listitem>
     </varlistentry>
 -->
-
-    <varlistentry>
-      <term>Glibc FHS Patch - <token>&glibc-fhs-patch-size;</token>:</term>
+<varlistentry>
+      <term>Remendo do FHS da Glibc - <token>&glibc-fhs-patch-size;</token>:</term>
       <listitem>
-        <para>Download: <ulink url="&patches-root;&glibc-fhs-patch;"/></para>
-        <para>MD5 sum: <literal>&glibc-fhs-patch-md5;</literal></para>
+        <para>Transferência: <ulink url="&patches-root;&glibc-fhs-patch;"/></para>
+        <para>Soma de verificação MD5: <literal>&glibc-fhs-patch-md5;</literal></para>
       </listitem>
     </varlistentry>
 
     <varlistentry>
-      <term>Kbd Backspace/Delete Fix Patch - <token>&kbd-backspace-patch-size;</token>:</term>
+      <term>Remendo de Correção do Backspace/Delete do Kbd -
+<token>&kbd-backspace-patch-size;</token>:</term>
       <listitem>
-        <para>Download: <ulink url="&patches-root;&kbd-backspace-patch;"/></para>
-        <para>MD5 sum: <literal>&kbd-backspace-patch-md5;</literal></para>
+        <para>Transferência: <ulink url="&patches-root;&kbd-backspace-patch;"/></para>
+        <para>Soma de verificação MD5: <literal>&kbd-backspace-patch-md5;</literal></para>
       </listitem>
     </varlistentry>
 <!--
     <varlistentry>
+
       <term>Meson Upstream Fix Patch - <token>&meson-fix-patch-size;</token>:</term>
       <listitem>
         <para>Download: <ulink url="&patches-root;&meson-fix-patch;"/></para>
@@ -135,9 +146,9 @@
       </listitem>
     </varlistentry>
 -->
-
 <!--
     <varlistentry revision="systemd">
+
       <term>Systemd Upstream Fixes Patch - <token>&systemd-upstream-patch-size;</token>:</term>
       <listitem>
         <para>Download: <ulink url="&patches-root;&systemd-upstream-patch;"/></para>
@@ -147,6 +158,7 @@
 -->
 <!--
     <varlistentry>
+
       <term>Xz Upstream Fix Patch - <token>&xz-upstream-fix-patch-size;</token>:</term>
       <listitem>
         <para>Download: <ulink url="&patches-root;&xz-upstream-fix-patch;"/></para>
@@ -156,6 +168,7 @@
 -->
 <!--
     <varlistentry>
+
       <term>Zstd Upstream Fixes Patch - <token>&zstd-upstream-fixes-patch-size;</token>:</term>
       <listitem>
         <para>Download: <ulink url="&patches-root;&zstd-upstream-fixes-patch;"/></para>
@@ -163,15 +176,21 @@
       </listitem>
     </varlistentry>
 -->
+
+
+
+
+
   </variablelist>
 
-  <para>Total size of these patches: about <returnvalue/></para>
+  <para>Tamanho total desses remendos: cerca de <returnvalue/></para>
 
-  <para>In addition to the above required patches, there exist a number of
-  optional patches created by the LFS community. These optional patches
-  solve minor problems or enable functionality that is not enabled by
-  default. Feel free to peruse the patches database located at
-  <ulink url="&lfs-root;patches/downloads/"/> and acquire any additional
-  patches to suit your system needs.</para>
+  <para>Adicionalmente aos remendos exigidos acima, existe um número de remendos
+opcionais criados pela comunidade do LFS. Esses remendos opcionais
+solucionam problemas menores ou habilitam funcionalidade que não está
+habilitada por padrão. Sinta-se à vontade para examinar a base de dados dos
+remendos localizada em <ulink url="&lfs-root;patches/downloads/"/> e
+adquirir quaisquer remendos adicionais para atender às necessidades do seu
+sistema.</para>
 
 </sect1>

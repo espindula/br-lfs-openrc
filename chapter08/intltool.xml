@@ -9,10 +9,8 @@
   <?dbhtml filename="intltool.html"?>
 
   <sect1info condition="script">
-    <productname>intltool</productname>
-    <productnumber>&intltool-version;</productnumber>
-    <address>&intltool-url;</address>
-  </sect1info>
+<productname>intltool</productname>
+<productnumber>&intltool-version;</productnumber> <address>&intltool-url;</address></sect1info>
 
   <title>Intltool-&intltool-version;</title>
 
@@ -23,8 +21,8 @@
   <sect2 role="package">
     <title/>
 
-    <para>The Intltool is an internationalization tool used for extracting
-    translatable strings from source files.</para>
+    <para>O Intltool é uma ferramenta de internacionalização usada para extrair
+sequências de caracteres traduzíveis a partir de arquivos fonte.</para>
 
     <segmentedlist>
       <segtitle>&buildtime;</segtitle>
@@ -39,29 +37,29 @@
   </sect2>
 
   <sect2 role="installation">
-    <title>Installation of Intltool</title>
+    <title>Instalação do Intltool</title>
 
-    <para>First fix a warning that is caused by perl-5.22 and later:</para>
+    <para>Primeiro, corrija um aviso que é causado por perl-5.22 e posteriores:</para>
 
 <screen><userinput remap="pre">sed -i 's:\\\${:\\\$\\{:' intltool-update.in</userinput></screen>
 
-    <note><para>The above regular expression looks unusual because of all the
-    backslashes.  What it does is add a backslash before the right brace
-    character in the sequence '\${' resulting in '\$\{'.</para></note>
+    <note><para>A expressão regular acima parece incomum por causa de todas as contra
+barras. O que ela faz é adicionar uma contra barra antes do carácter abre
+chave na sequência '\${' resultando em '\$\{'.</para></note>
 
-    <para>Prepare Intltool for compilation:</para>
+    <para>Prepare Intltool para compilação:</para>
 
 <screen><userinput remap="configure">./configure --prefix=/usr</userinput></screen>
 
-    <para>Compile the package:</para>
+    <para>Compile o pacote:</para>
 
 <screen><userinput remap="make">make</userinput></screen>
 
-    <para>To test the results, issue:</para>
+    <para>Para testar os resultados, emita:</para>
 
 <screen><userinput remap="test">make check</userinput></screen>
 
-    <para>Install the package:</para>
+    <para>Instale o pacote:</para>
 
 <screen><userinput remap="install">make install
 install -v -Dm644 doc/I18N-HOWTO /usr/share/doc/intltool-&intltool-version;/I18N-HOWTO</userinput></screen>
@@ -69,29 +67,27 @@ install -v -Dm644 doc/I18N-HOWTO /usr/share/doc/intltool-&intltool-version;/I18N
   </sect2>
 
   <sect2 id="contents-intltool" role="content">
-    <title>Contents of Intltool</title>
+    <title>Conteúdo do Intltool</title>
 
     <segmentedlist>
-      <segtitle>Installed programs</segtitle>
-      <segtitle>Installed directories</segtitle>
+      <segtitle>Programas instalados</segtitle>
+      <segtitle>Diretórios instalados</segtitle>
 
       <seglistitem>
-        <seg>intltool-extract, intltool-merge, intltool-prepare,
-        intltool-update, and intltoolize</seg>
-        <seg>/usr/share/doc/intltool-&intltool-version; and
-        /usr/share/intltool</seg>
+        <seg>intltool-extract, intltool-merge, intltool-prepare, intltool-update e
+intltoolize</seg>
+        <seg>/usr/share/doc/intltool-&intltool-version; e /usr/share/intltool</seg>
       </seglistitem>
     </segmentedlist>
 
     <variablelist>
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
+      <bridgehead renderas="sect3">Descrições Curtas</bridgehead>
+      <?dbfo list-presentation="list"?> <?dbhtml list-presentation="table"?>
 
       <varlistentry id="intltoolize">
         <term><command>intltoolize</command></term>
         <listitem>
-          <para>Prepares a package to use intltool</para>
+          <para>Prepara um pacote para usar intltool</para>
           <indexterm zone="ch-system-intltool intltoolize">
             <primary sortas="b-intltoolize">intltoolize</primary>
           </indexterm>
@@ -101,7 +97,8 @@ install -v -Dm644 doc/I18N-HOWTO /usr/share/doc/intltool-&intltool-version;/I18N
       <varlistentry id="intltool-extract">
         <term><command>intltool-extract</command></term>
         <listitem>
-          <para>Generates header files that can be read by <command>gettext</command></para>
+          <para>Gera arquivos de cabeçalho que podem ser lidos por
+<command>gettext</command></para>
           <indexterm zone="ch-system-intltool intltool-extract">
             <primary sortas="b-intltool-extract">intltool-extract</primary>
           </indexterm>
@@ -111,7 +108,7 @@ install -v -Dm644 doc/I18N-HOWTO /usr/share/doc/intltool-&intltool-version;/I18N
       <varlistentry id="intltool-merge">
         <term><command>intltool-merge</command></term>
         <listitem>
-          <para>Merges translated strings into various file types</para>
+          <para>Mescla sequência de caracteres traduzidos em vários tipos de arquivos</para>
           <indexterm zone="ch-system-intltool intltool-merge">
             <primary sortas="b-intltool-merge">intltool-merge</primary>
           </indexterm>
@@ -121,7 +118,7 @@ install -v -Dm644 doc/I18N-HOWTO /usr/share/doc/intltool-&intltool-version;/I18N
       <varlistentry id="intltool-prepare">
         <term><command>intltool-prepare</command></term>
         <listitem>
-          <para>Updates pot files and merges them with translation files</para>
+          <para>Atualiza arquivos pot e os mescla com arquivos de tradução</para>
           <indexterm zone="ch-system-intltool intltool-prepare">
             <primary sortas="b-intltool-prepare">intltool-prepare</primary>
           </indexterm>
@@ -131,7 +128,7 @@ install -v -Dm644 doc/I18N-HOWTO /usr/share/doc/intltool-&intltool-version;/I18N
       <varlistentry id="intltool-update">
         <term><command>intltool-update</command></term>
         <listitem>
-          <para>Updates the po template files and merges them with the translations</para>
+          <para>Atualiza os arquivos de modelo po e os mescla com as traduções</para>
           <indexterm zone="ch-system-intltool intltool-update">
             <primary sortas="b-intltool-update">intltool-update</primary>
           </indexterm>

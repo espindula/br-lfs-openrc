@@ -9,10 +9,8 @@
   <?dbhtml filename="gzip.html"?>
 
   <sect1info condition="script">
-    <productname>gzip</productname>
-    <productnumber>&gzip-version;</productnumber>
-    <address>&gzip-url;</address>
-  </sect1info>
+<productname>gzip</productname>
+<productnumber>&gzip-version;</productnumber> <address>&gzip-url;</address></sect1info>
 
   <title>Gzip-&gzip-version;</title>
 
@@ -23,8 +21,7 @@
   <sect2 role="package">
     <title/>
 
-    <para>The Gzip package contains programs for compressing and decompressing
-    files.</para>
+    <para>O pacote Gzip contém aplicativos para comprimir e descomprimir arquivos.</para>
 
     <segmentedlist>
       <segtitle>&buildtime;</segtitle>
@@ -39,47 +36,46 @@
   </sect2>
 
   <sect2 role="installation">
-    <title>Installation of Gzip</title>
+    <title>Instalação do Gzip</title>
 
-    <para>Prepare Gzip for compilation:</para>
+    <para>Prepare o Gzip para compilação:</para>
 
 <screen><userinput remap="configure">./configure --prefix=/usr</userinput></screen>
 
-    <para>Compile the package:</para>
+    <para>Compile o pacote:</para>
 
 <screen><userinput remap="make">make</userinput></screen>
 
-    <para>To test the results, issue:</para>
+    <para>Para testar os resultados, emita:</para>
 
 <screen><userinput remap="test">make check</userinput></screen>
 
-    <para>Install the package:</para>
+    <para>Instale o pacote:</para>
 
 <screen><userinput remap="install">make install</userinput></screen>
 
   </sect2>
 
   <sect2 id="contents-gzip" role="content">
-    <title>Contents of Gzip</title>
+    <title>Conteúdo do Gzip</title>
 
     <segmentedlist>
-      <segtitle>Installed programs</segtitle>
+      <segtitle>Programas instalados</segtitle>
 
       <seglistitem>
-        <seg>gunzip, gzexe, gzip, uncompress (hard link with gunzip), zcat, zcmp,
-        zdiff, zegrep, zfgrep, zforce, zgrep, zless, zmore, and znew</seg>
+        <seg>gunzip, gzexe, gzip, uncompress (link rígido com gunzip), zcat, zcmp, zdiff,
+zegrep, zfgrep, zforce, zgrep, zless, zmore e znew</seg>
       </seglistitem>
     </segmentedlist>
 
     <variablelist>
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
+      <bridgehead renderas="sect3">Descrições Curtas</bridgehead>
+      <?dbfo list-presentation="list"?> <?dbhtml list-presentation="table"?>
 
       <varlistentry id="gunzip">
         <term><command>gunzip</command></term>
         <listitem>
-          <para>Decompresses gzipped files</para>
+          <para>Descomprime arquivos gzipados</para>
           <indexterm zone="ch-system-gzip gunzip">
             <primary sortas="b-gunzip">gunzip</primary>
           </indexterm>
@@ -89,7 +85,7 @@
       <varlistentry id="gzexe">
         <term><command>gzexe</command></term>
         <listitem>
-          <para>Creates self-decompressing executable files</para>
+          <para>Cria arquivos executáveis auto-descomprimíveis</para>
           <indexterm zone="ch-system-gzip gzexe">
             <primary sortas="b-gzexe">gzexe</primary>
           </indexterm>
@@ -99,7 +95,7 @@
       <varlistentry id="gzip">
         <term><command>gzip</command></term>
         <listitem>
-          <para>Compresses the given files using Lempel-Ziv (LZ77) coding</para>
+          <para>Comprime os arquivos dados usando codificação Lempel-Ziv (LZ77)</para>
           <indexterm zone="ch-system-gzip gzip">
             <primary sortas="b-gzip">gzip</primary>
           </indexterm>
@@ -109,7 +105,7 @@
       <varlistentry id="uncompress">
         <term><command>uncompress</command></term>
         <listitem>
-          <para>Decompresses compressed files</para>
+          <para>Descomprime arquivos comprimidos</para>
           <indexterm zone="ch-system-gzip uncompress">
             <primary sortas="b-uncompress">uncompress</primary>
           </indexterm>
@@ -119,7 +115,7 @@
       <varlistentry id="zcat">
         <term><command>zcat</command></term>
         <listitem>
-          <para>Decompresses the given gzipped files to standard output</para>
+          <para>Descomprime os arquivos gzipados dados para a saída gerada padrão</para>
           <indexterm zone="ch-system-gzip zcat">
             <primary sortas="b-zcat">zcat</primary>
           </indexterm>
@@ -129,7 +125,7 @@
       <varlistentry id="zcmp">
         <term><command>zcmp</command></term>
         <listitem>
-          <para>Runs <command>cmp</command> on gzipped files</para>
+          <para>Executa <command>cmp</command> em arquivos gzipados</para>
           <indexterm zone="ch-system-gzip zcmp">
             <primary sortas="b-zcmp">zcmp</primary>
           </indexterm>
@@ -139,7 +135,7 @@
       <varlistentry id="zdiff">
         <term><command>zdiff</command></term>
         <listitem>
-          <para>Runs <command>diff</command> on gzipped files</para>
+          <para>Executa <command>diff</command> em arquivos gzipados</para>
           <indexterm zone="ch-system-gzip zdiff">
             <primary sortas="b-zdiff">zdiff</primary>
           </indexterm>
@@ -149,7 +145,7 @@
       <varlistentry id="zegrep">
         <term><command>zegrep</command></term>
         <listitem>
-          <para>Runs <command>egrep</command> on gzipped files</para>
+          <para>Executa <command>egrep</command> em arquivos gzipados</para>
           <indexterm zone="ch-system-gzip zegrep">
             <primary sortas="b-zegrep">zegrep</primary>
           </indexterm>
@@ -159,7 +155,7 @@
       <varlistentry id="zfgrep">
         <term><command>zfgrep</command></term>
         <listitem>
-          <para>Runs <command>fgrep</command> on gzipped files</para>
+          <para>Executa <command>fgrep</command> em arquivos gzipados</para>
           <indexterm zone="ch-system-gzip zfgrep">
             <primary sortas="b-zfgrep">zfgrep</primary>
           </indexterm>
@@ -169,10 +165,11 @@
       <varlistentry id="zforce">
         <term><command>zforce</command></term>
         <listitem>
-          <para>Forces a <filename class="extension">.gz</filename> extension on
-          all given files that are gzipped files, so that <command>gzip</command>
-          will not compress them again; this can be useful when file names were
-          truncated during a file transfer</para>
+          <para>Força uma extensão <filename class="extension">.gz</filename> sobre todos os
+arquivos dados que sejam arquivos gzipados, de modo que o
+<command>gzip</command> não os comprimirá novamente; isso pode ser útil
+quando os nomes de arquivo foram truncados durante uma transferência de
+arquivo</para>
           <indexterm zone="ch-system-gzip zforce">
             <primary sortas="b-zforce">zforce</primary>
           </indexterm>
@@ -182,7 +179,7 @@
       <varlistentry id="zgrep">
         <term><command>zgrep</command></term>
         <listitem>
-          <para>Runs <command>grep</command> on gzipped files</para>
+          <para>Executa <command>grep</command> em arquivos gzipados</para>
           <indexterm zone="ch-system-gzip zgrep">
             <primary sortas="b-zgrep">zgrep</primary>
           </indexterm>
@@ -192,7 +189,7 @@
       <varlistentry id="zless">
         <term><command>zless</command></term>
         <listitem>
-          <para>Runs <command>less</command> on gzipped files</para>
+          <para>Executa <command>less</command> em arquivos gzipados</para>
           <indexterm zone="ch-system-gzip zless">
             <primary sortas="b-zless">zless</primary>
           </indexterm>
@@ -202,7 +199,7 @@
       <varlistentry id="zmore">
         <term><command>zmore</command></term>
         <listitem>
-          <para>Runs <command>more</command> on gzipped files</para>
+          <para>Executa <command>more</command> em arquivos gzipados</para>
           <indexterm zone="ch-system-gzip zmore">
             <primary sortas="b-zmore">zmore</primary>
           </indexterm>
@@ -212,10 +209,10 @@
       <varlistentry id="znew">
         <term><command>znew</command></term>
         <listitem>
-          <para>Re-compresses files from <command>compress</command> format to
-          <command>gzip</command> format&mdash;<filename
-          class="extension">.Z</filename> to <filename
-          class="extension">.gz</filename></para>
+          <para>Re-comprime arquivos oriundos do formato <command>compress</command> para o
+formato <command>gzip</command>&mdash;<filename
+class="extension">.Z</filename> para <filename
+class="extension">.gz</filename></para>
           <indexterm zone="ch-system-gzip znew">
             <primary sortas="b-znew">znew</primary>
           </indexterm>

@@ -9,10 +9,8 @@
   <?dbhtml filename="systemd.html"?>
 
   <sect1info condition="script">
-    <productname>systemd</productname>
-    <productnumber>&systemd-version;</productnumber>
-    <address>&systemd-url;</address>
-  </sect1info>
+<productname>systemd</productname>
+<productnumber>&systemd-version;</productnumber> <address>&systemd-url;</address></sect1info>
 
   <title>Systemd-&systemd-version;</title>
 
@@ -23,8 +21,8 @@
   <sect2 role="package">
     <title/>
 
-    <para>The systemd package contains programs for controlling the startup,
-    running, and shutdown of the system.</para>
+    <para>O pacote systemd contém aplicativos para controlar a inicialização, execução
+e desligamento do sistema.</para>
 
     <segmentedlist>
       <segtitle>&buildtime;</segtitle>
@@ -38,18 +36,17 @@
   </sect2>
 
   <sect2 role="installation">
-    <title>Installation of systemd</title>
+    <title>Instalação do systemd</title>
 
-    <para>Remove two unneeded groups,
-    <systemitem class="groupname">render</systemitem> and
-    <systemitem class="groupname">sgx</systemitem>, from the default udev
-    rules:</para>
+    <para>Remova dois grupos desnecessários, <systemitem
+class="groupname">render</systemitem> e <systemitem
+class="groupname">sgx</systemitem>, das regras padrão do "udev":</para>
 
  <screen><userinput remap="pre">sed -e 's/GROUP="render"/GROUP="video"/' \
     -e 's/GROUP="sgx", //'               \
     -i rules.d/50-udev-default.rules.in</userinput></screen>
 
-    <para>Prepare systemd for compilation:</para>
+    <para>Prepare systemd para compilação:</para>
 
 <screen><userinput remap="configure">mkdir -p build
 cd       build
@@ -74,92 +71,91 @@ meson setup ..                \
       -D docdir=/usr/share/doc/systemd-&systemd-version;</userinput></screen>
 
     <variablelist>
-      <title>The meaning of the meson options:</title>
+      <title>O significado das opções do meson:</title>
 
       <varlistentry>
         <term><parameter>--buildtype=release</parameter></term>
         <listitem>
-          <para>This switch overrides the default buildtype
-          (<quote>debug</quote>), which produces unoptimized
-          binaries.</para>
+          <para>Essa chave substitui o tipo de construção padrão (<quote>debug</quote>), que
+produz binários não otimizados.</para>
         </listitem>
       </varlistentry>
 
       <varlistentry>
         <term><parameter>-D default-dnssec=no</parameter></term>
         <listitem>
-          <para>This switch turns off the experimental DNSSEC support.</para>
+          <para>Essa chave desliga o suporte experimental a DNSSEC.</para>
         </listitem>
       </varlistentry>
 
       <varlistentry>
         <term><parameter>-D firstboot=false</parameter></term>
         <listitem>
-          <para>This switch prevents installation of systemd
-          services responsible for setting up the system for
-          the first time. These are not useful in LFS, because
-          everything is done manually.</para>
+          <para>Essa chave impede a instalação de serviços do systemd responsáveis por
+configurar o sistema pela primeira vez. Eles não são úteis no LFS, pois tudo
+é feito manualmente.</para>
         </listitem>
       </varlistentry>
 
       <varlistentry>
         <term><parameter>-D install-tests=false</parameter></term>
         <listitem>
-          <para>This switch prevents installation of the compiled tests.</para>
+          <para>Essa chave impede a instalação dos testes compilados.</para>
         </listitem>
       </varlistentry>
 
       <varlistentry>
         <term><parameter>-D ldconfig=false</parameter></term>
         <listitem>
-          <para>This switch prevents installation of a systemd unit that runs
-          <command>ldconfig</command> at boot; this is not useful for source
-          distributions such as LFS, and makes the boot time longer. Remove 
-          this option to enable running <command>ldconfig</command> at boot.</para>
+          <para>Essa chave impede a instalação de uma unidade do systemd que executa
+<command>ldconfig</command> ao inicializar; isso não é útil para
+distribuições de fonte, tais como o LFS, e torna o tempo de inicialização
+mais longo. Remova essa opção para habilitar a execução de
+<command>ldconfig</command> ao inicializar.</para>
         </listitem>
       </varlistentry>
 
       <varlistentry>
         <term><parameter>-D sysusers=false</parameter></term>
         <listitem>
-          <para>This switch prevents installation of systemd
-          services responsible for setting up the
-          <filename>/etc/group</filename> and
-          <filename>/etc/passwd</filename> files. Both files
-          were created in the previous chapter. This daemon is not useful
-          on an LFS system since user accounts are manually created.</para>
+          <para>Essa chave impede a instalação de serviços do systemd responsáveis por
+configurar os arquivos <filename>/etc/group</filename> e
+<filename>/etc/passwd</filename>. Ambos os arquivos foram criados no
+capítulo anterior. Esse processo de segundo plano não é útil em um sistema
+LFS dado que contas de usuário(a) são criadas manualmente.</para>
         </listitem>
       </varlistentry>
 
       <varlistentry>
         <term><parameter>-D rpmmacrosdir=no</parameter></term>
         <listitem>
-          <para>This switch disables installation of RPM Macros
-          for use with systemd, because LFS does not support RPM.</para>
+          <para>Essa chave desabilita a instalação das Macros RPM para uso com o systemd,
+pois o LFS não suporta RPM.</para>
         </listitem>
       </varlistentry>
 
       <varlistentry>
         <term><parameter>-D homed=disabled</parameter></term>
         <listitem>
-          <para>Remove a daemon which has dependencies that do not fit within
-          the scope of LFS.</para>
+          <para>Remova um processo de segundo plano que tem dependências que não se encaixam
+no escopo do LFS.</para>
         </listitem>
       </varlistentry>
 
       <varlistentry>
         <term><parameter>-D man=disabled</parameter></term>
         <listitem>
-          <para>Prevent the generation of man pages to avoid extra
-          dependencies.  We will install pre-generated man pages for systemd
-          from a tarball.</para>
+          <para>Impeça a geração de páginas de manual para evitar dependências extras. Nós
+instalaremos páginas de manual pré-geradas para o systemd a partir de um
+tarball.</para>
         </listitem>
       </varlistentry>
 
       <varlistentry>
         <term><parameter>-D mode=release</parameter></term>
         <listitem>
-          <para>Disable some features considered experimental by upstream.
+          <para>Desabilite alguns recursos considerados experimentais pelo(a)
+desenvolvedor(a).
           </para>
         </listitem>
       </varlistentry>
@@ -167,161 +163,165 @@ meson setup ..                \
       <varlistentry>
         <term><parameter>-D pamconfdir=no</parameter></term>
         <listitem>
-          <para>Prevent the installation of a PAM configuration file not
-          functional on LFS.</para>
+          <para>Evita a instalação de um arquivo de configuração do PAM não funcional no
+LFS.</para>
         </listitem>
       </varlistentry>
 
       <varlistentry>
         <term><parameter>-D dev-kvm-mode=0660</parameter></term>
         <listitem>
-          <para>The default udev rule would allow all users to access
-          <filename class='devicefile'>/dev/kvm</filename>.  The editors
-          consider it dangerous.  This option overrides it.</para>
+          <para>A regra padrão do "udev" permitiria que todos(as) os(as) usuários(as)
+acessassem <filename class='devicefile'>/dev/kvm</filename>. Os(As)
+editores(as) a consideram perigosa. Essa opção a substitui.</para>
         </listitem>
       </varlistentry>
 
       <varlistentry>
         <term><parameter>-D nobody-group=nogroup</parameter></term>
         <listitem>
-          <para>Tell the package the group name with GID 65534 is
-          <systemitem class='groupname'>nogroup</systemitem>.</para>
+          <para>Informe ao pacote que o nome do grupo com GID 65534 é <systemitem
+class='groupname'>nogroup</systemitem>.</para>
         </listitem>
       </varlistentry>
 
       <varlistentry>
         <term><parameter>-D sysupdate=disabled</parameter></term>
         <listitem>
-          <para>Do not install the <command>systemd-sysupdate</command>
-          tool.  It's designed for automatically upgrading binary distros,
-          so it's useless for a basic Linux system built from source.
-          And it will report errors on boot if it's enabled but not properly
-          configured.</para>
+          <para>Não instale a ferramenta
+&quot;<command>systemd-sysupdate</command>&quot;. Ela foi projetada para
+atualizar automaticamente distribuições binárias, de forma que é inútil para
+um sistema básico do Linux construído a partir do fonte. E informará erros
+na inicialização se estiver habilitada, mas não configurada corretamente.</para>
         </listitem>
       </varlistentry>
 
       <varlistentry>
         <term><parameter>-D ukify=disabled</parameter></term>
         <listitem>
-          <para>Do not install the <command>systemd-ukify</command> script.
-          At runtime this script requires the
-          <application>pefile</application> Python module that neither LFS
-          nor BLFS provides.</para>
+          <para>Não instale o conjunto de comandos sequenciais
+&quot;<command>systemd-ukify</command>&quot;. Em tempo de execução, esse
+conjunto de comandos sequenciais exige o módulo do &quot;Python&quot;
+&quot;<application>pefile</application>&quot; que nem o LFS nem o BLFS
+fornecem.</para>
         </listitem>
       </varlistentry>
 
     </variablelist>
 
-    <para>Compile the package:</para>
+    <para>Compile o pacote:</para>
 
 <screen><userinput remap="make">ninja</userinput></screen>
 
-    <para>One test creates a mount point in
-    <filename class='directory'>/tmp</filename> that we cannot clean up so
-    easily after running the test suite, and some tests need a basic
-    <filename>/etc/os-release</filename> file.  To test the results, create
-    this file and run the test suite in a separate mount namespace (so the
-    mount point is only visible for the test suite and it gets cleaned up
-    automatically after the test suite finishes):</para>
+    <para>Um teste cria um ponto de montagem no <filename
+class='directory'>/tmp</filename> que nós não conseguimos eliminar tão
+facilmente depois de executar a suíte de teste, e alguns testes precisam de
+um arquivo <filename>/etc/os-release</filename> básico. Para testar os
+resultados, crie esse arquivo e execute a suíte de teste em um espaço
+separado de nomes de montagem (para que o ponto de montagem fique visível
+somente para a suíte de teste e seja eliminado automaticamente depois do
+término da suíte de teste):</para>
 
+<!-- test-namespace needs /run/systemd/inaccessible/sock, which only exists
+         after initializing the system with systemd.  -->
 <screen><userinput remap="test">echo 'NAME="Linux From Scratch"' &gt; /etc/os-release
 unshare -m ninja test</userinput></screen>
 
-    <!-- test-namespace needs /run/systemd/inaccessible/sock, which only exists
-         after initializing the system with systemd.  -->
-    <para>One test named <literal>systemd:core / test-namespace</literal>
-    is known to fail in the LFS chroot environment.  Some other tests may
-    fail because they depend on various kernel configuration options.
-    The test named <literal>systemd:test / test-copy</literal> may time out
-    due to an I/O congestion with a large parallel job number, but it
-    would pass if running alone with
-    <command>meson test test-copy</command>.</para>
+    
+    <para>Um teste chamado <literal>systemd:core / test-namespace</literal> é
+conhecido por falhar no ambiente chroot do LFS. Alguns outros testes
+possivelmente falhem porque eles dependem de várias opções de configuração
+do núcleo. O teste chamado <literal>systemd:test / test-copy</literal>
+possivelmente expire devido a um congestionamento de E/S com um grande
+número de tarefas paralelas, mas passaria se executado sozinho com
+<command>meson test test-copy</command>.</para>
 
-    <para>Install the package:</para>
+    <para>Instale o pacote:</para>
 
 <screen><userinput remap="install">ninja install</userinput></screen>
 
-    <para>Install the man pages:</para>
+    <para>Instale as páginas de manual:</para>
 
-    <!-- Please make sure systemd man pages tarball has a common leading
+    
+<screen><!-- Please make sure systemd man pages tarball has a common leading
          component in the path.  -->
-<screen><userinput remap="install">tar -xf ../../systemd-man-pages-&systemd-man-version;.tar.xz \
+<userinput remap="install">tar -xf ../../systemd-man-pages-&systemd-man-version;.tar.xz \
     --no-same-owner --strip-components=1     \
     -C /usr/share/man</userinput></screen>
 
-    <para>Create the <filename>/etc/machine-id</filename> file needed by
-    <command>systemd-journald</command>:</para>
+    <para>Crie o arquivo <filename>/etc/machine-id</filename> necessitado pelo
+<command>systemd-journald</command>:</para>
 
 <screen><userinput remap="adjust">systemd-machine-id-setup</userinput></screen>
 
-    <para>Set up the basic target structure:</para>
-
-<screen><userinput remap="adjust">systemctl preset-all</userinput></screen>
+    <para>Configure a estrutura básica alvo:</para>
 
 <!-- dev: 50-pid-max.conf is not removed in BLFS, so I commented the following out.
           If it causes any trouble, we can add this back and also copy it into BLFS -->
 <!--
-    <para>Prevent systemd from resetting the maximum PID value which causes
+    <para>
+Prevent systemd from resetting the maximum PID value which causes
     some problems with packages and units in BLFS:</para>
 
 <screen><userinput remap="adjust">rm -f /usr/lib/sysctl.d/50-pid-max.conf</userinput></screen>
 -->
+<screen><userinput remap="adjust">systemctl preset-all</userinput></screen>
+
+
+
 
   </sect2>
 
   <sect2 id="contents-systemd" role="content">
-    <title>Contents of systemd</title>
+    <title>Conteúdo do systemd</title>
 
     <segmentedlist>
-      <segtitle>Installed programs</segtitle>
-      <segtitle>Installed libraries</segtitle>
-      <segtitle>Installed directories</segtitle>
+      <segtitle>Programas instalados</segtitle>
+      <segtitle>Bibliotecas instaladas</segtitle>
+      <segtitle>Diretórios instalados</segtitle>
 
       <seglistitem>
-        <seg>bootctl, busctl, coredumpctl, halt (symlink to systemctl),
-        hostnamectl, init, journalctl, kernel-install, localectl, loginctl,
-        machinectl, mount.ddi (symlink to systemd-dissect), networkctl,
-        oomctl, portablectl, poweroff (symlink to
-        systemctl), reboot (symlink to systemctl), resolvconf (symlink to
-        resolvectl), resolvectl, run0 (symlink to systemd-run), runlevel
-        (symlink to systemctl), shutdown
-        (symlink to systemctl), systemctl, systemd-ac-power, systemd-analyze,
-        systemd-ask-password, systemd-cat, systemd-cgls, systemd-cgtop,
-        systemd-confext (symlink to systemd-sysext), systemd-creds,
-        systemd-delta, systemd-detect-virt,
-        systemd-dissect, systemd-escape, systemd-hwdb, systemd-id128,
-        systemd-inhibit, systemd-machine-id-setup,
-        systemd-mount, systemd-notify, systemd-nspawn, systemd-path,
-        systemd-pty-forward, systemd-repart, systemd-resolve
-        (symlink to resolvectl), systemd-run, systemd-socket-activate,
-        systemd-stdio-bridge, systemd-sysext, systemd-tmpfiles,
-        systemd-tty-ask-password-agent, systemd-vpick,
-        systemd-umount (symlink to systemd-mount),
-        timedatectl, udevadm, userdbctl, and varlinkctl</seg>
-        <seg>libnss_myhostname.so.2, libnss_mymachines.so.2,
-        libnss_resolve.so.2, libnss_systemd.so.2,
-        libsystemd.so, libsystemd-shared-&systemd-version;.so (in /usr/lib/systemd),
-        and libudev.so</seg>
-        <seg>/etc/binfmt.d, /etc/init.d, /etc/kernel, /etc/modules-load.d,
-        /etc/sysctl.d, /etc/systemd, /etc/tmpfiles.d, /etc/udev,
-        /etc/xdg/systemd, /usr/include/systemd, /usr/lib/binfmt.d,
-        /usr/lib/credstore, /usr/lib/environment.d, /usr/lib/kernel,
-        /usr/lib/modprobe.d, /usr/lib/modules-load.d,  /usr/lib/systemd,
-        /usr/lib/udev, /usr/lib/sysctl.d, /usr/lib/systemd, /usr/lib/tmpfiles.d,
-        /usr/share/doc/systemd-&systemd-version;, /usr/share/factory,
-        /usr/share/systemd, /var/lib/systemd, and /var/log/journal</seg>
+        <seg>bootctl, busctl, coredumpctl, halt (linque simbólico para systemctl),
+hostnamectl, init, journalctl, kernel-install, localectl, loginctl,
+machinectl, mount.ddi (linque simbólico para systemd-dissect), networkctl,
+oomctl, portablectl, poweroff (linque simbólico para systemctl), reboot
+(linque simbólico para systemctl), resolvconf (linque simbólico para
+resolvectl), resolvectl, run0 (linque simbólico para systemd-run), runlevel
+(linque simbólico para systemctl), shutdown (linque simbólico para
+systemctl), systemctl, systemd-ac-power, systemd-analyze,
+systemd-ask-password, systemd-cat, systemd-cgls, systemd-cgtop,
+systemd-confext (linque simbólico para systemd-sysext), systemd-creds,
+systemd-delta, systemd-detect-virt, systemd-dissect, systemd-escape,
+systemd-hwdb, systemd-id128, systemd-inhibit, systemd-machine-id-setup,
+systemd-mount, systemd-notify, systemd-nspawn, systemd-path,
+systemd-pty-forward, systemd-repart, systemd-resolve (linque simbólico para
+resolvectl), systemd-run, systemd-socket-activate, systemd-stdio-bridge,
+systemd-sysext, systemd-tmpfiles, systemd-tty-ask-password-agent,
+systemd-vpick, systemd-umount (linque simbólico para systemd-mount),
+timedatectl, udevadm, userdbctl e varlinkctl</seg>
+        <seg>libnss_myhostname.so.2, libnss_mymachines.so.2, libnss_resolve.so.2,
+libnss_systemd.so.2, libsystemd.so, libsystemd-shared-&systemd-version;.so
+(em /usr/lib/systemd) e libudev.so</seg>
+        <seg>/etc/binfmt.d, /etc/init.d, /etc/kernel, /etc/modules-load.d, /etc/sysctl.d,
+/etc/systemd, /etc/tmpfiles.d, /etc/udev, /etc/xdg/systemd,
+/usr/include/systemd, /usr/lib/binfmt.d, /usr/lib/credstore,
+/usr/lib/environment.d, /usr/lib/kernel, /usr/lib/modprobe.d,
+/usr/lib/modules-load.d, /usr/lib/systemd, /usr/lib/udev, /usr/lib/sysctl.d,
+/usr/lib/systemd, /usr/lib/tmpfiles.d,
+/usr/share/doc/systemd-&systemd-version;, /usr/share/factory,
+/usr/share/systemd, /var/lib/systemd e /var/log/journal</seg>
       </seglistitem>
     </segmentedlist>
 
     <variablelist>
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
+      <bridgehead renderas="sect3">Descrições Curtas</bridgehead>
+      <?dbfo list-presentation="list"?> <?dbhtml list-presentation="table"?>
 
       <varlistentry id="bootctl">
         <term><command>bootctl</command></term>
         <listitem>
-          <para>Is used to control EFI firmware boot settings on a system</para>
+          <para>É usado para controlar configurações de inicialização do firmware EFI em um
+sistema</para>
           <indexterm zone="ch-system-systemd bootctl">
             <primary sortas="b-bootctl">bootctl</primary>
           </indexterm>
@@ -331,7 +331,7 @@ unshare -m ninja test</userinput></screen>
       <varlistentry id="busctl">
         <term><command>busctl</command></term>
         <listitem>
-          <para>Is used to introspect and monitor the D-Bus bus</para>
+          <para>É usado para introspecção e monitoramento do barramento D-Bus</para>
           <indexterm zone="ch-system-systemd busctl">
             <primary sortas="b-busctl">busctl</primary>
           </indexterm>
@@ -341,7 +341,8 @@ unshare -m ninja test</userinput></screen>
       <varlistentry id="coredumpctl">
         <term><command>coredumpctl</command></term>
         <listitem>
-          <para>Is used to retrieve coredumps from the systemd journal</para>
+          <para>É usado para recuperar despejos da memória principal a partir do diário do
+systemd</para>
           <indexterm zone="ch-system-systemd coredumpctl">
             <primary sortas="b-coredumpctl">coredumpctl</primary>
           </indexterm>
@@ -351,13 +352,12 @@ unshare -m ninja test</userinput></screen>
       <varlistentry id="halt">
         <term><command>halt</command></term>
         <listitem>
-          <para>Normally invokes <command>shutdown</command> with the
-          <parameter>-h</parameter> option, except when already in run-level 0,
-          when it tells the kernel to halt the system; it notes in the
-          file <filename>/var/log/wtmp</filename> that the system is being
-          brought down</para>
+          <para>Normalmente invoca <command>shutdown</command> com a opção
+<parameter>-h</parameter>, exceto quando já em nível de execução 0, então
+ele informa ao núcleo para parar o sistema; ele anota no arquivo
+<filename>/var/log/wtmp</filename> que o sistema está sendo desligado</para>
           <indexterm zone="ch-system-systemd halt">
-            <primary sortas="b-halt">halt</primary>
+            <primary sortas="b-halt">parar</primary>
           </indexterm>
         </listitem>
       </varlistentry>
@@ -365,8 +365,8 @@ unshare -m ninja test</userinput></screen>
       <varlistentry id="hostnamectl">
         <term><command>hostnamectl</command></term>
         <listitem>
-          <para>Is used to query and change the system hostname and related
-          settings</para>
+          <para>É usado para consultar e mudar o nome de dispositivo do sistema e
+configurações relacionadas</para>
           <indexterm zone="ch-system-systemd hostnamectl">
             <primary sortas="b-hostnamectl">hostnamectl</primary>
           </indexterm>
@@ -376,10 +376,10 @@ unshare -m ninja test</userinput></screen>
       <varlistentry id="init">
         <term><command>init</command></term>
         <listitem>
-          <para>Is the first process to be started after the kernel has initialized
-          the hardware; <command>init</command> takes over the boot process and starts the
-          processes specified by its configuration files; in this case, it starts
-          systemd</para>
+          <para>É o primeiro processo a ser iniciado depois que o núcleo tenha inicializado
+o hardware; <command>init</command> assume o processo de inicialização e
+inicia os processos especificados pelos arquivos de configuração dele; nesse
+caso, ele inicia o systemd</para>
           <indexterm zone="ch-system-systemd init">
             <primary sortas="b-init">init</primary>
           </indexterm>
@@ -389,7 +389,7 @@ unshare -m ninja test</userinput></screen>
       <varlistentry id="journalctl">
         <term><command>journalctl</command></term>
         <listitem>
-          <para>Is used to query the contents of the systemd journal</para>
+          <para>É usado para consultar o conteúdo do diário do systemd</para>
           <indexterm zone="ch-system-systemd journalctl">
             <primary sortas="b-journalctl">journalctl</primary>
           </indexterm>
@@ -399,8 +399,8 @@ unshare -m ninja test</userinput></screen>
       <varlistentry id="kernel-install">
         <term><command>kernel-install</command></term>
         <listitem>
-          <para>Is used to add and remove kernel and initramfs images to and
-          from /boot; in LFS, this is done manually</para>
+          <para>É usado para adicionar e remover imagens de núcleo e de initramfs para e de
+/boot; no LFS, isso é feito manualmente</para>
           <indexterm zone="ch-system-systemd kernel-install">
             <primary sortas="b-kernel-install">kernel-install</primary>
           </indexterm>
@@ -410,8 +410,8 @@ unshare -m ninja test</userinput></screen>
       <varlistentry id="localectl">
         <term><command>localectl</command></term>
         <listitem>
-          <para>Is used to query and change the system locale and keyboard layout
-          settings</para>
+          <para>É usado para consultar e mudar as configurações de locale e esquema de
+teclado do sistema</para>
           <indexterm zone="ch-system-systemd localectl">
             <primary sortas="b-localectl">localectl</primary>
           </indexterm>
@@ -421,8 +421,7 @@ unshare -m ninja test</userinput></screen>
       <varlistentry id="loginctl">
         <term><command>loginctl</command></term>
         <listitem>
-          <para>Is used to introspect and control the state of the systemd Login
-          Manager</para>
+          <para>É usado para introspectar e controlar o estado do Login Manager do systemd</para>
           <indexterm zone="ch-system-systemd loginctl">
             <primary sortas="b-loginctl">loginctl</primary>
           </indexterm>
@@ -432,8 +431,8 @@ unshare -m ninja test</userinput></screen>
       <varlistentry id="machinectl">
         <term><command>machinectl</command></term>
         <listitem>
-          <para>Is used to introspect and control the state of the systemd Virtual
-          Machine and Container Registration Manager</para>
+          <para>É usado para introspectar e controlar o estado do Virtual Machine e do
+Container Registration Manager do systemd</para>
           <indexterm zone="ch-system-systemd machinectl">
             <primary sortas="b-machinectl">machinectl</primary>
           </indexterm>
@@ -443,8 +442,8 @@ unshare -m ninja test</userinput></screen>
       <varlistentry id="networkctl">
         <term><command>networkctl</command></term>
         <listitem>
-          <para>Is used to introspect and configure the state of the network
-          links configured by systemd-networkd</para>
+          <para>É usado para introspectar e configurar o estado dos links da rede de
+comunicação configurados pelo systemd-networkd</para>
           <indexterm zone="ch-system-systemd networkctl">
             <primary sortas="b-networkctl">networkctl</primary>
           </indexterm>
@@ -454,7 +453,7 @@ unshare -m ninja test</userinput></screen>
       <varlistentry id="oomctl">
         <term><command>oomctl</command></term>
         <listitem>
-          <para>Controls the systemd Out Of Memory daemon</para>
+          <para>Controla o processo de segundo plano Out Of Memory do systemd</para>
           <indexterm zone="ch-system-systemd oomctl">
             <primary sortas="b-oomctl">oomctl</primary>
           </indexterm>
@@ -464,8 +463,8 @@ unshare -m ninja test</userinput></screen>
       <varlistentry id="portablectl">
         <term><command>portablectl</command></term>
         <listitem>
-          <para>Is used to attach or detach portable services from the local
-          system</para>
+          <para>É usado para anexar ou desanexar serviços portáveis a partir do sistema
+local</para>
           <indexterm zone="ch-system-systemd portablectl">
             <primary sortas="b-portablectl">portablectl</primary>
           </indexterm>
@@ -475,8 +474,8 @@ unshare -m ninja test</userinput></screen>
       <varlistentry id="poweroff">
         <term><command>poweroff</command></term>
         <listitem>
-          <para>Instructs the kernel to halt the system and switch off the computer
-          (see <command>halt</command>)</para>
+          <para>Instrui o núcleo a parar o sistema e desligar o computador (veja-se
+<command>halt</command>)</para>
           <indexterm zone="ch-system-systemd poweroff">
             <primary sortas="b-poweroff">poweroff</primary>
           </indexterm>
@@ -486,10 +485,9 @@ unshare -m ninja test</userinput></screen>
       <varlistentry id="reboot">
         <term><command>reboot</command></term>
         <listitem>
-          <para>Instructs the kernel to reboot the system (see
-          <command>halt</command>)</para>
+          <para>Instrui o núcleo a reinicializar o sistema (veja-se <command>halt</command>)</para>
           <indexterm zone="ch-system-systemd reboot">
-            <primary sortas="b-reboot">reboot</primary>
+            <primary sortas="b-reboot">reinicializar</primary>
           </indexterm>
         </listitem>
       </varlistentry>
@@ -497,8 +495,8 @@ unshare -m ninja test</userinput></screen>
       <varlistentry id="resolvconf">
         <term><command>resolvconf</command></term>
         <listitem>
-          <para>Registers DNS server and domain configuration with
-          <command>systemd-resolved</command></para>
+          <para>Registra a configuração do servidor de DNS e domínio com
+<command>systemd-resolved</command></para>
           <indexterm zone="ch-system-systemd resolvconf">
             <primary sortas="b-resolvconf">resolvconf</primary>
           </indexterm>
@@ -508,9 +506,9 @@ unshare -m ninja test</userinput></screen>
       <varlistentry id="resolvectl">
         <term><command>resolvectl</command></term>
         <listitem>
-          <para>Sends control commands to the network name resolution
-          manager, or resolves domain names, IPv4 and IPv6 addresses,
-          DNS records, and services</para>
+          <para>Envia comandos de controle para o gerenciador de resolução de nome da rede
+de comunicação ou resolve nomes de domínio, endereços IPv4 e IPv6, registros
+DNS e serviços</para>
           <indexterm zone="ch-system-systemd resolvectl">
             <primary sortas="b-resolvectl">resolvectl</primary>
           </indexterm>
@@ -520,8 +518,7 @@ unshare -m ninja test</userinput></screen>
       <varlistentry id="run0">
         <term><command>run0</command></term>
         <listitem>
-          <para>Temporary elevates or acquires different privileges, similar
-          to sudo</para>
+          <para>Temporariamente eleva ou adquire privilégios diferentes; similar ao sudo</para>
           <indexterm zone="ch-system-systemd run0">
             <primary sortas="b-run0">run0</primary>
           </indexterm>
@@ -531,8 +528,8 @@ unshare -m ninja test</userinput></screen>
       <varlistentry id="runlevel">
         <term><command>runlevel</command></term>
         <listitem>
-          <para>Outputs the previous and the current run-level, as noted in the
-          last run-level record in <filename>/run/utmp</filename></para>
+          <para>Emite o nível de execução anterior e o atual, conforme anotado no registro
+mais recente do nível de execução em <filename>/run/utmp</filename></para>
           <indexterm zone="ch-system-systemd runlevel">
             <primary sortas="b-runlevel">runlevel</primary>
           </indexterm>
@@ -542,8 +539,8 @@ unshare -m ninja test</userinput></screen>
       <varlistentry id="shutdown">
         <term><command>shutdown</command></term>
         <listitem>
-          <para>Brings the system down in a safe and secure manner, signaling
-          all processes and notifying all logged-in users</para>
+          <para>Desativa o sistema de uma maneira segura e protegida, sinalizando para todos
+os processos e notificando todos(as) os(as) usuários(as) logados(as)</para>
           <indexterm zone="ch-system-systemd shutdown">
             <primary sortas="b-shutdown">shutdown</primary>
           </indexterm>
@@ -553,8 +550,8 @@ unshare -m ninja test</userinput></screen>
       <varlistentry id="systemctl">
         <term><command>systemctl</command></term>
         <listitem>
-          <para>Is used to introspect and control the state of the systemd system
-          and service manager</para>
+          <para>É usado para introspectar e controlar o estado do gerenciador de sistema e
+serviço do systemd</para>
           <indexterm zone="ch-system-systemd systemctl">
             <primary sortas="b-systemctl">systemctl</primary>
           </indexterm>
@@ -564,8 +561,7 @@ unshare -m ninja test</userinput></screen>
       <varlistentry id="systemd-ac-power">
         <term><command>systemd-ac-power</command></term>
         <listitem>
-          <para>Reports whether the system is connected to an external
-          power source.</para>
+          <para>Informa se o sistema está conectado a uma fonte externa de eletricidade.</para>
           <indexterm zone="ch-system-systemd systemd-ac-power">
             <primary sortas="b-systemd-ac-power">systemd-ac-power</primary>
           </indexterm>
@@ -575,8 +571,8 @@ unshare -m ninja test</userinput></screen>
       <varlistentry id="systemd-analyze">
         <term><command>systemd-analyze</command></term>
         <listitem>
-          <para>Is used to analyze system startup performance,
-          as well as identify troublesome systemd units</para>
+          <para>É usado para analisar o desempenho da inicialização do sistema, bem como
+para identificar unidades problemáticas do systemd</para>
           <indexterm zone="ch-system-systemd systemd-analyze">
             <primary sortas="b-systemd-analyze">systemd-analyze</primary>
           </indexterm>
@@ -586,8 +582,9 @@ unshare -m ninja test</userinput></screen>
       <varlistentry id="systemd-ask-password">
         <term><command>systemd-ask-password</command></term>
         <listitem>
-          <para>Is used to query a system password or passphrase from the user,
-          using a message specified on the Linux command line</para>
+          <para>É usado para consultar uma palavra secreta ou frase secreta do sistema a
+partir do(a) usuário(a), usando uma mensagem especificada na linha de
+comando do Linux</para>
           <indexterm zone="ch-system-systemd systemd-ask-password">
             <primary sortas="b-systemd-ask-password">systemd-ask-password</primary>
           </indexterm>
@@ -597,8 +594,8 @@ unshare -m ninja test</userinput></screen>
       <varlistentry id="systemd-cat">
         <term><command>systemd-cat</command></term>
         <listitem>
-          <para>Is used to connect the STDOUT and STDERR outputs of a process
-          with the systemd journal
+          <para>É usado para conectar as saídas geradas STDOUT e STDERR de um processo com o
+diário do systemd
           </para>
           <indexterm zone="ch-system-systemd systemd-cat">
             <primary sortas="b-systemd-cat">systemd-cat</primary>
@@ -609,8 +606,8 @@ unshare -m ninja test</userinput></screen>
       <varlistentry id="systemd-cgls">
         <term><command>systemd-cgls</command></term>
         <listitem>
-          <para>Recursively shows the contents of the selected Linux control
-          group hierarchy in a tree</para>
+          <para>Recursivamente mostra o conteúdo da hierarquia do grupo de controle
+selecionado do Linux em uma árvore</para>
           <indexterm zone="ch-system-systemd systemd-cgls">
             <primary sortas="b-systemd-cgls">systemd-cgls</primary>
           </indexterm>
@@ -620,8 +617,9 @@ unshare -m ninja test</userinput></screen>
       <varlistentry id="systemd-cgtop">
         <term><command>systemd-cgtop</command></term>
         <listitem>
-          <para>Shows the top control groups of the local Linux control group
-          hierarchy, ordered by their CPU, memory and disk I/O loads</para>
+          <para>Mostra os grupos de controle superiores da hierarquia do grupo de controle
+local do Linux, ordenados pela carga de CPU, memória e entradas/saídas de
+disco deles</para>
           <indexterm zone="ch-system-systemd systemd-cgtop">
             <primary sortas="b-systemd-cgtop">systemd-cgtop</primary>
           </indexterm>
@@ -631,7 +629,7 @@ unshare -m ninja test</userinput></screen>
       <varlistentry id="systemd-creds">
         <term><command>systemd-creds</command></term>
         <listitem>
-          <para>Displays and processes credentials</para>
+          <para>Exibe e processa credenciais</para>
           <indexterm zone="ch-system-systemd systemd-creds">
             <primary sortas="b-systemd-creds">systemd-creds</primary>
           </indexterm>
@@ -641,9 +639,9 @@ unshare -m ninja test</userinput></screen>
       <varlistentry id="systemd-delta">
         <term><command>systemd-delta</command></term>
         <listitem>
-          <para>Is used to identify and compare configuration files in
-          <filename class="directory">/etc</filename> that override the defaults
-          in <filename class="directory">/usr</filename></para>
+          <para>É usado para identificar e comparar arquivos de configuração em <filename
+class="directory">/etc</filename> que substituem os padrões em <filename
+class="directory">/usr</filename></para>
           <indexterm zone="ch-system-systemd systemd-delta">
             <primary sortas="b-systemd-delta">systemd-delta</primary>
           </indexterm>
@@ -653,8 +651,8 @@ unshare -m ninja test</userinput></screen>
       <varlistentry id="systemd-detect-virt">
         <term><command>systemd-detect-virt</command></term>
         <listitem>
-          <para>Detects whether the system is being run in a virtual
-          environment, and adjusts udev accordingly</para>
+          <para>Detecta se o sistema está sendo executado em um ambiente virtual e ajusta o
+Udev de acordo</para>
           <indexterm zone="ch-system-systemd systemd-detect-virt">
             <primary sortas="b-systemd-detect-virt">systemd-detect-virt</primary>
           </indexterm>
@@ -664,7 +662,7 @@ unshare -m ninja test</userinput></screen>
       <varlistentry id="systemd-dissect">
         <term><command>systemd-dissect</command></term>
         <listitem>
-          <para>Is used to inspect OS disk images</para>
+          <para>É usado para inspecionar imagens de disco de SO</para>
           <indexterm zone="ch-system-systemd systemd-dissect">
             <primary sortas="b-systemd-dissect">systemd-dissect</primary>
           </indexterm>
@@ -674,8 +672,8 @@ unshare -m ninja test</userinput></screen>
       <varlistentry id="systemd-escape">
         <term><command>systemd-escape</command></term>
         <listitem>
-          <para>Is used to escape strings for inclusion in systemd unit
-          names</para>
+          <para>É usado para escapar sequências de caracteres para inclusão em nomes de
+unidade do systemd</para>
           <indexterm zone="ch-system-systemd systemd-escape">
             <primary sortas="b-systemd-escape">systemd-escape</primary>
           </indexterm>
@@ -685,7 +683,7 @@ unshare -m ninja test</userinput></screen>
       <varlistentry id="systemd-hwdb">
         <term><command>systemd-hwdb</command></term>
         <listitem>
-          <para>Is used to manage the hardware database (hwdb)</para>
+          <para>É usado para gerenciar a base de dados de hardware (hwdb)</para>
           <indexterm zone="ch-system-systemd systemd-hwdb">
             <primary sortas="b-systemd-hwdb">systemd-hwdb</primary>
           </indexterm>
@@ -695,7 +693,7 @@ unshare -m ninja test</userinput></screen>
       <varlistentry id="systemd-id128">
         <term><command>systemd-id128</command></term>
         <listitem>
-          <para>Generates and prints id128 (UUID) strings</para>
+          <para>Gera e imprime sequências de caracteres id128 (UUID)</para>
           <indexterm zone="ch-system-systemd systemd-id128">
             <primary sortas="b-systemd-id128">systemd-id128</primary>
           </indexterm>
@@ -705,9 +703,9 @@ unshare -m ninja test</userinput></screen>
       <varlistentry id="systemd-inhibit">
         <term><command>systemd-inhibit</command></term>
         <listitem>
-          <para>Is used to execute a program with a shutdown, sleep or idle
-          inhibitor lock taken, preventing an action such as a system shutdown
-          until the process is completed</para>
+          <para>É usado para executar um aplicativo com um bloqueio de inibição de
+desligamento, suspensão ou inatividade, impedindo uma ação tal como um
+desligamento do sistema até que o processo seja completado</para>
           <indexterm zone="ch-system-systemd systemd-inhibit">
             <primary sortas="b-systemd-inhibit">systemd-inhibit</primary>
           </indexterm>
@@ -717,9 +715,9 @@ unshare -m ninja test</userinput></screen>
       <varlistentry id="systemd-machine-id-setup">
         <term><command>systemd-machine-id-setup</command></term>
         <listitem>
-          <para>Is used by system installer tools to initialize the machine ID
-          stored in <filename>/etc/machine-id</filename> at install time with a
-          randomly generated ID</para>
+          <para>É usado por ferramentas de instalador do sistema para inicializar o ID de
+máquina armazenado em <filename>/etc/machine-id</filename> ao tempo de
+instalação com um ID gerado aleatoriamente</para>
           <indexterm zone="ch-system-systemd systemd-machine-id-setup">
             <primary sortas="b-systemd-machine-id-setup">systemd-machine-id-setup</primary>
           </indexterm>
@@ -729,7 +727,7 @@ unshare -m ninja test</userinput></screen>
       <varlistentry id="systemd-mount">
         <term><command>systemd-mount</command></term>
         <listitem>
-          <para>Is used to temporarily mount or automount disks</para>
+          <para>É usado para montar temporariamente ou automontar discos</para>
           <indexterm zone="ch-system-systemd systemd-mount">
             <primary sortas="b-systemd-mount">systemd-mount</primary>
           </indexterm>
@@ -739,8 +737,8 @@ unshare -m ninja test</userinput></screen>
       <varlistentry id="systemd-notify">
         <term><command>systemd-notify</command></term>
         <listitem>
-          <para>Is used by daemon scripts to notify the init system of status
-          changes</para>
+          <para>É usado por scripts do processo de segundo para notificar o sistema init
+acerca de mudanças de situação</para>
           <indexterm zone="ch-system-systemd systemd-notify">
             <primary sortas="b-systemd-notify">systemd-notify</primary>
           </indexterm>
@@ -750,8 +748,8 @@ unshare -m ninja test</userinput></screen>
       <varlistentry id="systemd-nspawn">
         <term><command>systemd-nspawn</command></term>
         <listitem>
-          <para>Is used to run a command, or an entire OS, in a light-weight namespace
-          container</para>
+          <para>É usado para executar um comando ou um OS inteiro, em um contêiner de espaço
+de nome peso leve</para>
           <indexterm zone="ch-system-systemd systemd-nspawn">
             <primary sortas="b-systemd-nspawn">systemd-nspawn</primary>
           </indexterm>
@@ -761,7 +759,7 @@ unshare -m ninja test</userinput></screen>
       <varlistentry id="systemd-path">
         <term><command>systemd-path</command></term>
         <listitem>
-          <para>Is used to query system and user paths</para>
+          <para>É usado para consultar caminhos de sistema e usuário(a)</para>
           <indexterm zone="ch-system-systemd systemd-path">
             <primary sortas="b-systemd-path">systemd-path</primary>
           </indexterm>
@@ -771,8 +769,8 @@ unshare -m ninja test</userinput></screen>
       <varlistentry id="systemd-pty-forward">
         <term><command>systemd-pty-forward</command></term>
         <listitem>
-          <para>Is used to run a command with a custom terminal background
-          color or title</para>
+          <para>É usado para executar um comando com uma cor personalizada de plano de fundo
+do terminal, ou título personalizado</para>
           <indexterm zone="ch-system-systemd systemd-pty-forward">
             <primary sortas="b-systemd-pty-forward">systemd-pty-forward</primary>
           </indexterm>
@@ -782,8 +780,8 @@ unshare -m ninja test</userinput></screen>
       <varlistentry id="systemd-repart">
         <term><command>systemd-repart</command></term>
         <listitem>
-          <para>Is used to grow and add partitions to a partition table when
-          systemd is used with an OS image (e.g. a container)</para>
+          <para>É usado para aumentar e adicionar partições à uma tabela de partição quando
+o systemd for usado com uma imagem de SO (por exemplo, um contêiner)</para>
           <indexterm zone="ch-system-systemd systemd-repart">
             <primary sortas="b-systemd-repart">systemd-repart</primary>
           </indexterm>
@@ -793,8 +791,8 @@ unshare -m ninja test</userinput></screen>
       <varlistentry id="systemd-resolve">
         <term><command>systemd-resolve</command></term>
         <listitem>
-          <para>Is used to resolve domain names, IPV4 and IPv6 addresses, DNS
-          resource records, and services</para>
+          <para>É usado para resolver nomes de domínio, endereços IPV4 e IPv6, registros de
+recurso DNS e serviços</para>
           <indexterm zone="ch-system-systemd systemd-resolve">
             <primary sortas="b-systemd-resolve">systemd-resolve</primary>
           </indexterm>
@@ -804,9 +802,9 @@ unshare -m ninja test</userinput></screen>
       <varlistentry id="systemd-run">
         <term><command>systemd-run</command></term>
         <listitem>
-          <para>Is used to create and start a transient .service or a .scope
-          unit and run the specified command in it; this is useful for
-          validating systemd units</para>
+          <para>É usado para criar e iniciar uma unidade transitória .service ou uma .scope
+e executar o comando especificado nela; isso é útil para validar unidades do
+systemd</para>
           <indexterm zone="ch-system-systemd systemd-run">
             <primary sortas="b-systemd-run">systemd-run</primary>
           </indexterm>
@@ -816,8 +814,8 @@ unshare -m ninja test</userinput></screen>
       <varlistentry id="systemd-socket-activate">
         <term><command>systemd-socket-activate</command></term>
         <listitem>
-          <para>Is used to listen on socket devices and launch a process upon
-          a successful connection to the socket</para>
+          <para>É usado para ouvir em dispositivos de soquete e iniciar um processo depois
+de uma conexão bem sucedida com o soquete</para>
           <indexterm zone="ch-system-systemd systemd-socket-activate">
             <primary sortas="b-systemd-socket-activate">systemd-socket-activate</primary>
           </indexterm>
@@ -827,7 +825,7 @@ unshare -m ninja test</userinput></screen>
       <varlistentry id="systemd-sysext">
         <term><command>systemd-sysext</command></term>
         <listitem>
-          <para>Activates system extension images</para>
+          <para>Ativa imagens de extensão de sistema</para>
           <indexterm zone="ch-system-systemd systemd-sysext">
             <primary sortas="b-systemd-sysext">systemd-sysext</primary>
           </indexterm>
@@ -837,10 +835,9 @@ unshare -m ninja test</userinput></screen>
       <varlistentry id="systemd-tmpfiles">
         <term><command>systemd-tmpfiles</command></term>
         <listitem>
-          <para>Creates, deletes, and cleans up volatile and temporary files and
-          directories, based on the configuration file format and location
-          specified in
-          <filename class="directory">tmpfiles.d</filename> directories</para>
+          <para>Cria, deleta e limpa arquivos e diretórios voláteis e temporários, baseado
+no formato de arquivo de configuração e local especificado em diretórios
+<filename class="directory">tmpfiles.d</filename></para>
           <indexterm zone="ch-system-systemd systemd-tmpfiles">
             <primary sortas="b-systemd-tmpfiles">systemd-tmpfiles</primary>
           </indexterm>
@@ -850,7 +847,7 @@ unshare -m ninja test</userinput></screen>
       <varlistentry id="systemd-umount">
         <term><command>systemd-umount</command></term>
         <listitem>
-          <para>Unmounts mount points</para>
+          <para>Desmonta pontos de montagem</para>
           <indexterm zone="ch-system-systemd systemd-umount">
             <primary sortas="b-systemd-umount">systemd-umount</primary>
           </indexterm>
@@ -860,8 +857,8 @@ unshare -m ninja test</userinput></screen>
       <varlistentry id="systemd-tty-ask-password-agent">
         <term><command>systemd-tty-ask-password-agent</command></term>
         <listitem>
-          <para>Is used to list and/or process pending systemd password
-          requests</para>
+          <para>É usado para listar e (ou) processar solicitações pendentes de senha do
+systemd</para>
           <indexterm zone="ch-system-systemd systemd-tty-ask-password-agent">
             <primary sortas="b-systemd-tty-ask-password-agent">systemd-tty-ask-password-agent</primary>
           </indexterm>
@@ -871,15 +868,18 @@ unshare -m ninja test</userinput></screen>
       <varlistentry id="systemd-vpick">
         <term><command>systemd-vpick</command></term>
         <listitem>
-          <para>Is used to resolve paths to a ".v/" versioned directory</para>
+          <para>É usado para resolver caminhos para um diretório versionado ".v/"</para>
           <indexterm zone="ch-system-systemd systemd-vpick">
             <primary sortas="b-systemd-vpick">systemd-vpick</primary>
           </indexterm>
         </listitem>
       </varlistentry>
 
-<!-- Removed in 258
+
+
+      <!-- Removed in 258
       <varlistentry id="telinit">
+
         <term><command>telinit</command></term>
         <listitem>
           <para>Tells <command>init</command> which run-level to change
@@ -890,11 +890,10 @@ unshare -m ninja test</userinput></screen>
         </listitem>
       </varlistentry>
 -->
-
-      <varlistentry id="timedatectl">
+<varlistentry id="timedatectl">
         <term><command>timedatectl</command></term>
         <listitem>
-          <para>Is used to query and change the system clock and its settings
+          <para>É usado para consultar e mudar o relógio do sistema e as configurações dele
           </para>
           <indexterm zone="ch-system-systemd timedatectl">
             <primary sortas="b-timedatectl">timedatectl</primary>
@@ -905,10 +904,10 @@ unshare -m ninja test</userinput></screen>
       <varlistentry id="udevadm">
         <term><command>udevadm</command></term>
         <listitem>
-          <para>Is a generic udev administration tool which controls the udevd
-          daemon, provides info from the udev hardware database, monitors
-          uevents, waits for uevents to finish, tests udev configuration, and
-          triggers uevents for a given device</para>
+          <para>É uma ferramenta genérica de administração do Udev que controla o processo
+de segundo plano udevd, fornece informação a partir da base de dados de
+hardware do Udev, monitora uevents, aguarda que uevents finalizem, testa a
+configuração do Udev e deflagra uevents para um dispositivo dado</para>
           <indexterm zone="ch-system-systemd udevadm">
             <primary sortas="b-udevadm">udevadm</primary>
           </indexterm>
@@ -918,7 +917,7 @@ unshare -m ninja test</userinput></screen>
       <varlistentry id="userdbctl">
         <term><command>userdbctl</command></term>
         <listitem>
-          <para>Is used to inspect users, groups, and group memberships</para>
+          <para>É usado para inspecionar usuários(as), grupos e integrantes de grupos</para>
           <indexterm zone="ch-system-systemd userdbctl">
             <primary sortas="b-userdbctl">userdbctl</primary>
           </indexterm>
@@ -928,7 +927,7 @@ unshare -m ninja test</userinput></screen>
       <varlistentry id="varlinkctl">
         <term><command>varlinkctl</command></term>
         <listitem>
-          <para>Is used to interact with and invoke Varlink services</para>
+          <para>É usado para interagir com, e invocar, serviços Varlink</para>
           <indexterm zone="ch-system-systemd varlinkctl">
             <primary sortas="b-varlinkctl">varlinkctl</primary>
           </indexterm>
@@ -938,7 +937,7 @@ unshare -m ninja test</userinput></screen>
       <varlistentry id="libsystemd">
         <term><filename class="libraryfile">libsystemd</filename></term>
         <listitem>
-          <para>Is the main systemd utility library</para>
+          <para>É a biblioteca principal de utilitário do systemd</para>
           <indexterm zone="ch-system-systemd libsystemd">
             <primary sortas="c-libsystemd">libsystemd</primary>
           </indexterm>
@@ -948,7 +947,7 @@ unshare -m ninja test</userinput></screen>
       <varlistentry id="libudev">
         <term><filename class="libraryfile">libudev</filename></term>
         <listitem>
-          <para>Is a library to access Udev device information</para>
+          <para>É uma biblioteca para acessar informação de dispositivo do Udev</para>
           <indexterm zone="ch-system-systemd libudev">
             <primary sortas="c-libudev">libudev</primary>
           </indexterm>

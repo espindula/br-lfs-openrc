@@ -9,10 +9,8 @@
   <?dbhtml filename="libtool.html"?>
 
   <sect1info condition="script">
-    <productname>libtool</productname>
-    <productnumber>&libtool-version;</productnumber>
-    <address>&libtool-url;</address>
-  </sect1info>
+<productname>libtool</productname>
+<productnumber>&libtool-version;</productnumber> <address>&libtool-url;</address></sect1info>
 
   <title>Libtool-&libtool-version;</title>
 
@@ -23,9 +21,9 @@
   <sect2 role="package">
     <title/>
 
-    <para>The Libtool package contains the GNU generic library support script.
-    It makes the use of shared libraries simpler with a consistent, portable
-    interface.</para>
+    <para>O pacote Libtool contém o script de suporte à biblioteca genérica GNU. Ele
+torna o uso de bibliotecas compartilhadas mais simples com uma interface
+consistente, portável.</para>
 
     <segmentedlist>
       <segtitle>&buildtime;</segtitle>
@@ -40,28 +38,29 @@
   </sect2>
 
   <sect2 role="installation">
-    <title>Installation of Libtool</title>
+    <title>Instalação do Libtool</title>
 
-    <para>Prepare Libtool for compilation:</para>
+    <para>Prepare Libtool para compilação:</para>
 
 <screen><userinput remap="configure">./configure --prefix=/usr</userinput></screen>
 
-    <para>Compile the package:</para>
+    <para>Compile o pacote:</para>
 
 <screen><userinput remap="make">make</userinput></screen>
 
-<para>To test the results, issue:</para>
+<para>Para testar os resultados, emita:</para>
 
 <screen><userinput remap="test">make check</userinput></screen>
 
-    <para>Install the package:</para>
+    <para>Instale o pacote:</para>
 
+<!-- dev: - -disable-static works but causes additional test failures
+              so we manually remove the static library -->
 <screen><userinput remap="install">make install</userinput></screen>
 
-    <!-- dev: - -disable-static works but causes additional test failures
-              so we manually remove the static library -->
+    
 
-    <para>Remove a static library only useful for the test suite:</para>
+    <para>Remova uma biblioteca estática útil somente para a suíte de teste:</para>
 
 <screen><userinput remap="install">rm -fv /usr/lib/libltdl.a</userinput></screen>
 
@@ -69,29 +68,28 @@
 
 
   <sect2 id="contents-libtool" role="content">
-    <title>Contents of Libtool</title>
+    <title>Conteúdo do Libtool</title>
 
     <segmentedlist>
-      <segtitle>Installed programs</segtitle>
-      <segtitle>Installed libraries</segtitle>
-      <segtitle>Installed directories</segtitle>
+      <segtitle>Programas instalados</segtitle>
+      <segtitle>Bibliotecas instaladas</segtitle>
+      <segtitle>Diretórios instalados</segtitle>
 
       <seglistitem>
-        <seg>libtool and libtoolize</seg>
+        <seg>libtool e libtoolize</seg>
         <seg>libltdl.so</seg>
-        <seg>/usr/include/libltdl and /usr/share/libtool</seg>
+        <seg>/usr/include/libltdl e /usr/share/libtool</seg>
       </seglistitem>
     </segmentedlist>
 
     <variablelist>
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
+      <bridgehead renderas="sect3">Descrições Curtas</bridgehead>
+      <?dbfo list-presentation="list"?> <?dbhtml list-presentation="table"?>
 
       <varlistentry id="libtool">
         <term><command>libtool</command></term>
         <listitem>
-          <para>Provides generalized library-building support services</para>
+          <para>Fornece serviços generalizados de suporte à construção de biblioteca</para>
           <indexterm zone="ch-system-libtool libtool">
             <primary sortas="b-libtool">libtool</primary>
           </indexterm>
@@ -101,8 +99,8 @@
       <varlistentry id="libtoolize">
         <term><command>libtoolize</command></term>
         <listitem>
-          <para>Provides a standard way to add <command>libtool</command>
-          support to a package</para>
+          <para>Fornece uma maneira padrão de adicionar suporte <command>libtool</command> a
+um pacote</para>
           <indexterm zone="ch-system-libtool libtoolize">
             <primary sortas="b-libtoolize">libtoolize</primary>
           </indexterm>
@@ -112,7 +110,7 @@
       <varlistentry id="libltdl">
         <term><filename class="libraryfile">libltdl</filename></term>
         <listitem>
-          <para>Hides the various difficulties of opening dynamically loaded libraries</para>
+          <para>Esconde as várias dificuldades do abrir dinamicamente bibliotecas carregadas</para>
           <indexterm zone="ch-system-libtool libltdl">
             <primary sortas="c-libltdl">libltdl</primary>
           </indexterm>

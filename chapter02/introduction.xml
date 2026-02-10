@@ -8,11 +8,11 @@
 <sect1 id="ch-partitioning-introduction">
   <?dbhtml filename="introduction.html"?>
 
-  <title>Introduction</title>
+  <title>Introdução</title>
 
-  <para>In this chapter, the host tools needed for building LFS
-  are checked and, if necessary, installed.  Then a partition which will
-  host the LFS system is prepared. We will create the partition
-  itself, create a file system on it, and mount it.</para>
+  <para>Neste capítulo, as ferramentas do anfitrião necessárias para a construção do
+LFS são verificadas e, se necessário, instaladas. Então uma partição que
+hospedará o sistema LFS é preparada. Nós criaremos a própria partição,
+criaremos um sistema de arquivos nela e a montaremos.</para>
 
 </sect1>

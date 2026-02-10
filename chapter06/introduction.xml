@@ -8,24 +8,24 @@
 <sect1 id="ch-tools-introduction-cross">
   <?dbhtml filename="introduction.html"?>
 
-  <title>Introduction</title>
+  <title>Introdução</title>
 
-  <para>This chapter shows how to cross-compile basic utilities using
-  the just built cross-toolchain. Those utilities are installed into
-  their final location, but cannot be used yet. Basic tasks still rely on
-  the host's tools. Nevertheless, the installed libraries are used when
-  linking.</para>
+  <para>Este capítulo mostra como compilar cruzadamente utilitários básicos usando o
+recém construído conjunto de ferramentas cruzados. Esses utilitários são
+instalados no local final deles, porém ainda não podem ser usados. Tarefas
+básicas ainda dependem das ferramentas do anfitrião. Apesar disso, as
+bibliotecas instaladas são usadas quando da vinculação.</para>
 
-  <para>Using the utilities will be possible in the next chapter after entering
-  the <quote>chroot</quote> environment. But all the packages built in the
-  present chapter need to be built before we do that. Therefore we cannot be
-  independent of the host system yet.</para>
+  <para>Usar os utilitários será possível no próximo capítulo após entrada no
+ambiente <quote>chroot</quote>. Porém, todos os pacotes construídos no
+presente capítulo precisam ser construídos antes que façamos isso. Dessa
+forma nós ainda não podemos ficar independentes do sistema anfitrião.</para>
 
-  <para>Once again, let us recall that improper setting of <envar>LFS</envar>
-  together with building as <systemitem class="username">root</systemitem>,
-  may render your computer unusable.
-  This whole chapter must be done as user <systemitem
-  class="username">lfs</systemitem>, with the environment as described in
-  <xref linkend="ch-preps-settingenviron" role='.'/></para>
+  <para>Uma vez mais, permita-nos relembrar que a configuração inapropriada de
+<envar>LFS</envar> junto com a construção como <systemitem
+class="username">root</systemitem>, possivelmente torne teu computador não
+usável. Este capítulo inteiro precisa ser feito como usuário(a) <systemitem
+class="username">lfs</systemitem>, com o ambiente conforme descrito na <xref
+linkend="ch-preps-settingenviron" role='.'/></para>
 
 </sect1>

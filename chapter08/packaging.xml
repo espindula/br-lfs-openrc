@@ -9,10 +9,8 @@
   <?dbhtml filename="packaging.html"?>
 
   <sect1info condition="script">
-    <productname>packaging</productname>
-    <productnumber>&packaging-version;</productnumber>
-    <address>&packaging-url;</address>
-  </sect1info>
+<productname>packaging</productname>
+<productnumber>&packaging-version;</productnumber> <address>&packaging-url;</address></sect1info>
 
   <title>Packaging-&packaging-version;</title>
 
@@ -24,11 +22,11 @@
     <title/>
 
     <para>
-      The packaging module is a Python library that provides utilities that
-      implement the interoperability specifications which have clearly one
-      correct behaviour (PEP440) or benefit greatly from having a single shared
-      implementation (PEP425). This includes utilities for version handling,
-      specifiers, markers, tags, and requirements.
+      O módulo de empacotamento é uma biblioteca Python que fornece utilitários
+que implementam as especificações de interoperabilidade que claramente têm
+um comportamento correto (PEP440) ou se beneficiam muito de ter uma
+implementação compartilhada (PEP425). Isso inclui utilitários para
+tratamento de versões, especificadores, marcadores, etiquetas e requisitos.
     </para>
 
     <segmentedlist>
@@ -43,28 +41,28 @@
   </sect2>
 
   <sect2 role="installation">
-    <title>Installation of Packaging</title>
+    <title>Instalação do Packaging</title>
 
-    <para>Compile packaging with the following command:</para>
+    <para>Compile packaging com o seguinte comando:</para>
 
 <screen><userinput remap="make">pip3 wheel -w dist --no-cache-dir --no-build-isolation --no-deps $PWD</userinput></screen>
 
-    <para>Install packaging with the following command:</para>
+    <para>Instale packaging com o seguinte comando:</para>
 
 <screen><userinput remap="install">pip3 install --no-index --find-links dist packaging</userinput></screen>
 
   </sect2>
 
   <sect2 id="contents-packaging" role="content">
-    <title>Contents of Packaging</title>
+    <title>Conteúdo do Packaging</title>
 
     <segmentedlist>
-      <segtitle>Installed directories</segtitle>
+      <segtitle>Diretórios instalados</segtitle>
 
       <seglistitem>
         <seg>
-           /usr/lib/python&python-minor;/site-packages/packaging and
-           /usr/lib/python&python-minor;/site-packages/packaging-&packaging-version;.dist-info
+           /usr/lib/python&python-minor;/site-packages/packaging e
+/usr/lib/python&python-minor;/site-packages/packaging-&packaging-version;.dist-info
         </seg>
       </seglistitem>
     </segmentedlist>

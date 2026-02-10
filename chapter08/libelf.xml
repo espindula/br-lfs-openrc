@@ -9,12 +9,10 @@
   <?dbhtml filename="libelf.html"?>
 
   <sect1info condition="script">
-    <productname>libelf</productname>
-    <productnumber>&elfutils-version;</productnumber>
-    <address>&elfutils-url;</address>
-  </sect1info>
+<productname>libelf</productname>
+<productnumber>&elfutils-version;</productnumber> <address>&elfutils-url;</address></sect1info>
 
-  <title>Libelf from Elfutils-&elfutils-version;</title>
+  <title>Libelf originário do Elfutils-&elfutils-version;</title>
 
   <indexterm zone="ch-system-libelf">
     <primary sortas="a-Libelf">Libelf</primary>
@@ -23,8 +21,8 @@
   <sect2 role="package">
     <title/>
 
-    <para>Libelf is a library for handling ELF (Executable and Linkable Format)
-    files.</para>
+    <para>Libelf é uma biblioteca para lidar com arquivos ELF (Executable and Linkable
+Format).</para>
 
     <segmentedlist>
       <segtitle>&buildtime;</segtitle>
@@ -39,23 +37,22 @@
   </sect2>
 
   <sect2 role="installation">
-    <title>Installation of Libelf</title>
+    <title>Instalação do Libelf</title>
 
-      <para>Libelf is part of the elfutils-&elfutils-version; package. Use
-      the elfutils-&elfutils-version;.tar.bz2 file as the source tarball.</para>
+      <para>Libelf é parte do pacote elfutils-&elfutils-version;. Use o arquivo
+elfutils-&elfutils-version;.tar.bz2 como o tarball fonte.</para>
 
-    <para>Prepare Libelf for compilation:</para>
+    <para>Prepare Libelf para compilação:</para>
 
     <screen><userinput remap="configure">./configure --prefix=/usr        \
             --disable-debuginfod \
             --enable-libdebuginfod=dummy</userinput></screen>
 
-    <para>Compile only Libelf:</para>
+    <para>Compile somente o Libelf:</para>
 
-<screen><userinput remap="make">make -C lib
-make -C libelf</userinput></screen>
 <!--
-    <para>To test the results, issue:</para>
+    <para>
+To test the results, issue:</para>
 
 <screen><userinput remap="test">make -k check</userinput></screen>
 
@@ -63,9 +60,12 @@ make -C libelf</userinput></screen>
     as well as the unit tests. Two tests are known to fail: dwarf_srclang_check
     and run-backtrace-native-core.sh.</para>
 -->
-    <para>The test suite fails to build with glibc-2.43 or newer.</para>
+<screen><userinput remap="make">make -C lib
+make -C libelf</userinput></screen>
 
-    <para>Install only Libelf:</para>
+    <para>A suíte de teste falha para construir com glibc-2.43 ou mais recente.</para>
+
+    <para>Instale somente o Libelf:</para>
 
 <screen><userinput remap="install">make -C libelf install
 install -vm644 config/libelf.pc /usr/lib/pkgconfig
@@ -74,11 +74,11 @@ rm /usr/lib/libelf.a</userinput></screen>
   </sect2>
 
   <sect2 id="contents-elfutils" role="content">
-    <title>Contents of Libelf</title>
+    <title>Conteúdo do Libelf</title>
 
     <segmentedlist>
-      <segtitle>Installed library</segtitle>
-      <segtitle>Installed directory</segtitle>
+      <segtitle>Biblioteca instalada</segtitle>
+      <segtitle>Diretório instalado</segtitle>
 
       <seglistitem>
         <seg>
@@ -92,14 +92,13 @@ rm /usr/lib/libelf.a</userinput></screen>
     </segmentedlist>
 
     <variablelist>
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
+      <bridgehead renderas="sect3">Descrições Curtas</bridgehead>
+      <?dbfo list-presentation="list"?> <?dbhtml list-presentation="table"?>
 
       <varlistentry id="libelf">
         <term><filename class="libraryfile">libelf.so</filename></term>
         <listitem>
-          <para>Contains API functions to handle ELF object files</para>
+          <para>Contém funções de API para lidar com arquivos objeto ELF</para>
           <indexterm zone="ch-system-libelf libelf">
             <primary sortas="c-libelf">libelf</primary>
           </indexterm>

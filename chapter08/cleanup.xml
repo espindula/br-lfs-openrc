@@ -8,33 +8,33 @@
 <sect1 id="ch-system-cleanup">
   <?dbhtml filename="cleanup.html"?>
 
-  <title>Cleaning Up</title>
+  <title>Limpando</title>
 
-  <para>Finally, clean up some extra files left over from running tests:</para>
+  <para>Finalmente, limpe alguns arquivos extras deixados pela execução de testes:</para>
 
   <screen><userinput>rm -rf /tmp/{*,.*}</userinput></screen>
 
-  <para>There are also several files in the /usr/lib and /usr/libexec
-  directories with a file name extension of .la. These are "libtool archive"
-  files. On a modern Linux system the libtool .la files are
-  only useful for libltdl.  No libraries in LFS are expected to be loaded
-  by libltdl, and it's known that some .la files can break BLFS package
-  builds.  Remove those files now:</para>
+  <para>Existem também vários arquivos nos diretórios /usr/lib e /usr/libexec com
+uma extensão de nome de arquivo de .la. Esses são arquivos "libtool
+archive". Em um sistema moderno Linux, os arquivos .la da libtool somente
+são úteis para a libltdl. Nenhuma biblioteca no LFS é esperada ser carregada
+pela libltdl e é sabido que alguns arquivos .la conseguem quebrar
+construções de pacote do BLFS. Remova aqueles arquivos agora:</para>
 
 <screen><userinput>find /usr/lib /usr/libexec -name \*.la -delete</userinput></screen>
 
-   <para>For more information about libtool archive files, see the <ulink
-   url="&blfs-book;introduction/la-files.html">BLFS section "About Libtool
-   Archive (.la) files"</ulink>.</para>
+   <para>Para mais informação acerca de arquivos libtool archive, veja-se a <ulink
+url="&blfs-book;introduction/la-files.html">seção do BLFS "About Libtool
+Archive (.la) files"</ulink>.</para>
 
-   <para>The compiler built in <xref linkend="chapter-temporary-tools"/> and
-   <xref linkend="chapter-chroot-temporary-tools"/> is still partially
-   installed and not needed anymore. Remove it with:</para>
+   <para>O compilador construído em <xref linkend="chapter-temporary-tools"/> e <xref
+linkend="chapter-chroot-temporary-tools"/> ainda está instalado parcialmente
+e não é mais necessário. Remova-o com:</para>
 
 <screen><userinput>find /usr -depth -name $(uname -m)-lfs-linux-gnu\* | xargs rm -rf</userinput></screen>
 
-   <para>Finally, remove the temporary 'tester' user account created at the
-   beginning of the previous chapter.</para>
+   <para>Finalmente, remova a conta temporária do(a) usuário(a) 'tester' criada no
+início do capítulo anterior.</para>
 
 <screen><userinput>userdel -r tester</userinput></screen>
 </sect1>

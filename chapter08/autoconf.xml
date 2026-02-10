@@ -9,10 +9,8 @@
   <?dbhtml filename="autoconf.html"?>
 
   <sect1info condition="script">
-    <productname>autoconf</productname>
-    <productnumber>&autoconf-version;</productnumber>
-    <address>&autoconf-url;</address>
-  </sect1info>
+<productname>autoconf</productname>
+<productnumber>&autoconf-version;</productnumber> <address>&autoconf-url;</address></sect1info>
 
   <title>Autoconf-&autoconf-version;</title>
 
@@ -23,8 +21,8 @@
   <sect2 role="package">
     <title/>
 
-    <para>The Autoconf package contains programs for producing shell scripts that
-    can automatically configure source code.</para>
+    <para>O pacote Autoconf contém aplicativos para produzir scripts de shell que
+conseguem configurar automaticamente código fonte.</para>
 
     <segmentedlist>
       <segtitle>&buildtime;</segtitle>
@@ -39,55 +37,56 @@
   </sect2>
 
   <sect2 role="installation">
-    <title>Installation of Autoconf</title>
+    <title>Instalação do Autoconf</title>
 
-    <para>Prepare Autoconf for compilation:</para>
+    <para>Prepare Autoconf para compilação:</para>
 
 <screen><userinput remap="configure">./configure --prefix=/usr</userinput></screen>
 
-    <para>Compile the package:</para>
+    <para>Compile o pacote:</para>
 
 <screen><userinput remap="make">make</userinput></screen>
 
-    <para>To test the results, issue:</para>
-<!--
-    <para>The test suite is currently broken by bash-5 and libtool-2.4.3.
+    <para>Para testar os resultados, emita:</para>
+
+<screen><!--
+    <para>
+The test suite is currently broken by bash-5 and libtool-2.4.3.
     To run the tests anyway, issue:</para>
  -->
-<screen><userinput remap="test">make check</userinput></screen>
+<userinput remap="test">make check</userinput></screen>
 
-    <para>Install the package:</para>
+    <para>Instale o pacote:</para>
 
 <screen><userinput remap="install">make install</userinput></screen>
 
   </sect2>
 
   <sect2 id="contents-autoconf" role="content">
-    <title>Contents of Autoconf</title>
+    <title>Conteúdo do Autoconf</title>
 
     <segmentedlist>
-      <segtitle>Installed programs</segtitle>
-      <segtitle>Installed directory</segtitle>
+      <segtitle>Programas instalados</segtitle>
+      <segtitle>Diretório instalado</segtitle>
 
       <seglistitem>
-        <seg>autoconf, autoheader, autom4te, autoreconf, autoscan, autoupdate,
-        and ifnames</seg>
+        <seg>autoconf, autoheader, autom4te, autoreconf, autoscan, autoupdate e ifnames</seg>
         <seg>/usr/share/autoconf</seg>
       </seglistitem>
     </segmentedlist>
 
     <variablelist>
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
+      <bridgehead renderas="sect3">Descrições Curtas</bridgehead>
+      <?dbfo list-presentation="list"?> <?dbhtml list-presentation="table"?>
 
       <varlistentry id="autoconf">
         <term><command>autoconf</command></term>
         <listitem>
-          <para>Produces shell scripts that automatically configure software
-          source code packages to adapt to many kinds of Unix-like systems;
-          the configuration scripts it produces are independent&mdash;running
-          them does not require the <command>autoconf</command> program</para>
+          <para>Produz scripts de shell que configuram automaticamente pacotes de código
+fonte de aplicativos para adaptar a muitos tipos de sistemas semelhantes a
+Unix; os scripts de configuração que ele produz são
+independentes&mdash;executá-los não exige o aplicativo
+<command>autoconf</command></para>
           <indexterm zone="ch-system-autoconf autoconf">
             <primary sortas="b-autoconf">autoconf</primary>
           </indexterm>
@@ -97,8 +96,8 @@
       <varlistentry id="autoheader">
         <term><command>autoheader</command> </term>
         <listitem>
-          <para>A tool for creating template files of C
-          <emphasis>#define</emphasis> statements for configure to use</para>
+          <para>Uma ferramenta para criar arquivos de modelo de declarações
+<emphasis>#define</emphasis> da C para o configure usar</para>
           <indexterm zone="ch-system-autoconf autoheader">
             <primary sortas="b-autoheader">autoheader</primary>
           </indexterm>
@@ -108,7 +107,7 @@
       <varlistentry id="autom4te">
         <term><command>autom4te</command></term>
         <listitem>
-          <para>A wrapper for the M4 macro processor</para>
+          <para>Um encapsulador para o processador de macro M4</para>
           <indexterm zone="ch-system-autoconf autom4te">
             <primary sortas="b-autom4te">autom4te</primary>
           </indexterm>
@@ -118,12 +117,12 @@
       <varlistentry id="autoreconf">
         <term><command>autoreconf</command></term>
         <listitem>
-          <para>Automatically runs <command>autoconf</command>,
-          <command>autoheader</command>, <command>aclocal</command>,
-          <command>automake</command>, <command>gettextize</command>, and
-          <command>libtoolize</command> in the correct order to save time
-          when changes are made to <command>autoconf</command> and
-          <command>automake</command> template files</para>
+          <para>Automaticamente executa <command>autoconf</command>,
+<command>autoheader</command>, <command>aclocal</command>,
+<command>automake</command>, <command>gettextize</command> e
+<command>libtoolize</command> na ordem correta para economizar tempo quando
+mudanças são feitas para arquivos de modelo <command>autoconf</command> e
+<command>automake</command></para>
           <indexterm zone="ch-system-autoconf autoreconf">
             <primary sortas="b-autoreconf">autoreconf</primary>
           </indexterm>
@@ -133,12 +132,11 @@
       <varlistentry id="autoscan">
         <term><command>autoscan</command> </term>
         <listitem>
-          <para>Helps to create a <filename>configure.in</filename> file for a
-          software package; it examines the source files in a directory tree,
-          searching them for common portability issues, and creates a
-          <filename>configure.scan</filename> file that serves as a
-          preliminary <filename>configure.in</filename> file for the
-          package</para>
+          <para>Ajuda a criar um arquivo <filename>configure.in</filename> para um pacote de
+aplicativos; ele examina os arquivos fonte em uma árvore de diretórios,
+procurando neles por problemas comuns de portabilidade e cria um arquivo
+<filename>configure.scan</filename> que serve como um arquivo
+<filename>configure.in</filename> preliminar para o pacote</para>
           <indexterm zone="ch-system-autoconf autoscan">
             <primary sortas="b-autoscan">autoscan</primary>
           </indexterm>
@@ -148,9 +146,9 @@
       <varlistentry id="autoupdate">
         <term><command>autoupdate</command></term>
         <listitem>
-          <para>Modifies a <filename>configure.in</filename> file that still
-          calls <command>autoconf</command> macros by their old names to use the
-          current macro names</para>
+          <para>Modifica um arquivo <filename>configure.in</filename> que ainda chama macros
+<command>autoconf</command> pelos nomes antigos delas para usar os nomes
+atuais de macro</para>
           <indexterm zone="ch-system-autoconf autoupdate">
             <primary sortas="b-autoupdate">autoupdate</primary>
           </indexterm>
@@ -160,13 +158,13 @@
       <varlistentry id="ifnames">
         <term><command>ifnames</command> </term>
         <listitem>
-          <para>Helps when writing <filename>configure.in</filename> files
-          for a software package; it prints the identifiers that the package
-          uses in C preprocessor conditionals [If a package has already been set
-          up to have some portability, this program can help determine what
-          <command>configure</command> needs to check for. It can also fill in
-          gaps in a <filename>configure.in</filename> file generated by
-          <command>autoscan</command>.]</para>
+          <para>Ajuda ao escrever arquivos <filename>configure.in</filename> para um pacote
+de aplicativos; ele imprime os identificadores que o pacote usa em
+condicionais de preprocessador C [Se um pacote já tenha sido configurado
+para ter alguma portabilidade, [então] esse aplicativo pode ajudar a
+determinar o que o <command>configure</command> precisa verificar. Ele
+também consegue preencher lacunas em um arquivo
+<filename>configure.in</filename> gerado pelo <command>autoscan</command>].</para>
           <indexterm zone="ch-system-autoconf ifnames">
             <primary sortas="b-ifnames">ifnames</primary>
           </indexterm>

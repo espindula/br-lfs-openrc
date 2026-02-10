@@ -8,59 +8,63 @@
 <sect1 id="ch-config-inputrc">
   <?dbhtml filename="inputrc.html"?>
 
-  <title>Creating the /etc/inputrc File</title>
+  <title>Criando o Arquivo /etc/inputrc</title>
 
   <indexterm zone="ch-config-inputrc">
     <primary sortas="e-/etc/inputrc">/etc/inputrc</primary>
   </indexterm>
 
-  <para>The <filename>inputrc</filename> file is the configuration file for
-  the readline library, which provides editing capabilities while the user is
-  entering  a line from the terminal. It works by translating keyboard inputs
-  into specific actions.  Readline is used by bash and most other shells as
-  well as many other applications.</para>
+  <para>O arquivo <filename>inputrc</filename> é o arquivo de configuração para a
+biblioteca readline, a qual fornece recursos de edição enquanto o(a)
+usuário(a) estiver digitando uma linha a partir do terminal. Ele funciona
+traduzindo entradas geradas do teclado em ações específicas. Readline é
+usada pelo Bash e pela maioria dos outros shells, bem como muitos outros
+aplicativos.</para>
 
-  <para>Most people do not need user-specific functionality so the command
-  below creates a global <filename>/etc/inputrc</filename> used by everyone who
-  logs in. If you later decide you need to override the defaults on a per user
-  basis, you can create a <filename>.inputrc</filename> file in the user's home
-  directory with the modified mappings.</para>
+  <para>A maioria das pessoas não necessita de funcionalidade específica de
+usuário(a), de forma que o comando abaixo cria um
+<filename>/etc/inputrc</filename> global usado por qualquer um(a) que se
+logue. Se posteriormente decidir que precisa sobrepor os padrões em uma base
+por usuário(a), [então] você pode criar um arquivo
+<filename>.inputrc</filename> no diretório lar do(a) usuário(a) com os
+mapeamentos modificados.</para>
 
-  <para>For more information on how to edit the <filename>inputrc</filename>
-  file, see <command>info bash</command> under the <emphasis>Readline Init
-  File</emphasis> section. <command>info readline</command> is also a good
-  source of information.</para>
+  <para>Para mais informação a respeito de como editar o arquivo
+<filename>inputrc</filename>, veja-se <command>info bash</command> sob a
+seção <emphasis>Readline Init File</emphasis>. <command>info
+readline</command> também é uma boa fonte de informação.</para>
 
-  <para>Below is a generic global <filename>inputrc</filename> along with comments
-  to explain what the various options do. Note that comments cannot be on the same
-  line as commands. Create the file using the following command:</para>
+  <para>Abaixo está um <filename>inputrc</filename> global genérico junto com
+comentários para explicar o que as várias opções fazem. Observe que os
+comentários não podem estar na mesma linha que os comandos. Crie o arquivo
+usando o seguinte comando:</para>
 
 <screen><userinput>cat &gt; /etc/inputrc &lt;&lt; "EOF"
-<literal># Begin /etc/inputrc
-# Modified by Chris Lynn &lt;roryo@roryo.dynup.net&gt;
+<literal># Início do /etc/inputrc
+# Modificado por Chris Lynn &lt;roryo@roryo.dynup.net&gt;
 
-# Allow the command prompt to wrap to the next line
+# Permite ao prompt de comando passar para a próxima linha
 set horizontal-scroll-mode Off
 
-# Enable 8-bit input
+# Habilita entrada gerada de 8 bits
 set meta-flag On
 set input-meta On
 
-# Turns off 8th bit stripping
+# Desliga o despojamento do oitavo bit
 set convert-meta Off
 
-# Keep the 8th bit for display
+# Mantém o oitavo bit para exibir
 set output-meta On
 
-# none, visible or audible
+# nada, visível ou audível
 set bell-style none
 
-# All of the following map the escape sequence of the value
-# contained in the 1st argument to the readline specific functions
+# Tudo do seguinte mapeia a sequência de escape do valor contido no
+# primeiro argumento para as funções específicas do readline
 "\eOd": backward-word
 "\eOc": forward-word
 
-# for linux console
+# Para o console do Linux
 "\e[1~": beginning-of-line
 "\e[4~": end-of-line
 "\e[5~": beginning-of-history
@@ -68,15 +72,15 @@ set bell-style none
 "\e[3~": delete-char
 "\e[2~": quoted-insert
 
-# for xterm
+# Para o xterm
 "\eOH": beginning-of-line
 "\eOF": end-of-line
 
-# for Konsole
+# Para o Konsole
 "\e[H": beginning-of-line
 "\e[F": end-of-line
 
-# End /etc/inputrc</literal>
+# Fim do /etc/inputrc</literal>
 EOF</userinput></screen>
 
 </sect1>

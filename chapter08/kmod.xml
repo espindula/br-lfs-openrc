@@ -9,10 +9,8 @@
   <?dbhtml filename="kmod.html"?>
 
   <sect1info condition="script">
-    <productname>kmod</productname>
-    <productnumber>&kmod-version;</productnumber>
-    <address>&kmod-url;</address>
-  </sect1info>
+<productname>kmod</productname>
+<productnumber>&kmod-version;</productnumber> <address>&kmod-url;</address></sect1info>
 
   <title>Kmod-&kmod-version;</title>
 
@@ -23,8 +21,8 @@
   <sect2 role="package">
     <title/>
 
-    <para>The Kmod package contains libraries and utilities for loading kernel
-    modules</para>
+    <para>O pacote Kmod contém bibliotecas e utilitários para carregar módulos de
+núcleo</para>
 
     <segmentedlist>
       <segtitle>&buildtime;</segtitle>
@@ -39,9 +37,9 @@
   </sect2>
 
   <sect2 role="installation">
-    <title>Installation of Kmod</title>
+    <title>Instalação do Kmod</title>
 
-    <para>Prepare Kmod for compilation:</para>
+    <para>Prepare Kmod para compilação:</para>
 
     <screen><userinput remap="configure">mkdir -p build
 cd       build
@@ -51,61 +49,60 @@ meson setup --prefix=/usr ..    \
             -D manpages=false</userinput></screen>
 
     <variablelist>
-      <title>The meaning of the configure options:</title>
+      <title>O significado das opções do configure:</title>
 
       <varlistentry>
         <term>
           <parameter>-D manpages=false</parameter>
         </term>
         <listitem>
-          <para>This option disables generating the man pages which
-          requires an external program.</para>
+          <para>Essa opção desabilita gerar as páginas de manual, o que exige um programa
+externo.</para>
         </listitem>
       </varlistentry>
 
     </variablelist>
 
-    <para>Compile the package:</para>
+    <para>Compile o pacote:</para>
 
 <screen><userinput remap="make">ninja</userinput></screen>
 
-    <para>The test suite of this package requires raw kernel headers
-    (not the <quote>sanitized</quote> kernel headers installed earlier),
-    which are beyond the scope of LFS.</para>
+    <para>A suíte de teste desse pacote exige cabeçalhos crus de núcleo (não os
+cabeçalhos <quote>sanitizados</quote> de núcleo instalados anteriormente),
+os quais estão além do escopo do LFS.</para>
 
-    <para>Now install the package:</para>
+    <para>Agora instale o pacote:</para>
 
 <screen><userinput remap="install">ninja install</userinput></screen>
 
   </sect2>
 
   <sect2 id="contents-kmod" role="content">
-    <title>Contents of Kmod</title>
+    <title>Conteúdo do Kmod</title>
 
     <segmentedlist>
-      <segtitle>Installed programs</segtitle>
-      <segtitle>Installed library</segtitle>
+      <segtitle>Programas instalados</segtitle>
+      <segtitle>Biblioteca instalada</segtitle>
 
       <seglistitem>
-        <seg>depmod (link to kmod), insmod (link to kmod), kmod,
-        lsmod (link to kmod), modinfo (link to kmod), modprobe (link to kmod),
-        and rmmod (link to kmod)</seg>
+        <seg>depmod (link para kmod), insmod (link para kmod), kmod, lsmod (link para
+kmod), modinfo (link para kmod), modprobe (link para kmod) e rmmod (link
+para kmod)</seg>
         <seg>libkmod.so</seg>
       </seglistitem>
     </segmentedlist>
 
     <variablelist>
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
+      <bridgehead renderas="sect3">Descrições Curtas</bridgehead>
+      <?dbfo list-presentation="list"?> <?dbhtml list-presentation="table"?>
 
       <varlistentry id="depmod">
         <term><command>depmod</command></term>
         <listitem>
-          <para>Creates a dependency file based on the symbols it finds in the
-          existing set of modules; this dependency file is used by
-          <command>modprobe</command> to automatically load the required
-          modules</para>
+          <para>Cria um arquivo de dependência baseado nos símbolos que ele encontrar no
+conjunto existente de módulos; esse arquivo de dependência é usado pelo
+<command>modprobe</command> para carregar automaticamente os módulos
+exigidos</para>
           <indexterm zone="ch-system-kmod depmod">
             <primary sortas="b-depmod">depmod</primary>
           </indexterm>
@@ -115,7 +112,7 @@ meson setup --prefix=/usr ..    \
       <varlistentry id="insmod">
         <term><command>insmod</command></term>
         <listitem>
-          <para>Installs a loadable module in the running kernel</para>
+          <para>Instala um módulo carregável no núcleo em execução</para>
           <indexterm zone="ch-system-kmod insmod">
             <primary sortas="b-insmod">insmod</primary>
           </indexterm>
@@ -125,7 +122,7 @@ meson setup --prefix=/usr ..    \
       <varlistentry id="kmod">
         <term><command>kmod</command></term>
         <listitem>
-          <para>Loads and unloads kernel modules</para>
+          <para>Carrega e descarrega módulos de núcleo</para>
           <indexterm zone="ch-system-kmod kmod">
             <primary sortas="b-kmod">kmod</primary>
           </indexterm>
@@ -135,7 +132,7 @@ meson setup --prefix=/usr ..    \
       <varlistentry id="lsmod">
         <term><command>lsmod</command></term>
         <listitem>
-          <para>Lists currently loaded modules</para>
+          <para>Lista módulos atualmente carregados</para>
           <indexterm zone="ch-system-kmod lsmod">
             <primary sortas="b-lsmod">lsmod</primary>
           </indexterm>
@@ -145,8 +142,8 @@ meson setup --prefix=/usr ..    \
       <varlistentry id="modinfo">
         <term><command>modinfo</command></term>
         <listitem>
-          <para>Examines an object file associated with a kernel module and
-          displays any information that it can glean</para>
+          <para>Examina um arquivo objeto associado com um módulo de núcleo e exibe qualquer
+informação que ele consiga coletar</para>
           <indexterm zone="ch-system-kmod modinfo">
             <primary sortas="b-modinfo">modinfo</primary>
           </indexterm>
@@ -156,8 +153,8 @@ meson setup --prefix=/usr ..    \
       <varlistentry id="modprobe">
         <term><command>modprobe</command></term>
         <listitem>
-          <para>Uses a dependency file, created by
-          <command>depmod</command>, to automatically load relevant modules</para>
+          <para>Usa um arquivo de dependência, criado pelo <command>depmod</command>, para
+carregar automaticamente módulos relevantes</para>
           <indexterm zone="ch-system-kmod modprobe">
             <primary sortas="b-modprobe">modprobe</primary>
           </indexterm>
@@ -167,7 +164,7 @@ meson setup --prefix=/usr ..    \
       <varlistentry id="rmmod">
         <term><command>rmmod</command></term>
         <listitem>
-          <para>Unloads modules from the running kernel</para>
+          <para>Descarrega módulos a partir do núcleo em execução</para>
           <indexterm zone="ch-system-kmod rmmod">
             <primary sortas="b-rmmod">rmmod</primary>
           </indexterm>
@@ -177,8 +174,8 @@ meson setup --prefix=/usr ..    \
       <varlistentry id="libkmod">
         <term><filename class="libraryfile">libkmod</filename></term>
         <listitem>
-          <para>This library is used by other programs to load and unload kernel
-           modules</para>
+          <para>Essa biblioteca é usada por outros aplicativos para carregar e descarregar
+módulos de núcleo</para>
           <indexterm zone="ch-system-kmod">
             <primary sortas="c-libkmod">libkmod</primary>
           </indexterm>

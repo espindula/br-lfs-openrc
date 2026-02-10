@@ -9,22 +9,20 @@
   <?dbhtml filename="util-linux.html"?>
 
   <sect1info condition="script">
-    <productname>util-linux</productname>
-    <productnumber>&util-linux-version;</productnumber>
-    <address>&util-linux-url;</address>
-  </sect1info>
+<productname>util-linux</productname>
+<productnumber>&util-linux-version;</productnumber> <address>&util-linux-url;</address></sect1info>
 
   <title>Util-linux-&util-linux-version;</title>
 
   <indexterm zone="ch-tools-util-linux">
     <primary sortas="a-Util-linux">Util-linux</primary>
-    <secondary>tools</secondary>
+    <secondary>ferramentas</secondary>
   </indexterm>
 
   <sect2 role="package">
     <title/>
 
-    <para>The Util-linux package contains miscellaneous utility programs.</para>
+    <para>O pacote Util-linux contém diversos aplicativos utilitários.</para>
 
     <segmentedlist>
       <segtitle>&buildtime;</segtitle>
@@ -39,17 +37,16 @@
   </sect2>
 
   <sect2 role="installation">
-    <title>Installation of Util-linux</title>
+    <title>Instalação do Util-linux</title>
 
-    <para>The FHS recommends using the <filename
-    class="directory">/var/lib/hwclock</filename> directory instead of the
-    usual <filename class="directory">/etc</filename> directory as the
-    location for the <filename>adjtime</filename> file. Create this directory
-    with:</para>
+    <para>O FHS recomenda usar o diretório <filename
+class="directory">/var/lib/hwclock</filename> em vez do usual diretório
+<filename class="directory">/etc</filename> como o local para o arquivo
+<filename>adjtime</filename>. Crie esse diretório com:</para>
 
 <screen><userinput remap="pre">mkdir -pv /var/lib/hwclock</userinput></screen>
 
-    <para>Prepare Util-linux for compilation:</para>
+    <para>Prepare o Util-linux para compilação:</para>
 
     <screen><userinput remap="configure">./configure --libdir=/usr/lib     \
             --runstatedir=/run    \
@@ -67,61 +64,60 @@
             --docdir=/usr/share/doc/util-linux-&util-linux-version;</userinput></screen>
 
     <variablelist>
-      <title>The meaning of the configure options:</title>
+      <title>O significado das opções do configure:</title>
 
       <varlistentry>
         <term><parameter>ADJTIME_PATH=/var/lib/hwclock/adjtime</parameter></term>
         <listitem>
-          <para>This sets the location of the file recording information about
-          the hardware clock in accordance to the FHS. This is not strictly
-          needed for this temporary tool, but it prevents creating a file
-          at another location, which would not be overwritten or removed
-          when building the final util-linux package.</para>
+          <para>Isso configura o local do arquivo gravando informação acerca do relógio de
+hardware de acordo com o FHS. Isso não é estritamente necessário para essa
+ferramenta temporária, porém impede a criação de um arquivo em outro local,
+o qual não seria sobrescrito ou removido quando da construção do pacote
+util-linux final.</para>
         </listitem>
       </varlistentry>
 
       <varlistentry>
         <term><parameter>--libdir=/usr/lib</parameter></term>
         <listitem>
-          <para>This switch ensures the
-          <filename class="extension">.so</filename> symlinks targeting
-          the shared library file in the same directory
-          (<filename class="directory">/usr/lib</filename>) directly.</para>
+          <para>Essa chave assegura que os links simbólicos <filename
+class="extension">.so</filename> apontem para o arquivo de biblioteca
+compartilhada no mesmo diretório (<filename
+class="directory">/usr/lib</filename>) diretamente.</para>
         </listitem>
       </varlistentry>
 
       <varlistentry>
         <term><parameter>--disable-*</parameter></term>
         <listitem>
-          <para>These switches prevent warnings about building components
-          that require packages not in LFS or not installed yet.</para>
+          <para>Essas chaves evitam avisos acerca de componentes de construção que exigem
+pacotes que não estão no LFS ou ainda não estão instalados.</para>
         </listitem>
       </varlistentry>
 
       <varlistentry>
         <term><parameter>--without-python</parameter></term>
         <listitem>
-          <para>This switch disables using <application>Python</application>.
-          It avoids trying to build unneeded bindings.</para>
+          <para>Essa chave desabilita o uso do <application>Python</application>. Ela evita
+tentar construir ligações desnecessárias.</para>
         </listitem>
       </varlistentry>
 
       <varlistentry>
         <term><parameter>runstatedir=/run</parameter></term>
         <listitem>
-          <para>This switch sets the location of the socket used by
-          <command>uuidd</command> and
-          <filename class="libraryfile">libuuid</filename> correctly.</para>
+          <para>Essa chave configura corretamente o local do soquete usado por
+<command>uuidd</command> e <filename class="libraryfile">libuuid</filename>.</para>
         </listitem>
       </varlistentry>
 
      </variablelist>
 
-    <para>Compile the package:</para>
+    <para>Compile o pacote:</para>
 
 <screen><userinput remap="make">make</userinput></screen>
 
-    <para>Install the package:</para>
+    <para>Instale o pacote:</para>
 
 <screen><userinput remap="install">make install</userinput></screen>
 
@@ -130,7 +126,8 @@
   <sect2 role="content">
     <title/>
 
-    <para>Details on this package are located in <xref linkend="contents-utillinux" role="."/></para>
+    <para>Detalhes acerca deste pacote estão localizados na <xref
+linkend="contents-utillinux" role="."/></para>
 
   </sect2>
 

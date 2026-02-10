@@ -9,10 +9,8 @@
   <?dbhtml filename="libcap.html"?>
 
   <sect1info condition="script">
-    <productname>libcap</productname>
-    <productnumber>&libcap-version;</productnumber>
-    <address>&libcap-url;</address>
-  </sect1info>
+<productname>libcap</productname>
+<productnumber>&libcap-version;</productnumber> <address>&libcap-url;</address></sect1info>
 
   <title>Libcap-&libcap-version;</title>
 
@@ -23,10 +21,10 @@
   <sect2 role="package">
     <title/>
 
-    <para>The Libcap package implements the userspace interface to the POSIX
-    1003.1e capabilities available in Linux kernels. These capabilities
-    partition the all-powerful root privilege into a set of distinct
-    privileges.</para>
+    <para>O pacote Libcap implementa a interface do espaço de usuário(a) para os
+recursos POSIX 1003.1e disponíveis em núcleos Linux. Esses recursos
+particionam o todo poderoso privilégio de root em um conjunto de privilégios
+distintos.</para>
 
     <segmentedlist>
       <segtitle>&buildtime;</segtitle>
@@ -41,71 +39,70 @@
   </sect2>
 
   <sect2 role="installation">
-    <title>Installation of Libcap</title>
+    <title>Instalação do Libcap</title>
 
     <note>
       <para>
-        If updating this package on an existing system and the go compiler is
-        installed, prevent a build error by using <command>export GOLANG=no</command>
-        before running the commands below.  Be sure to unset <envar>GOLANG</envar>
-        after installation is complete.
+        Se atualizar esse pacote em um sistema existente e o compilador Go estiver
+instalado, evite um erro de construção usando <command>export
+GOLANG=no</command> antes de executar os comandos abaixo. Certifique-se de
+desconfigurar <envar>GOLANG</envar> depois que a instalação estiver
+completa.
       </para>
     </note>
 
-    <para>Prevent static libraries from being installed:</para>
+    <para>Impeça bibliotecas estáticas de serem instaladas:</para>
 
 <screen><userinput remap="pre">sed -i '/install -m.*STA/d' libcap/Makefile</userinput></screen>
 
-    <para>Compile the package:</para>
+    <para>Compile o pacote:</para>
 
 <screen><userinput remap="make">make prefix=/usr lib=lib</userinput></screen>
 
     <variablelist>
-      <title>The meaning of the make option:</title>
+      <title>O significado da opção do make:</title>
 
       <varlistentry>
         <term><parameter>lib=lib</parameter></term>
         <listitem>
-          <para>This parameter sets the library directory to
-          <filename>/usr/lib</filename> rather than
-          <filename>/usr/lib64</filename> on x86_64. It has no effect on
-          x86.</para>
+          <para>Esse parâmetro configura o diretório de biblioteca para
+<filename>/usr/lib</filename> em vez de <filename>/usr/lib64</filename> em
+x86_64. Ele não tem efeito em x86.</para>
         </listitem>
       </varlistentry>
     </variablelist>
 
-    <para>To test the results, issue:</para>
+    <para>Para testar os resultados, emita:</para>
 
 <screen><userinput remap="test">make test</userinput></screen>
 
-    <para>Install the package:</para>
+    <para>Instale o pacote:</para>
 
 <screen><userinput remap="install">make prefix=/usr lib=lib install</userinput></screen>
 
   </sect2>
 
   <sect2 id="contents-libcap" role="content">
-    <title>Contents of Libcap</title>
+    <title>Conteúdo do Libcap</title>
 
     <segmentedlist>
-      <segtitle>Installed programs</segtitle>
-      <segtitle>Installed library</segtitle>
+      <segtitle>Programas instalados</segtitle>
+      <segtitle>Biblioteca instalada</segtitle>
 
       <seglistitem>
-        <seg>capsh, getcap, getpcaps, and setcap</seg>
-        <seg>libcap.so and libpsx.so</seg>
+        <seg>capsh, getcap, getpcaps e setcap</seg>
+        <seg>libcap.so e libpsx.so</seg>
       </seglistitem>
     </segmentedlist>
 
     <variablelist>
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
+      <bridgehead renderas="sect3">Descrições Curtas</bridgehead>
+      <?dbfo list-presentation="list"?> <?dbhtml list-presentation="table"?>
 
       <varlistentry id="capsh">
         <term><command>capsh</command></term>
         <listitem>
-          <para>A shell wrapper to explore and constrain capability support</para>
+          <para>Um encapsulador de shell para explorar e restringir suporte a recurso</para>
           <indexterm zone="ch-system-libcap capsh">
             <primary sortas="b-capsh">capsh</primary>
           </indexterm>
@@ -115,7 +112,7 @@
       <varlistentry id="getcap">
         <term><command>getcap</command></term>
         <listitem>
-          <para>Examines file capabilities</para>
+          <para>Examina recursos do arquivo</para>
           <indexterm zone="ch-system-libcap getcap">
             <primary sortas="b-getcap">getcap</primary>
           </indexterm>
@@ -125,7 +122,7 @@
       <varlistentry id="getpcaps">
         <term><command>getpcaps</command></term>
         <listitem>
-          <para>Displays the capabilities of the queried process(es)</para>
+          <para>Exibe os recursos do(s) processo(s) consultado(s)</para>
           <indexterm zone="ch-system-libcap getpcaps">
             <primary sortas="b-getpcaps">getpcaps</primary>
           </indexterm>
@@ -135,7 +132,7 @@
       <varlistentry id="setcap">
         <term><command>setcap</command></term>
         <listitem>
-          <para>Sets file capabilities</para>
+          <para>Configura recursos do arquivo</para>
           <indexterm zone="ch-system-libcap setcap">
             <primary sortas="b-setcap">setcap</primary>
           </indexterm>
@@ -145,8 +142,7 @@
       <varlistentry id="libcap">
         <term><filename class="libraryfile">libcap</filename></term>
         <listitem>
-          <para>Contains the library functions for manipulating POSIX 1003.1e
-          capabilities</para>
+          <para>Contém as funções de biblioteca para manipular recursos POSIX 1003.1e</para>
           <indexterm zone="ch-system-libcap libcap">
             <primary sortas="c-libcap">libcap</primary>
           </indexterm>
@@ -156,8 +152,8 @@
       <varlistentry id="libpsx">
         <term><filename class="libraryfile">libpsx</filename></term>
         <listitem>
-          <para>Contains functions to support POSIX semantics for syscalls
-          associated with the pthread library</para>
+          <para>Contém funções para suportar semântica POSIX para chamadas de sistema
+associadas com a biblioteca pthread</para>
           <indexterm zone="ch-system-libcap libpsx">
             <primary sortas="c-libpsx">libpsx</primary>
           </indexterm>

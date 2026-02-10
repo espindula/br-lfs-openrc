@@ -9,12 +9,10 @@
   <?dbhtml filename="udev.html"?>
 
   <sect1info condition="script">
-    <productname>udev</productname>
-    <productnumber>&systemd-version;</productnumber>
-    <address>&systemd-url;</address>
-  </sect1info>
+<productname>udev</productname>
+<productnumber>&systemd-version;</productnumber> <address>&systemd-url;</address></sect1info>
 
-  <title>Udev from Systemd-&systemd-version;</title>
+  <title>Udev originário de Systemd-&systemd-version;</title>
 
   <indexterm zone="ch-system-udev">
     <primary sortas="a-Udev">Udev</primary>
@@ -23,8 +21,8 @@
   <sect2 role="package">
     <title/>
 
-    <para>The Udev package contains programs for dynamic creation of device
-    nodes.</para>
+    <para>O pacote "Udev" contém aplicativos para criação dinâmica de nós de
+dispositivos.</para>
 
     <segmentedlist>
       <segtitle>&buildtime;</segtitle>
@@ -38,35 +36,36 @@
   </sect2>
 
   <sect2 role="installation">
-    <title>Installation of Udev</title>
+    <title>Instalação do "Udev"</title>
 
-    <para>Udev is part of the systemd-&systemd-version; package. Use
-    the systemd-&systemd-version;.tar.xz file as the source tarball.</para>
+    <para>O "Udev" é parte do pacote systemd-&systemd-version;. Use o arquivo
+systemd-&systemd-version;.tar.xz como o tarball fonte.</para>
 
-    <para>Remove two unneeded groups,
-    <systemitem class="groupname">render</systemitem> and
-    <systemitem class="groupname">sgx</systemitem>, from the default udev
-    rules:</para>
+    <para>Remova dois grupos desnecessários, <systemitem
+class="groupname">render</systemitem> e <systemitem
+class="groupname">sgx</systemitem>, das regras padrão do "udev":</para>
 
  <screen><userinput remap="pre">sed -e 's/GROUP="render"/GROUP="video"/' \
     -e 's/GROUP="sgx", //'               \
     -i rules.d/50-udev-default.rules.in</userinput></screen>
 
-    <para>Remove one udev rule requiring a full Systemd installation:</para>
+    <para>Remova uma regra do "udev" que exige uma instalação completa do "Systemd":</para>
 
- <screen><userinput remap="pre">sed -i '/systemd-sysctl/s/^/#/' rules.d/99-systemd.rules.in</userinput></screen>
-<!-- Not needed in 258.1
-    <para>Fix a bug that prevents udev from running correctly:</para>
+ <!-- Not needed in 258.1
+    <para>
+Fix a bug that prevents udev from running correctly:</para>
 
 <screen><userinput remap="pre">sed -i "/udev_dependencies,/a \                'link_with': udev_link_with," src/udev/meson.build</userinput></screen>
 -->
-    <para>Adjust the hardcoded paths to network configuration files for the
-    standalone udev installation:</para>
+<screen><userinput remap="pre">sed -i '/systemd-sysctl/s/^/#/' rules.d/99-systemd.rules.in</userinput></screen>
+
+    <para>Ajuste os caminhos rigidamente codificados para os arquivos de configuração
+da rede de intercomunicação para a instalação autônoma do &quot;Udev&quot;:</para>
 
  <screen><userinput remap="pre">sed -e '/NETWORK_DIRS/s/systemd/udev/' \
     -i src/libsystemd/sd-network/network-util.h</userinput></screen>
 
-    <para>Prepare Udev for compilation:</para>
+    <para>Prepare o "Udev" para compilação:</para>
 
 <screen><userinput remap="configure">mkdir -p build
 cd       build
@@ -81,21 +80,21 @@ meson setup ..                  \
       -D vconsole=false</userinput></screen>
 
     <variablelist>
-      <title>The meaning of the meson options:</title>
+      <title>O significado das opções "meson":</title>
 
       <varlistentry>
         <term><parameter>--buildtype=release</parameter></term>
         <listitem>
-          <para>This switch overrides the default buildtype
-          (<quote>debug</quote>), which produces unoptimized
-          binaries.</para>
+          <para>Essa chave substitui o tipo de construção padrão (<quote>debug</quote>), que
+produz binários não otimizados.</para>
         </listitem>
       </varlistentry>
 
       <varlistentry>
         <term><parameter>-D mode=release</parameter></term>
         <listitem>
-          <para>Disable some features considered experimental by upstream.
+          <para>Desabilite alguns recursos considerados experimentais pelo(a)
+desenvolvedor(a).
           </para>
         </listitem>
       </varlistentry>
@@ -103,52 +102,52 @@ meson setup ..                  \
       <varlistentry>
         <term><parameter>-D dev-kvm-mode=0660</parameter></term>
         <listitem>
-          <para>The default udev rule would allow all users to access
-          <filename class='devicefile'>/dev/kvm</filename>.  The editors
-          consider it dangerous.  This option overrides it.</para>
+          <para>A regra padrão do "udev" permitiria que todos(as) os(as) usuários(as)
+acessassem <filename class='devicefile'>/dev/kvm</filename>. Os(As)
+editores(as) a consideram perigosa. Essa opção a substitui.</para>
         </listitem>
       </varlistentry>
 
       <varlistentry>
         <term><parameter>-D link-udev-shared=false</parameter></term>
         <listitem>
-          <para>This option prevents udev from linking to the internal
-          systemd shared library,
-          <systemitem class='library'>libsystemd-shared</systemitem>.
-          This library is designed to be shared by many Systemd components
-          and it's too overkill for a udev-only installation.</para>
+          <para>Essa opção evita que o "udev" se vincule à biblioteca interna compartilhada
+do "systemd", <systemitem
+class='library'>libsystemd-shared</systemitem>. Essa biblioteca foi
+projetada para ser compartilhada por muitos componentes do "Systemd" e é
+muito exagerada para uma instalação somente do "udev".</para>
         </listitem>
       </varlistentry>
 
       <varlistentry>
         <term><parameter>-D logind=false -D vconsole=false</parameter></term>
         <listitem>
-          <para>These options prevent the generation of several udev rule
-          files belonging to the other Systemd components that we won't
-          install.</para>
+          <para>Essas opções evitam a geração de vários arquivos de regras do
+&quot;Udev&quot; pertencentes a outros componentes do &quot;Systemd&quot;
+que nós não instalaremos.</para>
         </listitem>
       </varlistentry>
     </variablelist>
 
-    <para>Get the list of the shipped udev helpers and save it into an
-    environment variable (exporting it is not strictly necessary, but it makes
-    building as a regular user or using a package manager easier):</para>
+    <para>Obtenha a lista dos auxiliares &quot;Udev&quot; enviados e salve-a em uma
+variável de ambiente (exportá-la não é estritamente necessário, mas facilita
+construir como um(a) usuário(a) comum ou usar um gerenciador de pacotes):</para>
 
     <screen><userinput remap="make">export udev_helpers=$(grep "'name' :" ../src/udev/meson.build | \
-                      awk '{print $3}' | tr -d ",'" | grep -v 'udevadm')</userinput></screen>
+                       awk '{print $3}' | tr -d ",'" | grep -v 'udevadm')</userinput></screen>
 
-    <para>Only build the components needed for udev:</para>
+    <para>Construa somente os componentes necessários para o "udev":</para>
 
-    <screen><userinput remap="make">ninja udevadm systemd-hwdb                                           \
+    <screen><userinput remap="make">ninja udevadm systemd-hwdb                                            \
       $(ninja -n | grep -Eo '(src/(lib)?udev|rules.d|hwdb.d)/[^ ]*') \
       $(realpath libudev.so --relative-to .)                         \
       $udev_helpers</userinput></screen>
 
-    <para>Install the package:</para>
+    <para>Instale o pacote:</para>
 
     <screen><userinput remap="install">install -vm755 -d {/usr/lib,/etc}/udev/{hwdb.d,rules.d,network}
 install -vm755 -d /usr/{lib,share}/pkgconfig
-install -vm755 udevadm                             /usr/bin/
+install -vm755 udevadm                            /usr/bin/
 install -vm755 systemd-hwdb                        /usr/bin/udev-hwdb
 ln      -svfn  ../bin/udevadm                      /usr/sbin/udevd
 cp      -av    libudev.so{,*[0-9]}                 /usr/lib/
@@ -163,17 +162,18 @@ install -vm644 hwdb.d/*  ../hwdb.d/{*.hwdb,README} /usr/lib/udev/hwdb.d/
 install -vm755 $udev_helpers                       /usr/lib/udev
 install -vm644 ../network/99-default.link          /usr/lib/udev/network</userinput></screen>
 
-    <para>Install some custom rules and support files useful in an LFS
-    environment:</para>
+    <para>Instale algumas regras personalizadas e arquivos de suporte úteis em um
+ambiente LFS:</para>
 
 <screen><userinput remap="install">tar -xvf ../../&udev-lfs-version;.tar.xz
 make -f &udev-lfs-version;/Makefile.lfs install</userinput></screen>
 
-    <para>Install the man pages:</para>
+    <para>Instale as páginas de manual:</para>
 
-    <!-- Please make sure systemd man pages tarball has a common leading
+    
+<screen><!-- Please make sure systemd man pages tarball has a common leading
          component in the path.  -->
-<screen><userinput remap="install">tar -xf ../../systemd-man-pages-&systemd-man-version;.tar.xz                          \
+<userinput remap="install">tar -xf ../../systemd-man-pages-&systemd-man-version;.tar.xz                          \
     --no-same-owner --strip-components=1                              \
     -C /usr/share/man --wildcards '*/udev*' '*/libudev*'              \
                                   '*/systemd.link.5'                  \
@@ -192,68 +192,68 @@ sed 's|lib.*udevd|sbin/udevd|'                                        \
 
 rm /usr/share/man/man*/systemd*</userinput></screen>
 
-    <para>Finally, unset the <envar>udev_helpers</envar> variable:</para>
+    <para>Finalmente, desconfigure a variável &quot;<envar>udev_helpers</envar>&quot;:</para>
 
-    <!-- remap="make" seems confusing but we don't have sth. like
+    
+    <screen><!-- remap="make" seems confusing but we don't have sth. like
          remap="clean".  -->
-    <screen><userinput remap="install">unset udev_helpers</userinput></screen>
+<userinput remap="install">unset udev_helpers</userinput></screen>
 
   </sect2>
 
   <sect2 id="conf-udev" role="configuration">
-    <title>Configuring Udev</title>
+    <title>Configurando o "Udev"</title>
 
     <indexterm zone="conf-udev">
       <primary sortas="a-Udev">Udev</primary>
-      <secondary>configuring</secondary>
+      <secondary>configurando</secondary>
     </indexterm>
 
     <indexterm zone="conf-udev">
       <primary sortas="e-/etc/udev/hwdb.bin">/etc/udev/hwdb.bin</primary>
     </indexterm>
 
-    <para>Information about hardware devices is maintained in the
-    <filename class="directory">/etc/udev/hwdb.d</filename> and
-    <filename class="directory">/usr/lib/udev/hwdb.d</filename> directories.
-    <application>Udev</application> needs that information to be compiled
-    into a binary database <filename>/etc/udev/hwdb.bin</filename>. Create the
-    initial database:</para>
+    <para>Informações acerca de dispositivos de hardware são mantidas nos diretórios
+<filename class="directory">/etc/udev/hwdb.d</filename> e <filename
+class="directory">/usr/lib/udev/hwdb.d</filename>. O
+<application>Udev</application> precisa que essas informações sejam
+compiladas em uma base de dados binária
+<filename>/etc/udev/hwdb.bin</filename>. Crie a base de dados inicial:</para>
 
 <screen><userinput>udev-hwdb update</userinput></screen>
 
-    <para>This command needs to be run each time the hardware information is
-    updated.</para>
+    <para>Esse comando precisa ser executado sempre que as informações de hardware
+forem atualizadas.</para>
 
   </sect2>
 
   <sect2 id="contents-udev" role="content">
-    <title>Contents of Udev</title>
+    <title>Conteúdo do "Udev"</title>
 
     <segmentedlist>
-      <segtitle>Installed programs</segtitle>
-      <segtitle>Installed libraries</segtitle>
-      <segtitle>Installed directories</segtitle>
+      <segtitle>Aplicativos instalados</segtitle>
+      <segtitle>Bibliotecas instaladas</segtitle>
+      <segtitle>Diretórios instalados</segtitle>
 
       <seglistitem>
-        <seg>udevadm, udevd (symlink to udevadm), and udev-hwdb</seg>
+        <seg>udevadm, udevd (link simbólico para udevadm) e udev-hwdb</seg>
 
         <seg>libudev.so</seg>
 
-        <seg>/etc/udev and /usr/lib/udev</seg>
+        <seg>/etc/udev e /usr/lib/udev</seg>
       </seglistitem>
     </segmentedlist>
 
     <variablelist>
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
+      <bridgehead renderas="sect3">Descrições Curtas</bridgehead>
+      <?dbfo list-presentation="list"?> <?dbhtml list-presentation="table"?>
       <varlistentry id="udevadm" revision="openrc">
         <term><command>udevadm</command></term>
         <listitem>
-          <para>Generic udev administration tool: controls the udevd daemon,
-          provides info from the Udev database, monitors uevents, waits for
-          uevents to finish, tests Udev configuration, and triggers uevents
-          for a given device</para>
+          <para>Ferramenta genérica de administração do "udev": controla o processo de
+segundo plano "udevd"; fornece informações a partir da base de dados do
+"Udev"; monitora "uevents"; aguarda "uevents" finalizarem; testa a
+configuração do "Udev"; e aciona "uevents" para um dado dispositivo</para>
           <indexterm zone="ch-system-udev udevadm">
             <primary sortas="b-udevadm">udevadm</primary>
           </indexterm>
@@ -263,9 +263,9 @@ rm /usr/share/man/man*/systemd*</userinput></screen>
       <varlistentry id="udevd">
         <term><command>udevd</command></term>
         <listitem>
-          <para>A daemon that listens for uevents on the netlink socket,
-          creates devices and runs the configured external programs in
-          response to these uevents</para>
+          <para>Um processo de segundo plano que escuta "uevents" no soquete "netlink", cria
+dispositivos e executa os aplicativos externos configurados em resposta a
+esses "uevents"</para>
           <indexterm zone="ch-system-udev udevd">
             <primary sortas="b-udevd">udevd</primary>
           </indexterm>
@@ -275,7 +275,7 @@ rm /usr/share/man/man*/systemd*</userinput></screen>
       <varlistentry id="udev-hwdb">
         <term><command>udev-hwdb</command></term>
         <listitem>
-          <para>Updates or queries the hardware database.</para>
+          <para>Atualiza ou consulta a base de dados de hardware.</para>
           <indexterm zone="ch-system-udev udev-hwdb">
             <primary sortas="b-udev-hwdb">udev-hwdb</primary>
           </indexterm>
@@ -285,7 +285,7 @@ rm /usr/share/man/man*/systemd*</userinput></screen>
       <varlistentry id="libudev">
         <term><filename class="libraryfile">libudev</filename></term>
         <listitem>
-          <para>A library interface to udev device information</para>
+          <para>Uma interface de biblioteca para informações de dispositivo do "udev"</para>
           <indexterm zone="ch-system-udev libudev">
             <primary sortas="c-libudev">libudev</primary>
           </indexterm>
@@ -295,8 +295,8 @@ rm /usr/share/man/man*/systemd*</userinput></screen>
       <varlistentry id="etc-udev">
         <term><filename class="directory">/etc/udev</filename></term>
         <listitem>
-          <para>Contains Udev configuration files,
-          device permissions, and rules for device naming</para>
+          <para>Contém arquivos de configuração do "Udev", permissões de dispositivos e
+regras para nomeação de dispositivos</para>
           <indexterm zone="ch-system-udev etc-udev">
             <primary sortas="e-/etc/udev">/etc/udev</primary>
           </indexterm>

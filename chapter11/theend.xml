@@ -8,7 +8,7 @@
 <sect1 id="ch-finish-theend">
   <?dbhtml filename="theend.html"?>
 
-  <title>The End</title>
+  <title>O Fim</title>
 
   <indexterm zone="ch-finish-theend">
     <primary sortas="e-/etc/lfs-release">/etc/lfs-release</primary>
@@ -22,47 +22,45 @@
     <primary sortas="e-/etc/os-release">/etc/os-release</primary>
   </indexterm>
 
-  <para>Well done! The new LFS system is installed! We wish you much
-  success with your shiny new custom-built Linux system.</para>
+  <para>Muito bem! O novo sistema LFS está instalado! Nós desejamos a você muito
+sucesso com seu novo e brilhante sistema Linux construído sob medida.</para>
 
-  <para>It may be a good idea to create an
-  <filename>/etc/lfs-release</filename> file. By having this file, it is very
-  easy for you (and for us if you need to ask for help at some point) to find
-  out which LFS version is installed on the system. Create this file by
-  running:</para>
+  <para>Possivelmente seja uma boa ideia criar um arquivo
+<filename>/etc/lfs-release</filename>. Tendo esse arquivo, é muito fácil
+para você (e para nós se você precisar pedir ajuda em algum ponto) descobrir
+qual versão do LFS está instalada no sistema. Crie esse arquivo executando:</para>
 
 <screen><userinput>echo &version; &gt; /etc/lfs-release</userinput></screen>
 
-  <para>Two files describing the installed system may be used by packages that
-  can be installed on the system later, either in binary form or by building
-  them.</para>
+  <para>Dois arquivos descrevendo o sistema instalado possivelmente sejam usados por
+pacotes que podem ser instalados no sistema posteriormente, ou em forma de
+binário ou construindo-os.</para>
 
-  <para>The first one shows the status of your
-  new system with respect to the Linux Standards Base (LSB).  To create
-  this file, run:</para>
+  <para>O primeiro deles mostra a situação do seu novo sistema com respeito ao Linux
+Standards Base (LSB). Para criar esse arquivo, execute:</para>
 
 <screen><userinput>cat &gt; /etc/lsb-release &lt;&lt; "EOF"
 DISTRIB_ID="Linux From Scratch"
 DISTRIB_RELEASE="&version;"
-DISTRIB_CODENAME="&lt;your name here&gt;"
+DISTRIB_CODENAME="&lt;seu nome aqui&gt;"
 DISTRIB_DESCRIPTION="Linux From Scratch"
 EOF</userinput></screen>
 
-  <para>The second one contains roughly the same information, and is used
-  by systemd and some graphical desktop environments.  To create
-  this file, run:</para>
+  <para>O segundo deles contém aproximadamente a mesma informação e é usado pelo
+systemd e alguns ambientes gráficos de área de trabalho. Para criar esse
+arquivo, execute:</para>
 
 <screen><userinput>cat &gt; /etc/os-release &lt;&lt; "EOF"
 NAME="Linux From Scratch"
 VERSION="&version;"
 ID=lfs
 PRETTY_NAME="Linux From Scratch &version;"
-VERSION_CODENAME="&lt;your name here&gt;"
+VERSION_CODENAME="&lt;teu nome aqui&gt;"
 HOME_URL="&lfs-root;lfs/"
 RELEASE_TYPE="&os-release-type;"
 EOF</userinput></screen>
 
-  <para>Be sure to customize the fields 'DISTRIB_CODENAME' and
-  'VERSION_CODENAME' to make the system uniquely yours.</para>
+  <para>Tenha certeza de personalizar os campos 'DISTRIB_CODENAME' e
+'VERSION_CODENAME' para tornar o sistema unicamente seu.</para>
 
 </sect1>

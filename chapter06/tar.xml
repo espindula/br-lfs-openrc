@@ -9,16 +9,14 @@
   <?dbhtml filename="tar.html"?>
 
   <sect1info condition="script">
-    <productname>tar</productname>
-    <productnumber>&tar-version;</productnumber>
-    <address>&tar-url;</address>
-  </sect1info>
+<productname>tar</productname> <productnumber>&tar-version;</productnumber>
+<address>&tar-url;</address></sect1info>
 
   <title>Tar-&tar-version;</title>
 
   <indexterm zone="ch-tools-tar">
     <primary sortas="a-Tar">Tar</primary>
-    <secondary>tools</secondary>
+    <secondary>ferramentas</secondary>
   </indexterm>
 
   <sect2 role="package">
@@ -41,19 +39,19 @@
   </sect2>
 
   <sect2 role="installation">
-    <title>Installation of Tar</title>
+    <title>Instalação do Tar</title>
 
-    <para>Prepare Tar for compilation:</para>
+    <para>Prepare o Tar para compilação:</para>
 
 <screen><userinput remap="configure">./configure --prefix=/usr   \
             --host=$LFS_TGT \
             --build=$(build-aux/config.guess)</userinput></screen>
 
-    <para>Compile the package:</para>
+    <para>Compile o pacote:</para>
 
 <screen><userinput remap="make">make</userinput></screen>
 
-    <para>Install the package:</para>
+    <para>Instale o pacote:</para>
 
 <screen><userinput remap="install">make DESTDIR=$LFS install</userinput></screen>
 
@@ -62,7 +60,8 @@
   <sect2 role="content">
     <title/>
 
-    <para>Details on this package are located in <xref linkend="contents-tar" role="."/></para>
+    <para>Detalhes acerca deste pacote estão localizados na <xref
+linkend="contents-tar" role="."/></para>
 
   </sect2>
 

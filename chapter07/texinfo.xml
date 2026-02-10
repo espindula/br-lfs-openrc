@@ -9,16 +9,14 @@
   <?dbhtml filename="texinfo.html"?>
 
   <sect1info condition="script">
-    <productname>texinfo</productname>
-    <productnumber>&texinfo-version;</productnumber>
-    <address>&texinfo-url;</address>
-  </sect1info>
+<productname>texinfo</productname>
+<productnumber>&texinfo-version;</productnumber> <address>&texinfo-url;</address></sect1info>
 
   <title>Texinfo-&texinfo-version;</title>
 
   <indexterm zone="ch-tools-texinfo">
     <primary sortas="a-Texinfo">Texinfo</primary>
-    <secondary>temporary</secondary>
+    <secondary>temporário</secondary>
   </indexterm>
 
   <sect2 role="package">
@@ -41,17 +39,17 @@
   </sect2>
 
   <sect2 role="installation">
-    <title>Installation of Texinfo</title>
+    <title>Instalação do Texinfo</title>
 
-    <para>Prepare Texinfo for compilation:</para>
+    <para>Prepare o Texinfo para compilação:</para>
 
 <screen><userinput remap="configure">./configure --prefix=/usr</userinput></screen>
 
-    <para>Compile the package:</para>
+    <para>Compile o pacote:</para>
 
 <screen><userinput remap="make">make</userinput></screen>
 
-    <para>Install the package:</para>
+    <para>Instale o pacote:</para>
 
 <screen><userinput remap="install">make install</userinput></screen>
 
@@ -60,7 +58,8 @@
   <sect2 role="content">
     <title/>
 
-    <para>Details on this package are located in <xref linkend="contents-texinfo" role="."/></para>
+    <para>Detalhes acerca deste pacote estão localizados na <xref
+linkend="contents-texinfo" role="."/></para>
 
   </sect2>
 

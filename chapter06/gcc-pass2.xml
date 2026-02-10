@@ -5,20 +5,18 @@
   %general-entities;
 ]>
 
-<sect1 id="ch-tools-gcc-pass2" role="wrap" xreflabel="gcc-pass2">
+<sect1 id="ch-tools-gcc-pass2" role="wrap" xreflabel="gcc-passagem2">
   <?dbhtml filename="gcc-pass2.html"?>
 
   <sect1info condition="script">
-    <productname>gcc-pass2</productname>
-    <productnumber>&gcc-version;</productnumber>
-    <address>&gcc-url;</address>
-  </sect1info>
+<productname>gcc-pass2</productname>
+<productnumber>&gcc-version;</productnumber> <address>&gcc-url;</address></sect1info>
 
-  <title>GCC-&gcc-version; - Pass 2</title>
+  <title>GCC-&gcc-version; - Passagem 2</title>
 
   <indexterm zone="ch-tools-gcc-pass2">
     <primary sortas="a-GCC">GCC</primary>
-    <secondary>tools, pass 2</secondary>
+    <secondary>ferramentas, passagem 2</secondary>
   </indexterm>
 
   <sect2 role="package">
@@ -41,10 +39,10 @@
   </sect2>
 
   <sect2 role="installation">
-    <title>Installation of GCC</title>
+    <title>Instalação do GCC</title>
 
-    <para>As in the first build of GCC, the GMP, MPFR, and MPC packages are
-    required. Unpack the tarballs and move them into the required directories:</para>
+    <para>Como na primeira construção do GCC, os pacotes GMP, MPFR e MPC são
+exigidos. Desempacote os tarballs e mova-os para os diretórios exigidos:</para>
 
 <screen><userinput remap="pre">tar -xf ../mpfr-&mpfr-version;.tar.xz
 mv -v mpfr-&mpfr-version; mpfr
@@ -53,8 +51,8 @@ mv -v gmp-&gmp-version; gmp
 tar -xf ../mpc-&mpc-version;.tar.gz
 mv -v mpc-&mpc-version; mpc</userinput></screen>
 
-    <para>If you are building on x86_64, change the default directory name for
-    64-bit libraries to <quote>lib</quote>:</para>
+    <para>Se você estiver construindo em x86_64, mude o nome padrão de diretório para
+bibliotecas de 64 bits para <quote>lib</quote>:</para>
 
 <screen><userinput remap="pre">case $(uname -m) in
   x86_64)
@@ -63,21 +61,21 @@ mv -v mpc-&mpc-version; mpc</userinput></screen>
   ;;
 esac</userinput></screen>
 
-    <para>Override the build rules of the libgcc and libstdc++ headers to
-    allow building these libraries with POSIX threads support:</para>
+    <para>Substitua as regras de construção dos cabeçalhos da libgcc e da libstdc++
+para permitir construir essas bibliotecas com suporte a camadas POSIX:</para>
 
 <screen><userinput remap="pre">sed '/thread_header =/s/@.*@/gthr-posix.h/' \
     -i libgcc/Makefile.in libstdc++-v3/include/Makefile.in</userinput></screen>
 
-    <para>Create a separate build directory again:</para>
+    <para>Crie um diretório de construção separado novamente:</para>
 
 <screen><userinput remap="pre">mkdir -v build
-cd       build</userinput></screen>
+cd      build</userinput></screen>
 
-    <para>Before starting to build GCC, remember to unset any environment
-    variables that override the default optimization flags.</para>
+    <para>Antes de iniciar a construção do GCC, lembre-se de desconfigurar quaisquer
+variáveis de ambiente que substituam os sinalizadores de otimização padrão.</para>
 
-    <para>Now prepare GCC for compilation:</para>
+    <para>Agora prepare o GCC para compilação:</para>
 
 <screen><userinput remap="configure">../configure                   \
     --build=$(../config.guess) \
@@ -99,76 +97,78 @@ cd       build</userinput></screen>
     LDFLAGS_FOR_TARGET=-L$PWD/$LFS_TGT/libgcc</userinput></screen>
 
     <variablelist>
-      <title>The meaning of the new configure options:</title><!-- WIP -->
+      <title>O significado das novas opções de configuração:</title>
 
-      <varlistentry>
+      <!-- WIP -->
+<varlistentry>
         <term><parameter>--with-build-sysroot=$LFS</parameter></term>
         <listitem>
-          <para>Normally, using <parameter>--host</parameter> ensures that
-          a cross-compiler is used for building GCC, and that compiler knows
-          that it has to look for headers and libraries in <filename
-          class="directory">$LFS</filename>. However, the build system for GCC
-          uses additional tools which are not aware of this location. This
-          switch is needed so those tools will find the needed files in
-          <filename class="directory">$LFS</filename>, and not on the host.</para>
+          <para>Normalmente, usar <parameter>--host</parameter> garante que um compilador
+cruzado seja usado para construir o GCC e que o compilador sabe que tem que
+procurar por cabeçalhos e por bibliotecas em <filename
+class="directory">$LFS</filename>. Porém, o sistema de construção para o GCC
+usa ferramentas adicionais, que não estão cientes desse local. Essa chave é
+necessária, de forma que tais ferramentas procurarão pelos arquivos
+necessários em <filename class="directory">$LFS</filename>, e não no
+anfitrião.</para>
         </listitem>
       </varlistentry>
 
       <varlistentry>
         <term><parameter>--target=$LFS_TGT</parameter></term>
         <listitem>
-          <para>We are cross-compiling GCC, so it's impossible to build
-          target libraries (<filename class="libraryfile">libgcc</filename>
-          and <filename class="libraryfile">libstdc++</filename>) with the
-          GCC binaries compiled in this pass&mdash;those binaries won't run
-          on the host.  The GCC build system will attempt to use the host's
-          C and C++ compilers as a workaround by default.
-          Building the GCC target libraries with a different
-          version of GCC is not supported, so using the host's compilers may cause
-          the build to fail. This parameter ensures the libraries are built by GCC
-          pass 1.</para>
+          <para>Nós estamos compilando cruzadamente o GCC, de forma que é impossível
+construir bibliotecas alvo (<filename class="libraryfile">libgcc</filename>
+e <filename class="libraryfile">libstdc++</filename>) com os binários do GCC
+compilados nesta passagem&mdash;esses binários não executariam no
+anfitrião. O sistema de construção do GCC tentará usar os compiladores C e
+C++ do anfitrião como uma solução alternativa por padrão. Construir as
+bibliotecas alvo do GCC com uma versão diferente do GCC não é suportado, de
+forma que usar os compiladores do anfitrião possivelmente cause falha de
+construção. Esse parâmetro assegura que as bibliotecas sejam construídas
+pelo GCC passagem 1.</para>
         </listitem>
       </varlistentry>
 
       <varlistentry>
         <term><parameter>LDFLAGS_FOR_TARGET=...</parameter></term>
         <listitem>
-          <para>Allow <filename class="libraryfile">libstdc++</filename> to
-          use the <filename class="libraryfile">libgcc</filename> being
-          built in this pass, instead of the previous version built in
-          <xref linkend='ch-tools-gcc-pass1'/>.  The previous version cannot
-          properly support C++ exception handling because it was built
-          without libc support.</para>
+          <para>Permite que <filename class="libraryfile">libstdc++</filename> use o
+<filename class="libraryfile">libgcc</filename> sendo construído nessa
+passagem, em vez da versão anterior construída em <xref
+linkend='ch-tools-gcc-pass1'/>. A versão anterior não pode suportar
+adequadamente o tratamento de exceções C++ porque foi construída sem suporte
+a libc.</para>
         </listitem>
       </varlistentry>
 
       <varlistentry>
         <term><parameter>--disable-libsanitizer</parameter></term>
         <listitem>
-          <para>Disable GCC sanitizer runtime libraries.  They are not
-          needed for the temporary installation.  In
-          <xref linkend='ch-tools-gcc-pass1'/> it was implied by
-          <parameter>--disable-libstdcxx</parameter>, and now we can
-          explicitly pass it.</para>
+          <para>Desabilita as bibliotecas sanitizadoras de tempo de execução do GCC. Elas
+não são necessárias para a instalação temporária. Em <xref
+linkend='ch-tools-gcc-pass1'/> estava implícito por
+<parameter>--disable-libstdcxx</parameter> e agora temos que passá-lo
+explicitamente.</para>
         </listitem>
       </varlistentry>
 
     </variablelist>
 
-    <para>Compile the package:</para>
+    <para>Compile o pacote:</para>
 
 <screen><userinput remap="make">make</userinput></screen>
 
-    <para>Install the package:</para>
+    <para>Instale o pacote:</para>
 
 <screen><userinput remap="install">make DESTDIR=$LFS install</userinput></screen>
 
-    <para>As a finishing touch, create a utility symlink. Many programs and scripts
-    run <command>cc</command> instead of <command>gcc</command>, which is
-    used to keep programs generic and therefore usable on all kinds of UNIX
-    systems where the GNU C compiler is not always installed. Running
-    <command>cc</command> leaves the system administrator free to decide
-    which C compiler to install:</para>
+    <para>Como um toque final, crie um link simbólico utilitário. Muitos aplicativos e
+scripts executam <command>cc</command> em vez de <command>gcc</command>, o
+que é usado para manter genéricos os aplicativos e, assim, utilizáveis em
+todos os tipos de sistemas UNIX onde o compilador GNU C nem sempre está
+instalado. Executar <command>cc</command> deixa o(a) administrador(a) do
+sistema livre para decidir qual compilador C instalar:</para>
 
 <screen><userinput remap="install">ln -sv gcc $LFS/usr/bin/cc</userinput></screen>
 
@@ -177,8 +177,8 @@ cd       build</userinput></screen>
   <sect2 role="content">
     <title/>
 
-    <para>Details on this package are located in
-    <xref linkend="contents-gcc" role="."/></para>
+    <para>Detalhes acerca deste pacote estão localizados na <xref
+linkend="contents-gcc" role="."/></para>
 
   </sect2>
 

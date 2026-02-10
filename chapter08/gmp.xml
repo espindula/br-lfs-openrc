@@ -9,10 +9,8 @@
   <?dbhtml filename="gmp.html"?>
 
   <sect1info condition="script">
-    <productname>gmp</productname>
-    <productnumber>&gmp-version;</productnumber>
-    <address>&gmp-url;</address>
-  </sect1info>
+<productname>gmp</productname> <productnumber>&gmp-version;</productnumber>
+<address>&gmp-url;</address></sect1info>
 
   <title>GMP-&gmp-version;</title>
 
@@ -23,8 +21,8 @@
   <sect2 role="package">
     <title/>
 
-    <para>The GMP package contains math libraries. These have useful functions
-    for arbitrary precision arithmetic.</para>
+    <para>O pacote GMP contém bibliotecas matemáticas. Essas tem funções úteis para
+aritmética de precisão arbitrária.</para>
 
     <segmentedlist>
       <segtitle>&buildtime;</segtitle>
@@ -39,34 +37,35 @@
   </sect2>
 
   <sect2 role="installation">
-    <title>Installation of GMP</title>
+    <title>Instalação do GMP</title>
 
     <note>
-      <para>If you are building for 32-bit x86, but you have a CPU which is
-      capable of running 64-bit code <emphasis>and</emphasis> you have specified
-      <envar>CFLAGS</envar> in the environment, the configure script will
-      attempt to configure for 64-bits and fail.
-      Avoid this by invoking the configure command below with
-<screen role="nodump"><userinput><parameter>ABI=32</parameter> ./configure ...</userinput></screen></para>
+      <para>Se você estiver construindo para x86 de 32 bits, mas tem uma CPU que seja
+capaz de executar código de 64 bits <emphasis>e</emphasis> você especificou
+<envar>CFLAGS</envar> no ambiente, [então] o script configure tentará
+configurar para 64 bits e falhará. Impeça isso invocando o comando do
+configure abaixo com <screen role="nodump"><userinput><parameter>ABI=32</parameter> ./configure ...</userinput></screen></para>
     </note>
 
     <note>
-      <para>The default settings of GMP produce libraries optimized for
-      the host processor.  If libraries suitable for processors less
-      capable than the host's CPU are desired, generic libraries can be
-      created by appending the <option>--host=none-linux-gnu</option> option
-      to the <command>configure</command> command.</para>
+      <para>As configurações padrão do "GMP" produzem bibliotecas otimizadas para o
+processador anfitrião. Se bibliotecas adequadas para processadores menos
+capazes que a CPU do anfitrião forem desejadas, [então] bibliotecas
+genéricas podem ser criadas anexando a opção
+<option>--host=none-linux-gnu</option> ao comando
+<command>configure</command>.</para>
 
-      <!-- To editors: the configure script says "the none host is obsolete,
+      
+    <!-- To editors: the configure script says "the none host is obsolete,
            use - -disable-assembly," but don't believe it: with the latter
            CFLAGS is still automatically set to -march=something.  -->
-    </note>
+</note>
 
-    <para>First, make an adjustment for compatibility with gcc-15 and later:</para>
+    <para>Primeiro, faça um ajustamento para compatibilidade com gcc-15 e posteriores:</para>
 
 <screen><userinput remap="pre">sed -i '/long long t1;/,+1s/()/(...)/' configure</userinput></screen>
 
-    <para>Prepare GMP for compilation:</para>
+    <para>Prepare GMP para compilação:</para>
 
 <screen><userinput remap="configure">./configure --prefix=/usr    \
             --enable-cxx     \
@@ -74,55 +73,55 @@
             --docdir=/usr/share/doc/gmp-&gmp-version;</userinput></screen>
 
     <variablelist>
-      <title>The meaning of the new configure options:</title>
+      <title>O significado das novas opções de configuração:</title>
 
       <varlistentry>
         <term><parameter>--enable-cxx</parameter></term>
         <listitem>
-          <para>This parameter enables C++ support</para>
+          <para>Esse parâmetro habilita suporte a C++</para>
         </listitem>
       </varlistentry>
 
       <varlistentry>
         <term><parameter>--docdir=/usr/share/doc/gmp-&gmp-version;</parameter></term>
         <listitem>
-          <para>This variable specifies the correct place for the
-          documentation.</para>
+          <para>Essa variável especifica o lugar correto para a documentação.</para>
         </listitem>
       </varlistentry>
 
     </variablelist>
 
-    <para>Compile the package and generate the HTML documentation:</para>
+    <para>Compile o pacote e gere a documentação HTML:</para>
 
 <screen><userinput remap="make">make
 make html</userinput></screen>
 
     <important>
-      <para>The test suite for GMP in this section is considered critical.
-      Do not skip it under any circumstances.</para>
+      <para>A suíte de teste para o GMP nesta seção é considerada crítica. Não a pule
+sob quaisquer circunstâncias.</para>
     </important>
 
-    <para>Test the results:</para>
+    <para>Teste os resultados:</para>
 
 <screen><userinput remap="test">make check 2>&amp;1 | tee gmp-check-log</userinput></screen>
 
-    <caution><para>The code in gmp is highly optimized for the processor where
-    it is built. Occasionally, the code that detects the processor misidentifies
-    the system capabilities and there will be errors in the tests or other
-    applications using the gmp libraries with the message
-    <computeroutput>Illegal instruction</computeroutput>.
-    In this case, gmp should be reconfigured with the option
-    <option>--host=none-linux-gnu</option> and rebuilt.</para></caution>
+    <caution><para>O código em &quot;gmp&quot; é altamente otimizado para o processador onde
+ele seja construído. Ocasionalmente, o código que detecta o processador
+identifica erroneamente os recursos do sistema e existirão erros nos testes
+ou em outros aplicativos usando as bibliotecas &quot;gmp&quot; com a
+mensagem <computeroutput>Illegal instruction</computeroutput>. Nesse caso, o
+&quot;gmp&quot; deveria ser reconfigurado com a opção
+&quot;<option>--host=none-linux-gnu</option>&quot; e reconstruído.</para></caution>
 
+    
     <!-- Some tests PASS on a specific uarch but SKIP on other CPUs.
          For example on K8 the following command outputs 200.  -->
-    <para>Ensure that at least 199 tests in the test suite passed.
-    Check the results by issuing the following command:</para>
+<para>Certifique-se de que pelo menos 199 testes na suíte de teste
+passaram. Verifique os resultados emitindo o seguinte comando:</para>
 
 <screen><userinput remap="test">awk '/# PASS:/{total+=$3} ; END{print total}' gmp-check-log</userinput></screen>
 
-    <para>Install the package and its documentation:</para>
+    <para>Instale o pacote e a documentação dele:</para>
 
 <screen><userinput remap="install">make install
 make install-html</userinput></screen>
@@ -130,27 +129,26 @@ make install-html</userinput></screen>
   </sect2>
 
   <sect2 id="contents-gmp" role="content">
-    <title>Contents of GMP</title>
+    <title>Conteúdo do GMP</title>
 
     <segmentedlist>
-      <segtitle>Installed libraries</segtitle>
-      <segtitle>Installed directory</segtitle>
+      <segtitle>Bibliotecas instaladas</segtitle>
+      <segtitle>Diretório instalado</segtitle>
 
       <seglistitem>
-        <seg>libgmp.so and libgmpxx.so</seg>
+        <seg>libgmp.so e libgmpxx.so</seg>
         <seg>/usr/share/doc/gmp-&gmp-version;</seg>
       </seglistitem>
     </segmentedlist>
 
     <variablelist>
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
+      <bridgehead renderas="sect3">Descrições Curtas</bridgehead>
+      <?dbfo list-presentation="list"?> <?dbhtml list-presentation="table"?>
 
       <varlistentry id="libgmp">
         <term><filename class="libraryfile">libgmp</filename></term>
         <listitem>
-          <para>Contains precision math functions</para>
+          <para>Contém funções matemáticas de precisão</para>
           <indexterm zone="ch-system-gmp libgmp">
             <primary sortas="c-libgmp">libgmp</primary>
           </indexterm>
@@ -160,7 +158,7 @@ make install-html</userinput></screen>
       <varlistentry id="libgmpxx">
         <term><filename class="libraryfile">libgmpxx</filename></term>
         <listitem>
-          <para>Contains C++ precision math functions</para>
+          <para>Contém funções matemáticas de precisão C++</para>
           <indexterm zone="ch-system-gmp libgmpxx">
             <primary sortas="c-libgmpxx">libgmpxx</primary>
           </indexterm>

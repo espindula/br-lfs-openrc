@@ -9,10 +9,8 @@
   <?dbhtml filename="wheel.html"?>
 
   <sect1info condition="script">
-    <productname>wheel</productname>
-    <productnumber>&wheel-version;</productnumber>
-    <address>&wheel-url;</address>
-  </sect1info>
+<productname>wheel</productname>
+<productnumber>&wheel-version;</productnumber> <address>&wheel-url;</address></sect1info>
 
   <title>Wheel-&wheel-version;</title>
 
@@ -23,8 +21,8 @@
   <sect2 role="package">
     <title/>
 
-    <para>Wheel is a Python library that is the reference
-    implementation of the Python wheel packaging standard.</para>
+    <para>Wheel é uma biblioteca do Python que é a implementação de referência do
+padrão de empacotamento de roda do Python.</para>
 
     <segmentedlist>
       <segtitle>&buildtime;</segtitle>
@@ -38,44 +36,43 @@
   </sect2>
 
   <sect2 role="installation">
-    <title>Installation of Wheel</title>
+    <title>Instalação da Wheel</title>
 
-    <para>Compile Wheel with the following command:</para>
+    <para>Compile Wheel com o seguinte comando:</para>
 
 <screen><userinput remap="make">pip3 wheel -w dist --no-cache-dir --no-build-isolation --no-deps $PWD</userinput></screen>
 
-    <para>Install Wheel with the following command:</para>
+    <para>Instale Wheel com o seguinte comando:</para>
 
 <screen><userinput remap="install">pip3 install --no-index --find-links dist wheel</userinput></screen>
 
   </sect2>
 
   <sect2 id="contents-wheel" role="content">
-    <title>Contents of Wheel</title>
+    <title>Conteúdo do Wheel</title>
 
     <segmentedlist>
-      <segtitle>Installed program</segtitle>
-      <segtitle>Installed directories</segtitle>
+      <segtitle>Aplicativo instalado</segtitle>
+      <segtitle>Diretórios instalados</segtitle>
 
       <seglistitem>
         <seg>wheel</seg>
         <seg>
-           /usr/lib/python&python-minor;/site-packages/wheel and
-           /usr/lib/python&python-minor;/site-packages/wheel-&wheel-version;.dist-info
+           /usr/lib/python&python-minor;/site-packages/wheel e
+/usr/lib/python&python-minor;/site-packages/wheel-&wheel-version;.dist-info
         </seg>
       </seglistitem>
     </segmentedlist>
 
     <variablelist>
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
+      <bridgehead renderas="sect3">Descrições Curtas</bridgehead>
+      <?dbfo list-presentation="list"?> <?dbhtml list-presentation="table"?>
 
       <varlistentry id="wheel-wheel">
         <term><command>wheel</command></term>
         <listitem>
           <para>
-            is a utility to unpack, pack, or convert wheel archives
+            é um utilitário para desempacotar, empacotar ou converter arquivamentos roda
           </para>
           <indexterm zone="ch-system-wheel">
             <primary sortas="b-wheel">wheel</primary>

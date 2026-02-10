@@ -9,10 +9,8 @@
   <?dbhtml filename="meson.html"?>
 
   <sect1info condition="script">
-    <productname>meson</productname>
-    <productnumber>&meson-version;</productnumber>
-    <address>&meson-url;</address>
-  </sect1info>
+<productname>meson</productname>
+<productnumber>&meson-version;</productnumber> <address>&meson-url;</address></sect1info>
 
   <title>Meson-&meson-version;</title>
 
@@ -23,8 +21,9 @@
   <sect2 role="package">
     <title/>
 
-    <para>Meson is an open source build system designed to be both extremely fast
-    and as user friendly as possible.</para>
+    <para>Meson é um sistema de construção de código fonte aberto projetado para ser
+ambos extremamente rápido e tão amigável para o(a) usuário(a) quanto
+possível.</para>
 
     <segmentedlist>
       <segtitle>&buildtime;</segtitle>
@@ -38,36 +37,36 @@
   </sect2>
 
   <sect2 role="installation">
-    <title>Installation of Meson</title>
+    <title>Instalação do Meson</title>
 
-    <para>Compile Meson with the following command:</para>
+    <para>Compile Meson com o seguinte comando:</para>
 
 <screen><userinput remap="make">pip3 wheel -w dist --no-cache-dir --no-build-isolation --no-deps $PWD</userinput></screen>
 
-    <para>The test suite requires some packages outside the scope of LFS.</para>
+    <para>A suíte de teste exige alguns pacotes fora do escopo do LFS.</para>
 
-    <para>Install the package:</para>
+    <para>Instale o pacote:</para>
 
 <screen><userinput remap="install">pip3 install --no-index --find-links dist meson
 install -vDm644 data/shell-completions/bash/meson /usr/share/bash-completion/completions/meson
 install -vDm644 data/shell-completions/zsh/_meson /usr/share/zsh/site-functions/_meson</userinput></screen>
 
     <variablelist>
-      <title>The meaning of the install parameters:</title>
+      <title>O significado dos parâmetros do install:</title>
 
       <varlistentry>
         <term><parameter>-w dist</parameter></term>
         <listitem>
-           <para>Puts the created wheels into the
-           <filename class='directory'>dist</filename> directory.</para>
+           <para>Coloca as rodas criadas no diretório <filename
+class='directory'>dist</filename>.</para>
         </listitem>
       </varlistentry>
 
       <varlistentry>
         <term><parameter>--find-links dist</parameter></term>
         <listitem>
-           <para>Installs wheels from the
-           <filename class='directory'>dist</filename> directory.</para>
+           <para>Instala as rodas a partir do diretório <filename
+class='directory'>dist</filename>.</para>
         </listitem>
       </varlistentry>
 
@@ -75,30 +74,29 @@ install -vDm644 data/shell-completions/zsh/_meson /usr/share/zsh/site-functions/
   </sect2>
 
   <sect2 id="contents-meson" role="content">
-    <title>Contents of Meson</title>
+    <title>Conteúdo do Meson</title>
 
     <segmentedlist>
-      <segtitle>Installed programs</segtitle>
-      <segtitle>Installed directory</segtitle>
+      <segtitle>Programas instalados</segtitle>
+      <segtitle>Diretório instalado</segtitle>
 
       <seglistitem>
         <seg>meson</seg>
         <seg>
-           /usr/lib/python&python-minor;/site-packages/meson-&meson-version;.dist-info and
-           /usr/lib/python&python-minor;/site-packages/mesonbuild
+           /usr/lib/python&python-minor;/site-packages/meson-&meson-version;.dist-info
+e /usr/lib/python&python-minor;/site-packages/mesonbuild
         </seg>
       </seglistitem>
     </segmentedlist>
 
     <variablelist>
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
+      <bridgehead renderas="sect3">Descrições Curtas</bridgehead>
+      <?dbfo list-presentation="list"?> <?dbhtml list-presentation="table"?>
 
       <varlistentry id="meson">
         <term><command>meson</command></term>
         <listitem>
-          <para>A high productivity build system</para>
+          <para>Um sistema de construção de alta produtividade</para>
           <indexterm zone="ch-system-meson meson">
             <primary sortas="b-meson">meson</primary>
           </indexterm>

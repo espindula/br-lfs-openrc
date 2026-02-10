@@ -8,117 +8,120 @@
 <sect1 id="ch-config-console" revision="systemd">
   <?dbhtml filename="console.html"?>
 
-  <title>Configuring the Linux Console</title>
+  <title>Configurando o Console do Linux</title>
 
   <indexterm zone="ch-config-console">
     <primary sortas="d-console">console</primary>
-    <secondary>configuring</secondary>
+    <secondary>configurando</secondary>
   </indexterm>
 
-  <para>This section discusses how to configure the
-  <command>systemd-vconsole-setup</command> system service, which configures
-  the virtual console font and console keymap.</para>
+  <para>Esta seção discute como configurar o serviço de sistema
+<command>systemd-vconsole-setup</command>, o qual configura a fonte do
+console virtual e mapa de teclas do console.</para>
 
-  <para>The <command>systemd-vconsole-setup</command> service reads the
-  <filename>/etc/vconsole.conf</filename> file for configuration
-  information. Decide which keymap and screen font will be used. Various
-  language-specific HOWTOs can also help with this, see <ulink
-  url="https://tldp.org/HOWTO/HOWTO-INDEX/other-lang.html"/>.
-  Examine the output of <command>localectl list-keymaps</command> for a list of
-  valid console keymaps. Look in the
-  <filename class="directory">/usr/share/consolefonts</filename>
-  directory for valid screen fonts.</para>
+  <para>O serviço <command>systemd-vconsole-setup</command> lê o arquivo
+<filename>/etc/vconsole.conf</filename> para informação de
+configuração. Decida qual mapa de teclas e fonte de tela será usada. Vários
+HOWTOs específicos de idioma também podem ajudar com isso, veja-se <ulink
+url="https://tldp.org/HOWTO/HOWTO-INDEX/other-lang.html"/>. Examine a saída
+gerada de <command>localectl list-keymaps</command> para uma lista dos mapas
+válidos de teclas do console. Olhe no diretório <filename
+class="directory">/usr/share/consolefonts</filename> para fontes válidas de
+tela.</para>
 
-  <para>The <filename>/etc/vconsole.conf</filename> file should contain lines
-  of the form: <envar>VARIABLE=value</envar>. The following variables are recognized:</para>
+  <para>O arquivo &quot;<filename>/etc/vconsole.conf</filename>&quot; deveria conter
+linhas da forma: <envar>VARIÁVEL=valor</envar>. As seguintes variáveis são
+reconhecidas:</para>
 
   <variablelist>
 
     <varlistentry>
       <term>KEYMAP</term>
       <listitem>
-        <para>This variable specifies the key mapping table for the keyboard. If
-        unset, it defaults to <literal>us</literal>.</para>
+        <para>Essa variável especifica a tabela de mapeamento de tecla para o teclado. Se
+desconfigurada, [então] ela padroniza para <literal>us</literal>.</para>
       </listitem>
     </varlistentry>
 
     <varlistentry>
       <term>KEYMAP_TOGGLE</term>
       <listitem>
-        <para>This variable can be used to configure a second toggle keymap and
-        is unset by default.</para>
+        <para>Essa variável pode ser usada para configurar um segundo mapa de alternância
+de teclas e é desconfigurada por padrão.</para>
       </listitem>
     </varlistentry>
 
     <varlistentry>
       <term>FONT</term>
       <listitem>
-        <para>This variable specifies the font used by the virtual
-        console.</para>
+        <para>Essa variável especifica a fonte usada pelo console virtual.</para>
       </listitem>
     </varlistentry>
 
     <varlistentry>
       <term>FONT_MAP</term>
       <listitem>
-        <para>This variable specifies the console map to be used.</para>
+        <para>Essa variável especifica o mapa de console para ser usado.</para>
       </listitem>
     </varlistentry>
 
     <varlistentry>
       <term>FONT_UNIMAP</term>
       <listitem>
-        <para>This variable specifies the Unicode font map.</para>
+        <para>Essa variável especifica o mapa de fonte Unicode.</para>
       </listitem>
     </varlistentry>
 
   </variablelist>
 
-  <para>We'll use <literal>C.UTF-8</literal> as the locale for interactive
-  sessions in the Linux console in <xref role='.'
-  linkend='ch-config-locale'/>  The console fonts shipped by
-  the <application>Kbd</application> package containing the glyphs for
-  all characters from the program messages in the <literal>C.UTF-8</literal>
-  locale are <filename>LatArCyrHeb*.psfu.gz</filename>,
-  <filename>LatGrkCyr*.psfu.gz</filename>,
-  <filename>Lat2-Terminus16.psfu.gz</filename>, and
-  <filename>pancyrillic.f16.psfu.gz</filename> in
-  <filename class='directory'>/usr/share/consolefonts</filename> (the other
-  shipped console fonts lack glyphs of some characters like the Unicode
-  left/right quotation marks and the Unicode English dash). So set one of
-  them, for example <filename>Lat2-Terminus16.psfu.gz</filename> as the
-  default console font:</para>
+  <para>Usaremos <literal>C.UTF-8</literal> como localidade para sessões interativas
+no console do Linux na <xref role='.' linkend='ch-config-locale'/> As fontes
+do console fornecidas pelo pacote <application>Kbd</application> contendo os
+glifos para todos os caracteres provenientes das mensagens do aplicativo na
+localidade <literal>C.UTF-8</literal> são
+<filename>LatArCyrHeb*.psfu.gz</filename>,
+<filename>LatGrkCyr*.psfu.gz</filename>,
+<filename>Lat2-Terminus16.psfu.gz</filename> e <filename>pancyrillic
+.f16.psfu.gz</filename> em <filename
+class='directory'>/usr/share/consolefonts</filename> (as outras fontes de
+console fornecidas carecem de glifos de alguns caracteres, como as aspas
+esquerda/direita do Unicode e o Traço inglês do Unicode). Portanto,
+configure uma delas, por exemplo
+<filename>Lat2-Terminus16.psfu.gz</filename> como fonte padrão do console:</para>
 
-  <!-- We are using "nodump" for general settings, but not examples.  This
+  
+<screen role='nodump'><!-- We are using "nodump" for general settings, but not examples.  This
        is ironic, but needed for the compatibility with jhalfs!  -->
-<screen role='nodump'><userinput>echo <literal>FONT=Lat2-Terminus16</literal> &gt; /etc/vconsole.conf</userinput></screen>
+<userinput>echo <literal>FONT=Lat2-Terminus16</literal> &gt; /etc/vconsole.conf</userinput></screen>
 
-  <para>An example for a German keyboard and console is given below:</para>
-<!-- This is what is used by jhalfs for creating the vconsole.conf file.
+  <para>Um exemplo para um teclado e console alemão é dado abaixo:</para>
+
+<screen><!-- This is what is used by jhalfs for creating the vconsole.conf file.
      Whenever you want to change the following, please inform the jhalfs
      maintainer(s). -->
-<screen><userinput>cat &gt; /etc/vconsole.conf &lt;&lt; "EOF"
+<userinput>cat &gt; /etc/vconsole.conf &lt;&lt; "EOF"
 <literal>KEYMAP=de-latin1
 FONT=Lat2-Terminus16</literal>
 EOF</userinput></screen>
 
-  <para>You can change KEYMAP value at runtime by using the
-  <command>localectl</command> utility:</para>
+  <para>Você consegue mudar o valor de KEYMAP em tempo de execução usando o
+utilitário <command>localectl</command>:</para>
 
-<screen role="nodump"><userinput>localectl set-keymap MAP</userinput></screen>
+<screen role="nodump"><userinput>localectl set-keymap MAPA</userinput></screen>
 
-  <note><para>Please note that the <command>localectl</command> command
-  doesn't work in the chroot environment.  It can only
-  be used after the LFS system is booted with systemd.</para></note>
+  <note><para>Por favor, observe que o comando <command>localectl</command> não funciona
+no ambiente chroot. Ele somente pode ser usado depois que o sistema LFS for
+inicializado com o systemd.</para></note>
 
-  <para>You can also use <command>localectl</command> utility with the
-  corresponding parameters to change X11 keyboard layout, model, variant
-  and options:</para>
+  <para>Você também consegue usar o utilitário <command>localectl</command> com os
+parâmetros correspondentes para mudar o esquema, modelo, variante e opções
+de teclado do X11:</para>
 
-<screen role="nodump"><userinput>localectl set-x11-keymap LAYOUT [MODEL] [VARIANT] [OPTIONS]</userinput></screen>
+<screen role="nodump"><userinput>localectl set-x11-keymap ESQUEMA [MODELO] [VARIANTE] [OPÇÕES]</userinput></screen>
 
-  <para>To list possible values for <command>localectl set-x11-keymap</command>
-  parameters, run <command>localectl</command> with parameters listed below:
+  <para>Para listar valores possíveis para os parâmetros do <command>localectl
+set-x11-keymap</command>, execute <command>localectl</command> com os
+parâmetros listados abaixo:
   </para>
 
   <variablelist>
@@ -126,34 +129,34 @@ EOF</userinput></screen>
     <varlistentry>
       <term>list-x11-keymap-models</term>
       <listitem>
-        <para>Shows known X11 keyboard mapping models.</para>
+        <para>Mostra os modelos conhecidos de mapeamento de teclado do X11.</para>
       </listitem>
     </varlistentry>
 
     <varlistentry>
       <term>list-x11-keymap-layouts</term>
       <listitem>
-        <para>Shows known X11 keyboard mapping layouts.</para>
+        <para>Mostra esquemas conhecidos de mapeamento de teclado do X11.</para>
       </listitem>
     </varlistentry>
 
     <varlistentry>
       <term>list-x11-keymap-variants</term>
       <listitem>
-        <para>Shows known X11 keyboard mapping variants.</para>
+        <para>Mostra variantes conhecidas de mapeamento de teclado do X11.</para>
       </listitem>
     </varlistentry>
 
     <varlistentry>
       <term>list-x11-keymap-options</term>
       <listitem>
-        <para>Shows known X11 keyboard mapping options.</para>
+        <para>Mostra opções conhecidas de mapeamento de teclado do X11.</para>
       </listitem>
     </varlistentry>
 
   </variablelist>
 
-  <note><para>Using any of the parameters listed above requires the
-  XKeyboard-Config package from BLFS.</para></note>
+  <note><para>Usar quaisquer dos parâmetros listados acima exige o pacote XKeyboard-Config
+originário do BLFS.</para></note>
 
 </sect1>

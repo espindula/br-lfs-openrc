@@ -9,10 +9,8 @@
   <?dbhtml filename="readline.html"?>
 
   <sect1info condition="script">
-    <productname>readline</productname>
-    <productnumber>&readline-version;</productnumber>
-    <address>&readline-url;</address>
-  </sect1info>
+<productname>readline</productname>
+<productnumber>&readline-version;</productnumber> <address>&readline-url;</address></sect1info>
 
   <title>Readline-&readline-version;</title>
 
@@ -23,8 +21,8 @@
   <sect2 role="package">
     <title/>
 
-    <para>The Readline package is a set of libraries that offer command-line
-    editing and history capabilities.</para>
+    <para>O pacote Readline é um conjunto de bibliotecas que oferecem recursos de
+edição de linha de comando e de histórico.</para>
 
     <segmentedlist>
       <segtitle>&buildtime;</segtitle>
@@ -39,25 +37,27 @@
   </sect2>
 
   <sect2 role="installation">
-    <title>Installation of Readline</title>
+    <title>Instalação do Readline</title>
 
-    <para>Reinstalling Readline will cause the old libraries to be moved to
-    &lt;libraryname&gt;.old. While this is normally not a problem, in some cases
-    it can trigger a linking bug in <command>ldconfig</command>. This can be
-    avoided by issuing the following two seds:</para>
+    <para>Reinstalar Readline causará as bibliotecas antigas serem movidas para
+&lt;nomebiblioteca&gt;.old. Ao tempo em que isso normalmente não seja um
+problema, em alguns casos isso pode deflagrar um defeito de vinculação no
+<command>ldconfig</command>. Isso pode ser evitado emitindo-se os seguintes
+dois seds:</para>
 
 <screen><userinput remap="pre">sed -i '/MV.*old/d' Makefile.in
 sed -i '/{OLDSUFF}/c:' support/shlib-install</userinput></screen>
 
-    <para>Prevent hard coding library search paths (rpath) into
-    the shared libraries.  This package does not need rpath for an
-    installation into the standard location, and rpath may sometimes cause
-    unwanted effects or even security issues:</para>
+    <para>Evite caminhos de pesquisa de biblioteca de codificação rígida (rpath)
+dentro das bibliotecas compartilhadas. Esse pacote não precisa do rpath para
+uma instalação no local padrão, e o rpath às vezes pode causar efeitos
+indesejados ou até mesmo problemas de segurança:</para>
 
 <screen><userinput>sed -i 's/-Wl,-rpath,[^ ]*//' support/shobj-conf</userinput></screen>
 
     <para>
-      Fix a problem identified upstream specifically for this version of readline:
+      Corrija um problema identificado pelo fluxo de desenvolvimento
+especificamente para essa versão da readline:
     </para>
 
 <screen><userinput>sed -e '270a\
@@ -66,7 +66,7 @@ sed -i '/{OLDSUFF}/c:' support/shlib-install</userinput></screen>
     -e '288i\   result = -1;' \
     -i.orig input.c</userinput></screen>
 
-    <para>Prepare Readline for compilation:</para>
+    <para>Prepare Readline para compilação:</para>
 
 <screen><userinput remap="configure">./configure --prefix=/usr    \
             --disable-static \
@@ -74,75 +74,72 @@ sed -i '/{OLDSUFF}/c:' support/shlib-install</userinput></screen>
             --docdir=/usr/share/doc/readline-&readline-version;</userinput></screen>
 
      <variablelist>
-      <title>The meaning of the new configure option:</title>
+      <title>O significado da nova opção do configure:</title>
 
       <varlistentry>
         <term><parameter>--with-curses</parameter></term>
         <listitem>
-          <para>This option tells Readline that it can find the termcap
-          library functions in the curses library, not a separate
-          termcap library. This will generate the correct
-          <filename>readline.pc</filename> file.</para>
+          <para>Essa opção diz ao Readline que ela pode encontrar as funções da biblioteca
+termcap na biblioteca curses, não uma biblioteca termcap separada. Isso
+gerará o arquivo <filename>readline.pc</filename> correto.</para>
         </listitem>
       </varlistentry>
 
     </variablelist>
 
-    <para>Compile the package:</para>
+    <para>Compile o pacote:</para>
 
 <screen><userinput remap="make">make SHLIB_LIBS="-lncursesw"</userinput></screen>
 
     <variablelist>
-      <title>The meaning of the make option:</title>
+      <title>O significado da opção do make:</title>
 
       <varlistentry>
         <term><parameter>SHLIB_LIBS="-lncursesw"</parameter></term>
         <listitem>
-          <para>This option forces Readline to link against the
-          <filename class="libraryfile">libncursesw</filename> library.
-          For details see the <quote>Shared Libraries</quote> section in the
-          package's <filename>README</filename> file.</para>
+          <para>Essa opção força o Readline a vincular-se à biblioteca <filename
+class="libraryfile">libncursesw</filename>. Para detalhes, veja-se a seção
+<quote>Bibliotecas Compartilhadas</quote> no arquivo
+<filename>README</filename> do pacote.</para>
         </listitem>
       </varlistentry>
 
     </variablelist>
 
-    <para>This package does not come with a test suite.</para>
+    <para>Esse pacote não vem com uma suíte de teste.</para>
 
-    <para>Install the package:</para>
+    <para>Instale o pacote:</para>
 
 <screen><userinput remap="install">make install</userinput></screen>
 
-    <para>If desired, install the documentation:</para>
+    <para>Se desejado, instale a documentação:</para>
 
 <screen><userinput remap="install">install -v -m644 doc/*.{ps,pdf,html,dvi} /usr/share/doc/readline-&readline-version;</userinput></screen>
 
   </sect2>
 
   <sect2 id="contents-readline" role="content">
-    <title>Contents of Readline</title>
+    <title>Conteúdo do Readline</title>
 
     <segmentedlist>
-      <segtitle>Installed libraries</segtitle>
-      <segtitle>Installed directories</segtitle>
+      <segtitle>Bibliotecas instaladas</segtitle>
+      <segtitle>Diretórios instalados</segtitle>
 
       <seglistitem>
-        <seg>libhistory.so and libreadline.so</seg>
-        <seg>/usr/include/readline and
-        /usr/share/doc/readline-&readline-version;</seg>
+        <seg>libhistory.so e libreadline.so</seg>
+        <seg>/usr/include/readline e /usr/share/doc/readline-&readline-version;</seg>
       </seglistitem>
     </segmentedlist>
 
     <variablelist>
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
+      <bridgehead renderas="sect3">Descrições Curtas</bridgehead>
+      <?dbfo list-presentation="list"?> <?dbhtml list-presentation="table"?>
 
       <varlistentry id="libhistory">
         <term><filename class="libraryfile">libhistory</filename></term>
         <listitem>
-          <para>Provides a consistent user interface for recalling lines
-          of history</para>
+          <para>Fornece uma consistente interface de usuário(a) para rechamar linhas do
+histórico</para>
           <indexterm zone="ch-system-readline libhistory">
             <primary sortas="c-libhistory">libhistory</primary>
           </indexterm>
@@ -152,8 +149,8 @@ sed -i '/{OLDSUFF}/c:' support/shlib-install</userinput></screen>
       <varlistentry id="libreadline">
         <term><filename class="libraryfile">libreadline</filename></term>
         <listitem>
-          <para>Provides a set of commands for manipulating text entered in an
-          interactive session of a program</para>
+          <para>Fornece um conjunto de comandos para manipular texto digitado em uma sessão
+interativa de um aplicativo</para>
           <indexterm zone="ch-system-readline libreadline">
             <primary sortas="c-libreadline">libreadline</primary>
           </indexterm>

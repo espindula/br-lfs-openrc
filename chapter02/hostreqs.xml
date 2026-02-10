@@ -5,19 +5,19 @@
   %general-entities;
 ]>
 
-<sect1 id="ch-partitioning-hostreqs" xreflabel="Host System Requirements">
+<sect1 id="ch-partitioning-hostreqs" xreflabel="Exigências do Sistema Anfitrião">
   <?dbhtml filename="hostreqs.html"?>
 
-  <title>Host System Requirements</title>
+  <title>Exigências do Sistema Anfitrião</title>
 
   <sect2>
      <title>Hardware</title>
 
-     <para>The LFS editors recommend that the system CPU have at least
-     four cores and that the system have at least 8 GB of memory. 
-     Older systems that do not meet these requirements will still work,
-     but the time to build packages will be significantly longer
-     than documented.
+     <para>Os(As) editores(as) do LFS recomendam que a CPU do sistema tenha pelo menos
+quatro núcleos e que o sistema tenha pelo menos oito (08) GB de memória. Os
+sistemas mais antigos que não atendam a essas exigências ainda funcionarão,
+porém o tempo para construir os pacotes será significantemente maior que o
+documentado.
   </para>
 
   </sect2>
@@ -25,38 +25,38 @@
   <sect2>
      <title>Software</title>
 
-    <para>Your host system should have the following software with the
-    minimum versions indicated. This should not be an issue for most
-    modern Linux distributions. Also note that many distributions will
-    place software headers into separate packages, often in the form of
-    <literal><replaceable>&lt;package-name&gt;</replaceable>-devel</literal>
-    or
-    <literal><replaceable>&lt;package-name&gt;</replaceable>-dev</literal>.
-    Be sure to install those if your distribution provides them.</para>
+    <para>O teu sistema anfitrião deveria ter o seguinte logiciário com as versões
+mínimas indicadas. Isso não deveria ser um problema para a maioria das
+distribuições modernas do Linux. Também, observe que muitas distribuições
+colocarão cabeçalhos de logiciários dentro de pacotes separados,
+frequentemente na forma de
+<literal><replaceable>&lt;nome-pacote&gt;</replaceable>-devel</literal> ou
+<literal><replaceable>&lt;nome-pacote&gt;</replaceable>-dev</literal>.
+Certifique-se de instalá-los se a tua distribuição os fornecer.</para>
 
-   <para>Earlier versions of the listed software packages may work, but have
-   not been tested.</para>
+   <para>Versões anteriores dos pacotes de software listados possivelmente funcionem,
+porém não foram testados.</para>
 
   <itemizedlist spacing="compact">
 
     <listitem>
-      <para><emphasis role="strong">Bash-3.2</emphasis> (/bin/sh
-      should be a symbolic or hard link to bash)</para>
+      <para><emphasis role="strong">Bash-3.2</emphasis> (/bin/sh deveria ser um link
+simbólico ou real para bash)</para>
     </listitem>
 
     <listitem>
-      <para><emphasis role="strong">Binutils-2.13.1</emphasis> (Versions
-      greater than &binutils-version; are not recommended as they have
-      not been tested)</para>
+      <para><emphasis role="strong">Binutils-2.13.1</emphasis> (Versões maiores que
+&binutils-version; não são recomendadas dado que elas não foram testadas)</para>
     </listitem>
 
     <listitem>
-      <para><emphasis role="strong">Bison-2.7</emphasis> (/usr/bin/yacc
-      should be a link to bison or a small script that executes bison)</para>
+      <para><emphasis role="strong">Bison-2.7</emphasis> (/usr/bin/yacc deveria ser um
+link para bison ou script pequeno que executa bison)</para>
     </listitem>
 
+    
     <!-- In Coreutils-8.1 the nproc program is added.  -->
-    <listitem>
+<listitem>
       <para><emphasis role="strong">Coreutils-8.1</emphasis></para>
     </listitem>
 
@@ -69,17 +69,18 @@
     </listitem>
 
     <listitem>
-      <para><emphasis role="strong">Gawk-4.0.1</emphasis> (/usr/bin/awk
-      should be a link to gawk)</para>
+      <para><emphasis role="strong">Gawk-4.0.1</emphasis> (/usr/bin/awk deveria ser um
+link para gawk)</para>
     </listitem>
 
     <listitem>
+      
       <!-- See https://gcc.gnu.org/r15-4719.  -->
-      <para><emphasis role="strong">GCC-5.4</emphasis> including the C++
-      compiler, <command>g++</command> (Versions greater than &gcc-version; are
-      not recommended as they have not been tested). C and C++ standard
-      libraries (with headers) must also be present so the C++ compiler can
-      build hosted programs</para>
+<para><emphasis role="strong">GCC-5.4</emphasis> incluindo o compilador C++,
+<command>g++</command> (Versões maiores que &gcc-version; não são
+recomendadas dado que elas não foram testadas). As bibliotecas C e C++
+padrão (com cabeçalhos) também precisam estar presentes, de forma que o
+compilador C++ possa construir programas hospedados</para>
     </listitem>
 
     <listitem>
@@ -91,35 +92,37 @@
     </listitem>
 
     <listitem>
-      <para><emphasis role="strong">Linux Kernel-&min-kernel;</emphasis></para>
+      <para><emphasis role="strong">Núcleo Linux-&min-kernel;</emphasis></para>
 
-      <para>The reason for the kernel version requirement is that we specify
-      that version when building <application>glibc</application> in
-      <xref linkend="chapter-cross-tools"/> and
-      <xref linkend="chapter-building-system"/>, so the workarounds for
-      older kernels are not enabled and the compiled
-      <application>glibc</application> is slightly faster and smaller.
-      As at Dec 2024, &min-kernel; is the oldest kernel release still
-      supported by the kernel developers.  Some kernel releases older than
-      &min-kernel; may be still supported by third-party teams, but they
-      are not considered official upstream kernel releases; read
-      <ulink url='https://kernel.org/category/releases.html'/> for the
-      details.</para>
+      <para>A razão para a exigência da versão do núcleo é a de que nós especificamos
+essa versão quando da construção da <application>glibc</application> no
+<xref linkend="chapter-cross-tools"/> e <xref
+linkend="chapter-building-system"/>, de forma que as soluções alternativas
+para os núcleos mais antigos não estão habilitadas e a
+<application>glibc</application> compilada é ligeiramente mais rápida e
+menor. Em dezembro de 2024, &min-kernel; é o lançamento mais antigo do
+núcleo ainda suportado pelos(as) desenvolvedores(as) do núcleo. Alguns
+lançamentos de núcleo mais antigos que &min-kernel; possivelmente ainda
+sejam suportados por equipes de terceiros, porém não são considerados
+lançamentos oficiais de desenvolvedor(a) do núcleo; leia-se <ulink
+url='https://kernel.org/category/releases.html'/> para os detalhes.</para>
 
-      <para>If the host kernel is earlier than &min-kernel; you will need to replace
-      the kernel with a more up-to-date version. There are two ways
-      you can go about this. First, see if your Linux vendor provides a &min-kernel;
-      or later kernel package. If so, you may wish to install it. If your
-      vendor doesn't offer an acceptable kernel package, or you would prefer not to
-      install it, you can compile a kernel yourself. Instructions for
-      compiling the kernel and configuring the boot loader (assuming the host
-      uses GRUB) are located in <xref linkend="chapter-bootable"/>.</para>
+      <para>Se o núcleo do anfitrião for anterior a &min-kernel;, [então] você precisará
+substituir o núcleo por uma versão mais atualizada. Existem duas maneiras de
+você fazer isso. Primeira, veja se seu fornecedor Linux fornece um pacote do
+núcleo &min-kernel; ou mais atual. Se sim, [então] você possivelmente deseje
+instalá-lo. Se seu fornecedor não oferecer um pacote de núcleo aceitável ou
+você preferisse não instalá-lo, [então] você mesmo(a) pode compilar um
+núcleo. Instruções para a compilação de núcleo e configuração de carregador
+de inicialização (presumindo que o anfitrião usa GRUB) estão localizadas no
+<xref linkend="chapter-bootable"/>.</para>
 
-      <para>We require the host kernel to support UNIX 98 pseudo terminal
-      (PTY).  It should be enabled on all desktop or server distros shipping
-      Linux &min-kernel; or a newer kernel. If you are building a custom
-      host kernel, ensure <option>CONFIG_UNIX98_PTYS</option> is set to
-      <literal>y</literal> in the kernel configuration.</para>
+      <para>Nós exigimos que o núcleo do anfitrião suporte o pseudo terminal UNIX 98
+(PTY). Ele deveria estar habilitado em todas as distribuições desktop ou
+servidor que embarquem o Linux &min-kernel; ou um núcleo mais recente. Se
+você estiver construindo um núcleo personalizado de anfitrião, certifique-se
+de que <option>CONFIG_UNIX98_PTYS</option> esteja configurada como
+<literal>y</literal> na configuração do núcleo.</para>
 
     </listitem>
 
@@ -162,51 +165,54 @@
   </itemizedlist>
 
   <important>
-    <para>Note that the symlinks mentioned above are required to build an LFS
-    system using the instructions contained within this book. Symlinks that
-    point to other software (such as dash, mawk, etc.) may work, but are not
-    tested or supported by the LFS development team, and may require either
-    deviation from the instructions or additional patches to some
-    packages.</para>
+    <para>Perceba que os links simbólicos mencionados acima são exigidos para
+construir um sistema LFS usando as instruções contidas neste livro. Links
+simbólicos que apontem para outro software (tais como dash, mawk, etc.)
+possivelmente funcionem, porém não são testados ou suportados pela equipe de
+desenvolvimento do LFS e possivelmente exijam ou desvio das instruções ou
+remendos adicionais para alguns pacotes.</para>
   </important>
 
+  
   <!-- Use an empty sect2 element to prevent a pdf warning.  -->
-  <bridgehead renderas="sect2"
+<bridgehead renderas="sect2"
               id="version-check"
-              xreflabel="Host System Requirements">
+              xreflabel="Exigências do Sistema Anfitrião">
   </bridgehead>
-  <!--<title> </title>-->
+  
 
-  <para >To see whether your host system has all the appropriate versions, and
-  the ability to compile programs, run the following commands:</para>
+  <!--<title>
+ </title>-->
+<para >Para ver se o seu sistema anfitrião tem todas as versões apropriadas e a
+habilidade de compilar aplicativos, execute os seguintes comandos:</para>
 
 <screen role="nodump"><?dbfo keep-together="auto"?><userinput>cat &gt; version-check.sh &lt;&lt; "EOF"
 <literal>#!/bin/bash
-# A script to list version numbers of critical development tools
+# Um conjunto sequencial de comandos para listar os números de versão de ferramentas críticas de desenvolvimento
 
-# If you have tools installed in other directories, adjust PATH here AND
-# in ~lfs/.bashrc (section 4.4) as well.
+# Se você tiver ferramentas instaladas em outros diretórios, [então] ajuste "PATH" aqui E
+# em ~lfs/.bashrc (seção 4.4) também.
 
 LC_ALL=C 
 PATH=/usr/bin:/bin
 
 bail() { echo "FATAL: $1"; exit 1; }
-grep --version > /dev/null 2> /dev/null || bail "grep does not work"
-sed '' /dev/null || bail "sed does not work"
-sort   /dev/null || bail "sort does not work"
+grep --version > /dev/null 2> /dev/null || bail "grep não funciona"
+sed '' /dev/null || bail "sed não funciona"
+sort   /dev/null || bail "sort não funciona"
 
 ver_check()
 {
    if ! type -p $2 &amp;>/dev/null
    then 
-     echo "ERROR: Cannot find $2 ($1)"; return 1; 
+     echo "ERRO: Não conseguiu encontrar $2 ($1)"; return 1; 
    fi
    v=$($2 --version 2>&amp;1 | grep -E -o '[0-9]+\.[0-9\.]+[a-z]*' | head -n1)
    if printf '%s\n' $3 $v | sort --version-sort --check &amp;>/dev/null
    then 
      printf "OK:    %-9s %-6s >= $3\n" "$1" "$v"; return 0;
    else 
-     printf "ERROR: %-9s is TOO OLD ($3 or later required)\n" "$1"; 
+     printf "ERRO:  %-9s é MUITO ANTIGO ($3 ou posterior exigido)\n" "$1"; 
      return 1; 
    fi
 }
@@ -216,15 +222,15 @@ ver_kernel()
    kver=$(uname -r | grep -E -o '^[0-9\.]+')
    if printf '%s\n' $1 $kver | sort --version-sort --check &amp;>/dev/null
    then 
-     printf "OK:    Linux Kernel $kver >= $1\n"; return 0;
+     printf "OK:    núcleo Linux $kver >= $1\n"; return 0;
    else 
-     printf "ERROR: Linux Kernel ($kver) is TOO OLD ($1 or later required)\n" "$kver"; 
+     printf "ERRO:  núcleo Linux ($kver) é MUITO ANTIGO ($1 ou posterior exigido)\n" "$kver"; 
      return 1; 
    fi
 }
 
-# Coreutils first because --version-sort needs Coreutils >= 7.0
-ver_check Coreutils      sort     8.1 || bail "Coreutils too old, stop"
+# "Coreutils" primeiro, pois "--version-sort" precisa do "Coreutils" >= 7.0
+ver_check Coreutils      sort     8.1 || bail "Coreutils muito antigo, pare"
 ver_check Bash           bash     3.2
 ver_check Binutils       ld       2.13.1
 ver_check Bison          bison    2.7
@@ -247,29 +253,29 @@ ver_check Xz             xz       5.0.0
 ver_kernel &min-kernel;
 
 if mount | grep -q 'devpts on /dev/pts' &amp;&amp; [ -e /dev/ptmx ]
-then echo "OK:    Linux Kernel supports UNIX 98 PTY";
-else echo "ERROR: Linux Kernel does NOT support UNIX 98 PTY"; fi
+then echo "OK:    núcleo Linux suporta PTY do UNIX 98";
+else echo "ERRO:  núcleo Linux NÃO suporta PTY do UNIX 98"; fi
 
 alias_check() {
    if $1 --version 2>&amp;1 | grep -qi $2
    then printf "OK:    %-4s is $2\n" "$1";
-   else printf "ERROR: %-4s is NOT $2\n" "$1"; fi
+   else printf "ERRO:  %-4s is NOT $2\n" "$1"; fi
 }
 echo "Aliases:"
 alias_check awk GNU
 alias_check yacc Bison
 alias_check sh Bash
 
-echo "Compiler check:"
+echo "Verificação do compilador:"
 if printf "int main(){}" | g++ -x c++ -
-then echo "OK:    g++ works";
-else echo "ERROR: g++ does NOT work"; fi
+then echo "OK:    g++ funciona";
+else echo "ERRO:  g++ NÃO funciona"; fi
 rm -f a.out
 
 if [ "$(nproc)" = "" ]; then
-   echo "ERROR: nproc is not available or it produces empty output"
+   echo "ERRO: nproc não está disponível ou ele produz saída gerada vazia"
 else
-   echo "OK: nproc reports $(nproc) logical cores are available"
+   echo "OK:   nproc informa que $(nproc) núcleos lógicos estão disponíveis"
 fi</literal>
 EOF
 

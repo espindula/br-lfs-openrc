@@ -11,10 +11,8 @@
   <?dbhtml filename="tcl.html"?>
 
   <sect1info condition="script">
-    <productname>tcl</productname>
-    <productnumber>&tcl-version;</productnumber>
-    <address>&tcl-url;</address>
-  </sect1info>
+<productname>tcl</productname> <productnumber>&tcl-version;</productnumber>
+<address>&tcl-url;</address></sect1info>
 
   <title>Tcl-&tcl-version;</title>
 
@@ -25,9 +23,10 @@
   <sect2 role="package">
     <title/>
 
-    <para>The <application>Tcl</application> package contains the Tool Command Language,
-    a robust general-purpose scripting language. The <application>Expect</application> package
-    is written in <application>Tcl</application> (pronounced "tickle").</para>
+    <para>O pacote <application>Tcl</application> contém a Tool Command Language, uma
+linguagem de script robusta de propósito geral. O pacote
+<application>Expect</application> é escrito em
+<application>Tcl</application> (pronunciada "tickle").</para>
 
     <segmentedlist>
       <segtitle>&buildtime;</segtitle>
@@ -42,15 +41,15 @@
   </sect2>
 
   <sect2 role="installation">
-    <title>Installation of Tcl</title>
+    <title>Instalação do Tcl</title>
 
-    <para>This package and the next two (Expect and DejaGNU) are
-    installed to support running the test suites for Binutils, GCC and other
-    packages.  Installing three packages for testing purposes may seem
-    excessive, but it is very reassuring, if not essential, to know that the
-    most important tools are working properly.</para>
+    <para>Esse pacote e os próximos dois (Expect e DejaGNU) são instalados para
+suportar a execução das suítes de teste para Binutils, GCC e outros
+pacotes. Instalar três pacotes para propósitos de teste possivelmente pareça
+excessivo, mas é muito assegurador, se não essencial, saber que as
+ferramentas mais importantes estão funcionando adequadamente.</para>
 
-    <para>Prepare Tcl for compilation:</para>
+    <para>Prepare Tcl para compilação:</para>
 
 <screen><userinput remap="configure">SRCDIR=$(pwd)
 cd unix
@@ -59,21 +58,21 @@ cd unix
             --disable-rpath</userinput></screen>
 
     <variablelist>
-      <title>The meaning of the new configure parameters:</title>
+      <title>O significado dos novos parâmetros de configuração:</title>
 
       <varlistentry>
         <term><parameter>--disable-rpath</parameter></term>
         <listitem>
-          <para>This parameter prevents hard coding library search paths
-          (rpath) into the binary executable files and shared libraries.
-          This package does not need rpath for an installation into the
-          standard location, and rpath may sometimes cause unwanted effects
-          or even security issues.</para>
+          <para>Esse parâmetro evita caminhos de pesquisa de biblioteca de codificação
+rígida (rpath) dentro dos arquivos binários executáveis e das bibliotecas
+compartilhadas. Esse pacote não precisa do rpath para uma instalação no
+local padrão, e o rpath às vezes pode causar efeitos indesejados ou até
+mesmo problemas de segurança.</para>
         </listitem>
       </varlistentry>
     </variablelist>
 
-    <para>Build the package:</para>
+    <para>Construa o pacote:</para>
 
 <screen><userinput remap="make">make
 
@@ -94,40 +93,39 @@ sed -e "s|$SRCDIR/unix/pkgs/itcl&itcl-ver;|/usr/lib/itcl&itcl-ver;|" \
 
 unset SRCDIR</userinput></screen>
 
-    <para>The various <quote>sed</quote> instructions after the
-    <quote>make</quote> command remove references to the build directory from
-    the configuration files and replace them with the install directory.
-    This is not mandatory for the remainder of LFS, but may be needed if a
-    package built later uses Tcl.</para>
+    <para>As várias instruções <quote>sed</quote> depois do comando
+<quote>make</quote> removem referências ao diretório de construção dos
+arquivos de configuração e as substituem pelo diretório de instalação. Isso
+não é obrigatório para o restante do LFS, porém possivelmente seja
+necessário se um pacote construído posteriormente usar a Tcl.</para>
 
-    <para>To test the results, issue:</para>
+    <para>Para testar os resultados, emita:</para>
 
 <screen><userinput remap="test">LC_ALL=C.UTF-8 make test</userinput></screen>
 
-    <para>Install the package:</para>
+    <para>Instale o pacote:</para>
 
 <screen><userinput remap="install">make install 
 chmod 644 /usr/lib/libtclstub&tcl-major-version;.a</userinput></screen>
 
-    <para>Make the installed library writable so debugging symbols can
-    be removed later:</para>
+    <para>Torne as bibliotecas instaladas graváveis, de modo que símbolos de depuração
+possam ser removidos posteriormente:</para>
 
 <screen><userinput remap="install">chmod -v u+w /usr/lib/libtcl&tcl-major-version;.so</userinput></screen>
 
-    <para>Install Tcl's headers. The next package, Expect, requires them.</para>
+    <para>Instale os cabeçalhos da Tcl. O próximo pacote, Expect, exige elas.</para>
 
 <screen><userinput remap="install">make install-private-headers</userinput></screen>
 
-    <para>Now make a necessary symbolic link:</para>
+    <para>Agora faça um link simbólico necessário:</para>
 
 <screen><userinput remap="install">ln -sfv tclsh&tcl-major-version; /usr/bin/tclsh</userinput></screen>
 
-    <para>Rename a man page that conflicts with a Perl man page:</para>
+    <para>Renomeie uma página de manual que conflita com uma página de manual do Perl:</para>
 
     <screen><userinput remap="install">mv -v /usr/share/man/man3/{Thread,Tcl_Thread}.3</userinput></screen>
 
-    <para>Optionally, install the documentation by issuing
-    the following commands:</para>
+    <para>Opcionalmente, instale a documentação emitindo os seguintes comandos:</para>
 
 <screen><userinput remap="install">cd ..
 tar -xf ../tcl&tcl-version;-html.tar.gz --strip-components=1
@@ -137,33 +135,30 @@ cp -v -r  ./html/* /usr/share/doc/tcl-&tcl-version;</userinput></screen>
   </sect2>
 
   <sect2 id="contents-tcl" role="content">
-    <title>Contents of Tcl</title>
+    <title>Conteúdo do Tcl</title>
 
     <segmentedlist>
-      <segtitle>Installed programs</segtitle>
-      <segtitle>Installed library</segtitle>
+      <segtitle>Programas instalados</segtitle>
+      <segtitle>Biblioteca instalada</segtitle>
 
       <seglistitem>
         <seg>
-          tclsh (link to tclsh&tcl-major-version;) and
-          tclsh&tcl-major-version;
+          tclsh (link para tclsh&tcl-major-version;) e tclsh&tcl-major-version;
         </seg>
         <seg>
-          libtcl&tcl-major-version;.so and
-          libtclstub&tcl-major-version;.a
+          libtcl&tcl-major-version;.so e libtclstub&tcl-major-version;.a
         </seg>
       </seglistitem>
     </segmentedlist>
 
     <variablelist>
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
+      <bridgehead renderas="sect3">Descrições Curtas</bridgehead>
+      <?dbfo list-presentation="list"?> <?dbhtml list-presentation="table"?>
 
       <varlistentry id="tclsh&tcl-major-version;">
         <term><command>tclsh&tcl-major-version;</command></term>
         <listitem>
-          <para>The Tcl command shell</para>
+          <para>O shell de comando da Tcl</para>
           <indexterm zone="ch-system-tcl tclsh&tcl-major-version;">
             <primary sortas="b-tclsh&tcl-major-version;">tclsh&tcl-major-version;</primary>
           </indexterm>
@@ -173,7 +168,7 @@ cp -v -r  ./html/* /usr/share/doc/tcl-&tcl-version;</userinput></screen>
       <varlistentry id="tclsh">
         <term><command>tclsh</command></term>
         <listitem>
-          <para>A link to tclsh&tcl-major-version;</para>
+          <para>Um link para tclsh&tcl-major-version;</para>
           <indexterm zone="ch-system-tcl tclsh">
             <primary sortas="b-tclsh">tclsh</primary>
           </indexterm>
@@ -183,7 +178,7 @@ cp -v -r  ./html/* /usr/share/doc/tcl-&tcl-version;</userinput></screen>
       <varlistentry id="libtcl&tcl-major-version;.so">
         <term><filename class="libraryfile">libtcl&tcl-major-version;.so</filename></term>
         <listitem>
-          <para>The Tcl library</para>
+          <para>A biblioteca Tcl</para>
           <indexterm zone="ch-system-tcl libtcl&tcl-major-version;.so">
             <primary sortas="c-libtcl&tcl-major-version;.so">libtcl&tcl-major-version;.so</primary>
           </indexterm>
@@ -193,7 +188,7 @@ cp -v -r  ./html/* /usr/share/doc/tcl-&tcl-version;</userinput></screen>
       <varlistentry id="libtclstub&tcl-major-version;.a">
         <term><filename class="libraryfile">libtclstub&tcl-major-version;.a</filename></term>
         <listitem>
-          <para>The Tcl Stub library</para>
+          <para>A biblioteca Stub da Tcl</para>
           <indexterm zone="ch-system-tcl libtclstub&tcl-major-version;.a">
             <primary sortas="c-libtclstub&tcl-major-version;.a">libtclstub&tcl-major-version;.a</primary>
           </indexterm>

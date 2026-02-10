@@ -9,16 +9,14 @@
   <?dbhtml filename="sed.html"?>
 
   <sect1info condition="script">
-    <productname>sed</productname>
-    <productnumber>&sed-version;</productnumber>
-    <address>&sed-url;</address>
-  </sect1info>
+<productname>sed</productname> <productnumber>&sed-version;</productnumber>
+<address>&sed-url;</address></sect1info>
 
   <title>Sed-&sed-version;</title>
 
   <indexterm zone="ch-tools-sed">
     <primary sortas="a-Sed">Sed</primary>
-    <secondary>tools</secondary>
+    <secondary>ferramentas</secondary>
   </indexterm>
 
   <sect2 role="package">
@@ -41,19 +39,19 @@
   </sect2>
 
   <sect2 role="installation">
-    <title>Installation of Sed</title>
+    <title>Instalação do Sed</title>
 
-    <para>Prepare Sed for compilation:</para>
+    <para>Prepare o Sed para compilação:</para>
 
-    <screen><userinput remap="configure">./configure --prefix=/usr   \
+    <screen><userinput remap="configure">./configure --prefix=/usr  \
             --host=$LFS_TGT \
             --build=$(./build-aux/config.guess)</userinput></screen>
 
-    <para>Compile the package:</para>
+    <para>Compile o pacote:</para>
 
 <screen><userinput remap="make">make</userinput></screen>
 
-    <para>Install the package:</para>
+    <para>Instale o pacote:</para>
 
 <screen><userinput remap="install">make DESTDIR=$LFS install</userinput></screen>
 
@@ -62,8 +60,8 @@
   <sect2 role="content">
     <title/>
 
-    <para>Details on this package are located in
-    <xref linkend="contents-sed" role="."/></para>
+    <para>Detalhes acerca deste pacote estão localizados na <xref
+linkend="contents-sed" role="."/></para>
 
   </sect2>
 

@@ -5,11 +5,11 @@
   %general-entities;
 ]>
 
-<chapter id="chapter-bootable" xreflabel="Chapter&nbsp;10">
+<chapter id="chapter-bootable" xreflabel="Capítulo&nbsp;10">
   <?dbhtml dir="chapter10"?>
   <?dbhtml filename="chapter10.html"?>
 
-  <title>Making the LFS System Bootable</title>
+  <title>Tornando o Sistema LFS Inicializável</title>
 
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="introduction.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="fstab.xml"/>

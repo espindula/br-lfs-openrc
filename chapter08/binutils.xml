@@ -9,10 +9,8 @@
   <?dbhtml filename="binutils.html"?>
 
   <sect1info condition="script">
-    <productname>binutils</productname>
-    <productnumber>&binutils-version;</productnumber>
-    <address>&binutils-url;</address>
-  </sect1info>
+<productname>binutils</productname>
+<productnumber>&binutils-version;</productnumber> <address>&binutils-url;</address></sect1info>
 
   <title>Binutils-&binutils-version;</title>
 
@@ -23,8 +21,8 @@
   <sect2 role="package">
     <title/>
 
-    <para>The Binutils package contains a linker, an assembler, and other
-    tools for handling object files.</para>
+    <para>O pacote Binutils contém um vinculador, um montador e outras ferramentas
+para manusear arquivos objeto.</para>
 
     <segmentedlist>
       <segtitle>&buildtime;</segtitle>
@@ -39,19 +37,19 @@
   </sect2>
 
   <sect2 role="installation">
-    <title>Installation of Binutils</title>
+    <title>Instalação do Binutils</title>
 
-    <para>First, make a fix required by glibc-2.43 and later:</para>
+    <para>Primeiro, faça uma correção exigida pela glibc-2.43 e posteriores:</para>
 
 <screen><userinput remap="pre">sed -i 's/__collector_util_funcs.x/(&amp;)/' gprofng/src/collector_module.h</userinput></screen>
 
-    <para>The Binutils documentation recommends building Binutils
-    in a dedicated build directory:</para>
+    <para>A documentação do Binutils recomenda construir o Binutils em um diretório
+dedicado à construção:</para>
 
 <screen><userinput remap="pre">mkdir -v build
-cd       build</userinput></screen>
+cd      build</userinput></screen>
 
-    <para>Prepare Binutils for compilation:</para>
+    <para>Prepare o Binutils para compilação:</para>
 
 <screen><userinput remap="configure">../configure --prefix=/usr       \
              --sysconfdir=/etc   \
@@ -65,77 +63,76 @@ cd       build</userinput></screen>
              --enable-default-hash-style=gnu</userinput></screen>
 
     <variablelist>
-      <title>The meaning of the new configure parameters:</title>
+      <title>O significado dos novos parâmetros de configuração:</title>
 
       <varlistentry>
         <term><parameter>--enable-ld=default</parameter></term>
         <listitem>
-          <para>Build the original bfd linker and install it as both ld (the
-          default linker) and ld.bfd.</para>
+          <para>Constrói o vinculador bfd original e o instala como ambos ld (o vinculador
+padrão) e ld.bfd.</para>
         </listitem>
       </varlistentry>
 
       <varlistentry>
         <term><parameter>--enable-plugins</parameter></term>
         <listitem>
-          <para>Enables plugin support for the linker.</para>
+          <para>Habilita suporte de plugin para o vinculador.</para>
         </listitem>
       </varlistentry>
 
       <varlistentry>
         <term><parameter>--with-system-zlib</parameter></term>
         <listitem>
-          <para>Use the installed zlib library instead of building the
-          included version.</para>
+          <para>Usa a biblioteca zlib instalada em vez de construir a versão incluída.</para>
         </listitem>
       </varlistentry>
 
     </variablelist>
 
-    <para>Compile the package:</para>
+    <para>Compile o pacote:</para>
 
 <screen><userinput remap="make">make tooldir=/usr</userinput></screen>
 
     <variablelist>
-      <title>The meaning of the make parameter:</title>
+      <title>O significado do parâmetro do make:</title>
 
       <varlistentry>
         <term><parameter>tooldir=/usr</parameter></term>
         <listitem>
-          <para>Normally, the tooldir (the directory where the executables will
-          ultimately be located) is set to <filename
-          class="directory">$(exec_prefix)/$(target_alias)</filename>. For
-          example, x86_64 machines would expand that to <filename
-          class="directory">/usr/x86_64-pc-linux-gnu</filename>. Because this is
-          a custom system, this target-specific directory in <filename
-          class="directory">/usr</filename> is not required. <filename
-          class="directory">$(exec_prefix)/$(target_alias)</filename> would be
-          used if the system were used to cross-compile (for example, compiling a
-          package on an Intel machine that generates code that can be executed
-          on PowerPC machines).</para>
+          <para>Normalmente, o tooldir (o diretório onde os executáveis ultimamente estarão
+localizados) é configurado para <filename
+class="directory">$(exec_prefix)/$(target_alias)</filename>. Por exemplo,
+máquinas x86_64 expandiriam isso para <filename
+class="directory">/usr/x86_64-pc-linux-gnu</filename>. Por causa que este é
+um sistema personalizado, esse diretório alvo específico em <filename
+class="directory">/usr</filename> não é exigido. <filename
+class="directory">$(exec_prefix)/$(target_alias)</filename> seria usado se o
+sistema fosse usado para compilar cruzadamente (por exemplo, compilar um
+pacote em uma máquina Intel que gera código que pode ser executado em
+máquinas PowerPC).</para>
         </listitem>
       </varlistentry>
 
     </variablelist>
 
     <important>
-      <para>The test suite for Binutils in this section is considered critical.
-      Do not skip it under any circumstances.</para>
+      <para>A suíte de teste para Binutils nesta seção é considerada crítica. Não a pule
+sob quaisquer circunstâncias.</para>
     </important>
 
-    <para>Test the results:</para>
+    <para>Teste os resultados:</para>
 
 <screen><userinput remap="test">make -k check</userinput></screen>
 
-    <para>For a list of failed tests, run:</para>
+    <para>Para uma lista de testes falhos, execute:</para>
 
 <screen><userinput remap="test">grep '^FAIL:' $(find -name '*.log')</userinput></screen>
 
-    <para>Install the package:</para>
+    <para>Instale o pacote:</para>
 
 <screen><userinput remap="install">make tooldir=/usr install</userinput></screen>
 
-    <para>Remove useless static libraries and other files:</para>
+    <para>Remova bibliotecas estáticas inúteis e outros arquivos:</para>
 
 <screen><userinput remap="install">rm -rfv /usr/lib/lib{bfd,ctf,ctf-nobfd,gprofng,opcodes,sframe}.a \
         /usr/share/doc/gprofng/</userinput></screen>
@@ -143,34 +140,33 @@ cd       build</userinput></screen>
   </sect2>
 
   <sect2 id="contents-binutils" role="content">
-    <title>Contents of Binutils</title>
+    <title>Conteúdo do Binutils</title>
 
     <segmentedlist>
-      <segtitle>Installed programs</segtitle>
-      <segtitle>Installed libraries</segtitle>
-      <segtitle>Installed directory</segtitle>
+      <segtitle>Programas instalados</segtitle>
+      <segtitle>Bibliotecas instaladas</segtitle>
+      <segtitle>Diretório instalado</segtitle>
 
       <seglistitem>
         <seg>addr2line, ar, as, c++filt, dwp, elfedit, gprof, gprofng, ld, ld.bfd, nm,
-        objcopy, objdump, ranlib, readelf, size, strings, and strip</seg>
-        <seg>libbfd.so, libctf.so, libctf-nobfd.so, libgprofng.so,
-        libopcodes.so, and libsframe.so</seg>
+objcopy, objdump, ranlib, readelf, size, strings e strip</seg>
+        <seg>libbfd.so, libctf.so, libctf-nobfd.so, libgprofng.so, libopcodes.so e
+libsframe.so</seg>
         <seg>/usr/lib/ldscripts</seg>
       </seglistitem>
     </segmentedlist>
 
     <variablelist>
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
+      <bridgehead renderas="sect3">Descrições Curtas</bridgehead>
+      <?dbfo list-presentation="list"?> <?dbhtml list-presentation="table"?>
 
       <varlistentry id="addr2line">
         <term><command>addr2line</command></term>
         <listitem>
-          <para>Translates program addresses to file names and line numbers;
-          given an address and the name of an executable, it uses the debugging
-          information in the executable to determine which source file and line
-          number are associated with the address</para>
+          <para>Traduz endereços de aplicativos para nomes de arquivo e números de linha;
+dado um endereço e o nome de um executável, ele usa a informação de
+depuração no executável para determinar qual arquivo fonte e número de linha
+estão associados com o endereço</para>
           <indexterm zone="ch-system-binutils addr2line">
             <primary sortas="b-addr2line">addr2line</primary>
           </indexterm>
@@ -180,7 +176,7 @@ cd       build</userinput></screen>
       <varlistentry id="ar">
         <term><command>ar</command></term>
         <listitem>
-          <para>Creates, modifies, and extracts from archives</para>
+          <para>Cria, modifica e extrai a partir de arquivamentos</para>
           <indexterm zone="ch-system-binutils ar">
             <primary sortas="b-ar">ar</primary>
           </indexterm>
@@ -190,8 +186,8 @@ cd       build</userinput></screen>
       <varlistentry id="as">
         <term><command>as</command></term>
         <listitem>
-          <para>An assembler that assembles the output of <command>gcc</command>
-          into object files</para>
+          <para>Um montador que monta a saída gerada do <command>gcc</command> para dentro
+de arquivos objeto</para>
           <indexterm zone="ch-system-binutils as">
             <primary sortas="b-as">as</primary>
           </indexterm>
@@ -201,8 +197,8 @@ cd       build</userinput></screen>
       <varlistentry id="c-filt">
         <term><command>c++filt</command></term>
         <listitem>
-          <para>Used by the linker to de-mangle C++ and Java symbols and to keep
-          overloaded functions from clashing</para>
+          <para>Usado pelo vinculador para desmembrar símbolos C++ e Java e para impedir que
+funções sobrecarregadas entrem em conflito</para>
           <indexterm zone="ch-system-binutils c-filt">
             <primary sortas="b-c++filt">c++filt</primary>
           </indexterm>
@@ -212,7 +208,7 @@ cd       build</userinput></screen>
       <varlistentry id="dwp">
         <term><command>dwp</command></term>
         <listitem>
-          <para>The DWARF packaging utility</para>
+          <para>O utilitário de empacotamento DWARF</para>
           <indexterm zone="ch-system-binutils dwp">
             <primary sortas="dwp">dwp</primary>
           </indexterm>
@@ -222,7 +218,7 @@ cd       build</userinput></screen>
       <varlistentry id="elfedit">
         <term><command>elfedit</command></term>
         <listitem>
-          <para>Updates the ELF headers of ELF files</para>
+          <para>Atualiza o cabeçalho ELF de arquivos ELF</para>
           <indexterm zone="ch-system-binutils elfedit">
             <primary sortas="b-elfedit">elfedit</primary>
           </indexterm>
@@ -232,7 +228,7 @@ cd       build</userinput></screen>
       <varlistentry id="gprof">
         <term><command>gprof</command></term>
         <listitem>
-          <para>Displays call graph profile data</para>
+          <para>Exibe dados do perfil de gráfico de chamada</para>
           <indexterm zone="ch-system-binutils gprof">
             <primary sortas="b-gprof">gprof</primary>
           </indexterm>
@@ -242,7 +238,7 @@ cd       build</userinput></screen>
       <varlistentry id="gprofng">
         <term><command>gprofng</command></term>
         <listitem>
-          <para>Gathers and analyzes performance data</para>
+          <para>Coleta e analisa dados de desempenho</para>
           <indexterm zone="ch-system-binutils gprofng">
             <primary sortas="b-gprofng">gprofng</primary>
           </indexterm>
@@ -252,9 +248,8 @@ cd       build</userinput></screen>
       <varlistentry id="ld">
         <term><command>ld</command></term>
         <listitem>
-          <para>A linker that combines a number of object and archive files
-          into a single file, relocating their data and tying up symbol
-          references</para>
+          <para>Um vinculador que combina um número de objetos e arquivos de arquivamento em
+um arquivo, realocando os dados deles e vinculando referências de símbolos</para>
           <indexterm zone="ch-system-binutils ld">
             <primary sortas="b-ld">ld</primary>
           </indexterm>
@@ -264,7 +259,7 @@ cd       build</userinput></screen>
       <varlistentry id="ld.bfd">
         <term><command>ld.bfd</command></term>
         <listitem>
-          <para>A hard link to <command>ld</command></para>
+          <para>Um link rígido para o <command>ld</command></para>
           <indexterm zone="ch-system-binutils ld.bfd">
             <primary sortas="b-ld.bfd">ld.bfd</primary>
           </indexterm>
@@ -274,7 +269,7 @@ cd       build</userinput></screen>
       <varlistentry id="nm">
         <term><command>nm</command></term>
         <listitem>
-          <para>Lists the symbols occurring in a given object file</para>
+          <para>Lista os símbolos ocorrentes em um dado arquivo objeto</para>
           <indexterm zone="ch-system-binutils nm">
             <primary sortas="b-nm">nm</primary>
           </indexterm>
@@ -284,7 +279,7 @@ cd       build</userinput></screen>
       <varlistentry id="objcopy">
         <term><command>objcopy</command></term>
         <listitem>
-          <para>Translates one type of object file into another</para>
+          <para>Traduz um tipo de arquivo objeto em outro</para>
           <indexterm zone="ch-system-binutils objcopy">
             <primary sortas="b-objcopy">objcopy</primary>
           </indexterm>
@@ -294,10 +289,9 @@ cd       build</userinput></screen>
       <varlistentry id="objdump">
         <term><command>objdump</command></term>
         <listitem>
-          <para>Displays information about the given object file, with options
-          controlling the particular information to display; the information
-          shown is useful to programmers who are working on the compilation
-          tools</para>
+          <para>Exibe informação a respeito do dado arquivo objeto, com opções controlando a
+informação particular a exibir; a informação mostrada é útil para
+programadores(as) que estão trabalhando nas ferramentas de compilação</para>
           <indexterm zone="ch-system-binutils objdump">
             <primary sortas="b-objdump">objdump</primary>
           </indexterm>
@@ -307,9 +301,9 @@ cd       build</userinput></screen>
       <varlistentry id="ranlib">
         <term><command>ranlib</command></term>
         <listitem>
-          <para>Generates an index of the contents of an archive and stores it
-          in the archive; the index lists all of the symbols defined by archive
-          members that are relocatable object files</para>
+          <para>Gera um índice do conteúdo de um arquivamento e o armazena no arquivamento;
+o índice lista todos os símbolos definidos pelos membros do arquivamento que
+são arquivos objeto realocáveis</para>
           <indexterm zone="ch-system-binutils ranlib">
             <primary sortas="b-ranlib">ranlib</primary>
           </indexterm>
@@ -319,7 +313,7 @@ cd       build</userinput></screen>
       <varlistentry id="readelf">
         <term><command>readelf</command></term>
         <listitem>
-          <para>Displays information about ELF type binaries</para>
+          <para>Exibe informação a respeito de binários do tipo ELF</para>
           <indexterm zone="ch-system-binutils readelf">
             <primary sortas="b-readelf">readelf</primary>
           </indexterm>
@@ -329,8 +323,7 @@ cd       build</userinput></screen>
       <varlistentry id="size">
         <term><command>size</command></term>
         <listitem>
-          <para>Lists the section sizes and the total size for the given
-          object files</para>
+          <para>Lista os tamanhos de seção e o tamanho total para os arquivos objeto dados</para>
           <indexterm zone="ch-system-binutils size">
             <primary sortas="b-size">size</primary>
           </indexterm>
@@ -340,11 +333,11 @@ cd       build</userinput></screen>
       <varlistentry id="strings">
         <term><command>strings</command></term>
         <listitem>
-          <para>Outputs, for each given file, the sequences of printable
-          characters that are of at least the specified length (defaulting to
-          four); for object files, it prints, by default, only the strings from
-          the initializing and loading sections while for other types of files, it
-          scans the entire file</para>
+          <para>Exibe, para cada arquivo dado, as sequências de caracteres imprimíveis que
+são, no mínimo, do comprimento especificado (padronizado para quatro); para
+arquivos objeto, ele imprime, por padrão, somente as sequências de
+caracteres a partir das seções de inicialização e carregamento enquanto que
+para outros tipos de arquivos, ele escaneia o arquivo inteiro</para>
           <indexterm zone="ch-system-binutils strings">
             <primary sortas="b-strings">strings</primary>
           </indexterm>
@@ -354,7 +347,7 @@ cd       build</userinput></screen>
       <varlistentry id="strip">
         <term><command>strip</command></term>
         <listitem>
-          <para>Discards symbols from object files</para>
+          <para>Descarta símbolos originários de arquivos objeto</para>
           <indexterm zone="ch-system-binutils strip">
             <primary sortas="b-strip">strip</primary>
           </indexterm>
@@ -364,7 +357,7 @@ cd       build</userinput></screen>
       <varlistentry id="libbfd">
         <term><filename class="libraryfile">libbfd</filename></term>
         <listitem>
-          <para>The Binary File Descriptor library</para>
+          <para>A biblioteca de Descritor de Arquivo Binário</para>
           <indexterm zone="ch-system-binutils libbfd">
             <primary sortas="c-libbfd">libbfd</primary>
           </indexterm>
@@ -374,7 +367,7 @@ cd       build</userinput></screen>
       <varlistentry id="libctf">
         <term><filename class="libraryfile">libctf</filename></term>
         <listitem>
-          <para>The Compat ANSI-C Type Format debugging support library</para>
+          <para>A biblioteca de suporte de depuração Compat ANSI-C Type Format</para>
           <indexterm zone="ch-system-binutils libctf">
             <primary sortas="c-libctf">libctf</primary>
           </indexterm>
@@ -384,7 +377,7 @@ cd       build</userinput></screen>
       <varlistentry id="libctf-nobfd">
         <term><filename class="libraryfile">libctf-nobfd</filename></term>
         <listitem>
-          <para>A libctf variant which does not use libbfd functionality</para>
+          <para>Uma variante da libctf que não usa funcionalidade da libbfd</para>
           <indexterm zone="ch-system-binutils libctf-nobfd">
             <primary sortas="c-libctf-nobfd">libctf-nobfd</primary>
           </indexterm>
@@ -394,8 +387,8 @@ cd       build</userinput></screen>
       <varlistentry id="libgprofng">
         <term><filename class="libraryfile">libgprofng</filename></term>
         <listitem>
-          <para>A library containing most routines used by
-          <command>gprofng</command></para>
+          <para>Uma biblioteca contendo a maioria das rotinas usadas pelo
+<command>gprofng</command></para>
           <indexterm zone="ch-system-binutils libgprofng">
             <primary sortas="c-libgprofng">libgprofng</primary>
           </indexterm>
@@ -405,10 +398,9 @@ cd       build</userinput></screen>
       <varlistentry id="libopcodes">
         <term><filename class="libraryfile">libopcodes</filename></term>
         <listitem>
-          <para>A library for dealing with opcodes&mdash;the <quote>readable
-          text</quote> versions of instructions for the processor;
-          it is used for building utilities like
-          <command>objdump</command></para>
+          <para>Uma biblioteca para lidar com opcodes&mdash;as versões de <quote>texto
+legível</quote> de instruções para o processador; é usada para construir
+utilitários como o <command>objdump</command></para>
           <indexterm zone="ch-system-binutils libopcodes">
             <primary sortas="c-libopcodes">libopcodes</primary>
           </indexterm>
@@ -418,8 +410,8 @@ cd       build</userinput></screen>
       <varlistentry id="libsframe">
         <term><filename class="libraryfile">libsframe</filename></term>
         <listitem>
-           <para>A library to support online backtracing using a 
-           simple unwinder</para>
+           <para>Uma biblioteca para suportar retrocesso em linha usando um desbobinador
+simples</para>
           <indexterm zone="ch-system-binutils libsframe">
             <primary sortas="c-libsframe">libsframe</primary>
           </indexterm>

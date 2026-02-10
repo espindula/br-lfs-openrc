@@ -9,16 +9,14 @@
   <?dbhtml filename="gcc-pass1.html"?>
 
   <sect1info condition="script">
-    <productname>gcc-pass1</productname>
-    <productnumber>&gcc-version;</productnumber>
-    <address>&gcc-url;</address>
-  </sect1info>
+<productname>gcc-pass1</productname>
+<productnumber>&gcc-version;</productnumber> <address>&gcc-url;</address></sect1info>
 
-  <title>GCC-&gcc-version; - Pass 1</title>
+  <title>GCC-&gcc-version; - Passagem 1</title>
 
   <indexterm zone="ch-tools-gcc-pass1">
     <primary sortas="a-GCC">GCC</primary>
-    <secondary>tools, pass 1</secondary>
+    <secondary>ferramentas, passagem 1</secondary>
   </indexterm>
 
   <sect2 role="package">
@@ -41,19 +39,20 @@
   </sect2>
 
   <sect2 role="installation">
-    <title>Installation of Cross GCC</title>
+    <title>Instalação do GCC Cruzado</title>
 
-    <para>GCC requires the GMP, MPFR and MPC packages. As these packages may
-    not be included in your host distribution, they will be built with
-    GCC.  Unpack each package into the GCC source directory and rename the
-    resulting directories so the GCC build procedures will automatically
-    use them:</para>
+    <para>O GCC exige os pacotes GMP, MPFR e MPC. Uma vez que esses pacotes talvez não
+estejam incluídos na sua distribuição anfitriã, eles serão construídos com o
+GCC. Desempacote cada pacote dentro do diretório de fonte do GCC e renomeie
+os diretórios resultantes, de forma que os procedimentos de construção do
+GCC automaticamente os usarão:</para>
 
-    <note><para>There are frequent misunderstandings about this chapter.  The
-    procedures are the same as every other chapter, as explained earlier (<xref
-    linkend='buildinstr'/>).  First, extract the gcc-&gcc-version; tarball from the sources
-    directory, and then change to the directory created.  Only then should you
-    proceed with the instructions below.</para></note>
+    <note><para>Existem mal-entendidos frequentes a respeito deste capítulo. Os
+procedimentos são os mesmos que todos os outros capítulos, conforme
+explicados anteriormente (<xref linkend='buildinstr'/>). Primeiro, extraia o
+tarball gcc-&gcc-version; a partir do diretório dos fontes e então mude para
+o diretório criado. Somente então deveria você prosseguir com as instruções
+abaixo.</para></note>
 
 <screen><userinput remap="pre">tar -xf ../mpfr-&mpfr-version;.tar.xz
 mv -v mpfr-&mpfr-version; mpfr
@@ -62,8 +61,8 @@ mv -v gmp-&gmp-version; gmp
 tar -xf ../mpc-&mpc-version;.tar.gz
 mv -v mpc-&mpc-version; mpc</userinput></screen>
 
-    <para>On x86_64 hosts, set the default directory name for
-    64-bit libraries to <quote>lib</quote>:</para>
+    <para>Em anfitriões x86_64, configure o nome padrão de diretório para bibliotecas
+de 64 bits para <quote>lib</quote>:</para>
 
 <screen><userinput remap="pre">case $(uname -m) in
   x86_64)
@@ -74,28 +73,27 @@ esac</userinput></screen>
 
     <note>
       <para>
-        This example demonstrates the use of the
-        <parameter>-i.orig</parameter> switch.  It makes the
-        <command>sed</command> copy the <filename>t-linux64</filename> file
-        to <filename>t-linux64.orig</filename>, and then edit the original
-        <filename>t-linux64</filename> file inplace.  So you may run
-        <command>diff -u gcc/config/i386/t-linux64{.orig,}</command>
-        to visualize the change done by the <command>sed</command> command
-        afterwards.  We'll simply use <parameter>-i</parameter> (which just
-        edits the original file inplace without copying it) for all other
-        packages in the book, but you can change it to
-        <parameter>-i.orig</parameter> in any case you want to keep a copy
-        of the original file.
+        Esse exemplo demonstra o uso da chave <parameter>-i.orig</parameter>. Ela
+faz com que o <command>sed</command> copie o arquivo
+<filename>t-linux64</filename> para <filename>t-linux64.orig</filename> e,
+então, edite o arquivo <filename>t-linux64</filename> original no
+local. Assim, você pode executar <command>diff -u
+gcc/config/i386/t-linux64{.orig,}</command> para visualizar a mudança feita
+pelo comando <command>sed</command> posteriormente. Nós usaremos
+simplesmente <parameter>-i</parameter> (que somente edita o arquivo original
+no local, sem copiá-lo) para todos os outros pacotes do livro, mas você pode
+mudá-lo para <parameter>-i.orig</parameter> em qualquer caso que queira
+manter uma cópia do arquivo original.
       </para>
     </note>
 
-    <para>The GCC documentation recommends building GCC
-    in a dedicated build directory:</para>
+    <para>A documentação do GCC recomenda construir o GCC em um diretório de
+construção dedicado:</para>
 
 <screen><userinput remap="pre">mkdir -v build
-cd       build</userinput></screen>
+cd      build</userinput></screen>
 
-    <para>Prepare GCC for compilation:</para>
+    <para>Prepare o GCC para compilação:</para>
 
 <screen><userinput remap="configure">../configure                  \
     --target=$LFS_TGT         \
@@ -118,48 +116,47 @@ cd       build</userinput></screen>
     --disable-libstdcxx       \
     --enable-languages=c,c++</userinput></screen>
     <variablelist>
-      <title>The meaning of the configure options:</title>
+      <title>O significado das opções do configure:</title>
 
       <varlistentry>
         <term><parameter>--with-glibc-version=&glibc-version;</parameter></term>
         <listitem>
-          <para>This option specifies the version of Glibc which will be
-          used on the target. It is not relevant to the libc of the host
-          distro because everything compiled by pass1 GCC will run in the
-          chroot environment, which is isolated from libc of the host
-          distro.</para>
+          <para>Essa opção especifica a versão da Glibc que será usada no alvo. Ela não é
+relevante para a libc da distribuição anfitriã, pois tudo compilado pela
+passagem 1 do GCC executará no ambiente chroot, o qual é isolado da libc da
+distribuição anfitriã.</para>
         </listitem>
       </varlistentry>
 
       <varlistentry>
         <term><parameter>--with-newlib</parameter></term>
         <listitem>
-          <para>Since a working C library is not yet available, this ensures
-          that the inhibit_libc constant is defined when building libgcc. This prevents
-          the compiling of any code that requires libc support.</para>
+          <para>Uma vez que uma biblioteca C funcional ainda não está disponível, isso
+assegura que a constante inhibit_libc esteja definida quando da construção
+de libgcc. Isso evita a compilação de qualquer código que exija suporte à
+libc.</para>
         </listitem>
       </varlistentry>
 
       <varlistentry>
         <term><parameter>--without-headers</parameter></term>
         <listitem>
-          <para>When creating a complete cross-compiler, GCC requires
-          standard headers compatible with the target system. For our
-          purposes these headers will not be needed. This switch prevents
-          GCC from looking for them.</para>
+          <para>Quando da criação de um compilador cruzado completo, o GCC exige cabeçalhos
+padrão compatíveis com o sistema alvo. Para nossos propósitos esses
+cabeçalhos não serão necessários. Essa chave evita que o GCC procure por
+eles.</para>
         </listitem>
       </varlistentry>
 
       <varlistentry>
-      <term><parameter>--enable-default-pie and
-      --enable-default-ssp</parameter></term>
+      <term><parameter>--enable-default-pie e --enable-default-ssp</parameter></term>
         <listitem>
-          <para>Those switches allow GCC to compile programs with
-           some hardening security features (more information on those in
-           the <xref linkend="pie-ssp-info"/> in chapter 8) by default. They
-           are not strictly needed at this stage, since the compiler will
-           only produce temporary executables. But it is cleaner to have the
-           temporary packages be as close as possible to the final ones.
+          <para>Essas chaves permitem que o GCC compile aplicativos com alguns recursos de
+segurança reforçados (mais informação a respeito delas na <xref
+linkend="pie-ssp-info"/> no capítulo 8) por padrão. Elas não são
+estritamente necessárias neste estágio, pois o compilador produzirá apenas
+executáveis temporários. Mas, é mais limpo ter os pacotes temporários o mais
+próximo possível dos finais.
           </para>
         </listitem>
       </varlistentry>
@@ -167,70 +164,71 @@ cd       build</userinput></screen>
       <varlistentry>
         <term><parameter>--disable-shared</parameter></term>
         <listitem>
-          <para>This switch forces GCC to link its internal libraries
-          statically. We need this because the shared libraries require Glibc,
-          which is not yet installed on the target system.</para>
+          <para>Essa chave força o GCC a vincular as bibliotecas internas dele
+estaticamente. Nós precisamos disso, pois as bibliotecas compartilhadas
+exigem a Glibc, que ainda não está instalada no sistema alvo.</para>
         </listitem>
       </varlistentry>
 
       <varlistentry>
         <term><parameter>--disable-multilib</parameter></term>
         <listitem>
-          <para>On x86_64, LFS does not support a multilib configuration.
-          This switch is harmless for x86.</para>
+          <para>Em x86_64, o LFS não suporta uma configuração multi bibliotecas. Essa chave
+é inofensiva para x86.</para>
         </listitem>
       </varlistentry>
 
       <varlistentry>
-        <term><parameter>--disable-threads,
-        --disable-libatomic, --disable-libgomp,
-        --disable-libquadmath, --disable-libssp, --disable-libvtv,
-        --disable-libstdcxx</parameter></term>
+        <term><parameter>--disable-threads, --disable-libatomic, --disable-libgomp,
+--disable-libquadmath, --disable-libssp, --disable-libvtv e
+--disable-libstdcxx</parameter></term>
         <listitem>
-          <para>These switches disable support for
-          threading, libatomic, libgomp, libquadmath, libssp,
-          libvtv, and the C++ standard library respectively. These features
-          may fail to compile when building a cross-compiler and are not
-          necessary for the task of cross-compiling the temporary libc.</para>
+          <para>Essas chaves desabilitam o suporte para threading, libatomic, libgomp,
+libquadmath, libssp, libvtv e à biblioteca padrão C++ respectivamente. Esses
+recursos possivelmente falhem para compilar quando da construção de um
+compilador cruzado e não são necessários para a tarefa de compilar
+cruzadamente a libc temporária.</para>
         </listitem>
       </varlistentry>
 
       <varlistentry>
         <term><parameter>--enable-languages=c,c++</parameter></term>
         <listitem>
-          <para>This option ensures that only the C and C++ compilers are built.
-          These are the only languages needed now.</para>
+          <para>Essa opção garante que apenas os compiladores C e C++ sejam
+construídos. Essas são as únicas linguagens necessárias agora.</para>
         </listitem>
       </varlistentry>
 
     </variablelist>
 
-    <para>Compile GCC by running:</para>
+    <para>Compile o GCC executando:</para>
 
 <screen><userinput remap="make">make</userinput></screen>
 
-    <para>Install the package:</para>
+    <para>Instale o pacote:</para>
 
     <screen><userinput remap="install">make install</userinput></screen>
 
-    <para>This build of GCC has installed a couple of internal system
-    headers.  Normally one of them, <filename>limits.h</filename>, would in turn
-    include the corresponding system <filename>limits.h</filename> header, in
-    this case, <filename>$LFS/usr/include/limits.h</filename>. However, at the
-    time of this build of GCC <filename>$LFS/usr/include/limits.h</filename>
-    does not exist, so the internal header that has just been installed is a
-    partial, self-contained file and does not include the extended features of
-    the system header. This is adequate for building Glibc, but the full
-    internal header will be needed later.  Create a full version of the internal
-    header using a command that is identical to what the GCC build system does
-    in normal circumstances:</para>
+    <para>Essa construção do GCC instalou um par de cabeçalhos internos de
+sistema. Normalmente um deles, <filename>limits.h</filename>,
+sequencialmente incluiria o correspondente cabeçalho de sistema
+<filename>limits.h</filename>, nesse caso,
+<filename>$LFS/usr/include/limits.h</filename>. Entretanto, ao tempo dessa
+construção do GCC, <filename>$LFS/usr/include/limits.h</filename> não
+existe, de forma que o cabeçalho interno que tenha sido instalado é um
+arquivo parcial, auto-contido, e não inclui os recursos estendidos do
+cabeçalho de sistema. Isso é adequado para a construção da Glibc, porém o
+cabeçalho interno completo será necessário posteriormente. Crie uma versão
+completa do cabeçalho interno usando um comando que é idêntico ao que o
+sistema de construção do GCC faz em circunstâncias normais:</para>
 
     <note>
-      <para>The command below shows an example of nested command substitution
-      using two methods: backquotes and a <literal>$()</literal> construct. 
-      It could be rewritten using the same method for both substitutions,
-      but is shown this way to demonstrate how they can be mixed.  Generally
-      the <literal>$()</literal> method is preferred.</para>
+      <para>O comando abaixo mostra um exemplo da substituição de comando aninhada
+usando dois métodos: aspas invertidas e uma construção
+<literal>$()</literal>. Poderia ser reescrito usando o mesmo método para
+ambas as substituições, porém é mostrado dessa maneira para demonstrar o
+como eles podem ser misturados. Geralmente o método <literal>$()</literal> é
+preferido.</para>
     </note>
 
 <screen><userinput remap="install">cd ..
@@ -241,8 +239,8 @@ cat gcc/limitx.h gcc/glimits.h gcc/limity.h > \
   <sect2 role="content">
     <title/>
 
-    <para>Details on this package are located in
-    <xref linkend="contents-gcc" role="."/></para>
+    <para>Detalhes acerca deste pacote estão localizados na <xref
+linkend="contents-gcc" role="."/></para>
 
   </sect2>
 

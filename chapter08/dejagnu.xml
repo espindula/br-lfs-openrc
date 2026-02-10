@@ -9,10 +9,8 @@
   <?dbhtml filename="dejagnu.html"?>
 
   <sect1info condition="script">
-    <productname>dejagnu</productname>
-    <productnumber>&dejagnu-version;</productnumber>
-    <address>&dejagnu-url;</address>
-  </sect1info>
+<productname>dejagnu</productname>
+<productnumber>&dejagnu-version;</productnumber> <address>&dejagnu-url;</address></sect1info>
 
   <title>DejaGNU-&dejagnu-version;</title>
 
@@ -23,9 +21,10 @@
   <sect2 role="package">
     <title/>
 
-    <para>The <application>DejaGnu</application> package contains a framework for running test
-      suites on GNU tools. It is written in <command>expect</command>, which itself
-      uses <application>Tcl</application> (Tool Command Language).</para>
+    <para>O pacote <application>DejaGnu</application> contém uma estrutura subjacente
+para executar suítes de teste em ferramentas GNU. Ele é escrito em
+<command>expect</command>, a qual usa ela própria a
+<application>Tcl</application> (Tool Command Language).</para>
 
     <segmentedlist>
       <segtitle>&buildtime;</segtitle>
@@ -40,25 +39,25 @@
   </sect2>
 
   <sect2 role="installation">
-    <title>Installation of DejaGNU</title>
+    <title>Instalação do DejaGNU</title>
 
-    <para>The upstream recommends building DejaGNU in a dedicated build
-    directory:</para>
+    <para>A(O) desenvolvedora(r) recomenda construir DejaGNU em um diretório dedicado
+à construção:</para>
 
 <screen><userinput remap="pre">mkdir -v build
-cd       build</userinput></screen>
+cd      build</userinput></screen>
 
-    <para>Prepare DejaGNU for compilation:</para>
+    <para>Prepare DejaGNU para compilação:</para>
 
 <screen><userinput remap="configure">../configure --prefix=/usr
 makeinfo --html --no-split -o doc/dejagnu.html ../doc/dejagnu.texi
 makeinfo --plaintext       -o doc/dejagnu.txt  ../doc/dejagnu.texi</userinput></screen>
 
-    <para>To test the results, issue:</para>
+    <para>Para testar os resultados, emita:</para>
 
 <screen><userinput remap="test">make check</userinput></screen>
 
-    <para>Install the package:</para>
+    <para>Instale o pacote:</para>
 
 <screen><userinput remap="install">make install
 install -v -dm755  /usr/share/doc/dejagnu-&dejagnu-version;
@@ -68,25 +67,24 @@ install -v -m644   doc/dejagnu.{html,txt} /usr/share/doc/dejagnu-&dejagnu-versio
 
 
   <sect2 id="contents-dejagnu" role="content">
-    <title>Contents of DejaGNU</title>
+    <title>Conteúdo do DejaGNU</title>
 
     <segmentedlist>
-      <segtitle>Installed program</segtitle>
+      <segtitle>Aplicativo instalado</segtitle>
 
       <seglistitem>
-        <seg>dejagnu and runtest</seg>
+        <seg>dejagnu e runtest</seg>
       </seglistitem>
     </segmentedlist>
 
     <variablelist>
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
+      <bridgehead renderas="sect3">Descrições Curtas</bridgehead>
+      <?dbfo list-presentation="list"?> <?dbhtml list-presentation="table"?>
 
       <varlistentry id="dejagnu">
         <term><command>dejagnu</command></term>
         <listitem>
-          <para>DejaGNU auxiliary command launcher</para>
+          <para>Iniciador de comando auxiliar DejaGNU</para>
           <indexterm zone="ch-system-dejagnu dejagnu">
             <primary sortas="b-dejagnu">dejagnu</primary>
           </indexterm>
@@ -96,8 +94,8 @@ install -v -m644   doc/dejagnu.{html,txt} /usr/share/doc/dejagnu-&dejagnu-versio
       <varlistentry id="runtest">
         <term><command>runtest</command></term>
         <listitem>
-          <para>A wrapper script that locates the proper
-          <command>expect</command> shell and then runs DejaGNU</para>
+          <para>Um script encapsulador que localiza o shell <command>expect</command>
+adequado e, em seguida, executa o DejaGNU</para>
           <indexterm zone="ch-system-dejagnu runtest">
             <primary sortas="b-runtest">runtest</primary>
           </indexterm>

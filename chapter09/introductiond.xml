@@ -8,11 +8,11 @@
 <sect1 id="ch-config-introduction" revision="systemd">
   <?dbhtml filename="introduction.html"?>
 
-  <title>Introduction</title>
+  <title>Introdução</title>
 
-  <para>This chapter discusses configuration files and systemd services.
-  First, the general configuration files needed to set up networking are
-  presented.</para>
+  <para>Este capítulo discute arquivos de configuração e serviços do
+systemd. Primeiro, os arquivos gerais de configuração necessários para
+configurar a rede de comunicação são apresentados.</para>
 
   <itemizedlist>
      <listitem>
@@ -26,8 +26,8 @@
      </listitem>
   </itemizedlist>
 
-  <para>Second, issues that affect the proper setup of devices are
-  discussed.</para>
+  <para>Segundo, problemas que afetam a configuração adequada de dispositivos são
+discutidos.</para>
 
   <itemizedlist>
      <listitem>
@@ -38,7 +38,7 @@
      </listitem>
   </itemizedlist>
 
-  <para>Third, configuring the system clock and keyboard layout is shown.</para>
+  <para>Terceiro, configurar o relógio do sistema e esquema de teclado é mostrado.</para>
 
   <itemizedlist>
      <listitem>
@@ -49,8 +49,8 @@
      </listitem>
   </itemizedlist>
 
-  <para>Fourth, a brief introduction to the scripts and configuration
-  files used when the user logs into the system is presented.</para>
+  <para>Quarto, uma introdução breve aos scripts e arquivos de configuração usados
+quando o(a) usuário(a) se loga no sistema é apresentado.</para>
 
   <itemizedlist>
      <listitem>
@@ -61,7 +61,7 @@
      </listitem>
   </itemizedlist>
 
-  <para>And finally, configuring the behavior of systemd is discussed.</para>
+  <para>E finalmente, configurar o comportamento do systemd é discutido.</para>
 
   <itemizedlist>
      <listitem>

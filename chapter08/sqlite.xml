@@ -9,10 +9,8 @@
   <?dbhtml filename="sqlite.html"?>
 
   <sect1info condition="script">
-    <productname>sqlite</productname>
-    <productnumber>&sqlite-version;</productnumber>
-    <address>&sqlite-url;</address>
-  </sect1info>
+<productname>sqlite</productname>
+<productnumber>&sqlite-version;</productnumber> <address>&sqlite-url;</address></sect1info>
 
   <title>Sqlite-&sqlite-version;</title>
 
@@ -23,9 +21,9 @@
   <sect2 role="package">
     <title/>
 
-    <para>The Sqlite package is a software library that implements 
-    a self-contained, serverless, zero-configuration, transactional 
-    SQL database engine.</para>
+    <para>O pacote Sqlite é uma biblioteca de software que implementa um mecanismo de
+base de dados SQL transacional, autocontido, sem servidor e com configuração
+zero.</para>
 
     <segmentedlist>
       <segtitle>&buildtime;</segtitle>
@@ -40,13 +38,13 @@
   </sect2>
 
   <sect2 role="installation">
-    <title>Installation of Sqlite</title>
+    <title>Instalação do Sqlite</title>
 
-    <para>Unpack the documentation:</para>
+    <para>Desempacote a documentação:</para>
 
 <screen><userinput remap="pre">tar -xf ../sqlite-doc-&sqlite-doc-version;.tar.xz</userinput></screen>
 
-    <para>Prepare Sqlite for compilation with:</para>
+    <para>Prepare o Sqlite para compilação com:</para>
 
 <screen><userinput remap="configure">./configure --prefix=/usr     \
             --disable-static  \
@@ -56,46 +54,46 @@
                       -D SQLITE_ENABLE_DBSTAT_VTAB=1     \
                       -D SQLITE_SECURE_DELETE=1"</userinput></screen>
     <variablelist>
-      <title>The meaning of the configure options:</title>
+      <title>O significado das opções do configure:</title>
 
       <varlistentry>
         <term><parameter>--enable-fts{4,5}</parameter></term>
         <listitem>
-          <para>These switches enable support for version 4 and 5 of 
-          the full text search (FTS) extension.</para>
+          <para>Essas chaves habilitam suporte para as versões 4 e 5 da extensão de pesquisa
+de texto completo (PTC).</para>
         </listitem>
       </varlistentry>
 
       <varlistentry>
         <term><parameter>CPPFLAGS="-D SQLITE_ENABLE_COLUMN_METADATA=1 ...</parameter></term>
         <listitem>
-          <para>Some applications require these options to be turned on. The only
-            way to do this is to include them in the CFLAGS or CPPFLAGS. We use
-            the latter so the default value (or any value set by the user) of
-            CFLAGS won't be affected. For further information on what can be
-            specified see https://www.sqlite.org/compile.html.</para>
+          <para>Alguns aplicativos exigem que essas opções estejam ativadas. A única maneira
+de fazer isso é a de incluí-las em CFLAGS ou CPPFLAGS. Nós usamos esse
+último, de forma que o valor padrão (ou qualquer valor configurado pelo(a)
+usuário(a)) de CFLAGS não seja afetado. Para mais informações acerca do que
+pode ser especificado, veja-se https://www.sqlite.org/compile.html.</para>
         </listitem>
       </varlistentry>
 
     </variablelist>
 
-    <para>Compile the package:</para>
+    <para>Compile o pacote:</para>
 
 <screen><userinput remap="make">make LDFLAGS.rpath=""</userinput></screen>
 
-    <para>The <parameter>LDFLAGS.rpath=""</parameter> option prevents
-    hard coding library search paths (rpath) into the shared library.
-    This package does not need rpath for an installation into the standard
-    location, and rpath may sometimes cause unwanted effects or even
-    security issues.</para>
+    <para>A opção <parameter>LDFLAGS.rpath=""</parameter> impede a codificação rígida
+de caminhos de busca de bibliotecas (rpath) na biblioteca
+compartilhada. Esse pacote não precisa do rpath para uma instalação no local
+padrão, e o rpath pode, às vezes, causar efeitos indesejados ou até mesmo
+problemas de segurança.</para>
 
-    <para>This package does not come with a test suite.</para>
+    <para>Esse pacote não vem com uma suíte de teste.</para>
 
-    <para>Install the package:</para>
+    <para>Instale o pacote:</para>
 
 <screen><userinput remap="install">make install</userinput></screen>
 
-    <para>If desired, install the documentation:</para>
+    <para>Se desejado, instale a documentação:</para>
 
 <screen><userinput remap="install">install -v -m755 -d /usr/share/doc/sqlite-&sqlite-short-version;
 cp -v -R sqlite-doc-&sqlite-doc-version;/* /usr/share/doc/sqlite-&sqlite-short-version;</userinput></screen>
@@ -103,12 +101,12 @@ cp -v -R sqlite-doc-&sqlite-doc-version;/* /usr/share/doc/sqlite-&sqlite-short-v
   </sect2>
 
   <sect2 id="contents-sqlite" role="content">
-    <title>Contents of Sqlite</title>
+    <title>Conteúdo do Sqlite</title>
 
     <segmentedlist>
-      <segtitle>Installed programs</segtitle>
-      <segtitle>Installed libraries</segtitle>
-      <segtitle>Installed directories</segtitle>
+      <segtitle>Programas instalados</segtitle>
+      <segtitle>Bibliotecas instaladas</segtitle>
+      <segtitle>Diretórios instalados</segtitle>
 
       <seglistitem>
         <seg>sqlite3</seg>
@@ -118,15 +116,15 @@ cp -v -R sqlite-doc-&sqlite-doc-version;/* /usr/share/doc/sqlite-&sqlite-short-v
     </segmentedlist>
 
     <variablelist>
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
+      <bridgehead renderas="sect3">Descrições Curtas</bridgehead>
+      <?dbfo list-presentation="list"?> <?dbhtml list-presentation="table"?>
 
       <varlistentry id="sqlite3">
         <term><command>sqlite3</command></term>
         <listitem>
-          <para>is a terminal-based front-end to the SQLite library that 
-          can evaluate queries interactively and display the results</para>
+          <para>é uma estrutura de interação direta com o(a) usuário(a) baseado em terminal
+para a biblioteca SQLite que pode avaliar consultas interativamente e exibir
+os resultados</para>
           <indexterm zone="ch-system-sqlite sqlite3">
             <primary sortas="b-sqlite3">sqlite3</primary>
           </indexterm>
@@ -136,7 +134,7 @@ cp -v -R sqlite-doc-&sqlite-doc-version;/* /usr/share/doc/sqlite-&sqlite-short-v
       <varlistentry id="libsqlite3.so">
         <term><filename class="libraryfile">libsqlite3.so</filename></term>
         <listitem>
-          <para>contains the SQLite API functions</para> 
+          <para>contém as funções da API do SQLite</para> 
           <indexterm zone="ch-system-sqlite libsqlite3.so">
             <primary sortas="c-libsqlite3.so">libsqlite3.so</primary>
           </indexterm>

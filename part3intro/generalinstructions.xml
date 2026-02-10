@@ -6,129 +6,132 @@
 ]>
 
 <sect1 id="ch-tools-generalinstructions"
-       xreflabel="General Compilation Instructions">
+       xreflabel="Instruções Gerais de Compilação">
   <?dbhtml filename="generalinstructions.html"?>
 
-  <title>General Compilation Instructions</title>
+  <title>Instruções Gerais de Compilação</title>
 
   <caution>
     <para>
-      During a development cycle of LFS, the instructions in the book are
-      often modified to adapt for a package update or take the advantage of
-      new features from updated packages.  Mixing up the instructions of
-      different versions of the LFS book can cause subtle breakages.  This
-      kind of issue is generally a result from reusing some script created
-      for a prior LFS release.  Such a reuse is strongly discouraged.  If
-      you are reusing scripts for a prior LFS release for any reason, you'll
-      need to be very careful to update the scripts to match current version
-      of the LFS book.
+      Durante um ciclo de desenvolvimento do LFS, as instruções no livro
+frequentemente são modificadas para se adaptarem a uma atualização de pacote
+ou para tirar vantagem de novos recursos provenientes de pacotes
+atualizados. Misturar-se as instruções de diferentes versões do livro LFS
+pode causar quebras sutis. Esse tipo de problema geralmente é um resultado
+do reuso de algum conjunto de comandos sequenciais criado para um lançamento
+anterior do LFS. Tal reuso é fortemente desencorajado. Se você estiver
+reusando conjuntos de comandos sequenciais para um lançamento anterior do
+LFS por qualquer motivo, você precisará ter muito cuidado para atualizar os
+conjuntos de comandos sequenciais para corresponderem à versão atual do
+livro do LFS.
     </para>
   </caution>
 
-  <para>Here are some things you should know about building each package:</para>
+  <para>Aqui estão algumas coisas que você deveria saber a respeito de construir
+cada pacote:</para>
 
   <itemizedlist>
 
   <listitem>
-    <para>Several packages are patched before compilation, but only when
-    the patch is needed to circumvent a problem. A patch is often needed in
-    both the current and the following chapters, but sometimes, when the same package
-    is built more than once, the patch is not needed right away.
-    Therefore, do not be concerned if instructions for a downloaded patch seem
-    to be missing.  Warning messages about <emphasis>offset</emphasis> or
-    <emphasis>fuzz</emphasis> may also be encountered when applying a patch. Do
-    not worry about these warnings; the patch was still successfully
-    applied.</para>
+    <para>Vários pacotes são remendados antes da compilação, porém somente quando o
+remendo for necessário para contornar um problema. Um remendo frequentemente
+é necessário tanto neste quanto nos capítulos seguintes, porém às vezes,
+quando o mesmo pacote for construído mais que uma vez, o remendo não é
+necessário imediatamente. Portanto, não se preocupe se as instruções para um
+remendo baixado pareçam estar ausentes. Mensagens de aviso acerca de
+<emphasis>offset</emphasis> ou <emphasis>fuzz</emphasis> também
+possivelmente sejam encontradas ao se aplicar um remendo. Não se preocupe
+com esses alertas; o remendo ainda foi aplicado com sucesso.</para>
   </listitem>
 
   <listitem>
-    <para>During the compilation of most packages, some
-    warnings will scroll by on the screen. These are normal and can safely be
-    ignored.  These warnings are usually about
-    deprecated, but not invalid, use of the C or C++ syntax. C standards change
-    fairly often, and some packages have not yet been updated. This is not a
-    serious problem, but it does cause the warnings to appear.</para>
+    <para>Durante a compilação da maioria dos pacotes, alguns avisos rolarão na
+tela. Esses são normais e seguramente podem ser ignorados. Esses alertas
+usualmente são a respeito do uso de sintaxe C ou C++ obsoleta, porém não
+inválida. Padrões C mudam com ampla frequência e alguns pacotes ainda não
+foram atualizados. Esse não é um problema sério, porém causa o aparecimento
+dos avisos.</para>
   </listitem>
 
   <listitem>
-    <para>Check one last time that the <envar>LFS</envar> environment variable
-    is set up properly:</para>
+    <para>Verifique uma última vez se a variável de ambiente <envar>LFS</envar> está
+configurada adequadamente:</para>
 
 <screen role="nodump"><userinput>echo $LFS</userinput></screen>
 
-    <para>Make sure the output shows the path to the LFS partition's mount
-    point, which is <filename class="directory">/mnt/lfs</filename>, using our
-    example.</para>
+    <para>Certifique-se de que a saída gerada mostra o caminho para o ponto de
+montagem da partição do LFS, que é <filename
+class="directory">/mnt/lfs</filename>, usando nosso exemplo.</para>
   </listitem>
 
   <listitem>
 
-    <para>Finally, two important items must be emphasized:</para>
+    <para>Finalmente, dois itens importantes precisam ser enfatizados:</para>
 
     <important>
 
-      <para>The build instructions assume that the <xref
-      linkend='ch-partitioning-hostreqs'/>, including symbolic links, have
-      been set properly:</para>
+      <para>As instruções de construção assumem que as <xref
+linkend='ch-partitioning-hostreqs'/>, incluindo links simbólicos, tenham
+sido configuradas adequadamente:</para>
 
       <itemizedlist role='important'>
 
-        <listitem override='bullet'><para><command>bash</command> is the shell
-        in use.</para></listitem>
+        <listitem override='bullet'><para><command>bash</command> é o shell em uso.</para></listitem>
 
-        <listitem override='bullet'><para><command>sh</command> is a symbolic
-        link to <command>bash</command>.</para></listitem>
+        <listitem override='bullet'><para><command>sh</command> é um link simbólico para <command>bash</command>.</para></listitem>
 
-        <listitem override='bullet'><para><command>/usr/bin/awk</command> is a
-        symbolic link to <command>gawk</command>.</para></listitem>
+        <listitem override='bullet'><para><command>/usr/bin/awk</command> é um link simbólico para
+<command>gawk</command>.</para></listitem>
 
-        <listitem override='bullet'><para><command>/usr/bin/yacc</command> is a
-        symbolic link to <command>bison</command>, or to a small script that
-        executes bison.</para></listitem>
+        <listitem override='bullet'><para><command>/usr/bin/yacc</command> é um link simbólico para
+<command>bison</command> ou um pequeno conjunto de comandos sequenciais que
+executa bison.</para></listitem>
 
       </itemizedlist>
     </important>
 
     <important>
-      <para>Here is a synopsis of the build process.</para>
+      <para>Aqui está uma sinopse do processo de construção.</para>
 
       <orderedlist numeration="arabic" spacing="compact">
         <listitem>
-          <para>Place all the sources and patches in a directory that will be
-          accessible from the chroot environment, such as
-          <filename class="directory">/mnt/lfs/sources/</filename>.<!-- Do
-          <emphasis>not</emphasis> put sources in
-          <filename class="directory">/mnt/lfs/tools/</filename>. --></para>
+          <para><!-- Do
+          <emphasis>
+not</emphasis> put sources in
+          <filename class="directory">/mnt/lfs/tools/</filename>. -->
+Coloque todos os pacotes e os remendos em um diretório que estará acessível
+a partir do ambiente chroot, tal como <filename
+class="directory">/mnt/lfs/sources/</filename>.</para>
         </listitem>
         <listitem>
-          <para>Change to the <filename class="directory">/mnt/lfs/sources/</filename> directory.</para>
+          <para>Mude para o diretório <filename
+class="directory">/mnt/lfs/sources/</filename>.</para>
         </listitem>
-        <listitem id='buildinstr' xreflabel='Package build instructions'>
-          <para>For each package:</para>
+        <listitem id='buildinstr' xreflabel='Instruções de construção de pacote'>
+          <para>Para cada pacote:</para>
           <orderedlist numeration="loweralpha" spacing="compact">
             <listitem>
-              <para>Using the <command>tar</command> program, extract the package
-              to be built.  In <xref linkend="chapter-cross-tools"/> and
-              <xref linkend="chapter-temporary-tools"/>, ensure you are
-              the <emphasis>lfs</emphasis> user when extracting the package.</para>
-            <para>Do not use any method except the <command>tar</command> command
-              to extract the source code. Notably, using the <command>cp -R</command>
-              command to copy the
-              source code tree somewhere else can destroy
-              timestamps in the source tree, and cause the build to fail.</para>
+              <para>Usando o programa <command>tar</command>, extraia o pacote para ser
+construído. No <xref linkend="chapter-cross-tools"/> e no <xref
+linkend="chapter-temporary-tools"/>, certifique-se de que você seja o(a)
+usuário(a) <emphasis>lfs</emphasis> quando extrair o pacote.</para>
+            <para>Não use nenhum método, exceto o comando <command>tar</command>, para extrair
+o código fonte. Notadamente, usar o comando <command>cp -R</command> para
+copiar a árvore do código fonte para outro lugar pode destruir carimbos de
+tempo na árvore do fonte e causar falha de construção.</para>
             </listitem>
             <listitem>
-              <para>Change to the directory created when the package was
-              extracted.</para>
+              <para>Mude para o diretório criado quando o pacote foi extraído.</para>
             </listitem>
             <listitem>
-              <para>Follow the instructions for building the package.</para>
+              <para>Siga as instruções para construir o pacote.</para>
             </listitem>
             <listitem>
-              <para>Change back to the sources directory when the build is complete.</para>
+              <para>Mude de volta para o diretório dos fontes quando a construção estiver
+completa.</para>
             </listitem>
             <listitem>
-              <para>Delete the extracted source directory unless instructed otherwise.</para>
+              <para>Delete o diretório do fonte extraído, a menos que instruído(a) do contrário.</para>
             </listitem>
           </orderedlist>
         </listitem>

@@ -9,10 +9,8 @@
   <?dbhtml filename="markupsafe.html"?>
 
   <sect1info condition="script">
-    <productname>markupsafe</productname>
-    <productnumber>&markupsafe-version;</productnumber>
-    <address>&markupsafe-url;</address>
-  </sect1info>
+<productname>markupsafe</productname>
+<productnumber>&markupsafe-version;</productnumber> <address>&markupsafe-url;</address></sect1info>
 
   <title>MarkupSafe-&markupsafe-version;</title>
 
@@ -23,8 +21,8 @@
   <sect2 role="package">
     <title/>
 
-    <para>MarkupSafe is a Python module that implements an XML/HTML/XHTML Markup
-    safe string.</para>
+    <para>MarkupSafe é um módulo do Python que implementa uma sequência de caracteres
+segura de marcação XML/HTML/XHTML.</para>
 
     <segmentedlist>
       <segtitle>&buildtime;</segtitle>
@@ -38,25 +36,25 @@
   </sect2>
 
   <sect2 role="installation">
-    <title>Installation of MarkupSafe</title>
+    <title>Instalação do MarkupSafe</title>
 
-    <para>Compile MarkupSafe with the following command:</para>
+    <para>Compile MarkupSafe com o seguinte comando:</para>
 
 <screen><userinput remap="make">pip3 wheel -w dist --no-cache-dir --no-build-isolation --no-deps $PWD</userinput></screen>
 
-    <para>This package does not come with a test suite.</para>
+    <para>Esse pacote não vem com uma suíte de teste.</para>
 
-    <para>Install the package:</para>
+    <para>Instale o pacote:</para>
 
 <screen><userinput remap="install">pip3 install --no-index --find-links dist Markupsafe</userinput></screen>
 
   </sect2>
 
   <sect2 id="contents-markupsafe" role="content">
-    <title>Contents of MarkupSafe</title>
+    <title>Conteúdo do MarkupSafe</title>
 
     <segmentedlist>
-      <segtitle>Installed directory</segtitle>
+      <segtitle>Diretório instalado</segtitle>
 
       <seglistitem>
         <seg>

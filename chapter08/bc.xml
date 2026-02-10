@@ -9,10 +9,8 @@
   <?dbhtml filename="bc.html"?>
 
   <sect1info condition="script">
-    <productname>bc</productname>
-    <productnumber>&bc-version;</productnumber>
-    <address>&bc-url;</address>
-  </sect1info>
+<productname>bc</productname> <productnumber>&bc-version;</productnumber>
+<address>&bc-url;</address></sect1info>
 
   <title>Bc-&bc-version;</title>
 
@@ -23,8 +21,8 @@
   <sect2 role="package">
     <title/>
 
-    <para>The Bc package contains an arbitrary precision numeric processing
-    language.</para>
+    <para>O pacote Bc contém uma linguagem de processamento numérica de precisão
+arbitrária.</para>
 
     <segmentedlist>
       <segtitle>&buildtime;</segtitle>
@@ -39,81 +37,80 @@
   </sect2>
 
   <sect2 role="installation">
-    <title>Installation of Bc</title>
+    <title>Instalação do Bc</title>
 
-    <para>Prepare Bc for compilation:</para>
+    <para>Prepare Bc para compilação:</para>
 
 <screen><userinput remap="configure">CC='gcc -std=c99' ./configure --prefix=/usr -G -O3 -r</userinput></screen>
 
     <variablelist>
-      <title>The meaning of the configure options:</title>
+      <title>O significado das opções do configure:</title>
 
       <varlistentry>
         <term><parameter>CC='gcc -std=c99'</parameter></term>
         <listitem>
-          <para>This parameter specifies the compiler and C standard to use.</para>
+          <para>Esse parâmetro especifica o compilador padrão C a se usar.</para>
         </listitem>
       </varlistentry>
 
       <varlistentry>
         <term><parameter>-G</parameter></term>
         <listitem>
-          <para>Omit parts of the test suite that won't work
-          until the bc program has been installed.</para>
+          <para>Omite partes da suíte de teste que não funcionariam até que o aplicativo bc
+tenha sido instalado.</para>
         </listitem>
       </varlistentry>
 
       <varlistentry>
         <term><parameter>-O3</parameter></term>
         <listitem>
-          <para>Specify the optimization to use.</para>
+          <para>Especifica a optimização a usar.</para>
         </listitem>
       </varlistentry>
 
       <varlistentry>
         <term><parameter>-r</parameter></term>
         <listitem>
-          <para>Enable the use of <application>Readline</application> to
-          improve the line editing feature of bc.</para>
+          <para>Habilita o uso de <application>Readline</application> para melhorar o
+recurso de edição de linha do bc.</para>
         </listitem>
       </varlistentry>
     </variablelist>
 
-    <para>Compile the package:</para>
+    <para>Compile o pacote:</para>
 
 <screen><userinput remap="make">make</userinput></screen>
 
-    <para>To test bc, run:</para>
+    <para>Para testar bc, execute:</para>
 
 <screen><userinput remap="test">make test</userinput></screen>
 
 
-    <para>Install the package:</para>
+    <para>Instale o pacote:</para>
 
 <screen><userinput remap="install">make install</userinput></screen>
 
   </sect2>
 
   <sect2 id="contents-bc" role="content">
-    <title>Contents of Bc</title>
+    <title>Conteúdo do Bc</title>
 
     <segmentedlist>
-      <segtitle>Installed programs</segtitle>
+      <segtitle>Programas instalados</segtitle>
 
       <seglistitem>
-        <seg>bc and dc</seg>
+        <seg>bc e dc</seg>
       </seglistitem>
     </segmentedlist>
 
     <variablelist>
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
+      <bridgehead renderas="sect3">Descrições Curtas</bridgehead>
+      <?dbfo list-presentation="list"?> <?dbhtml list-presentation="table"?>
 
       <varlistentry id="bc">
         <term><command>bc</command></term>
         <listitem>
-          <para>A command line calculator</para>
+          <para>Uma calculadora de linha de comando</para>
           <indexterm zone="ch-system-bc bc">
             <primary sortas="b-bc">bc</primary>
           </indexterm>
@@ -123,7 +120,7 @@
       <varlistentry id="dc">
         <term><command>dc</command></term>
         <listitem>
-          <para>A reverse-polish command line calculator</para>
+          <para>Uma calculadora de linha de comando de polonesa - reversa</para>
           <indexterm zone="ch-system-bc dc">
             <primary sortas="b-dc">dc</primary>
           </indexterm>

@@ -9,10 +9,8 @@
   <?dbhtml filename="glibc.html"?>
 
   <sect1info condition="script">
-    <productname>glibc</productname>
-    <productnumber>&glibc-version;</productnumber>
-    <address>&glibc-url;</address>
-  </sect1info>
+<productname>glibc</productname>
+<productnumber>&glibc-version;</productnumber> <address>&glibc-url;</address></sect1info>
 
   <title>Glibc-&glibc-version;</title>
 
@@ -23,10 +21,11 @@
   <sect2 role="package">
     <title/>
 
-    <para>The Glibc package contains the main C library. This library provides
-    the basic routines for allocating memory, searching directories, opening and
-    closing files, reading and writing files, string handling, pattern matching,
-    arithmetic, and so on.</para>
+    <para>O pacote Glibc contém a principal biblioteca C. Essa biblioteca fornece as
+rotinas básicas para alocação de memória, busca em diretórios, abertura e
+fechamento de arquivos, leitura e escrita de arquivos, manuseio de
+sequências de caracteres, correspondência de padrões, aritmética, e daí por
+diante.</para>
 
     <segmentedlist>
       <segtitle>&buildtime;</segtitle>
@@ -41,20 +40,23 @@
   </sect2>
 
   <sect2 role="installation">
-    <title>Installation of Glibc</title>
-<!--
-    <para>First, apply some changes from upstream:</para>
+    <title>Instalação da Glibc</title>
+
+    <!--
+    <para>
+First, apply some changes from upstream:</para>
 
 <screen><userinput remap="pre">patch -Np1 -i ../&glibc-upstream-patch;</userinput></screen>
 -->
-    <para>Some of the Glibc programs use the non-FHS compliant
-    <filename class="directory">/var/db</filename> directory to store
-    their runtime data. Apply the following patch to make such programs
-    store their runtime data in the FHS-compliant locations:</para>
+<para>Alguns dos aplicativos Glibc usam o diretório não conforme com o FHS
+<filename class="directory">/var/db</filename> para armazenar os dados em
+tempo de execução deles. Aplique o seguinte remendo para fazer com que tais
+aplicativos armazenem os dados em tempo de execução deles nos locais
+conformes com o FHS:</para>
 
-<screen><userinput remap="pre">patch -Np1 -i ../&glibc-fhs-patch;</userinput></screen>
 <!--
-    <para>Now fix an issue which may break Valgrind in BLFS:</para>
+    <para>
+Now fix an issue which may break Valgrind in BLFS:</para>
 
 <screen><userinput remap="pre">sed -e '/unistd.h/i #include &lt;string.h&gt;' \
     -e '/libc_rwlock_init/c\
@@ -62,19 +64,21 @@
   memcpy (&amp;lock, &amp;reset_lock, sizeof (lock));' \
     -i stdlib/abort.c </userinput></screen>
 -->
-    <para>The Glibc documentation recommends building Glibc
-    in a dedicated build directory:</para>
+<screen><userinput remap="pre">patch -Np1 -i ../&glibc-fhs-patch;</userinput></screen>
+
+    <para>A documentação da Glibc recomenda construir a Glibc em um diretório dedicado
+à construção:</para>
 
 <screen><userinput remap="pre">mkdir -v build
-cd       build</userinput></screen>
+cd      build</userinput></screen>
 
-    <para>Ensure that the <command>ldconfig</command> and <command>sln</command>
-    utilities will be installed into
-    <filename class="directory">/usr/sbin</filename>:</para>
+    <para>Garanta que os utilitários <command>ldconfig</command> e
+<command>sln</command> serão instalados no <filename
+class="directory">/usr/sbin</filename>:</para>
 
 <screen><userinput remap="pre">echo "rootsbindir=/usr/sbin" &gt; configparms</userinput></screen>
 
-    <para>Prepare Glibc for compilation:</para>
+    <para>Prepare a Glibc para compilação:</para>
 
 <screen><userinput remap="configure">../configure --prefix=/usr                   \
              --disable-werror                \
@@ -84,70 +88,72 @@ cd       build</userinput></screen>
              --enable-kernel=&min-kernel;</userinput></screen>
 
     <variablelist>
-      <title>The meaning of the configure options:</title>
+      <title>O significado das opções do configure:</title>
 
       <varlistentry>
         <term><parameter>--disable-werror</parameter></term>
         <listitem>
-          <para>This option disables the -Werror option passed to
-          GCC.  This is necessary for running the test suite.</para>
+          <para>Essa opção desabilita a opção -Werror passada para o GCC. Isso é necessário
+para executar a suíte de teste.</para>
         </listitem>
       </varlistentry>
 
       <varlistentry>
         <term><parameter>--enable-kernel=&min-kernel;</parameter></term>
         <listitem>
-          <para>This option tells the build system that this Glibc may
-          be used with kernels as old as &min-kernel;. This means generating
-          workarounds in case a system call introduced in a later version
-          cannot be used.</para>
+          <para>Essa opção diz ao sistema de construção que esta Glibc possivelmente seja
+usada com núcleos tão antigos quanto &min-kernel;. Isso significa que a
+geração de contornos, no caso de uma chamada de sistema introduzida em uma
+versão posterior, não pode ser usada.</para>
         </listitem>
       </varlistentry>
 
       <varlistentry>
         <term><parameter>--enable-stack-protector=strong</parameter></term>
         <listitem>
-          <para>This option increases system security by adding
-          extra code to check for buffer overflows, such as stack
-          smashing attacks.  Note that Glibc always explicitly overrides
-          the default of GCC, so this option is still needed even though
-          we've already specified <option>--enable-default-ssp</option> for
-          GCC.</para>
+          <para>Essa opção aumenta a segurança do sistema adicionando código extra para
+verificar estouros de buffer, como ataques de esmagamento de pilha. Observe
+que a Glibc sempre substitui explicitamente o padrão do GCC, de forma que
+essa opção ainda é necessária mesmo que já tenhamos especificado
+<option>--enable-default-ssp</option> para GCC.</para>
         </listitem>
       </varlistentry>
 
       <varlistentry>
         <term><parameter>--disable-nscd</parameter></term>
         <listitem>
-          <para>Do not build the name service cache daemon which is no 
-          longer used.</para>
+          <para>Não construa o processo de segundo plano de armazenamento temporário do
+serviço de nomes, o qual não mais é usado.</para>
         </listitem>
       </varlistentry>
 
       <varlistentry>
         <term><parameter>libc_cv_slibdir=/usr/lib</parameter></term>
         <listitem>
-          <para>This variable sets the correct library for all
-          systems.  We do not want lib64 to be used.</para>
+          <para>Essa variável configura a biblioteca correta para todos os sistemas. Nós não
+queremos que a lib64 seja usada.</para>
         </listitem>
       </varlistentry>
 
     </variablelist>
 
-    <para>Compile the package:</para>
+    <para>Compile o pacote:</para>
 
 <screen><userinput remap="make">make</userinput></screen>
 
     <important>
-      <para>In this section, the test suite for Glibc is considered critical.
-      Do not skip it under any circumstance.</para>
+      <para>Nesta seção, a suíte de teste para a Glibc é considerada crítica. Não pule-a
+sob qualquer circunstância.</para>
     </important>
 
-    <para>Generally a few tests do not pass. The test failures listed below
-    are usually safe to ignore.</para>
+    <para>Geralmente uns poucos testes não passam. As falhas de teste listadas abaixo
+usualmente são seguras ignorar.</para>
 
-<!-- Use remap="make" here to work around a jhalfs issue. -->
-<!--<screen><userinput remap="make">case $(uname -m) in
+
+
+<screen><!-- Use remap="make" here to work around a jhalfs issue. -->
+<!--<screen>
+<userinput remap="make">case $(uname -m) in
   i?86)   ln -sfnv $PWD/elf/ld-linux.so.2        /lib ;;
   x86_64) ln -sfnv $PWD/elf/ld-linux-x86-64.so.2 /lib ;;
 esac</userinput></screen>
@@ -156,79 +162,83 @@ esac</userinput></screen>
     stage of building in the chroot environment.  It will be overwritten
     in the install phase below.</para></note>
 -->
-<screen><userinput remap="test">make check</userinput></screen>
+<userinput remap="test">make check</userinput></screen>
 
-    <para>You may see some test failures. The Glibc test suite is
-    somewhat dependent on the host system. A few failures out of
-    over 6000 tests can generally be ignored. This is a list of the
-    most common issues seen for recent versions of LFS:</para>
+    <para>Você possivelmente veja algumas falhas de teste. A suíte de teste da Glibc é
+de alguma forma dependente do sistema anfitrião. Umas poucas falhas saídas
+de mais que 6.000 testes geralmente podem ignoradas. Esta é uma lista dos
+problemas mais comuns vistos para versões recentes do LFS:</para>
 
     <itemizedlist>
 
       <listitem>
-        <para><emphasis>io/tst-lchmod</emphasis>
-        is known to fail in the LFS chroot environment.</para>
+        <para><emphasis>io/tst-lchmod</emphasis> é conhecido por falhar no ambiente chroot
+do LFS.</para>
       </listitem>
 
+      
+      
+
       <!-- https://sourceware.org/pipermail/libc-alpha/2025-August/169612.html -->
-      <!-- Looks like this is fixed. No failures for version 2.42 with th upstream patch.
+<!-- Looks like this is fixed. No failures for version 2.42 with th upstream patch.
       <listitem>
+
         <para><emphasis>misc/tst-preadvwritev2</emphasis> and
         <emphasis>misc/tst-preadvwritev64v2</emphasis> are known to fail
         if the host kernel is Linux-6.14 or later.</para>
       </listitem>
       -->
-
-      <listitem>
-        <para>Some tests, for example
-        <emphasis>nss/tst-nss-files-hosts-multi</emphasis> and
-        <emphasis>nptl/tst-thread-affinity*</emphasis>
-        are known to fail due to a timeout (especially when the system is
-        relatively slow and/or running the test suite with multiple
-        parallel make jobs).  These tests can be identified with:</para>
+<listitem>
+        <para>Alguns testes, por exemplo
+<emphasis>nss/tst-nss-files-hosts-multi</emphasis> e
+<emphasis>nptl/tst-thread-affinity*</emphasis> são conhecidos por falharem
+devido a um tempo limite (especialmente quando o sistema está relativamente
+lento e (ou) executando a suíte de teste com várias tarefas make
+paralelas). Esses testes podem ser identificados com:</para>
 
         <screen><userinput remap="test">grep "Timed out" $(find -name \*.out)</userinput></screen>
 
-        <para>It's possible to re-run a single test with enlarged timeout
-        with
-        <command>TIMEOUTFACTOR=<replaceable>&lt;factor&gt;</replaceable>
-        make test t=<replaceable>&lt;test name&gt;</replaceable></command>.
-        For example, <command>TIMEOUTFACTOR=10 make test
-        t=nss/tst-nss-files-hosts-multi</command> will re-run
-        <emphasis>nss/tst-nss-files-hosts-multi</emphasis> with ten times
-        the original timeout.</para>
+        <para>É possível reexecutar um teste com tempo limite aumentado com
+<command>TIMEOUTFACTOR=<replaceable>&lt;fator&gt;</replaceable> make test
+t=<replaceable>&lt;nome do teste&gt;</replaceable></command>. Por exemplo,
+<command>TIMEOUTFACTOR=10 make test
+t=nss/tst-nss-files-hosts-multi</command> reexecutará
+<emphasis>nss/tst-nss-files-hosts-multi</emphasis> com dez vezes o tempo
+limite original.</para>
       </listitem>
 
       <listitem>
-        <para>Additionally, some tests may fail with a relatively old CPU
-        model (for example
-        <emphasis>elf/tst-cpu-features-cpuinfo</emphasis>) or host kernel
-        version (for example
-        <emphasis>stdlib/tst-arc4random-thread</emphasis>).</para>
+        <para>Além disso, alguns testes possivelmente falhem com um modelo de CPU
+relativamente antigo (por exemplo
+<emphasis>elf/tst-cpu-features-cpuinfo</emphasis>) ou versão do núcleo do
+anfitrião (por exemplo <emphasis>stdlib/tst-arc4random-thread</emphasis>).</para>
       </listitem>
     </itemizedlist>
 
-    <para>Though it is a harmless message, the install stage of Glibc will
-    complain about the absence of <filename>/etc/ld.so.conf</filename>.
-    Prevent this warning with:</para>
+    <para>Mesmo sendo uma mensagem inofensiva, o estágio de instalação da Glibc
+reclamará acerca da ausência do <filename>/etc/ld.so.conf</filename>. Evite
+esse aviso com:</para>
 
+<!-- https://sourceware.org/bugzilla/show_bug.cgi?id=21911 -->
 <screen><userinput remap="install">touch /etc/ld.so.conf</userinput></screen>
 
-    <!-- https://sourceware.org/bugzilla/show_bug.cgi?id=21911 -->
-    <para>Fix the Makefile to skip an outdated sanity check
-    that fails with a modern Glibc configuration:</para>
+    
+    <para>Corrija o Makefile para pular uma verificação de sanidade desatualizada que
+falha com uma configuração moderna da Glibc:</para>
 
 <screen><userinput remap="install">sed '/test-installation/s@$(PERL)@echo not running@' -i ../Makefile</userinput></screen>
 
     <important>
       <para>
-        If upgrading Glibc to a new minor version (for example, from
-        Glibc-2.36 to Glibc-&glibc-version;) on a running LFS system, you
-        need to take some extra precautions to avoid breaking the system:
+        Se atualizar a Glibc para uma nova versão secundária (por exemplo, da
+Glibc-2.36 para a Glibc-&glibc-version;) em um sistema LFS em execução,
+[então] você precisará tomar algumas precauções extras para evitar quebrar o
+sistema:
       </para>
 
       <itemizedlist>
         <listitem>
+          
           <!-- There are two reasons we don't support this:
                1. Upgrading on a system with separate /lib and /usr/lib is
                   tricky.
@@ -237,45 +247,45 @@ esac</userinput></screen>
                   The Glibc NEWS file explicit states they no longer use
                   symlinks for the ABI names to avoid upgradation
                   issues.  -->
-          <para>
-            Upgrading Glibc on a LFS system prior to 11.0 (exclusive) is
-            not supported.  Rebuild LFS if you are running such an old LFS
-            system but you need a newer Glibc.
+<para>
+            Atualizar a Glibc em um sistema LFS anterior ao 11.0 (exclusivo) não é
+suportado. Reconstrua o LFS se você estiver executando um sistema LFS
+antigo, mas precisar de uma Glibc mais recente.
           </para>
         </listitem>
 
+        
         <!-- https://sourceware.org/pipermail/libc-alpha/2024-January/154095.html -->
-        <listitem>
+<listitem>
           <para>
-            If upgrading on a LFS system prior to 12.0 (exclusive), install
-            <application>Libxcrypt</application> following
-            <xref role='.' linkend='ch-system-libxcrypt'/>  In addition to
-            a normal <application>Libxcrypt</application> installation,
-            <emphasis role='bold'>you MUST follow the note in Libxcrypt
-            section to install
-            <filename class='libraryfile'>libcrypt.so.1*</filename>
-            (replacing
-            <filename class='libraryfile'>libcrypt.so.1</filename> from the
-            prior Glibc installation)</emphasis>.
+            Se atualizar em um sistema LFS anterior a 12.0 (exclusivo), [então] instale
+a <application>Libxcrypt</application> seguindo a <xref role='.'
+linkend='ch-system-libxcrypt'/> Além de uma instalação normal da
+<application>Libxcrypt</application>, <emphasis role='bold'>você DEVE seguir
+a observação na seção Libxcrypt para instalar a <filename
+class='libraryfile'>libcrypt.so.1*</filename> (substituindo <filename
+class='libraryfile'>libcrypt.so.1</filename> originária da instalação
+anterior da Glibc)</emphasis>.
           </para>
         </listitem>
 
+        
         <!-- Otherwise on lfs-systemd nscd will fail to start on boot,
              and on both lfs-openrc and lfs-systemd useradd etc. will try
              to start nscd, then nscd will fail to start as well and
              produce some spurious error message.  -->
-        <listitem>
+<listitem>
           <para>
-            If upgrading on a LFS system prior to 12.1 (exclusive),
-            remove the <command>nscd</command> program:
+            Se atualizar em um sistema LFS anterior ao 12.1 (exclusivo), [então] remova
+o aplicativo <command>nscd</command>:
           </para>
 
           <screen role='nodump'><userinput>rm -f /usr/sbin/nscd</userinput></screen>
 
           <para revision='systemd'>
-            If this system (prior to LFS 12.1, exclusive) is based on
-            Systemd, it's also needed to disable and stop the
-            <command>nscd</command> service now:
+            Se esse sistema (anterior ao LFS 12.1, exclusivo) for baseado em Systemd,
+[então] também é necessário desabilitar e parar o serviço
+<command>nscd</command> agora:
           </para>
 
           <screen revision='systemd' role='nodump'><userinput>systemctl disable --now nscd</userinput></screen>
@@ -283,24 +293,24 @@ esac</userinput></screen>
 
         <listitem>
           <para>
-            Upgrade the kernel and reboot if it's older than &min-kernel;
-            (check the current version with <command>uname -r</command>)
-            or if you want to upgrade it anyway, following
-            <xref linkend='ch-bootable-kernel' role='.'/>
+            Atualize o núcleo e reinicialize se ele for mais antigo que &min-kernel;
+(verifique a versão atual com <command>uname -r</command>) ou se quiser
+atualizá-lo mesmo assim, seguindo a <xref linkend='ch-bootable-kernel'
+role='.'/>
           </para>
         </listitem>
 
         <listitem>
           <para>
-            Upgrade the kernel API headers if it's older than &min-kernel;
-            (check the current version with
-            <command>cat /usr/include/linux/version.h</command>)
-            or if you want to upgrade it anyway, following
-            <xref linkend='ch-tools-linux-headers'/> (but removing
-            <envar>$LFS</envar> from the <command>cp</command> command).
+            Atualize os cabeçalhos da API do núcleo se forem mais antigos que
+&min-kernel; (verifique a versão atual com <command>cat
+/usr/include/linux/version.h</command>) ou se quiser atualizá-los mesmo
+assim, seguindo a <xref linkend='ch-tools-linux-headers'/> (mas removendo
+<envar>$LFS</envar> do comando <command>cp</command>).
           </para>
         </listitem>
 
+        
         <!-- This is to ensure we don't start a process at the time point
              where some Glibc shared libraries are updated but the others
              are not.  Such mismatches can cause programs crash on startup,
@@ -308,11 +318,11 @@ esac</userinput></screen>
              libc.so.6.  Note that a crash in the installation process
              will leave the system in a state with the mismatch forever,
              unrecoverable without the help of another distro.  -->
-        <listitem>
+<listitem>
           <para>
-            Perform a <envar>DESTDIR</envar> installation and upgrade
-            the Glibc shared libraries on the system using one single
-            <command>install</command> command:
+            Realize uma instalação <envar>DESTDIR</envar> e atualize as bibliotecas
+compartilhadas da Glibc no sistema usando um comando simples
+<command>install</command>:
           </para>
 
           <screen role='nodump'><userinput>make DESTDIR=$PWD/dest install
@@ -321,26 +331,25 @@ install -vm755 dest/usr/lib/*.so.* /usr/lib</userinput></screen>
       </itemizedlist>
 
       <para>
-        It's imperative to strictly follow these steps above unless you
-        completely understand what you are doing.
-        <emphasis role='bold'>Any unexpected deviation may render the
-        system completely unusable.  YOU ARE WARNED.</emphasis>
+        É obrigatório seguir rigorosamente essas etapas acima, a menos que você
+entenda completamente o que está fazendo. <emphasis role='bold'>Qualquer
+desvio inesperado possivelmente torne o sistema completamente
+desusável. VOCÊ ESTÁ AVISADO(A).</emphasis>
       </para>
 
       <para>
-        Then continue to run the <command>make install</command> command,
-        the <command>sed</command> command against
-        <filename>/usr/bin/ldd</filename>, and the commands to install
-        the locales.  Once they are finished, reboot the system
-        immediately.
+        Em seguida, continue a executar o comando <command>make install</command>, o
+comando <command>sed</command> contra o <filename>/usr/bin/ldd</filename> e
+os comandos para instalar as localidades. Assim que estiverem finalizados,
+reinicialize o sistema imediatamente.
       </para>
 
       <para>
-        When the system has successfully rebooted, if you are running
-        a LFS system prior to 12.0 (exclusive) where GCC was not built
-        with the <parameter>--disable-fixincludes</parameter> option,
-        move two GCC headers into a better location and
-        remove the stale <quote>fixed</quote> copies of the Glibc headers:
+        Quando o sistema tiver reinicializado com sucesso, se você estiver
+executando um sistema LFS anterior à 12.0 (exclusivo) onde o GCC não foi
+construído com a opção <parameter>--disable-fixincludes</parameter>, mova
+dois cabeçalhos do GCC para um local melhor e remova as cópias
+<quote>corrigidas</quote> obsoletas dos cabeçalhos da Glibc:
       </para>
 
       <screen role='nodump'><userinput>DIR=$(dirname $(gcc -print-libgcc-file-name))
@@ -350,16 +359,16 @@ rm -rfv $DIR/include-fixed/*
 unset DIR</userinput></screen>
     </important>
 
-    <para>Install the package:</para>
+    <para>Instale o pacote:</para>
 
 <screen><userinput remap="install">make install</userinput></screen>
 
-    <para>Fix a hardcoded path to the executable loader in the
-    <command>ldd</command> script:</para>
+    <para>Corrija um caminho codificado rigidamente para o carregador de executável no
+script <command>ldd</command>:</para>
 
-<screen><userinput remap="install">sed '/RTLDLIST=/s@/usr@@g' -i /usr/bin/ldd</userinput></screen>
 <!--
-    <para>Install the configuration file and runtime directory for
+    <para>
+Install the configuration file and runtime directory for
     <command>nscd</command>:</para>
 
 <screen><userinput remap="install">cp -v ../nscd/nscd.conf /etc/nscd.conf
@@ -371,21 +380,23 @@ mkdir -pv /var/cache/nscd</userinput></screen>
     <screen revision="systemd"><userinput remap="install">install -v -Dm644 ../nscd/nscd.tmpfiles /usr/lib/tmpfiles.d/nscd.conf
 install -v -Dm644 ../nscd/nscd.service /usr/lib/systemd/system/nscd.service</userinput></screen>
 -->
-    <para>Next, install the locales that can make the system respond in a
-    different language.  None of these locales are required, but if some of them
-    are missing, the test suites of some packages will skip important
-    test cases.</para>
+<screen><userinput remap="install">sed '/RTLDLIST=/s@/usr@@g' -i /usr/bin/ldd</userinput></screen>
 
-    <para>Individual locales can be installed using the
-    <command>localedef</command> program. E.g., the second
-    <command>localedef</command> command below combines the
-    <filename>/usr/share/i18n/locales/cs_CZ</filename>
-    charset-independent locale definition with the
-    <filename>/usr/share/i18n/charmaps/UTF-8.gz</filename>
-    charmap definition and appends the result to the
-    <filename>/usr/lib/locale/locale-archive</filename> file.
-    The following instructions will install the minimum set of
-    locales necessary for the optimal coverage of tests:</para>
+    <para>Em seguida, instale as localidades que podem fazer o sistema responder em um
+idioma diferente. Nenhuma dessas localidades é exigida, mas se algumas delas
+estiverem ausentes, as suítes de teste de alguns pacotes pularão importantes
+casos de teste.</para>
+
+    <para>Localidades individuais podem ser instaladas usando-se o programa
+<command>localedef</command>. Por exemplo, o segundo comando
+<command>localedef</command> abaixo combina a definição de localidade
+independente do conjunto de caracteres
+<filename>/usr/share/i18n/locales/cs_CZ</filename> com a definição de mapa
+de caracteres <filename>/usr/share/i18n/charmaps/UTF-8.gz</filename> e
+adiciona o resultado ao arquivo
+<filename>/usr/lib/locale/locale-archive</filename>. As seguintes instruções
+instalarão o conjunto mínimo de localidades necessário para a cobertura
+ótima de testes:</para>
 
 <screen role="nodump"><userinput remap="locale-test">localedef -i C -f UTF-8 C.UTF-8
 localedef -i cs_CZ -f UTF-8 cs_CZ.UTF-8
@@ -422,26 +433,26 @@ localedef -i zh_CN -f GB18030 zh_CN.GB18030
 localedef -i zh_HK -f BIG5-HKSCS zh_HK.BIG5-HKSCS
 localedef -i zh_TW -f UTF-8 zh_TW.UTF-8</userinput></screen>
 
-    <para>In addition, install the locale for your own country, language and
-    character set.</para>
+    <para>Adicionalmente, instale a localidade para teu próprio país, idioma e
+conjunto de caracteres.</para>
 
-    <para>Alternatively, install all the locales listed in the
-    <filename>glibc-&glibc-version;/localedata/SUPPORTED</filename> file
-    (it includes every locale listed above and many more) at once with the
-    following time-consuming command:</para>
+    <para>Alternativamente, instale todas as localidades listadas no arquivo
+<filename>glibc-&glibc-version;/localedata/SUPPORTED</filename> (inclui cada
+localidade listada acima e muitas mais) de uma vez com o seguinte comando
+consumidor de tempo:</para>
 
 <screen><userinput remap="locale-full">make localedata/install-locales</userinput></screen>
 
-    <note><para>Glibc now uses libidn2 when resolving internationalized
-    domain names.  This is a run time dependency.  If this capability
-    is needed, the instructions for installing libidn2 are in the
-    <ulink url="&blfs-book;general/libidn2.html">BLFS libidn2 page</ulink>.
+    <note><para>A Glibc agora usa a libidn2 quando resolver nomes internacionalizados de
+domínio. Essa é uma dependência de tempo de execução. Se essa capacidade for
+necessária, as instruções para instalar a libidn2 estão na <ulink
+url="&blfs-book;general/libidn2.html">página da libidn2 do BLFS</ulink>.
     </para></note>
 
   </sect2>
 
   <sect2 id="conf-glibc" role="configuration">
-    <title>Configuring Glibc</title>
+    <title>Configurando a Glibc</title>
 
     <indexterm zone="conf-glibc">
       <primary sortas="e-/etc/nsswitch.conf">/etc/nsswitch.conf</primary>
@@ -452,17 +463,17 @@ localedef -i zh_TW -f UTF-8 zh_TW.UTF-8</userinput></screen>
     </indexterm>
 
   <sect3>
-  <title>Adding nsswitch.conf</title>
+  <title>Adicionando o nsswitch.conf</title>
 
-    <para>The <filename>/etc/nsswitch.conf</filename> file needs to be created
-    because the Glibc defaults do not work well in a networked environment.
+    <para>O arquivo <filename>/etc/nsswitch.conf</filename> precisa ser criado, pois
+os padrões da Glibc não funcionam bem em um ambiente de rede de comunicação.
     </para>
 
-    <para>Create a new file <filename>/etc/nsswitch.conf</filename> by running the
-    following:</para>
+    <para>Crie um novo arquivo <filename>/etc/nsswitch.conf</filename> executando o
+seguinte:</para>
 
 <screen revision='openrc'><userinput>cat &gt; /etc/nsswitch.conf &lt;&lt; "EOF"
-<literal># Begin /etc/nsswitch.conf
+<literal># Inicia /etc/nsswitch.conf
 
 passwd: files
 group: files
@@ -476,11 +487,11 @@ services: files
 ethers: files
 rpc: files
 
-# End /etc/nsswitch.conf</literal>
+# Termina /etc/nsswitch.conf</literal>
 EOF</userinput></screen>
 
 <screen revision='systemd'><userinput>cat &gt; /etc/nsswitch.conf &lt;&lt; "EOF"
-<literal># Begin /etc/nsswitch.conf
+<literal># Inicia /etc/nsswitch.conf
 
 passwd: files systemd
 group: files systemd
@@ -494,15 +505,15 @@ services: files
 ethers: files
 rpc: files
 
-# End /etc/nsswitch.conf</literal>
+# Termina /etc/nsswitch.conf</literal>
 EOF</userinput></screen>
 
     </sect3>
 
     <sect3>
-    <title>Adding Time Zone Data</title>
+    <title>Adicionando Dados de Fuso Horário</title>
 
-    <para>Install and set up the time zone data with the following:</para>
+    <para>Instale e configure os dados de fuso horário com o seguinte:</para>
 <screen><userinput>tar -xf ../../tzdata&tzdata-version;.tar.gz
 
 ZONEINFO=/usr/share/zoneinfo
@@ -520,105 +531,104 @@ zic -d $ZONEINFO -p America/New_York
 unset ZONEINFO tz</userinput></screen>
 
     <variablelist>
-      <title>The meaning of the zic commands:</title>
+      <title>O significado dos comandos zic:</title>
 
       <varlistentry>
         <term><parameter>zic -L /dev/null ...</parameter></term>
         <listitem>
-          <para>This creates posix time zones without any leap seconds.  It is
-          conventional to put these in both
-          <filename class="directory">zoneinfo</filename> and
-          <filename class="directory">zoneinfo/posix</filename>. It is
-          necessary to put the POSIX time zones in
-          <filename class="directory">zoneinfo</filename>, otherwise various
-          test suites will report errors. On an embedded system, where space is
-          tight and you do not intend to ever update the time zones, you could save
-          1.9 MB by not using the <filename class="directory">posix</filename>
-          directory, but some applications or test suites might produce some
-          failures.</para>
+          <para>Isso cria fusos horários posix sem quaisquer segundos bissextos. É
+convencional colocá-los em ambos <filename
+class="directory">zoneinfo</filename> e <filename
+class="directory">zoneinfo/posix</filename>. É necessário colocar os fusos
+horários POSIX em <filename class="directory">zoneinfo</filename>, do
+contrário várias suítes de teste reportarão erros. Em um sistema embarcado,
+onde o espaço é apertado e você não pretende nunca atualizar os fusos
+horários, você poderia economizar 1,9 MB não usando o diretório <filename
+class="directory">posix</filename>, mas alguns aplicativos ou suítes de
+teste poderiam produzir algumas falhas.</para>
         </listitem>
       </varlistentry>
       <varlistentry>
         <term><parameter>zic -L leapseconds ...</parameter></term>
         <listitem>
-          <para>This creates right time zones, including leap seconds. On an
-          embedded system, where space is tight and you do not intend to
-          ever update the time zones, or care about the correct time, you could
-          save 1.9MB by omitting the <filename class="directory">right</filename>
-          directory.</para>
+          <para>Isso cria fusos horários corretos, incluindo segundos bissextos. Em um
+sistema embarcado, onde o espaço é apertado e você não pretende nunca
+atualizar os fusos horários ou se importa com a hora correta, você poderia
+economizar 1,9 MB omitindo o diretório <filename
+class="directory">right</filename>.</para>
         </listitem>
       </varlistentry>
       <varlistentry>
         <term><parameter>zic ... -p ...</parameter></term>
         <listitem>
-          <para>This creates the <filename>posixrules</filename> file. We use
-          New York because POSIX requires the daylight saving time rules
-          to be in accordance with US rules.</para>
+          <para>Isso cria o arquivo <filename>posixrules</filename>. Nós usamos New York,
+pois POSIX exige que as regras de horário de verão estejam de acordo com
+regras dos Estados Unidos da América do Norte.</para>
         </listitem>
       </varlistentry>
     </variablelist>
 
 
-    <para>One way to determine the local time zone is to run the following
-    script:</para>
+    <para>Uma maneira para determinar o fuso horário local é a de executar o seguinte
+conjunto de comandos sequenciais:</para>
 
 <screen role="nodump"><userinput>tzselect</userinput></screen>
 
-    <para>After answering a few questions about the location, the script will
-    output the name of the time zone (e.g.,
-    <emphasis>America/Edmonton</emphasis>). There are also some other possible
-    time zones listed in <filename
-    class='directory'>/usr/share/zoneinfo</filename> such as
-    <emphasis>Canada/Eastern</emphasis> or <emphasis>EST5EDT</emphasis> that
-    are not identified by the script but can be used.</para>
+    <para>Depois de responder à umas poucas perguntas a respeito do local, o conjunto
+de comandos sequenciais retornará o nome do fuso horário (por exemplo,
+<emphasis>America/Edmonton</emphasis>). Existem também alguns outros
+possíveis fusos horários listados em <filename
+class='directory'>/usr/share/zoneinfo</filename>, tais como
+<emphasis>Canada/Eastern</emphasis> ou <emphasis>EST5EDT</emphasis> que não
+são identificados pelo conjunto de comandos sequenciais, mas podem ser
+usados.</para>
 
-    <para>Then create the <filename>/etc/localtime</filename> file by
-    running:</para>
+    <para>Então crie o arquivo <filename>/etc/localtime</filename> executando:</para>
 
 <screen><userinput>ln -sfv /usr/share/zoneinfo/<replaceable>&lt;xxx&gt;</replaceable> /etc/localtime</userinput></screen>
 
-    <para>Replace <replaceable>&lt;xxx&gt;</replaceable> with the name of the
-    time zone selected (e.g., Canada/Eastern).</para>
+    <para>Substitua <replaceable>&lt;xxx&gt;</replaceable> pelo nome do fuso horário
+selecionado (por exemplo, Canada/Eastern).</para>
 
   </sect3>
 
   <sect3 id="conf-ld" role="configuration">
-    <title>Configuring the Dynamic Loader</title>
+    <title>Configurando o Carregador Dinâmico</title>
 
     <indexterm zone="conf-ld">
       <primary sortas="e-/etc/ld.so.conf">/etc/ld.so.conf</primary>
     </indexterm>
 
-    <para>By default, the dynamic loader (<filename
-    class="libraryfile">/lib/ld-linux.so.2</filename>) searches through
-    <filename class="directory">/usr/lib</filename> for dynamic libraries
-    that are needed by programs as they are run. However, if there are
-    libraries in directories other than
-    <filename class="directory">/usr/lib</filename>, these need to be added
-    to the <filename>/etc/ld.so.conf</filename> file in order for the
-    dynamic loader to find them. Two directories that are commonly known
-    to contain additional libraries are <filename
-    class="directory">/usr/local/lib</filename> and <filename
-    class="directory">/opt/lib</filename>, so add those directories to the
-    dynamic loader's search path.</para>
+    <para>Por padrão, o carregador dinâmico (<filename
+class="libraryfile">/lib/ld-linux.so.2</filename>) procura em <filename
+class="directory">/usr/lib</filename> por bibliotecas dinâmicas que são
+necessárias para aplicativos assim que são executados. Entretanto, se
+existirem bibliotecas em outros diretórios diferentes do <filename
+class="directory">/usr/lib</filename>, esses precisam ser adicionados ao
+arquivo <filename>/etc/ld.so.conf</filename> para a finalidade de que o
+carregador dinâmico encontre elas. Dois diretórios que são comumente
+conhecidos por conterem bibliotecas adicionais são <filename
+class="directory">/usr/local/lib</filename> e <filename
+class="directory">/opt/lib</filename>; então adicione esses diretórios ao
+caminho de busca do carregador dinâmico.</para>
 
-    <para>Create a new file <filename>/etc/ld.so.conf</filename> by running the
-    following:</para>
+    <para>Crie um novo arquivo <filename>/etc/ld.so.conf</filename> executando o
+seguinte:</para>
 
 <screen><userinput>cat &gt; /etc/ld.so.conf &lt;&lt; "EOF"
-<literal># Begin /etc/ld.so.conf
+<literal># Inicia /etc/ld.so.conf
 /usr/local/lib
 /opt/lib
 </literal>
 EOF</userinput></screen>
 
-  <para>If desired, the dynamic loader can also search a directory and
-  include the contents of files found there.  Generally the files in
-  this include directory are one line specifying the desired library path.
-  To add this capability run the following commands:</para>
+  <para>Se desejado, o carregador dinâmico também pode pesquisar um diretório e
+incluir o conteúdo de arquivos encontrados lá. Geralmente os arquivos nesse
+diretório include são uma linha especificando o caminho de biblioteca
+desejado. Para adicionar essa capacidade, execute os seguintes comandos:</para>
 
 <screen role="nodump"><userinput>cat &gt;&gt; /etc/ld.so.conf &lt;&lt; "EOF"
-<literal># Add an include directory
+<literal># Adiciona um diretório de inclusão
 include /etc/ld.so.conf.d/*.conf
 </literal>
 EOF
@@ -628,50 +638,43 @@ mkdir -pv /etc/ld.so.conf.d</userinput></screen>
   </sect2>
 
   <sect2 id="contents-glibc" role="content">
-    <title>Contents of Glibc</title>
+    <title>Conteúdo do Glibc</title>
 
     <segmentedlist>
-      <segtitle>Installed programs</segtitle>
-      <segtitle>Installed libraries</segtitle>
-      <segtitle>Installed directories</segtitle>
+      <segtitle>Programas instalados</segtitle>
+      <segtitle>Bibliotecas instaladas</segtitle>
+      <segtitle>Diretórios instalados</segtitle>
 
       <seglistitem>
-        <seg>gencat, getconf, getent, iconv, iconvconfig, ldconfig,
-        ldd, lddlibc4,
-        ld.so (symlink to ld-linux-x86-64.so.2 or ld-linux.so.2),
-        locale, localedef, makedb, mtrace,
-        pcprofiledump, pldd, sln, sotruss, sprof, tzselect, xtrace,
-        zdump, and zic</seg>
-        <seg>ld-linux-x86-64.so.2, ld-linux.so.2,
-        libBrokenLocale.{a,so}, libanl.{a,so},
-        libc.{a,so}, libc_nonshared.a, libc_malloc_debug.so,
-        libdl.{a,so.2}, libg.a, libm.{a,so},
-        libmcheck.a, libmemusage.so, libmvec.{a,so}, libnsl.so.1,
-        libnss_compat.so, libnss_dns.so, libnss_files.so, libnss_hesiod.so,
-        libpcprofile.so, libpthread.{a,so.0},
-        libresolv.{a,so}, librt.{a,so.1},
-        libthread_db.so, and libutil.{a,so.1}</seg>
-        <seg>/usr/include/arpa, /usr/include/bits, /usr/include/gnu,
-        /usr/include/net, /usr/include/netash, /usr/include/netatalk,
-        /usr/include/netax25, /usr/include/neteconet, /usr/include/netinet,
-        /usr/include/netipx, /usr/include/netiucv, /usr/include/netpacket,
-        /usr/include/netrom, /usr/include/netrose, /usr/include/nfs,
-        /usr/include/protocols, /usr/include/rpc,
-        /usr/include/sys, /usr/lib/audit, /usr/lib/gconv, /usr/lib/locale,
-        /usr/libexec/getconf, /usr/share/i18n, /usr/share/zoneinfo,
-        and /var/lib/nss_db</seg>
+        <seg>gencat, getconf, getent, iconv, iconvconfig, ldconfig, ldd, lddlibc4, ld.so
+(link simbólico para ld-linux-x86-64.so.2 ou ld-linux.so.2), locale,
+localedef, makedb, mtrace, pcprofiledump, pldd, sln, sotruss, sprof,
+tzselect, xtrace, zdump e zic</seg>
+        <seg>ld-linux-x86-64.so.2, ld-linux.so.2, libBrokenLocale.{a,so}, libanl.{a,so},
+libc.{a,so}, libc_nonshared.a, libc_malloc_debug.so, libdl.{a,so.2}, libg.a,
+libm.{a,so}, libmcheck.a, libmemusage.so, libmvec.{a,so}, libnsl.so.1,
+libnss_compat.so, libnss_dns.so, libnss_files.so, libnss_hesiod.so,
+libpcprofile.so, libpthread.{a,so.0}, libresolv.{a,so}, librt.{a,so.1},
+libthread_db.so e libutil.{a,so.1}</seg>
+        <seg>/usr/include/arpa, /usr/include/bits, /usr/include/gnu, /usr/include/net,
+/usr/include/netash, /usr/include/netatalk, /usr/include/netax25,
+/usr/include/neteconet, /usr/include/netinet, /usr/include/netipx,
+/usr/include/netiucv, /usr/include/netpacket, /usr/include/netrom,
+/usr/include/netrose, /usr/include/nfs, /usr/include/protocols,
+/usr/include/rpc, /usr/include/sys, /usr/lib/audit, /usr/lib/gconv,
+/usr/lib/locale, /usr/libexec/getconf, /usr/share/i18n, /usr/share/zoneinfo
+e /var/lib/nss_db</seg>
       </seglistitem>
     </segmentedlist>
 
     <variablelist>
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
+      <bridgehead renderas="sect3">Descrições Curtas</bridgehead>
+      <?dbfo list-presentation="list"?> <?dbhtml list-presentation="table"?>
 
       <varlistentry id="gencat">
         <term><command>gencat</command></term>
         <listitem>
-          <para>Generates message catalogues</para>
+          <para>Gera catálogos de mensagem</para>
           <indexterm zone="ch-system-glibc gencat">
             <primary sortas="b-gencat">gencat</primary>
           </indexterm>
@@ -681,8 +684,8 @@ mkdir -pv /etc/ld.so.conf.d</userinput></screen>
       <varlistentry id="getconf">
         <term><command>getconf</command></term>
         <listitem>
-          <para>Displays the system configuration values for file system
-          specific variables</para>
+          <para>Exibe os valores de configuração de sistema para variáveis específicas do
+sistema de arquivos</para>
           <indexterm zone="ch-system-glibc getconf">
             <primary sortas="b-getconf">getconf</primary>
           </indexterm>
@@ -692,7 +695,7 @@ mkdir -pv /etc/ld.so.conf.d</userinput></screen>
       <varlistentry id="getent">
         <term><command>getent</command></term>
         <listitem>
-          <para>Gets entries from an administrative database</para>
+          <para>Obtém entradas a partir de uma base de dados administrativa</para>
           <indexterm zone="ch-system-glibc getent">
             <primary sortas="b-getent">getent</primary>
           </indexterm>
@@ -702,7 +705,7 @@ mkdir -pv /etc/ld.so.conf.d</userinput></screen>
       <varlistentry id="iconv">
         <term><command>iconv</command></term>
         <listitem>
-          <para>Performs character set conversion</para>
+          <para>Realiza conversão de conjuntos de caracteres</para>
           <indexterm zone="ch-system-glibc iconv">
             <primary sortas="b-iconv">iconv</primary>
           </indexterm>
@@ -712,8 +715,8 @@ mkdir -pv /etc/ld.so.conf.d</userinput></screen>
       <varlistentry id="iconvconfig">
         <term><command>iconvconfig</command></term>
         <listitem>
-          <para>Creates fastloading <command>iconv</command> module configuration
-          files</para>
+          <para>Cria arquivos de configuração de módulos de carregamento rápido do
+<command>iconv</command></para>
           <indexterm zone="ch-system-glibc iconvconfig">
             <primary sortas="b-iconvconfig">iconvconfig</primary>
           </indexterm>
@@ -723,7 +726,7 @@ mkdir -pv /etc/ld.so.conf.d</userinput></screen>
       <varlistentry id="ldconfig">
         <term><command>ldconfig</command></term>
         <listitem>
-          <para>Configures the dynamic linker runtime bindings</para>
+          <para>Configura as ligações de tempo de execução do vinculador dinâmico</para>
           <indexterm zone="ch-system-glibc ldconfig">
             <primary sortas="b-ldconfig">ldconfig</primary>
           </indexterm>
@@ -733,8 +736,8 @@ mkdir -pv /etc/ld.so.conf.d</userinput></screen>
       <varlistentry id="ldd">
         <term><command>ldd</command></term>
         <listitem>
-          <para>Reports which shared libraries are required
-          by each given program or shared library</para>
+          <para>Reporta quis bibliotecas compartilhadas são exigidas por cada dado
+aplicativo ou biblioteca compartilhada</para>
           <indexterm zone="ch-system-glibc ldd">
             <primary sortas="b-ldd">ldd</primary>
           </indexterm>
@@ -744,8 +747,8 @@ mkdir -pv /etc/ld.so.conf.d</userinput></screen>
       <varlistentry id="lddlibc4">
         <term><command>lddlibc4</command></term>
         <listitem>
-          <para>Assists <command>ldd</command> with object files.
-          It does not exist on newer architectures like x86_64</para>
+          <para>Auxilia o <command>ldd</command> com arquivos objeto. Isso não existe em
+arquiteturas mais novas como x86_64</para>
           <indexterm zone="ch-system-glibc lddlibc4">
             <primary sortas="b-lddlibc4">lddlibc4</primary>
           </indexterm>
@@ -755,7 +758,7 @@ mkdir -pv /etc/ld.so.conf.d</userinput></screen>
       <varlistentry id="locale">
         <term><command>locale</command></term>
         <listitem>
-          <para>Prints various information about the current locale</para>
+          <para>Imprime várias informações a respeito da localidade atual</para>
           <indexterm zone="ch-system-glibc locale">
             <primary sortas="b-locale">locale</primary>
           </indexterm>
@@ -765,7 +768,7 @@ mkdir -pv /etc/ld.so.conf.d</userinput></screen>
       <varlistentry id="localedef">
         <term><command>localedef</command></term>
         <listitem>
-          <para>Compiles locale specifications</para>
+          <para>Compila especificações de localidade</para>
           <indexterm zone="ch-system-glibc localedef">
             <primary sortas="b-localedef">localedef</primary>
           </indexterm>
@@ -775,7 +778,7 @@ mkdir -pv /etc/ld.so.conf.d</userinput></screen>
       <varlistentry id="makedb">
         <term><command>makedb</command></term>
         <listitem>
-          <para>Creates a simple database from textual input</para>
+          <para>Cria um banco de dados simples a partir de uma entrada gerada textual</para>
           <indexterm zone="ch-system-glibc makedb">
             <primary sortas="b-makedb">makedb</primary>
           </indexterm>
@@ -785,8 +788,8 @@ mkdir -pv /etc/ld.so.conf.d</userinput></screen>
       <varlistentry id="mtrace">
         <term><command>mtrace</command></term>
         <listitem>
-          <para>Reads and interprets a memory trace file and displays a summary
-          in human-readable format</para>
+          <para>Lê e interpreta um arquivo de rastreamento de memória e exibe um resumo em
+formato legível por humanos</para>
           <indexterm zone="ch-system-glibc mtrace">
             <primary sortas="b-mtrace">mtrace</primary>
           </indexterm>
@@ -796,7 +799,7 @@ mkdir -pv /etc/ld.so.conf.d</userinput></screen>
       <varlistentry id="pcprofiledump">
         <term><command>pcprofiledump</command></term>
         <listitem>
-          <para>Dump information generated by PC profiling</para>
+          <para>Despeja informação gerada pelos perfis do PC</para>
           <indexterm zone="ch-system-glibc pcprofiledump">
             <primary sortas="b-pcprofiledump">pcprofiledump</primary>
           </indexterm>
@@ -806,7 +809,7 @@ mkdir -pv /etc/ld.so.conf.d</userinput></screen>
       <varlistentry id="pldd">
         <term><command>pldd</command></term>
         <listitem>
-          <para>Lists dynamic shared objects used by running processes</para>
+          <para>Lista objetos dinâmicos compartilhados usados por processos em execução</para>
           <indexterm zone="ch-system-glibc pldd">
             <primary sortas="b-pldd">pldd</primary>
           </indexterm>
@@ -816,7 +819,7 @@ mkdir -pv /etc/ld.so.conf.d</userinput></screen>
       <varlistentry id="sln">
         <term><command>sln</command></term>
         <listitem>
-          <para>A statically linked <command>ln</command> program</para>
+          <para>Um aplicativo <command>ln</command> vinculado estaticamente</para>
           <indexterm zone="ch-system-glibc sln">
             <primary sortas="b-sln">sln</primary>
           </indexterm>
@@ -826,7 +829,8 @@ mkdir -pv /etc/ld.so.conf.d</userinput></screen>
       <varlistentry id="sotruss">
         <term><command>sotruss</command></term>
         <listitem>
-          <para>Traces shared library procedure calls of a specified command</para>
+          <para>Rastreia chamadas de procedimentos de bibliotecas compartilhadas de um
+comando especificado</para>
           <indexterm zone="ch-system-glibc sotruss">
             <primary sortas="b-sotruss">sotruss</primary>
           </indexterm>
@@ -836,7 +840,7 @@ mkdir -pv /etc/ld.so.conf.d</userinput></screen>
       <varlistentry id="sprof">
         <term><command>sprof</command></term>
         <listitem>
-          <para>Reads and displays shared object profiling data</para>
+          <para>Lê e exibe dados de perfil de objetos compartilhados</para>
           <indexterm zone="ch-system-glibc sprof">
             <primary sortas="b-sprof">sprof</primary>
           </indexterm>
@@ -846,8 +850,8 @@ mkdir -pv /etc/ld.so.conf.d</userinput></screen>
       <varlistentry id="tzselect">
         <term><command>tzselect</command></term>
         <listitem>
-          <para>Asks the user about the location of the system and reports
-          the corresponding time zone description</para>
+          <para>Pergunta ao(à) usuário(a) a respeito do local do sistema e relata a
+correspondente descrição de fuso horário</para>
           <indexterm zone="ch-system-glibc tzselect">
             <primary sortas="b-tzselect">tzselect</primary>
           </indexterm>
@@ -857,8 +861,7 @@ mkdir -pv /etc/ld.so.conf.d</userinput></screen>
       <varlistentry id="xtrace">
         <term><command>xtrace</command></term>
         <listitem>
-          <para>Traces the execution of a program by printing the currently
-          executed function</para>
+          <para>Rastreia a execução de um aplicativo exibindo a função atualmente executada</para>
           <indexterm zone="ch-system-glibc xtrace">
             <primary sortas="b-xtrace">xtrace</primary>
           </indexterm>
@@ -868,7 +871,7 @@ mkdir -pv /etc/ld.so.conf.d</userinput></screen>
       <varlistentry id="zdump">
         <term><command>zdump</command></term>
         <listitem>
-          <para>The time zone dumper</para>
+          <para>O despejador de fuso horário</para>
           <indexterm zone="ch-system-glibc zdump">
             <primary sortas="b-zdump">zdump</primary>
           </indexterm>
@@ -878,7 +881,7 @@ mkdir -pv /etc/ld.so.conf.d</userinput></screen>
       <varlistentry id="zic">
         <term><command>zic</command></term>
         <listitem>
-          <para>The time zone compiler</para>
+          <para>O compilador de fuso horário</para>
           <indexterm zone="ch-system-glibc zic">
             <primary sortas="b-zic">zic</primary>
           </indexterm>
@@ -888,7 +891,7 @@ mkdir -pv /etc/ld.so.conf.d</userinput></screen>
       <varlistentry id="ld.so">
         <term><filename class="libraryfile">ld-*.so</filename></term>
         <listitem>
-          <para>The helper program for shared library executables</para>
+          <para>O aplicativo auxiliar para executáveis de bibliotecas compartilhadas</para>
           <indexterm zone="ch-system-glibc ld.so">
             <primary sortas="c-ld.so">ld-&glibc-version;.so</primary>
           </indexterm>
@@ -898,10 +901,11 @@ mkdir -pv /etc/ld.so.conf.d</userinput></screen>
       <varlistentry id="libBrokenLocale">
         <term><filename class="libraryfile">libBrokenLocale</filename></term>
         <listitem>
-          <para>Used internally by Glibc as a gross hack to get broken programs
-          (e.g., some Motif applications) running. See comments in
-          <filename>glibc-&glibc-version;/locale/broken_cur_max.c</filename>
-          for more information</para>
+          <para>Usado internamente pela Glibc como um hack grosseiro para executar
+aplicativos quebrados (por exemplo, alguns aplicativos Motif). Vejam-se
+comentários em
+<filename>glibc-&glibc-version;/locale/broken_cur_max.c</filename> para mais
+informação</para>
           <indexterm zone="ch-system-glibc libBrokenLocale">
             <primary sortas="c-libBrokenLocale">libBrokenLocale</primary>
           </indexterm>
@@ -911,9 +915,9 @@ mkdir -pv /etc/ld.so.conf.d</userinput></screen>
       <varlistentry id="libanl">
         <term><filename class="libraryfile">libanl</filename></term>
         <listitem>
-          <para>Dummy library containing no functions.  Previously was the
-          asynchronous name lookup library, whose functions are now in
-          <filename class='libraryfile'>libc</filename></para>
+          <para>Biblioteca fictícia que não contém funções. Anteriormente era a biblioteca
+assíncrona de pesquisa de nome, cujas funções agora estão em <filename
+class='libraryfile'>libc</filename></para>
           <indexterm zone="ch-system-glibc libanl">
             <primary sortas="c-libanl">libanl</primary>
           </indexterm>
@@ -923,7 +927,7 @@ mkdir -pv /etc/ld.so.conf.d</userinput></screen>
       <varlistentry id="libc">
         <term><filename class="libraryfile">libc</filename></term>
         <listitem>
-          <para>The main C library</para>
+          <para>A biblioteca principal C</para>
           <indexterm zone="ch-system-glibc libc">
             <primary sortas="c-libc">libc</primary>
           </indexterm>
@@ -933,7 +937,7 @@ mkdir -pv /etc/ld.so.conf.d</userinput></screen>
       <varlistentry id="libc_malloc_debug">
         <term><filename class="libraryfile">libc_malloc_debug</filename></term>
         <listitem>
-          <para>Turns on memory allocation checking when preloaded</para>
+          <para>Liga verificação de alocação de memória quando pré-carregada</para>
           <indexterm zone="ch-system-glibc libc_malloc_debug">
             <primary sortas="c-libc_malloc_debug">libc_malloc_debug</primary>
           </indexterm>
@@ -943,9 +947,9 @@ mkdir -pv /etc/ld.so.conf.d</userinput></screen>
       <varlistentry id="libdl">
         <term><filename class="libraryfile">libdl</filename></term>
         <listitem>
-          <para>Dummy library containing no functions. Previously was the
-          dynamic linking interface library, whose functions are now in
-          <filename class="libraryfile">libc</filename></para>
+          <para>Biblioteca fictícia que não contém funções. Anteriormente era a biblioteca
+de interface do vinculador dinâmico, cujas funções agora estão em <filename
+class="libraryfile">libc</filename></para>
           <indexterm zone="ch-system-glibc libdl">
             <primary sortas="c-libdl">libdl</primary>
           </indexterm>
@@ -955,8 +959,8 @@ mkdir -pv /etc/ld.so.conf.d</userinput></screen>
       <varlistentry id="libg">
         <term><filename class="libraryfile">libg</filename></term>
         <listitem>
-          <para>Dummy library containing no functions. Previously was a runtime
-          library for <command>g++</command></para>
+          <para>Biblioteca fictícia que não contém funções. Anteriormente era uma biblioteca
+de tempo de execução para <command>g++</command></para>
           <indexterm zone="ch-system-glibc libg">
             <primary sortas="c-libg">libg</primary>
           </indexterm>
@@ -966,7 +970,7 @@ mkdir -pv /etc/ld.so.conf.d</userinput></screen>
       <varlistentry id="libm">
         <term><filename class="libraryfile">libm</filename></term>
         <listitem>
-          <para>The mathematical library</para>
+          <para>A biblioteca matemática</para>
           <indexterm zone="ch-system-glibc libm">
             <primary sortas="c-libm">libm</primary>
           </indexterm>
@@ -976,8 +980,8 @@ mkdir -pv /etc/ld.so.conf.d</userinput></screen>
       <varlistentry id="libmvec">
         <term><filename class="libraryfile">libmvec</filename></term>
         <listitem>
-          <para>The vector math library, linked in as needed
-          when <filename class='libraryfile'>libm</filename> is used</para>
+          <para>A biblioteca de vetor matemático, vinculada conforme necessária quando
+<filename class='libraryfile'>libm</filename> for usada</para>
           <indexterm zone="ch-system-glibc libmvec">
             <primary sortas="c-libmvec">libmvec</primary>
           </indexterm>
@@ -987,7 +991,7 @@ mkdir -pv /etc/ld.so.conf.d</userinput></screen>
       <varlistentry id="libmcheck">
         <term><filename class="libraryfile">libmcheck</filename></term>
         <listitem>
-          <para>Turns on memory allocation checking when linked to</para>
+          <para>Liga verificação de alocação de memória quando vinculada para</para>
           <indexterm zone="ch-system-glibc libmcheck">
             <primary sortas="c-libmcheck">libmcheck</primary>
           </indexterm>
@@ -997,8 +1001,8 @@ mkdir -pv /etc/ld.so.conf.d</userinput></screen>
       <varlistentry id="libmemusage">
         <term><filename class="libraryfile">libmemusage</filename></term>
         <listitem>
-          <para>Used by <command>memusage</command> to help collect
-          information about the memory usage of a program</para>
+          <para>Usado por <command>memusage</command> para ajudar a coletar informação a
+respeito do uso de memória de um aplicativo</para>
           <indexterm zone="ch-system-glibc libmemusage">
             <primary sortas="c-libmemusage">libmemusage</primary>
           </indexterm>
@@ -1008,7 +1012,7 @@ mkdir -pv /etc/ld.so.conf.d</userinput></screen>
       <varlistentry id="libnsl">
         <term><filename class="libraryfile">libnsl</filename></term>
         <listitem>
-          <para>The network services library, now deprecated</para>
+          <para>A biblioteca de serviços de rede de comunicação, agora obsoleta</para>
           <indexterm zone="ch-system-glibc libnsl">
             <primary sortas="c-libnsl">libnsl</primary>
           </indexterm>
@@ -1018,11 +1022,11 @@ mkdir -pv /etc/ld.so.conf.d</userinput></screen>
       <varlistentry id="libnss">
         <term><filename class="libraryfile">libnss_*</filename></term>
         <listitem>
-          <para>The Name Service Switch modules, containing functions for
-          resolving host names, user names, group names, aliases, services,
-          protocols, etc.  Loaded by
-          <filename class='libraryfile'>libc</filename> according to the
-          configuration in <filename>/etc/nsswitch.conf</filename></para>
+          <para>Os módulos de Name Service Switch, contendo funções para resolução de nomes
+de dispositivos, nomes de usuários(as), nomes de grupos, pseudônimos,
+serviços, protocolos, entre outras coisas. Carregados pela <filename
+class='libraryfile'>libc</filename> conforme a configuração em
+<filename>/etc/nsswitch.conf</filename></para>
           <indexterm zone="ch-system-glibc libnss">
             <primary sortas="c-libnss">libnss_*</primary>
           </indexterm>
@@ -1032,7 +1036,7 @@ mkdir -pv /etc/ld.so.conf.d</userinput></screen>
       <varlistentry id="libpcprofile">
         <term><filename class="libraryfile">libpcprofile</filename></term>
         <listitem>
-          <para>Can be preloaded to PC profile an executable</para>
+          <para>Pode ser pré-carregada para PC perfilar um executável</para>
           <indexterm zone="ch-system-glibc libpcprofile">
             <primary sortas="c-libpcprofile">libpcprofile</primary>
           </indexterm>
@@ -1042,11 +1046,11 @@ mkdir -pv /etc/ld.so.conf.d</userinput></screen>
       <varlistentry id="libpthread">
         <term><filename class="libraryfile">libpthread</filename></term>
         <listitem>
-          <para>Dummy library containing no functions. Previously contained
-          functions providing most of the interfaces specified
-          by the POSIX.1c Threads Extensions and the semaphore interfaces
-          specified by the POSIX.1b Real-time Extensions, now the functions
-          are in <filename class="libraryfile">libc</filename></para>
+          <para>Biblioteca fictícia que não contém funções. Anteriormente continha funções
+fornecendo a maioria das interfaces especificadas pelas Extensões de Camadas
+POSIX.1c e as interfaces de semáforos especificadas pelas Extensões de Tempo
+Real POSIX.1b; agora as funções estão em <filename
+class="libraryfile">libc</filename></para>
           <indexterm zone="ch-system-glibc libpthread">
             <primary sortas="c-libpthread">libpthread</primary>
           </indexterm>
@@ -1056,8 +1060,8 @@ mkdir -pv /etc/ld.so.conf.d</userinput></screen>
       <varlistentry id="libresolv">
         <term><filename class="libraryfile">libresolv</filename></term>
         <listitem>
-          <para>Contains functions for creating, sending, and interpreting
-          packets to the Internet domain name servers</para>
+          <para>Contém funções para criação, envio e interpretação de pacotes para os
+servidores de nomes de domínio da Internet</para>
           <indexterm zone="ch-system-glibc libresolv">
             <primary sortas="c-libresolv">libresolv</primary>
           </indexterm>
@@ -1067,8 +1071,8 @@ mkdir -pv /etc/ld.so.conf.d</userinput></screen>
       <varlistentry id="librt">
         <term><filename class="libraryfile">librt</filename></term>
         <listitem>
-          <para>Contains functions providing most of the interfaces specified
-          by the POSIX.1b Real-time Extensions</para>
+          <para>Contém funções fornecendo a maior parte das interfaces especificadas pelas
+Extensões de Tempo Real POSIX.1b</para>
           <indexterm zone="ch-system-glibc librt">
             <primary sortas="c-librt">librt</primary>
           </indexterm>
@@ -1078,8 +1082,8 @@ mkdir -pv /etc/ld.so.conf.d</userinput></screen>
       <varlistentry id="libthread_db">
         <term><filename class="libraryfile">libthread_db</filename></term>
         <listitem>
-          <para>Contains functions useful for building debuggers for
-          multi-threaded programs</para>
+          <para>Contém funções úteis para construir depuradores para aplicativos de
+múltiplas camadas</para>
           <indexterm zone="ch-system-glibc libthread_db">
             <primary sortas="c-libthread_db">libthread_db</primary>
           </indexterm>
@@ -1089,10 +1093,9 @@ mkdir -pv /etc/ld.so.conf.d</userinput></screen>
       <varlistentry id="libutil">
         <term><filename class="libraryfile">libutil</filename></term>
         <listitem>
-          <para>Dummy library containing no functions. Previously contained
-          code for <quote>standard</quote> functions used in
-          many different Unix utilities. These functions are now in
-          <filename class="libraryfile">libc</filename></para>
+          <para>Biblioteca fictícia que não contém funções. Anteriormente continha código
+para funções <quote>padrão</quote> usadas em muitos utilitários Unix. Essas
+funções agora estão na <filename class="libraryfile">libc</filename></para>
           <indexterm zone="ch-system-glibc libutil">
             <primary sortas="c-libutil">libutil</primary>
           </indexterm>

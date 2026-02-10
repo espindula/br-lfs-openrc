@@ -9,16 +9,14 @@
   <?dbhtml filename="patch.html"?>
 
   <sect1info condition="script">
-    <productname>patch</productname>
-    <productnumber>&patch-version;</productnumber>
-    <address>&patch-url;</address>
-  </sect1info>
+<productname>patch</productname>
+<productnumber>&patch-version;</productnumber> <address>&patch-url;</address></sect1info>
 
   <title>Patch-&patch-version;</title>
 
   <indexterm zone="ch-tools-patch">
     <primary sortas="a-Patch">Patch</primary>
-    <secondary>tools</secondary>
+    <secondary>ferramentas</secondary>
   </indexterm>
 
   <sect2 role="package">
@@ -41,19 +39,19 @@
   </sect2>
 
   <sect2 role="installation">
-    <title>Installation of Patch</title>
+    <title>Instalação do Patch</title>
 
-    <para>Prepare Patch for compilation:</para>
+    <para>Prepare o Patch para compilação:</para>
 
 <screen><userinput remap="configure">./configure --prefix=/usr   \
             --host=$LFS_TGT \
             --build=$(build-aux/config.guess)</userinput></screen>
 
-    <para>Compile the package:</para>
+    <para>Compile o pacote:</para>
 
 <screen><userinput remap="make">make</userinput></screen>
 
-    <para>Install the package:</para>
+    <para>Instale o pacote:</para>
 
 <screen><userinput remap="install">make DESTDIR=$LFS install</userinput></screen>
 
@@ -62,8 +60,8 @@
   <sect2 role="content">
     <title/>
 
-    <para>Details on this package are located in
-    <xref linkend="contents-patch" role="."/></para>
+    <para>Detalhes acerca deste pacote estão localizados na <xref
+linkend="contents-patch" role="."/></para>
 
   </sect2>
 

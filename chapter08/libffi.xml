@@ -9,10 +9,8 @@
   <?dbhtml filename="libffi.html"?>
 
   <sect1info condition="script">
-    <productname>libffi</productname>
-    <productnumber>&libffi-version;</productnumber>
-    <address>&libffi-url;</address>
-  </sect1info>
+<productname>libffi</productname>
+<productnumber>&libffi-version;</productnumber> <address>&libffi-url;</address></sect1info>
 
   <title>Libffi-&libffi-version;</title>
 
@@ -23,14 +21,16 @@
   <sect2 role="package">
     <title/>
 
-    <para>The Libffi library provides a portable, high level programming
-    interface to various calling conventions. This allows a programmer to call
-    any function specified by a call interface description at run time.</para>
+    <para>A biblioteca Libffi fornece uma interface de programação portável e de alto
+nível para várias convenções de chamada. Isso permite a um(a) programador(a)
+chamar qualquer função especificada por uma descrição de interface de
+chamada em tempo de execução.</para>
   
-    <para>FFI stands for Foreign Function Interface. An FFI allows a program written
-    in one language to call a program written in another language. Specifically,
-    Libffi can provide a bridge between an interpreter like Perl, or Python, and
-    shared library subroutines written in C, or C++.</para>
+    <para>FFI significa Foreign Function Interface. Uma FFI permite a um aplicativo
+escrito em uma linguagem chamar um aplicativo escrito em outra
+linguagem. Especificamente, Libffi consegue fornecer uma ponte entre um
+interpretador, como Perl ou Python, e sub-rotinas da biblioteca
+compartilhada escrita em C, ou em C++.</para>
 
     <segmentedlist>
       <segtitle>&buildtime;</segtitle>
@@ -45,65 +45,64 @@
   </sect2>
 
   <sect2 role="installation">
-    <title>Installation of Libffi</title>
+    <title>Instalação do Libffi</title>
 
     <note>
-      <para>Like GMP, Libffi builds with optimizations specific
-      to the processor in use. If building for another system, change the
-      value of the <parameter>--with-gcc-arch=</parameter> parameter in the
-      following command to an architecture name fully implemented by
-      <emphasis role='bold'>both</emphasis> the host CPU and the
-      CPU on that system.
-      If this is not done, all applications that link to
-      <filename class='libraryfile'>libffi</filename> will trigger
-      Illegal Operation Errors.  If you cannot figure out a value
-      safe for both the CPUs, replace the parameter with
-      <option>--without-gcc-arch</option> to produce a generic library.</para>
+      <para>Assim como o GMP, o Libffi constrói com otimizações específicas para o
+processador em uso. Se construir para outro sistema, mude o valor do
+parâmetro <parameter>--with-gcc-arch=</parameter> no comando a seguir para
+um nome de arquitetura totalmente implementado por <emphasis
+role='bold'>ambos</emphasis> a CPU do anfitrião e a CPU naquele sistema. Se
+isso não for feito, todos os aplicativos que se vincularem a <filename
+class='libraryfile'>libffi</filename> deflagarão Erros de Operação
+Ilegal. Se você não conseguir descobrir um valor seguro para ambas as CPUs,
+substitua o parâmetro por <option>--without-gcc-arch</option> para produzir
+uma biblioteca genérica.</para>
     </note>
 
-    <para>Prepare Libffi for compilation:</para>
+    <para>Prepare Libffi para compilação:</para>
 
 <screen><userinput remap="configure">./configure --prefix=/usr    \
             --disable-static \
             --with-gcc-arch=native</userinput></screen>
 
     <variablelist>
-      <title>The meaning of the configure option:</title>
+      <title>O significado da opção de configure:</title>
 
       <varlistentry>
         <term><parameter>--with-gcc-arch=native</parameter></term>
         <listitem>
-          <para>Ensure GCC optimizes for the current system.  If this
-          is not specified, the system is guessed and the code generated
-          may not be correct.  If the generated code
-          will be copied from the native system to a less capable
-          system, use the less capable system as a parameter. For details
-          about alternative system types, see <ulink
-          url='https://gcc.gnu.org/onlinedocs/gcc-&gcc-version;/gcc/x86-Options.html'>
-          the x86 options in the GCC manual</ulink>.</para>
+          <para>Garante que o GCC otimize para o sistema atual. Se isso não for
+especificado, [então] o sistema é presumido e o código gerado possivelmente
+não esteja correto. Se o código gerado será copiado de um sistema nativo
+para um sistema menos capaz, [então] use o sistema menos capaz como um
+parâmetro. Para detalhes acerca de tipos alternativos de sistema, vejam-se
+<ulink
+url='https://gcc.gnu.org/onlinedocs/gcc-&gcc-version;/gcc/x86-Options.html'>
+as opções de x86 no manual do GCC</ulink>.</para>
         </listitem>
       </varlistentry>
     </variablelist>
 
-    <para>Compile the package:</para>
+    <para>Compile o pacote:</para>
 
 <screen><userinput remap="make">make</userinput></screen>
 
-    <para>To test the results, issue:</para>
+    <para>Para testar os resultados, emita:</para>
 
 <screen><userinput remap="test">make check</userinput></screen>
 
-    <para>Install the package:</para>
+    <para>Instale o pacote:</para>
 
 <screen><userinput remap="install">make install</userinput></screen>
 
   </sect2>
 
   <sect2 id="contents-libffi" role="content">
-    <title>Contents of Libffi</title>
+    <title>Conteúdo do Libffi</title>
 
     <segmentedlist>
-      <segtitle>Installed library</segtitle>
+      <segtitle>Biblioteca instalada</segtitle>
 
       <seglistitem>
         <seg>libffi.so</seg>
@@ -111,14 +110,13 @@
     </segmentedlist>
 
     <variablelist>
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
+      <bridgehead renderas="sect3">Descrições Curtas</bridgehead>
+      <?dbfo list-presentation="list"?> <?dbhtml list-presentation="table"?>
 
       <varlistentry id="libffi">
         <term><filename class="libraryfile">libffi</filename></term>
         <listitem>
-          <para>Contains the foreign function interface API functions</para>
+          <para>Contém as funções de API da interface de função externa</para>
           <indexterm zone="ch-system-libffi">
             <primary sortas="c-libffi">libffi</primary>
           </indexterm>

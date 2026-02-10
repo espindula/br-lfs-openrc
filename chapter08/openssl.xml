@@ -9,10 +9,8 @@
   <?dbhtml filename="openssl.html"?>
 
   <sect1info condition="script">
-    <productname>openssl</productname>
-    <productnumber>&openssl-version;</productnumber>
-    <address>&openssl-url;</address>
-  </sect1info>
+<productname>openssl</productname>
+<productnumber>&openssl-version;</productnumber> <address>&openssl-url;</address></sect1info>
 
   <title>OpenSSL-&openssl-version;</title>
 
@@ -23,10 +21,10 @@
   <sect2 role="package">
     <title/>
 
-    <para>The OpenSSL package contains  management tools and libraries relating
-    to cryptography. These are useful for providing cryptographic functions
-    to other packages, such as OpenSSH, email applications, and web browsers
-    (for accessing HTTPS sites).  </para>
+    <para>O pacote OpenSSL contém ferramentas de gerenciamento e bibliotecas
+relacionadas à criptografia. Essas são úteis para fornecer funções
+criptográficas para outros pacotes, tais como o OpenSSH, aplicativos de
+correio eletrônico e navegadores de rede (para acessar sítios HTTPS).  </para>
 
     <segmentedlist>
       <segtitle>&buildtime;</segtitle>
@@ -41,15 +39,17 @@
   </sect2>
 
   <sect2 role="installation">
-    <title>Installation of OpenSSL</title>
-<!--
-    <para>First fix a problem with some advanced architectures with avx512
+    <title>Instalação do OpenSSL</title>
+
+    <!--
+    <para>
+First fix a problem with some advanced architectures with avx512
     capability:</para>
 
  <screen><userinput remap="pre">sed -e '/bn_reduce.*m1/i\    factor_size /= sizeof(BN_ULONG) * 8;' \
     -i crypto/bn/rsaz_exp_x2.c</userinput></screen>
 -->
-    <para>Prepare OpenSSL for compilation:</para>
+<para>Prepare OpenSSL para compilação:</para>
 
 <screen><userinput remap="configure">./config --prefix=/usr         \
          --openssldir=/etc/ssl \
@@ -57,54 +57,53 @@
          shared                \
          zlib-dynamic</userinput></screen>
 
-    <para>Compile the package:</para>
+    <para>Compile o pacote:</para>
 
 <screen><userinput remap="make">make</userinput></screen>
 
-    <para>To test the results, issue:</para>
+    <para>Para testar os resultados, emita:</para>
 
 <screen><userinput remap="test">HARNESS_JOBS=<replaceable>$(nproc)</replaceable> make test</userinput></screen>
 
-    <para>One test, 30-test_afalg.t, is known to fail if the host kernel
-    does not have <option>CONFIG_CRYPTO_USER_API_SKCIPHER</option> enabled,
-    or does not have any options providing an AES with CBC implementation
-    (for example, the combination of <option>CONFIG_CRYPTO_AES</option>
-    and <option>CONFIG_CRYPTO_CBC</option>, or
-    <option>CONFIG_CRYPTO_AES_NI_INTEL</option> if the CPU supports AES-NI)
-    enabled.  If it fails, it can safely be ignored.</para>
+    <para>Um teste, 30-test_afalg.t, é conhecido por falhar se o núcleo do anfitrião
+não tiver <option>CONFIG_CRYPTO_USER_API_SKCIPHER</option> habilitado ou não
+tiver quaisquer opções fornecendo um AES com implementação CBC (por exemplo,
+a combinação de <option>CONFIG_CRYPTO_AES</option> e
+<option>CONFIG_CRYPTO_CBC</option>; ou
+<option>CONFIG_CRYPTO_AES_NI_INTEL</option> se a CPU suportar AES-NI)
+habilitado. Se falhar, pode ser seguramente ignorado.</para>
 
-    <para>Install the package:</para>
+    <para>Instale o pacote:</para>
 
 <screen><userinput remap="install">sed -i '/INSTALL_LIBS/s/libcrypto.a libssl.a//' Makefile
 make MANSUFFIX=ssl install</userinput></screen>
 
-    <para>Add the version to the documentation directory name, to be
-    consistent with other packages:</para>
+    <para>Adicione a versão ao nome de diretório de documentação, para ser consistente
+com outros pacotes:</para>
 
 <screen><userinput remap="install">mv -v /usr/share/doc/openssl /usr/share/doc/openssl-&openssl-version;</userinput></screen>
 
-    <para>If desired, install some additional documentation:</para>
+    <para>Se desejado, instale alguma documentação adicional:</para>
 
 <screen><userinput remap="install">cp -vfr doc/* /usr/share/doc/openssl-&openssl-version;</userinput></screen>
 
     <note>
       <para>
-        You should update OpenSSL when a new version which fixes vulnerabilities
-        is announced.  Since OpenSSL 3.0.0, the OpenSSL versioning scheme
-        follows the MAJOR.MINOR.PATCH format.  API/ABI compatibility
-        is guaranteed for the same MAJOR version number.  Because LFS
-        installs only the shared libraries, there is no need to recompile
-        packages which link to
-        <filename class="libraryfile">libcrypto.so</filename> or
-        <filename class="libraryfile">libssl.so</filename>
-        <emphasis>when upgrading to a version with the same MAJOR version
-        number</emphasis>.
+        Você deveria atualizar o OpenSSL quando uma versão nova que corrige
+vulnerabilidades for anunciada. Desde o OpenSSL 3.0.0, o esquema de
+versionamento do OpenSSL segue o formato
+MAIOR.MENOR.REMENDO. Compatibilidade de API/ABI é garantida para o mesmo
+número de versão MAIOR. Por causa de que o LFS instala somente as
+bibliotecas compartilhadas, não existe necessidade de recompilar pacotes que
+se vinculem à <filename class="libraryfile">libcrypto.so</filename> ou à
+<filename class="libraryfile">libssl.so</filename> <emphasis>quando
+atualizar para uma versão com o mesmo número de versão MAIOR</emphasis>.
       </para>
 
       <para>
-        However, any running programs linked to those libraries need to be stopped
-        and restarted. Read the related entries in
-        <xref linkend='pkgmgmt-upgrade-issues'/> for details.
+        Entretanto, quaisquer aplicativos em execução vinculados àquelas bibliotecas
+precisam ser parados e reiniciados. Leiam-se as entradas relacionadas em
+<xref linkend='pkgmgmt-upgrade-issues'/> para detalhes.
       </para>
 
     </note>
@@ -112,43 +111,39 @@ make MANSUFFIX=ssl install</userinput></screen>
   </sect2>
 
   <sect2 id="contents-openssl" role="content">
-    <title>Contents of OpenSSL</title>
+    <title>Conteúdo do OpenSSL</title>
 
     <segmentedlist>
-      <segtitle>Installed programs</segtitle>
-      <segtitle>Installed libraries</segtitle>
-      <segtitle>Installed directories</segtitle>
+      <segtitle>Programas instalados</segtitle>
+      <segtitle>Bibliotecas instaladas</segtitle>
+      <segtitle>Diretórios instalados</segtitle>
 
       <seglistitem>
         <seg>
-          c_rehash and openssl
+          c_rehash e openssl
         </seg>
         <seg>
-          libcrypto.so and libssl.so
+          libcrypto.so e libssl.so
         </seg>
         <seg>
-          /etc/ssl,
-          /usr/include/openssl,
-          /usr/lib/engines and
-          /usr/share/doc/openssl-&openssl-version;
+          /etc/ssl, /usr/include/openssl, /usr/lib/engines e
+/usr/share/doc/openssl-&openssl-version;
         </seg>
       </seglistitem>
     </segmentedlist>
 
     <variablelist>
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
+      <bridgehead renderas="sect3">Descrições Curtas</bridgehead>
+      <?dbfo list-presentation="list"?> <?dbhtml list-presentation="table"?>
 
       <varlistentry id="c_rehash">
         <term><command>c_rehash</command></term>
         <listitem>
           <para>
-            is a <application>Perl</application> script that
-            scans all files in a directory and adds symbolic links to their
-            hash values.  Use of <command>c_rehash</command> is considered
-            obsolete and should be replaced by
-            <command>openssl rehash</command> command
+            é um script <application>Perl</application> que escaneia todos os arquivos
+em um diretório e adiciona links simbólicos para os valores de hash deles. O
+uso do <command>c_rehash</command> é considerado obsoleto e deveria ser
+substituído pelo comando <command>openssl rehash</command>
           </para>
           <indexterm zone="ch-system-openssl c_rehash">
             <primary sortas="b-c_rehash">c_rehash</primary>
@@ -160,10 +155,12 @@ make MANSUFFIX=ssl install</userinput></screen>
         <term><command>openssl</command></term>
         <listitem>
           <para>
-            is a command-line tool for using the various cryptography functions
-            of <application>OpenSSL</application>'s crypto library from the
-            shell. It can be used for various functions which are documented in
-            <ulink role='man' url='&man;openssl.1'>openssl(1)</ulink>
+            é uma ferramenta de linha de comando para usar as várias funções
+criptográficas da biblioteca de criptografia do
+&quot;<application>OpenSSL</application>&quot; a partir do
+&quot;shell&quot;. Ela pode ser usada para várias funções que estão
+documentadas em &quot;<ulink role='man'
+url='&man;openssl.1'>openssl(1)</ulink>&quot;
           </para>
           <indexterm zone="ch-system-openssl openssl-prog">
             <primary sortas="b-openssl">openssl</primary>
@@ -175,13 +172,12 @@ make MANSUFFIX=ssl install</userinput></screen>
         <term><filename class="libraryfile">libcrypto.so</filename></term>
         <listitem>
           <para>
-            implements a wide range of cryptographic algorithms used in various
-            Internet standards. The services provided by  this library are used
-            by the <application>OpenSSL</application> implementations of SSL,
-            TLS and S/MIME, and they have also been used to implement
-            <application>OpenSSH</application>,
-            <application>OpenPGP</application>, and other cryptographic
-            standards
+            implementa um intervalo amplo de algoritmos criptográficos usados em vários
+padrões da Internet. Os serviços fornecidos por essa biblioteca são usados
+pelas implementações <application>OpenSSL</application> do SSL, TLS e S/MIME
+e eles também tem sido usados para implementar
+<application>OpenSSH</application>, <application>OpenPGP</application> e
+outros padrões criptográficos
           </para>
           <indexterm zone="ch-system-openssl libcrypto">
             <primary sortas="c-libcrypto">libcrypto.so</primary>
@@ -193,10 +189,10 @@ make MANSUFFIX=ssl install</userinput></screen>
         <term><filename class="libraryfile">libssl.so</filename></term>
         <listitem>
           <para>
-            implements the Transport Layer Security (TLS v1) protocol.
-            It provides a rich API, documentation
-            on which can be found in <ulink role='man'
-            url='&man;ssl.7'>ssl(7)</ulink>
+            implementa o protocolo &quot;Transport Layer Security&quot; (&quot;TLS
+v1&quot;). Ela fornece uma &quot;API&quot; rica, documentação a respeito da
+qual pode ser encontrada em &quot;<ulink role='man'
+url='&man;ssl.7'>ssl(7)</ulink>&quot;
           </para>
           <indexterm zone="ch-system-openssl libssl">
             <primary sortas="c-libssl">libssl.so</primary>

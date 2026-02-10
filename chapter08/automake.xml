@@ -9,10 +9,8 @@
   <?dbhtml filename="automake.html"?>
 
   <sect1info condition="script">
-    <productname>automake</productname>
-    <productnumber>&automake-version;</productnumber>
-    <address>&automake-url;</address>
-  </sect1info>
+<productname>automake</productname>
+<productnumber>&automake-version;</productnumber> <address>&automake-url;</address></sect1info>
 
   <title>Automake-&automake-version;</title>
 
@@ -23,8 +21,8 @@
   <sect2 role="package">
     <title/>
 
-    <para>The Automake package contains programs for generating Makefiles for use
-    with Autoconf.</para>
+    <para>O pacote Automake contém aplicativos para gerar arquivos Make para uso com o
+Autoconf.</para>
 
     <segmentedlist>
       <segtitle>&buildtime;</segtitle>
@@ -39,30 +37,32 @@
   </sect2>
 
   <sect2 role="installation">
-    <title>Installation of Automake</title>
-<!--
-    <para>Fix a failing test:</para>
+    <title>Instalação do Automake</title>
+
+    <!--
+    <para>
+Fix a failing test:</para>
 
 <screen><userinput remap="pre">sed -i "s/''/etags/" t/tags-lisp-space.sh</userinput></screen>
 -->
-    <para>Prepare Automake for compilation:</para>
+<para>Prepare Automake para compilação:</para>
 
 <screen><userinput remap="configure">./configure --prefix=/usr --docdir=/usr/share/doc/automake-&automake-version;</userinput></screen>
 
-    <para>Compile the package:</para>
+    <para>Compile o pacote:</para>
 
 <screen><userinput remap="make">make</userinput></screen>
 
-    <para>Using four parallel jobs speeds up the tests, even on systems with
-    less logical cores, due to internal delays in individual tests.  To test
-    the results, issue:</para>
+    <para>Usar-se quatro tarefas paralelas acelera os testes, mesmo em sistemas com
+menos núcleos lógicos, devido a atrasos internos em testes individuais. Para
+testar os resultados, emita:</para>
 
 <screen><userinput remap="test">make <replaceable>-j$(($(nproc)&gt;4?$(nproc):4))</replaceable> check</userinput></screen>
 
-    <para>Replace <replaceable>$((...))</replaceable> with the number of
-    logical cores you want to use if you don't want to use all.</para>
+    <para>Substitua &quot;<replaceable>$((...))</replaceable>&quot; pelo número de
+núcleos lógicos que você deseja usar se não quiser usar todos.</para>
 
-    <para>Install the package:</para>
+    <para>Instale o pacote:</para>
 
 <screen><userinput remap="install">make install</userinput></screen>
 
@@ -70,30 +70,30 @@
 
 
   <sect2 id="contents-automake" role="content">
-    <title>Contents of Automake</title>
+    <title>Conteúdo do Automake</title>
 
     <segmentedlist>
-      <segtitle>Installed programs</segtitle>
-      <segtitle>Installed directories</segtitle>
+      <segtitle>Programas instalados</segtitle>
+      <segtitle>Diretórios instalados</segtitle>
 
       <seglistitem>
-        <seg>aclocal, aclocal-&am-minor-version; (hard linked with aclocal), automake, and
-        automake-&am-minor-version; (hard linked with automake) </seg>
-        <seg>/usr/share/aclocal-&am-minor-version;, /usr/share/automake-&am-minor-version;, and
-        /usr/share/doc/automake-&automake-version;</seg>
+        <seg>aclocal, aclocal-&am-minor-version; (vinculado rigidamente com aclocal),
+automake e automake-&am-minor-version; (vinculado rigidamente com automake) </seg>
+        <seg>/usr/share/aclocal-&am-minor-version;,
+/usr/share/automake-&am-minor-version; e
+/usr/share/doc/automake-&automake-version;</seg>
       </seglistitem>
     </segmentedlist>
 
     <variablelist>
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
+      <bridgehead renderas="sect3">Descrições Curtas</bridgehead>
+      <?dbfo list-presentation="list"?> <?dbhtml list-presentation="table"?>
 
       <varlistentry id="aclocal">
         <term><command>aclocal</command></term>
         <listitem>
-          <para>Generates <filename>aclocal.m4</filename> files based on the
-          contents of <filename>configure.in</filename> files</para>
+          <para>Gera arquivos <filename>aclocal.m4</filename> baseados no conteúdo dos
+arquivos <filename>configure.in</filename></para>
           <indexterm zone="ch-system-automake aclocal">
             <primary sortas="b-aclocal">aclocal</primary>
           </indexterm>
@@ -103,7 +103,7 @@
       <varlistentry id="aclocalversion">
         <term><command>aclocal-&am-minor-version;</command></term>
         <listitem>
-          <para>A hard link to <command>aclocal</command></para>
+          <para>Um link rígido para <command>aclocal</command></para>
           <indexterm zone="ch-system-automake aclocalversion">
             <primary sortas="b-aclocal-&am-minor-version;">aclocal-&am-minor-version;</primary>
           </indexterm>
@@ -113,14 +113,14 @@
       <varlistentry id="automake">
         <term><command>automake</command></term>
         <listitem>
-          <para>A tool for automatically generating
-          <filename>Makefile.in</filename> files from
-          <filename>Makefile.am</filename> files [To create all the
-          <filename>Makefile.in</filename> files for a package, run this program
-          in the top-level directory. By scanning the
-          <filename>configure.in</filename> file, it automatically finds each
-          appropriate <filename>Makefile.am</filename> file and generates the
-          corresponding <filename>Makefile.in</filename> file.]</para>
+          <para>Uma ferramenta para gerar automaticamente arquivos
+<filename>Makefile.in</filename> a partir de arquivos
+<filename>Makefile.am</filename> [Para criar todos os arquivos
+<filename>Makefile.in</filename> para um pacote, execute esse aplicativo no
+diretório de nível superior. Escaneando o arquivo
+<filename>configure.in</filename>, ele automaticamente encontra cada arquivo
+<filename>Makefile.am</filename> apropriado e gera o arquivo
+<filename>Makefile.in</filename> correspondente].</para>
           <indexterm zone="ch-system-automake automake">
             <primary sortas="b-automake">automake</primary>
           </indexterm>
@@ -130,7 +130,7 @@
       <varlistentry id="automake-version">
         <term><command>automake-&am-minor-version;</command></term>
         <listitem>
-          <para>A hard link to <command>automake</command></para>
+          <para>Um link rígido para <command>automake</command></para>
           <indexterm zone="ch-system-automake automake-version">
             <primary sortas="b-automake-&am-minor-version;">automake-&am-minor-version;</primary>
           </indexterm>

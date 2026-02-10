@@ -8,81 +8,81 @@
 <sect1 id="ch-partitioning-mounting">
   <?dbhtml filename="mounting.html"?>
 
-  <title>Mounting the New Partition</title>
+  <title>Montando a Nova Partição</title>
 
-  <para>Now that a file system has been created, the partition must
-  be mounted so the host system can access it. This book assumes that
-  the file system is mounted at the directory specified by the
-  <envar>LFS</envar> environment variable described in the previous section.
+  <para>Agora que um sistema de arquivos tenha sido criado, a partição precisa ser
+montada, de forma que o sistema anfitrião consiga acessá-la. Este livro
+presume que o sistema de arquivos esteja montado no diretório especificado
+pela variável de ambiente <envar>LFS</envar> descrita na seção anterior.
   </para>
   
-  <para>Strictly speaking, one cannot <quote>mount a partition.</quote> One mounts the <emphasis>file
-  system</emphasis> embedded in that partition. But since a single partition can't contain
-  more than one file system, people often speak of the partition and the
-  associated file system as if they were one and the same.</para>
+  <para>Estritamente falando, ninguém consegue <quote>montar uma partição</quote>. A
+pessoa monta o <emphasis>sistema de arquivos</emphasis> embutido naquela
+partição. Porém, dado que uma partição não pode conter mais que um sistema
+de arquivos, as pessoas frequentemente falam da partição e do sistema de
+arquivos associado como se fossem um e o mesmo.</para>
 
-  <para>Create the mount point and mount the LFS file system with these commands:</para>
+  <para>Crie o ponto de montagem e monte o sistema de arquivos do LFS com estes
+comandos:</para>
 
 <screen role="nodump"><userinput>mkdir -pv $LFS
 mount -v -t ext4 /dev/<replaceable>&lt;xxx&gt;</replaceable> $LFS</userinput></screen>
 
-  <para>Replace <replaceable>&lt;xxx&gt;</replaceable> with the name of the LFS
-  partition.</para>
+  <para>Substitua <replaceable>&lt;xxx&gt;</replaceable> pelo nome da partição do
+LFS.</para>
 
-  <para>If you are using multiple partitions for LFS (e.g., one for
-  <filename class="directory">/</filename> and another for <filename
-  class="directory">/home</filename>), mount them like this:</para>
+  <para>Se estiver usando múltiplas partições para o LFS (por exemplo, uma para
+<filename class="directory">/</filename> e outra para <filename
+class="directory">/home</filename>), [então] monte-as como isto:</para>
 
 <screen role="nodump"><userinput>mkdir -pv $LFS
 mount -v -t ext4 /dev/<replaceable>&lt;xxx&gt;</replaceable> $LFS
 mkdir -v $LFS/home
 mount -v -t ext4 /dev/<replaceable>&lt;yyy&gt;</replaceable> $LFS/home</userinput></screen>
 
-  <para>Replace <replaceable>&lt;xxx&gt;</replaceable> and
-  <replaceable>&lt;yyy&gt;</replaceable> with the appropriate partition
-  names.</para>
+  <para>Substitua <replaceable>&lt;xxx&gt;</replaceable> e
+<replaceable>&lt;yyy&gt;</replaceable> pelos nomes apropriados das
+partições.</para>
 
-  <para>Set the owner and permission mode of the
-  <filename class='directory'>$LFS</filename> directory (i.e. the root
-  directory in the newly created file system for the LFS system) to
-  &root; and <literal>755</literal> in case the host distro has been
-  configured to use a different default for <command>mkfs</command>:</para>
+  <para>Configure o(a) dono(a) e o modo de permissão do diretório <filename
+class='directory'>$LFS</filename> (ou seja, o diretório raiz no sistema de
+arquivos recém-criado para o sistema LFS) como &root; e
+<literal>755</literal> caso a distribuição anfitriã tenha sido configurada
+para usar um padrão diferente para <command>mkfs</command>:</para>
 
 <screen role='nodump'><userinput>chown root:root $LFS
 chmod 755 $LFS</userinput></screen>
 
-  <para>Ensure that this new partition is not mounted with permissions that are
-  too restrictive (such as the <option>nosuid</option> or
-  <option>nodev</option> options). Run the <command>mount</command> command
-  without any parameters to see what options are set for the mounted LFS
-  partition. If <option>nosuid</option> and/or <option>nodev</option> are set,
-  the partition must be remounted.</para>
+  <para>Assegure-se de que essa nova partição não esteja montada com permissões que
+sejam restritivas demais (tais como as opções <option>nosuid</option> ou
+<option>nodev</option>). Execute o comando <command>mount</command> sem
+quaisquer parâmetros para ver quais opções estão configuradas para a
+partição do LFS montada. Se <option>nosuid</option> e (ou)
+<option>nodev</option> estiverem configuradas, [então] a partição precisa
+ser remontada.</para>
 
-  <warning><para>The above instructions assume that you will not restart
-  your computer throughout the LFS process.  If you shut down your system,
-  you will either need to remount the LFS partition each time you restart
-  the build process, or modify the host system's &fstab; file to automatically
-  remount it when you reboot. For example, you might add this line to your 
-  &fstab; file:
-
-<screen role="nodump">/dev/<replaceable>&lt;xxx&gt;</replaceable>  /mnt/lfs ext4   defaults      1     1</screen>
-
-  If you use additional optional partitions, be sure to add them also.
+  <warning><para>As instruções acima assumem que você não estará reiniciando seu computador
+no decorrer do processo do LFS. Se você desligar seu sistema, [então] você
+ou precisará remontar a partição do LFS a cada vez que você reiniciar o
+processo de construção, ou modificar o arquivo &fstab; do sistema anfitrião
+para remontá-la automaticamente quando você reinicializar. Por exemplo, você
+poderia acrescentar esta linha ao seu arquivo &fstab;: <screen role="nodump">/dev/<replaceable>&lt;xxx&gt;</replaceable>  /mnt/lfs ext4   defaults      1     1</screen> Se você usar partições adicionais opcionais, [então]
+certifique-se de acrescentá-las também.
 
   </para></warning>
 
 
-  <para>If you are using a <systemitem
-  class="filesystem">swap</systemitem> partition, ensure that it is enabled
-  using the <command>swapon</command> command:</para>
+  <para>Se você estiver usando uma partição <systemitem
+class="filesystem">swap</systemitem>, [então] assegure-se de que ela está
+habilitada usando o comando <command>swapon</command>:</para>
 
 <screen role="nodump"><userinput>/sbin/swapon -v /dev/<replaceable>&lt;zzz&gt;</replaceable></userinput></screen>
 
-  <para>Replace <replaceable>&lt;zzz&gt;</replaceable> with the name of the
-  <systemitem class="filesystem">swap</systemitem> partition.</para>
+  <para>Substitua <replaceable>&lt;zzz&gt;</replaceable> pelo nome da partição
+<systemitem class="filesystem">swap</systemitem>.</para>
 
-  <para>Now that the new LFS partition is open for business, it's time to
-  download the packages.</para>
+  <para>Agora que a nova partição do LFS está aberta para negócios, é tempo de
+baixar os pacotes.</para>
 
 </sect1>
 

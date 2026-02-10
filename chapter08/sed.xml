@@ -9,10 +9,8 @@
   <?dbhtml filename="sed.html"?>
 
   <sect1info condition="script">
-    <productname>sed</productname>
-    <productnumber>&sed-version;</productnumber>
-    <address>&sed-url;</address>
-  </sect1info>
+<productname>sed</productname> <productnumber>&sed-version;</productnumber>
+<address>&sed-url;</address></sect1info>
 
   <title>Sed-&sed-version;</title>
 
@@ -23,7 +21,7 @@
   <sect2 role="package">
     <title/>
 
-    <para>The Sed package contains a stream editor.</para>
+    <para>O pacote Sed contém um editor de fluxo.</para>
 
     <segmentedlist>
       <segtitle>&buildtime;</segtitle>
@@ -38,23 +36,23 @@
   </sect2>
 
   <sect2 role="installation">
-    <title>Installation of Sed</title>
+    <title>Instalação do Sed</title>
 
-    <para>Prepare Sed for compilation:</para>
+    <para>Prepare o Sed para compilação:</para>
 
 <screen><userinput remap="configure">./configure --prefix=/usr</userinput></screen>
 
-    <para>Compile the package and generate the HTML documentation:</para>
+    <para>Compile o pacote e gere a documentação HTML:</para>
 
 <screen><userinput remap="make">make
 make html</userinput></screen>
 
-    <para>To test the results, issue:</para>
+    <para>Para testar os resultados, emita:</para>
 
 <screen><userinput remap="test">chown -R tester .
 su tester -c "PATH=$PATH make check"</userinput></screen>
 
-    <para>Install the package and its documentation:</para>
+    <para>Instale o pacote e a documentação dele:</para>
 
 <screen><userinput remap="install">make install
 install -d -m755           /usr/share/doc/sed-&sed-version;
@@ -63,11 +61,11 @@ install -m644 doc/sed.html /usr/share/doc/sed-&sed-version;</userinput></screen>
   </sect2>
 
   <sect2 id="contents-sed" role="content">
-    <title>Contents of Sed</title>
+    <title>Conteúdo do Sed</title>
 
     <segmentedlist>
-      <segtitle>Installed program</segtitle>
-      <segtitle>Installed directory</segtitle>
+      <segtitle>Aplicativo instalado</segtitle>
+      <segtitle>Diretório instalado</segtitle>
 
       <seglistitem>
         <seg>sed</seg>
@@ -76,14 +74,13 @@ install -m644 doc/sed.html /usr/share/doc/sed-&sed-version;</userinput></screen>
     </segmentedlist>
 
     <variablelist>
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
+      <bridgehead renderas="sect3">Descrições Curtas</bridgehead>
+      <?dbfo list-presentation="list"?> <?dbhtml list-presentation="table"?>
 
       <varlistentry id="sed">
         <term><command>sed</command></term>
         <listitem>
-          <para>Filters and transforms text files in a single pass</para>
+          <para>Filtra e transforma arquivos de texto em uma passagem única</para>
           <indexterm zone="ch-system-sed sed">
             <primary sortas="b-sed">sed</primary>
           </indexterm>

@@ -9,10 +9,8 @@
   <?dbhtml filename="pkgconf.html"?>
 
   <sect1info condition="script">
-    <productname>pkgconf</productname>
-    <productnumber>&pkgconf-version;</productnumber>
-    <address>&pkgconf-url;</address>
-  </sect1info>
+<productname>pkgconf</productname>
+<productnumber>&pkgconf-version;</productnumber> <address>&pkgconf-url;</address></sect1info>
 
   <title>Pkgconf-&pkgconf-version;</title>
 
@@ -23,10 +21,9 @@
   <sect2 role="package">
     <title/>
 
-    <para>The pkgconf package is a 
-    successor to pkg-config and contains a tool for passing the include path
-    and/or library paths to build tools during the configure and make phases
-    of package installations.</para>
+    <para>O pacote pkgconf é um sucessor do pkg-config e contém uma ferramenta para
+passar o caminho "include" e(ou) caminhos de biblioteca para construir
+ferramentas durante as fases "configure" e "make" de instalações de pacotes.</para>
 
     <segmentedlist>
       <segtitle>&buildtime;</segtitle>
@@ -42,24 +39,24 @@
 
   <sect2 role="installation">
 
-    <title>Installation of Pkgconf</title>
+    <title>Instalação do Pkgconf</title>
 
-    <para>Prepare Pkgconf for compilation:</para>
+    <para>Prepare Pkgconf para compilação:</para>
 
 <screen><userinput remap="configure">./configure --prefix=/usr    \
             --disable-static \
             --docdir=/usr/share/doc/pkgconf-&pkgconf-version;</userinput></screen>
 
-    <para>Compile the package:</para>
+    <para>Compile o pacote:</para>
 
 <screen><userinput remap="make">make</userinput></screen>
 
-    <para>Install the package:</para>
+    <para>Instale o pacote:</para>
 
 <screen><userinput remap="install">make install</userinput></screen>
 
-    <para>To maintain compatibility with the original Pkg-config create two
-    symlinks:</para>
+    <para>Para manter a compatibilidade com o Pkg-config original, crie dois links
+simbólicos:</para>
 
 <screen><userinput remap="install">ln -sv pkgconf   /usr/bin/pkg-config
 ln -sv pkgconf.1 /usr/share/man/man1/pkg-config.1</userinput></screen>
@@ -67,30 +64,28 @@ ln -sv pkgconf.1 /usr/share/man/man1/pkg-config.1</userinput></screen>
   </sect2>
 
   <sect2 id="contents-pkgconf" role="content">
-    <title>Contents of Pkgconf</title>
+    <title>Conteúdo do Pkgconf</title>
 
     <segmentedlist>
-      <segtitle>Installed programs</segtitle>
-      <segtitle>Installed library</segtitle>
-      <segtitle>Installed directory</segtitle>
+      <segtitle>Aplicativos instalados</segtitle>
+      <segtitle>Biblioteca instalada</segtitle>
+      <segtitle>Diretório instalado</segtitle>
 
       <seglistitem>
-        <seg>pkgconf, pkg-config (link to pkgconf), and bomtool</seg>
+        <seg>pkgconf, pkg-config (link para pkgconf) e bomtool</seg>
         <seg>libpkgconf.so</seg>
         <seg>/usr/share/doc/pkgconf-&pkgconf-version;</seg>
       </seglistitem>
     </segmentedlist>
 
     <variablelist>
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
+      <bridgehead renderas="sect3">Descrições Curtas</bridgehead>
+      <?dbfo list-presentation="list"?> <?dbhtml list-presentation="table"?>
 
       <varlistentry id="pkgconf">
         <term><command>pkgconf</command></term>
         <listitem>
-          <para>Returns meta information for the specified library or
-          package</para>
+          <para>Retorna metainformações para a biblioteca ou pacote especificada</para>
           <indexterm zone="ch-system-pkgconf pkgconf">
             <primary sortas="b-pkgconf">pkgconf</primary>
           </indexterm>
@@ -100,8 +95,8 @@ ln -sv pkgconf.1 /usr/share/man/man1/pkg-config.1</userinput></screen>
       <varlistentry id="bomtool">
         <term><command>bomtool</command></term>
         <listitem>
-          <para>Generates a Software Bill Of Materials from pkg-config .pc
-          files</para>
+          <para>Gera uma Lista de Materiais do Software a partir de arquivos ".pc" do
+"pkg-config"</para>
           <indexterm zone="ch-system-pkgconf bomtool">
             <primary sortas="b-bomtool">bomtool</primary>
           </indexterm>
@@ -111,8 +106,9 @@ ln -sv pkgconf.1 /usr/share/man/man1/pkg-config.1</userinput></screen>
       <varlistentry id="libpkgconf">
         <term><filename class="libraryfile">libpkgconf</filename></term>
         <listitem>
-          <para>Contains most of pkgconf's functionality, while allowing
-          other tools like IDEs and compilers to use its frameworks</para>
+          <para>Contém a maior parte da funcionalidade do "pkgconf", enquanto permite que
+outras ferramentas, como "IDEs" e compiladores, usem a estrutura essencial
+de suporte dele</para>
           <indexterm zone="ch-system-pkgconf libpkgconf">
             <primary sortas="c-libpkgconf">libpkgconf</primary>
           </indexterm>

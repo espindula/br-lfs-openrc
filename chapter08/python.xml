@@ -9,10 +9,8 @@
   <?dbhtml filename="Python.html"?>
 
   <sect1info condition="script">
-    <productname>Python</productname>
-    <productnumber>&python-version;</productnumber>
-    <address>&python-url;</address>
-  </sect1info>
+<productname>Python</productname>
+<productnumber>&python-version;</productnumber> <address>&python-url;</address></sect1info>
 
   <title>Python-&python-version;</title>
 
@@ -23,10 +21,10 @@
   <sect2 role="package">
     <title/>
 
-    <para>The Python 3 package contains the Python development environment. It
-    is useful for object-oriented programming, writing scripts, prototyping
-    large programs, and developing entire applications. Python is an interpreted
-    computer language.</para>
+    <para>O pacote Python 3 contém o ambiente de desenvolvimento do Python. Ele é útil
+para programação orientada a objeto, escrita de scripts, prototipagem de
+aplicativos grandes e desenvolvimento de aplicações inteiras. Python é uma
+linguagem interpretada de computador.</para>
 
     <segmentedlist>
       <segtitle>&buildtime;</segtitle>
@@ -41,15 +39,17 @@
   </sect2>
 
   <sect2 role="installation">
-    <title>Installation of Python 3</title>
+    <title>Instalação do Python 3</title>
 
-    <para>Fix a regression that causes issues in BLFS packages like
+    <!-- Fixed in Python-3.14.3
+    <para>
+Fix a regression that causes issues in BLFS packages like
     pyatspi:</para>
 
 <screen><userinput remap="pre">sed -e "/self.namespaceURI =/i\        self.ownerDocument = None" \
     -i Lib/xml/dom/minidom.py</userinput></screen>
-
-    <para>Prepare Python for compilation:</para>
+-->
+<para>Prepare o Python para compilação:</para>
 
 <screen><userinput remap="configure">./configure --prefix=/usr          \
             --enable-shared        \
@@ -58,113 +58,119 @@
             --without-static-libpython</userinput></screen>
 
     <variablelist>
-      <title>The meaning of the configure options:</title>
+      <title>O significado das opções do configure:</title>
 
     <varlistentry>
       <term><parameter>--with-system-expat</parameter></term>
       <listitem>
-        <para>This switch enables linking against the system version of
-        <application>Expat</application>.</para>
+        <para>Essa chave habilita vinculação contra a versão de sistema do
+<application>Expat</application>.</para>
        </listitem>
      </varlistentry>
 
     <varlistentry>
       <term><parameter>--enable-optimizations</parameter></term>
       <listitem>
-        <para>This switch enables extensive, but time-consuming, optimization
-        steps. The interpreter is built twice; tests performed on the first 
-        build are used to improve the optimized final version.</para>
-        <!-- This description was drawn from the README.rst file
+        <para>Essa chave habilita etapas extensivas, porém consumidoras de tempo, de
+otimização. O interpretador é construído duas vezes; testes realizados na
+primeira construção são usados para melhorar a versão otimizada final.</para>
+        
+      <!-- This description was drawn from the README.rst file
         in the Python-3.11.0 package. -->
-      </listitem>
+</listitem>
     </varlistentry>
 
     </variablelist>
 
-    <para>Compile the package:</para>
+    <para>Compile o pacote:</para>
 
 <screen><userinput remap="make">make</userinput></screen>
 
-    <para>Some tests are known to occasionally hang indefinitely.  So to test the
-    results, run the test suite but set a 2-minute time limit for each
-    test case:</para>
+    <para>Alguns testes são conhecidos por travarem, ocasionalmente,
+indefinidamente. Portanto, para testar os resultados, execute a suíte de
+teste, mas configure um limite de tempo de dois minutos para cada caso de
+teste:</para>
 
 <screen><userinput remap="test">make test TESTOPTS="--timeout 120"</userinput></screen>
 
-    <para>For a relatively slow system you may need to increase the time
-    limit and 1 SBU (measured when building Binutils pass 1 with one CPU
-    core) should be enough.  Some tests are flaky, so the test suite will
-    automatically re-run failed tests.  If a test failed but then passed
-    when re-run, it should be considered as passed.</para>
+    <para>Para um sistema relativamente lento, você possivelmente precise aumentar o
+limite de tempo e 1 UPC (medido ao construir a passagem 1 do Binutils com um
+núcleo da CPU) deveria ser suficiente. Alguns testes são instáveis, de forma
+que a suíte de teste automaticamente reexecutará testes falhos. Se um teste
+falhou, mas então passou quando reexecutado, ele deveria ser considerado
+como passado.</para>
 
-    <para>Install the package:</para>
+    <para>Instale o pacote:</para>
 
 <screen><userinput remap="install">make install</userinput></screen>
 
-    <para>We use the <command>pip3</command> command to
-    install Python 3 programs and modules for all users as
-    <systemitem class='username'>root</systemitem> in several places in this book.
-    This conflicts with the Python developers' recommendation: to install packages into a
-    virtual environment, or into the home directory of a regular user (by running
-    <command>pip3</command> as this user). A multi-line warning
-    is triggered whenever <command>pip3</command> is issued by the
-    <systemitem class='username'>root</systemitem> user.</para>
+    <para>Nós usamos o comando <command>pip3</command> para instalar os aplicativos e
+módulos do Python 3 para todos(as) os(as) usuários(as) como <systemitem
+class='username'>root</systemitem> em vários lugares neste livro. Isso
+conflita com a recomendação dos(as) desenvolvedores(as) do Python: instalar
+pacotes no ambiente virtual ou no diretório home de um(a) usuário(a) regular
+(executando <command>pip3</command> como esse(a) usuário(a)). Um aviso multi
+linhas é deflagrado sempre que <command>pip3</command> for emitido pelo(a)
+usuário(a) <systemitem class='username'>root</systemitem>.</para>
     
-    <para>The main reason
-    for the recommendation is to avoid conflicts with the system's
-    package manager (<command>dpkg</command>, for example). LFS does not
-    have a system-wide package manager, so this is not a problem.  Also,
-    <command>pip3</command> will check for a new version of
-    itself whenever it's run.  Since domain name resolution is not yet configured
-    in the LFS chroot environment, <command>pip3</command> cannot check
-    for a new version of itself, and will
-    produce a warning. </para>
+    <para>A razão principal para a recomendação é para evitar conflitos com o
+gerenciador de pacote do sistema (<command>dpkg</command>, por exemplo). O
+LFS não tem um gerenciador de pacote abrangente ao sistema, de modo que isso
+não é um problema. Também, o <command>pip3</command> verificará se existe
+uma nova versão dele próprio sempre for executado. Uma vez que a resolução
+de nome de domínio ainda não está configurada no ambiente chroot do LFS, o
+<command>pip3</command> não consegue verificar se existe uma nova versão
+dele próprio e produzirá um aviso. </para>
   
-    <para>After we boot the LFS system and set up a network connection,
-    a different warning will be issued, telling the user to update <command>pip3</command>
-    from a pre-built wheel on PyPI (whenever a new version is available).  But LFS
-    considers <command>pip3</command> to be a part of Python 3, so it should not be
-    updated separately. Also, an update from a pre-built wheel would deviate
-    from our objective: to build a Linux system from source code.  So the
-    warning about a new version of <command>pip3</command> should be ignored as
-    well. If you wish, you can suppress all these warnings by running the following
-    command, which creates a configuration file:</para>
+    <para>Depois que nós inicializarmos o sistema LFS e configurarmos uma conexão de
+rede de comunicação, um aviso diferente será emitido, informando para o(a)
+usuário(a) atualizar o <command>pip3</command> a partir de uma roda
+pré-construída em PyPI (sempre que uma nova versão estiver
+disponível). Porém, o LFS considera que o <command>pip3</command> é uma
+parte do Python 3, de forma que ele não deveria ser atualizado
+separadamente. Além disso, uma atualização a partir de uma roda
+pré-construída se desviaria do nosso objetivo: construir um sistema Linux a
+partir do código fonte. Assim, o aviso a respeito da nova versão do
+<command>pip3</command> deveria ser ignorado também. Se desejar, você pode
+suprimir todos esses avisos executando o seguinte comando, o qual cria um
+arquivo de configuração:</para>
 
+<!--
+<screen>
+<userinput remap="install">sed -e '/def warn_if_run_as_root/a\    return' \
+    -i /usr/lib/python3.10/site-packages/pip/_internal/cli/req_command.py
+</userinput></screen>
+-->
 <screen><userinput remap="install">cat &gt; /etc/pip.conf &lt;&lt; EOF
 <literal>[global]
 root-user-action = ignore
 disable-pip-version-check = true</literal>
 EOF
 </userinput></screen>
-<!--
-<screen><userinput remap="install">sed -e '/def warn_if_run_as_root/a\    return' \
-    -i /usr/lib/python3.10/site-packages/pip/_internal/cli/req_command.py
-</userinput></screen>
--->
+
     <important>
       <para>
-        In LFS and BLFS we normally build and install Python modules with the
-        <command>pip3</command> command.  Please be sure that the
-        <command>pip3 install</command> commands in both books are
-        run as the &root; user (unless it's for a Python virtual environment).
-        Running <command>pip3 install</command> as a non-&root; user may seem
-        to work, but it will cause the installed module to be inaccessible
-        by other users.
+        No LFS e no BLFS normalmente nós construímos e instalamos módulos do Python
+com o comando <command>pip3</command>. Por favor, tenha certeza de que os
+comandos <command>pip3 install</command> em ambos os livros sejam executados
+como o(a) usuário(a) &root; (a menos que seja para um ambiente virtual do
+Python). Executar um <command>pip3 install</command> como um(a) usuário(a)
+não &root; possivelmente aparente funcionar, porém causará o módulo
+instalado ficar inacessível por outros(as) usuários(as).
       </para>
 
       <para>
-        <command>pip3 install</command> will not reinstall an already installed
-        module automatically.  When using the <command>pip3 install</command>
-        command to upgrade a module (for example, from meson-0.61.3 to
-        meson-0.62.0), insert the option <parameter>--upgrade</parameter> into
-        the command line.  If it's really necessary to downgrade a module, or
-        reinstall the same version for some reason, insert
-        <parameter>--force-reinstall --no-deps</parameter> into the command
-        line.
+        O <command>pip3 install</command> não reinstalará um módulo já instalado
+automaticamente. Quando usar o comando <command>pip3 install</command> para
+atualizar um módulo (por exemplo, de meson-0.61.3 para meson-0.62.0), insira
+a opção <parameter>--upgrade</parameter> na linha de comando. Se realmente
+for necessário desatualizar um módulo ou reinstalar a mesma versão por
+alguma razão, [então] insira <parameter>--force-reinstall
+--no-deps</parameter> na linha de comando.
       </para>
     </important>
 
-    <para>If desired, install the preformatted documentation:</para>
+    <para>Se desejado, então instale a documentação pré-formatada:</para>
 
 <screen><userinput remap="install">install -v -dm755 /usr/share/doc/python-&python-version;/html
 
@@ -175,14 +181,15 @@ tar --strip-components=1  \
     -xvf ../python-&python-version;-docs-html.tar.bz2</userinput></screen>
 
     <variablelist>
-      <title>The meaning of the documentation install commands:</title>
+      <title>O significado dos comandos de instalação da documentação:</title>
 
     <varlistentry>
-      <term><option>--no-same-owner</option> and <option>--no-same-permissions</option></term>
+      <term><option>--no-same-owner</option> e <option>--no-same-permissions</option></term>
       <listitem>
-        <para>Ensure the installed files have the correct ownership and
-        permissions.  Without these options, <application>tar</application>
-        will install the package files with the upstream creator's values.
+        <para>Garanta que os arquivos instalados tenham a titularidade de propriedade e as
+permissões corretas. Sem essas opções, o <application>tar</application>
+instalará os arquivos de pacote com os valores do(a) criador(a)
+desenvolvedor(a).
         </para>
       </listitem>
     </varlistentry>
@@ -192,34 +199,32 @@ tar --strip-components=1  \
   </sect2>
 
   <sect2 id="contents-python" role="content">
-    <title>Contents of Python 3</title>
+    <title>Conteúdo do Python 3</title>
 
     <segmentedlist>
-      <segtitle>Installed programs</segtitle>
-      <segtitle>Installed library</segtitle>
-      <segtitle>Installed directories</segtitle>
+      <segtitle>Programas instalados</segtitle>
+      <segtitle>Biblioteca instalada</segtitle>
+      <segtitle>Diretórios instalados</segtitle>
 
       <seglistitem>
         <seg>
-          idle3, pip3, pydoc3, python3, and python3-config
+          idle3, pip3, pydoc3, python3 e python3-config
         </seg>
         <seg>
-          libpython&python-minor;.so and libpython3.so
+          libpython&python-minor;.so e libpython3.so
         </seg>
         <seg>
-          /usr/include/python&python-minor;,
-          /usr/lib/python3, and
-          /usr/share/doc/python-&python-version;
+          /usr/include/python&python-minor;, /usr/lib/python3 e
+/usr/share/doc/python-&python-version;
         </seg>
       </seglistitem>
     </segmentedlist>
 
     <variablelist>
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
+      <bridgehead renderas="sect3">Descrições Curtas</bridgehead>
       <!--
       <varlistentry id="python-2to3">
+
         <term><command>2to3</command></term>
         <listitem>
           <para>
@@ -234,14 +239,16 @@ tar --strip-components=1  \
         </listitem>
       </varlistentry>
       -->
+<?dbfo list-presentation="list"?> <?dbhtml list-presentation="table"?>
+      
       <varlistentry id="idle3">
         <term><command>idle3</command></term>
         <listitem>
           <para>
-            is a wrapper script that opens a <application>Python</application>
-            aware GUI editor. For this script to run, you must have installed
-            <application>Tk</application> before Python, so that the Tkinter
-            Python module is built.
+            é um script encapsulador que abre um editor GUI ciente do
+<application>Python</application>. Para esse script executar, você precisa
+ter instalado <application>Tk</application> antes do Python, de forma que o
+módulo Tkinter do Python seja construído.
           </para>
           <indexterm zone="ch-system-Python">
             <primary sortas="b-idle3">idle3</primary>
@@ -253,8 +260,8 @@ tar --strip-components=1  \
         <term><command>pip3</command></term>
         <listitem>
           <para>
-            The package installer for Python. You can use pip to install
-            packages from Python Package Index and other indexes.
+            O instalador de pacote para Python. Você pode usar pip para instalar pacotes
+originários do Python Package Index e outros índices.
           </para>
           <indexterm zone="ch-system-Python">
             <primary sortas="b-pip3">pip3</primary>
@@ -266,7 +273,7 @@ tar --strip-components=1  \
         <term><command>pydoc3</command></term>
         <listitem>
           <para>
-            is the <application>Python</application> documentation tool
+            é a ferramenta de documentação do <application>Python</application>
           </para>
           <indexterm zone="ch-system-Python">
             <primary sortas="b-pydoc3">pydoc3</primary>
@@ -278,8 +285,8 @@ tar --strip-components=1  \
         <term><command>python3</command></term>
         <listitem>
           <para>
-            is the interpreter for Python, an interpreted, interactive, 
-            object-oriented programming language
+            é o interpretador para o Python, uma linguagem de programação orientada a
+objeto, interativa e interpretada
           </para>
           <indexterm zone="ch-system-Python">
             <primary sortas="b-python3">python3</primary>

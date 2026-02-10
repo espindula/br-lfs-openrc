@@ -9,10 +9,8 @@
   <?dbhtml filename="sysklogd.html"?>
 
   <sect1info condition="script">
-    <productname>sysklogd</productname>
-    <productnumber>&sysklogd-version;</productnumber>
-    <address>&sysklogd-url;</address>
-  </sect1info>
+<productname>sysklogd</productname>
+<productnumber>&sysklogd-version;</productnumber> <address>&sysklogd-url;</address></sect1info>
 
   <title>Sysklogd-&sysklogd-version;</title>
 
@@ -23,8 +21,8 @@
   <sect2 role="package">
     <title/>
 
-    <para>The Sysklogd package contains programs for logging system messages,
-    such as those emitted by the kernel when unusual things happen.</para>
+    <para>O pacote Sysklogd contém aplicativos para registrar mensagens do sistema,
+tais como aquelas emitidas pelo núcleo quando coisas incomuns acontecem.</para>
 
     <segmentedlist>
       <segtitle>&buildtime;</segtitle>
@@ -39,9 +37,9 @@
   </sect2>
 
   <sect2 role="installation">
-    <title>Installation of Sysklogd</title>
+    <title>Instalação do Sysklogd</title>
 
-    <para>Prepare the package for compilation:</para>
+    <para>Prepare o pacote para compilação:</para>
 
 <screen><userinput remap="configure">./configure --prefix=/usr      \
             --sysconfdir=/etc  \
@@ -50,35 +48,35 @@
             --disable-static   \
             --docdir=/usr/share/doc/sysklogd-&sysklogd-version;</userinput></screen>
 
-    <para>Compile the package:</para>
+    <para>Compile o pacote:</para>
 
 <screen><userinput remap="make">make</userinput></screen>
 
-    <para>This package does not come with a test suite.</para>
+    <para>Esse pacote não vem com uma suíte de teste.</para>
 
-    <para>Install the package:</para>
+    <para>Instale o pacote:</para>
 
 <screen><userinput remap="install">make install</userinput></screen>
 
   </sect2>
 
   <sect2 id="conf-sysklogd" role="configuration">
-    <title>Configuring Sysklogd</title>
+    <title>Configurando Sysklogd</title>
 
     <indexterm zone="conf-sysklogd">
       <primary sortas="a-Sysklogd">Sysklogd</primary>
-      <secondary>configuring</secondary>
+      <secondary>configurando</secondary>
     </indexterm>
 
     <indexterm zone="conf-sysklogd">
       <primary sortas="e-/etc/syslog.conf">/etc/syslog.conf</primary>
     </indexterm>
 
-    <para>Create a new <filename>/etc/syslog.conf</filename> file by running the
-    following:</para>
+    <para>Crie um novo arquivo <filename>/etc/syslog.conf</filename> executando o
+seguinte:</para>
 
 <screen><userinput>cat &gt; /etc/syslog.conf &lt;&lt; "EOF"
-<literal># Begin /etc/syslog.conf
+<literal># Inicia /etc/syslog.conf
 
 auth,authpriv.* -/var/log/auth.log
 *.*;auth,authpriv.none -/var/log/sys.log
@@ -88,19 +86,19 @@ mail.* -/var/log/mail.log
 user.* -/var/log/user.log
 *.emerg *
 
-# Do not open any internet ports.
+# Não abre quaisquer portas de internet.
 secure_mode 2
 
-# End /etc/syslog.conf</literal>
+# Termina /etc/syslog.conf</literal>
 EOF</userinput></screen>
 
   </sect2>
 
   <sect2 id="contents-sysklogd" role="content">
-    <title>Contents of Sysklogd</title>
+    <title>Conteúdo do Sysklogd</title>
 
     <segmentedlist>
-      <segtitle>Installed program</segtitle>
+      <segtitle>Aplicativo instalado</segtitle>
 
       <seglistitem>
         <seg>syslogd</seg>
@@ -108,17 +106,16 @@ EOF</userinput></screen>
     </segmentedlist>
 
     <variablelist>
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
+      <bridgehead renderas="sect3">Descrições Curtas</bridgehead>
+      <?dbfo list-presentation="list"?> <?dbhtml list-presentation="table"?>
 
       <varlistentry id="syslogd">
         <term><command>syslogd</command></term>
         <listitem>
-          <para>Logs the messages that system programs offer for logging [Every
-          logged message contains at least a date stamp and a hostname, and
-          normally the program's name too, but that depends on how trusting the
-          logging daemon is told to be.]</para>
+          <para>Registra as mensagens que aplicativos do sistema oferecem para registro
+[Cada mensagem registrada contém pelo menos um carimbo de data e um nome de
+dispositivo e normalmente o nome do aplicativo também, porém isso depende do
+quão confiável o processo de segundo plano de registro é dito ser].</para>
           <indexterm zone="ch-system-sysklogd syslogd">
             <primary sortas="b-syslogd">syslogd</primary>
           </indexterm>

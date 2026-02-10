@@ -9,10 +9,8 @@
   <?dbhtml filename="lz4.html"?>
 
   <sect1info condition="script">
-    <productname>Lz4</productname>
-    <productnumber>&lz4-version;</productnumber>
-    <address>&lz4-url;</address>
-  </sect1info>
+<productname>Lz4</productname> <productnumber>&lz4-version;</productnumber>
+<address>&lz4-url;</address></sect1info>
 
   <title>Lz4-&lz4-version;</title>
 
@@ -23,10 +21,11 @@
   <sect2 role="package">
     <title/>
 
-    <para>Lz4 is a lossless compression algorithm, providing compression speed
-    greater than 500 MB/s per core. It features an extremely fast decoder, with
-    speed in multiple GB/s per core. Lz4 can work with Zstandard to allow both
-    algorithms to compress data faster.</para>
+    <para>Lz4 é um algoritmo de compressão sem perdas, fornecendo velocidade de
+compressão superior a 500 MB/s por elemento de processamento. Ele tem um
+decodificador extremamente rápido, com velocidade de vários GB/s por
+elemento de processamento. Lz4 pode trabalhar com Zstandard para permitir
+que ambos os algoritmos comprimam dados mais rapidamente.</para>
 
     <segmentedlist>
       <segtitle>&buildtime;</segtitle>
@@ -41,37 +40,35 @@
   </sect2>
 
   <sect2 role="installation">
-    <title>Installation of Lz4</title>
+    <title>Instalação do Lz4</title>
 
-    <para>Compile the package:</para>
+    <para>Compile o pacote:</para>
 
 <screen><userinput remap="make">make BUILD_STATIC=no PREFIX=/usr</userinput></screen>
 
-    <para>To test the results, issue:</para>
+    <para>Para testar os resultados, emita:</para>
 
-    <!-- This needs to be done at -j1 because otherwise test files do not
+    
+
+<screen><!-- This needs to be done at -j1 because otherwise test files do not
          get generated correctly. -->
+<userinput remap="test">make -j1 check</userinput></screen>
 
-<screen><userinput remap="test">make -j1 check</userinput></screen>
-
-    <para>Install the package:</para>
+    <para>Instale o pacote:</para>
 
 <screen><userinput remap="install">make BUILD_STATIC=no PREFIX=/usr install</userinput></screen>
 
   </sect2>
 
   <sect2 id="contents-lz4" role="content">
-    <title>Contents of Lz4</title>
+    <title>Conteúdo do Lz4</title>
 
     <segmentedlist>
-      <segtitle>Installed programs</segtitle>
-      <segtitle>Installed library</segtitle>
+      <segtitle>Programas instalados</segtitle>
+      <segtitle>Biblioteca instalada</segtitle>
 
       <seglistitem>
-        <seg>lz4,
-             lz4c (link to lz4),
-             lz4cat (link to lz4), and
-             unlz4 (link to lz4)
+        <seg>lz4, lz4c (link para lz4), lz4cat (link para lz4) e unlz4 (link para lz4)
         </seg>
 
         <seg>liblz4.so</seg>
@@ -79,14 +76,13 @@
     </segmentedlist>
 
     <variablelist>
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
+      <bridgehead renderas="sect3">Descrições Curtas</bridgehead>
+      <?dbfo list-presentation="list"?> <?dbhtml list-presentation="table"?>
 
       <varlistentry id="lz4">
         <term><command>lz4</command></term>
         <listitem>
-          <para>Compresses or decompresses files using the LZ4 format</para>
+          <para>Comprime ou descomprime arquivos usando o formato LZ4</para>
           <indexterm zone="ch-system-lz4 lz4">
             <primary sortas="b-lz4">lz4</primary>
           </indexterm>
@@ -96,7 +92,7 @@
       <varlistentry id="lz4c">
         <term><command>lz4c</command></term>
         <listitem>
-          <para>Compresses files using the LZ4 format</para>
+          <para>Comprime arquivos usando o formato LZ4</para>
           <indexterm zone="ch-system-lz4 lz4c">
             <primary sortas="b-lz4c">lz4c</primary>
           </indexterm>
@@ -106,7 +102,7 @@
       <varlistentry id="lz4cat">
         <term><command>lz4cat</command></term>
         <listitem>
-          <para>Lists the contents of a file compressed using the LZ4 format</para>
+          <para>Lista o conteúdo de um arquivo comprimido usando o formato LZ4</para>
           <indexterm zone="ch-system-lz4 lz4cat">
             <primary sortas="b-lz4cat">lz4cat</primary>
           </indexterm>
@@ -116,7 +112,7 @@
       <varlistentry id="unlz4">
         <term><command>unlz4</command></term>
         <listitem>
-          <para>Decompresses files using the LZ4 format</para>
+          <para>Descomprime arquivos usando o formato LZ4</para>
           <indexterm zone="ch-system-lz4 unlz4">
              <primary sortas="b-unlz4">unlz4</primary>
           </indexterm>
@@ -126,8 +122,8 @@
       <varlistentry id="liblz4">
         <term><filename class="libraryfile">liblz4</filename></term>
         <listitem>
-          <para>The library implementing lossless data
-          compression, using the LZ4 algorithm</para>
+          <para>A biblioteca que implementa compressão de dados sem perdas, usando o
+algoritmo LZ4</para>
           <indexterm zone="ch-system-lz4 liblz4">
             <primary sortas="c-liblz4">liblz4</primary>
           </indexterm>

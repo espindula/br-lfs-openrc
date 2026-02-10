@@ -5,11 +5,11 @@
   %general-entities;
 ]>
 
-<chapter id="chapter-building-system" xreflabel="Chapter&nbsp;8">
+<chapter id="chapter-building-system" xreflabel="Capítulo&nbsp;8">
   <?dbhtml dir="chapter08"?>
   <?dbhtml filename="chapter08.html"?>
 
-  <title>Installing Basic System Software</title>
+  <title>Instalando Aplicativos Básicos de Sistema</title>
 
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="introduction.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="pkgmgt.xml"/>
@@ -88,25 +88,30 @@
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="texinfo.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="vim.xml"/>
 
+  
   <!-- systemd only -->
-  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="markupsafe.xml"/>
+<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="markupsafe.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="jinja2.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="systemd.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="dbus.xml"/>
 
+  
   <!-- openrc only -->
-  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="udev.xml"/>
+<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="udev.xml"/>
 
+  
   <!-- Both openrc and systemd builds -->
-  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="man-db.xml"/>
+<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="man-db.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="procps.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="util-linux.xml"/>
 
+  
   <!-- Both openrc and systemd builds -->
-  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="e2fsprogs.xml"/>
+<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="e2fsprogs.xml"/>
 
+  
   <!-- openrc only -->
-  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="sysklogd.xml"/>
+<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="sysklogd.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="openrc.xml"/>
 
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="aboutdebug.xml"/>

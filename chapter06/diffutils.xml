@@ -9,16 +9,14 @@
   <?dbhtml filename="diffutils.html"?>
 
   <sect1info condition="script">
-    <productname>diffutils</productname>
-    <productnumber>&diffutils-version;</productnumber>
-    <address>&diffutils-url;</address>
-  </sect1info>
+<productname>diffutils</productname>
+<productnumber>&diffutils-version;</productnumber> <address>&diffutils-url;</address></sect1info>
 
   <title>Diffutils-&diffutils-version;</title>
 
   <indexterm zone="ch-tools-diffutils">
     <primary sortas="a-Diffutils">Diffutils</primary>
-    <secondary>tools</secondary>
+    <secondary>ferramentas</secondary>
   </indexterm>
 
   <sect2 role="package">
@@ -41,9 +39,9 @@
   </sect2>
 
   <sect2 role="installation">
-    <title>Installation of Diffutils</title>
+    <title>Instalação do Diffutils</title>
 
-    <para>Prepare Diffutils for compilation:</para>
+    <para>Prepare o Diffutils para compilação:</para>
 
     <screen><userinput remap="configure">./configure --prefix=/usr   \
             --host=$LFS_TGT \
@@ -51,37 +49,38 @@
             --build=$(./build-aux/config.guess)</userinput></screen>
 
     <variablelist>
-      <title>The meaning of the configure options:</title>
+      <title>O significado das opções do configure:</title>
 
       <varlistentry>
+        
         <!-- https://git.savannah.gnu.org/cgit/gnulib.git/commit/?id=d9083a4cc638cf9c7dfc3cc534a7c6b4debf50ab -->
-        <term><parameter>gl_cv_func_strcasecmp_works=y</parameter></term>
+<term><parameter>gl_cv_func_strcasecmp_works=y</parameter></term>
         <listitem>
-          <para>This option specify the result of a check for the
-          <function>strcasecmp</function>.  The check requires running a
-          compiled C program, and this is impossible during
-          cross-compilation because in general a cross-compiled program
-          cannot run on the host distro.  Normally for such a check the
-          <command>configure</command> script would use a fall-back value
-          for cross-compilation, but the fall-back value for this check is
-          absent and the <command>configure</command> script would have no
-          value to use and error out.  The upstream has already fixed the
-          issue, but to apply the fix we'd need to run
-          <command>autoconf</command> that the host distro may lack.  So
-          we just specify the check result (<literal>y</literal> as we know
-          the <function>strcasecmp</function> function in
-          Glibc-&glibc-version; works fine) instead, then
-          <command>configure</command> will just use the specified value and
-          skip the check.</para>
+          <para>Essa opção especifica o resultado de uma verificação para
+<function>strcasecmp</function>. A verificação exige executar um programa em
+C compilado, e isso é impossível durante a compilação cruzada, pois, em
+geral, um programa compilado cruzadamente não pode executar na distribuição
+anfitriã. Normalmente, para tal verificação, o conjunto de comandos
+sequenciais <command>configure</command> usaria um valor residual para
+compilação cruzada, mas o valor residual para essa verificação está ausente
+e o conjunto de comandos sequenciais <command>configure</command> não teria
+valor para usar e apresentaria um erro. O fluxo de desenvolvimento já
+corrigiu o problema, mas para aplicar a correção, nós precisaríamos executar
+<command>autoconf</command>, que a distribuição anfitriã possivelmente
+careça. Portanto, nós apenas especificamos o resultado da verificação
+(<literal>y</literal>, pois nós sabemos que a função
+<function>strcasecmp</function> na Glibc-&glibc-version; funciona bem),
+então <command>configure</command> usará apenas o valor especificado e
+ignorará a verificação.</para>
         </listitem>
       </varlistentry>
     </variablelist>
 
-    <para>Compile the package:</para>
+    <para>Compile o pacote:</para>
 
 <screen><userinput remap="make">make</userinput></screen>
 
-    <para>Install the package:</para>
+    <para>Instale o pacote:</para>
 
 <screen><userinput remap="install">make DESTDIR=$LFS install</userinput></screen>
 
@@ -90,8 +89,8 @@
   <sect2 role="content">
     <title/>
 
-    <para>Details on this package are located in
-    <xref linkend="contents-diffutils" role="."/></para>
+    <para>Detalhes acerca deste pacote estão localizados na <xref
+linkend="contents-diffutils" role="."/></para>
 
   </sect2>
 

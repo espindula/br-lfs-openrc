@@ -8,53 +8,53 @@
 <sect1 id="pre-organization">
   <?dbhtml filename="organization.html"?>
 
-  <title>Structure</title>
+  <title>Estrutura</title>
 
-  <para>This book is divided into the following parts.</para>
+  <para>Este livro é dividido nas seguintes partes.</para>
 
   <sect2>
-    <title>Part I - Introduction</title>
+    <title>Parte I – Introdução</title>
 
-    <para>Part I explains a few important notes on how to proceed with the
-    LFS installation.  This section also provides meta-information about
-    the book.</para>
+    <para>A Parte I explica umas poucas observações importantes a respeito do como
+proceder com a instalação do LFS. Essa seção também fornece metainformação a
+respeito do livro.</para>
   </sect2>
 
   <sect2>
-    <title>Part II - Preparing for the Build</title>
+    <title>Parte II – Preparando para a Construção</title>
 
-    <para>Part II describes how to prepare for the building process&mdash;making
-    a partition, downloading the packages, and compiling temporary
-    tools.</para>
+    <para>A Parte II descreve como se preparar para o processo de
+construção&mdash;criando uma partição, baixando os pacotes e compilando as
+ferramentas temporárias.</para>
   </sect2>
 
   <sect2>
-    <title>Part III - Building the LFS Cross Toolchain and Temporary Tools</title>
+    <title>Parte III – Construindo o Conjunto de Ferramentas Cruzadas e Ferramentas
+Temporárias do LFS</title>
 
-    <para>Part III provides instructions for building the tools
-    needed for constructing the final LFS system.</para>
+    <para>A Parte III fornece instruções para a construção das ferramentas necessárias
+para construir o sistema LFS final.</para>
   </sect2>
 
   <sect2>
-    <title>Part IV - Building the LFS System</title>
+    <title>Parte IV - Construindo o Sistema LFS</title>
 
-    <para>Part IV guides the reader through the building of the LFS
-    system&mdash;compiling and installing all the packages one by one,
-    setting up the boot scripts, and installing the kernel. The resulting
-    Linux system is the foundation on which other software can be built to
-    expand the system as desired. At the end of this book, there is an
-    easy to use reference listing all of the programs, libraries, and
-    important files that have been installed.</para>
+    <para>A Parte IV guia o(a) leitor(a) ao longo da construção do sistema
+LFS&mdash;compilando e instalando todos os pacotes, um por um, configurando
+os scripts de inicialização e instalando o núcleo. O sistema Linux
+resultante é a fundação sobre a qual outros aplicativos podem ser
+construídos para expandir o sistema conforme desejado. No final deste livro,
+existe uma referência fácil de usar listando todos os aplicativos,
+bibliotecas e arquivos importantes que tenham sido instalados.</para>
   </sect2>
 
   <sect2>
-    <title>Part V - Appendices</title>
+    <title>Parte V - Anexos</title>
 
-    <para>Part V provides information about the book itself including
-    acronyms and terms, acknowledgments, package dependencies,
-    a listing of LFS boot scripts, licenses for the distribution of the
-    book, and a comprehensive index of packages, programs, libraries,
-    and scripts.</para>
+    <para>A Parte V fornece informação acerca do próprio livro incluindo acrônimos e
+termos, reconhecimentos, dependências de pacotes, uma listagem dos scripts
+de inicialização do LFS, licenças para a distribuição do livro e um índice
+compreensível dos pacotes, aplicativos, bibliotecas e scripts.</para>
   </sect2>
 
 </sect1>

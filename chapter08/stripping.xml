@@ -8,73 +8,78 @@
 <sect1 id="ch-system-stripping">
   <?dbhtml filename="stripping.html"?>
 
-  <title>Stripping</title>
+  <title>Despojando</title>
 
-  <para>This section is optional.  If the intended user is not a
-  programmer and does not plan to do
-  any debugging of the system software, the system's size can be decreased
-  by some 2 GB by removing the debugging symbols, and some unnecessary symbol table
-  entries, from binaries and libraries. This causes no real inconvenience for
-  a typical Linux user.</para>
+  <para>Esta seção é opcional. Se o(a) pretenso(a) usuário(a) não for um(a)
+programador(a) e não planeja fazer qualquer depuração do software do
+sistema, [então] o tamanho do sistema pode ser reduzido em cerca de 2 GB
+removendo-se os símbolos de depuração, e algumas entradas desnecessárias da
+tabela de símbolo, de binários e de bibliotecas. Isso não causa nenhum
+inconveniente real para um(a) usuário(a) típico(a) do Linux.</para>
 
-  <para>Most people who use the commands mentioned below do not
-  experience any difficulties. However, it is easy to make a mistake and
-  render the new system unusable. So before running the
-  <command>strip</command> commands, it is a good idea to make a
-  backup of the LFS system in its current state.</para>
+  <para>A maioria das pessoas que usa os comandos mencionados abaixo não experiencia
+quaisquer dificuldades. Entretanto, é fácil cometer um erro e tornar o novo
+sistema inutilizável. Portanto, antes de executar os comandos
+<command>strip</command>, é uma boa ideia produzir uma cópia de segurança do
+sistema LFS no estado atual dele.</para>
 
-  <para>A <command>strip</command> command with the
-  <parameter>--strip-unneeded</parameter> option removes all debug symbols from
-  a binary or library.  It also removes all symbol table entries not normally
-  needed by the linker (for static libraries) or dynamic linker (for
-  dynamically linked binaries and shared libraries). Using
-  <parameter>--strip-debug</parameter> does not remove symbol table entries
-  that may be needed by some applications.  The difference between
-  <literal>unneeded</literal> and <literal>debug</literal> is very small.
-  For example, an unstripped <filename class='libraryfile'>libc.a</filename>
-  is 22.4 MB. After stripping with <parameter>--strip-debug</parameter> it
-  is 5.9 MB. Using <parameter>--strip-unneeded</parameter> only reduces the
-  size further to 5.8 MB.</para>
+  <para>Um comando <command>strip</command> com a opção
+<parameter>--strip-unneeded</parameter> remove todos os símbolos de
+depuração de um binário ou biblioteca. Ele também remove todas as entradas
+da tabela de símbolos normalmente não necessárias para o lincador (para
+bibliotecas estáticas) ou lincador dinâmico (para binários lincados
+dinamicamente e bibliotecas compartilhadas). Usar
+<parameter>--strip-debug</parameter> não remove entradas da tabela de
+símbolos que podem ser necessárias para alguns aplicativos. A diferença
+entre <literal>unneeded</literal> e <literal>debug</literal> é muito
+pequena. Por exemplo, uma <filename class='libraryfile'>libc.a</filename>
+não despojada tem 22,4 MB. Depois de despojada com
+<parameter>--strip-debug</parameter>, ela tem 5,9 MB. Usar
+<parameter>--strip-unneeded</parameter> somente reduz o tamanho para 5,8 MB.</para>
 
-  <para>The debugging symbols from selected libraries are compressed with
-  <application>Zstd</application> and preserved in separate files.  That
-  debugging information is needed to run regression tests with <ulink
-  url='&blfs-book;/general/valgrind.html'>valgrind</ulink> or <ulink
-  url='&blfs-book;/general/gdb.html'>gdb</ulink> later, in BLFS.
+  <para>Os símbolos de depuração oriundos de bibliotecas selecionadas são
+comprimidos com <application>Zstd</application> e preservados em arquivos
+separados. Essa informação de depuração é necessária para se executar testes
+de regressão com <ulink
+url='&blfs-book;/general/valgrind.html'>valgrind</ulink> ou <ulink
+url='&blfs-book;/general/gdb.html'>gdb</ulink> posteriormente, no BLFS.
   </para>
 
-  <para>Note that <command>strip</command> will overwrite the binary or library
-  file it is processing.  This can crash the processes using code or data from
-  the file.  If the process running <command>strip</command> is
-  affected, the binary or library being stripped can be destroyed; this can
-  make the system completely unusable.  To avoid this problem we copy some libraries
-  and binaries into <filename class="directory">/tmp</filename>, strip them
-  there, then reinstall them with the <command>install</command> command.
-  (The related entry in <xref linkend="pkgmgmt-upgrade-issues"/> gives the
-  rationale for using the <command>install</command> command here.)</para>
+  <para>Observe que o <command>strip</command> sobrescreverá o binário ou arquivo de
+biblioteca que ele estiver processando. Isso pode quebrar os processos
+usando código ou dados oriundos do arquivo. Se o processo executando o
+<command>strip</command> for afetado, [então] o binário ou biblioteca sendo
+despojado pode ser destruído; isso pode tornar o sistema completamente
+inutilizável. Para evitar esse problema, nós copiamos algumas bibliotecas e
+binários para <filename class="directory">/tmp</filename>, despojamos elas
+lá e as reinstalamos com o comando <command>install</command>. (A entrada
+relacionada em <xref linkend="pkgmgmt-upgrade-issues"/> dá a justificativa
+para usar o comando <command>install</command> aqui).</para>
 
-  <note><para>The ELF loader's name is ld-linux-x86-64.so.2 on 64-bit systems
-  and ld-linux.so.2 on 32-bit systems.  The construct below selects the
-  correct name for the current architecture, excluding anything ending
-  with <literal>g</literal>, in case the commands below have already been
-  run.</para></note>
+  <note><para>O nome do carregador de &quot;ELF&quot; é &quot;ld-linux-x86-64.so.2&quot;
+em sistemas de 64 bits e &quot;ld-linux.so.2&quot; em sistemas de 32 bits. A
+construção abaixo seleciona o nome correto para a arquitetura atual,
+excluindo qualquer coisa terminada com <literal>g</literal>, no caso dos
+comandos abaixo já tiverem sido executados.</para></note>
 
   <important>
     <para>
-      If there is any package whose version is different from the version
-      specified by the book (either following a security advisory or
-      satisfying personal preference), it may be necessary to update the
-      library file name in <envar>save_usrlib</envar> or
-      <envar>online_usrlib</envar>.
-      <emphasis role='bold'>Failing to do so may render the system
-      completely unusable.</emphasis>
+      Se existir algum pacote cuja versão seja diferente da versão especificada
+pelo livro (ou seguindo um aviso de segurança ou satisfazendo preferência
+pessoal), [então] possivelmente seja necessário atualizar o nome de arquivo
+da biblioteca em <envar>save_usrlib</envar> ou
+<envar>online_usrlib</envar>. <emphasis role='bold'>Falhar em fazer isso
+possivelmente torne o sistema completamente inutilizável</emphasis>.
     </para>
   </important>
 
-<!-- also of interest are libgfortan, libgo, libgomp, and libobjc from GCC -->
 
-<!--<screen><userinput>save_lib="ld-2.25.so libc-2.25.so libpthread-2.25.so libthread_db-1.0.so"-->
-<screen><userinput>save_usrlib="$(cd /usr/lib; ls ld-linux*[^g])
+
+
+<screen><!-- also of interest are libgfortan, libgo, libgomp, and libobjc from GCC -->
+<!--<screen>
+<userinput>save_lib="ld-2.25.so libc-2.25.so libpthread-2.25.so libthread_db-1.0.so"-->
+<userinput>save_usrlib="$(cd /usr/lib; ls ld-linux*[^g])
              libc.so.6
              libthread_db.so.1
              libquadmath.so.&libquadmath-version;
@@ -132,8 +137,9 @@ done
 unset BIN LIB save_usrlib online_usrbin online_usrlib
 </userinput></screen>
 
-  <para>A large number of files will be flagged as errors because their file
-  format is not recognized. These warnings can be safely ignored. They
-  indicate that those files are scripts, not binaries.</para>
+  <para>Um número grande de arquivos será sinalizado como erros, por causa do
+formato de arquivo deles não é reconhecido. Esses avisos podem ser
+seguramente ignorados. Eles indicam que aqueles arquivos são scripts, não
+binários.</para>
 
 </sect1>

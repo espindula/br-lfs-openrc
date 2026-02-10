@@ -9,16 +9,14 @@
   <?dbhtml filename="m4.html"?>
 
   <sect1info condition="script">
-    <productname>m4</productname>
-    <productnumber>&m4-version;</productnumber>
-    <address>&m4-url;</address>
-  </sect1info>
+<productname>m4</productname> <productnumber>&m4-version;</productnumber>
+<address>&m4-url;</address></sect1info>
 
   <title>M4-&m4-version;</title>
 
   <indexterm zone="ch-tools-m4">
     <primary sortas="a-M4">M4</primary>
-    <secondary>tools</secondary>
+    <secondary>ferramentas</secondary>
   </indexterm>
 
   <sect2 role="package">
@@ -41,24 +39,24 @@
   </sect2>
 
   <sect2 role="installation">
-    <title>Installation of M4</title>
+    <title>Instalação do M4</title>
 
-    <para>First, make some fixes introduced by glibc-2.43:</para>
+    <para>Primeiro, faça algumas correções introduzidas por glibc-2.43:</para>
 
 <screen><userinput remap="pre">sed -r '/_GL_EXTERN_C/s/w?memchr|bsearch/(&amp;)/' \
     -i $(find -name \*.in.h)</userinput></screen>
 
-    <para>Prepare M4 for compilation:</para>
+    <para>Prepare o M4 para compilação:</para>
 
 <screen><userinput remap="configure">./configure --prefix=/usr   \
             --host=$LFS_TGT \
             --build=$(build-aux/config.guess)</userinput></screen>
 
-    <para>Compile the package:</para>
+    <para>Compile o pacote:</para>
 
 <screen><userinput remap="make">make</userinput></screen>
 
-    <para>Install the package:</para>
+    <para>Instale o pacote:</para>
 
 <screen><userinput remap="install">make DESTDIR=$LFS install</userinput></screen>
 
@@ -66,8 +64,8 @@
 
   <sect2 role="content">
     <title/>
-    <para>Details on this package are located in
-    <xref linkend="contents-m4" role="."/></para>
+    <para>Detalhes acerca deste pacote estão localizados na <xref
+linkend="contents-m4" role="."/></para>
 
   </sect2>
 

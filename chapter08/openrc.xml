@@ -9,10 +9,8 @@
   <?dbhtml filename="openrc.html"?>
 
   <sect1info condition="script">
-    <productname>openrc</productname>
-    <productnumber>&openrc-version;</productnumber>
-    <address>&openrc-url;</address>
-  </sect1info>
+<productname>openrc</productname>
+<productnumber>&openrc-version;</productnumber> <address>&openrc-url;</address></sect1info>
 
   <title>OpenRC-&openrc-version;</title>
 
@@ -23,8 +21,8 @@
   <sect2 role="package">
     <title/>
 
-    <para>The OpenRC package contains programs for controlling the startup,
-    running, and shutdown of the system.</para>
+    <para>O pacote OpenRC contém programas para controlar a inicialização, execução e
+desligamento do sistema.</para>
 
     <segmentedlist>
       <segtitle>&buildtime;</segtitle>
@@ -39,13 +37,14 @@
   </sect2>
 
   <sect2 role="installation">
-    <title>Installation of OpenRC</title>
+    <title>Instalaçãoo do OpenRC</title>
 
-    <para>Fix a script to allow a normal installation:</para>
+    <para>Corrija um conjunto de comandos sequenciados para permitir uma instalação
+normal:</para>
 
 <screen><userinput remap="pre">sed -i '/set -u/d' tools/meson_final.sh</userinput></screen>
 
-    <para>Prepare OpenRC for compilation:</para>
+    <para>Prepare OpenRC para compilação:</para>
 
 <screen><userinput remap="configure">mkdir build
 cd    build
@@ -55,33 +54,33 @@ meson setup --prefix=/usr       \
             -D pam=false ..</userinput></screen>
 
     <variablelist>
-      <title>The meaning of the configure options:</title>
+      <title>O significado das opções de configuração:</title>
 
       <varlistentry>
         <term><parameter>-D pam=false</parameter></term>
         <listitem>
-          <para>This disables needing Linux-PAM for the build, since it is not
-          installed yet.</para>
+          <para>Isso desabilita a necessidade do Linux-PAM para a construção, pois ele ainda
+não está instalado.</para>
         </listitem>
       </varlistentry>
 
     </variablelist>
 
-    <para>Compile the package:</para>
+    <para>Compile o pacote:</para>
 
 <screen><userinput remap="make">ninja</userinput></screen>
 
-    <para>To run the tests, issue:</para>
+    <para>Para executar os testes, emita:</para>
 
 <screen><userinput remap="test">ninja test</userinput></screen>
 
-    <para>Install the package:</para>
+    <para>Instale o pacote:</para>
 
 <screen><userinput remap="install">ninja install</userinput></screen>
 
-    <para>OpenRC provides <application>init</application> and other programs of
-    its own. However, the shorthands for them aren't created. Create the
-    symlinks:</para>
+    <para>OpenRC fornece <application>init</application> e outros programas
+próprios. No entanto, os atalhos para eles não são criados. Crie os linques
+simbólicos:</para>
 
 <screen><userinput>for i in {init,shutdown}; do
   ln -sv openrc-$i /sbin/$i
@@ -102,56 +101,38 @@ chmod 755 /sbin/poweroff /sbin/reboot</userinput></screen>
   </sect2>
 
   <sect2 id="contents-openrc" role="content">
-    <title>Contents of OpenRC</title>
+    <title>Conteúdo do OpenRC</title>
 
     <segmentedlist>
-      <segtitle>Installed programs</segtitle>
-      <segtitle>Installed libraries</segtitle>
-      <segtitle>Installed directories</segtitle>
+      <segtitle>Programas instalados</segtitle>
+      <segtitle>Bibliotecas instaladas</segtitle>
+      <segtitle>Diretórios instalados</segtitle>
 
       <seglistitem>
         <seg>
-          rc-status,
-          init (link to openrc-init),
-          openrc,
-          openrc-init,
-          openrc-run,
-          openrc-shutdown,
-          poweroff,
-          rc-service,
-          rc-sstat,
-          rc-update,
-          reboot,
-          shutdown (link to openrc-shutdown),
-          start-stop-daemon, and
-          supervise-daemon
+          rc-status, init (linque para openrc-init), openrc, openrc-init, openrc-run,
+openrc-shutdown, poweroff, rc-service, rc-sstat, rc-update, reboot, shutdown
+(linque para openrc-shutdown), start-stop-daemon e supervise-daemon
         </seg>
         <seg>
-          libeinfo.so and
-          librc.so
+          libeinfo.so e librc.so
         </seg>
         <seg>
-          /etc/conf.d,
-          /etc/init.d,
-          /etc/local.d,
-          /etc/runlevels,
-          /etc/sysctl.d,
-          /usr/libexec/rc, and
-          /usr/share/openrc
+          /etc/conf.d, /etc/init.d, /etc/local.d, /etc/runlevels, /etc/sysctl.d,
+/usr/libexec/rc e /usr/share/openrc
         </seg>
       </seglistitem>
     </segmentedlist>
 
     <variablelist>
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
+      <bridgehead renderas="sect3">Descrições Curtas</bridgehead>
+      <?dbfo list-presentation="list"?> <?dbhtml list-presentation="table"?>
 
       <varlistentry id="rc-status">
         <term><command>rc-status</command></term>
         <listitem>
           <para>
-            Gives the status of a service
+            Fornece a situação de um serviço
           </para>
           <indexterm zone="ch-system-openrc rc-status">
             <primary sortas="b-rc-status">rc-status</primary>
@@ -163,9 +144,9 @@ chmod 755 /sbin/poweroff /sbin/reboot</userinput></screen>
         <term><command>init</command></term>
         <listitem>
           <para>
-            Is the first process to be started when the kernel has initialized
-            the hardware; it takes over the boot process and starts all the
-            services; symlink to <command>openrc-init</command>
+            É o primeiro processo a ser iniciado quando o núcleo tiver inicializado o
+hardware; ele assume o processo de inicialização e inicia todos os serviços;
+linque simbólico para <command>openrc-init</command>
           </para>
           <indexterm zone="ch-system-openrc init">
             <primary sortas="b-init">init</primary>
@@ -177,7 +158,7 @@ chmod 755 /sbin/poweroff /sbin/reboot</userinput></screen>
         <term><command>openrc</command></term>
         <listitem>
           <para>
-            starts and stops services on a given runlevel
+            Inicia e para serviços em um determinado nível de execução
           </para>
           <indexterm zone="ch-system-openrc openrc">
             <primary sortas="b-openrc">openrc</primary>
@@ -189,8 +170,8 @@ chmod 755 /sbin/poweroff /sbin/reboot</userinput></screen>
         <term><command>openrc-init</command></term>
         <listitem>
           <para>
-            Gets called from <command>init</command> and starts every service
-            as needed
+            É chamado a partir do <command>init</command> e inicia cada serviço conforme
+necessário
           </para>
           <indexterm zone="ch-system-openrc openrc-init">
             <primary sortas="b-openrc-init">openrc-init</primary>
@@ -202,7 +183,7 @@ chmod 755 /sbin/poweroff /sbin/reboot</userinput></screen>
         <term><command>openrc-run</command></term>
         <listitem>
           <para>
-            Allows using shell commands in a service file
+            Permite usar-se comandos de shell em um arquivo de serviço
           </para>
           <indexterm zone="ch-system-openrc openrc-run">
             <primary sortas="b-openrc-run">openrc-run</primary>
@@ -214,8 +195,8 @@ chmod 755 /sbin/poweroff /sbin/reboot</userinput></screen>
         <term><command>openrc-shutdown</command></term>
         <listitem>
           <para>
-            Brings the system down in a secure way, signaling all processes and
-            notifying all logged-in users
+            Desativa o sistema de forma segura, sinalizando todos os processos e
+notificando todos(as) os(as) usuários(as) logados(as)
           </para>
           <indexterm zone="ch-system-openrc openrc-shutdown">
             <primary sortas="b-openrc-shutdown">openrc-shutdown</primary>
@@ -227,9 +208,9 @@ chmod 755 /sbin/poweroff /sbin/reboot</userinput></screen>
         <term><command>poweroff</command></term>
         <listitem>
           <para>
-            Calls <command>openrc-shutdown</command> with
-            <parameter>--poweroff</parameter>, stopping all services and
-            processes before shutting down the system
+            Chama <command>openrc-shutdown</command> com
+<parameter>--poweroff</parameter>, parando todos os serviços e processos
+antes de desligar o sistema
           </para>
           <indexterm zone="ch-system-openrc poweroff">
             <primary sortas="b-poweroff">poweroff</primary>
@@ -241,7 +222,7 @@ chmod 755 /sbin/poweroff /sbin/reboot</userinput></screen>
         <term><command>rc-service</command></term>
         <listitem>
           <para>
-            Runs a given service after locating it
+            Executa um determinado serviço depois de localizá-lo
           </para>
           <indexterm zone="ch-system-openrc rc-service">
             <primary sortas="b-rc-service">rc-service</primary>
@@ -253,8 +234,8 @@ chmod 755 /sbin/poweroff /sbin/reboot</userinput></screen>
         <term><command>rc-sstat</command></term>
         <listitem>
           <para>
-            Gives the status of the most crucial services, followed by normal
-            services
+            Fornece a situação dos serviços mais cruciais, seguidos pelos serviços
+normais
           </para>
           <indexterm zone="ch-system-openrc rc-sstat">
             <primary sortas="b-rc-sstat">rc-sstat</primary>
@@ -266,7 +247,7 @@ chmod 755 /sbin/poweroff /sbin/reboot</userinput></screen>
         <term><command>rc-update</command></term>
         <listitem>
           <para>
-            Adds and removes services on a runlevel
+            Adiciona e remove serviços em um nível de execução
           </para>
           <indexterm zone="ch-system-openrc rc-update">
             <primary sortas="b-rc-update">rc-update</primary>
@@ -278,9 +259,9 @@ chmod 755 /sbin/poweroff /sbin/reboot</userinput></screen>
         <term><command>reboot</command></term>
         <listitem>
           <para>
-            Calls <command>openrc-shutdown</command> with
-            <parameter>--reboot</parameter>, stopping all services and
-            processes before telling the system to reboot
+            Chama <command>openrc-shutdown</command> com
+<parameter>--reboot</parameter>, parando todos os serviços e processos antes
+de informar o sistema para reinicializar
           </para>
           <indexterm zone="ch-system-openrc reboot">
             <primary sortas="b-reboot">reboot</primary>
@@ -292,7 +273,7 @@ chmod 755 /sbin/poweroff /sbin/reboot</userinput></screen>
         <term><command>shutdown</command></term>
         <listitem>
           <para>
-            Is a symlink to <command>openrc-shutdown</command>
+            É um linque simbólico para <command>openrc-shutdown</command>
           </para>
           <indexterm zone="ch-system-openrc shutdown">
             <primary sortas="b-shutdown">shutdown</primary>
@@ -304,7 +285,7 @@ chmod 755 /sbin/poweroff /sbin/reboot</userinput></screen>
         <term><command>start-stop-daemon</command></term>
         <listitem>
           <para>
-            Starts or stops a daemon in a service file
+            Inicia ou para um processo de segundo plano em um arquivo de serviço
           </para>
           <indexterm zone="ch-system-openrc start-stop-daemon">
             <primary sortas="b-start-stop-daemon">start-stop-daemon</primary>
@@ -316,7 +297,7 @@ chmod 755 /sbin/poweroff /sbin/reboot</userinput></screen>
         <term><command>supervise-daemon</command></term>
         <listitem>
           <para>
-            Supervises a daemon in a service file
+            Supervisiona um processo de segundo plano em um arquivo de serviço
           </para>
           <indexterm zone="ch-system-openrc supervise-daemon">
             <primary sortas="b-supervise-daemon">supervise-daemon</primary>
@@ -328,7 +309,7 @@ chmod 755 /sbin/poweroff /sbin/reboot</userinput></screen>
         <term><filename class="libraryfile">libeinfo</filename></term>
         <listitem>
           <para>
-            Contains functions for outputting colored messages
+            Contém funções para gerar mensagens coloridas
           </para>
           <indexterm zone="ch-system-openrc libeinfo">
             <primary sortas="c-libeinfo">libeinfo</primary>
@@ -340,7 +321,7 @@ chmod 755 /sbin/poweroff /sbin/reboot</userinput></screen>
         <term><filename class="libraryfile">librc</filename></term>
         <listitem>
           <para>
-            Provides the core OpenRC functions
+            Fornece as funções centrais do OpenRC
           </para>
           <indexterm zone="ch-system-openrc librc">
             <primary sortas="c-librc">librc</primary>

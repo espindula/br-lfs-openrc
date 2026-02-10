@@ -8,180 +8,188 @@
 <sect1 id="ch-config-network" revision="openrc">
   <?dbhtml filename="network.html"?>
 
-  <title>General Network Configuration</title>
+  <title>Configuração Geral da Rede de Comunicação</title>
 
   <indexterm zone="ch-config-network">
-    <primary sortas="d-network">network</primary>
-  <secondary>configuring</secondary></indexterm>
+    <primary sortas="d-network">rede de comunicação</primary>
+  <secondary>configurando</secondary></indexterm>
 
   <sect2>
-    <title>Creating Network Interface Configuration Files</title>
+    <title>Criando Arquivos de Configuração de Interface de Rede de Comunicação</title>
 
     <para>The <filename>/etc/conf.d/network</filename> file determines which
-    interfaces are brought up and down by the <command>network</command>
-    service.</para>
+interfaces are brought up and down by the <command>network</command>
+service.</para>
 
     <note>
-      <para>If the procedure in the previous section was not used, udev
-      will assign network card interface names based on system physical
-      characteristics such as enp2s1. If you are not sure what your interface
-      name is, you can always run <command>ip link</command> or <command>ls
-      /sys/class/net</command> after you have booted your system.
+      <para>Se o procedimento na seção anterior não foi usado, o Udev atribuirá nomes de
+interface da placa de rede de comunicação baseados em características
+físicas do sistema, tais como enp2s1. Se não tiver certeza qual é teu nome
+de interface, você sempre pode executar <command>ip link</command> ou
+<command>ls /sys/class/net</command> depois que tenha inicializado o teu
+sistema.
       </para>
 
-      <para>The interface names depend on the implementation and
-      configuration of the udev daemon running on the system.  The udev
-      daemon for LFS (installed in <xref linkend="ch-system-udev"/>) will
-      not run until the LFS system is booted.  So the interface names 
-      in the LFS system cannot always be determined by running
-      those commands on the host distro,
-      <emphasis>even in the chroot environment</emphasis>.</para>
+      <para>Os nomes de interface dependem da implementação e configuração do processo
+de segundo plano udev executando no sistema. O processo de segundo plano
+udev para o LFS (instalado na <xref linkend="ch-system-udev"/>) não
+executará até que o sistema LFS seja inicializado. Assim, os nomes de
+interface no sistema LFS não podem sempre ser determinados executando-se
+aqueles comandos na distribuição anfitriã, <emphasis>mesmo no ambiente
+chroot</emphasis>.</para>
     </note>
 
-    <para>To specify the interfaces you want to have brought up, edit
-    the <filename>/etc/conf.d/network</filename> configuration file, which has
-    plenty of comments.</para>
+    <para>To specify the interfaces you want to have brought up, edit the
+<filename>/etc/conf.d/network</filename> configuration file, which has
+plenty of comments.</para>
 
   </sect2>
   <sect2 id="resolv.conf">
-    <title>Creating the /etc/resolv.conf File</title>
+    <title>Criando o Arquivo /etc/resolv.conf</title>
 
     <indexterm zone="resolv.conf">
       <primary sortas="e-/etc/resolv.conf">/etc/resolv.conf</primary>
     </indexterm>
 
-    <para>The system will need some means of obtaining Domain Name Service
-    (DNS) name resolution to resolve Internet domain names to IP addresses, and
-    vice versa. This is best achieved by placing the IP address of the DNS
-    server, available from the ISP or network administrator, into
-    <filename>/etc/resolv.conf</filename>. Create the file by running the
-    following:</para>
+    <para>O sistema precisará de algum meio de obter resolução de nome do Domain Name
+Service (DNS) para resolver nomes de domínio da Internet para endereços de
+IP, e vice versa. Isso é melhor alcançado colocando-se o endereço de IP do
+servidor de DNS, disponível a partir do ISP ou do(a) administrador(a) da
+rede de comunicação, no <filename>/etc/resolv.conf</filename>. Crie o
+arquivo executando o seguinte:</para>
 
 <screen><userinput>cat &gt; /etc/resolv.conf &lt;&lt; "EOF"
-<literal># Begin /etc/resolv.conf
+<literal># Início do /etc/resolv.conf
 
-domain <replaceable>&lt;Your Domain Name&gt;</replaceable>
-nameserver <replaceable>&lt;IP address of your primary nameserver&gt;</replaceable>
-nameserver <replaceable>&lt;IP address of your secondary nameserver&gt;</replaceable>
+domain <replaceable>&lt;Seu Nome de Domínio&gt;</replaceable>
+nameserver <replaceable>&lt;Endereço de IP do seu servidor primário de nome&gt;</replaceable>
+nameserver <replaceable>&lt;Endereço de IP do seu servidor secundário de nome&gt;</replaceable>
 
-# End /etc/resolv.conf</literal>
+# Fim do /etc/resolv.conf</literal>
 EOF</userinput></screen>
 
-    <para>The <varname>domain</varname> statement can be omitted
-    or replaced with a <varname>search</varname> statement.  See the man page for
-    resolv.conf for more details.</para>
+    <para>A declaração <varname>domain</varname> pode ser omitida ou substituída por
+uma declaração <varname>search</varname>. Veja-se a página de manual para
+resolv.conf para mais detalhes.</para>
 
-    <para>Replace <replaceable>&lt;IP address of the nameserver&gt;</replaceable>
-    with the IP address of the DNS most appropriate for the setup. There will
-    often be more than one entry (requirements demand secondary servers for
-    fallback capability). If you only need or want one DNS server, remove the
-    second <emphasis>nameserver</emphasis> line from the file. The IP address
-    may also be a router on the local network.</para>
+    <para>Substitua <replaceable>&lt;Endereço IP do servidor de
+nomes&gt;</replaceable> pelo endereço de IP do DNS mais apropriado para a
+configuração. Frequentemente existirá mais que uma entrada (exigências
+demandam servidores secundários para recurso de substituto). Se você precisa
+ou quer somente um servidor de DNS, remova a segunda linha
+<emphasis>nameserver</emphasis> do arquivo. O endereço de IP também
+possivelmente seja um roteador na rede local de comunicação.</para>
 
     <note>
-      <para>The Google Public IPv4 DNS addresses are 8.8.8.8 and 8.8.4.4.</para>
+      <para>Os endereços do DNS IPv4 Público do Google são 8.8.8.8 e 8.8.4.4.</para>
     </note>
 
   </sect2>
 
   <sect2 id="ch-config-hostname">
-    <title>Configuring the System Hostname</title>
+    <title>Configurando o Nome de Dispositivo do Sistema</title>
 
     <indexterm zone="ch-config-hostname">
       <primary sortas="d-hostname">hostname</primary>
-      <secondary>configuring</secondary>
+      <secondary>configurando</secondary>
     </indexterm>
 
-     <para>During the boot process, the file <filename>/etc/hostname</filename>
-     is used for establishing the system's hostname.</para>
+     <para>Durante o processo de inicialização, o arquivo
+<filename>/etc/hostname</filename> é usado para estabelecer o nome de
+dispositivo do sistema.</para>
 
-     <para>Create the <filename>/etc/hostname</filename> file and enter a
-     hostname by running:</para>
+     <para>Crie o arquivo <filename>/etc/hostname</filename> e informe um nome de
+dispositivo executando:</para>
 
 <screen><userinput>echo "<replaceable>&lt;lfs&gt;</replaceable>" &gt; /etc/hostname</userinput></screen>
 
-     <para><replaceable>&lt;lfs&gt;</replaceable> needs to be replaced with the
-     name given to the computer. Do not enter the Fully Qualified Domain Name
-     (FQDN) here. That information goes in the
-     <filename>/etc/hosts</filename> file.</para>
+     <para><replaceable>&lt;lfs&gt;</replaceable> precisa ser substituído pelo nome
+dado para o computador. Não informe o Fully Qualified Domain Name (FQDN)
+aqui. Essa informação vai no arquivo <filename>/etc/hosts</filename>.</para>
 
   </sect2>
 
   <sect2 id="ch-config-hosts">
-     <title>Customizing the /etc/hosts File</title>
+     <title>Personalizando o Arquivo /etc/hosts</title>
 
      <indexterm zone="ch-config-hosts">
        <primary sortas="e-/etc/hosts">/etc/hosts</primary>
      </indexterm>
 
      <indexterm zone="ch-config-hosts">
-       <primary sortas="d-localnet">localnet</primary>
+       <primary sortas="d-localnet">rede local</primary>
        <secondary>/etc/hosts</secondary>
      </indexterm>
 
      <indexterm zone="ch-config-hosts">
-       <primary sortas="d-network">network</primary>
+       <primary sortas="d-network">rede de comunicação</primary>
        <secondary>/etc/hosts</secondary>
      </indexterm>
 
-     <para>Decide on a fully-qualified domain name (FQDN), and possible aliases
-     for use in the <filename>/etc/hosts</filename> file. If using static IP
-     addresses, you'll also need to decide on an IP address. The syntax
-     for a hosts file entry is:</para>
+     <para>Decida acerca de um "Fully-Qualified Domain Name" ("FQDN"), e possíveis
+apelidos para uso no arquivo <filename>/etc/hosts</filename>. Se usar
+endereços estáticos de IP, [então] você também precisará decidir acerca de
+um endereço de IP. A sintaxe para uma entrada de arquivo "hosts" é:</para>
 
-<screen><literal>IP_address myhost.example.org aliases</literal></screen>
+<screen><literal>Endereços_IP meuhost.exemplo.org apelidos</literal></screen>
 
-     <para>Unless the computer is to be visible to the Internet (i.e., there is
-     a registered domain and a valid block of assigned IP addresses&mdash;most
-     users do not have this), make sure that the IP address is in the private
-     network IP address range. Valid ranges are:</para>
+     <para>A menos que o computador seja para estar visível para a Internet (por
+exemplo, existe um domínio registrado e um bloco válido de endereços
+atribuídos de IP&mdash;a maioria dos(as) usuários(as) não tem isso),
+assegure-se de que o endereço de IP está no intervalo de endereço privado de
+IP da rede de comunicação. Intervalos válidos são:</para>
 
-<screen><literal>Private Network Address Range      Normal Prefix
-10.0.0.1 - 10.255.255.254           8
-172.x.0.1 - 172.x.255.254           16
-192.168.y.1 - 192.168.y.254         24</literal></screen>
+<screen><literal>Intervalo de Endereço Privado de Rede	Prefixo Normal
+10.0.0.1 - 10.255.255.254		8
+172.x.0.1 - 172.x.255.254		16
+192.168.y.1 - 192.168.y.254		24</literal></screen>
 
-     <para>x can be any number in the range 16-31. y can be any number in the
-     range 0-255.</para>
+     <para>x pode ser qualquer número no intervalo 16-31. y pode ser qualquer número no
+intervalo 0-255.</para>
 
-     <para>A valid private IP address could be 192.168.1.2.</para>
+     <para>Um endereço de IP privado válido poderia ser 192.168.1.2.</para>
 
-     <para>If the computer is to be visible to the Internet, a valid FQDN
-     can be the domain name itself, or a string resulted by concatenating a
-     prefix (often the hostname) and the domain name with a <quote>.</quote>
-     character.  And, you need to contact the domain provider to resolve the
-     FQDN to your public IP address.</para>
+     <para>Se o computador for para estar visível para a Internet, [então] um "FQDN"
+válido pode ser o próprio nome de domínio ou uma sequência de caracteres
+resultante da concatenação de um prefixo (geralmente o nome do dispositivo)
+e o nome de domínio com um caractere <quote>.</quote>. E você precisa
+contactar o provedor de domínio para resolver o "FQDN" para seu endereço de
+IP público.</para>
 
-     <para>Even if the computer is not visible to the Internet, a FQDN is
-     still needed for certain programs, such as MTAs, to operate properly.
-     A special FQDN, <literal>localhost.localdomain</literal>, can be used
-     for this purpose.</para>
+     <para>Mesmo se o computador não estiver visível para a Internet, um "FQDN" ainda é
+necessário para determinados programas, tais como "MTAs", funcionarem
+corretamente. Um "FQDN" especial, <literal>localhost.localdomain</literal>,
+pode ser usado para essa finalidade.</para>
 
-     <para>Create the  <filename>/etc/hosts</filename> file by running:</para>
+     <para>Crie o arquivo <filename>/etc/hosts</filename> executando:</para>
 
 <screen><userinput>cat &gt; /etc/hosts &lt;&lt; "EOF"
-<literal># Begin /etc/hosts
+<literal># Inicia /etc/hosts
 
 127.0.0.1 localhost.localdomain localhost
-127.0.1.1 <replaceable>&lt;FQDN&gt;</replaceable> <replaceable>&lt;HOSTNAME&gt;</replaceable>
-<replaceable>&lt;192.168.1.2&gt;</replaceable> <replaceable>&lt;FQDN&gt;</replaceable> <replaceable>&lt;HOSTNAME&gt;</replaceable> <replaceable>[alias1] [alias2 ...]</replaceable>
+127.0.1.1 <replaceable>&lt;FQDN&gt;</replaceable> <replaceable>&lt;NOMEDISPOSITIVO&gt;</replaceable>
+<replaceable>&lt;192.168.1.2&gt;</replaceable> <replaceable>&lt;FQDN&gt;</replaceable> <replaceable>&lt;NOMEDISPOSITIVO&gt;</replaceable> <replaceable>[apelido1] [apelido2 ...]</replaceable>
 ::1       localhost ip6-localhost ip6-loopback
 ff02::1   ip6-allnodes
 ff02::2   ip6-allrouters
 
-# End /etc/hosts</literal>
+# Termina /etc/hosts</literal>
 EOF</userinput></screen>
 
-     <para>The <replaceable>&lt;192.168.1.2&gt;</replaceable>,
-     <replaceable>&lt;FQDN&gt;</replaceable>, and
-     <replaceable>&lt;HOSTNAME&gt;</replaceable> values need to be
-     changed for specific uses or requirements (if assigned an IP address by a
-     network/system administrator and the machine will be connected to an
-     existing network). The optional alias name(s) can be omitted.</para>
+     <para>Os valores <replaceable>&lt;192.168.1.2&gt;</replaceable>,
+<replaceable>&lt;FQDN&gt;</replaceable> e
+<replaceable>&lt;NOMEDISPOSITIVO&gt;</replaceable> precisam ser mudados para
+usuários(as) ou exigências específicos(as) (se atribuído um endereço de IP
+por um(a) administrador(a) da rede de intercomunicação/sistema e a máquina
+estará conectada a uma rede existente de intercomunicação). O(s) nome(s) de
+apelido(s) opcional(is) pode(m) ser omitido(s).</para>
 
-<!--  This is not very useful
 
-     <para>If a network card is not going to be configured, create the
+
+   <!--  This is not very useful
+
+     <para>
+If a network card is not going to be configured, create the
      <filename>/etc/hosts</filename> file by running:</para>
 
 <screen role="nodump"><userinput>cat &gt; /etc/hosts &lt;&lt; "EOF"
@@ -195,7 +203,6 @@ ff02::2   ip6-allrouters
 
 # End /etc/hosts (no network card version)</literal>
 EOF</userinput></screen> -->
-
-   </sect2>
+</sect2>
 
 </sect1>

@@ -8,25 +8,27 @@
 <sect1 id="ch-tools-introduction-chroot">
   <?dbhtml filename="introduction.html"?>
 
-  <title>Introduction</title>
+  <title>Introdução</title>
 
-  <para>This chapter shows how to build the last missing bits of the temporary
-  system: the tools needed to build the various packages.  Now
-  that all circular dependencies have been resolved, a <quote>chroot</quote>
-  environment, completely isolated from the host operating system (except for
-  the running kernel), can be used for the build.</para>
+  <para>Este capítulo mostra como construir os bits ausentes finais do sistema
+temporário: as ferramentas necessárias para construir os vários
+pacotes. Agora que todas as dependências circulares foram resolvidas, um
+ambiente <quote>chroot</quote>, completamente isolado do sistema operacional
+anfitrião (exceto pelo núcleo em execução), pode ser usado para a
+construção.</para>
 
-  <para>For proper operation of the isolated environment, some communication
-  with the running kernel must be established. This is done via the
-  so-called <emphasis>Virtual Kernel File Systems</emphasis>, which will be
-  mounted before entering the chroot environment. You may want to verify
-  that they are mounted by issuing the <command>findmnt</command> command.</para>
+  <para>Para a operação adequada do ambiente isolado, alguma comunicação com o
+núcleo em execução precisa ser estabelecida. Isso é feito por meio dos assim
+chamados <emphasis>Sistemas de Arquivos Virtuais do Núcleo</emphasis>, que
+serão montados antes da entrada no ambiente chroot. Você possivelmente
+queira verificar se eles estão montados emitindo o comando
+<command>findmnt</command>.</para>
 
-  <para>Until <xref linkend="ch-tools-chroot"/>, the commands must be
-  run as <systemitem class="username">root</systemitem>, with the
-  <envar>LFS</envar> variable set. After entering chroot, all commands
-  are run as &root;, fortunately without access to the OS of the computer
-  you built LFS on. Be careful anyway, as it is easy to destroy the whole
-  LFS system with bad commands.</para>
+  <para>Até a <xref linkend="ch-tools-chroot"/>, os comandos precisam ser executados
+como <systemitem class="username">root</systemitem>, com a variável
+<envar>LFS</envar> configurada. Após a entrada no chroot, todos os comandos
+são executados como &root;, por sorte sem acesso ao SO do computador no qual
+que você construiu o LFS. Seja cuidadoso(a) de qualquer maneira, dado que é
+fácil destruir o sistema LFS inteiro com comandos mau formados.</para>
 
 </sect1>

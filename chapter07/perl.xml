@@ -9,16 +9,14 @@
   <?dbhtml filename="perl.html"?>
 
   <sect1info condition="script">
-    <productname>perl</productname>
-    <productnumber>&perl-version;</productnumber>
-    <address>&perl-url;</address>
-  </sect1info>
+<productname>perl</productname>
+<productnumber>&perl-version;</productnumber> <address>&perl-url;</address></sect1info>
 
   <title>Perl-&perl-version;</title>
 
   <indexterm zone="ch-tools-perl">
     <primary sortas="a-Perl">Perl</primary>
-    <secondary>tools</secondary>
+    <secondary>ferramentas</secondary>
   </indexterm>
 
   <sect2 role="package">
@@ -41,9 +39,9 @@
   </sect2>
 
   <sect2 role="installation">
-    <title>Installation of Perl</title>
+    <title>Instalação do Perl</title>
 
-    <para>Prepare Perl for compilation:</para>
+    <para>Prepare o Perl para compilação:</para>
 
     <screen><userinput remap="configure">sh Configure -des                                         \
              -D prefix=/usr                               \
@@ -57,53 +55,54 @@
              -D vendorarch=/usr/lib/perl5/&perl-version-min;/vendor_perl</userinput></screen>
 
     <variablelist>
-      <title>The meaning of the Configure options:</title>
+      <title>O significado das opções do Configure:</title>
 
       <varlistentry>
         <term><parameter>-des</parameter></term>
         <listitem>
-          <para>This is a combination of three options: -d uses defaults for
-          all items; -e ensures completion of all tasks; -s silences
-          non-essential output.</para>
+          <para>Essa é uma combinação de três opções: -d usa padrões para todos os itens; -e
+assegura completamento de todas as tarefas; -s silencia saída gerada não
+essencial.</para>
         </listitem>
       </varlistentry>
 
       <varlistentry>
         <term><parameter>-D vendorprefix=/usr</parameter></term>
         <listitem>
-          <para>This ensures <command>perl</command> knows how to
-          tell packages where they should install their Perl modules.</para>
+          <para>Isso garante que <command>perl</command> saiba como dizer aos pacotes onde
+eles deveriam instalar os módulos "Perl" deles.</para>
         </listitem>
       </varlistentry>
 
       <varlistentry>
         <term><parameter>-D useshrplib</parameter></term>
         <listitem>
-          <para>Build <systemitem class='library'>libperl</systemitem>
-          needed by some Perl modules as a shared library, instead of
-          a static library.</para>
+          <para>Construa a <systemitem class='library'>libperl</systemitem>, necessária para
+alguns módulos "Perl", como uma biblioteca compartilhada, em vez de uma
+biblioteca estática.</para>
         </listitem>
       </varlistentry>
 
       <varlistentry>
         <term><parameter>-D privlib,-D archlib,-D sitelib,...</parameter></term>
         <listitem>
-          <para>These settings define where Perl looks for installed
-          modules. The LFS editors chose to put them in a directory structure
-          based on the MAJOR.MINOR version of Perl (&perl-version-min;) which
-          allows upgrading Perl to newer patch levels (the patch level is
-          the last dot separated part in the full version string like
-          &perl-version;) without reinstalling all of the modules.</para>
+          <para>Essas configurações definem onde o "Perl" procura os módulos
+instalados. Os(As) editores(as) do LFS optaram por colocá-los em uma
+estrutura de diretórios baseada na versão PRINCIPAL.SECUNDÁRIA do "Perl"
+(&perl-version-min;) que permite atualizar o "Perl" para níveis de remendo
+mais recentes (o nível de remendo é a última parte separada por pontos na
+sequência completa de caracteres da versão, como &perl-version;) sem
+reinstalar todos os módulos.</para>
         </listitem>
       </varlistentry>
 
     </variablelist>
 
-    <para>Compile the package:</para>
+    <para>Compile o pacote:</para>
 
 <screen><userinput remap="make">make</userinput></screen>
 
-    <para>Install the package:</para>
+    <para>Instale o pacote:</para>
 
 <screen><userinput remap="install">make install</userinput></screen>
 
@@ -112,7 +111,8 @@
   <sect2 role="content">
     <title/>
 
-    <para>Details on this package are located in <xref linkend="contents-perl" role="."/></para>
+    <para>Detalhes acerca deste pacote estão localizados na <xref
+linkend="contents-perl" role="."/></para>
 
   </sect2>
 

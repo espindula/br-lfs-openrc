@@ -8,18 +8,19 @@
 <sect1 id="ch-tools-creatingminlayout">
   <?dbhtml filename="creatingminlayout.html"?>
 
-  <title>Creating a Limited Directory Layout in the LFS Filesystem</title>
+  <title>Criando um Layout Limitado de Diretório no Sistema de Arquivos do LFS</title>
 
-  <para>In this section, we begin populating the LFS filesystem with the
-  pieces that will constitute the final Linux system. The first step is to
-  create a limited directory hierarchy, so that the programs compiled in <xref
-  linkend="chapter-temporary-tools"/> (as well as glibc and libstdc++ in <xref
-  linkend="chapter-cross-tools"/>) can be installed in their final
-  location. We do this so those temporary programs will be overwritten when
-  the final versions are built in <xref linkend="chapter-building-system"/>.</para>
+  <para>Nesta seção, nós começamos povoando o sistema de arquivos do LFS com os
+lugares que constituirão o sistema Linux final. O primeiro passo é o de
+criar uma hierarquia limitada de diretório, de forma que os aplicativos
+compilados no <xref linkend="chapter-temporary-tools"/> (bem como a glibc e
+a libstdc++ no <xref linkend="chapter-cross-tools"/>) possam ser instalados
+no local final deles. Nós fazemos isso, de forma que aqueles aplicativos
+temporários sejam sobrescritos quando as versões finais sejam reconstruídas
+no <xref linkend="chapter-building-system"/>.</para>
 
-  <para>Create the required directory layout by issuing the following commands as
-  <systemitem class="username">root</systemitem>:</para>
+  <para>Crie o layout exigido de diretório emitindo os seguintes comandos como
+<systemitem class="username">root</systemitem>:</para>
 
 <screen><userinput>mkdir -pv $LFS/{etc,var} $LFS/usr/{bin,lib,sbin}
 
@@ -31,23 +32,24 @@ case $(uname -m) in
   x86_64) mkdir -pv $LFS/lib64 ;;
 esac</userinput></screen>
 
-  <para>Programs in <xref linkend="chapter-temporary-tools"/> will be compiled
-  with a cross-compiler (more details can be found in section <xref
-  linkend="ch-tools-toolchaintechnotes"/>). This cross-compiler will be installed
-  in a special directory, to separate it from the other programs. Still acting as
-  &root;, create that directory with this command:</para>
+  <para>Os aplicativos no <xref linkend="chapter-temporary-tools"/> serão compilados
+com um compilador cruzado (mais detalhes podem ser encontrados na seção
+<xref linkend="ch-tools-toolchaintechnotes"/>). Esse compilador cruzado será
+instalado em um diretório especial, para separá-lo de outros
+aplicativos. Ainda atuando como &root;, crie esse diretório com este
+comando:</para>
 
 <screen><userinput>mkdir -pv $LFS/tools</userinput></screen>
 
   <note>
     <para>
-      The LFS editors have deliberately decided not to use a
-      <filename class="directory">/usr/lib64</filename> directory.  Several
-      steps are taken to be sure the toolchain will not use it. If for any
-      reason this directory appears (either because you made an error in
-      following the instructions, or because you installed a binary package that
-      created it after finishing LFS), it may break your system.
-      You should always be sure this directory does not exist.
+      Os(As) editores(as) do LFS deliberadamente decidiram não usar um diretório
+<filename class="directory">/usr/lib64</filename>. Vários passos são tomados
+para se ter certeza de que o conjunto de ferramentas não o usará. Se por
+qualquer razão esse diretório aparecer (seja porque você cometeu um erro ao
+seguir as instruções, seja porque você instalou um pacote binário que o
+criou depois de finalizar o LFS), [então} possivelmente quebre o seu
+sistema. Você deveria sempre ter certeza de que esse diretório não existe.
     </para>
   </note>
 

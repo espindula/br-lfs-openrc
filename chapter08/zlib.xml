@@ -9,10 +9,8 @@
   <?dbhtml filename="zlib.html"?>
 
   <sect1info condition="script">
-    <productname>zlib</productname>
-    <productnumber>&zlib-version;</productnumber>
-    <address>&zlib-url;</address>
-  </sect1info>
+<productname>zlib</productname>
+<productnumber>&zlib-version;</productnumber> <address>&zlib-url;</address></sect1info>
 
   <title>Zlib-&zlib-version;</title>
 
@@ -23,8 +21,8 @@
   <sect2 role="package">
     <title/>
 
-    <para>The Zlib package contains compression and decompression routines used by
-    some programs.</para>
+    <para>O pacote Zlib contém rotinas de compressão e descompressão usadas por alguns
+aplicativos.</para>
 
     <segmentedlist>
       <segtitle>&buildtime;</segtitle>
@@ -39,35 +37,35 @@
   </sect2>
 
   <sect2 role="installation">
-    <title>Installation of Zlib</title>
+    <title>Instalação do Zlib</title>
 
-    <para>Prepare Zlib for compilation:</para>
+    <para>Prepare o Zlib para compilação:</para>
 
 <screen><userinput remap="configure">./configure --prefix=/usr</userinput></screen>
 
-    <para>Compile the package:</para>
+    <para>Compile o pacote:</para>
 
 <screen><userinput remap="make">make</userinput></screen>
 
-    <para>To test the results, issue:</para>
+    <para>Para testar os resultados, emita:</para>
 
 <screen><userinput remap="test">make check</userinput></screen>
 
-    <para>Install the package:</para>
+    <para>Instale o pacote:</para>
 
 <screen><userinput remap="install">make install</userinput></screen>
 
-    <para>Remove a useless static library:</para>
+    <para>Remova uma biblioteca estática inútil:</para>
 
 <screen><userinput remap="install">rm -fv /usr/lib/libz.a</userinput></screen>
 
   </sect2>
 
   <sect2 id="contents-zlib" role="content">
-    <title>Contents of Zlib</title>
+    <title>Conteúdo do Zlib</title>
 
     <segmentedlist>
-      <segtitle>Installed libraries</segtitle>
+      <segtitle>Bibliotecas instaladas</segtitle>
 
       <seglistitem>
         <seg>libz.so</seg>
@@ -75,15 +73,13 @@
     </segmentedlist>
 
     <variablelist>
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
+      <bridgehead renderas="sect3">Descrições Curtas</bridgehead>
+      <?dbfo list-presentation="list"?> <?dbhtml list-presentation="table"?>
 
       <varlistentry id="libz">
         <term><filename class="libraryfile">libz</filename></term>
         <listitem>
-          <para>Contains compression and decompression functions used by
-          some programs</para>
+          <para>Contém funções de compressão e descompressão usadas por alguns aplicativos</para>
           <indexterm zone="ch-system-zlib libz">
             <primary sortas="c-libz">libz</primary>
           </indexterm>

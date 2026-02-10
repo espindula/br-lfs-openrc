@@ -9,10 +9,8 @@
   <?dbhtml filename="iproute2.html"?>
 
   <sect1info condition="script">
-    <productname>iproute2</productname>
-    <productnumber>&iproute2-version;</productnumber>
-    <address>&iproute2-url;</address>
-  </sect1info>
+<productname>iproute2</productname>
+<productnumber>&iproute2-version;</productnumber> <address>&iproute2-url;</address></sect1info>
 
   <title>IPRoute2-&iproute2-version;</title>
 
@@ -23,8 +21,8 @@
   <sect2 role="package">
     <title/>
 
-    <para>The IPRoute2 package contains programs for basic and advanced IPV4-based
-    networking.</para>
+    <para>O pacote IPRoute2 contém aplicativos para operação interativa básica e
+avançada de dispositivos via rede de comunicação baseada em IPV4.</para>
 
     <segmentedlist>
       <segtitle>&buildtime;</segtitle>
@@ -39,30 +37,36 @@
   </sect2>
 
   <sect2 role="installation">
-    <title>Installation of IPRoute2</title>
+    <title>Instalação do IPRoute2</title>
 
-    <para>The <command>arpd</command> program included in this package will not
-    be built since it depends on Berkeley DB, which is not installed in
-    LFS. However, a directory and a man page for <command>arpd</command> will still
-    be installed. Prevent this by running the commands shown below.
+    <para>O aplicativo <command>arpd</command> incluído nesse pacote não será
+construído, dado que ele é dependente do Berkeley DB, o qual não é instalado
+no LFS. Entretanto, um diretório e uma página de manual para o
+<command>arpd</command> ainda serão instalados. Impeça isso executando os
+comandos mostrados abaixo.
     </para>
 
-<screen><userinput remap="pre">sed -i /ARPD/d Makefile
-rm -fv man/man8/arpd.8</userinput></screen>
-
 <!-- fixed upstream for 5.16.0
-    <para>It is also necessary to disable building two modules that
+    <para>
+It is also necessary to disable building two modules that
     require <ulink url="&blfs-book;postlfs/iptables.html"/>.</para>
 
 <screen><userinput remap="pre">sed -i 's/.m_ipt.o//' tc/Makefile</userinput></screen>
 -->
-    <para>Compile the package:</para>
+<screen><userinput remap="pre">sed -i /ARPD/d Makefile
+rm -fv man/man8/arpd.8</userinput></screen>
+
+
+    <para>Compile o pacote:</para>
 
 <screen><userinput remap="make">make NETNS_RUN_DIR=/run/netns</userinput></screen>
 
-    <para>This package does not have a working test suite.</para>
-<!-- currently not useful, no tests actually run
-    <para>This package comes with a test suite, but due to assumptions it makes,
+    <para>Esse pacote não tem uma suíte de teste funcional.</para>
+
+
+    <!-- currently not useful, no tests actually run
+    <para>
+This package comes with a test suite, but due to assumptions it makes,
     it is not possible to reliably run these tests from within the chroot
     environment. If you wish to run these tests after booting into your new LFS
     system, ensure you enable <filename>/proc/config.gz</filename> support
@@ -70,42 +74,39 @@ rm -fv man/man8/arpd.8</userinput></screen>
     .config through /proc/config.gz&quot; [CONFIG_IKCONFIG_PROC]), then run
     'make alltests' from the <filename class="directory">testsuite/</filename>
     subdirectory.</para>-->
-
-    <para>Install the package:</para>
+<para>Instale o pacote:</para>
 
 <screen><userinput remap="install">make SBINDIR=/usr/sbin install</userinput></screen>
 
-    <para>If desired, install the documentation:</para>
+    <para>Se desejado, instale a documentação:</para>
 
 <screen><userinput remap="install">install -vDm644 COPYING README* -t /usr/share/doc/iproute2-&iproute2-version;</userinput></screen>
 
   </sect2>
 
   <sect2 id="contents-iproute2" role="content">
-    <title>Contents of IPRoute2</title>
+    <title>Conteúdo do IPRoute2</title>
 
     <segmentedlist>
-      <segtitle>Installed programs</segtitle>
-      <segtitle>Installed directories</segtitle>
+      <segtitle>Programas instalados</segtitle>
+      <segtitle>Diretórios instalados</segtitle>
 
       <seglistitem>
-        <seg>bridge, ctstat (link to lnstat), genl, ifstat, ip, lnstat,
-        nstat, routel, rtacct, rtmon, rtpr, rtstat (link to lnstat), ss,
-        and tc</seg>
-        <seg>/etc/iproute2, /usr/lib/tc, and /usr/share/doc/iproute2-&iproute2-version;
+        <seg>bridge, ctstat (link para lnstat), genl, ifstat, ip, lnstat, nstat, routel,
+rtacct, rtmon, rtpr, rtstat (link para lnstat), ss e tc</seg>
+        <seg>/etc/iproute2, /usr/lib/tc e /usr/share/doc/iproute2-&iproute2-version;
         </seg>
       </seglistitem>
     </segmentedlist>
 
     <variablelist>
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
+      <bridgehead renderas="sect3">Descrições Curtas</bridgehead>
+      <?dbfo list-presentation="list"?> <?dbhtml list-presentation="table"?>
 
       <varlistentry id="bridge">
         <term><command>bridge</command></term>
         <listitem>
-          <para>Configures network bridges</para>
+          <para>Configura pontes de redes de comunicação</para>
           <indexterm zone="ch-system-iproute2 bridge">
             <primary sortas="b-bridge">bridge</primary>
           </indexterm>
@@ -115,7 +116,7 @@ rm -fv man/man8/arpd.8</userinput></screen>
       <varlistentry id="ctstat">
         <term><command>ctstat</command></term>
         <listitem>
-          <para>Connection status utility</para>
+          <para>Utilitário de situação de conexão</para>
           <indexterm zone="ch-system-iproute2 ctstat">
             <primary sortas="b-ctstat">ctstat</primary>
           </indexterm>
@@ -125,7 +126,8 @@ rm -fv man/man8/arpd.8</userinput></screen>
       <varlistentry id="genl">
         <term><command>genl</command></term>
         <listitem>
-          <para>Generic netlink utility front end</para>
+          <para>Estrutura genérica de interação direta com o(a) usuário(a) do utilitário de
+link de rede de comunicação</para>
           <indexterm zone="ch-system-iproute2 genl">
             <primary sortas="b-genl">genl</primary>
           </indexterm>
@@ -135,8 +137,8 @@ rm -fv man/man8/arpd.8</userinput></screen>
       <varlistentry id="ifstat">
         <term><command>ifstat</command></term>
         <listitem>
-          <para>Shows interface statistics, including the number of
-          packets transmitted and received, by interface</para>
+          <para>Mostra as estatísticas de interface, incluindo o número de pacotes
+transmitidos e recebidos, por interface</para>
           <indexterm zone="ch-system-iproute2 ifstat">
             <primary sortas="b-ifstat">ifstat</primary>
           </indexterm>
@@ -146,35 +148,36 @@ rm -fv man/man8/arpd.8</userinput></screen>
       <varlistentry id="ip">
         <term><command>ip</command></term>
         <listitem>
-          <para>The main executable. It has several different functions, including these:</para>
+          <para>O executável principal. Ele tem várias funções, incluindo estas:</para>
 
-          <para><command>ip link <replaceable>&lt;device&gt;</replaceable></command>
-          allows users to look at the state of devices and to make changes</para>
+          <para><command>ip link <replaceable>&lt;dispositivo&gt;</replaceable></command>
+permite que usuários(as) olhem para o estado de dispositivos e façam
+mudanças</para>
 
-          <para><command>ip addr</command> allows users to look at addresses and
-          their properties, add new addresses, and delete old ones</para>
+          <para><command>ip addr</command> permite que usuários(as) olhem para endereços e
+propriedades deles, adicionem novos endereços e deletem os antigos</para>
 
-          <para><command>ip neighbor</command> allows users to look at neighbor
-          bindings and their properties, add new neighbor entries, and delete
-          old ones</para>
+          <para><command>ip neighbor</command> permite que usuários(as) olhem para vínculos
+de vizinho e propriedades deles, adicionem novas entradas de vizinho e
+deletem as antigas</para>
 
-          <para><command>ip rule</command> allows users to look at the routing
-          policies and change them</para>
+          <para><command>ip rule</command> permite que usuários(as) olhem para as políticas
+de roteamento e as mudem</para>
 
-          <para><command>ip route</command> allows users to look at the routing
-          table and change routing table rules</para>
+          <para><command>ip route</command> permite que usuários(as) olhem para a tabela de
+roteamento e mudem regras da tabela de roteamento</para>
 
-          <para><command>ip tunnel</command> allows users to look at the IP
-          tunnels and their properties, and change them</para>
+          <para><command>ip tunnel</command> permite que usuários(as) olhem para os tuneis
+IP e propriedades deles e as mudem</para>
 
-          <para><command>ip maddr</command> allows users to look at the multicast
-          addresses and their properties, and change them</para>
+          <para><command>ip maddr</command> permite que usuários(as) olhem para os endereços
+multicast e propriedades deles e as mudem</para>
 
-          <para><command>ip mroute</command> allows users to set, change, or
-          delete the multicast routing</para>
+          <para><command>ip mroute</command> permite que usuários(as) configurem, mudem ou
+deletem o roteamento multicast</para>
 
-          <para><command>ip monitor</command> allows users to continuously monitor
-          the state of devices, addresses and routes</para>
+          <para><command>ip monitor</command> permite que usuários(as) continuamente
+monitorem o estado de dispositivos, endereços e rotas</para>
           <indexterm zone="ch-system-iproute2 ip">
             <primary sortas="b-ip">ip</primary>
           </indexterm>
@@ -184,9 +187,9 @@ rm -fv man/man8/arpd.8</userinput></screen>
       <varlistentry id="lnstat">
         <term><command>lnstat</command></term>
         <listitem>
-          <para>Provides Linux network statistics; it is a generalized and more
-          feature-complete replacement for the old <command>rtstat</command>
-          program</para>
+          <para>Fornece estatísticas de rede de comunicação do Linux; ele é uma substituição
+difundida e mais completa de recursos para o antigo aplicativo
+<command>rtstat</command></para>
           <indexterm zone="ch-system-iproute2 lnstat">
             <primary sortas="b-lnstat">lnstat</primary>
           </indexterm>
@@ -196,7 +199,7 @@ rm -fv man/man8/arpd.8</userinput></screen>
       <varlistentry id="nstat">
         <term><command>nstat</command></term>
         <listitem>
-          <para>Displays network statistics</para>
+          <para>Mostra estatísticas da rede de comunicação</para>
           <indexterm zone="ch-system-iproute2 nstat">
             <primary sortas="b-nstat">nstat</primary>
           </indexterm>
@@ -206,8 +209,8 @@ rm -fv man/man8/arpd.8</userinput></screen>
       <varlistentry id="routel">
         <term><command>routel</command></term>
         <listitem>
-          <para>A component of <command>ip route</command>, for listing
-          the routing tables</para>
+          <para>Um componente do <command>ip route</command> para listar as tabelas de
+roteamento</para>
           <indexterm zone="ch-system-iproute2 routel">
             <primary sortas="b-routel">routel</primary>
           </indexterm>
@@ -217,8 +220,7 @@ rm -fv man/man8/arpd.8</userinput></screen>
       <varlistentry id="rtacct">
         <term><command>rtacct</command></term>
         <listitem>
-          <para>Displays the contents of
-          <filename>/proc/net/rt_acct</filename></para>
+          <para>Exibe o conteúdo de <filename>/proc/net/rt_acct</filename></para>
           <indexterm zone="ch-system-iproute2 rtacct">
             <primary sortas="b-rtacct">rtacct</primary>
           </indexterm>
@@ -228,7 +230,7 @@ rm -fv man/man8/arpd.8</userinput></screen>
       <varlistentry id="rtmon">
         <term><command>rtmon</command></term>
         <listitem>
-          <para>Route monitoring utility</para>
+          <para>Utilitário de monitoramento de rota</para>
           <indexterm zone="ch-system-iproute2 rtmon">
             <primary sortas="b-rtmon">rtmon</primary>
           </indexterm>
@@ -238,8 +240,7 @@ rm -fv man/man8/arpd.8</userinput></screen>
       <varlistentry id="rtpr">
         <term><command>rtpr</command></term>
         <listitem>
-          <para>Converts the output of <command>ip -o</command> into a
-          readable form</para>
+          <para>Converte a saída gerada de <command>ip -o</command> em um formato legível</para>
           <indexterm zone="ch-system-iproute2 rtpr">
             <primary sortas="b-rtpr">rtpr</primary>
           </indexterm>
@@ -249,7 +250,7 @@ rm -fv man/man8/arpd.8</userinput></screen>
       <varlistentry id="rtstat">
         <term><command>rtstat</command></term>
         <listitem>
-          <para>Route status utility</para>
+          <para>Utilitário de situação de rota</para>
           <indexterm zone="ch-system-iproute2 rtstat">
             <primary sortas="b-rtstat">rtstat</primary>
           </indexterm>
@@ -259,8 +260,7 @@ rm -fv man/man8/arpd.8</userinput></screen>
       <varlistentry id="ss">
         <term><command>ss</command></term>
         <listitem>
-          <para>Similar to the <command>netstat</command> command; shows active
-          connections</para>
+          <para>Similar ao comando <command>netstat</command>; exibe conexões ativas</para>
           <indexterm zone="ch-system-iproute2 ss">
             <primary sortas="b-ss">ss</primary>
           </indexterm>
@@ -270,20 +270,20 @@ rm -fv man/man8/arpd.8</userinput></screen>
       <varlistentry id="tc">
         <term><command>tc</command></term>
         <listitem>
-          <para>Traffic control for Quality of Service
-          (QoS) and Class of Service (CoS) implementations</para>
+          <para>Controle de Tráfego para implementações de Quality Of Service (QOS) e Class
+Of Service (COS)</para>
 
-          <para><command>tc qdisc</command> allows users to set up the queueing
-          discipline</para>
+          <para><command>tc qdisc</command> permite que usuários(as) configurem a disciplina
+de enfileiramento</para>
 
-          <para><command>tc class</command> allows users to set up classes based
-          on the queueing discipline scheduling</para>
+          <para><command>tc class</command> permite que usuários(as) configurem classes
+baseadas no agendamento da disciplina de enfileiramento</para>
 
-          <para><command>tc filter</command> allows users to set up the QoS/CoS
-          packet filtering</para>
+          <para><command>tc filter</command> permite que usuários(as) configurem a filtragem
+de pacote QoS/CoS</para>
         
-          <para><command>tc monitor</command> can be used to view changes
-          made to Traffic Control in the kernel.</para>
+          <para><command>tc monitor</command> pode ser usado para visualizar mudanças feitas
+para o Traffic Control no núcleo.</para>
           
           <indexterm zone="ch-system-iproute2 ss">
             <primary sortas="b-tc">tc</primary>

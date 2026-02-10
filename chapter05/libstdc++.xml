@@ -9,27 +9,24 @@
   <?dbhtml filename="gcc-libstdc++.html"?>
 
   <sect1info condition="script">
-    <productname>gcc-libstdc++</productname>
-    <productnumber>&gcc-version;</productnumber>
-    <address>&gcc-url;</address>
-  </sect1info>
+<productname>gcc-libstdc++</productname>
+<productnumber>&gcc-version;</productnumber> <address>&gcc-url;</address></sect1info>
 
-  <title>Libstdc++ from GCC-&gcc-version;</title>
+  <title>Libstdc++ oriundo de GCC-&gcc-version;</title>
 
   <indexterm zone="ch-tools-libstdcpp">
     <primary sortas="a-GCC">GCC</primary>
-    <secondary>tools, libstdc++ pass 1</secondary>
+    <secondary>ferramentas, libstdc++ passagem 1</secondary>
   </indexterm>
 
   <sect2 role="package">
     <title/>
 
-    <para>Libstdc++ is the standard C++ library. It is needed
-    to compile C++ code
-    (part of GCC is written in C++), but we had to defer its installation
-    when we built <xref linkend="ch-tools-gcc-pass1"/>
-    because Libstdc++ depends on Glibc, which was not yet available in the target
-    directory.
+    <para>Libstdc++ é a biblioteca padrão C++. Ela é necessária para compilar código
+C++ (parte de GCC é escrito em C++), porém nós tivemos que adiar a
+instalação dela quando construímos <xref linkend="ch-tools-gcc-pass1"/>,
+pois a Libstdc++ depende da Glibc, que ainda não estava disponível no
+diretório alvo.
     </para>
 
     <segmentedlist>
@@ -45,20 +42,20 @@
   </sect2>
 
   <sect2 role="installation">
-    <title>Installation of Target Libstdc++</title>
+    <title>Instalação da Libstdc++ Alvo</title>
 
     <note>
-      <para><application>Libstdc++</application> is part of the GCC sources.
-      You should first unpack the GCC tarball and change to the
-      <filename>gcc-&gcc-version;</filename> directory.</para>
+      <para><application>Libstdc++</application> é parte dos fontes do GCC. Você deveria
+primeiro desempacotar o tarball do GCC e mudar para o diretório
+<filename>gcc-&gcc-version;</filename>.</para>
     </note>
 
-    <para>Create a separate build directory for Libstdc++ and enter it:</para>
+    <para>Crie um diretório separado de construção para a Libstdc++ e entre nele:</para>
 
 <screen><userinput remap="pre">mkdir -v build
-cd       build</userinput></screen>
+cd      build</userinput></screen>
 
-    <para>Prepare Libstdc++ for compilation:</para>
+    <para>Prepare a Libstdc++ para compilação:</para>
 
 <screen><userinput remap="configure">../libstdc++-v3/configure      \
     --host=$LFS_TGT            \
@@ -70,59 +67,57 @@ cd       build</userinput></screen>
     --with-gxx-include-dir=/tools/$LFS_TGT/include/c++/&gcc-version;</userinput></screen>
 
     <variablelist>
-      <title>The meaning of the configure options:</title>
+      <title>O significado das opções do configure:</title>
 
       <varlistentry>
         <term><parameter>--host=...</parameter></term>
         <listitem>
-          <para>Specifies that the cross-compiler we have just built
-          should be used instead of the one in
-          <filename>/usr/bin</filename>.</para>
+          <para>Especifica que o compilador cruzado que nós acabamos de construir deveria
+ser usado em vez daquele em <filename>/usr/bin</filename>.</para>
         </listitem>
       </varlistentry>
 
       <varlistentry>
         <term><parameter>--disable-libstdcxx-pch</parameter></term>
         <listitem>
-          <para>This switch prevents the installation of precompiled
-          include files, which are not needed at this stage.</para>
+          <para>Essa chave evita a instalação de arquivos pré-compilados include, os quais
+não são necessários neste estágio.</para>
         </listitem>
       </varlistentry>
 
       <varlistentry>
         <term><parameter>--with-gxx-include-dir=/tools/$LFS_TGT/include/c++/&gcc-version;</parameter></term>
         <listitem>
-          <para>This specifies the installation directory for include files.
-          Because Libstdc++ is the standard C++ library for LFS, this
-          directory should match the location where the C++ compiler
-          (<command>$LFS_TGT-g++</command>) would search for the
-          standard C++ include files. In a normal build, this information
-          is automatically passed to the Libstdc++ <command>configure</command>
-          options from the top level directory. In our case, this information
-          must be explicitly given.
-          The C++ compiler will prepend the sysroot path
-          <filename class="directory">$LFS</filename> (specified when building
-          GCC-pass1) to the include file search path, so it will actually
-          search in
-          <filename class="directory">$LFS/tools/$LFS_TGT/include/c++/&gcc-version;</filename>.
-          The combination of the <parameter>DESTDIR</parameter>
-          variable (in the <command>make install</command> command below)
-          and this switch causes the headers to be installed there.</para>
+          <para>Isso especifica o diretório de instalação para arquivos include. Por causa
+da Libstdc++ ser a biblioteca padrão C++ para o LFS, esse diretório deveria
+corresponder com o local onde o compilador C++
+(<command>$LFS_TGT-g++</command>) procuraria pelos arquivos padrão include
+C++ . Em uma construção normal, essa informação é automaticamente passada
+para as opções <command>configure</command> da Libstdc++ a partir do
+diretório de nível de topo. Em nosso caso, essa informação precisa ser
+explicitamente dada. O compilador C++ precederá o caminho raiz do sistema
+<filename class="directory">$LFS</filename> (especificado quando da
+construção do GCC passagem 1) para o caminho de pesquisa de arquivo include,
+de forma que ele atualmente pesquisará em <filename
+class="directory">$LFS/tools/$LFS_TGT/include/c++/&gcc-version;</filename>.
+A combinação da variável <parameter>DESTDIR</parameter> (no comando
+<command>make install</command> abaixo) e essa chave causa os cabeçalhos
+serem instalados lá.</para>
         </listitem>
       </varlistentry>
 
     </variablelist>
 
-    <para>Compile Libstdc++ by running:</para>
+    <para>Compile a Libstdc++ executando:</para>
 
 <screen><userinput remap="make">make</userinput></screen>
 
-    <para>Install the library:</para>
+    <para>Instale a biblioteca:</para>
 
 <screen><userinput remap="install">make DESTDIR=$LFS install</userinput></screen>
 
-    <para>Remove the libtool archive files because they are harmful for
-    cross-compilation:</para>
+    <para>Remova os arquivos de arquivamento do libtool, pois eles são danosos para
+compilação cruzada:</para>
 
 <screen><userinput remap="install">rm -v $LFS/usr/lib/lib{stdc++{,exp,fs},supc++}.la</userinput></screen>
 
@@ -131,8 +126,8 @@ cd       build</userinput></screen>
   <sect2 role="content">
     <title/>
 
-    <para>Details on this package are located in
-    <xref linkend="contents-gcc" role="."/></para>
+    <para>Detalhes acerca deste pacote estão localizados na <xref
+linkend="contents-gcc" role="."/></para>
 
   </sect2>
 

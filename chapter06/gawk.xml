@@ -9,16 +9,14 @@
   <?dbhtml filename="gawk.html"?>
 
   <sect1info condition="script">
-    <productname>gawk</productname>
-    <productnumber>&gawk-version;</productnumber>
-    <address>&gawk-url;</address>
-  </sect1info>
+<productname>gawk</productname>
+<productnumber>&gawk-version;</productnumber> <address>&gawk-url;</address></sect1info>
 
   <title>Gawk-&gawk-version;</title>
 
   <indexterm zone="ch-tools-gawk">
     <primary sortas="a-Gawk">Gawk</primary>
-    <secondary>tools</secondary>
+    <secondary>ferramentas</secondary>
   </indexterm>
 
   <sect2 role="package">
@@ -41,23 +39,23 @@
   </sect2>
 
   <sect2 role="installation">
-    <title>Installation of Gawk</title>
+    <title>Instalação do Gawk</title>
 
-    <para>First, ensure some unneeded files are not installed:</para>
+    <para>Primeiro, garanta que alguns arquivos desnecessários não sejam instalados:</para>
 
 <screen><userinput remap="pre">sed -i 's/extras//' Makefile.in</userinput></screen>
 
-    <para>Prepare Gawk for compilation:</para>
+    <para>Prepare o Gawk para compilação:</para>
 
 <screen><userinput remap="configure">./configure --prefix=/usr   \
             --host=$LFS_TGT \
             --build=$(build-aux/config.guess)</userinput></screen>
 
-    <para>Compile the package:</para>
+    <para>Compile o pacote:</para>
 
 <screen><userinput remap="make">make</userinput></screen>
 
-    <para>Install the package:</para>
+    <para>Instale o pacote:</para>
 
 <screen><userinput remap="install">make DESTDIR=$LFS install</userinput></screen>
 
@@ -66,8 +64,8 @@
   <sect2 role="content">
     <title/>
 
-    <para>Details on this package are located in
-    <xref linkend="contents-gawk" role="."/></para>
+    <para>Detalhes acerca deste pacote estão localizados na <xref
+linkend="contents-gawk" role="."/></para>
 
   </sect2>
 

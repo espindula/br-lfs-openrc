@@ -8,13 +8,13 @@
 <sect1 id="ch-finish-getcounted">
   <?dbhtml filename="getcounted.html"?>
 
-  <title>Get Counted</title>
+  <title>Seja Contado(a)</title>
 
-  <para>Now that you have finished the book, do you want to be counted as an
-  LFS user? Head over to <ulink url="&lfs-root;cgi-bin/lfscounter.php"/> and
-  register as an LFS user by entering your name and the first LFS version you
-  have used.</para>
+  <para>Agora que você terminou o livro, você quer ser contado(a) como um(a)
+usuário(a) do LFS? Vá para <ulink url="&lfs-root;cgi-bin/lfscounter.php"/> e
+registre-se como um(a) usuário(a) do LFS fornecendo seu nome e a primeira
+versão do LFS que você usou.</para>
 
-  <para>Let's reboot into LFS now.</para>
+  <para>Vamos reinicializar no LFS agora.</para>
 
 </sect1>

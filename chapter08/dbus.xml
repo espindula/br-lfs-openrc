@@ -9,10 +9,8 @@
   <?dbhtml filename="dbus.html"?>
 
   <sect1info condition="script">
-    <productname>dbus</productname>
-    <productnumber>&dbus-version;</productnumber>
-    <address>&dbus-url;</address>
-  </sect1info>
+<productname>dbus</productname>
+<productnumber>&dbus-version;</productnumber> <address>&dbus-url;</address></sect1info>
 
   <title>D-Bus-&dbus-version;</title>
 
@@ -23,13 +21,15 @@
   <sect2 role="package">
     <title/>
 
-    <para>D-Bus is a message bus system, a simple way for applications to talk
-    to one another. D-Bus supplies both a system daemon (for events such as
-    "new hardware device added" or "printer queue changed") and a
-    per-user-login-session daemon (for general IPC needs among user
-    applications). Also, the message bus is built on top of a general one-to-one
-    message passing framework, which can be used by any two applications to
-    communicate directly (without going through the message bus daemon).</para>
+    <para>D-Bus é um sistema de barramento de mensagem, uma maneira simples para
+aplicativos conversarem entre si. D-Bus fornece ambos um processo de segundo
+plano de sistema (para eventos tais como "novo dispositivo de hardware
+adicionado" ou "fila de impressora mudou") e um processo de segundo plano de
+sessão de login de usuário(a) (para necessidades gerais de IPC entre
+aplicativos de usuário(a)). Também, o barramento de mensagem é construído no
+topo de uma estrutura geral de envio de mensagem um-a-um, a qual pode ser
+usada por quaisquer dois aplicativos para se comunicarem diretamente (sem
+transitar pelo processo de segundo plano do barramento de mensagem).</para>
 
     <segmentedlist>
       <segtitle>&buildtime;</segtitle>
@@ -44,9 +44,9 @@
   </sect2>
 
   <sect2 role="installation">
-    <title>Installation of D-Bus</title>
+    <title>Instalação do D-Bus</title>
 
-    <para>Prepare D-Bus for compilation:</para>
+    <para>Prepare D-Bus para compilação:</para>
 
 <screen><userinput remap="configure">mkdir build
 cd    build
@@ -54,72 +54,70 @@ cd    build
 meson setup --prefix=/usr --buildtype=release --wrap-mode=nofallback ..</userinput></screen>
 
     <variablelist>
-      <title>The meaning of the meson options:</title>
+      <title>O significado das opções do meson:</title>
 
       <varlistentry>
         <term>
           <parameter>--wrap-mode=nofallback</parameter>
         </term>
         <listitem>
-          <para>This switch prevents meson from attempting to download a copy
-          of the Glib package for the tests.</para>
+          <para>Essa chave impede que o meson tente baixar uma cópia do pacote Glib para os
+testes.</para>
         </listitem>
       </varlistentry>
 
     </variablelist>
 
-    <para>Compile the package:</para>
+    <para>Compile o pacote:</para>
 
 <screen><userinput remap="make">ninja</userinput></screen>
 
-    <para>To test the results, issue:</para>
+    <para>Para testar os resultados, emita:</para>
 
 <screen><userinput remap="test">ninja test</userinput></screen>
 
-    <para>Many tests are disabled because they require additional
-    packages that are not included in LFS. Instructions for running the
-    comprehensive test suite can be found in
-    <ulink url="&blfs-book;general/dbus.html">the BLFS book</ulink>.</para>
+    <para>Muitos testes são desabilitados, pois eles exigem pacotes adicionais que não
+estão inclusos no LFS. Instruções para executar a suíte completa de teste
+podem ser encontradas no <ulink url="&blfs-book;general/dbus.html">livro
+BLFS</ulink>.</para>
 
-    <para>Install the package:</para>
+    <para>Instale o pacote:</para>
 
 <screen><userinput remap="install">ninja install</userinput></screen>
 
-    <para>Create a symlink so that D-Bus and systemd can use the same
-    <filename>machine-id</filename> file:</para>
+    <para>Crie um link simbólico, de forma que D-Bus e systemd possam usar o mesmo
+arquivo <filename>machine-id</filename>:</para>
 
 <screen><userinput remap="install">ln -sfv /etc/machine-id /var/lib/dbus</userinput></screen>
 
   </sect2>
 
   <sect2 id="contents-dbus" role="content">
-    <title>Contents of D-Bus</title>
+    <title>Conteúdo do D-Bus</title>
 
     <segmentedlist>
-      <segtitle>Installed programs</segtitle>
-      <segtitle>Installed libraries</segtitle>
-      <segtitle>Installed directories</segtitle>
+      <segtitle>Programas instalados</segtitle>
+      <segtitle>Bibliotecas instaladas</segtitle>
+      <segtitle>Diretórios instalados</segtitle>
 
       <seglistitem>
         <seg>dbus-cleanup-sockets, dbus-daemon, dbus-launch, dbus-monitor,
-        dbus-run-session, dbus-send, dbus-test-tool,
-        dbus-update-activation-environment, and dbus-uuidgen</seg>
+dbus-run-session, dbus-send, dbus-test-tool,
+dbus-update-activation-environment e dbus-uuidgen</seg>
         <seg>libdbus-1.so</seg>
-        <seg>/etc/dbus-1, /usr/include/dbus-1.0, /usr/lib/dbus-1.0,
-        /usr/share/dbus-1, /usr/share/doc/dbus-&dbus-version;,
-        and /var/lib/dbus</seg>
+        <seg>/etc/dbus-1, /usr/include/dbus-1.0, /usr/lib/dbus-1.0, /usr/share/dbus-1,
+/usr/share/doc/dbus-&dbus-version; e /var/lib/dbus</seg>
       </seglistitem>
     </segmentedlist>
 
     <variablelist>
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
+      <bridgehead renderas="sect3">Descrições Curtas</bridgehead>
+      <?dbfo list-presentation="list"?> <?dbhtml list-presentation="table"?>
 
       <varlistentry id="dbus-cleanup-sockets">
         <term><command>dbus-cleanup-sockets</command></term>
         <listitem>
-          <para>is used to remove leftover sockets in a directory</para>
+          <para>é usado para remover soquetes restantes em um diretório</para>
           <indexterm zone="ch-system-dbus dbus-cleanup-sockets">
             <primary sortas="b-dbus-cleanup-sockets">dbus-cleanup-sockets</primary>
           </indexterm>
@@ -129,7 +127,7 @@ meson setup --prefix=/usr --buildtype=release --wrap-mode=nofallback ..</userinp
       <varlistentry id="dbus-daemon">
         <term><command>dbus-daemon</command></term>
         <listitem>
-          <para>is the D-Bus message bus daemon</para>
+          <para>É o processo de segundo plano do barramento de mensagem do D-Bus</para>
           <indexterm zone="ch-system-dbus dbus-daemon">
             <primary sortas="b-dbus-daemon">dbus-daemon</primary>
           </indexterm>
@@ -139,8 +137,8 @@ meson setup --prefix=/usr --buildtype=release --wrap-mode=nofallback ..</userinp
       <varlistentry id="dbus-launch">
         <term><command>dbus-launch</command></term>
         <listitem>
-          <para>starts <command>dbus-daemon</command> from a shell
-          script</para>
+          <para>inicia <command>dbus-daemon</command> a partir de um conjunto de comandos
+sequenciais de shell</para>
           <indexterm zone="ch-system-dbus dbus-launch">
             <primary sortas="b-dbus-launch">dbus-launch</primary>
           </indexterm>
@@ -150,7 +148,8 @@ meson setup --prefix=/usr --buildtype=release --wrap-mode=nofallback ..</userinp
       <varlistentry id="dbus-monitor">
         <term><command>dbus-monitor</command></term>
         <listitem>
-          <para>monitors messages passing through a D-Bus message bus</para>
+          <para>monitora mensagens transitando ao longo de um barramento de mensagem do
+D-Bus</para>
           <indexterm zone="ch-system-dbus dbus-monitor">
             <primary sortas="b-dbus-monitor">dbus-monitor</primary>
           </indexterm>
@@ -160,9 +159,9 @@ meson setup --prefix=/usr --buildtype=release --wrap-mode=nofallback ..</userinp
       <varlistentry id="dbus-run-session">
         <term><command>dbus-run-session</command></term>
         <listitem>
-          <para>starts a session bus instance of <command>dbus-daemon</command>
-          from a shell script and starts a specified program in that
-          session</para>
+          <para>inicia uma instância de barramento de sessão do
+<command>dbus-daemon</command> a partir de um conjunto de comandos
+sequenciais de shell e inicia um programa especificado naquela sessão</para>
           <indexterm zone="ch-system-dbus dbus-run-session">
             <primary sortas="b-dbus-run-session">dbus-run-session</primary>
           </indexterm>
@@ -172,7 +171,7 @@ meson setup --prefix=/usr --buildtype=release --wrap-mode=nofallback ..</userinp
       <varlistentry id="dbus-send">
         <term><command>dbus-send</command></term>
         <listitem>
-          <para>sends a message to a D-Bus message bus</para>
+          <para>envia uma mensagem para um barramento de mensagem do D-Bus</para>
           <indexterm zone="ch-system-dbus dbus-send">
             <primary sortas="b-dbus-send">dbus-send</primary>
           </indexterm>
@@ -182,20 +181,22 @@ meson setup --prefix=/usr --buildtype=release --wrap-mode=nofallback ..</userinp
       <varlistentry id="dbus-test-tool">
         <term><command>dbus-test-tool</command></term>
         <listitem>
-          <para>is a tool to help packages test
-          <application>D-Bus</application></para>
+          <para>é uma ferramenta para auxiliar pacotes a testarem o
+<application>D-Bus</application></para>
           <indexterm zone="ch-system-dbus dbus-test-tool">
             <primary sortas="b-dbus-test-tool">dbus-test-tool</primary>
           </indexterm>
         </listitem>
       </varlistentry>
 
-      <!-- This is a very long command name. Excuse the long <primary> statement below. -->
-      <varlistentry id="dbus-update-activation-environment">
+      
+      <!-- This is a very long command name. Excuse the long <primary>
+ statement below. -->
+<varlistentry id="dbus-update-activation-environment">
         <term><command>dbus-update-activation-environment</command></term>
         <listitem>
-          <para>updates environment variables that will be set for
-          <application>D-Bus</application> session services</para>
+          <para>atualiza variáveis de ambiente que serão configuradas para serviços de
+sessão do <application>D-Bus</application></para>
           <indexterm zone="ch-system-dbus dbus-update-activation-environment">
             <primary sortas="b-dbus-update-activation-environment">dbus-update-activation-environment</primary>
           </indexterm>
@@ -205,7 +206,7 @@ meson setup --prefix=/usr --buildtype=release --wrap-mode=nofallback ..</userinp
       <varlistentry id="dbus-uuidgen">
         <term><command>dbus-uuidgen</command></term>
         <listitem>
-          <para>Generates a universally unique ID</para>
+          <para>Gera um ID único universalmente</para>
           <indexterm zone="ch-system-dbus dbus-uuidgen">
             <primary sortas="b-dbus-uuidgen">dbus-uuidgen</primary>
           </indexterm>
@@ -215,8 +216,8 @@ meson setup --prefix=/usr --buildtype=release --wrap-mode=nofallback ..</userinp
       <varlistentry id="libdbus-1">
         <term><filename class="libraryfile">libdbus-1</filename></term>
         <listitem>
-          <para>Contains API functions used to communicate with the D-Bus
-          message bus</para>
+          <para>Contém funções de API usadas para comunicar com o barramento de mensagem do
+D-Bus</para>
           <indexterm zone="ch-system-dbus libdbus-1">
             <primary sortas="c-libdbus-1">libdbus-1</primary>
           </indexterm>

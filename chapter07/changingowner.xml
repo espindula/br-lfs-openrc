@@ -8,30 +8,31 @@
 <sect1 id="ch-tools-changingowner">
   <?dbhtml filename="changingowner.html"?>
 
-  <title>Changing Ownership</title>
+  <title>Mudando Propriedade</title>
 
   <note>
-    <para>The commands in the remainder of this book must be performed while
-    logged in as user <systemitem class="username">root</systemitem> and no
-    longer as user <systemitem class="username">lfs</systemitem>. Also, double
-    check that <envar>$LFS</envar> is set in <systemitem
-    class="username">root</systemitem>'s environment.</para>
+    <para>Os comandos no resto deste livro precisam ser realizados enquanto logado(a)
+como usuário(a) <systemitem class="username">root</systemitem> e não mais
+como usuário(a) <systemitem class="username">lfs</systemitem>. Também,
+verifique duplamente se <envar>$LFS</envar> está configurada no ambiente
+do(a) <systemitem class="username">root</systemitem>.</para>
   </note>
 
-  <para>Currently, the whole directory hierarchy in <filename
-  class="directory">$LFS</filename>
-  is owned by the user <systemitem class="username">lfs</systemitem>, a user
-  that exists only on the host system. If the directories and files under <filename
-  class="directory">$LFS</filename> are kept as they are, they will be
-  owned by a user ID without a corresponding account. This is dangerous because
-  a user account created later could get this same user ID and would own all
-  the files under <filename class="directory">$LFS</filename>, thus exposing
-  these files to possible malicious manipulation.</para>
+  <para>Atualmente, a hierarquia inteira de diretórios em <filename
+class="directory">$LFS</filename> é titularizada pelo(a) usuário(a)
+<systemitem class="username">lfs</systemitem>, um(a) usuário(a) que existe
+somente no sistema anfitrião. Se os diretórios e arquivos sob <filename
+class="directory">$LFS</filename> forem mantidos como estão, eles serão
+titularizados por um ID de usuário(a) sem uma conta correspondente. Isso é
+perigoso, pois uma conta de usuário(a) criada posteriormente poderia obter
+esse mesmo ID de usuário(a) e titularizaria todos os arquivos sob <filename
+class="directory">$LFS</filename>, dessa forma expondo esses arquivos a
+possível manipulação maliciosa.</para>
 
-  <para>To address this issue, change the
-  ownership of the <filename class="directory">$LFS/*</filename> directories to
-  user <systemitem class="username">root</systemitem> by running the following
-  command:</para>
+  <para>Para endereçar esse problema, mude a titularidade de propriedade dos
+diretórios <filename class="directory">$LFS/*</filename> para usuário(a)
+<systemitem class="username">root</systemitem> executando o seguinte
+comando:</para>
 
 <screen><userinput>chown --from &lfs-username; -R root:root $LFS/{usr,var,etc,tools}
 case $(uname -m) in

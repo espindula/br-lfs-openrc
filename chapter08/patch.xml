@@ -9,10 +9,8 @@
   <?dbhtml filename="patch.html"?>
 
   <sect1info condition="script">
-    <productname>patch</productname>
-    <productnumber>&patch-version;</productnumber>
-    <address>&patch-url;</address>
-  </sect1info>
+<productname>patch</productname>
+<productnumber>&patch-version;</productnumber> <address>&patch-url;</address></sect1info>
 
   <title>Patch-&patch-version;</title>
 
@@ -23,9 +21,9 @@
   <sect2 role="package">
     <title/>
 
-    <para>The Patch package contains a program for modifying or creating files
-    by applying a <quote>patch</quote> file typically created by the
-    <command>diff</command> program.</para>
+    <para>O pacote Patch contém um aplicativo para modificar ou criar arquivos por
+aplicação de um arquivo <quote>remendo</quote> tipicamente criado pelo
+aplicativo <command>diff</command>.</para>
 
     <segmentedlist>
       <segtitle>&buildtime;</segtitle>
@@ -40,31 +38,31 @@
   </sect2>
 
   <sect2 role="installation">
-    <title>Installation of Patch</title>
+    <title>Instalação do Patch</title>
 
-    <para>Prepare Patch for compilation:</para>
+    <para>Prepare o Patch para compilação:</para>
 
 <screen><userinput remap="configure">./configure --prefix=/usr</userinput></screen>
 
-    <para>Compile the package:</para>
+    <para>Compile o pacote:</para>
 
 <screen><userinput remap="make">make</userinput></screen>
 
-    <para>To test the results, issue:</para>
+    <para>Para testar os resultados, emita:</para>
 
 <screen><userinput remap="test">make check</userinput></screen>
 
-    <para>Install the package:</para>
+    <para>Instale o pacote:</para>
 
 <screen><userinput remap="install">make install</userinput></screen>
 
   </sect2>
 
   <sect2 id="contents-patch" role="content">
-    <title>Contents of Patch</title>
+    <title>Conteúdo do Patch</title>
 
     <segmentedlist>
-      <segtitle>Installed program</segtitle>
+      <segtitle>Aplicativo instalado</segtitle>
 
       <seglistitem>
         <seg>patch</seg>
@@ -72,17 +70,16 @@
     </segmentedlist>
 
     <variablelist>
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
+      <bridgehead renderas="sect3">Descrições Curtas</bridgehead>
+      <?dbfo list-presentation="list"?> <?dbhtml list-presentation="table"?>
 
       <varlistentry id="patch">
         <term><command>patch</command></term>
         <listitem>
-          <para>Modifies files according to a patch file (A patch file is
-          normally a difference listing created with the <command>diff</command>
-          program. By applying these differences to the original files,
-          <command>patch</command> creates the patched versions.)</para>
+          <para>Modifica arquivos de acordo com um arquivo de remendo (Um arquivo de remendo
+normalmente é uma listagem de diferenças criada com o aplicativo
+<command>diff</command>. Aplicando essas diferenças aos arquivos originais,
+<command>patch</command> cria as versões remendadas).</para>
           <indexterm zone="ch-system-patch patch">
             <primary sortas="b-patch">patch</primary>
           </indexterm>

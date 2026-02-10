@@ -9,10 +9,8 @@
   <?dbhtml filename="pcre2.html"?>
 
   <sect1info condition="script">
-    <productname>pcre2</productname>
-    <productnumber>&pcre2-version;</productnumber>
-    <address>&pcre2-url;</address>
-  </sect1info>
+<productname>pcre2</productname>
+<productnumber>&pcre2-version;</productnumber> <address>&pcre2-url;</address></sect1info>
 
   <title>Pcre2-&pcre2-version;</title>
 
@@ -23,8 +21,8 @@
   <sect2 role="package">
     <title/>
 
-    <para>The pcre2 package contains a new generation of the Perl Compatible 
-    Regular Expression libraries.</para>
+    <para>O pacote pcre2 contém uma nova geração das bibliotecas Perl Compatible
+Regular Expression.</para>
 
     <segmentedlist>
       <segtitle>&buildtime;</segtitle>
@@ -39,9 +37,9 @@
   </sect2>
 
   <sect2 role="installation">
-    <title>Installation of Pcre2</title>
+    <title>Instalação do Pcre2</title>
 
-    <para>Prepare pcre2 for compilation:</para>
+    <para>Prepare pcre2 para compilação:</para>
 
 <screen><userinput remap="configure">./configure --prefix=/usr                       \
             --docdir=/usr/share/doc/pcre2-&pcre2-version; \
@@ -55,14 +53,14 @@
             --disable-static</userinput></screen>
 
     <variablelist>
-      <title>The meaning of the new configure options:</title>
+      <title>O significado das novas opções de configuração:</title>
 
       <varlistentry>
         <term><parameter>--enable-unicode</parameter></term>
         <listitem>
           <para>
-            This option enables Unicode support and includes the functions for
-            handling UTF-8/16/32 character strings in the library. 
+            Essa opção habilita o suporte Unicode e inclui as funções para manusear
+sequências de caracteres UTF-8/16/32 na biblioteca. 
           </para>
         </listitem>
       </varlistentry>
@@ -71,8 +69,8 @@
         <term><parameter>--enable-jit</parameter></term>
         <listitem>
           <para>
-            This option enables Just-in-time compiling, which can greatly
-            speed up pattern matching.  
+            Essa opção habilita compilação just-in-time, o que pode acelerar bastante a
+correspondência de padrões.  
           </para>
         </listitem>
       </varlistentry>
@@ -81,7 +79,7 @@
         <term><parameter>--enable-pcre2-16</parameter></term>
         <listitem>
           <para>
-            This option enables 16 bit character support. 
+            Essa opção habilita suporte a caracteres de 16 bits. 
           </para>
         </listitem>
       </varlistentry>
@@ -90,7 +88,7 @@
         <term><parameter>--enable-pcre2-32</parameter></term>
         <listitem>
           <para>
-            This option enables 32 bit character support. 
+            Essa opção habilita suporte a caracteres de 32 bits. 
           </para>
         </listitem>
       </varlistentry>
@@ -99,7 +97,8 @@
         <term><parameter>--enable-pcre2grep-libz</parameter></term>
         <listitem>
           <para>
-            This option adds support for reading .gz compressed files to pcre2grep.
+            Essa opção adiciona suporte para leitura de arquivos comprimidos .gz no
+pcre2grep.
           </para>
         </listitem>
       </varlistentry>
@@ -108,7 +107,8 @@
         <term><parameter>--enable-pcre2grep-libbz2</parameter></term>
         <listitem>
           <para>
-            This option adds support for reading .bz2 compressed files to pcre2grep.
+            Essa opção adiciona suporte para leitura de arquivos comprimidos .bz2 ao
+pcre2grep.
           </para>
         </listitem>
       </varlistentry>
@@ -117,22 +117,23 @@
         <term><parameter>--enable-pcre2test-libreadline</parameter></term>
         <listitem>
           <para>
-            This option adds line editing and history features to the pcre2test program.
+            Essa opção adiciona recursos de edição de linha e de histórico ao programa
+pcre2test.
           </para>
         </listitem>
       </varlistentry>
 
     </variablelist>
 
-    <para>Compile the package:</para>
+    <para>Compile o pacote:</para>
 
 <screen><userinput remap="make">make</userinput></screen>
 
-    <para>To test the results, issue:</para>
+    <para>Para testar os resultados, emita:</para>
 
 <screen><userinput remap="test">make check</userinput></screen>
 
-    <para>Install the package:</para>
+    <para>Instale o pacote:</para>
 
 <screen><userinput remap="install">make install</userinput></screen>
 
@@ -140,28 +141,26 @@
 
 
   <sect2 id="contents-pcre2" role="content">
-    <title>Contents of Pcre2</title>
+    <title>Conteúdo do Pcre2</title>
 
     <segmentedlist>
-      <segtitle>Installed programs</segtitle>
-      <segtitle>Installed library</segtitle>
+      <segtitle>Programas instalados</segtitle>
+      <segtitle>Biblioteca instalada</segtitle>
 
       <seglistitem>
-        <seg>pcre2grep and pcre2test</seg>
-        <seg>libpcre2-8.so, libpcre2-16.so, libpcre2-32.so, and libpcre2-posix.so</seg>
+        <seg>pcre2grep e pcre2test</seg>
+        <seg>libpcre2-8.so, libpcre2-16.so, libpcre2-32.so e libpcre2-posix.so</seg>
       </seglistitem>
     </segmentedlist>
 
     <variablelist>
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
+      <bridgehead renderas="sect3">Descrições Curtas</bridgehead>
+      <?dbfo list-presentation="list"?> <?dbhtml list-presentation="table"?>
 
       <varlistentry id="pcre2grep">
         <term><command>pcre2grep</command></term>
         <listitem>
-          <para>is a version of grep that understands Perl compatible regular 
-          expressions</para>
+          <para>é uma versão do grep que entende expressões regulares compatíveis com Perl</para>
           <indexterm zone="ch-system-pcre2 pcre2grep">
             <primary sortas="b-pcre2grep">pcre2grep</primary>
           </indexterm>
@@ -171,7 +170,7 @@
       <varlistentry id="pcre2test">
         <term><command>pcre2test</command></term>
         <listitem>
-          <para>can test a Perl compatible regular expression</para>
+          <para>consegue testar uma expressão regular compatível com Perl</para>
           <indexterm zone="ch-system-pcre2 pcre2test">
             <primary sortas="b-pcre2test">pcre2test</primary>
           </indexterm>

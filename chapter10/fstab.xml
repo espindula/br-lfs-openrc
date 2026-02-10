@@ -8,68 +8,76 @@
 <sect1 id="ch-bootable-fstab">
   <?dbhtml filename="fstab.html"?>
 
-  <title>Creating the /etc/fstab File</title>
+  <title>Criando o Arquivo /etc/fstab</title>
 
   <indexterm zone="ch-bootable-fstab">
     <primary sortas="e-/etc/fstab">/etc/fstab</primary>
   </indexterm>
 
-  <para>The <filename>/etc/fstab</filename> file is used by some programs to
-  determine where file systems are to be mounted by default, in which order, and
-  which must be checked (for integrity errors) prior to mounting. Create a new
-  file systems table like this:</para>
+  <para>O arquivo <filename>/etc/fstab</filename> é usado por alguns aplicativos
+para determinar onde sistemas de arquivos são para serem montados por
+padrão; em qual ordem; e quais precisam ser verificados (para erros de
+integridade) antes da montagem. Crie uma nova tabela de sistemas de arquivos
+como esta:</para>
 
 <screen><userinput>cat &gt; /etc/fstab &lt;&lt; "EOF"
-<literal># Begin /etc/fstab
+<literal># Início de /etc/fstab
 
-# file system  mount-point  type     options             dump  fsck
-#                                                              order
+# sistema de arquivos ponto de montagem tipo opções despejo ordem do
+# fsck
 
 /dev/<replaceable>&lt;xxx&gt;</replaceable>     /            <replaceable>&lt;fff&gt;</replaceable>    defaults            1     1
 /dev/<replaceable>&lt;yyy&gt;</replaceable>     swap         swap     pri=1               0     0
 
-# End /etc/fstab</literal>
+# Fim do /etc/fstab</literal>
 EOF</userinput></screen>
 
-  <para>Replace <replaceable>&lt;xxx&gt;</replaceable>,
-  <replaceable>&lt;yyy&gt;</replaceable>, and <replaceable>&lt;fff&gt;</replaceable>
-  with the values appropriate for the system, for example, <filename
-  class="partition">sda2</filename>, <filename
-  class="partition">sda5</filename>, and <systemitem
-  class="filesystem">ext4</systemitem>. For details on the six
-  fields in this file, see <ulink role='man' url='&man;fstab.5'>fstab(5)</ulink>.</para>
+  <para>Substitua &quot;<replaceable>&lt;xxx&gt;</replaceable>&quot;;
+&quot;<replaceable>&lt;yyy&gt;</replaceable>&quot;; e
+&quot;<replaceable>&lt;fff&gt;</replaceable>&quot; pelos valores apropriados
+para o sistema, por exemplo, &quot;<filename
+class="partition">sda2</filename>&quot;; &quot;<filename
+class="partition">sda5</filename>&quot;; e &quot;<systemitem
+class="filesystem">ext4</systemitem>&quot;. Para detalhes a respeito dos
+seis campos nesse arquivo, veja-se &quot;<ulink role='man'
+url='&man;fstab.5'>fstab(5)</ulink>&quot;.</para>
 
-  <para>Filesystems with MS-DOS or Windows origin (i.e. vfat, ntfs, smbfs,
-  cifs, iso9660, udf) need a special option, utf8, in order for non-ASCII
-  characters in file names to be interpreted properly. For non-UTF-8 locales,
-  the value of <option>iocharset</option> should be set to be the same as the
-  character set of the locale, adjusted in such a way that the kernel
-  understands it.  This works if the relevant character set definition (found
-  under File systems -&gt; Native Language Support when configuring the kernel)
-  has been compiled into the kernel or built as a module. However, if the
-  character set of the locale is UTF-8, the corresponding option
-  <option>iocharset=utf8</option> would make the file system case sensitive. To
-  fix this, use the special option <option>utf8</option> instead of
-  <option>iocharset=utf8</option>, for UTF-8 locales. The
-  <quote>codepage</quote> option is also needed for vfat and smbfs filesystems.
-  It should be set to the codepage number used under MS-DOS in your country.
-  For example, in order to mount USB flash drives, a ru_RU.KOI8-R user would
-  need the following in the options portion of its mount line in
-  <filename>/etc/fstab</filename>:</para>
+  <para>Sistemas de arquivos com origem MS-DOS ou Windows (isto é, vfat, ntfs,
+smbfs, cifs, iso9660, udf) precisam de uma opção especial, utf8, para a
+finalidade de caracteres não ASCII nos nomes de arquivo serem interpretados
+corretamente. Para locales não UTF-8, o valor de <option>iocharset</option>
+deveria ser configurado para ser o mesmo que o conjunto de caracteres do
+locale, ajustado de tal maneira que o núcleo o entenda. Isso funciona se a
+definição relevante de conjunto de caracteres (encontrada sob File systems
+-&gt; Native Language Support quando da configuração do núcleo) tenha sido
+compilada no núcleo ou construída como um módulo. Entretanto, se o conjunto
+de caracteres do locale for UTF-8, [então] a correspondente opção
+<option>iocharset=utf8</option> tornaria o sistema de arquivos sensível a
+maiúsculas e minúsculas. Para corrigir isso, use a opção especial
+<option>utf8</option> em vez de <option>iocharset=utf8</option>, para
+locales UTF-8. A opção <quote>codepage</quote> também é necessária para
+sistemas de arquivos vfat e smbfs. Ela deveria ser configurada para o número
+da página de código usada sob MS-DOS em seu país. Por exemplo, para a
+finalidade de montar unidades USB flash, um(a) usuário(a) do ru_RU.KOI8-R
+precisaria do seguinte na porção de opções da linha mount dele em
+<filename>/etc/fstab</filename>:</para>
 
 <screen><literal>noauto,user,quiet,showexec,codepage=866,iocharset=koi8r</literal></screen>
 
-  <para>The corresponding options fragment for ru_RU.UTF-8 users is:</para>
+  <para>O correspondente fragmento das opções para usuários(as) do ru_RU.UTF-8 é:</para>
 
 <screen><literal>noauto,user,quiet,showexec,codepage=866,utf8</literal></screen>
 
-  <para>Note that using <option>iocharset</option> is the default for
-  <literal>iso8859-1</literal> (which keeps the file system case
-  insensitive), and the <option>utf8</option> option tells
-  the kernel to convert the file names using UTF-8 so they can be
-  interpreted in the UTF-8 locale.</para>
+  <para>Observe que usar <option>iocharset</option> é o padrão para
+<literal>iso8859-1</literal> (a qual mantém o sistema de arquivos insensível
+a maiúsculas e minúsculas) e a opção <option>utf8</option> diz ao núcleo
+para converter os nomes de arquivo usando UTF-8, de forma que eles podem ser
+interpretados no locale UTF-8.</para>
+
+  
 
   <!--note>
+
     <para>In the latter case, the kernel emits the following message:</para>
 
 <screen><computeroutput>FAT: utf8 is not a recommended IO charset for FAT filesystems,
@@ -79,20 +87,22 @@ EOF</userinput></screen>
     of the <quote>iocharset</quote> option result in wrong display of filenames in
     UTF-8 locales.</para>
   </note-->
+<para>É possível também especificar os valores padrão de página de código e
+iocharset para alguns sistemas de arquivos durante a configuração do
+núcleo. Os parâmetros relevantes são chamados de <quote>Default NLS
+Option</quote> (<option>CONFIG_NLS_DEFAULT</option>); <quote>Default Remote
+NLS Option</quote> (<option>CONFIG_SMB_NLS_DEFAULT</option>); <quote>Default
+codepage for FAT</quote> (<option>CONFIG_FAT_DEFAULT_CODEPAGE</option>); e
+<quote>Default iocharset for FAT</quote>
+(<option>CONFIG_FAT_DEFAULT_IOCHARSET</option>). Não existe maneira de
+especificar essas configurações para o sistema de arquivos NTFS em tempo de
+compilação do núcleo.</para>
 
-  <para>It is also possible to specify default codepage and iocharset values for
-  some filesystems during kernel configuration. The relevant parameters
-  are named
-  <quote>Default NLS Option</quote> (<option>CONFIG_NLS_DEFAULT)</option>,
-  <quote>Default Remote NLS Option</quote> (<option>CONFIG_SMB_NLS_DEFAULT</option>),
-  <quote>Default codepage for FAT</quote> (<option>CONFIG_FAT_DEFAULT_CODEPAGE</option>), and
-  <quote>Default iocharset for FAT</quote> (<option>CONFIG_FAT_DEFAULT_IOCHARSET</option>).
-  There is no way to specify these settings for the
-  ntfs filesystem at kernel compilation time.</para>
 <!--
   Obsolete since 2011.  barrier is the default for both ext3 and ext4.
 
-  <para>It is possible to make the ext3 filesystem reliable across power
+  <para>
+It is possible to make the ext3 filesystem reliable across power
   failures for some hard disk types.  To do this, add the
   <option>barrier=1</option> mount option to the appropriate entry in
   <filename>/etc/fstab</filename>.  To check if the disk drive supports

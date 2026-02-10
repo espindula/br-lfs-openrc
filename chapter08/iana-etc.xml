@@ -9,10 +9,8 @@
   <?dbhtml filename="iana-etc.html"?>
 
   <sect1info condition="script">
-    <productname>iana-etc</productname>
-    <productnumber>&iana-etc-version;</productnumber>
-    <address>&iana-etc-url;</address>
-  </sect1info>
+<productname>iana-etc</productname>
+<productnumber>&iana-etc-version;</productnumber> <address>&iana-etc-url;</address></sect1info>
 
   <title>Iana-Etc-&iana-etc-version;</title>
 
@@ -23,8 +21,8 @@
   <sect2 role="package">
     <title/>
 
-    <para>The Iana-Etc package provides data for network services and
-    protocols.</para>
+    <para>O pacote Iana-Etc fornece dados para serviços e protocolos de rede de
+comunicação.</para>
 
     <segmentedlist>
       <segtitle>&buildtime;</segtitle>
@@ -39,35 +37,34 @@
   </sect2>
 
   <sect2 role="installation">
-    <title>Installation of Iana-Etc</title>
+    <title>Instalação do Iana-Etc</title>
 
-    <para>For this package, we only need to copy the files into place:</para>
+    <para>Para esse pacote, nós precisamos somente copiar os arquivos para o lugar:</para>
 
 <screen><userinput remap="install">cp -v services protocols /etc</userinput></screen>
 
   </sect2>
 
   <sect2 id="contents-iana-etc" role="content">
-    <title>Contents of Iana-Etc</title>
+    <title>Conteúdo do Iana-Etc</title>
 
     <segmentedlist>
-      <segtitle>Installed files</segtitle>
+      <segtitle>Arquivos instalados</segtitle>
 
       <seglistitem>
-        <seg>/etc/protocols and /etc/services</seg>
+        <seg>/etc/protocols e /etc/services</seg>
       </seglistitem>
     </segmentedlist>
 
     <variablelist>
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
+      <bridgehead renderas="sect3">Descrições Curtas</bridgehead>
+      <?dbfo list-presentation="list"?> <?dbhtml list-presentation="table"?>
 
       <varlistentry id="protocols">
         <term><filename>/etc/protocols</filename></term>
         <listitem>
-          <para>Describes the various DARPA Internet protocols that are
-          available from the TCP/IP subsystem</para>
+          <para>Descreve os vários protocolos DARPA da Internet que estão disponíveis a
+partir do subsistema TCP/IP</para>
           <indexterm zone="ch-system-iana-etc">
             <primary sortas="e-/etc/protocols">/etc/protocols</primary>
           </indexterm>
@@ -77,9 +74,9 @@
       <varlistentry id="services">
         <term><filename>/etc/services</filename></term>
         <listitem>
-          <para>Provides a mapping between friendly textual names for internet
-          services, and their underlying assigned port numbers and protocol
-          types</para>
+          <para>Fornece um mapeamento entre nomes amigáveis textuais para serviços de
+internet e os não expostos números de porta atribuídos e tipos de protocolos
+deles</para>
           <indexterm zone="ch-system-iana-etc">
             <primary sortas="e-/etc/services">/etc/services</primary>
           </indexterm>

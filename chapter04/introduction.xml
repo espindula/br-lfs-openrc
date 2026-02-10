@@ -8,15 +8,16 @@
 <sect1 id="ch-preps-introduction">
   <?dbhtml filename="introduction.html"?>
 
-  <title>Introduction</title>
+  <title>Introdução</title>
 
-  <para>In this chapter, we will perform a few additional tasks to prepare
-  for building the temporary system. We will create a set of directories in
-  <filename class="directory">$LFS</filename> (in which we will install the
-  temporary tools), add an unprivileged user,
-  and create an appropriate build environment for that user. We will also
-  explain the units of time (<quote>SBUs</quote>) we use to measure how
-  long it takes to build LFS packages, and provide some information about package
-  test suites.</para>
+  <para>Neste capítulo, nós realizaremos umas poucas tarefas adicionais para
+preparar para construir o sistema temporário. Nós criaremos um conjunto de
+diretórios em <filename class="directory">$LFS</filename> (no qual nós
+instalaremos as ferramentas temporárias); adicionaremos um(a) usuário(a)
+desprivilegiado(a); e criaremos um ambiente apropriado de construção para
+aquele(a) usuário(a). Nós também explicaremos as unidades de tempo
+<quote>UPCs</quote> que usamos para medir quanto tempo leva para construir
+pacotes do LFS e forneceremos alguma informação acerca de suítes de teste de
+pacote.</para>
 
 </sect1>

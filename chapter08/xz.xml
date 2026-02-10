@@ -9,10 +9,8 @@
   <?dbhtml filename="xz.html"?>
 
   <sect1info condition="script">
-    <productname>xz</productname>
-    <productnumber>&xz-version;</productnumber>
-    <address>&xz-url;</address>
-  </sect1info>
+<productname>xz</productname> <productnumber>&xz-version;</productnumber>
+<address>&xz-url;</address></sect1info>
 
   <title>Xz-&xz-version;</title>
 
@@ -23,11 +21,11 @@
   <sect2 role="package">
     <title/>
 
-    <para>The Xz package contains programs for compressing and decompressing
-    files. It provides capabilities for the lzma and the newer xz compression
-    formats.  Compressing text files with <command>xz</command> yields a better
-    compression percentage than with the traditional <command>gzip</command> or
-    <command>bzip2</command> commands.</para>
+    <para>O pacote Xz contém aplicativos para comprimir e descomprimir arquivos. Ele
+fornece recursos para os formatos de compressão lzma e o mais novo
+xz. Comprimir arquivos de texto com <command>xz</command> gera uma melhor
+percentagem de compressão que com os tradicionais comandos
+<command>gzip</command> ou <command>bzip2</command>.</para>
 
     <segmentedlist>
       <segtitle>&buildtime;</segtitle>
@@ -42,80 +40,61 @@
   </sect2>
 
   <sect2 role="installation">
-    <title>Installation of Xz</title>
+    <title>Instalação do Xz</title>
 
-    <para>Prepare Xz for compilation with:</para>
+    <para>Prepare Xz para compilação com:</para>
 
 <screen><userinput remap="configure">./configure --prefix=/usr    \
             --disable-static \
             --docdir=/usr/share/doc/xz-&xz-version;</userinput></screen>
 
-    <para>Compile the package:</para>
+    <para>Compile o pacote:</para>
 
 <screen><userinput remap="make">make</userinput></screen>
 
-    <para>To test the results, issue:</para>
+    <para>Para testar os resultados, emita:</para>
 
 <screen><userinput remap="test">make check</userinput></screen>
 
-    <para>Install the package:</para>
+    <para>Instale o pacote:</para>
 
 <screen><userinput remap="install">make install</userinput></screen>
 
   </sect2>
 
   <sect2 id="contents-xz" role="content">
-    <title>Contents of Xz</title>
+    <title>Conteúdo do Xz</title>
 
     <segmentedlist>
-      <segtitle>Installed programs</segtitle>
-      <segtitle>Installed libraries</segtitle>
-      <segtitle>Installed directories</segtitle>
+      <segtitle>Programas instalados</segtitle>
+      <segtitle>Bibliotecas instaladas</segtitle>
+      <segtitle>Diretórios instalados</segtitle>
 
       <seglistitem>
         <seg>
-          lzcat (link to xz),
-          lzcmp (link to xzdiff),
-          lzdiff (link to xzdiff),
-          lzegrep (link to xzgrep),
-          lzfgrep (link to xzgrep),
-          lzgrep (link to xzgrep),
-          lzless (link to xzless),
-          lzma (link to xz),
-          lzmadec,
-          lzmainfo,
-          lzmore (link to xzmore),
-          unlzma (link to xz),
-          unxz (link to xz),
-          xz,
-          xzcat (link to xz),
-          xzcmp (link to xzdiff),
-          xzdec,
-          xzdiff,
-          xzegrep (link to xzgrep),
-          xzfgrep (link to xzgrep),
-          xzgrep,
-          xzless, and
-          xzmore</seg>
+          lzcat (link para xz), lzcmp (link para xzdiff), lzdiff (link para xzdiff),
+lzegrep (link para xzgrep), lzfgrep (link para xzgrep), lzgrep (link para
+xzgrep), lzless (link para xzless), lzma (link para xz), lzmadec, lzmainfo,
+lzmore (link para xzmore), unlzma (link para xz), unxz (link para xz), xz,
+xzcat (link para xz), xzcmp (link para xzdiff), xzdec, xzdiff, xzegrep (link
+para xzgrep), xzfgrep (link para xzgrep), xzgrep, xzless e xzmore</seg>
         <seg>
           liblzma.so
         </seg>
         <seg>
-          /usr/include/lzma and
-          /usr/share/doc/xz-&xz-version;
+          /usr/include/lzma e /usr/share/doc/xz-&xz-version;
          </seg>
       </seglistitem>
     </segmentedlist>
 
     <variablelist>
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
+      <bridgehead renderas="sect3">Descrições Curtas</bridgehead>
+      <?dbfo list-presentation="list"?> <?dbhtml list-presentation="table"?>
 
       <varlistentry id="lzcat">
         <term><command>lzcat</command></term>
         <listitem>
-          <para>Decompresses to standard output</para>
+          <para>Descomprime para a saída padrão</para>
           <indexterm zone="ch-system-xz lzcat">
             <primary sortas="b-lzcat">lzcat</primary>
           </indexterm>
@@ -125,7 +104,7 @@
       <varlistentry id="lzcmp">
         <term><command>lzcmp</command></term>
         <listitem>
-          <para>Runs <command>cmp</command> on LZMA compressed files</para>
+          <para>Executa <command>cmp</command> em arquivos comprimidos LZMA</para>
           <indexterm zone="ch-system-xz lzcmp">
             <primary sortas="b-lzcmp">lzcmp</primary>
           </indexterm>
@@ -135,7 +114,7 @@
       <varlistentry id="lzdiff">
         <term><command>lzdiff</command></term>
         <listitem>
-          <para>Runs <command>diff</command> on LZMA compressed files</para>
+          <para>Executa <command>diff</command> em arquivos comprimidos LZMA</para>
           <indexterm zone="ch-system-xz lzdiff">
             <primary sortas="b-lzdiff">lzdiff</primary>
           </indexterm>
@@ -145,7 +124,7 @@
       <varlistentry id="lzegrep">
         <term><command>lzegrep</command></term>
         <listitem>
-          <para>Runs <command>egrep</command> on LZMA compressed files</para>
+          <para>Executa <command>egrep</command> em arquivos comprimidos LZMA</para>
           <indexterm zone="ch-system-xz lzegrep">
             <primary sortas="b-lzegrep">lzegrep</primary>
           </indexterm>
@@ -155,7 +134,7 @@
       <varlistentry id="lzfgrep">
         <term><command>lzfgrep</command></term>
         <listitem>
-          <para>Runs <command>fgrep</command> on LZMA compressed files</para>
+          <para>Executa <command>fgrep</command> em arquivos comprimidos LZMA</para>
           <indexterm zone="ch-system-xz lzfgrep">
             <primary sortas="b-lzfgrep">lzfgrep</primary>
           </indexterm>
@@ -165,7 +144,7 @@
       <varlistentry id="lzgrep">
         <term><command>lzgrep</command></term>
         <listitem>
-          <para>Runs <command>grep</command> on LZMA compressed files</para>
+          <para>Executa <command>grep</command> em arquivos comprimidos LZMA</para>
           <indexterm zone="ch-system-xz lzgrep">
             <primary sortas="b-lzgrep">lzgrep</primary>
           </indexterm>
@@ -175,7 +154,7 @@
       <varlistentry id="lzless">
         <term><command>lzless</command></term>
         <listitem>
-          <para>Runs <command>less</command> on LZMA compressed files</para>
+          <para>Executa <command>less</command> em arquivos comprimidos LZMA</para>
           <indexterm zone="ch-system-xz lzless">
             <primary sortas="b-lzless">lzless</primary>
           </indexterm>
@@ -185,7 +164,7 @@
       <varlistentry id="lzma">
         <term><command>lzma</command></term>
         <listitem>
-          <para>Compresses or decompresses files using the LZMA format</para>
+          <para>Comprime ou descomprime arquivos usando o formato LZMA</para>
           <indexterm zone="ch-system-xz lzma">
             <primary sortas="b-lzma">lzma</primary>
           </indexterm>
@@ -195,7 +174,7 @@
       <varlistentry id="lzmadec">
         <term><command>lzmadec</command></term>
         <listitem>
-          <para>A small and fast decoder for LZMA compressed files</para>
+          <para>Um decodificador pequeno e rápido para arquivos comprimidos LZMA</para>
           <indexterm zone="ch-system-xz lzmadec">
             <primary sortas="b-lzmadec">lzmadec</primary>
           </indexterm>
@@ -205,7 +184,7 @@
       <varlistentry id="lzmainfo">
         <term><command>lzmainfo</command></term>
         <listitem>
-          <para>Shows information stored in the LZMA compressed file header</para>
+          <para>Exibe informação armazenada no cabeçalho de arquivo comprimido com LZMA</para>
           <indexterm zone="ch-system-xz lzmainfo">
             <primary sortas="b-lzmainfo">lzmainfo</primary>
           </indexterm>
@@ -215,7 +194,7 @@
       <varlistentry id="lzmore">
         <term><command>lzmore</command></term>
         <listitem>
-          <para>Runs <command>more</command> on LZMA compressed files</para>
+          <para>Executa <command>more</command> em arquivos comprimidos LZMA</para>
           <indexterm zone="ch-system-xz lzmore">
             <primary sortas="b-lzmamore">lzmore</primary>
           </indexterm>
@@ -225,7 +204,7 @@
       <varlistentry id="unlzma">
         <term><command>unlzma</command></term>
         <listitem>
-          <para>Decompresses files using the LZMA format</para>
+          <para>Descomprime arquivos usando o formato LZMA</para>
           <indexterm zone="ch-system-xz unlzma">
             <primary sortas="b-unlzma">unlzma</primary>
           </indexterm>
@@ -235,7 +214,7 @@
       <varlistentry id="unxz">
         <term><command>unxz</command></term>
         <listitem>
-          <para>Decompresses files using the XZ format</para>
+          <para>Descomprime arquivos usando o formato XZ</para>
           <indexterm zone="ch-system-xz unxz">
             <primary sortas="b-unxz">unxz</primary>
           </indexterm>
@@ -245,7 +224,7 @@
       <varlistentry id="xz">
         <term><command>xz</command></term>
         <listitem>
-          <para>Compresses or decompresses files using the XZ format</para>
+          <para>Comprime ou descomprime arquivos usando o formato XZ</para>
           <indexterm zone="ch-system-xz xz">
             <primary sortas="b-xz">xz</primary>
           </indexterm>
@@ -255,7 +234,7 @@
       <varlistentry id="xzcat">
         <term><command>xzcat</command></term>
         <listitem>
-          <para>Decompresses to standard output</para>
+          <para>Descomprime para a saída padrão</para>
           <indexterm zone="ch-system-xz xzcat">
             <primary sortas="b-xzcat">xzcat</primary>
           </indexterm>
@@ -265,7 +244,7 @@
       <varlistentry id="xzcmp">
         <term><command>xzcmp</command></term>
         <listitem>
-          <para>Runs <command>cmp</command> on XZ compressed files</para>
+          <para>Executa <command>cmp</command> em arquivos comprimidos XZ</para>
           <indexterm zone="ch-system-xz xzcmp">
             <primary sortas="b-xzcmp">xzcmp</primary>
           </indexterm>
@@ -275,7 +254,7 @@
       <varlistentry id="xzdec">
         <term><command>xzdec</command></term>
         <listitem>
-          <para>A small and fast decoder for XZ compressed files</para>
+          <para>Um decodificador pequeno e rápido para arquivos comprimidos XZ</para>
           <indexterm zone="ch-system-xz xzdec">
             <primary sortas="b-xzdec">xzdec</primary>
           </indexterm>
@@ -285,7 +264,7 @@
       <varlistentry id="xzdiff">
         <term><command>xzdiff</command></term>
         <listitem>
-          <para>Runs <command>diff</command> on XZ compressed files</para>
+          <para>Executa <command>diff</command> em arquivos comprimidos XZ</para>
           <indexterm zone="ch-system-xz xzdiff">
             <primary sortas="b-xzdiff">xzdiff</primary>
           </indexterm>
@@ -295,7 +274,7 @@
       <varlistentry id="xzegrep">
         <term><command>xzegrep</command></term>
         <listitem>
-          <para>Runs <command>egrep</command> on XZ compressed files</para>
+          <para>Executa <command>egrep</command> em arquivos comprimidos XZ</para>
           <indexterm zone="ch-system-xz xzegrep">
             <primary sortas="b-xzegrep">xzegrep</primary>
           </indexterm>
@@ -305,7 +284,7 @@
       <varlistentry id="xzfgrep">
         <term><command>xzfgrep</command></term>
         <listitem>
-          <para>Runs <command>fgrep</command> on XZ compressed files</para>
+          <para>Executa <command>fgrep</command> em arquivos comprimidos XZ</para>
           <indexterm zone="ch-system-xz xzfgrep">
             <primary sortas="b-xzfgrep">xzfgrep</primary>
           </indexterm>
@@ -315,7 +294,7 @@
       <varlistentry id="xzgrep">
         <term><command>xzgrep</command></term>
         <listitem>
-          <para>Runs <command>grep</command> on XZ compressed files</para>
+          <para>Executa <command>grep</command> em arquivos comprimidos XZ</para>
           <indexterm zone="ch-system-xz xzgrep">
             <primary sortas="b-xzgrep">xzgrep</primary>
           </indexterm>
@@ -325,7 +304,7 @@
       <varlistentry id="xzless">
         <term><command>xzless</command></term>
         <listitem>
-          <para>Runs <command>less</command> on XZ compressed files</para>
+          <para>Executa <command>less</command> em arquivos comprimidos XZ</para>
           <indexterm zone="ch-system-xz xzless">
             <primary sortas="b-xzless">xzless</primary>
           </indexterm>
@@ -335,7 +314,7 @@
       <varlistentry id="xzmore">
         <term><command>xzmore</command></term>
         <listitem>
-          <para>Runs <command>more</command> on XZ compressed files</para>
+          <para>Executa <command>more</command> em arquivos comprimidos XZ</para>
           <indexterm zone="ch-system-xz xzmore">
             <primary sortas="b-xzmore">xzmore</primary>
           </indexterm>
@@ -345,8 +324,8 @@
       <varlistentry id="liblzma">
         <term><filename class="libraryfile">liblzma</filename></term>
         <listitem>
-          <para>The library implementing lossless, block-sorting data
-          compression, using the Lempel-Ziv-Markov chain algorithm</para>
+          <para>A biblioteca que implementa compressão de dados de classificação de blocos,
+sem perdas, usando o algoritmo de cadeia Lempel-Ziv-Markov</para>
           <indexterm zone="ch-system-xz liblzma">
             <primary sortas="c-liblzma">liblzma</primary>
           </indexterm>

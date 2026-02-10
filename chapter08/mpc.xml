@@ -9,10 +9,8 @@
   <?dbhtml filename="mpc.html"?>
 
   <sect1info condition="script">
-    <productname>mpc</productname>
-    <productnumber>&mpc-version;</productnumber>
-    <address>&mpc-url;</address>
-  </sect1info>
+<productname>mpc</productname> <productnumber>&mpc-version;</productnumber>
+<address>&mpc-url;</address></sect1info>
 
   <title>MPC-&mpc-version;</title>
 
@@ -23,9 +21,8 @@
   <sect2 role="package">
     <title/>
 
-    <para>The MPC package contains a library for the arithmetic of complex
-    numbers with arbitrarily high precision and correct rounding of the
-    result.</para>
+    <para>O pacote MPC contém uma biblioteca para a aritmética de números complexos
+com precisão arbitrariamente alta e arredondamento correto do resultado.</para>
 
     <segmentedlist>
       <segtitle>&buildtime;</segtitle>
@@ -40,24 +37,24 @@
   </sect2>
 
   <sect2 role="installation">
-    <title>Installation of MPC</title>
+    <title>Instalação do MPC</title>
 
-    <para>Prepare MPC for compilation:</para>
+    <para>Prepare MPC para compilação:</para>
 
 <screen><userinput remap="configure">./configure --prefix=/usr    \
             --disable-static \
             --docdir=/usr/share/doc/mpc-&mpc-version;</userinput></screen>
 
-    <para>Compile the package and generate the HTML documentation:</para>
+    <para>Compile o pacote e gere a documentação HTML:</para>
 
 <screen><userinput remap="make">make
 make html</userinput></screen>
 
-    <para>To test the results, issue:</para>
+    <para>Para testar os resultados, emita:</para>
 
 <screen><userinput remap="test">make check</userinput></screen>
 
-    <para>Install the package and its documentation:</para>
+    <para>Instale o pacote e a documentação dele:</para>
 
 <screen><userinput remap="install">make install
 make install-html</userinput></screen>
@@ -66,11 +63,11 @@ make install-html</userinput></screen>
 
 
   <sect2 id="contents-mpc" role="content">
-    <title>Contents of MPC</title>
+    <title>Conteúdo do MPC</title>
 
     <segmentedlist>
-      <segtitle>Installed libraries</segtitle>
-      <segtitle>Installed directory</segtitle>
+      <segtitle>Bibliotecas instaladas</segtitle>
+      <segtitle>Diretório instalado</segtitle>
 
       <seglistitem>
         <seg>libmpc.so</seg>
@@ -79,14 +76,13 @@ make install-html</userinput></screen>
     </segmentedlist>
 
     <variablelist>
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
+      <bridgehead renderas="sect3">Descrições Curtas</bridgehead>
+      <?dbfo list-presentation="list"?> <?dbhtml list-presentation="table"?>
 
       <varlistentry id="libmpc">
         <term><filename class="libraryfile">libmpc</filename></term>
         <listitem>
-          <para>Contains complex math functions</para>
+          <para>Contém funções matemáticas complexas</para>
           <indexterm zone="ch-system-mpc libmpc">
             <primary sortas="c-libmpc">libmpc</primary>
           </indexterm>

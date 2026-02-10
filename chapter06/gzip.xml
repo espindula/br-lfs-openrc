@@ -9,16 +9,14 @@
   <?dbhtml filename="gzip.html"?>
 
   <sect1info condition="script">
-    <productname>gzip</productname>
-    <productnumber>&gzip-version;</productnumber>
-    <address>&gzip-url;</address>
-  </sect1info>
+<productname>gzip</productname>
+<productnumber>&gzip-version;</productnumber> <address>&gzip-url;</address></sect1info>
 
   <title>Gzip-&gzip-version;</title>
 
   <indexterm zone="ch-tools-gzip">
     <primary sortas="a-Gzip">Gzip</primary>
-    <secondary>tools</secondary>
+    <secondary>ferramentas</secondary>
   </indexterm>
 
   <sect2 role="package">
@@ -41,17 +39,17 @@
   </sect2>
 
   <sect2 role="installation">
-    <title>Installation of Gzip</title>
+    <title>Instalação do Gzip</title>
 
-    <para>Prepare Gzip for compilation:</para>
+    <para>Prepare o Gzip para compilação:</para>
 
 <screen><userinput remap="configure">./configure --prefix=/usr --host=$LFS_TGT</userinput></screen>
 
-    <para>Compile the package:</para>
+    <para>Compile o pacote:</para>
 
 <screen><userinput remap="make">make</userinput></screen>
 
-    <para>Install the package:</para>
+    <para>Instale o pacote:</para>
 
 <screen><userinput remap="install">make DESTDIR=$LFS install</userinput></screen>
 
@@ -60,8 +58,8 @@
   <sect2 role="content">
     <title/>
 
-    <para>Details on this package are located in
-    <xref linkend="contents-gzip" role="."/></para>
+    <para>Detalhes acerca deste pacote estão localizados na <xref
+linkend="contents-gzip" role="."/></para>
 
   </sect2>
 

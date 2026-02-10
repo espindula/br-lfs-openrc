@@ -5,15 +5,14 @@
   %general-entities;
 ]>
 
-<appendix id="appendixa" xreflabel="Appendix A">
+<appendix id="appendixa" xreflabel="Anexo A">
   <?dbhtml dir="appendices"?>
   <?dbhtml filename="acronymlist.html"?>
 
-  <title>Acronyms and Terms</title>
+  <title>Siglas e Termos</title>
 
   <variablelist>
-    <?dbfo list-presentation="list"?>
-    <?dbhtml list-presentation="table"?>
+    <?dbfo list-presentation="list"?> <?dbhtml list-presentation="table"?>
 
     <varlistentry>
       <term><emphasis role="bold">ABI</emphasis></term>
@@ -151,21 +150,21 @@
     <varlistentry>
       <term><emphasis role="bold">ext2</emphasis></term>
       <listitem>
-        <para>second extended file system</para>
+        <para>sistema de arquivos segundo estendido</para>
       </listitem>
     </varlistentry>
 
     <varlistentry>
       <term><emphasis role="bold">ext3</emphasis></term>
       <listitem>
-        <para>third extended file system</para>
+        <para>sistema de arquivos terceiro estendido</para>
       </listitem>
     </varlistentry>
 
     <varlistentry>
       <term><emphasis role="bold">ext4</emphasis></term>
       <listitem>
-        <para>fourth extended file system</para>
+        <para>sistema de arquivos quarto estendido</para>
       </listitem>
     </varlistentry>
 
@@ -487,7 +486,7 @@
     <varlistentry>
       <term><emphasis role="bold">umask</emphasis></term>
       <listitem>
-        <para>user file-creation mask</para>
+        <para>máscara de usuário(a) de criação de arquivo</para>
       </listitem>
     </varlistentry>
 

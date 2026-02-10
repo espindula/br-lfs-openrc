@@ -9,10 +9,8 @@
   <?dbhtml filename="findutils.html"?>
 
   <sect1info condition="script">
-    <productname>findutils</productname>
-    <productnumber>&findutils-version;</productnumber>
-    <address>&findutils-url;</address>
-  </sect1info>
+<productname>findutils</productname>
+<productnumber>&findutils-version;</productnumber> <address>&findutils-url;</address></sect1info>
 
   <title>Findutils-&findutils-version;</title>
 
@@ -23,12 +21,14 @@
   <sect2 role="package">
     <title/>
 
-    <para>The Findutils package contains programs to find files. Programs
-    are provided to search through all the files in a directory tree and to
-    create, maintain, and search a database (often faster than the recursive
-    find, but unreliable unless the database has been updated recently).
-    Findutils also supplies the <command>xargs</command> program, which
-    can be used to run a specified command on each file selected by a search.</para>
+    <para>O pacote Findutils contém aplicativos para encontrar arquivos. Os
+aplicativos são fornecidos para procurar ao longo de todos os arquivos em
+uma árvore de diretórios e para criar, manter e buscar uma base de dados
+(geralmente mais rápido que o find recursivo, porém não é confiável, a menos
+que a base de dados tenha sido atualizada recentemente). O Findutils também
+abastece o aplicativo <command>xargs</command>, o qual pode ser usado para
+executar um comando especificado sobre cada arquivo selecionado por uma
+pesquisa.</para>
 
     <segmentedlist>
       <segtitle>&buildtime;</segtitle>
@@ -43,78 +43,81 @@
   </sect2>
 
   <sect2 role="installation">
-    <title>Installation of Findutils</title>
+    <title>Instalação do Findutils</title>
 
-    <para>Prepare Findutils for compilation:</para>
+    <para>Prepare o Findutils para compilação:</para>
 
-<!-- no longer needed with gcc13
-<screen><userinput remap="configure">case $(uname -m) in
+
+    <screen><!-- no longer needed with gcc13
+<screen>
+<userinput remap="configure">case $(uname -m) in
     i?86)   TIME_T_32_BIT_OK=yes ./configure - -prefix=/usr - -localstatedir=/var/lib/locate ;;
     x86_64) ./configure - -prefix=/usr - -localstatedir=/var/lib/locate ;;
 esac</userinput></screen>
 -->
-    <screen><userinput remap="configure">./configure --prefix=/usr --localstatedir=/var/lib/locate</userinput></screen>
+<userinput remap="configure">./configure --prefix=/usr --localstatedir=/var/lib/locate</userinput></screen>
 
     <variablelist>
-      <title>The meaning of the configure options:</title>
-<!--
+      <title>O significado das opções do configure:</title>
+
+      <!--
       <varlistentry>
+
         <term><command>TIME_32_BIT_OK=yes</command></term>
         <listitem>
           <para>This setting is needed for building on a 32 bit system.</para>
         </listitem>
       </varlistentry>
 -->
-      <varlistentry>
+<varlistentry>
         <term><parameter>--localstatedir</parameter></term>
         <listitem>
-          <para>This option moves the <command>locate</command>
-          database to <filename class="directory">/var/lib/locate</filename>,
-          which is the FHS-compliant location.</para>
+          <para>Essa opção move a base de dados <command>locate</command> para <filename
+class="directory">/var/lib/locate</filename>, o qual é o local conforme com
+FHS.</para>
         </listitem>
       </varlistentry>
 
     </variablelist>
 
-    <para>Compile the package:</para>
+    <para>Compile o pacote:</para>
 
 <screen><userinput remap="make">make</userinput></screen>
 
-    <para>To test the results, issue:</para>
+    <para>Para testar os resultados, emita:</para>
 
 <screen><userinput remap="test">chown -R tester .
 su tester -c "PATH=$PATH make check"</userinput></screen>
 
-    <para>Install the package:</para>
+    <para>Instale o pacote:</para>
 
 <screen><userinput remap="install">make install</userinput></screen>
 
   </sect2>
 
   <sect2 id="contents-findutils" role="content">
-    <title>Contents of Findutils</title>
+    <title>Conteúdo do Findutils</title>
 
     <segmentedlist>
-      <segtitle>Installed programs</segtitle>
-      <segtitle>Installed directory</segtitle>
+      <segtitle>Programas instalados</segtitle>
+      <segtitle>Diretório instalado</segtitle>
 
       <seglistitem>
-        <seg>find, locate, updatedb, and xargs</seg>
+        <seg>find, locate, updatedb e xargs</seg>
         <seg>/var/lib/locate</seg>
       </seglistitem>
 
     </segmentedlist>
 
     <variablelist>
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
+      <bridgehead renderas="sect3">Descrições Curtas</bridgehead>
+      <?dbfo list-presentation="list"?> <?dbhtml list-presentation="table"?>
 
       <varlistentry id="find">
         <term><command>find</command></term>
         <listitem>
-          <para>Searches given directory trees for files matching the specified
-          criteria</para>
+          <para>Pesquisa nas árvores de diretórios dadas por arquivos correspondendo a
+critérios especificados</para>
           <indexterm zone="ch-system-findutils find">
             <primary sortas="b-find">find</primary>
           </indexterm>
@@ -124,8 +127,8 @@ su tester -c "PATH=$PATH make check"</userinput></screen>
       <varlistentry id="locate">
         <term><command>locate</command></term>
         <listitem>
-          <para>Searches through a database of file names and reports the names
-          that contain a given string or match a given pattern</para>
+          <para>Pesquisa em uma base de dados de nomes de arquivo e informa os nomes que
+contém uma sequência de caracteres dada ou correspondem a um padrão dado</para>
           <indexterm zone="ch-system-findutils locate">
             <primary sortas="b-locate">locate</primary>
           </indexterm>
@@ -135,10 +138,10 @@ su tester -c "PATH=$PATH make check"</userinput></screen>
       <varlistentry id="updatedb">
       <term><command>updatedb</command></term>
         <listitem>
-          <para>Updates the <command>locate</command> database; it scans the
-          entire file system (including other file systems that are currently
-          mounted, unless told not to) and puts every file name it finds into
-          the database</para>
+          <para>Atualiza a base de dados <command>locate</command>; ele escaneia o sistema
+de arquivos inteiro (incluindo outros sistemas de arquivos que estejam
+montados atualmente, a menos que dito o contrário) e coloca cada nome de
+arquivo que ele encontrar na base de dados</para>
           <indexterm zone="ch-system-findutils updatedb">
             <primary sortas="b-updatedb">updatedb</primary>
           </indexterm>
@@ -148,7 +151,7 @@ su tester -c "PATH=$PATH make check"</userinput></screen>
       <varlistentry id="xargs">
         <term><command>xargs</command></term>
         <listitem>
-          <para>Can be used to apply a given command to a list of files</para>
+          <para>Pode ser usado para aplicar um comando dado a uma lista de arquivos</para>
           <indexterm zone="ch-system-findutils xargs">
             <primary sortas="b-xargs">xargs</primary>
           </indexterm>

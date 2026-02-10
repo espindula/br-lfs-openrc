@@ -5,11 +5,11 @@
   %general-entities;
 ]>
 
-<chapter id="chapter-chroot-temporary-tools" xreflabel="Chapter&nbsp;7">
+<chapter id="chapter-chroot-temporary-tools" xreflabel="Capítulo&nbsp;7">
   <?dbhtml dir="chapter07"?>
   <?dbhtml filename="chapter07.html"?>
 
-  <title>Entering Chroot and Building Additional Temporary Tools</title>
+  <title>Entrando no Chroot e Construindo Ferramentas Temporárias Adicionais</title>
 
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="introduction.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="changingowner.xml"/>
@@ -24,12 +24,14 @@
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="texinfo.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="util-linux.xml"/>
 
-<!--
+
+
+  <!--
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="tcl.xml"/>
+
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="expect.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="dejagnu.xml"/>
 -->
-
-  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="cleanup.xml"/>
+<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="cleanup.xml"/>
 
 </chapter>

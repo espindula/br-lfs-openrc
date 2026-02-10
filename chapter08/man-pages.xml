@@ -9,21 +9,19 @@
   <?dbhtml filename="man-pages.html"?>
 
   <sect1info condition="script">
-    <productname>man-pages</productname>
-    <productnumber>&man-pages-version;</productnumber>
-    <address>&man-pages-url;</address>
-  </sect1info>
+<productname>man-pages</productname>
+<productnumber>&man-pages-version;</productnumber> <address>&man-pages-url;</address></sect1info>
 
   <title>Man-pages-&man-pages-version;</title>
 
   <indexterm zone="ch-system-man-pages">
-    <primary sortas="a-Man-pages">Man-pages</primary>
+    <primary sortas="a-Man-pages">Páginas-Manual</primary>
   </indexterm>
 
   <sect2 role="package">
     <title/>
 
-    <para>The Man-pages package contains over 2,400 man pages.</para>
+    <para>O pacote Man-pages contém mais que 2.400 páginas de manual.</para>
 
     <segmentedlist>
       <segtitle>&buildtime;</segtitle>
@@ -38,39 +36,38 @@
   </sect2>
 
   <sect2 role="installation">
-    <title>Installation of Man-pages</title>
+    <title>Instalação das Páginas de Manual</title>
 
-    <para>Remove two man pages for password hashing functions.
-    <application>Libxcrypt</application> will provide a better version
-    of these man pages:</para>
+    <para>Remova duas páginas de manual para funções de resumo de
+senha. <application>Libxcrypt</application> fornecerá uma versão melhor
+dessas páginas de manual:</para>
 
 <screen><userinput remap="pre">rm -v man3/crypt*</userinput></screen>
 
-    <para>Install Man-pages by running:</para>
+    <para>Instale as Páginas de Manual executando:</para>
 
 <screen><userinput remap="install">make -R GIT=false prefix=/usr install</userinput></screen>
 
     <variablelist>
-      <title>The meaning of the options:</title>
+      <title>O significado das opções:</title>
 
+      
       <!-- TODO: Try if we can remove this when we update make.  -->
-      <varlistentry>
+<varlistentry>
         <term><parameter>-R</parameter></term>
         <listitem>
-          <para>This prevents <command>make</command> from setting any
-          built-in variables.  The building system of man-pages does not
-          work well with built-in variables, but currently there is no way
-          to disable them except passing <parameter>-R</parameter>
-          explicitly via the command line.</para>
+          <para>Isso impede que <command>make</command> configure quaisquer variáveis
+internas. O sistema de construção de páginas de manual não funciona bem com
+variáveis internas, mas atualmente não existe como desabilitá-las, exceto
+passando-se <parameter>-R</parameter> explicitamente pela linha de comando.</para>
         </listitem>
       </varlistentry>
 
       <varlistentry>
         <term><parameter>GIT=false</parameter></term>
         <listitem>
-          <para>This prevents the building system from emitting many
-          <computeroutput>git: command not found</computeroutput>
-          warnings lines.</para>
+          <para>Isso evita que o sistema de construção emita muitas linhas de aviso
+<computeroutput>git: command not found</computeroutput>.</para>
         </listitem>
       </varlistentry>
     </variablelist>
@@ -78,28 +75,27 @@
   </sect2>
 
   <sect2 id="contents-manpages" role="content">
-    <title>Contents of Man-pages</title>
+    <title>Conteúdo das Páginas de Manual</title>
 
     <segmentedlist>
-      <segtitle>Installed files</segtitle>
+      <segtitle>Arquivos instalados</segtitle>
 
       <seglistitem>
-        <seg>various man pages</seg>
+        <seg>várias páginas de manual</seg>
       </seglistitem>
     </segmentedlist>
 
     <variablelist>
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
+      <bridgehead renderas="sect3">Descrições Curtas</bridgehead>
+      <?dbfo list-presentation="list"?> <?dbhtml list-presentation="table"?>
 
       <varlistentry id="man-pages">
         <term><filename>man pages</filename></term>
         <listitem>
-          <para>Describe C programming language functions, important
-          device files, and significant configuration files</para>
+          <para>Descreve funções da linguagem de programação C, arquivos importantes de
+dispositivo e arquivos significantes de configuração</para>
           <indexterm zone="ch-system-man-pages man-pages">
-            <primary sortas="e-man-pages">man pages</primary>
+            <primary sortas="e-man-pages">páginas de manual</primary>
           </indexterm>
         </listitem>
       </varlistentry>
