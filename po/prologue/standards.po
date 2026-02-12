@@ -135,12 +135,7 @@ msgstr "<emphasis>Núcleo do LSB:</emphasis>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
 #: lfs-en/prologue/standards.xml:66
-#, fuzzy, xml-text
-#| msgid ""
-#| "Bash, Bc, Binutils, Coreutils, Diffutils, File, Findutils, Gawk, GCC, "
-#| "Gettext, Glibc, Grep, Gzip, M4, Man-DB, Procps, Psmisc, Sed, Shadow, <phrase"
-#| " revision='sysv'>SysVinit</phrase><phrase "
-#| "revision='systemd'>Systemd</phrase>, Tar, Util-linux, Zlib"
+#, xml-text
 msgid ""
 "Bash, Bc, Binutils, Coreutils, Diffutils, File, Findutils, Gawk, GCC, "
 "Gettext, Glibc, Grep, Gzip, M4, Man-DB, <phrase "
@@ -148,9 +143,9 @@ msgid ""
 "revision='systemd'>Systemd,</phrase> Tar, Util-linux, Zlib"
 msgstr ""
 "Bash, Bc, Binutils, Coreutils, Diffutils, File, Findutils, Gawk, GCC, "
-"Gettext, Glibc, Grep, Gzip, M4, Man-DB, Procps, Psmisc, Sed, Shadow, <phrase"
-" revision='sysv'>SysVinit</phrase><phrase "
-"revision='systemd'>Systemd</phrase>, Tar, Util-linux, Zlib"
+"Gettext, Glibc, Grep, Gzip, M4, Man-DB, <phrase "
+"revision='openrc'>OpenRC,</phrase> Procps, Psmisc, Sed, Shadow, <phrase "
+"revision='systemd'>Systemd,</phrase> Tar, Util-linux, Zlib"
 
 #. type: Content of: <sect1><variablelist><varlistentry><term>
 #: lfs-en/prologue/standards.xml:76 lfs-en/prologue/standards.xml:122

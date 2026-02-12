@@ -19,19 +19,15 @@ msgstr ""
 
 #. type: Content of: <sect1><title>
 #: lfs-en/chapter09/usage.xml:12
-#, fuzzy, xml-text
-#| msgid "System V Bootscript Usage and Configuration"
+#, xml-text
 msgid "OpenRC Usage and Configuration"
-msgstr ""
-"Uso e Configuração do Conjunto de Comandos Sequenciais de Inicialização do "
-"System V"
+msgstr "Uso e Configuração do OpenRC"
 
 #. type: Content of: <sect1><indexterm><primary>
 #: lfs-en/chapter09/usage.xml:15
-#, fuzzy, xml-text
-#| msgid "usage"
+#, xml-text
 msgid "Usage"
-msgstr "uso"
+msgstr "Uso"
 
 #. type: Content of: <sect1><indexterm><secondary>
 #: lfs-en/chapter09/usage.xml:16
@@ -127,10 +123,9 @@ msgstr ""
 
 #. type: Content of: <sect1><sect2><title>
 #: lfs-en/chapter09/usage.xml:80
-#, fuzzy, xml-text
-#| msgid "configuring"
+#, xml-text
 msgid "Configuring OpenRC"
-msgstr "configurando"
+msgstr "Configurando OpenRC"
 
 #. type: Content of: <sect1><sect2><indexterm><primary>
 #: lfs-en/chapter09/usage.xml:83
@@ -294,18 +289,7 @@ msgstr ""
 
 #. type: Content of: <sect1><sect2><para>
 #: lfs-en/chapter09/usage.xml:196
-#, fuzzy, xml-text
-#| msgid ""
-#| "If you cannot remember whether or not the hardware clock is set to UTC, find"
-#| " out by running the <userinput>hwclock --localtime --show</userinput> "
-#| "command. This will display what the current time is according to the "
-#| "hardware clock. If this time matches whatever your watch says, then the "
-#| "hardware clock is set to local time. If the output from "
-#| "<command>hwclock</command> is not local time, chances are it is set to UTC "
-#| "time. Verify this by adding or subtracting the proper number of hours for "
-#| "your time zone to the time shown by <command>hwclock</command>. For example,"
-#| " if you are currently in the MST time zone, which is also known as GMT "
-#| "-0700, add seven hours to the local time."
+#, xml-text
 msgid ""
 "If you cannot remember whether or not the hardware clock is set to UTC, find"
 " out by running the <userinput>hwclock --localtime --show</userinput> "
@@ -353,15 +337,7 @@ msgstr "console"
 
 #. type: Content of: <sect1><sect2><para>
 #: lfs-en/chapter09/usage.xml:223
-#, fuzzy, xml-text
-#| msgid ""
-#| "This section discusses how to configure the <command>console</command> "
-#| "bootscript that sets up the keyboard map, console font, and console kernel "
-#| "log level. If non-ASCII characters (e.g., the copyright sign, the British "
-#| "pound sign, and the Euro symbol) will not be used and the keyboard is a U.S."
-#| " one, much of this section can be skipped. Without the configuration file, "
-#| "(or equivalent settings in <filename>rc.site</filename>), the "
-#| "<command>console</command> bootscript will do nothing."
+#, xml-text
 msgid ""
 "This section discusses how to configure the <command>consolefont</command> "
 "and <command>keymap</command> services that set up the console font and "
@@ -371,15 +347,7 @@ msgid ""
 "files, the <command>consolefont</command> and <command>keymap</command> "
 "services will use the defaults."
 msgstr ""
-"Esta seção discute como configurar o conjunto de comandos sequenciais de "
-"inicialização <command>console</command> que configura o mapa de teclado, "
-"fonte do console e nível de registro do núcleo do console. Se caracteres "
-"não-ASCII (por exemplo, o sinal de direitos autorais, o sinal da libra "
-"britânica e o símbolo do Euro) não serão usados e o teclado for um dos "
-"Estados Unidos da América do Norte, muito desta seção pode ser pulada. Sem o"
-" arquivo de configuração, (ou configurações equivalentes em "
-"<filename>rc.site</filename>), o conjunto de comandos sequenciais de "
-"inicialização <command>console</command> não fará nada."
+"Esta seção discute como configurar os serviços <command>consolefont</command> e <command>keymap</command> que configuram a fonte do console e o mapa de teclado. Se caracteres não-ASCII (por exemplo, o sinal de copirraite, o sinal da libra britânica e o símbolo do Euro) não forem usados e o teclado for um dos Estados Unidos da América do Norte, muito desta seção pode ser ignorada. Sem os arquivos de configuração, os serviços <command>consolefont</command> e <command>keymap</command> usarão os padrões."
 
 #. type: Content of: <sect1><sect2><para>
 #: lfs-en/chapter09/usage.xml:231
@@ -393,20 +361,7 @@ msgstr ""
 
 #. type: Content of: <sect1><sect2><para>
 #: lfs-en/chapter09/usage.xml:236
-#, fuzzy, xml-text
-#| msgid ""
-#| "The <command>console</command> script reads the "
-#| "<filename>/etc/sysconfig/console</filename> file for configuration "
-#| "information.  Decide which keymap and screen font will be used. Various "
-#| "language-specific HOWTOs can also help with this; see <ulink "
-#| "url=\"https://tldp.org/HOWTO/HOWTO-INDEX/other-lang.html\"/>. If still in "
-#| "doubt, look in the <filename "
-#| "class=\"directory\">/usr/share/keymaps</filename> and <filename "
-#| "class=\"directory\">/usr/share/consolefonts</filename> directories for valid"
-#| " keymaps and screen fonts. Read the <ulink role='man' "
-#| "url='&man;loadkeys.1'>loadkeys(1)</ulink> and <ulink role='man' "
-#| "url='&man;setfont.8'>setfont(8)</ulink> manual pages to determine the "
-#| "correct arguments for these programs."
+#, xml-text
 msgid ""
 "The <command>keymaps</command> service reads the "
 "<filename>/etc/conf.d/keymaps</filename> file for configuration information."
@@ -415,19 +370,7 @@ msgid ""
 "lang.html\"/>. If still in doubt, look in the <filename "
 "class=\"directory\">/usr/share/keymaps</filename> directory for valid "
 "keymaps."
-msgstr ""
-"O conjunto de comandos sequenciais <command>console</command> lê o arquivo "
-"<filename>/etc/sysconfig/console</filename> para informação de configuração."
-" Decida qual mapa de teclas e fonte de tela serão usados. Vários HOWTOs "
-"específicos de idiomas também podem ajudar com isso; veja-se <ulink "
-"url=\"https://tldp.org/HOWTO/HOWTO-INDEX/other-lang.html\"/>. Se ainda em "
-"dúvida, olhe nos diretórios <filename "
-"class=\"directory\">/usr/share/keymaps</filename> e <filename "
-"class=\"directory\">/usr/share/consolefonts</filename> para mapas de teclas "
-"válidos e fontes de tela. Leiam-se as páginas de manual <ulink role='man' "
-"url='&man;loadkeys.1'>loadkeys(1)</ulink> e <ulink role='man' "
-"url='&man;setfont.8'>setfont(8)</ulink> para determinar os argumentos "
-"corretos para esses aplicativos."
+msgstr "O serviço <command>keymaps</command> lê o arquivo <filename>/etc/conf.d/keymaps</filename> para informações de configuração. Decida qual mapa de teclado será usado. Vários HOWTOs específicos de cada idioma também podem ajudar com isso; veja-se <ulink url=\"https://tldp.org/HOWTO/HOWTO-INDEX/other-lang.html\"/>. Se ainda em dúvida, procure no diretório <filename class=\"directory\">/usr/share/keymaps</filename> por mapas válidos de teclado."
 
 #. type: Content of: <sect1><sect2><para>
 #: lfs-en/chapter09/usage.xml:244
@@ -440,32 +383,20 @@ msgstr ""
 
 #. type: Content of: <sect1><sect2><note><para>
 #: lfs-en/chapter09/usage.xml:251
-#, fuzzy, xml-text
-#| msgid ""
-#| "The <filename>/etc/sysconfig/console</filename> file only controls the Linux"
-#| " text console localization. It has nothing to do with setting the proper "
-#| "keyboard layout and terminal fonts in the X Window System, with ssh "
-#| "sessions, or with a serial console. In such situations, limitations "
-#| "mentioned in the last two list items above do not apply."
+#, xml-text
 msgid ""
 "The configuration files for the console only control the Linux text console "
 "localization. It has nothing to do with setting the proper keyboard layout "
 "and terminal fonts in the X Window System, with ssh sessions, or with a "
 "serial console."
 msgstr ""
-"O arquivo <filename>/etc/sysconfig/console</filename> somente controla a "
-"localização do console de texto do Linux. Ele não tem nada a ver com "
-"configurar o esquema adequado de teclado e fontes de terminal no Sistema de "
-"Janelas X; com sessões do ssh; ou com um console serial. Em tais situações, "
-"as limitações mencionadas nos últimos dois itens de lista acima não se "
-"aplicam."
+"Os arquivos de configuração para o console somente controlam a localização do console de texto do Linux. Eles não tem nada a ver com configurar o esquema adequado de teclado e fontes de terminal no Sistema de Janelas X; com sessões do ssh; ou com um console serial."
 
 #. type: Content of: <sect1><sect2><title>
 #: lfs-en/chapter09/usage.xml:260
-#, fuzzy, xml-text
-#| msgid "configuring"
+#, xml-text
 msgid "Configuring Agetty"
-msgstr "configurando"
+msgstr "Configurando Agetty"
 
 #. type: Content of: <sect1><sect2><para>
 #: lfs-en/chapter09/usage.xml:263
@@ -479,10 +410,9 @@ msgstr ""
 
 #. type: Content of: <sect1><sect2><title>
 #: lfs-en/chapter09/usage.xml:272
-#, fuzzy, xml-text
-#| msgid "The rc.site File"
+#, xml-text
 msgid "The rc.conf File"
-msgstr "O Arquivo rc.site"
+msgstr "O Arquivo rc.conf"
 
 #. type: Content of: <sect1><sect2><indexterm><primary>
 #: lfs-en/chapter09/usage.xml:275

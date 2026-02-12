@@ -25,15 +25,7 @@ msgstr "Introdução"
 
 #. type: Content of: <sect1><para>
 #: lfs-en/chapter09/introduction.xml:13
-#, fuzzy, xml-text
-#| msgid ""
-#| "Booting a Linux system involves several tasks.  The process must mount both "
-#| "virtual and real file systems, initialize devices, check file systems for "
-#| "integrity, mount and activate any swap partitions or files, set the system "
-#| "clock, bring up networking, start any daemons required by the system, and "
-#| "accomplish any other custom tasks specified by the user.  This process must "
-#| "be organized to ensure the tasks are performed in the correct order and "
-#| "executed as quickly as possible."
+#, xml-text
 msgid ""
 "Booting a Linux system involves several tasks.  The process must mount both "
 "virtual and real file systems, initialize devices, check file systems for "

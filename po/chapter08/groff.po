@@ -1262,15 +1262,3 @@ msgstr ""
 #, xml-text
 msgid "troff"
 msgstr "troff"
-
-#, xml-text
-#~ msgid "This package does not come with a test suite."
-#~ msgstr "Esse pacote não vem com uma suíte de teste."
-
-#, fuzzy, xml-text
-#~ msgid "This package does not support parallel build. Compile the package:"
-#~ msgstr "Esse pacote não suporta construção paralela.  Compile o pacote:"
-
-#, fuzzy, xml-text
-#~ msgid "Converts a grap diagram into a cropped bitmap image"
-#~ msgstr "Converte um diagrama grap em uma imagem de bitmap recortada"

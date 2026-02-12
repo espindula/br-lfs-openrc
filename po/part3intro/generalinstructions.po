@@ -288,15 +288,3 @@ msgstr ""
 msgid "Delete the extracted source directory unless instructed otherwise."
 msgstr ""
 "Delete o diretório do fonte extraído, a menos que instruído(a) do contrário."
-
-#, fuzzy, xml-text
-#~ msgid ""
-#~ "When building packages there are several assumptions made within the "
-#~ "instructions:"
-#~ msgstr ""
-#~ "Quando da construção de pacotes existem várias suposições feitas dentro das "
-#~ "instruções:"
-
-#, fuzzy, xml-text
-#~ msgid "Change to the sources directory."
-#~ msgstr "Mude para o diretório dos fontes."

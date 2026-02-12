@@ -322,17 +322,7 @@ msgstr ""
 
 #. type: Content of: <sect1><para>
 #: lfs-en/chapter09/locale.xml:127
-#, fuzzy, xml-text
-#| msgid ""
-#| "<phrase revision='systemd'>The login shells are often unaffected by the "
-#| "settings in <filename>/etc/locale.conf</filename>. </phrase>Create the "
-#| "<filename>/etc/profile</filename> <phrase revision='sysv'>once the proper "
-#| "locale settings have been determined to set the desired "
-#| "locale</phrase><phrase revision='systemd'>to read the locale settings from "
-#| "<filename>/etc/locale.conf</filename> and export them</phrase>, but set the "
-#| "<literal>C.UTF-8</literal> locale instead if running in the Linux console "
-#| "(to prevent programs from outputting characters that the Linux console is "
-#| "unable to render):"
+#, xml-text
 msgid ""
 "<phrase revision='systemd'>The login shells are often unaffected by the "
 "settings in <filename>/etc/locale.conf</filename>. </phrase>Create the "
@@ -346,13 +336,13 @@ msgid ""
 msgstr ""
 "<phrase revision='systemd'>Os shells de login geralmente não são afetados "
 "pelas configurações em <filename>/etc/locale.conf</filename>. </phrase>Crie "
-"o <filename>/etc/profile</filename> <phrase revision='sysv'>depois que as "
+"o <filename>/etc/profile</filename> <phrase revision='openrc'>depois que as "
 "configurações adequadas de localidade tiverem sido determinadas para "
 "configurar a localidade desejada</phrase><phrase revision='systemd'> para "
 "ler as configurações de localidade a partir de "
-"<filename>/etc/locale.conf</filename> e exportá-las</phrase>, mas defina a "
+"<filename>/etc/locale.conf</filename> e exportá-las</phrase>, mas configure a "
 "localidade <literal>C.UTF-8</literal> se executar no console do Linux (para "
-"evitar que aplicativos emitam caracteres que o console do Linux não consiga "
+"evitar que programas gerem caracteres que o console do Linux não consiga "
 "renderizar):"
 
 #. type: Content of: <sect1><screen>

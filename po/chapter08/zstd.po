@@ -269,17 +269,3 @@ msgstr ""
 #, xml-text
 msgid "libzstd"
 msgstr "libzstd"
-
-#, fuzzy, xml-text
-#~ msgid "Apply a patch to fix some issues identified by upstream:"
-#~ msgstr ""
-#~ "Aplique um patch para consertar alguns problemas identificados pelo(a) "
-#~ "desenvolvedor(a):"
-
-#, fuzzy, no-wrap, xml-text
-#~ msgid ""
-#~ "<userinput remap=\"pre\">patch -Np1 -i ../&zstd-upstream-fixes-"
-#~ "patch;</userinput>"
-#~ msgstr ""
-#~ "<userinput remap=\"pre\">patch -Np1 -i ../&zstd-upstream-fixes-"
-#~ "patch;</userinput>"

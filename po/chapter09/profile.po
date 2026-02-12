@@ -390,11 +390,3 @@ msgstr ""
 "Trabalho está em progresso para documentar e, se possível, corrigir tais "
 "problemas. Veja-se <ulink url=\"&blfs-book;introduction/locale-"
 "issues.html\"/>."
-
-#, fuzzy, xml-text
-#~ msgid ""
-#~ "For more information, see <command>info bash</command> under the "
-#~ "<emphasis>Bash Startup Files and Interactive Shells</emphasis> section."
-#~ msgstr ""
-#~ "Para mais informação, veja-se <command>info bash</command> sob a seção "
-#~ "<emphasis>Arquivos de Inicialização do Bash e Shells Interativos</emphasis>."

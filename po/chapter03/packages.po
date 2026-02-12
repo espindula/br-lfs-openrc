@@ -1538,31 +1538,27 @@ msgstr "Soma de verificação MD5: <literal>&ninja-md5;</literal>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><term>
 #: lfs-en/chapter03/packages.xml:603
-#, fuzzy, xml-text
-#| msgid "OpenSSL (&openssl-version;) - <token>&openssl-size;</token>:"
+#, xml-text
 msgid "OpenRC (&openrc-version;) - <token>&openrc-size;</token>:"
-msgstr "OpenSSL (&openssl-version;) - <token>&openssl-size;</token>:"
+msgstr "OpenRC (&openrc-version;) - <token>&openrc-size;</token>:"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
 #: lfs-en/chapter03/packages.xml:605
-#, fuzzy, xml-text
-#| msgid "Home page: <ulink url=\"&perl-home;\"/>"
+#, xml-text
 msgid "Home page: <ulink url=\"&openrc-home;\"/>"
-msgstr "Página inicial: <ulink url=\"&perl-home;\"/>"
+msgstr "Página inicial: <ulink url=\"&openrc-home;\"/>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
 #: lfs-en/chapter03/packages.xml:606
-#, fuzzy, xml-text
-#| msgid "Download: <ulink url=\"&perl-url;\"/>"
+#, xml-text
 msgid "Download: <ulink url=\"&openrc-url;\"/>"
-msgstr "Transferência: <ulink url=\"&perl-url;\"/>"
+msgstr "Transferência: <ulink url=\"&openrc-url;\"/>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
 #: lfs-en/chapter03/packages.xml:607
-#, fuzzy, xml-text
-#| msgid "MD5 sum: <literal>&perl-md5;</literal>"
+#, xml-text
 msgid "MD5 sum: <literal>&openrc-md5;</literal>"
-msgstr "Soma de verificação MD5: <literal>&perl-md5;</literal>"
+msgstr "Soma de verificação MD5: <literal>&openrc-md5;</literal>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><term>
 #: lfs-en/chapter03/packages.xml:612

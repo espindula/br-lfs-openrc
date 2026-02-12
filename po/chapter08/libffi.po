@@ -258,18 +258,3 @@ msgstr "<filename class=\"libraryfile\">libffi</filename>"
 #, xml-text
 msgid "Contains the foreign function interface API functions"
 msgstr "Contém as funções de API da interface de função externa"
-
-#, fuzzy, xml-text
-#~ msgid "<parameter>--disable-exec-static-tramp</parameter>"
-#~ msgstr "<parameter>--disable-exec-static-tramp</parameter>"
-
-#, fuzzy, xml-text
-#~ msgid ""
-#~ "Disable static trampoline support.  It's a new security feature in libffi, "
-#~ "but some BLFS packages (notably <application>GJS</application>) have not "
-#~ "been adapted for it."
-#~ msgstr ""
-#~ "Desabilita o suporte de trampolim estático.  Ele é uma nova característica "
-#~ "de segurança em libffi, porém alguns pacotes BLFS (notadamente "
-#~ "<application>GJS</application> e <application>gobject-"
-#~ "introspection</application>) não foram adaptados para ele."

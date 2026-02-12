@@ -19,16 +19,12 @@ msgstr ""
 
 #. type: Content of the systemd-udev entity
 #: lfs-en/appendices/dependencies.xml:7
-#, fuzzy, xml-text
-#| msgid ""
-#| "<phrase revision='systemd'>Systemd</phrase><phrase "
-#| "revision='sysv'>Udev</phrase>"
 msgid ""
 "<phrase revision='systemd'>Systemd</phrase><phrase "
 "revision='openrc'>Udev</phrase>"
 msgstr ""
 "<phrase revision='systemd'>Systemd</phrase><phrase "
-"revision='sysv'>Udev</phrase>"
+"revision='openrc'>Udev</phrase>"
 
 #. type: Content of the bdb entity
 #: lfs-en/appendices/dependencies.xml:8
@@ -2235,24 +2231,18 @@ msgstr ""
 
 #. type: Content of: <appendix><bridgehead>
 #: lfs-en/appendices/dependencies.xml:2379
-#, fuzzy, xml-text
-#| msgid "OpenSSL"
 msgid "OpenRC"
-msgstr "OpenSSL"
+msgstr "OpenRC"
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
 #: lfs-en/appendices/dependencies.xml:2384
-#, fuzzy, xml-text
-#| msgid "Binutils, Coreutils, GCC, Glibc, Make, and Patch"
 msgid "Binutils, GCC, Glibc, Meson, Ninja, and Psmisc"
-msgstr "Binutils, Coreutils, GCC, Glibc, Make e Patch"
+msgstr "Binutils, GCC, Glibc, Meson, Ninja e Psmisc"
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
 #: lfs-en/appendices/dependencies.xml:2398
-#, fuzzy, xml-text
-#| msgid "Bash, Bc, and Gawk"
 msgid "Bash, Meson, and Ninja"
-msgstr "Bash, Bc e Gawk"
+msgstr "Bash, Meson e Ninja"
 
 #. type: Content of: <appendix><bridgehead>
 #: lfs-en/appendices/dependencies.xml:2419
@@ -2405,31 +2395,22 @@ msgstr "Procps-ng"
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
 #: lfs-en/appendices/dependencies.xml:2669
-#, fuzzy, xml-text
-#| msgid ""
-#| "Bash, Binutils, Coreutils, GCC, Glibc, Make, Ncurses, <phrase "
-#| "revision='sysv'>and </phrase>Pkgconf<phrase revision='systemd'>, and "
-#| "Systemd</phrase>"
 msgid ""
 "Bash, Binutils, Coreutils, GCC, Glibc, Make, Ncurses, <phrase "
 "revision='openrc'>and </phrase>Pkgconf<phrase revision='systemd'>, and "
 "Systemd</phrase>"
 msgstr ""
 "Bash, Binutils, Coreutils, GCC, Glibc, Make, Ncurses <phrase "
-"revision='sysv'>e </phrase>Pkgconf<phrase revision='systemd'> e "
+"revision='openrc'>e </phrase>Pkgconf<phrase revision='systemd'> e "
 "Systemd</phrase>"
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
 #: lfs-en/appendices/dependencies.xml:2700
-#, fuzzy, xml-text
-#| msgid ""
-#| "<phrase revision='systemd'>None</phrase> <phrase revision='sysv'> <ulink "
-#| "url='&blfs-book;general/elogind.html'>elogind</ulink> </phrase>"
 msgid ""
 "<phrase revision='systemd'>None</phrase> <phrase revision='openrc'> <ulink "
 "url='&blfs-book;general/elogind.html'>elogind</ulink> </phrase>"
 msgstr ""
-"<phrase revision='systemd'>Nenhum</phrase> <phrase revision='sysv'> <ulink "
+"<phrase revision='systemd'>Nenhum</phrase> <phrase revision='openrc'> <ulink "
 "url='&blfs-book;general/elogind.html'>elogind</ulink> </phrase>"
 
 #. type: Content of: <appendix><bridgehead>
@@ -2969,193 +2950,3 @@ msgstr "Binutils, Coreutils, GCC, Glibc, Gzip, Lz4, Make, Xz e Zlib"
 #, xml-text
 msgid "Binutils, File, GCC, Kmod, Libelf, Python, and &systemd-udev;"
 msgstr "Binutils, File, GCC, Kmod, Libelf, Python e &systemd-udev;"
-
-#, xml-text
-#~ msgid "SysVinit"
-#~ msgstr "SysVinit"
-
-#, xml-text
-#~ msgid "Binutils, Coreutils, GCC, Glibc, Make, and Sed"
-#~ msgstr "Binutils, Coreutils, GCC, Glibc, Make e Sed"
-
-#, xml-text
-#~ msgid ""
-#~ "<ulink url=\"&blfs-book;general/pcre2.html\">PCRE2</ulink> and <ulink "
-#~ "url=\"&blfs-book;general/libsigsegv.html\">libsigsegv</ulink>"
-#~ msgstr ""
-#~ "<ulink url=\"&blfs-book;general/pcre2.html\">PCRE2</ulink> e <ulink "
-#~ "url=\"&blfs-book;general/libsigsegv.html\">libsigsegv</ulink>"
-
-#, xml-text
-#~ msgid ""
-#~ "<ulink url=\"&blfs-book;general/pcre2.html\">PCRE2</ulink> or <ulink "
-#~ "url=\"&blfs-book;general/pcre.html\">PCRE</ulink>"
-#~ msgstr ""
-#~ "<ulink url=\"&blfs-book;general/pcre2.html\">PCRE2</ulink> ou <ulink "
-#~ "url=\"&blfs-book;general/pcre.html\">PCRE</ulink>"
-
-#, xml-text
-#~ msgid "Check and Pkgconf"
-#~ msgstr "Check e Pkgconf"
-
-#, xml-text
-#~ msgid "Check"
-#~ msgstr "Check"
-
-#, xml-text
-#~ msgid "Gawk, GCC, Grep, Make, Sed, and Texinfo"
-#~ msgstr "Gawk, GCC, Grep, Make, Sed e Texinfo"
-
-#, xml-text
-#~ msgid "Bash and Gawk"
-#~ msgstr "Bash e Gawk"
-
-#, xml-text
-#~ msgid ""
-#~ "<ulink url='&github;/testing-cabal/subunit'>libsubunit</ulink> and <ulink "
-#~ "url='http://cyberelk.net/tim/software/patchutils/'> patchutils</ulink>"
-#~ msgstr ""
-#~ "<ulink url='&github;/testing-cabal/subunit'>libsubunit</ulink> e <ulink "
-#~ "url='http://cyberelk.net/tim/software/patchutils/'> patchutils</ulink>"
-
-#, xml-text
-#~ msgid "<ulink url=\"https://lz4.github.io/lz4/\">LZ4</ulink>"
-#~ msgstr "<ulink url=\"https://lz4.github.io/lz4/\">LZ4</ulink>"
-
-#, xml-text
-#~ msgid "<ulink url='&blfs-book;general/libxml2.html'>libxml2</ulink>"
-#~ msgstr "<ulink url='&blfs-book;general/libxml2.html'>libxml2</ulink>"
-
-#, xml-text
-#~ msgid "Man-DB and Perl"
-#~ msgstr "Man-DB e Perl"
-
-#, xml-text
-#~ msgid "Acl and Libcap"
-#~ msgstr "Acl e Libcap"
-
-#, xml-text
-#~ msgid "Bash, Binutils, Coreutils, GCC, Glibc, Grep, Make, and Sed"
-#~ msgstr "Bash, Binutils, Coreutils, GCC, Glibc, Grep, Make e Sed"
-
-#, xml-text
-#~ msgid "<ulink url=\"&blfs-book;server/db.html\">Berkeley DB</ulink>"
-#~ msgstr "<ulink url=\"&blfs-book;server/db.html\">Berkeley DB</ulink>"
-
-#, xml-text
-#~ msgid "wheel"
-#~ msgstr "wheel"
-
-#, xml-text
-#~ msgid ""
-#~ "<phrase revision='sysv'>None</phrase> <phrase "
-#~ "revision='systemd'>Jinja2</phrase>"
-#~ msgstr ""
-#~ "<phrase revision='sysv'>Nenhum</phrase> <phrase "
-#~ "revision='systemd'>Jinja2</phrase>"
-
-#, xml-text
-#~ msgid ""
-#~ "Bash, Diffutils, <phrase revision=\"sysv\">Eudev, </phrase> Findutils, "
-#~ "<phrase revision=\"sysv\">and </phrase>Man-DB<phrase revision=\"systemd\">, "
-#~ "and Systemd</phrase>"
-#~ msgstr ""
-#~ "Bash, Diffutils, <phrase revision=\"sysv\">Eudev, </phrase> Findutils "
-#~ "<phrase revision=\"sysv\">e </phrase>Man-DB<phrase revision=\"systemd\"> e "
-#~ "Systemd</phrase>"
-
-#, xml-text
-#~ msgid "Eudev"
-#~ msgstr "Eudev"
-
-#, xml-text
-#~ msgid ""
-#~ "Bash, Binutils, Coreutils, Gawk, GCC, Glibc, Grep, Gperf, Make, Sed, and "
-#~ "Util-linux"
-#~ msgstr ""
-#~ "Bash, Binutils, Coreutils, Gawk, GCC, Glibc, Grep, Gperf, Make, Sed e Util-"
-#~ "linux"
-
-#, xml-text
-#~ msgid "Glibc, Kmod, Xz, Util-linux, and Zlib."
-#~ msgstr "Glibc, Kmod, Xz, Util-linux e Zlib."
-
-#, xml-text
-#~ msgid ""
-#~ "<phrase revision=\"sysv\">Eudev</phrase> <phrase "
-#~ "revision=\"systemd\">Systemd</phrase>"
-#~ msgstr ""
-#~ "<phrase revision=\"sysv\">Eudev</phrase> <phrase "
-#~ "revision=\"systemd\">Systemd</phrase>"
-
-#, xml-text
-#~ msgid ""
-#~ "GCC, Perl, Python, <phrase revision='sysv'>and </phrase>Shadow<phrase "
-#~ "revision='systemd'>, and Systemd</phrase>"
-#~ msgstr ""
-#~ "GCC, Perl, Python <phrase revision='sysv'>e Shadow</phrase><phrase "
-#~ "revision='systemd'>, Shadow e Systemd</phrase>"
-
-#, xml-text
-#~ msgid ""
-#~ "Bash, Binutils, Coreutils, Diffutils, <phrase revision=\"sysv\">Eudev, "
-#~ "</phrase>File, Findutils, Gawk, GCC, Gettext, Glibc, Grep, Make, Ncurses, "
-#~ "Pkgconf, Sed, <phrase revision=\"systemd\">Systemd, </phrase>and Zlib"
-#~ msgstr ""
-#~ "Bash, Binutils, Coreutils, Diffutils, <phrase revision=\"sysv\">Eudev, "
-#~ "</phrase>File, Findutils, Gawk, GCC, Gettext, Glibc, Grep, Make, Ncurses, "
-#~ "Pkgconf, Sed <phrase revision=\"systemd\">, Systemd </phrase>e Zlib"
-
-#, xml-text
-#~ msgid ""
-#~ "<phrase revision=\"sysv\">Eudev, </phrase>File, GRUB, Kmod, Libelf, <phrase "
-#~ "revision=\"sysv\">and </phrase>Man-DB<phrase revision=\"systemd\">, and "
-#~ "Systemd</phrase>"
-#~ msgstr ""
-#~ "<phrase revision=\"sysv\">Eudev, </phrase>File, GRUB, Kmod, Libelf <phrase "
-#~ "revision=\"sysv\">e </phrase>Man-DB<phrase revision=\"systemd\"> e "
-#~ "Systemd</phrase>"
-
-#, xml-text
-#~ msgid ""
-#~ "<phrase revision='sysv'>GCC and Libelf</phrase> <phrase "
-#~ "revision='systemd'>GCC, Libelf, and Systemd</phrase>"
-#~ msgstr ""
-#~ "<phrase revision='sysv'>GCC e Libelf</phrase> <phrase "
-#~ "revision='systemd'>GCC, Libelf e Systemd</phrase>"
-
-#, xml-text
-#~ msgid "GDBM and Glibc"
-#~ msgstr "GDBM e Glibc"
-
-#, xml-text
-#~ msgid "Bash, Binutils, Coreutils, GCC, Glibc, Make, and Ncurses"
-#~ msgstr "Bash, Binutils, Coreutils, GCC, Glibc, Make e Ncurses"
-
-#, xml-text
-#~ msgid ""
-#~ "<ulink url=\"&blfs-book;server/db.html\">Berkeley DB</ulink> and <ulink "
-#~ "url=\"&blfs-book;postlfs/iptables.html\">iptables</ulink>"
-#~ msgstr ""
-#~ "<ulink url=\"&blfs-book;server/db.html\">Berkeley DB</ulink> e <ulink "
-#~ "url=\"&blfs-book;postlfs/iptables.html\">iptables</ulink>"
-
-#, fuzzy, xml-text
-#~ msgid "<ulink url=\"https://sourceware.org/elfutils/\">Elfutils</ulink>"
-#~ msgstr "<ulink url=\"https://sourceware.org/elfutils/\">Elfutils</ulink>"
-
-#, fuzzy, xml-text
-#~ msgid "<ulink url=\"&blfs-book;general/pcre.html\">PCRE</ulink>"
-#~ msgstr "<ulink url=\"&blfs-book;general/pcre.html\">PCRE</ulink>"
-
-#, fuzzy, xml-text
-#~ msgid "<ulink url=\"&blfs-book;general/cpio.html\">cpio</ulink>"
-#~ msgstr "<ulink url=\"&blfs-book;general/cpio.html\">cpio</ulink>"
-
-#, fuzzy, xml-text
-#~ msgid "Bash, Binutils, Coreutils, Gawk, GCC, Glibc, Grep, Make, Popt, and Sed"
-#~ msgstr "Bash, Binutils, Coreutils, Gawk, GCC, Glibc, Grep, Make, Popt e Sed"
-
-#, fuzzy, xml-text
-#~ msgid "Eudev, File, GRUB, Kmod, and Man-DB"
-#~ msgstr "Eudev, File, GRUB, Kmod e Man-DB"

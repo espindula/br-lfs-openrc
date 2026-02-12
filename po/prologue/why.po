@@ -473,19 +473,13 @@ msgstr "Gperf"
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
 #: lfs-en/prologue/why.xml:225
-#, fuzzy, xml-text
-#| msgid ""
-#| "This package produces a program that generates a perfect hash function from "
-#| "a set of keys. It is required by <phrase revision='sysv'>Udev</phrase> "
-#| "<phrase revision='systemd'>Systemd</phrase>."
+#, xml-text
 msgid ""
 "This package produces a program that generates a perfect hash function from "
 "a set of keys. It is required by <phrase revision='openrc'>Udev</phrase> "
 "<phrase revision='systemd'>Systemd</phrase>."
 msgstr ""
-"Esse pacote produz um aplicativo que gera uma função perfeita de resumo a "
-"partir de um conjunto de chaves. É exigido pelo <phrase "
-"revision='sysv'>Udev</phrase><phrase revision='systemd'>Systemd</phrase>."
+"Esse pacote produz um programa que gera uma função perfeita de resumo a partir de um conjunto de chaves. Ele é exigido pelo <phrase revision='openrc'>Udev</phrase><phrase revision='systemd'>Systemd</phrase>."
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
 #: lfs-en/prologue/why.xml:232
@@ -987,27 +981,19 @@ msgstr ""
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
 #: lfs-en/prologue/why.xml:467
-#, fuzzy, xml-text
-#| msgid "Openssl"
+#, xml-text
 msgid "OpenRC"
-msgstr "Openssl"
+msgstr "OpenRC"
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
 #: lfs-en/prologue/why.xml:469
-#, fuzzy, xml-text
-#| msgid ""
-#| "This package provides an <application>init</application> program and several"
-#| " additional boot and system control capabilities as an alternative to "
-#| "SysVinit.  It is used by many Linux distributions."
+#, xml-text
 msgid ""
 "This package provides an <application>init</application> program and system "
 "control capabilities as an alternative to Systemd. It has a smaller "
 "installation size but strong support compared to others like SysVinit. It is"
 " used by a few Linux distributions such as Gentoo and Alpine."
-msgstr ""
-"Esse pacote fornece um programa <application>init</application> e vários "
-"recursos adicionais de inicialização e de controle de sistema como uma "
-"alternativa ao SysVinit. Ele é usado por muitas distribuições do Linux."
+msgstr "Esse pacote fornece um programa <application>init</application> e recursos de controle de sistema como uma alternativa ao Systemd. Ele tem um tamanho de instalação menor, mas suporte forte comparado com outros como o SysVinit. Ele é usado por algumas distribuições Linux, como Gentoo e Alpine."
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
 #: lfs-en/prologue/why.xml:477
@@ -1238,11 +1224,7 @@ msgstr "Systemd"
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
 #: lfs-en/prologue/why.xml:584
-#, fuzzy, xml-text
-#| msgid ""
-#| "This package provides an <application>init</application> program and several"
-#| " additional boot and system control capabilities as an alternative to "
-#| "SysVinit.  It is used by many Linux distributions."
+#, xml-text
 msgid ""
 "This package provides an <application>init</application> program and several"
 " additional boot and system control capabilities as an alternative to "
@@ -1250,7 +1232,7 @@ msgid ""
 msgstr ""
 "Esse pacote fornece um programa <application>init</application> e vários "
 "recursos adicionais de inicialização e de controle de sistema como uma "
-"alternativa ao SysVinit. Ele é usado por muitas distribuições do Linux."
+"alternativa ao OpenRC. Ele é usado por muitas distribuições do Linux."
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
 #: lfs-en/prologue/why.xml:591

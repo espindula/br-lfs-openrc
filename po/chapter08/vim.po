@@ -714,21 +714,3 @@ msgstr ""
 #, xml-text
 msgid "xxd"
 msgstr "xxd"
-
-#, xml-text
-#~ msgid ""
-#~ "Four tests related to GetLatestVimScripts are known to fail in the chroot "
-#~ "environment because wget or curl are not available to download the required "
-#~ "test scripts."
-#~ msgstr ""
-#~ "Quatro testes relacionados a GetLatestVimScripts são conhecidos por falharem"
-#~ " no ambiente chroot porque wget ou curl não estão disponíveis para baixar os"
-#~ " conjuntos de comandos sequenciais de teste exigidos."
-
-#, fuzzy, xml-text
-#~ msgid ""
-#~ "For more information, see the appropriate README file located at the URL "
-#~ "above."
-#~ msgstr ""
-#~ "Para mais informação, veja o arquivo README apropriado localizado na URL "
-#~ "acima."

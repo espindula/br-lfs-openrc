@@ -105,13 +105,3 @@ msgstr ""
 "sistema deles(as), um monte de espaço em disco pode ser recuperado "
 "removendo-se esses símbolos. A próxima seção mostra como despojar todos os "
 "símbolos de depuração dos aplicativos e bibliotecas."
-
-#, fuzzy, xml-text
-#~ msgid ""
-#~ "Sizes may vary depending on which compiler and C library were used, but when"
-#~ " comparing programs with and without debugging symbols, the difference will "
-#~ "usually be a factor between two and five."
-#~ msgstr ""
-#~ "Tamanhos talvez variem dependendo de qual compilador e biblioteca C foram "
-#~ "usados, mas quando comparar aplicativos com e sem símbolos de depuração, a "
-#~ "diferença geralmente será um fator entre dois e cinco."

@@ -37,13 +37,7 @@ msgstr "uso"
 
 #. type: Content of: <sect1><para>
 #: lfs-en/chapter09/udev.xml:18
-#, fuzzy, xml-text
-#| msgid ""
-#| "In <xref linkend=\"chapter-building-system\"/>, we installed the udev daemon"
-#| " when <phrase revision=\"sysv\">udev</phrase> <phrase "
-#| "revision=\"systemd\">systemd</phrase> was built. Before we go into the "
-#| "details regarding how udev works, a brief history of previous methods of "
-#| "handling devices is in order."
+#, xml-text
 msgid ""
 "In <xref linkend=\"chapter-building-system\"/>, we installed the udev daemon"
 " when <phrase revision=\"openrc\">udev</phrase> <phrase "
@@ -52,7 +46,7 @@ msgid ""
 "handling devices is in order."
 msgstr ""
 "No <xref linkend=\"chapter-building-system\"/>, nós instalamos o processo de"
-" segundo plano Udev quando <phrase revision=\"sysv\">udev</phrase> <phrase "
+" segundo plano Udev quando <phrase revision=\"openrc\">udev</phrase> <phrase "
 "revision=\"systemd\">systemd</phrase> foi construído. Antes de entrarmos nos"
 " detalhes referentes a como o Udev funciona, um histórico breve dos métodos "
 "anteriores de manuseio de dispositivos é oportuno."
