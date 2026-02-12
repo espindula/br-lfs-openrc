@@ -46,39 +46,39 @@ livro.</para>
       <para>2026-02-08</para>
       <itemizedlist>
         <listitem>
-          <para>[bdubbs] - Update to systemd-259.1. Fixes <ulink
+          <para>[bdubbs] - Atualização para systemd-259.1. Corrige <ulink
 url='&lfs-ticket-root;5864'>#5864</ulink>.</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - Update to shadow-4.19.3. Fixes <ulink
+          <para>[bdubbs] - Atualização para shadow-4.19.3. Corrige <ulink
 url='&lfs-ticket-root;5858'>#5858</ulink>.</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - Update to setuptools-81.0.0 (Python module). Fixes <ulink
+          <para>[bdubbs] - Atualização para setuptools-81.0.0 (módulo Python). Corrige
+<ulink url='&lfs-ticket-root;5863'>#5863</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Atualização para Python-3.14.3 (atualização de
+segurança). Corrige <ulink url='&lfs-ticket-root;5859'>#5859</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Atualização para procps-ng-4.0.6. Corrige <ulink
 url='&lfs-ticket-root;5863'>#5863</ulink>.</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - Update to Python3-3.14.3. Fixes <ulink
-url='&lfs-ticket-root;5859'>#5859</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Update to procps-ng-4.0.6. Fixes <ulink
-url='&lfs-ticket-root;5863'>#5853</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Update to linux-6.18.9. Fixes <ulink
+          <para>[bdubbs] - Atualização para linux-6.18.9. Corrige <ulink
 url='&lfs-ticket-root;5854'>#5854</ulink>.</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - Update to gettext-1.0. Fixes <ulink
+          <para>[bdubbs] - Atualização para gettext-1.0. Corrige <ulink
 url='&lfs-ticket-root;5852'>#5852</ulink>.</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - Update to expat-2.7.4 (Security update). Fixes <ulink
-url='&lfs-ticket-root;5855'>#5855</ulink>.</para>
+          <para>[bdubbs] - Atualização para expat-2.7.4 (atualização de segurança). Corrige
+<ulink url='&lfs-ticket-root;5855'>#5855</ulink>.</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - Update to coreutils-9.10.tar.xz. Fixes <ulink
+          <para>[bdubbs] - Atualização para coreutils-9.10.tar.xz. Corrige <ulink
 url='&lfs-ticket-root;5862'>#5862</ulink>.</para>
         </listitem>
       </itemizedlist>
@@ -220,7 +220,7 @@ url='&lfs-ticket-root;5829'>#5829</ulink>.</para>
       <para>2025-12-08</para>
       <itemizedlist>
         <listitem>
-          <para>[zeckma] - Replaced SysVinit with OpenRC.</para>
+          <para>[zeckma] - Substituído SysVinit pelo OpenRC.</para>
         </listitem>
       </itemizedlist>
     </listitem>

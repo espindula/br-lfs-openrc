@@ -224,9 +224,9 @@ aritmética de precisão arbitrária. É necessário para construir o GCC.</para
       <listitem>
         <para>Gperf</para>
 
-        <para>This package produces a program that generates a perfect hash function from
-a set of keys. It is required by <phrase revision='openrc'>Udev</phrase>
-<phrase revision='systemd'>Systemd</phrase>.</para>
+        <para>Esse pacote produz um programa que gera uma função perfeita de resumo a
+partir de um conjunto de chaves. Ele é exigido pelo <phrase
+revision='openrc'>Udev</phrase><phrase revision='systemd'>Systemd</phrase>.</para>
       </listitem>
 
       <listitem>
@@ -464,10 +464,10 @@ LFS.</para>
       <listitem revision="openrc">
         <para>OpenRC</para>
 
-        <para>This package provides an <application>init</application> program and system
-control capabilities as an alternative to Systemd. It has a smaller
-installation size but strong support compared to others like SysVinit. It is
-used by a few Linux distributions such as Gentoo and Alpine.</para>
+        <para>Esse pacote fornece um programa <application>init</application> e recursos
+de controle de sistema como uma alternativa ao Systemd. Ele tem um tamanho
+de instalação menor, mas suporte forte comparado com outros como o
+SysVinit. Ele é usado por algumas distribuições Linux, como Gentoo e Alpine.</para>
       </listitem>
 
       <listitem>
@@ -575,9 +575,9 @@ não-usuais acontecem.</para>
       <listitem revision="systemd">
         <para>Systemd</para>
 
-        <para>This package provides an <application>init</application> program and several
-additional boot and system control capabilities as an alternative to
-OpenRC.  It is used by many Linux distributions.
+        <para>Esse pacote fornece um programa <application>init</application> e vários
+recursos adicionais de inicialização e de controle de sistema como uma
+alternativa ao OpenRC. Ele é usado por muitas distribuições do Linux.
         </para>
       </listitem>
 

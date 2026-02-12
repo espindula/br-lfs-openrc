@@ -10,13 +10,15 @@
 
   <title>Introdução</title>
 
-    <para>Booting a Linux system involves several tasks.  The process must mount both
-virtual and real file systems, initialize devices, check file systems for
-integrity, mount and activate any swap partitions or files, set the system
-clock, bring up networking, start any daemons required by the system, and
-accomplish any other custom tasks specified by the user. This process must
-be organized to ensure the tasks are performed in the correct order and
-executed as quickly as possible.</para>
+    <para>Inicializar um sistema Linux envolve várias tarefas. O processo precisa
+montar ambos sistemas de arquivos virtual e real, inicializar dispositivos,
+verificar sistemas de arquivos para integridade, montar e ativar quaisquer
+partições ou arquivos de troca, configurar o relógio do sistema, ativar a
+rede de comunicação, iniciar quaisquer processos de segundo plano exigidos
+pelo sistema e realizar quaisquer outras tarefas personalizadas
+especificadas pelo(a) usuário(a). Esse processo precisa estar organizado
+para garantir que as tarefas sejam realizadas na ordem correta e executadas
+o mais rápido possível.</para>
 
   <sect2 id='openrc-desc'>
     <title>OpenRC</title>

@@ -9,10 +9,10 @@
 <sect1 id="ch-config-usage" revision="openrc">
   <?dbhtml filename="usage.html"?>
 
-  <title>OpenRC Usage and Configuration</title>
+  <title>Uso e Configuração do OpenRC</title>
 
   <indexterm zone="ch-config-usage">
-    <primary sortas="a-Usage">Usage</primary>
+    <primary sortas="a-Usage">Uso</primary>
     <secondary>uso</secondary>
   </indexterm>
 
@@ -75,7 +75,7 @@ information.
   </sect2>
 
   <sect2 id="conf-openrc" role="configuration">
-  <title>Configuring OpenRC</title>
+  <title>Configurando OpenRC</title>
 
   <indexterm zone="conf-openrc">
     <primary sortas="a-OpenRC">OpenRC</primary>
@@ -190,16 +190,17 @@ what to do with the hardware time, it needs to decide whether the time is
 UTC or local.  It has no way to do this on its own, so a configuration file
 is needed.  OpenRC provides one already, and should be edited.</para>
 
-  <para>If you cannot remember whether or not the hardware clock is set to UTC, find
-out by running the <userinput>hwclock --localtime --show</userinput>
-command. This will display what the current time is according to the
-hardware clock. If this time matches whatever your watch says, then the
-hardware clock is set to local time. If the output from
-<command>hwclock</command> is not local time, chances are it is set to UTC
-time. Verify this by adding or subtracting the proper amount of hours for
-the timezone to the time shown by <command>hwclock</command>. For example,
-if you are currently in the MST timezone, which is also known as GMT -0700,
-add seven hours to the local time.</para>
+  <para>Se você não conseguir lembrar se o relógio do hardware está ou não
+configurado para UTC, descubra executando o comando <userinput>hwclock
+--localtime --show</userinput>. Isso mostrará o que é a hora atual de acordo
+com o relógio do hardware. Se essa hora corresponder à que o seu relógio
+diz, então o relógio do hardware está configurado para hora local. Se a
+saída gerada originária do <command>hwclock</command> não for a hora local,
+as chances são as de que ele esteja configurado para hora UTC. Verifique
+isso adicionando ou subtraindo a número apropriado de horas para o seu fuso
+horário à (da) hora mostrada pelo <command>hwclock</command>. Por exemplo,
+se você estiver atualmente no fuso horário MST, o qual é conhecido também
+como GMT -0700, adicione sete horas à hora local.</para>
 
   <para>Once you know the hardware time uses, edit
 <filename>/etc/conf.d/hwclock</filename> as necessary. There are plenty of
@@ -217,26 +218,28 @@ comments explaining what to edit.</para>
     <secondary>configurando</secondary>
   </indexterm>
 
-  <para>This section discusses how to configure the <command>consolefont</command>
-and <command>keymap</command> services that set up the console font and
-keyboard map. If non-ASCII characters (e.g., the copyright sign, the British
-pound sign, and the Euro symbol) will not be used and the keyboard is a
-U.S. one, much of this section can be skipped. Without the configuration
-files, the <command>consolefont</command> and <command>keymap</command>
-services will use the defaults.</para>
+  <para>Esta seção discute como configurar os serviços
+<command>consolefont</command> e <command>keymap</command> que configuram a
+fonte do console e o mapa de teclado. Se caracteres não-ASCII (por exemplo,
+o sinal de copirraite, o sinal da libra britânica e o símbolo do Euro) não
+forem usados e o teclado for um dos Estados Unidos da América do Norte,
+muito desta seção pode ser ignorada. Sem os arquivos de configuração, os
+serviços <command>consolefont</command> e <command>keymap</command> usarão
+os padrões.</para>
 
   <para>The <command>consolefont</command> service reads the
 <filename>/etc/conf.d/consolefont</filename> file for configuration
 information. Decide which screen font will be used. Search <filename
 class="directory">/usr/share/consolefonts</filename> for valid fonts.</para>
 
-  <para>The <command>keymaps</command> service reads the
-<filename>/etc/conf.d/keymaps</filename> file for configuration
-information. Decide which keymap will be used. Various language-specific
-HOWTOs can also help with this; see <ulink
-url="https://tldp.org/HOWTO/HOWTO-INDEX/other-lang.html"/>. If still in
-doubt, look in the <filename class="directory">/usr/share/keymaps</filename>
-directory for valid keymaps.</para>
+  <para>O serviço <command>keymaps</command> lê o arquivo
+<filename>/etc/conf.d/keymaps</filename> para informações de
+configuração. Decida qual mapa de teclado será usado. Vários HOWTOs
+específicos de cada idioma também podem ajudar com isso; veja-se <ulink
+url="https://tldp.org/HOWTO/HOWTO-INDEX/other-lang.html"/>. Se ainda em
+dúvida, procure no diretório <filename
+class="directory">/usr/share/keymaps</filename> por mapas válidos de
+teclado.</para>
 
   <para>For both <command>consolefont</command> and <command>keymaps</command>,
 configuration files exist for both and have comments that give good
@@ -246,16 +249,16 @@ information about what to provide to each parameter.</para>
   <!-- Added because folks keep posting their console file with X questions
   to blfs-support list -->
 <note>
-    <para>The configuration files for the console only control the Linux text console
-localization. It has nothing to do with setting the proper keyboard layout
-and terminal fonts in the X Window System, with ssh sessions, or with a
-serial console.</para>
+    <para>Os arquivos de configuração para o console somente controlam a localização
+do console de texto do Linux. Eles não tem nada a ver com configurar o
+esquema adequado de teclado e fontes de terminal no Sistema de Janelas X;
+com sessões do ssh; ou com um console serial.</para>
   </note>
 
   </sect2>
 
   <sect2 id="ch-config-agetty">
-    <title>Configuring Agetty</title>
+    <title>Configurando Agetty</title>
 
     <para>
       If you don't want the boot logs to be cleared on the first TTY, which Agetty
@@ -267,7 +270,7 @@ will clear them by default, add <option>--noclear</option> to
   </sect2>
 
   <sect2 id="ch-config-rc">
-    <title>The rc.conf File</title>
+    <title>O Arquivo rc.conf</title>
 
     <indexterm zone="ch-config-rc">
       <primary sortas="a-rc.conf">rc.conf</primary>

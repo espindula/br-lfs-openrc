@@ -2415,7 +2415,7 @@ url="https://re2c.org/">re2c</ulink>
       <segmentedlist id="openrcinit-depends" revision='openrc'>                           
         <segtitle>&dependencies;</segtitle>                                               
         <seglistitem>                                                                     
-          <seg>Binutils, GCC, Glibc, Meson, Ninja, and Psmisc</seg>                       
+          <seg>Binutils, GCC, Glibc, Meson, Ninja e Psmisc</seg>                       
         </seglistitem>                                                                    
       </segmentedlist>                                                                    
                                                                                           
@@ -2429,7 +2429,7 @@ url="https://re2c.org/">re2c</ulink>
       <segmentedlist id="openrcinit-testdeps" revision='openrc'>                          
         <segtitle>&testsuites;</segtitle>                                                 
         <seglistitem>                                                                     
-          <seg>Bash, Meson, and Ninja</seg>                                    
+          <seg>Bash, Meson e Ninja</seg>                                    
         </seglistitem>                                                     
       </segmentedlist>                                                          
                                                                               
@@ -2701,8 +2701,8 @@ Kmod, Man-DB, Procps-ng, Python, &systemd-udev; e Util-linux</seg>
       <segmentedlist id="procps-depends">
         <segtitle>&dependencies;</segtitle>
         <seglistitem>
-          <seg>Bash, Binutils, Coreutils, GCC, Glibc, Make, Ncurses, <phrase
-revision='openrc'>and </phrase>Pkgconf<phrase revision='systemd'>, and
+          <seg>Bash, Binutils, Coreutils, GCC, Glibc, Make, Ncurses <phrase
+revision='openrc'>e </phrase>Pkgconf<phrase revision='systemd'> e
 Systemd</phrase></seg>
         </seglistitem>
       </segmentedlist>
@@ -2732,7 +2732,7 @@ Systemd</phrase></seg>
         <segtitle>&external;</segtitle>
         <seglistitem>
           <seg>
-            <phrase revision='systemd'>None</phrase> <phrase revision='openrc'> <ulink
+            <phrase revision='systemd'>Nenhum</phrase> <phrase revision='openrc'> <ulink
 url='&blfs-book;general/elogind.html'>elogind</ulink> </phrase>
           </seg>
         </seglistitem>

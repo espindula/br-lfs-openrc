@@ -366,22 +366,23 @@ url="&hints-root;more_control_and_pkg_man.txt"/>.</para>
     <title>Implantando o LFS em Múltiplos Sistemas</title>
 
     <para><!-- D. Bryant created LFS 11.2 in October 2022; 900MB is (roughly) the size of his rsync archive. -->
-One of the advantages of an LFS system is that there are no files that
-depend on the position of files on a disk system.  Cloning an LFS build to
-another computer with the same architecture as the base system is as simple
-as using <command>tar</command> on the LFS partition that contains the root
-directory (about 900MB uncompressed for a basic LFS build), copying that
-file via network transfer or CD-ROM / USB stick to the new system, and
-expanding it.  After that, a few configuration files will have to be
-changed.  Configuration files that may need to be updated include:
+Uma das vantagens de um sistema LFS é a de que não existem arquivos que
+dependam da posição de arquivos em um sistema de disco. Clonar uma
+construção do LFS para outro computador com a mesma arquitetura que a do
+sistema base é tão simples quanto usar <command>tar</command> na partição do
+LFS que contém o diretório raiz (cerca de 900MB descomprimido para uma
+construção básica do LFS), copiando aquele arquivo via transferência de rede
+ou CD-ROM/stick USB para o novo sistema e expandindo-o. Depois disso, uns
+poucos arquivos de configuração terão que ser mudados. Arquivos de
+configuração que possivelmente precisem ser atualizados incluem:
 <filename>/etc/hosts</filename>, <filename>/etc/fstab</filename>,
 <filename>/etc/passwd</filename>, <filename>/etc/group</filename>, <phrase
-revision="systemd"> <filename>/etc/shadow</filename>, and
-<filename>/etc/ld.so.conf</filename>.  </phrase> <phrase revision="openrc">
+revision="systemd"> <filename>/etc/shadow</filename> e
+<filename>/etc/ld.so.conf</filename>. </phrase> <phrase revision="openrc">
 <filename>/etc/shadow</filename>, <filename>/etc/ld.so.conf</filename>,
 <filename>/etc/sysconfig/rc.site</filename>,
-<filename>/etc/sysconfig/network</filename>, and
-<filename>/etc/sysconfig/ifconfig.eth0</filename>.  </phrase>
+<filename>/etc/sysconfig/network</filename> e
+<filename>/etc/sysconfig/ifconfig.eth0</filename>. </phrase>
     </para>
 
     <para>Um núcleo personalizado possivelmente seja necessário para o novo sistema,

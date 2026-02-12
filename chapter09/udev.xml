@@ -15,11 +15,11 @@
     <secondary>uso</secondary>
   </indexterm>
 
-  <para>In <xref linkend="chapter-building-system"/>, we installed the udev daemon
-when <phrase revision="openrc">udev</phrase> <phrase
-revision="systemd">systemd</phrase> was built. Before we go into the details
-regarding how udev works, a brief history of previous methods of handling
-devices is in order.</para>
+  <para>No <xref linkend="chapter-building-system"/>, nós instalamos o processo de
+segundo plano Udev quando <phrase revision="openrc">udev</phrase> <phrase
+revision="systemd">systemd</phrase> foi construído. Antes de entrarmos nos
+detalhes referentes a como o Udev funciona, um histórico breve dos métodos
+anteriores de manuseio de dispositivos é oportuno.</para>
 
   <para>Sistemas Linux em geral tradicionalmente usavam um método estático de
 criação de dispositivo, pelo qual um grande número de nós de dispositivo era
