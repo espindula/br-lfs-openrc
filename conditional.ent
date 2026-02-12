@@ -1,2 +1,2 @@
-<!ENTITY % openrc    "INCLUDE">
+<!ENTITY % openrc  "INCLUDE">
 <!ENTITY % systemd "IGNORE ">
