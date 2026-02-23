@@ -82,7 +82,8 @@ conforme mostrado acima. Um teste exitoso resultará nas palavras
 <computeroutput>ALL DONE</computeroutput> no arquivo de registro na
 conclusão.</para>
 
-    <para>Um teste, test_matchfuzzy.vim, é conhecido por falhar em alguns sistemas.</para>
+    <para>Two tests, Test_client_server_stopinsert() and Test_popup_setbuf(), are
+known to fail on some systems.</para>
 
     <para>Instale o pacote:</para>
 

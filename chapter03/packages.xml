@@ -606,9 +606,9 @@ quanto o remendo desejado precisarão ser baixados.
     <varlistentry revision="openrc">
       <term>OpenRC (&openrc-version;) - <token>&openrc-size;</token>:</term>
       <listitem>
-        <para>Página inicial: <ulink url="&openrc-home;"/></para>
-        <para>Transferência: <ulink url="&openrc-url;"/></para>
-        <para>Soma de verificação MD5: <literal>&openrc-md5;</literal></para>
+        <para>Home page: <ulink url="&openrc-home;"/></para>
+        <para>Download: <ulink url="&openrc-url;"/></para>
+        <para>MD5 sum: <literal>&openrc-md5;</literal></para>
       </listitem>
     </varlistentry>
 

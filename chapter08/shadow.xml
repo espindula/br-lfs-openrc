@@ -41,9 +41,9 @@ segura.</para>
 
     <important>
       <para>
-        Se você tiver instalado o Linux-PAM, você deveria seguir <ulink
-url='&blfs-book;postlfs/shadow.html'>a instrução do BLFS</ulink> em vez
-desta página para construir (ou reconstruir ou atualizar) shadow.
+        If you've installed Linux-PAM, you should follow <ulink
+url='&blfs-book;postlfs/shadow.html'>the BLFS instruction</ulink> instead of
+this page to build (or, rebuild or upgrade) shadow.
       </para>
     </important>
 

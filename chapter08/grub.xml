@@ -64,7 +64,7 @@ sejam quebradas por otimização agressiva.</para>
     
     <!-- See https://wiki.linuxfromscratch.org/lfs/ticket/5857. Remove this at
     next grub version -->
-<para>First fix a bug introduced in grub-2.14:</para>
+<para>Primeiro corrija um defeito introduzido no grub-2.14:</para>
 
 <screen><userinput remap="pre">sed 's/--image-base/--nonexist-linker-option/' -i configure</userinput></screen>
 
