@@ -6,10 +6,12 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-10 04:58-0300\n"
+"POT-Creation-Date: 2026-01-26 04:18+0000\n"
 "PO-Revision-Date: 2026-01-27 04:18+0000\n"
-"Last-Translator: Jamenson Ferreira Espindula de Almeida Melo <jafesp@gmail.com>\n"
-"Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/projects/linux-from-scratch/appendices_dependencies/pt_BR/>\n"
+"Last-Translator: Jamenson Ferreira Espindula de Almeida Melo "
+"<jafesp@gmail.com>\n"
+"Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/"
+"projects/linux-from-scratch/appendices_dependencies/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,12 +21,13 @@ msgstr ""
 
 #. type: Content of the systemd-udev entity
 #: lfs-en/appendices/dependencies.xml:7
+#, xml-text
 msgid ""
 "<phrase revision='systemd'>Systemd</phrase><phrase "
-"revision='openrc'>Udev</phrase>"
+"revision='sysv'>Udev</phrase>"
 msgstr ""
 "<phrase revision='systemd'>Systemd</phrase><phrase "
-"revision='openrc'>Udev</phrase>"
+"revision='sysv'>Udev</phrase>"
 
 #. type: Content of the bdb entity
 #: lfs-en/appendices/dependencies.xml:8
@@ -177,33 +180,33 @@ msgstr "Acl"
 #: lfs-en/appendices/dependencies.xml:2299
 #: lfs-en/appendices/dependencies.xml:2339
 #: lfs-en/appendices/dependencies.xml:2382
-#: lfs-en/appendices/dependencies.xml:2422
+#: lfs-en/appendices/dependencies.xml:2420
 #: lfs-en/appendices/dependencies.xml:2460
-#: lfs-en/appendices/dependencies.xml:2500
-#: lfs-en/appendices/dependencies.xml:2541
-#: lfs-en/appendices/dependencies.xml:2583
-#: lfs-en/appendices/dependencies.xml:2624
-#: lfs-en/appendices/dependencies.xml:2667
-#: lfs-en/appendices/dependencies.xml:2712
-#: lfs-en/appendices/dependencies.xml:2751
-#: lfs-en/appendices/dependencies.xml:2797
-#: lfs-en/appendices/dependencies.xml:2836
-#: lfs-en/appendices/dependencies.xml:2875
-#: lfs-en/appendices/dependencies.xml:2913
-#: lfs-en/appendices/dependencies.xml:2956
-#: lfs-en/appendices/dependencies.xml:2997
-#: lfs-en/appendices/dependencies.xml:3035
-#: lfs-en/appendices/dependencies.xml:3135
-#: lfs-en/appendices/dependencies.xml:3175
-#: lfs-en/appendices/dependencies.xml:3214
-#: lfs-en/appendices/dependencies.xml:3253
-#: lfs-en/appendices/dependencies.xml:3293
-#: lfs-en/appendices/dependencies.xml:3346
-#: lfs-en/appendices/dependencies.xml:3391
-#: lfs-en/appendices/dependencies.xml:3431
-#: lfs-en/appendices/dependencies.xml:3473
-#: lfs-en/appendices/dependencies.xml:3511
-#: lfs-en/appendices/dependencies.xml:3549
+#: lfs-en/appendices/dependencies.xml:2501
+#: lfs-en/appendices/dependencies.xml:2543
+#: lfs-en/appendices/dependencies.xml:2584
+#: lfs-en/appendices/dependencies.xml:2627
+#: lfs-en/appendices/dependencies.xml:2672
+#: lfs-en/appendices/dependencies.xml:2711
+#: lfs-en/appendices/dependencies.xml:2757
+#: lfs-en/appendices/dependencies.xml:2796
+#: lfs-en/appendices/dependencies.xml:2835
+#: lfs-en/appendices/dependencies.xml:2873
+#: lfs-en/appendices/dependencies.xml:2916
+#: lfs-en/appendices/dependencies.xml:2957
+#: lfs-en/appendices/dependencies.xml:2995
+#: lfs-en/appendices/dependencies.xml:3095
+#: lfs-en/appendices/dependencies.xml:3133
+#: lfs-en/appendices/dependencies.xml:3173
+#: lfs-en/appendices/dependencies.xml:3212
+#: lfs-en/appendices/dependencies.xml:3251
+#: lfs-en/appendices/dependencies.xml:3291
+#: lfs-en/appendices/dependencies.xml:3344
+#: lfs-en/appendices/dependencies.xml:3389
+#: lfs-en/appendices/dependencies.xml:3429
+#: lfs-en/appendices/dependencies.xml:3471
+#: lfs-en/appendices/dependencies.xml:3509
+#: lfs-en/appendices/dependencies.xml:3547
 #, xml-text
 msgid "&dependencies;"
 msgstr "&dependencies;"
@@ -277,40 +280,40 @@ msgstr ""
 #: lfs-en/appendices/dependencies.xml:2307
 #: lfs-en/appendices/dependencies.xml:2346
 #: lfs-en/appendices/dependencies.xml:2389
-#: lfs-en/appendices/dependencies.xml:2429
-#: lfs-en/appendices/dependencies.xml:2467
-#: lfs-en/appendices/dependencies.xml:2508
-#: lfs-en/appendices/dependencies.xml:2549
-#: lfs-en/appendices/dependencies.xml:2591
-#: lfs-en/appendices/dependencies.xml:2632
-#: lfs-en/appendices/dependencies.xml:2676
+#: lfs-en/appendices/dependencies.xml:2427
+#: lfs-en/appendices/dependencies.xml:2468
+#: lfs-en/appendices/dependencies.xml:2509
+#: lfs-en/appendices/dependencies.xml:2551
+#: lfs-en/appendices/dependencies.xml:2592
+#: lfs-en/appendices/dependencies.xml:2636
+#: lfs-en/appendices/dependencies.xml:2680
 #: lfs-en/appendices/dependencies.xml:2720
-#: lfs-en/appendices/dependencies.xml:2760
-#: lfs-en/appendices/dependencies.xml:2805
-#: lfs-en/appendices/dependencies.xml:2844
-#: lfs-en/appendices/dependencies.xml:2882
-#: lfs-en/appendices/dependencies.xml:2921
-#: lfs-en/appendices/dependencies.xml:2963
+#: lfs-en/appendices/dependencies.xml:2765
+#: lfs-en/appendices/dependencies.xml:2804
+#: lfs-en/appendices/dependencies.xml:2842
+#: lfs-en/appendices/dependencies.xml:2881
+#: lfs-en/appendices/dependencies.xml:2923
+#: lfs-en/appendices/dependencies.xml:2964
 #: lfs-en/appendices/dependencies.xml:3004
-#: lfs-en/appendices/dependencies.xml:3044
-#: lfs-en/appendices/dependencies.xml:3143
-#: lfs-en/appendices/dependencies.xml:3183
-#: lfs-en/appendices/dependencies.xml:3222
-#: lfs-en/appendices/dependencies.xml:3262
-#: lfs-en/appendices/dependencies.xml:3302
-#: lfs-en/appendices/dependencies.xml:3354
-#: lfs-en/appendices/dependencies.xml:3398
-#: lfs-en/appendices/dependencies.xml:3439
-#: lfs-en/appendices/dependencies.xml:3480
-#: lfs-en/appendices/dependencies.xml:3518
-#: lfs-en/appendices/dependencies.xml:3556
+#: lfs-en/appendices/dependencies.xml:3102
+#: lfs-en/appendices/dependencies.xml:3141
+#: lfs-en/appendices/dependencies.xml:3181
+#: lfs-en/appendices/dependencies.xml:3220
+#: lfs-en/appendices/dependencies.xml:3260
+#: lfs-en/appendices/dependencies.xml:3300
+#: lfs-en/appendices/dependencies.xml:3352
+#: lfs-en/appendices/dependencies.xml:3396
+#: lfs-en/appendices/dependencies.xml:3437
+#: lfs-en/appendices/dependencies.xml:3478
+#: lfs-en/appendices/dependencies.xml:3516
+#: lfs-en/appendices/dependencies.xml:3554
 #, xml-text
 msgid "&runtime;"
 msgstr "&runtime;"
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
 #: lfs-en/appendices/dependencies.xml:55
-#: lfs-en/appendices/dependencies.xml:2510
+#: lfs-en/appendices/dependencies.xml:2470
 #, xml-text
 msgid "Attr and Glibc"
 msgstr "Attr e Glibc"
@@ -375,33 +378,33 @@ msgstr "Attr e Glibc"
 #: lfs-en/appendices/dependencies.xml:2314
 #: lfs-en/appendices/dependencies.xml:2353
 #: lfs-en/appendices/dependencies.xml:2396
-#: lfs-en/appendices/dependencies.xml:2436
-#: lfs-en/appendices/dependencies.xml:2474
-#: lfs-en/appendices/dependencies.xml:2515
-#: lfs-en/appendices/dependencies.xml:2556
-#: lfs-en/appendices/dependencies.xml:2598
-#: lfs-en/appendices/dependencies.xml:2639
-#: lfs-en/appendices/dependencies.xml:2683
-#: lfs-en/appendices/dependencies.xml:2727
-#: lfs-en/appendices/dependencies.xml:2768
-#: lfs-en/appendices/dependencies.xml:2812
-#: lfs-en/appendices/dependencies.xml:2851
-#: lfs-en/appendices/dependencies.xml:2889
-#: lfs-en/appendices/dependencies.xml:2928
-#: lfs-en/appendices/dependencies.xml:2970
-#: lfs-en/appendices/dependencies.xml:3011
-#: lfs-en/appendices/dependencies.xml:3052
-#: lfs-en/appendices/dependencies.xml:3150
-#: lfs-en/appendices/dependencies.xml:3190
-#: lfs-en/appendices/dependencies.xml:3229
-#: lfs-en/appendices/dependencies.xml:3269
-#: lfs-en/appendices/dependencies.xml:3309
-#: lfs-en/appendices/dependencies.xml:3361
-#: lfs-en/appendices/dependencies.xml:3405
-#: lfs-en/appendices/dependencies.xml:3446
-#: lfs-en/appendices/dependencies.xml:3487
-#: lfs-en/appendices/dependencies.xml:3525
-#: lfs-en/appendices/dependencies.xml:3563
+#: lfs-en/appendices/dependencies.xml:2434
+#: lfs-en/appendices/dependencies.xml:2475
+#: lfs-en/appendices/dependencies.xml:2516
+#: lfs-en/appendices/dependencies.xml:2558
+#: lfs-en/appendices/dependencies.xml:2599
+#: lfs-en/appendices/dependencies.xml:2643
+#: lfs-en/appendices/dependencies.xml:2687
+#: lfs-en/appendices/dependencies.xml:2728
+#: lfs-en/appendices/dependencies.xml:2772
+#: lfs-en/appendices/dependencies.xml:2811
+#: lfs-en/appendices/dependencies.xml:2849
+#: lfs-en/appendices/dependencies.xml:2888
+#: lfs-en/appendices/dependencies.xml:2930
+#: lfs-en/appendices/dependencies.xml:2971
+#: lfs-en/appendices/dependencies.xml:3012
+#: lfs-en/appendices/dependencies.xml:3109
+#: lfs-en/appendices/dependencies.xml:3148
+#: lfs-en/appendices/dependencies.xml:3188
+#: lfs-en/appendices/dependencies.xml:3227
+#: lfs-en/appendices/dependencies.xml:3267
+#: lfs-en/appendices/dependencies.xml:3307
+#: lfs-en/appendices/dependencies.xml:3359
+#: lfs-en/appendices/dependencies.xml:3403
+#: lfs-en/appendices/dependencies.xml:3444
+#: lfs-en/appendices/dependencies.xml:3485
+#: lfs-en/appendices/dependencies.xml:3523
+#: lfs-en/appendices/dependencies.xml:3561
 #, xml-text
 msgid "&testsuites;"
 msgstr "&testsuites;"
@@ -473,33 +476,33 @@ msgstr "Automake, Diffutils, Findutils e Libtool"
 #: lfs-en/appendices/dependencies.xml:2321
 #: lfs-en/appendices/dependencies.xml:2360
 #: lfs-en/appendices/dependencies.xml:2403
-#: lfs-en/appendices/dependencies.xml:2443
-#: lfs-en/appendices/dependencies.xml:2481
-#: lfs-en/appendices/dependencies.xml:2522
-#: lfs-en/appendices/dependencies.xml:2563
-#: lfs-en/appendices/dependencies.xml:2605
-#: lfs-en/appendices/dependencies.xml:2646
-#: lfs-en/appendices/dependencies.xml:2690
-#: lfs-en/appendices/dependencies.xml:2734
-#: lfs-en/appendices/dependencies.xml:2775
-#: lfs-en/appendices/dependencies.xml:2819
-#: lfs-en/appendices/dependencies.xml:2858
-#: lfs-en/appendices/dependencies.xml:2896
-#: lfs-en/appendices/dependencies.xml:2935
-#: lfs-en/appendices/dependencies.xml:2977
-#: lfs-en/appendices/dependencies.xml:3018
-#: lfs-en/appendices/dependencies.xml:3059
-#: lfs-en/appendices/dependencies.xml:3158
-#: lfs-en/appendices/dependencies.xml:3197
-#: lfs-en/appendices/dependencies.xml:3236
-#: lfs-en/appendices/dependencies.xml:3276
-#: lfs-en/appendices/dependencies.xml:3316
-#: lfs-en/appendices/dependencies.xml:3368
-#: lfs-en/appendices/dependencies.xml:3412
-#: lfs-en/appendices/dependencies.xml:3453
-#: lfs-en/appendices/dependencies.xml:3494
-#: lfs-en/appendices/dependencies.xml:3532
-#: lfs-en/appendices/dependencies.xml:3570
+#: lfs-en/appendices/dependencies.xml:2441
+#: lfs-en/appendices/dependencies.xml:2482
+#: lfs-en/appendices/dependencies.xml:2523
+#: lfs-en/appendices/dependencies.xml:2565
+#: lfs-en/appendices/dependencies.xml:2606
+#: lfs-en/appendices/dependencies.xml:2650
+#: lfs-en/appendices/dependencies.xml:2694
+#: lfs-en/appendices/dependencies.xml:2735
+#: lfs-en/appendices/dependencies.xml:2779
+#: lfs-en/appendices/dependencies.xml:2818
+#: lfs-en/appendices/dependencies.xml:2856
+#: lfs-en/appendices/dependencies.xml:2895
+#: lfs-en/appendices/dependencies.xml:2937
+#: lfs-en/appendices/dependencies.xml:2978
+#: lfs-en/appendices/dependencies.xml:3019
+#: lfs-en/appendices/dependencies.xml:3116
+#: lfs-en/appendices/dependencies.xml:3156
+#: lfs-en/appendices/dependencies.xml:3195
+#: lfs-en/appendices/dependencies.xml:3234
+#: lfs-en/appendices/dependencies.xml:3274
+#: lfs-en/appendices/dependencies.xml:3314
+#: lfs-en/appendices/dependencies.xml:3366
+#: lfs-en/appendices/dependencies.xml:3410
+#: lfs-en/appendices/dependencies.xml:3451
+#: lfs-en/appendices/dependencies.xml:3492
+#: lfs-en/appendices/dependencies.xml:3530
+#: lfs-en/appendices/dependencies.xml:3568
 #, xml-text
 msgid "&before;"
 msgstr "&before;"
@@ -570,33 +573,33 @@ msgstr "Coreutils, Sed, Tar e Vim"
 #: lfs-en/appendices/dependencies.xml:2329
 #: lfs-en/appendices/dependencies.xml:2367
 #: lfs-en/appendices/dependencies.xml:2410
-#: lfs-en/appendices/dependencies.xml:2450
-#: lfs-en/appendices/dependencies.xml:2488
-#: lfs-en/appendices/dependencies.xml:2529
-#: lfs-en/appendices/dependencies.xml:2570
-#: lfs-en/appendices/dependencies.xml:2612
+#: lfs-en/appendices/dependencies.xml:2448
+#: lfs-en/appendices/dependencies.xml:2489
+#: lfs-en/appendices/dependencies.xml:2530
+#: lfs-en/appendices/dependencies.xml:2572
+#: lfs-en/appendices/dependencies.xml:2617
 #: lfs-en/appendices/dependencies.xml:2657
-#: lfs-en/appendices/dependencies.xml:2697
-#: lfs-en/appendices/dependencies.xml:2741
-#: lfs-en/appendices/dependencies.xml:2782
-#: lfs-en/appendices/dependencies.xml:2826
-#: lfs-en/appendices/dependencies.xml:2865
-#: lfs-en/appendices/dependencies.xml:2903
-#: lfs-en/appendices/dependencies.xml:2942
-#: lfs-en/appendices/dependencies.xml:2984
-#: lfs-en/appendices/dependencies.xml:3025
-#: lfs-en/appendices/dependencies.xml:3066
-#: lfs-en/appendices/dependencies.xml:3165
-#: lfs-en/appendices/dependencies.xml:3204
-#: lfs-en/appendices/dependencies.xml:3243
-#: lfs-en/appendices/dependencies.xml:3283
-#: lfs-en/appendices/dependencies.xml:3323
-#: lfs-en/appendices/dependencies.xml:3375
-#: lfs-en/appendices/dependencies.xml:3421
-#: lfs-en/appendices/dependencies.xml:3460
-#: lfs-en/appendices/dependencies.xml:3501
-#: lfs-en/appendices/dependencies.xml:3539
-#: lfs-en/appendices/dependencies.xml:3578
+#: lfs-en/appendices/dependencies.xml:2701
+#: lfs-en/appendices/dependencies.xml:2742
+#: lfs-en/appendices/dependencies.xml:2786
+#: lfs-en/appendices/dependencies.xml:2825
+#: lfs-en/appendices/dependencies.xml:2863
+#: lfs-en/appendices/dependencies.xml:2902
+#: lfs-en/appendices/dependencies.xml:2944
+#: lfs-en/appendices/dependencies.xml:2985
+#: lfs-en/appendices/dependencies.xml:3026
+#: lfs-en/appendices/dependencies.xml:3123
+#: lfs-en/appendices/dependencies.xml:3163
+#: lfs-en/appendices/dependencies.xml:3202
+#: lfs-en/appendices/dependencies.xml:3241
+#: lfs-en/appendices/dependencies.xml:3281
+#: lfs-en/appendices/dependencies.xml:3321
+#: lfs-en/appendices/dependencies.xml:3373
+#: lfs-en/appendices/dependencies.xml:3419
+#: lfs-en/appendices/dependencies.xml:3458
+#: lfs-en/appendices/dependencies.xml:3499
+#: lfs-en/appendices/dependencies.xml:3537
+#: lfs-en/appendices/dependencies.xml:3576
 #, xml-text
 msgid "&external;"
 msgstr "&external;"
@@ -684,43 +687,44 @@ msgstr "&external;"
 #: lfs-en/appendices/dependencies.xml:2277
 #: lfs-en/appendices/dependencies.xml:2291
 #: lfs-en/appendices/dependencies.xml:2331
-#: lfs-en/appendices/dependencies.xml:2405
-#: lfs-en/appendices/dependencies.xml:2438
-#: lfs-en/appendices/dependencies.xml:2452
-#: lfs-en/appendices/dependencies.xml:2524
-#: lfs-en/appendices/dependencies.xml:2641
-#: lfs-en/appendices/dependencies.xml:2659
-#: lfs-en/appendices/dependencies.xml:2692
-#: lfs-en/appendices/dependencies.xml:2736
-#: lfs-en/appendices/dependencies.xml:2743
-#: lfs-en/appendices/dependencies.xml:2828
-#: lfs-en/appendices/dependencies.xml:2867
-#: lfs-en/appendices/dependencies.xml:2905
-#: lfs-en/appendices/dependencies.xml:2972
-#: lfs-en/appendices/dependencies.xml:3020
-#: lfs-en/appendices/dependencies.xml:3027
-#: lfs-en/appendices/dependencies.xml:3054
-#: lfs-en/appendices/dependencies.xml:3160
-#: lfs-en/appendices/dependencies.xml:3167
-#: lfs-en/appendices/dependencies.xml:3192
-#: lfs-en/appendices/dependencies.xml:3199
-#: lfs-en/appendices/dependencies.xml:3206
-#: lfs-en/appendices/dependencies.xml:3231
-#: lfs-en/appendices/dependencies.xml:3238
-#: lfs-en/appendices/dependencies.xml:3245
-#: lfs-en/appendices/dependencies.xml:3271
-#: lfs-en/appendices/dependencies.xml:3285
-#: lfs-en/appendices/dependencies.xml:3311
-#: lfs-en/appendices/dependencies.xml:3318
-#: lfs-en/appendices/dependencies.xml:3363
-#: lfs-en/appendices/dependencies.xml:3370
-#: lfs-en/appendices/dependencies.xml:3423
-#: lfs-en/appendices/dependencies.xml:3489
-#: lfs-en/appendices/dependencies.xml:3503
-#: lfs-en/appendices/dependencies.xml:3527
-#: lfs-en/appendices/dependencies.xml:3541
-#: lfs-en/appendices/dependencies.xml:3565
-#: lfs-en/appendices/dependencies.xml:3581
+#: lfs-en/appendices/dependencies.xml:2398
+#: lfs-en/appendices/dependencies.xml:2412
+#: lfs-en/appendices/dependencies.xml:2484
+#: lfs-en/appendices/dependencies.xml:2601
+#: lfs-en/appendices/dependencies.xml:2619
+#: lfs-en/appendices/dependencies.xml:2652
+#: lfs-en/appendices/dependencies.xml:2696
+#: lfs-en/appendices/dependencies.xml:2703
+#: lfs-en/appendices/dependencies.xml:2788
+#: lfs-en/appendices/dependencies.xml:2827
+#: lfs-en/appendices/dependencies.xml:2865
+#: lfs-en/appendices/dependencies.xml:2932
+#: lfs-en/appendices/dependencies.xml:2980
+#: lfs-en/appendices/dependencies.xml:2987
+#: lfs-en/appendices/dependencies.xml:3014
+#: lfs-en/appendices/dependencies.xml:3118
+#: lfs-en/appendices/dependencies.xml:3125
+#: lfs-en/appendices/dependencies.xml:3158
+#: lfs-en/appendices/dependencies.xml:3165
+#: lfs-en/appendices/dependencies.xml:3190
+#: lfs-en/appendices/dependencies.xml:3197
+#: lfs-en/appendices/dependencies.xml:3204
+#: lfs-en/appendices/dependencies.xml:3229
+#: lfs-en/appendices/dependencies.xml:3236
+#: lfs-en/appendices/dependencies.xml:3243
+#: lfs-en/appendices/dependencies.xml:3269
+#: lfs-en/appendices/dependencies.xml:3283
+#: lfs-en/appendices/dependencies.xml:3309
+#: lfs-en/appendices/dependencies.xml:3316
+#: lfs-en/appendices/dependencies.xml:3361
+#: lfs-en/appendices/dependencies.xml:3368
+#: lfs-en/appendices/dependencies.xml:3421
+#: lfs-en/appendices/dependencies.xml:3487
+#: lfs-en/appendices/dependencies.xml:3501
+#: lfs-en/appendices/dependencies.xml:3525
+#: lfs-en/appendices/dependencies.xml:3539
+#: lfs-en/appendices/dependencies.xml:3563
+#: lfs-en/appendices/dependencies.xml:3579
 #, xml-text
 msgid "None"
 msgstr "Nenhum"
@@ -757,15 +761,15 @@ msgstr ""
 #: lfs-en/appendices/dependencies.xml:1953
 #: lfs-en/appendices/dependencies.xml:2033
 #: lfs-en/appendices/dependencies.xml:2309
-#: lfs-en/appendices/dependencies.xml:2391
-#: lfs-en/appendices/dependencies.xml:2551
-#: lfs-en/appendices/dependencies.xml:2634
-#: lfs-en/appendices/dependencies.xml:2678
-#: lfs-en/appendices/dependencies.xml:2965
-#: lfs-en/appendices/dependencies.xml:3006
-#: lfs-en/appendices/dependencies.xml:3482
-#: lfs-en/appendices/dependencies.xml:3520
-#: lfs-en/appendices/dependencies.xml:3558
+#: lfs-en/appendices/dependencies.xml:2511
+#: lfs-en/appendices/dependencies.xml:2594
+#: lfs-en/appendices/dependencies.xml:2638
+#: lfs-en/appendices/dependencies.xml:2925
+#: lfs-en/appendices/dependencies.xml:2966
+#: lfs-en/appendices/dependencies.xml:3104
+#: lfs-en/appendices/dependencies.xml:3480
+#: lfs-en/appendices/dependencies.xml:3518
+#: lfs-en/appendices/dependencies.xml:3556
 #, xml-text
 msgid "Glibc"
 msgstr "Glibc"
@@ -778,7 +782,7 @@ msgstr "Acl, Libcap e Patch"
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
 #: lfs-en/appendices/dependencies.xml:121
-#: lfs-en/appendices/dependencies.xml:2607
+#: lfs-en/appendices/dependencies.xml:2567
 #, xml-text
 msgid "Autoconf"
 msgstr "Autoconf"
@@ -847,7 +851,7 @@ msgstr ""
 #: lfs-en/appendices/dependencies.xml:189
 #: lfs-en/appendices/dependencies.xml:403
 #: lfs-en/appendices/dependencies.xml:1303
-#: lfs-en/appendices/dependencies.xml:2937
+#: lfs-en/appendices/dependencies.xml:2897
 #, xml-text
 msgid "Coreutils"
 msgstr "Coreutils"
@@ -1072,7 +1076,7 @@ msgstr "<ulink url=\"&blfs-book;x/x7lib.html\">Bibliotecas do Xorg</ulink>"
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
 #: lfs-en/appendices/dependencies.xml:487
-#: lfs-en/appendices/dependencies.xml:2685
+#: lfs-en/appendices/dependencies.xml:2645
 #, xml-text
 msgid "DejaGNU"
 msgstr "DejaGNU"
@@ -1093,7 +1097,7 @@ msgstr "Expect e Bash"
 #: lfs-en/appendices/dependencies.xml:526
 #: lfs-en/appendices/dependencies.xml:867
 #: lfs-en/appendices/dependencies.xml:1999
-#: lfs-en/appendices/dependencies.xml:2517
+#: lfs-en/appendices/dependencies.xml:2477
 #, xml-text
 msgid "Diffutils"
 msgstr "Diffutils"
@@ -1112,8 +1116,8 @@ msgstr ""
 #: lfs-en/appendices/dependencies.xml:546
 #: lfs-en/appendices/dependencies.xml:1324
 #: lfs-en/appendices/dependencies.xml:1395
-#: lfs-en/appendices/dependencies.xml:2580
-#: lfs-en/appendices/dependencies.xml:3448
+#: lfs-en/appendices/dependencies.xml:2540
+#: lfs-en/appendices/dependencies.xml:3446
 #, xml-text
 msgid "Perl"
 msgstr "Perl"
@@ -1168,7 +1172,7 @@ msgstr "Python e XML::Parser"
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
 #: lfs-en/appendices/dependencies.xml:645
-#: lfs-en/appendices/dependencies.xml:2729
+#: lfs-en/appendices/dependencies.xml:2689
 #, xml-text
 msgid "Expect"
 msgstr "Expect"
@@ -1233,7 +1237,7 @@ msgstr "Findutils"
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
 #: lfs-en/appendices/dependencies.xml:732
 #: lfs-en/appendices/dependencies.xml:2025
-#: lfs-en/appendices/dependencies.xml:2838
+#: lfs-en/appendices/dependencies.xml:2798
 #, xml-text
 msgid ""
 "Bash, Binutils, Coreutils, GCC, Gettext, Glibc, Grep, Make, Sed, and Texinfo"
@@ -1301,11 +1305,11 @@ msgstr "Flit-Core"
 #: lfs-en/appendices/dependencies.xml:1960
 #: lfs-en/appendices/dependencies.xml:2154
 #: lfs-en/appendices/dependencies.xml:2192
-#: lfs-en/appendices/dependencies.xml:2469
-#: lfs-en/appendices/dependencies.xml:2748
-#: lfs-en/appendices/dependencies.xml:2884
-#: lfs-en/appendices/dependencies.xml:2979
-#: lfs-en/appendices/dependencies.xml:3400
+#: lfs-en/appendices/dependencies.xml:2429
+#: lfs-en/appendices/dependencies.xml:2708
+#: lfs-en/appendices/dependencies.xml:2844
+#: lfs-en/appendices/dependencies.xml:2939
+#: lfs-en/appendices/dependencies.xml:3398
 #, xml-text
 msgid "Python"
 msgstr "Python"
@@ -1322,12 +1326,13 @@ msgstr "Python"
 #: lfs-en/appendices/dependencies.xml:2161
 #: lfs-en/appendices/dependencies.xml:2199
 #: lfs-en/appendices/dependencies.xml:2316
-#: lfs-en/appendices/dependencies.xml:2476
-#: lfs-en/appendices/dependencies.xml:2814
-#: lfs-en/appendices/dependencies.xml:2891
-#: lfs-en/appendices/dependencies.xml:2930
-#: lfs-en/appendices/dependencies.xml:3013
-#: lfs-en/appendices/dependencies.xml:3407
+#: lfs-en/appendices/dependencies.xml:2436
+#: lfs-en/appendices/dependencies.xml:2774
+#: lfs-en/appendices/dependencies.xml:2851
+#: lfs-en/appendices/dependencies.xml:2890
+#: lfs-en/appendices/dependencies.xml:2973
+#: lfs-en/appendices/dependencies.xml:3111
+#: lfs-en/appendices/dependencies.xml:3405
 #, xml-text
 msgid "No test suite available"
 msgstr "Nenhuma suíte de teste disponível"
@@ -1535,7 +1540,7 @@ msgstr "Diffutils e Expect"
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
 #: lfs-en/appendices/dependencies.xml:1136
-#: lfs-en/appendices/dependencies.xml:2558
+#: lfs-en/appendices/dependencies.xml:2518
 #, xml-text
 msgid "Grep"
 msgstr "Grep"
@@ -1664,14 +1669,14 @@ msgstr "GCC, Glibc, Ncurses e Readline"
 
 #. type: Content of: <appendix><bridgehead>
 #: lfs-en/appendices/dependencies.xml:1363
-#: lfs-en/appendices/dependencies.xml:3132
+#: lfs-en/appendices/dependencies.xml:3130
 #, xml-text
 msgid "Tar"
 msgstr "Tar"
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
 #: lfs-en/appendices/dependencies.xml:1375
-#: lfs-en/appendices/dependencies.xml:3455
+#: lfs-en/appendices/dependencies.xml:3453
 #, xml-text
 msgid "Intltool"
 msgstr "Intltool"
@@ -1776,7 +1781,6 @@ msgstr "Bash, Coreutils e Glibc"
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
 #: lfs-en/appendices/dependencies.xml:1532
 #: lfs-en/appendices/dependencies.xml:1655
-#: lfs-en/appendices/dependencies.xml:2413
 #, xml-text
 msgid "<ulink url=\"&blfs-book;postlfs/linux-pam.html\">Linux-PAM</ulink>"
 msgstr "<ulink url=\"&blfs-book;postlfs/linux-pam.html\">Linux-PAM</ulink>"
@@ -1831,9 +1835,9 @@ msgstr ""
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
 #: lfs-en/appendices/dependencies.xml:1592
-#: lfs-en/appendices/dependencies.xml:2722
-#: lfs-en/appendices/dependencies.xml:2807
-#: lfs-en/appendices/dependencies.xml:3224
+#: lfs-en/appendices/dependencies.xml:2682
+#: lfs-en/appendices/dependencies.xml:2767
+#: lfs-en/appendices/dependencies.xml:3222
 #, xml-text
 msgid "Glibc and Ncurses"
 msgstr "Glibc e Ncurses"
@@ -1888,7 +1892,7 @@ msgstr "Libffi"
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
 #: lfs-en/appendices/dependencies.xml:1705
-#: lfs-en/appendices/dependencies.xml:3513
+#: lfs-en/appendices/dependencies.xml:3511
 #, xml-text
 msgid "Bash, Binutils, Coreutils, GCC, Glibc, Make, and Sed"
 msgstr "Bash, Binutils, Coreutils, GCC, Glibc, Make e Sed"
@@ -1918,7 +1922,7 @@ msgstr ""
 
 #. type: Content of: <appendix><bridgehead>
 #: lfs-en/appendices/dependencies.xml:1759
-#: lfs-en/appendices/dependencies.xml:2621
+#: lfs-en/appendices/dependencies.xml:2581
 #, xml-text
 msgid "Pkgconf"
 msgstr "Pkgconf"
@@ -2067,8 +2071,8 @@ msgstr "Bash, GDBM, Groff, Glibc, Gzip, Less, Libpipeline e Zlib"
 
 #. type: Content of: <appendix><bridgehead>
 #: lfs-en/appendices/dependencies.xml:2082
-#: lfs-en/appendices/dependencies.xml:3278
-#: lfs-en/appendices/dependencies.xml:3290
+#: lfs-en/appendices/dependencies.xml:3276
+#: lfs-en/appendices/dependencies.xml:3288
 #, xml-text
 msgid "Util-linux"
 msgstr "Util-linux"
@@ -2198,7 +2202,7 @@ msgstr ""
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
 #: lfs-en/appendices/dependencies.xml:2336
-#: lfs-en/appendices/dependencies.xml:2777
+#: lfs-en/appendices/dependencies.xml:2737
 #, xml-text
 msgid "Ninja"
 msgstr "Ninja"
@@ -2231,64 +2235,49 @@ msgstr ""
 
 #. type: Content of: <appendix><bridgehead>
 #: lfs-en/appendices/dependencies.xml:2379
-msgid "OpenRC"
-msgstr "OpenRC"
-
-#. type: Content of: <appendix><segmentedlist><seglistitem><seg>
-#: lfs-en/appendices/dependencies.xml:2384
-msgid "Binutils, GCC, Glibc, Meson, Ninja, and Psmisc"
-msgstr "Binutils, GCC, Glibc, Meson, Ninja e Psmisc"
-
-#. type: Content of: <appendix><segmentedlist><seglistitem><seg>
-#: lfs-en/appendices/dependencies.xml:2398
-msgid "Bash, Meson, and Ninja"
-msgstr "Bash, Meson e Ninja"
-
-#. type: Content of: <appendix><bridgehead>
-#: lfs-en/appendices/dependencies.xml:2419
 #, xml-text
 msgid "OpenSSL"
 msgstr "OpenSSL"
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
-#: lfs-en/appendices/dependencies.xml:2424
+#: lfs-en/appendices/dependencies.xml:2384
 #, xml-text
 msgid "Binutils, Coreutils, GCC, Make, and Perl"
 msgstr "Binutils, Coreutils, GCC, Make e Perl"
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
-#: lfs-en/appendices/dependencies.xml:2431
+#: lfs-en/appendices/dependencies.xml:2391
 #, xml-text
 msgid "Glibc and Perl"
 msgstr "Glibc e Perl"
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
-#: lfs-en/appendices/dependencies.xml:2445
+#: lfs-en/appendices/dependencies.xml:2405
 #, xml-text
 msgid "Coreutils, Kmod, Linux, and &systemd-udev;"
 msgstr "Coreutils, Kmod, Linux e &systemd-udev;"
 
 #. type: Content of: <appendix><bridgehead>
-#: lfs-en/appendices/dependencies.xml:2457
+#: lfs-en/appendices/dependencies.xml:2417
 #, xml-text
 msgid "Packaging"
 msgstr "Packaging"
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
-#: lfs-en/appendices/dependencies.xml:2462
+#: lfs-en/appendices/dependencies.xml:2422
 #, xml-text
 msgid "Flit-core and Python"
 msgstr "Flit-core e Python"
 
 #. type: Content of: <appendix><bridgehead>
-#: lfs-en/appendices/dependencies.xml:2483
-#: lfs-en/appendices/dependencies.xml:3388
+#: lfs-en/appendices/dependencies.xml:2443
+#: lfs-en/appendices/dependencies.xml:3386
 #, xml-text
 msgid "Wheel"
 msgstr "Wheel"
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
-#: lfs-en/appendices/dependencies.xml:2491
+#: lfs-en/appendices/dependencies.xml:2451
 #, xml-text
 msgid ""
 "<ulink url='&blfs-book;general/python-modules.html#pytest'>pytest</ulink>"
@@ -2296,44 +2285,44 @@ msgstr ""
 "<ulink url='&blfs-book;general/python-modules.html#pytest'>pytest</ulink>"
 
 #. type: Content of: <appendix><bridgehead>
-#: lfs-en/appendices/dependencies.xml:2497
+#: lfs-en/appendices/dependencies.xml:2457
 #, xml-text
 msgid "Patch"
 msgstr "Patch"
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
-#: lfs-en/appendices/dependencies.xml:2502
+#: lfs-en/appendices/dependencies.xml:2462
 #, xml-text
 msgid "Attr, Bash, Binutils, Coreutils, GCC, Glibc, Grep, Make, and Sed"
 msgstr "Attr, Bash, Binutils, Coreutils, GCC, Glibc, Grep, Make e Sed"
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
-#: lfs-en/appendices/dependencies.xml:2532
+#: lfs-en/appendices/dependencies.xml:2492
 #, xml-text
 msgid "<ulink url=\"&blfs-book;postlfs/ed.html\">Ed</ulink>"
 msgstr "<ulink url=\"&blfs-book;postlfs/ed.html\">Ed</ulink>"
 
 #. type: Content of: <appendix><bridgehead>
-#: lfs-en/appendices/dependencies.xml:2538
-#: lfs-en/appendices/dependencies.xml:2953
+#: lfs-en/appendices/dependencies.xml:2498
+#: lfs-en/appendices/dependencies.xml:2913
 #, xml-text
 msgid "Pcre2"
 msgstr "Pcre2"
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
-#: lfs-en/appendices/dependencies.xml:2543
+#: lfs-en/appendices/dependencies.xml:2503
 #, xml-text
 msgid "Bash, Binutils, Bzip2, Coreutils, GCC, Glibc, GZip, Make, and Readline"
 msgstr "Bash, Binutils, Bzip2, Coreutils, GCC, Glibc, GZip, Make e Readline"
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
-#: lfs-en/appendices/dependencies.xml:2565
+#: lfs-en/appendices/dependencies.xml:2525
 #, xml-text
 msgid "Grep and Less"
 msgstr "Grep e Less"
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
-#: lfs-en/appendices/dependencies.xml:2573
+#: lfs-en/appendices/dependencies.xml:2533
 #, xml-text
 msgid ""
 "<ulink url=\"&blfs-book;general/valgrind.html\">Valgrind</ulink> and <ulink "
@@ -2343,7 +2332,7 @@ msgstr ""
 "url=\"https://thrysoee.dk/editline/\">libedit</ulink>"
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
-#: lfs-en/appendices/dependencies.xml:2585
+#: lfs-en/appendices/dependencies.xml:2545
 #, xml-text
 msgid ""
 "Bash, Binutils, Coreutils, Gawk, GCC, GDBM, Glibc, Grep, Libxcrypt, Make, "
@@ -2353,32 +2342,32 @@ msgstr ""
 "Sed e Zlib"
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
-#: lfs-en/appendices/dependencies.xml:2593
+#: lfs-en/appendices/dependencies.xml:2553
 #, xml-text
 msgid "GDBM, Glibc, and Libxcrypt"
 msgstr "GDBM, Glibc e Libxcrypt"
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
-#: lfs-en/appendices/dependencies.xml:2600
+#: lfs-en/appendices/dependencies.xml:2560
 #, xml-text
 msgid "Iana-Etc, Less, and Procps-ng"
 msgstr "Iana-Etc, Less e Procps-ng"
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
-#: lfs-en/appendices/dependencies.xml:2615
+#: lfs-en/appendices/dependencies.xml:2575
 #, xml-text
 msgid "&bdb;"
 msgstr "&bdb;"
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
-#: lfs-en/appendices/dependencies.xml:2626
+#: lfs-en/appendices/dependencies.xml:2586
 #, xml-text
 msgid ""
 "Bash, Binutils, Coreutils, Gawk, GCC, Glibc, Grep, Make, Sed, and Sqlite"
 msgstr "Bash, Binutils, Coreutils, Gawk, GCC, Glibc, Grep, Make, Sed e Sqlite"
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
-#: lfs-en/appendices/dependencies.xml:2648
+#: lfs-en/appendices/dependencies.xml:2608
 #, xml-text
 msgid ""
 "Binutils, <phrase revision='systemd'>D-Bus, </phrase> E2fsprogs, IProute2, "
@@ -2388,39 +2377,41 @@ msgstr ""
 "Kmod, Man-DB, Procps-ng, Python, &systemd-udev; e Util-linux"
 
 #. type: Content of: <appendix><bridgehead>
-#: lfs-en/appendices/dependencies.xml:2664
+#: lfs-en/appendices/dependencies.xml:2624
 #, xml-text
 msgid "Procps-ng"
 msgstr "Procps-ng"
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
-#: lfs-en/appendices/dependencies.xml:2669
+#: lfs-en/appendices/dependencies.xml:2629
+#, xml-text
 msgid ""
 "Bash, Binutils, Coreutils, GCC, Glibc, Make, Ncurses, <phrase "
-"revision='openrc'>and </phrase>Pkgconf<phrase revision='systemd'>, and "
+"revision='sysv'>and </phrase>Pkgconf<phrase revision='systemd'>, and "
 "Systemd</phrase>"
 msgstr ""
 "Bash, Binutils, Coreutils, GCC, Glibc, Make, Ncurses <phrase "
-"revision='openrc'>e </phrase>Pkgconf<phrase revision='systemd'> e "
+"revision='sysv'>e </phrase>Pkgconf<phrase revision='systemd'> e "
 "Systemd</phrase>"
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
-#: lfs-en/appendices/dependencies.xml:2700
+#: lfs-en/appendices/dependencies.xml:2660
+#, xml-text
 msgid ""
-"<phrase revision='systemd'>None</phrase> <phrase revision='openrc'> <ulink "
+"<phrase revision='systemd'>None</phrase> <phrase revision='sysv'> <ulink "
 "url='&blfs-book;general/elogind.html'>elogind</ulink> </phrase>"
 msgstr ""
-"<phrase revision='systemd'>Nenhum</phrase> <phrase revision='openrc'> <ulink "
+"<phrase revision='systemd'>Nenhum</phrase> <phrase revision='sysv'> <ulink "
 "url='&blfs-book;general/elogind.html'>elogind</ulink> </phrase>"
 
 #. type: Content of: <appendix><bridgehead>
-#: lfs-en/appendices/dependencies.xml:2709
+#: lfs-en/appendices/dependencies.xml:2669
 #, xml-text
 msgid "Psmisc"
 msgstr "Psmisc"
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
-#: lfs-en/appendices/dependencies.xml:2714
+#: lfs-en/appendices/dependencies.xml:2674
 #, xml-text
 msgid ""
 "Bash, Binutils, Coreutils, GCC, Gettext, Glibc, Grep, Make, Ncurses, and Sed"
@@ -2428,7 +2419,7 @@ msgstr ""
 "Bash, Binutils, Coreutils, GCC, Gettext, Glibc, Grep, Make, Ncurses e Sed"
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
-#: lfs-en/appendices/dependencies.xml:2753
+#: lfs-en/appendices/dependencies.xml:2713
 #, xml-text
 msgid ""
 "Bash, Binutils, Coreutils, Expat, GCC, Gdbm, Gettext, Glibc, Grep, Libffi, "
@@ -2438,20 +2429,20 @@ msgstr ""
 "Libxcrypt, Make, Ncurses, OpenSSL, Pkgconf, Sed, Util-linux e Zstd"
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
-#: lfs-en/appendices/dependencies.xml:2762
+#: lfs-en/appendices/dependencies.xml:2722
 #, xml-text
 msgid ""
 "Bzip2, Expat, Gdbm, Glibc, Libffi, Libxcrypt, Ncurses, OpenSSL, and Zlib"
 msgstr "Bzip2, Expat, Gdbm, Glibc, Libffi, Libxcrypt, Ncurses, OpenSSL e Zlib"
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
-#: lfs-en/appendices/dependencies.xml:2770
+#: lfs-en/appendices/dependencies.xml:2730
 #, xml-text
 msgid "GDB and Valgrind"
 msgstr "GDB e Valgrind"
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
-#: lfs-en/appendices/dependencies.xml:2785
+#: lfs-en/appendices/dependencies.xml:2745
 #, xml-text
 msgid ""
 "&bdb;, <ulink url=\"&blfs-book;basicnet/libnsl.html\">libnsl</ulink>, <ulink"
@@ -2463,13 +2454,13 @@ msgstr ""
 "book;general/tk.html\">Tk</ulink>"
 
 #. type: Content of: <appendix><bridgehead>
-#: lfs-en/appendices/dependencies.xml:2794
+#: lfs-en/appendices/dependencies.xml:2754
 #, xml-text
 msgid "Readline"
 msgstr "Readline"
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
-#: lfs-en/appendices/dependencies.xml:2799
+#: lfs-en/appendices/dependencies.xml:2759
 #, xml-text
 msgid ""
 "Bash, Binutils, Coreutils, Gawk, GCC, Glibc, Grep, Make, Ncurses, Patch, "
@@ -2479,61 +2470,61 @@ msgstr ""
 " e Texinfo"
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
-#: lfs-en/appendices/dependencies.xml:2821
+#: lfs-en/appendices/dependencies.xml:2781
 #, xml-text
 msgid "Bash, Bc, and Gawk"
 msgstr "Bash, Bc e Gawk"
 
 #. type: Content of: <appendix><bridgehead>
-#: lfs-en/appendices/dependencies.xml:2833
+#: lfs-en/appendices/dependencies.xml:2793
 #, xml-text
 msgid "Sed"
 msgstr "Sed"
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
-#: lfs-en/appendices/dependencies.xml:2846
+#: lfs-en/appendices/dependencies.xml:2806
 #, xml-text
 msgid "Acl, Attr, and Glibc"
 msgstr "Acl, Attr e Glibc"
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
-#: lfs-en/appendices/dependencies.xml:2853
+#: lfs-en/appendices/dependencies.xml:2813
 #, xml-text
 msgid "Diffutils and Gawk"
 msgstr "Diffutils e Gawk"
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
-#: lfs-en/appendices/dependencies.xml:2860
+#: lfs-en/appendices/dependencies.xml:2820
 #, xml-text
 msgid "E2fsprogs, File, Libtool, and Shadow"
 msgstr "E2fsprogs, File, Libtool e Shadow"
 
 #. type: Content of: <appendix><bridgehead>
-#: lfs-en/appendices/dependencies.xml:2872
+#: lfs-en/appendices/dependencies.xml:2832
 #, xml-text
 msgid "Setuptools"
 msgstr "Setuptools"
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
-#: lfs-en/appendices/dependencies.xml:2877
+#: lfs-en/appendices/dependencies.xml:2837
 #, xml-text
 msgid "Python and Wheel"
 msgstr "Python e Wheel"
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
-#: lfs-en/appendices/dependencies.xml:2898
+#: lfs-en/appendices/dependencies.xml:2858
 #, xml-text
 msgid "Jinja2, MarkupSafe, and Meson"
 msgstr "Jinja2, MarkupSafe e Meson"
 
 #. type: Content of: <appendix><bridgehead>
-#: lfs-en/appendices/dependencies.xml:2910
+#: lfs-en/appendices/dependencies.xml:2870
 #, xml-text
 msgid "Shadow"
 msgstr "Shadow"
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
-#: lfs-en/appendices/dependencies.xml:2915
+#: lfs-en/appendices/dependencies.xml:2875
 #, xml-text
 msgid ""
 "Acl, Attr, Bash, Binutils, Coreutils, Diffutils, Findutils, Gawk, GCC, "
@@ -2543,13 +2534,13 @@ msgstr ""
 "Gettext, Glibc, Grep, Libcap, Libxcrypt, Make e Sed"
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
-#: lfs-en/appendices/dependencies.xml:2923
+#: lfs-en/appendices/dependencies.xml:2883
 #, xml-text
 msgid "Glibc and Libxcrypt"
 msgstr "Glibc e Libxcrypt"
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
-#: lfs-en/appendices/dependencies.xml:2945
+#: lfs-en/appendices/dependencies.xml:2905
 #, xml-text
 msgid ""
 "<ulink url=\"&blfs-book;postlfs/cracklib.html\">CrackLib</ulink> and <ulink "
@@ -2559,13 +2550,13 @@ msgstr ""
 "url=\"&blfs-book;postlfs/linux-pam.html\">Linux-PAM</ulink>"
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
-#: lfs-en/appendices/dependencies.xml:2958
+#: lfs-en/appendices/dependencies.xml:2918
 #, xml-text
 msgid "Bash, Binutils, GCC, Glibc, Gzip, Make, Ncurses, and Readline"
 msgstr "Bash, Binutils, GCC, Glibc, Gzip, Make, Ncurses e Readline"
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
-#: lfs-en/appendices/dependencies.xml:2987
+#: lfs-en/appendices/dependencies.xml:2947
 #, xml-text
 msgid ""
 "<ulink url=\"&blfs-book;general/libarchive.html\">libarchive</ulink> and "
@@ -2575,25 +2566,25 @@ msgstr ""
 "<ulink url=\"https://thrysoee.dk/editline/\">libedit</ulink>"
 
 #. type: Content of: <appendix><bridgehead>
-#: lfs-en/appendices/dependencies.xml:2994
+#: lfs-en/appendices/dependencies.xml:2954
 #, xml-text
 msgid "Sysklogd"
 msgstr "Sysklogd"
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
-#: lfs-en/appendices/dependencies.xml:2999
+#: lfs-en/appendices/dependencies.xml:2959
 #, xml-text
 msgid "Binutils, Coreutils, GCC, Glibc, Make, and Patch"
 msgstr "Binutils, Coreutils, GCC, Glibc, Make e Patch"
 
 #. type: Content of: <appendix><bridgehead>
-#: lfs-en/appendices/dependencies.xml:3032
+#: lfs-en/appendices/dependencies.xml:2992
 #, xml-text
 msgid "Systemd"
 msgstr "Systemd"
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
-#: lfs-en/appendices/dependencies.xml:3037
+#: lfs-en/appendices/dependencies.xml:2997
 #, xml-text
 msgid ""
 "Acl, Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glibc, Gperf, Grep, "
@@ -2605,19 +2596,19 @@ msgstr ""
 "Zstd"
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
-#: lfs-en/appendices/dependencies.xml:3046
+#: lfs-en/appendices/dependencies.xml:3006
 #, xml-text
 msgid "Acl, Glibc, Libxcrypt, OpenSSL, Util-linux, Xz, Zlib, and Zstd"
 msgstr "Acl, Glibc, Libxcrypt, OpenSSL, Util-linux, Xz, Zlib e Zstd"
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
-#: lfs-en/appendices/dependencies.xml:3061
+#: lfs-en/appendices/dependencies.xml:3021
 #, xml-text
 msgid "D-Bus, E2fsprogs, Man-DB, Procps-ng, and Util-linux"
 msgstr "D-Bus, E2fsprogs, Man-DB, Procps-ng e Util-linux"
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
-#: lfs-en/appendices/dependencies.xml:3069
+#: lfs-en/appendices/dependencies.xml:3029
 #, xml-text
 msgid ""
 "<ulink url=\"https://www.apparmor.net/\">AppArmor</ulink>, <ulink "
@@ -2706,8 +2697,20 @@ msgstr ""
 "url=\"https://xenproject.org\">Xen</ulink> e <ulink url=\"&blfs-"
 "book;postlfs/zsh.html\">zsh</ulink>"
 
+#. type: Content of: <appendix><bridgehead>
+#: lfs-en/appendices/dependencies.xml:3092
+#, xml-text
+msgid "SysVinit"
+msgstr "SysVinit"
+
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
-#: lfs-en/appendices/dependencies.xml:3137
+#: lfs-en/appendices/dependencies.xml:3097
+#, xml-text
+msgid "Binutils, Coreutils, GCC, Glibc, Make, and Sed"
+msgstr "Binutils, Coreutils, GCC, Glibc, Make e Sed"
+
+#. type: Content of: <appendix><segmentedlist><seglistitem><seg>
+#: lfs-en/appendices/dependencies.xml:3135
 #, xml-text
 msgid ""
 "Acl, Attr, Bash, Binutils, Bison, Coreutils, GCC, Gettext, Glibc, Grep, "
@@ -2717,43 +2720,43 @@ msgstr ""
 "Inetutils, Make, Sed e Texinfo"
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
-#: lfs-en/appendices/dependencies.xml:3145
+#: lfs-en/appendices/dependencies.xml:3143
 #, xml-text
 msgid "Acl, Attr, Bzip2, Glibc, Gzip, and Xz"
 msgstr "Acl, Attr, Bzip2, Glibc, Gzip e Xz"
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
-#: lfs-en/appendices/dependencies.xml:3152
+#: lfs-en/appendices/dependencies.xml:3150
 #, xml-text
 msgid "Autoconf, Diffutils, Findutils, Gawk, and Gzip"
 msgstr "Autoconf, Diffutils, Findutils, Gawk e Gzip"
 
 #. type: Content of: <appendix><bridgehead>
-#: lfs-en/appendices/dependencies.xml:3172
+#: lfs-en/appendices/dependencies.xml:3170
 #, xml-text
 msgid "Tcl"
 msgstr "Tcl"
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
-#: lfs-en/appendices/dependencies.xml:3177
+#: lfs-en/appendices/dependencies.xml:3175
 #, xml-text
 msgid "Bash, Binutils, Coreutils, Diffutils, GCC, Glibc, Grep, Make, and Sed"
 msgstr "Bash, Binutils, Coreutils, Diffutils, GCC, Glibc, Grep, Make e Sed"
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
-#: lfs-en/appendices/dependencies.xml:3185
+#: lfs-en/appendices/dependencies.xml:3183
 #, xml-text
 msgid "Glibc and Zlib"
 msgstr "Glibc e Zlib"
 
 #. type: Content of: <appendix><bridgehead>
-#: lfs-en/appendices/dependencies.xml:3211
+#: lfs-en/appendices/dependencies.xml:3209
 #, xml-text
 msgid "Texinfo"
 msgstr "Texinfo"
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
-#: lfs-en/appendices/dependencies.xml:3216
+#: lfs-en/appendices/dependencies.xml:3214
 #, xml-text
 msgid ""
 "Bash, Binutils, Coreutils, GCC, Gettext, Glibc, Grep, Make, Ncurses, Patch, "
@@ -2763,13 +2766,13 @@ msgstr ""
 " Sed"
 
 #. type: Content of: <appendix><bridgehead>
-#: lfs-en/appendices/dependencies.xml:3250
+#: lfs-en/appendices/dependencies.xml:3248
 #, xml-text
 msgid "Udev"
 msgstr "Udev"
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
-#: lfs-en/appendices/dependencies.xml:3255
+#: lfs-en/appendices/dependencies.xml:3253
 #, xml-text
 msgid ""
 "Acl, Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glibc, Gperf, Grep, "
@@ -2780,13 +2783,13 @@ msgstr ""
 "Jinja2, Libcap, Libxcrypt, Meson, OpenSSL, Pkgconf, Sed, Util-linux e Zstd"
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
-#: lfs-en/appendices/dependencies.xml:3264
+#: lfs-en/appendices/dependencies.xml:3262
 #, xml-text
 msgid "Acl, Glibc, Libcap, OpenSSL, and Util-linux"
 msgstr "Acl, Glibc, Libcap, OpenSSL e Util-linux"
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
-#: lfs-en/appendices/dependencies.xml:3295
+#: lfs-en/appendices/dependencies.xml:3293
 #, xml-text
 msgid ""
 "Bash, Binutils, Coreutils, Diffutils, File, Findutils, Gawk, GCC, Gettext, "
@@ -2796,13 +2799,13 @@ msgstr ""
 "Glibc, Grep, Make, Ncurses, Pkgconf, Sed, &systemd-udev; e Zlib"
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
-#: lfs-en/appendices/dependencies.xml:3304
+#: lfs-en/appendices/dependencies.xml:3302
 #, xml-text
 msgid "Glibc, Ncurses, Readline, &systemd-udev;, and Zlib"
 msgstr "Glibc, Ncurses, Readline, &systemd-udev; e Zlib"
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
-#: lfs-en/appendices/dependencies.xml:3326
+#: lfs-en/appendices/dependencies.xml:3324
 #, xml-text
 msgid ""
 "<ulink url=\"&blfs-book;general/asciidoctor.html\">Asciidoctor</ulink>, "
@@ -2826,13 +2829,13 @@ msgstr ""
 "book;general/slang.html\">slang</ulink>"
 
 #. type: Content of: <appendix><bridgehead>
-#: lfs-en/appendices/dependencies.xml:3343
+#: lfs-en/appendices/dependencies.xml:3341
 #, xml-text
 msgid "Vim"
 msgstr "Vim"
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
-#: lfs-en/appendices/dependencies.xml:3348
+#: lfs-en/appendices/dependencies.xml:3346
 #, xml-text
 msgid ""
 "Acl, Attr, Bash, Binutils, Coreutils, Diffutils, GCC, Glibc, Grep, Make, "
@@ -2842,13 +2845,13 @@ msgstr ""
 "Ncurses e Sed"
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
-#: lfs-en/appendices/dependencies.xml:3356
+#: lfs-en/appendices/dependencies.xml:3354
 #, xml-text
 msgid "Acl, Attr, Glibc, Python, Ncurses, and Tcl"
 msgstr "Acl, Attr, Glibc, Python, Ncurses e Tcl"
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
-#: lfs-en/appendices/dependencies.xml:3378
+#: lfs-en/appendices/dependencies.xml:3376
 #, xml-text
 msgid ""
 "<ulink url=\"&blfs-book;x/installing.html\">Xorg</ulink>, <ulink "
@@ -2864,37 +2867,37 @@ msgstr ""
 "book;general/gpm.html\">GPM</ulink>"
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
-#: lfs-en/appendices/dependencies.xml:3393
+#: lfs-en/appendices/dependencies.xml:3391
 #, xml-text
 msgid "Python, Flit-core, and packaging"
 msgstr "Python, Flit-core e packaging"
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
-#: lfs-en/appendices/dependencies.xml:3415
+#: lfs-en/appendices/dependencies.xml:3413
 #, xml-text
 msgid "Jinja2, MarkupSafe, Meson, and Setuptools"
 msgstr "Jinja2, MarkupSafe, Meson e Setuptools"
 
 #. type: Content of: <appendix><bridgehead>
-#: lfs-en/appendices/dependencies.xml:3428
+#: lfs-en/appendices/dependencies.xml:3426
 #, xml-text
 msgid "XML::Parser"
 msgstr "XML::Parser"
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
-#: lfs-en/appendices/dependencies.xml:3433
+#: lfs-en/appendices/dependencies.xml:3431
 #, xml-text
 msgid "Bash, Binutils, Coreutils, Expat, GCC, Glibc, Make, and Perl"
 msgstr "Bash, Binutils, Coreutils, Expat, GCC, Glibc, Make e Perl"
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
-#: lfs-en/appendices/dependencies.xml:3441
+#: lfs-en/appendices/dependencies.xml:3439
 #, xml-text
 msgid "Expat, Glibc, and Perl"
 msgstr "Expat, Glibc e Perl"
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
-#: lfs-en/appendices/dependencies.xml:3463
+#: lfs-en/appendices/dependencies.xml:3461
 #, xml-text
 msgid ""
 "<ulink "
@@ -2904,49 +2907,231 @@ msgstr ""
 "url=\"https://metacpan.org/pod/LWP::UserAgent\">LWP::UserAgent</ulink>"
 
 #. type: Content of: <appendix><bridgehead>
-#: lfs-en/appendices/dependencies.xml:3470
+#: lfs-en/appendices/dependencies.xml:3468
 #, xml-text
 msgid "Xz"
 msgstr "Xz"
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
-#: lfs-en/appendices/dependencies.xml:3475
+#: lfs-en/appendices/dependencies.xml:3473
 #, xml-text
 msgid "Bash, Binutils, Coreutils, Diffutils, GCC, Glibc, and Make"
 msgstr "Bash, Binutils, Coreutils, Diffutils, GCC, Glibc e Make"
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
-#: lfs-en/appendices/dependencies.xml:3496
+#: lfs-en/appendices/dependencies.xml:3494
 #, xml-text
 msgid "File, GRUB, Kmod, Libelf, Man-DB, and &systemd-udev;"
 msgstr "File, GRUB, Kmod, Libelf, Man-DB e &systemd-udev;"
 
 #. type: Content of: <appendix><bridgehead>
-#: lfs-en/appendices/dependencies.xml:3508
+#: lfs-en/appendices/dependencies.xml:3506
 #, xml-text
 msgid "Zlib"
 msgstr "Zlib"
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
-#: lfs-en/appendices/dependencies.xml:3534
+#: lfs-en/appendices/dependencies.xml:3532
 #, xml-text
 msgid "File, Kmod, Libelf, Perl, and Util-linux"
 msgstr "File, Kmod, Libelf, Perl e Util-linux"
 
 #. type: Content of: <appendix><bridgehead>
-#: lfs-en/appendices/dependencies.xml:3546
+#: lfs-en/appendices/dependencies.xml:3544
 #, xml-text
 msgid "Zstd"
 msgstr "Zstd"
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
-#: lfs-en/appendices/dependencies.xml:3551
+#: lfs-en/appendices/dependencies.xml:3549
 #, xml-text
 msgid "Binutils, Coreutils, GCC, Glibc, Gzip, Lz4, Make, Xz, and Zlib"
 msgstr "Binutils, Coreutils, GCC, Glibc, Gzip, Lz4, Make, Xz e Zlib"
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
-#: lfs-en/appendices/dependencies.xml:3572
+#: lfs-en/appendices/dependencies.xml:3570
 #, xml-text
 msgid "Binutils, File, GCC, Kmod, Libelf, Python, and &systemd-udev;"
 msgstr "Binutils, File, GCC, Kmod, Libelf, Python e &systemd-udev;"
+
+#, xml-text
+#~ msgid ""
+#~ "<ulink url=\"&blfs-book;general/pcre2.html\">PCRE2</ulink> and <ulink "
+#~ "url=\"&blfs-book;general/libsigsegv.html\">libsigsegv</ulink>"
+#~ msgstr ""
+#~ "<ulink url=\"&blfs-book;general/pcre2.html\">PCRE2</ulink> e <ulink "
+#~ "url=\"&blfs-book;general/libsigsegv.html\">libsigsegv</ulink>"
+
+#, xml-text
+#~ msgid ""
+#~ "<ulink url=\"&blfs-book;general/pcre2.html\">PCRE2</ulink> or <ulink "
+#~ "url=\"&blfs-book;general/pcre.html\">PCRE</ulink>"
+#~ msgstr ""
+#~ "<ulink url=\"&blfs-book;general/pcre2.html\">PCRE2</ulink> ou <ulink "
+#~ "url=\"&blfs-book;general/pcre.html\">PCRE</ulink>"
+
+#, xml-text
+#~ msgid "Check and Pkgconf"
+#~ msgstr "Check e Pkgconf"
+
+#, xml-text
+#~ msgid "Check"
+#~ msgstr "Check"
+
+#, xml-text
+#~ msgid "Gawk, GCC, Grep, Make, Sed, and Texinfo"
+#~ msgstr "Gawk, GCC, Grep, Make, Sed e Texinfo"
+
+#, xml-text
+#~ msgid "Bash and Gawk"
+#~ msgstr "Bash e Gawk"
+
+#, xml-text
+#~ msgid ""
+#~ "<ulink url='&github;/testing-cabal/subunit'>libsubunit</ulink> and <ulink "
+#~ "url='http://cyberelk.net/tim/software/patchutils/'> patchutils</ulink>"
+#~ msgstr ""
+#~ "<ulink url='&github;/testing-cabal/subunit'>libsubunit</ulink> e <ulink "
+#~ "url='http://cyberelk.net/tim/software/patchutils/'> patchutils</ulink>"
+
+#, xml-text
+#~ msgid "<ulink url=\"https://lz4.github.io/lz4/\">LZ4</ulink>"
+#~ msgstr "<ulink url=\"https://lz4.github.io/lz4/\">LZ4</ulink>"
+
+#, xml-text
+#~ msgid "<ulink url='&blfs-book;general/libxml2.html'>libxml2</ulink>"
+#~ msgstr "<ulink url='&blfs-book;general/libxml2.html'>libxml2</ulink>"
+
+#, xml-text
+#~ msgid "Man-DB and Perl"
+#~ msgstr "Man-DB e Perl"
+
+#, xml-text
+#~ msgid "Acl and Libcap"
+#~ msgstr "Acl e Libcap"
+
+#, xml-text
+#~ msgid "Bash, Binutils, Coreutils, GCC, Glibc, Grep, Make, and Sed"
+#~ msgstr "Bash, Binutils, Coreutils, GCC, Glibc, Grep, Make e Sed"
+
+#, xml-text
+#~ msgid "<ulink url=\"&blfs-book;server/db.html\">Berkeley DB</ulink>"
+#~ msgstr "<ulink url=\"&blfs-book;server/db.html\">Berkeley DB</ulink>"
+
+#, xml-text
+#~ msgid "wheel"
+#~ msgstr "wheel"
+
+#, xml-text
+#~ msgid ""
+#~ "<phrase revision='sysv'>None</phrase> <phrase "
+#~ "revision='systemd'>Jinja2</phrase>"
+#~ msgstr ""
+#~ "<phrase revision='sysv'>Nenhum</phrase> <phrase "
+#~ "revision='systemd'>Jinja2</phrase>"
+
+#, xml-text
+#~ msgid ""
+#~ "Bash, Diffutils, <phrase revision=\"sysv\">Eudev, </phrase> Findutils, "
+#~ "<phrase revision=\"sysv\">and </phrase>Man-DB<phrase revision=\"systemd\">, "
+#~ "and Systemd</phrase>"
+#~ msgstr ""
+#~ "Bash, Diffutils, <phrase revision=\"sysv\">Eudev, </phrase> Findutils "
+#~ "<phrase revision=\"sysv\">e </phrase>Man-DB<phrase revision=\"systemd\"> e "
+#~ "Systemd</phrase>"
+
+#, xml-text
+#~ msgid "Eudev"
+#~ msgstr "Eudev"
+
+#, xml-text
+#~ msgid ""
+#~ "Bash, Binutils, Coreutils, Gawk, GCC, Glibc, Grep, Gperf, Make, Sed, and "
+#~ "Util-linux"
+#~ msgstr ""
+#~ "Bash, Binutils, Coreutils, Gawk, GCC, Glibc, Grep, Gperf, Make, Sed e Util-"
+#~ "linux"
+
+#, xml-text
+#~ msgid "Glibc, Kmod, Xz, Util-linux, and Zlib."
+#~ msgstr "Glibc, Kmod, Xz, Util-linux e Zlib."
+
+#, xml-text
+#~ msgid ""
+#~ "<phrase revision=\"sysv\">Eudev</phrase> <phrase "
+#~ "revision=\"systemd\">Systemd</phrase>"
+#~ msgstr ""
+#~ "<phrase revision=\"sysv\">Eudev</phrase> <phrase "
+#~ "revision=\"systemd\">Systemd</phrase>"
+
+#, xml-text
+#~ msgid ""
+#~ "GCC, Perl, Python, <phrase revision='sysv'>and </phrase>Shadow<phrase "
+#~ "revision='systemd'>, and Systemd</phrase>"
+#~ msgstr ""
+#~ "GCC, Perl, Python <phrase revision='sysv'>e Shadow</phrase><phrase "
+#~ "revision='systemd'>, Shadow e Systemd</phrase>"
+
+#, xml-text
+#~ msgid ""
+#~ "Bash, Binutils, Coreutils, Diffutils, <phrase revision=\"sysv\">Eudev, "
+#~ "</phrase>File, Findutils, Gawk, GCC, Gettext, Glibc, Grep, Make, Ncurses, "
+#~ "Pkgconf, Sed, <phrase revision=\"systemd\">Systemd, </phrase>and Zlib"
+#~ msgstr ""
+#~ "Bash, Binutils, Coreutils, Diffutils, <phrase revision=\"sysv\">Eudev, "
+#~ "</phrase>File, Findutils, Gawk, GCC, Gettext, Glibc, Grep, Make, Ncurses, "
+#~ "Pkgconf, Sed <phrase revision=\"systemd\">, Systemd </phrase>e Zlib"
+
+#, xml-text
+#~ msgid ""
+#~ "<phrase revision=\"sysv\">Eudev, </phrase>File, GRUB, Kmod, Libelf, <phrase "
+#~ "revision=\"sysv\">and </phrase>Man-DB<phrase revision=\"systemd\">, and "
+#~ "Systemd</phrase>"
+#~ msgstr ""
+#~ "<phrase revision=\"sysv\">Eudev, </phrase>File, GRUB, Kmod, Libelf <phrase "
+#~ "revision=\"sysv\">e </phrase>Man-DB<phrase revision=\"systemd\"> e "
+#~ "Systemd</phrase>"
+
+#, xml-text
+#~ msgid ""
+#~ "<phrase revision='sysv'>GCC and Libelf</phrase> <phrase "
+#~ "revision='systemd'>GCC, Libelf, and Systemd</phrase>"
+#~ msgstr ""
+#~ "<phrase revision='sysv'>GCC e Libelf</phrase> <phrase "
+#~ "revision='systemd'>GCC, Libelf e Systemd</phrase>"
+
+#, xml-text
+#~ msgid "GDBM and Glibc"
+#~ msgstr "GDBM e Glibc"
+
+#, xml-text
+#~ msgid "Bash, Binutils, Coreutils, GCC, Glibc, Make, and Ncurses"
+#~ msgstr "Bash, Binutils, Coreutils, GCC, Glibc, Make e Ncurses"
+
+#, xml-text
+#~ msgid ""
+#~ "<ulink url=\"&blfs-book;server/db.html\">Berkeley DB</ulink> and <ulink "
+#~ "url=\"&blfs-book;postlfs/iptables.html\">iptables</ulink>"
+#~ msgstr ""
+#~ "<ulink url=\"&blfs-book;server/db.html\">Berkeley DB</ulink> e <ulink "
+#~ "url=\"&blfs-book;postlfs/iptables.html\">iptables</ulink>"
+
+#, fuzzy, xml-text
+#~ msgid "<ulink url=\"https://sourceware.org/elfutils/\">Elfutils</ulink>"
+#~ msgstr "<ulink url=\"https://sourceware.org/elfutils/\">Elfutils</ulink>"
+
+#, fuzzy, xml-text
+#~ msgid "<ulink url=\"&blfs-book;general/pcre.html\">PCRE</ulink>"
+#~ msgstr "<ulink url=\"&blfs-book;general/pcre.html\">PCRE</ulink>"
+
+#, fuzzy, xml-text
+#~ msgid "<ulink url=\"&blfs-book;general/cpio.html\">cpio</ulink>"
+#~ msgstr "<ulink url=\"&blfs-book;general/cpio.html\">cpio</ulink>"
+
+#, fuzzy, xml-text
+#~ msgid "Bash, Binutils, Coreutils, Gawk, GCC, Glibc, Grep, Make, Popt, and Sed"
+#~ msgstr "Bash, Binutils, Coreutils, Gawk, GCC, Glibc, Grep, Make, Popt e Sed"
+
+#, fuzzy, xml-text
+#~ msgid "Eudev, File, GRUB, Kmod, and Man-DB"
+#~ msgstr "Eudev, File, GRUB, Kmod e Man-DB"

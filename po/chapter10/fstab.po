@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-10 04:59-0300\n"
+"POT-Creation-Date: 2025-03-08 04:18+0000\n"
 "PO-Revision-Date: 2024-01-28 04:18+0000\n"
 "Last-Translator: Jamenson Ferreira Espindula de Almeida Melo <jafesp@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/projects/linux-from-scratch/chapter10_fstab/pt_BR/>\n"
@@ -51,6 +51,48 @@ msgid ""
 "<userinput>cat &gt; /etc/fstab &lt;&lt; \"EOF\"\n"
 "<literal># Begin /etc/fstab\n"
 "\n"
+"# file system  mount-point    type     options             dump  fsck\n"
+"#                                                                order\n"
+"\n"
+"/dev/<replaceable>&lt;xxx&gt;</replaceable>     /              <replaceable>&lt;fff&gt;</replaceable>    defaults            1     1\n"
+"/dev/<replaceable>&lt;yyy&gt;</replaceable>     swap           swap     pri=1               0     0\n"
+"proc           /proc          proc     nosuid,noexec,nodev 0     0\n"
+"sysfs          /sys           sysfs    nosuid,noexec,nodev 0     0\n"
+"devpts         /dev/pts       devpts   gid=5,mode=620      0     0\n"
+"tmpfs          /run           tmpfs    defaults            0     0\n"
+"devtmpfs       /dev           devtmpfs mode=0755,nosuid    0     0\n"
+"tmpfs          /dev/shm       tmpfs    nosuid,nodev        0     0\n"
+"cgroup2        /sys/fs/cgroup cgroup2  nosuid,noexec,nodev 0     0\n"
+"\n"
+"# End /etc/fstab</literal>\n"
+"EOF</userinput>"
+msgstr ""
+"<userinput>cat &gt; /etc/fstab &lt;&lt; \"EOF\"\n"
+"<literal># Início /etc/fstab\n"
+"\n"
+"# sistema de arquivos  ponto de montagem    tipo     opções             despejo  ordem de fsck\n"
+"#                                                                \n"
+"\n"
+"/dev/<replaceable>&lt;xxx&gt;</replaceable>     /              <replaceable>&lt;fff&gt;</replaceable>    defaults            1     1\n"
+"/dev/<replaceable>&lt;yyy&gt;</replaceable>     swap           swap     pri=1               0     0\n"
+"proc           /proc          proc     nosuid,noexec,nodev 0     0\n"
+"sysfs          /sys           sysfs    nosuid,noexec,nodev 0     0\n"
+"devpts         /dev/pts       devpts   gid=5,mode=620      0     0\n"
+"tmpfs          /run           tmpfs    defaults            0     0\n"
+"devtmpfs       /dev           devtmpfs mode=0755,nosuid    0     0\n"
+"tmpfs          /dev/shm       tmpfs    nosuid,nodev        0     0\n"
+"cgroup2        /sys/fs/cgroup cgroup2  nosuid,noexec,nodev 0     0\n"
+"\n"
+"# Fim /etc/fstab</literal>\n"
+"EOF</userinput>"
+
+#. type: Content of: <sect1><screen>
+#: lfs-en/chapter10/fstab.xml:41
+#, no-wrap, xml-text
+msgid ""
+"<userinput>cat &gt; /etc/fstab &lt;&lt; \"EOF\"\n"
+"<literal># Begin /etc/fstab\n"
+"\n"
 "# file system  mount-point  type     options             dump  fsck\n"
 "#                                                              order\n"
 "\n"
@@ -73,7 +115,7 @@ msgstr ""
 "EOF</userinput>"
 
 #. type: Content of: <sect1><para>
-#: lfs-en/chapter10/fstab.xml:34
+#: lfs-en/chapter10/fstab.xml:53
 #, xml-text
 msgid ""
 "Replace <replaceable>&lt;xxx&gt;</replaceable>, "
@@ -95,7 +137,7 @@ msgstr ""
 "url='&man;fstab.5'>fstab(5)</ulink>&quot;."
 
 #. type: Content of: <sect1><para>
-#: lfs-en/chapter10/fstab.xml:42
+#: lfs-en/chapter10/fstab.xml:61
 #, xml-text
 msgid ""
 "Filesystems with MS-DOS or Windows origin (i.e. vfat, ntfs, smbfs, cifs, "
@@ -137,7 +179,7 @@ msgstr ""
 "<filename>/etc/fstab</filename>:"
 
 #. type: Content of: <sect1><screen>
-#: lfs-en/chapter10/fstab.xml:60
+#: lfs-en/chapter10/fstab.xml:79
 #, no-wrap, xml-text
 msgid ""
 "<literal>noauto,user,quiet,showexec,codepage=866,iocharset=koi8r</literal>"
@@ -145,20 +187,20 @@ msgstr ""
 "<literal>noauto,user,quiet,showexec,codepage=866,iocharset=koi8r</literal>"
 
 #. type: Content of: <sect1><para>
-#: lfs-en/chapter10/fstab.xml:62
+#: lfs-en/chapter10/fstab.xml:81
 #, xml-text
 msgid "The corresponding options fragment for ru_RU.UTF-8 users is:"
 msgstr ""
 "O correspondente fragmento das opções para usuários(as) do ru_RU.UTF-8 é:"
 
 #. type: Content of: <sect1><screen>
-#: lfs-en/chapter10/fstab.xml:64
+#: lfs-en/chapter10/fstab.xml:83
 #, no-wrap, xml-text
 msgid "<literal>noauto,user,quiet,showexec,codepage=866,utf8</literal>"
 msgstr "<literal>noauto,user,quiet,showexec,codepage=866,utf8</literal>"
 
 #. type: Content of: <sect1><para>
-#: lfs-en/chapter10/fstab.xml:66
+#: lfs-en/chapter10/fstab.xml:85
 #, xml-text
 msgid ""
 "Note that using <option>iocharset</option> is the default for "
@@ -173,7 +215,7 @@ msgstr ""
 " interpretados no locale UTF-8."
 
 #. type: Content of: <sect1><para>
-#: lfs-en/chapter10/fstab.xml:83
+#: lfs-en/chapter10/fstab.xml:102
 #, xml-text
 msgid ""
 "It is also possible to specify default codepage and iocharset values for "
@@ -196,46 +238,6 @@ msgstr ""
 "(<option>CONFIG_FAT_DEFAULT_IOCHARSET</option>). Não existe maneira de "
 "especificar essas configurações para o sistema de arquivos NTFS em tempo de "
 "compilação do núcleo."
-
-#, no-wrap, xml-text
-#~ msgid ""
-#~ "<userinput>cat &gt; /etc/fstab &lt;&lt; \"EOF\"\n"
-#~ "<literal># Begin /etc/fstab\n"
-#~ "\n"
-#~ "# file system  mount-point    type     options             dump  fsck\n"
-#~ "#                                                                order\n"
-#~ "\n"
-#~ "/dev/<replaceable>&lt;xxx&gt;</replaceable>     /              <replaceable>&lt;fff&gt;</replaceable>    defaults            1     1\n"
-#~ "/dev/<replaceable>&lt;yyy&gt;</replaceable>     swap           swap     pri=1               0     0\n"
-#~ "proc           /proc          proc     nosuid,noexec,nodev 0     0\n"
-#~ "sysfs          /sys           sysfs    nosuid,noexec,nodev 0     0\n"
-#~ "devpts         /dev/pts       devpts   gid=5,mode=620      0     0\n"
-#~ "tmpfs          /run           tmpfs    defaults            0     0\n"
-#~ "devtmpfs       /dev           devtmpfs mode=0755,nosuid    0     0\n"
-#~ "tmpfs          /dev/shm       tmpfs    nosuid,nodev        0     0\n"
-#~ "cgroup2        /sys/fs/cgroup cgroup2  nosuid,noexec,nodev 0     0\n"
-#~ "\n"
-#~ "# End /etc/fstab</literal>\n"
-#~ "EOF</userinput>"
-#~ msgstr ""
-#~ "<userinput>cat &gt; /etc/fstab &lt;&lt; \"EOF\"\n"
-#~ "<literal># Início /etc/fstab\n"
-#~ "\n"
-#~ "# sistema de arquivos  ponto de montagem    tipo     opções             despejo  ordem de fsck\n"
-#~ "#                                                                \n"
-#~ "\n"
-#~ "/dev/<replaceable>&lt;xxx&gt;</replaceable>     /              <replaceable>&lt;fff&gt;</replaceable>    defaults            1     1\n"
-#~ "/dev/<replaceable>&lt;yyy&gt;</replaceable>     swap           swap     pri=1               0     0\n"
-#~ "proc           /proc          proc     nosuid,noexec,nodev 0     0\n"
-#~ "sysfs          /sys           sysfs    nosuid,noexec,nodev 0     0\n"
-#~ "devpts         /dev/pts       devpts   gid=5,mode=620      0     0\n"
-#~ "tmpfs          /run           tmpfs    defaults            0     0\n"
-#~ "devtmpfs       /dev           devtmpfs mode=0755,nosuid    0     0\n"
-#~ "tmpfs          /dev/shm       tmpfs    nosuid,nodev        0     0\n"
-#~ "cgroup2        /sys/fs/cgroup cgroup2  nosuid,noexec,nodev 0     0\n"
-#~ "\n"
-#~ "# Fim /etc/fstab</literal>\n"
-#~ "EOF</userinput>"
 
 #, xml-text
 #~ msgid ""

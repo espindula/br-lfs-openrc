@@ -6,10 +6,12 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-10 04:57-0300\n"
+"POT-Creation-Date: 2025-07-01 04:18+0000\n"
 "PO-Revision-Date: 2025-09-05 04:18+0000\n"
-"Last-Translator: Jamenson Ferreira Espindula de Almeida Melo <jafesp@gmail.com>\n"
-"Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/projects/linux-from-scratch/chapter08_e2fsprogs/pt_BR/>\n"
+"Last-Translator: Jamenson Ferreira Espindula de Almeida Melo "
+"<jafesp@gmail.com>\n"
+"Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/"
+"projects/linux-from-scratch/chapter08_e2fsprogs/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -320,16 +322,16 @@ msgid ""
 "feature from the default <systemitem class='filesystem'>ext4</systemitem> "
 "feature list with the command:"
 msgstr ""
-"<filename>/etc/mke2fs.conf</filename> contém o valor padrão de várias opções"
-" de linha de comando do <command>mke2fs</command>. Você possivelmente edite "
-"o arquivo para tornar os valores padrão convenientes para as tuas "
+"<filename>/etc/mke2fs.conf</filename> contém o valor padrão de várias opções "
+"de linha de comando do <command>mke2fs</command>. Você possivelmente edite o "
+"arquivo para tornar os valores padrão convenientes para as tuas "
 "necessidades. Por exemplo, alguns utilitários (não no LFS ou no BLFS) não "
 "conseguem reconhecer um sistema de arquivos <systemitem "
 "class='filesystem'>ext4</systemitem> com o recurso "
-"<literal>metadata_csum_seed</literal> habilitado. <emphasis "
-"role='bold'>Se</emphasis> você precisar de tal utilitário, você "
-"possivelmente remova o recurso da lista padrão de recurso do <systemitem "
-"class='filesystem'>ext4</systemitem> com o comando:"
+"<literal>metadata_csum_seed</literal> habilitado. <emphasis role='bold'>Se</"
+"emphasis> você precisar de tal utilitário, você possivelmente remova o "
+"recurso da lista padrão de recurso do <systemitem class='filesystem'>ext4</"
+"systemitem> com o comando:"
 
 #. type: Content of: <sect1><sect2><screen>
 #: lfs-en/chapter08/e2fsprogs.xml:162
@@ -1203,3 +1205,59 @@ msgstr "Usado por <command>debugfs</command>"
 #, xml-text
 msgid "libss"
 msgstr "libss"
+
+#, xml-text
+#~ msgid ""
+#~ "One test named <filename>m_assume_storage_prezeroed</filename> is known to "
+#~ "fail."
+#~ msgstr ""
+#~ "Um teste chamado <filename>m_assume_storage_prezeroed</filename> é conhecido"
+#~ " por falhar."
+
+#, xml-text
+#~ msgid "One test, u_direct_io, is known to fail on some systems."
+#~ msgstr "Um teste, u_direct_io, é conhecido por falhar em alguns sistemas."
+
+#, fuzzy, xml-text
+#~ msgid ""
+#~ "Changes the attributes of files on an <systemitem "
+#~ "class=\"filesystem\">ext2</systemitem> file system; it also changes "
+#~ "<systemitem class=\"filesystem\">ext3</systemitem> file systems, the "
+#~ "journaling version of <systemitem class=\"filesystem\">ext2</systemitem> "
+#~ "file systems"
+#~ msgstr ""
+#~ "Muda os atributos de arquivos em um sistema de arquivos <systemitem "
+#~ "class=\"filesystem\">ext2</systemitem>; ele também muda sistemas de arquivos"
+#~ " <systemitem class=\"filesystem\">ext3</systemitem>, a versão de registro em"
+#~ " diário dos sistemas de arquivos <systemitem "
+#~ "class=\"filesystem\">ext2</systemitem>"
+
+#, fuzzy, xml-text
+#~ msgid ""
+#~ "Is used to check, and optionally repair <systemitem "
+#~ "class=\"filesystem\">ext2</systemitem> file systems and <systemitem "
+#~ "class=\"filesystem\">ext3</systemitem> file systems"
+#~ msgstr ""
+#~ "É usado para verificar, e opcionalmente reparar sistemas de arquivos "
+#~ "<systemitem class=\"filesystem\">ext2</systemitem> e sistemas de arquivos "
+#~ "<systemitem class=\"filesystem\">ext3</systemitem>"
+
+#, fuzzy, xml-text
+#~ msgid "Checks MMP status of an ext4 filesystem"
+#~ msgstr "Verifica situação de MMP de um sistema de arquivos ext4"
+
+#, fuzzy, xml-text
+#~ msgid "Checks the contents of a mounted ext[234] filesystem"
+#~ msgstr "Verifica o conteúdo de um sistema de arquivos ext[234] montado"
+
+#, fuzzy, xml-text
+#~ msgid "Checks all mounted ext[234] filesystems for errors"
+#~ msgstr "Verifica todos os sistemas de arquivos ext[234] montados para erros"
+
+#, fuzzy, xml-text
+#~ msgid "Ext4 filesystem encryption utility"
+#~ msgstr "Utilitário de encriptação de sistema de arquivos ext4"
+
+#, fuzzy, xml-text
+#~ msgid "Online defragmenter for ext4 filesystems"
+#~ msgstr "Desfragmentador online para sistemas de arquivo ext4"

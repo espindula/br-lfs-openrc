@@ -6,10 +6,12 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-10 04:56-0300\n"
+"POT-Creation-Date: 2025-01-19 04:18+0000\n"
 "PO-Revision-Date: 2025-05-23 04:18+0000\n"
-"Last-Translator: Jamenson Ferreira Espindula de Almeida Melo <jafesp@gmail.com>\n"
-"Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/projects/linux-from-scratch/chapter08_wheel/pt_BR/>\n"
+"Last-Translator: Jamenson Ferreira Espindula de Almeida Melo "
+"<jafesp@gmail.com>\n"
+"Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/"
+"projects/linux-from-scratch/chapter08_wheel/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -172,3 +174,79 @@ msgstr "<command>wheel</command>"
 msgid "is a utility to unpack, pack, or convert wheel archives"
 msgstr ""
 "é um utilitário para desempacotar, empacotar ou converter arquivamentos roda"
+
+#, xml-text
+#~ msgid "The meaning of the pip3 configuration options and commands:"
+#~ msgstr "O significado das opções e comandos da configuração do pip3:"
+
+#, xml-text
+#~ msgid "<envar>PYTHONPATH=src</envar>"
+#~ msgstr "<envar>PYTHONPATH=src</envar>"
+
+#, xml-text
+#~ msgid ""
+#~ "Allows this package (not installed yet) to build a wheel archive for itself,"
+#~ " to avoid a chicken-or-egg problem."
+#~ msgstr ""
+#~ "Permite a esse pacote (não instalado ainda) construir um arquivamento roda "
+#~ "para ele próprio, para evitar um problema de ovo ou galinha."
+
+#, xml-text
+#~ msgid "This command builds the wheel archive for this package."
+#~ msgstr "Esse comando constrói o arquivamento roda para esse pacote."
+
+#, xml-text
+#~ msgid "<parameter>-w dist</parameter>"
+#~ msgstr "<parameter>-w dist</parameter>"
+
+#, xml-text
+#~ msgid ""
+#~ "Instructs pip to put the created wheel into the <filename "
+#~ "class='directory'>dist</filename> directory."
+#~ msgstr ""
+#~ "Instrui o pip a colocar a roda criada no diretório <filename "
+#~ "class='directory'>dist</filename>."
+
+#, xml-text
+#~ msgid "<command>install</command>"
+#~ msgstr "<command>install</command>"
+
+#, xml-text
+#~ msgid "This command installs the package."
+#~ msgstr "Esse comando Instala o pacote."
+
+#, xml-text
+#~ msgid ""
+#~ "<parameter>--no-build-isolation</parameter>, <parameter>--no-"
+#~ "deps</parameter>, and <parameter>--no-index</parameter>"
+#~ msgstr ""
+#~ "<parameter>--no-build-isolation</parameter>, <parameter>--no-"
+#~ "deps</parameter>, and <parameter>--no-index</parameter>"
+
+#, xml-text
+#~ msgid ""
+#~ "These options prevent fetching files from the online package repository "
+#~ "(PyPI). If packages are installed in the correct order, pip won't need to "
+#~ "fetch any files in the first place; these options add some safety in case of"
+#~ " user error."
+#~ msgstr ""
+#~ "Essas opções evitam trazer arquivos originários do repositório de pacote "
+#~ "online (PyPI). Se os pacotes fossem instalados na ordem correta, [então] o "
+#~ "pip não precisaria trazer quaisquer arquivos em primeiro lugar; essas opções"
+#~ " adicionam segurança no caso de erro do(a) usuário(a)."
+
+#, xml-text
+#~ msgid "<parameter>--find-links dist</parameter>"
+#~ msgstr "<parameter>--find-links dist</parameter>"
+
+#, xml-text
+#~ msgid ""
+#~ "Instructs pip to search for wheel archives in the <filename "
+#~ "class='directory'>dist</filename> directory."
+#~ msgstr ""
+#~ "Instrui o pip a procurar por arquivamentos roda no diretório <filename "
+#~ "class='directory'>dist</filename>."
+
+#, fuzzy, xml-text
+#~ msgid "Look for files to install in the current working directory."
+#~ msgstr "Procura por arquivos para instalar no diretório de trabalho atual."

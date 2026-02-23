@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-10 04:57-0300\n"
+"POT-Creation-Date: 2026-02-04 04:18+0000\n"
 "PO-Revision-Date: 2026-02-01 04:18+0000\n"
 "Last-Translator: Jamenson Ferreira Espindula de Almeida Melo <jafesp@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/projects/linux-from-scratch/chapter08_libelf/pt_BR/>\n"
@@ -214,3 +214,37 @@ msgstr "Contém funções de API para lidar com arquivos objeto ELF"
 #, xml-text
 msgid "libelf"
 msgstr "libelf"
+
+#, xml-text
+#~ msgid ""
+#~ "The above command builds the utilities that are part of the package as well "
+#~ "as the unit tests. Two tests are known to fail: dwarf_srclang_check and run-"
+#~ "backtrace-native-core.sh."
+#~ msgstr ""
+#~ "O comando acima constrói os utilitários que são parte do pacote bem como os "
+#~ "testes de unidade. Dois testes são conhecidos por falharem: "
+#~ "dwarf_srclang_check e run-backtrace-native-core.sh."
+
+#, xml-text
+#~ msgid "To test the results, issue:"
+#~ msgstr "Para testar os resultados, emita:"
+
+#, no-wrap, xml-text
+#~ msgid "<userinput remap=\"test\">make -k check</userinput>"
+#~ msgstr "<userinput remap=\"test\">make -k check</userinput>"
+
+#, xml-text
+#~ msgid "Compile the package:"
+#~ msgstr "Compile o pacote:"
+
+#, fuzzy, xml-text
+#~ msgid ""
+#~ "libelf.so (symlink), libelf.so.1 (symlink), and libelf-&elfutils-version;.so"
+#~ msgstr "libelf.so (link simbólico) e libelf-&elfutils-version;.so"
+
+#, xml-text
+#~ msgid ""
+#~ "The test named <filename>run-native-test.sh</filename> is known to fail."
+#~ msgstr ""
+#~ "O teste chamado <filename>run-native-test.sh</filename> é conhecido por "
+#~ "falhar."

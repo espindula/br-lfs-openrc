@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-10 04:57-0300\n"
+"POT-Creation-Date: 2026-02-08 16:18+0000\n"
 "PO-Revision-Date: 2025-12-21 16:18+0000\n"
 "Last-Translator: Jamenson Ferreira Espindula de Almeida Melo <jafesp@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/projects/linux-from-scratch/chapter08_python/pt_BR/>\n"
@@ -558,3 +558,163 @@ msgstr ""
 #, xml-text
 msgid "python3"
 msgstr "python3"
+
+#, xml-text
+#~ msgid "Fix a regression that causes issues in BLFS packages like pyatspi:"
+#~ msgstr ""
+#~ "Corrija uma regressão que causa problemas em pacotes do BLFS como o pyatspi:"
+
+#, no-wrap, xml-text
+#~ msgid ""
+#~ "<userinput remap=\"pre\">sed -e \"/self.namespaceURI =/i\\        self.ownerDocument = None\" \\\n"
+#~ "    -i Lib/xml/dom/minidom.py</userinput>"
+#~ msgstr ""
+#~ "<userinput remap=\"pre\">sed -e \"/self.namespaceURI =/i\\        self.ownerDocument = None\" \\\n"
+#~ "    -i Lib/xml/dom/minidom.py</userinput>"
+
+#, xml-text
+#~ msgid "<command>2to3</command>"
+#~ msgstr "<command>2to3</command>"
+
+#, xml-text
+#~ msgid ""
+#~ "is a <application>Python</application> program that reads "
+#~ "<application>Python 2.x</application> source code and applies a series of "
+#~ "fixes to transform it into valid <application>Python 3.x</application> code"
+#~ msgstr ""
+#~ "é um aplicativo <application>Python</application> que lê código fonte "
+#~ "<application>Python 2.x</application> e aplica uma série de correções para "
+#~ "transformá-lo em código <application>Python 3.x</application> válido"
+
+#, xml-text
+#~ msgid "2to3"
+#~ msgstr "2to3"
+
+#, xml-text
+#~ msgid "First, fix a security vulnerability in the tarfile module:"
+#~ msgstr "Primeiro, corrija uma vulnerabilidade de segurança no módulo tarfile:"
+
+#, no-wrap, xml-text
+#~ msgid ""
+#~ "<userinput remap=\"pre\">sed -e '/Round/{n;n;a\\\n"
+#~ "        # Only non-negative offsets are allowed\\\n"
+#~ "        if count &lt; 0:\\\n"
+#~ "            raise InvalidHeaderError(\"invalid offset\")\n"
+#~ "}' -i Lib/tarfile.py</userinput>"
+#~ msgstr ""
+#~ "<userinput remap=\"pre\">sed -e '/Round/{n;n;a\\\n"
+#~ "        # Somente compensações não negativas são permitidas\\\n"
+#~ "        if count &lt; 0:\\\n"
+#~ "            raise InvalidHeaderError(\"invalid offset\")\n"
+#~ "}' -i Lib/tarfile.py</userinput>"
+
+#, xml-text
+#~ msgid "First, apply a security patch to the current package:"
+#~ msgstr "Primeiro, aplique um remendo de segurança para o pacote atual:"
+
+#, no-wrap, xml-text
+#~ msgid ""
+#~ "<userinput remap=\"pre\">patch -Np1 -i ../&python-security-fixes-"
+#~ "patch;</userinput>"
+#~ msgstr ""
+#~ "<userinput remap=\"pre\">patch -Np1 -i ../&python-security-fixes-"
+#~ "patch;</userinput>"
+
+#, xml-text
+#~ msgid "<parameter>--without-static-libpython</parameter>"
+#~ msgstr "<parameter>--without-static-libpython</parameter>"
+
+#, xml-text
+#~ msgid "This switch prevents building a large, but unneeded, static library."
+#~ msgstr ""
+#~ "Essa chave impede construir uma biblioteca estática grande, mas "
+#~ "desnecessária."
+
+#, xml-text
+#~ msgid ""
+#~ "Two tests named <filename>test_xml_etree</filename> and "
+#~ "<filename>test_xml_etree_c</filename> are known to fail with expat-2.6.0 or "
+#~ "newer."
+#~ msgstr ""
+#~ "Dois testes chamados <filename>test_xml_etree</filename> e "
+#~ "<filename>test_xml_etree_c</filename> são conhecidos por falharem com "
+#~ "expat-2.6.0 ou mais recente."
+
+#, xml-text
+#~ msgid ""
+#~ "Running the tests at this point is not recommended.  The tests are known to "
+#~ "hang indefinitely in the partial LFS environment.  If desired, the tests can"
+#~ " be rerun at the end of this chapter, or when Python 3 is reinstalled in "
+#~ "BLFS.  To run the tests anyway, issue <command>make test</command>."
+#~ msgstr ""
+#~ "Executar os testes neste ponto não é recomendado. Os testes são conhecidos "
+#~ "por travar indefinidamente no ambiente parcial do LFS. Se desejado, [então] "
+#~ "os testes podem ser reexecutados ao final deste capítulo ou quando o Python "
+#~ "3 for reinstalado no BLFS. Para executar os testes de qualquer maneira, "
+#~ "emita <command>make test</command>."
+
+#, xml-text
+#~ msgid "<parameter>--with-system-ffi</parameter>"
+#~ msgstr "<parameter>--with-system-ffi</parameter>"
+
+#, xml-text
+#~ msgid ""
+#~ "This switch enables linking against the system version of <filename "
+#~ "class='libraryfile'>libffi.so</filename>."
+#~ msgstr ""
+#~ "Essa chave habilita vinculação contra a versão de sistema da <filename "
+#~ "class='libraryfile'>libffi.so</filename>."
+
+#, fuzzy, xml-text
+#~ msgid "This switch enables stable, but expensive, optimizations."
+#~ msgstr "Essa chave habilita otimizações estáveis, porém onerosas."
+
+#, fuzzy, xml-text
+#~ msgid ""
+#~ "In several places we use the <command>pip3</command> command to install "
+#~ "Python 3 programs and modules for all users as <systemitem "
+#~ "class='username'>root</systemitem>. This conflicts with the Python "
+#~ "developers recommendation to install packages into a virtual environment or "
+#~ "the home directory of a regular user (by running <command>pip3</command> as "
+#~ "this user). To this end, a multi-line warning is written when using "
+#~ "<command>pip3</command> as the <systemitem "
+#~ "class='username'>root</systemitem> user.  The main reason of this "
+#~ "recommendation is for avoiding a conflict with the system package manager "
+#~ "(<command>dpkg</command> for example), but LFS does not have a system-wide "
+#~ "package manager so this is not a problem.  And, <command>pip3</command> will"
+#~ " attempt to check for a new version of itself whenever it's run.  As domain "
+#~ "name resolving is not configured yet in LFS chroot environment, it will fail"
+#~ " to check for a new version and produce a warning.  Once we boot the LFS "
+#~ "system and set up network connection, it will then produce a warning telling"
+#~ " the user to update it from a pre-built wheel on PyPI if any new version is "
+#~ "available.  But LFS consider <command>pip3</command> a part of Python 3 so "
+#~ "it should not be updated separately, and an update from a pre-built wheel "
+#~ "will deviate from our purpose to build a Linux system from source code.  So "
+#~ "the warning for a new <command>pip3</command> version should be ignored as "
+#~ "well. If desired, suppress these warnings by running the following commands:"
+#~ msgstr ""
+#~ "Em vários lugares nós usamos o comando <command>pip3</command>, como "
+#~ "<systemitem class='username'>root</systemitem>, para instalar os aplicativos"
+#~ " e módulos do Python 3 para todos(as) os(as) usuários(as).  Isso conflita "
+#~ "com a recomendação dos(as) desenvolvedores(as) do Python para instalar "
+#~ "pacotes em um ambiente virtual ou no diretório home de um(a) usuário(a) "
+#~ "regular (executando o <command>pip3</command> como esse(a) usuário(a)).  "
+#~ "Para tal finalidade, um aviso multi linhas é escrito quando se usa o "
+#~ "<command>pip3</command> como o(a) usuário(a)  <systemitem "
+#~ "class='username'>root</systemitem>.  A razão principal para essa "
+#~ "recomendação é a de se evitar um conflito com o gerenciador de pacote do "
+#~ "sistema (<command>dpkg</command> por exemplo), porém o LFS não tem um "
+#~ "gerenciador de pacote no âmbito do sistema, de forma que isso não é um "
+#~ "problema.  E, o <command>pip3</command> tentará verificar por uma nova "
+#~ "versão dele próprio sempre que for executado.  Como a resolução de nome de "
+#~ "domínio ainda não está configurada no ambiente chroot do LFS, ele falhará em"
+#~ " verificar por uma nova versão e produzirá um aviso.  Uma vez que nós "
+#~ "inicializemos o sistema LFS e configuremos a conexão de rede, ele então "
+#~ "produzirá um aviso dizendo ao(à) usuário(a) para atualizá-lo a partir de uma"
+#~ " roda pré-construída em PyPI se qualquer nova versão estiver disponível.  "
+#~ "Porém, o LFS considera o <command>pip3</command> como parte do Python 3, de "
+#~ "forma que ele não deveria ser atualizado separadamente, e uma atualização a "
+#~ "partir de uma roda pré-construída se desviará do nosso propósito de "
+#~ "construir um sistema Linux a partir do código fonte.  Assim, o aviso para "
+#~ "uma nova versão do <command>pip3</command> deveria ser ignorado também.  Se "
+#~ "desejado, [então] suprima esses avisos executando os seguintes comandos:"

@@ -6,10 +6,12 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-10 04:56-0300\n"
+"POT-Creation-Date: 2025-12-01 04:18+0000\n"
 "PO-Revision-Date: 2025-12-01 16:18+0000\n"
-"Last-Translator: Jamenson Ferreira Espindula de Almeida Melo <jafesp@gmail.com>\n"
-"Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/projects/linux-from-scratch/chapter08_tcl/pt_BR/>\n"
+"Last-Translator: Jamenson Ferreira Espindula de Almeida Melo "
+"<jafesp@gmail.com>\n"
+"Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/"
+"projects/linux-from-scratch/chapter08_tcl/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -321,8 +323,8 @@ msgid ""
 "<userinput remap=\"install\">mv -v "
 "/usr/share/man/man3/{Thread,Tcl_Thread}.3</userinput>"
 msgstr ""
-"<userinput remap=\"install\">mv -v "
-"/usr/share/man/man3/{Thread,Tcl_Thread}.3</userinput>"
+"<userinput remap=\"install\">mv -v /usr/share/man/man3/"
+"{Thread,Tcl_Thread}.3</userinput>"
 
 #. type: Content of: <sect1><sect2><para>
 #: lfs-en/chapter08/tcl.xml:129
@@ -467,3 +469,40 @@ msgstr "A biblioteca Stub da Tcl"
 #, xml-text
 msgid "libtclstub&tcl-major-version;.a"
 msgstr "libtclstub&tcl-major-version;.a"
+
+#, xml-text
+#~ msgid ""
+#~ "Three tests (out of over 43000 total tests) from the cmdAH.test file are "
+#~ "known to fail in the chroot environment.  All tests pass in a full system."
+#~ msgstr ""
+#~ "Três testes (de um total de mais de 43.000 testes) originários do arquivo "
+#~ "cmdAH.test são conhecidos por falharem no ambiente chroot. Todos os testes "
+#~ "passam em um sistema completo."
+
+#, no-wrap, xml-text
+#~ msgid "<userinput remap=\"install\">make install</userinput>"
+#~ msgstr "<userinput remap=\"install\">make install</userinput>"
+
+#, xml-text
+#~ msgid "Twelve tests are known to fail in the chroot environment."
+#~ msgstr "Doze testes são conhecidos por falharem no ambiente chroot."
+
+#, xml-text
+#~ msgid "4.2.4"
+#~ msgstr "4.2.4"
+
+#, fuzzy, no-wrap, xml-text
+#~ msgid ""
+#~ "<userinput remap=\"pre\">tar -xf ../tcl&tcl-version;-html.tar.gz --strip-"
+#~ "components=1</userinput>"
+#~ msgstr ""
+#~ "<userinput remap=\"pre\">tar -xf ../tcl&tcl-version;-html.tar.gz --strip-"
+#~ "components=1</userinput>"
+
+#, fuzzy, xml-text
+#~ msgid ""
+#~ "If you downloaded the optional documentation, install it by issuing the "
+#~ "following commands:"
+#~ msgstr ""
+#~ "Se você transferiu a documentação opcional, então instale ela executando os "
+#~ "seguintes comandos:"

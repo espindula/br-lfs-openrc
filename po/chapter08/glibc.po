@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-10 04:57-0300\n"
+"POT-Creation-Date: 2026-01-29 04:18+0000\n"
 "PO-Revision-Date: 2025-11-23 04:18+0000\n"
 "Last-Translator: Jamenson Ferreira Espindula de Almeida Melo <jafesp@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/projects/linux-from-scratch/chapter08_glibc/pt_BR/>\n"
@@ -2214,3 +2214,224 @@ msgstr ""
 #, xml-text
 msgid "libutil"
 msgstr "libutil"
+
+#, xml-text
+#~ msgid "First, apply some changes from upstream:"
+#~ msgstr ""
+#~ "Primeiro, aplique algumas mudanças originárias do fluxo de desenvolvimento:"
+
+#, no-wrap, xml-text
+#~ msgid ""
+#~ "<userinput remap=\"pre\">patch -Np1 -i ../&glibc-upstream-patch;</userinput>"
+#~ msgstr ""
+#~ "<userinput remap=\"pre\">patch -Np1 -i ../&glibc-upstream-patch;</userinput>"
+
+#, xml-text
+#~ msgid "Now fix an issue which may break Valgrind in BLFS:"
+#~ msgstr ""
+#~ "Agora corrija um problema que possivelmente quebre o Valgrind no BLFS:"
+
+#, no-wrap, xml-text
+#~ msgid ""
+#~ "<userinput remap=\"pre\">sed -e '/unistd.h/i #include &lt;string.h&gt;' \\\n"
+#~ "    -e '/libc_rwlock_init/c\\\n"
+#~ "  __libc_rwlock_define_initialized (, reset_lock);\\\n"
+#~ "  memcpy (&amp;lock, &amp;reset_lock, sizeof (lock));' \\\n"
+#~ "    -i stdlib/abort.c </userinput>"
+#~ msgstr ""
+#~ "<userinput remap=\"pre\">sed -e '/unistd.h/i #include &lt;string.h&gt;' \\\n"
+#~ "    -e '/libc_rwlock_init/c\\\n"
+#~ "  __libc_rwlock_define_initialized (, reset_lock);\\\n"
+#~ "  memcpy (&amp;lock, &amp;reset_lock, sizeof (lock));' \\\n"
+#~ "    -i stdlib/abort.c </userinput>"
+
+#, xml-text
+#~ msgid ""
+#~ "<emphasis>misc/tst-preadvwritev2</emphasis> and <emphasis>misc/tst-"
+#~ "preadvwritev64v2</emphasis> are known to fail if the host kernel is "
+#~ "Linux-6.14 or later."
+#~ msgstr ""
+#~ "<emphasis>misc/tst-preadvwritev2</emphasis> e <emphasis>misc/tst-"
+#~ "preadvwritev64v2</emphasis> são conhecidos por falharem se o núcleo do "
+#~ "anfitrião for Linux-6.14 ou posterior."
+
+#, xml-text
+#~ msgid "Now fix a security vulnerability:"
+#~ msgstr "Agora corrija uma vulnerabilidade de segurança:"
+
+#, xml-text
+#~ msgid ""
+#~ "Then use the <command>localedef</command> command to create and install "
+#~ "locales not listed in the <filename>glibc-&glibc-"
+#~ "version;/localedata/SUPPORTED</filename> file when you need them. For "
+#~ "instance, the following two locales are needed for some tests later in this "
+#~ "chapter:"
+#~ msgstr ""
+#~ "Então, use o comando <command>localedef</command> para criar e instalar "
+#~ "localidades não listadas no arquivo <filename>glibc-&glibc-"
+#~ "version;/localedata/SUPPORTED</filename> quando você precisar delas. Por "
+#~ "exemplo, as seguintes duas localidades são necessárias para alguns testes "
+#~ "posteriormente neste capítulo:"
+
+#, no-wrap, xml-text
+#~ msgid ""
+#~ "<userinput remap=\"locale-full\">localedef -i C -f UTF-8 C.UTF-8\n"
+#~ "localedef -i ja_JP -f SHIFT_JIS ja_JP.SJIS 2> /dev/null || true</userinput>"
+#~ msgstr ""
+#~ "<userinput remap=\"locale-full\">localedef -i C -f UTF-8 C.UTF-8\n"
+#~ "localedef -i ja_JP -f SHIFT_JIS ja_JP.SJIS 2> /dev/null || true</userinput>"
+
+#, no-wrap, xml-text
+#~ msgid ""
+#~ "<userinput>rm -rfv $(dirname $(gcc -print-libgcc-file-name))/include-"
+#~ "fixed/*</userinput>"
+#~ msgstr ""
+#~ "<userinput>rm -rfv $(dirname $(gcc -print-libgcc-file-name))/include-"
+#~ "fixed/*</userinput>"
+
+#, xml-text
+#~ msgid ""
+#~ "Three <emphasis>nptl/tst-thread-affinity*</emphasis> tests are known to "
+#~ "fail."
+#~ msgstr ""
+#~ "Três testes <emphasis>nptl/tst-thread-affinity*</emphasis> são conhecidos "
+#~ "por falharem."
+
+#, xml-text
+#~ msgid ""
+#~ "Some tests, for example <emphasis>nss/tst-nss-files-hosts-multi</emphasis>, "
+#~ "are known to fail on relatively slow systems due to an internal timeout."
+#~ msgstr ""
+#~ "Alguns testes, por exemplo <emphasis>nss/tst-nss-files-hosts-"
+#~ "multi</emphasis>, são conhecidos por falharem em sistemas relativamente "
+#~ "lentos devido a um de tempo limite interno."
+
+#, xml-text
+#~ msgid ""
+#~ "Additionally, some tests may fail with a relatively old CPU model or host "
+#~ "kernel version."
+#~ msgstr ""
+#~ "Além disso, alguns testes possivelmente falhem com um modelo de CPU ou "
+#~ "versão do núcleo do anfitrião relativamente antigo."
+
+#, xml-text
+#~ msgid ""
+#~ "Now fix two security vulnerabilities and a regression causing the "
+#~ "posix_memalign() function very slow in some conditions:"
+#~ msgstr ""
+#~ "Agora corrija duas vulnerabilidades de segurança e uma regressão causando a "
+#~ "função \"posix_memalign()\" muito lenta em algumas condições:"
+
+#, xml-text
+#~ msgid ""
+#~ "This option increases system security by adding extra code to check for "
+#~ "buffer overflows, such as stack smashing attacks."
+#~ msgstr ""
+#~ "Essa opção aumenta a segurança de sistema adicionando código extra para "
+#~ "verificar estouros de buffer, tais como ataques de esmagamento de pilha."
+
+#, xml-text
+#~ msgid "<parameter>--with-headers=/usr/include</parameter>"
+#~ msgstr "<parameter>--with-headers=/usr/include</parameter>"
+
+#, xml-text
+#~ msgid ""
+#~ "This option tells the build system where to find the kernel API headers."
+#~ msgstr ""
+#~ "Essa opção diz ao sistema de construção onde encontrar os cabeçalhos da API "
+#~ "do núcleo."
+
+#, xml-text
+#~ msgid ""
+#~ "Install the configuration file and runtime directory for "
+#~ "<command>nscd</command>:"
+#~ msgstr ""
+#~ "Instale o arquivo de configuração e diretório de tempo de execução para o "
+#~ "<command>nscd</command>:"
+
+#, no-wrap, xml-text
+#~ msgid ""
+#~ "<userinput remap=\"install\">cp -v ../nscd/nscd.conf /etc/nscd.conf\n"
+#~ "mkdir -pv /var/cache/nscd</userinput>"
+#~ msgstr ""
+#~ "<userinput remap=\"install\">cp -v ../nscd/nscd.conf /etc/nscd.conf\n"
+#~ "mkdir -pv /var/cache/nscd</userinput>"
+
+#, xml-text
+#~ msgid "Install the systemd support files for <command>nscd</command>:"
+#~ msgstr ""
+#~ "Instale os arquivos de suporte do systemd para o <command>nscd</command>:"
+
+#, no-wrap, xml-text
+#~ msgid ""
+#~ "<userinput remap=\"install\">install -v -Dm644 ../nscd/nscd.tmpfiles /usr/lib/tmpfiles.d/nscd.conf\n"
+#~ "install -v -Dm644 ../nscd/nscd.service /usr/lib/systemd/system/nscd.service</userinput>"
+#~ msgstr ""
+#~ "<userinput remap=\"install\">install -v -Dm644 ../nscd/nscd.tmpfiles /usr/lib/tmpfiles.d/nscd.conf\n"
+#~ "install -v -Dm644 ../nscd/nscd.service /usr/lib/systemd/system/nscd.service</userinput>"
+
+#, xml-text
+#~ msgid "<command>nscd</command>"
+#~ msgstr "<command>nscd</command>"
+
+#, xml-text
+#~ msgid ""
+#~ "A daemon that provides a cache for the most common name service requests"
+#~ msgstr ""
+#~ "Um daemon que fornece um cache para as solicitações de serviço de nomes mais"
+#~ " comuns"
+
+#, xml-text
+#~ msgid "nscd"
+#~ msgstr "nscd"
+
+#, no-wrap, xml-text
+#~ msgid ""
+#~ "<userinput remap=\"pre\">patch -Np1 -i ../&glibc-memalign-patch;</userinput>"
+#~ msgstr ""
+#~ "<userinput remap=\"pre\">patch -Np1 -i ../&glibc-memalign-patch;</userinput>"
+
+#, xml-text
+#~ msgid "Fix a security issue identified upstream:"
+#~ msgstr ""
+#~ "Corrija um problema de segurança identificado pelo(a) desenvolvedor(a):"
+
+#, no-wrap, xml-text
+#~ msgid ""
+#~ "<userinput remap=\"pre\">sed '/width -=/s/workend - string/number_length/' \\\n"
+#~ "    -i stdio-common/vfprintf-process-arg.c</userinput>"
+#~ msgstr ""
+#~ "<userinput remap=\"pre\">sed '/width -=/s/workend - string/number_length/' \\\n"
+#~ "    -i stdio-common/vfprintf-process-arg.c</userinput>"
+
+#, xml-text
+#~ msgid ""
+#~ "<emphasis>misc/tst-ttyname</emphasis> is known to fail in the LFS chroot "
+#~ "environment."
+#~ msgstr ""
+#~ "<emphasis>misc/tst-ttyname</emphasis> é conhecido por falhar no ambiente "
+#~ "chroot do LFS."
+
+#, xml-text
+#~ msgid "<filename class=\"libraryfile\">libcrypt</filename>"
+#~ msgstr "<filename class=\"libraryfile\">libcrypt</filename>"
+
+#, xml-text
+#~ msgid "The cryptography library"
+#~ msgstr "A biblioteca de criptografia"
+
+#, xml-text
+#~ msgid "libcrypt"
+#~ msgstr "libcrypt"
+
+#, xml-text
+#~ msgid "An asynchronous name lookup library"
+#~ msgstr "Uma biblioteca assíncrona de pesquisa de nomes"
+
+#, fuzzy, xml-text
+#~ msgid ""
+#~ "The <emphasis>nss/tst-nss-files-hosts-long</emphasis> test is known to fail "
+#~ "if the system has no non-loopback IP addresses."
+#~ msgstr ""
+#~ "O teste <emphasis>nss/tst-nss-files-hosts-long</emphasis> é conhecido por "
+#~ "falhar se o sistema não tiver endereços IP não loopback."

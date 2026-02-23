@@ -6,10 +6,12 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-10 04:57-0300\n"
+"POT-Creation-Date: 2025-09-05 04:18+0000\n"
 "PO-Revision-Date: 2025-09-06 04:18+0000\n"
-"Last-Translator: Jamenson Ferreira Espindula de Almeida Melo <jafesp@gmail.com>\n"
-"Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/projects/linux-from-scratch/chapter03_packages/pt_BR/>\n"
+"Last-Translator: Jamenson Ferreira Espindula de Almeida Melo "
+"<jafesp@gmail.com>\n"
+"Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/"
+"projects/linux-from-scratch/chapter03_packages/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1051,53 +1053,81 @@ msgstr "Soma de verificação MD5: <literal>&less-md5;</literal>"
 #. type: Content of: <sect1><variablelist><varlistentry><term>
 #: lfs-en/chapter03/packages.xml:408
 #, xml-text
+msgid ""
+"LFS-Bootscripts (&lfs-bootscripts-version;) - <token>&lfs-bootscripts-"
+"size;</token>:"
+msgstr ""
+"LFS-Bootscripts (&lfs-bootscripts-version;) - <token>&lfs-bootscripts-"
+"size;</token>:"
+
+#. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
+#: lfs-en/chapter03/packages.xml:410
+#, xml-text
+msgid "Home page: <ulink url=\"&lfs-bootscripts-home;\"/>"
+msgstr "Página inicial: <ulink url=\"&lfs-bootscripts-home;\"/>"
+
+#. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
+#: lfs-en/chapter03/packages.xml:411
+#, xml-text
+msgid "Download: <ulink url=\"&lfs-bootscripts-url;\"/>"
+msgstr "Transferência: <ulink url=\"&lfs-bootscripts-url;\"/>"
+
+#. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
+#: lfs-en/chapter03/packages.xml:412
+#, xml-text
+msgid "MD5 sum: <literal>&lfs-bootscripts-md5;</literal>"
+msgstr "Soma de verificação MD5: <literal>&lfs-bootscripts-md5;</literal>"
+
+#. type: Content of: <sect1><variablelist><varlistentry><term>
+#: lfs-en/chapter03/packages.xml:417
+#, xml-text
 msgid "Libcap (&libcap-version;) - <token>&libcap-size;</token>:"
 msgstr "Libcap (&libcap-version;) - <token>&libcap-size;</token>:"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:410
+#: lfs-en/chapter03/packages.xml:419
 #, xml-text
 msgid "Home page: <ulink url=\"&libcap-home;\"/>"
 msgstr "Página inicial: <ulink url=\"&libcap-home;\"/>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:411
+#: lfs-en/chapter03/packages.xml:420
 #, xml-text
 msgid "Download: <ulink url=\"&libcap-url;\"/>"
 msgstr "Transferência: <ulink url=\"&libcap-url;\"/>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:412
+#: lfs-en/chapter03/packages.xml:421
 #, xml-text
 msgid "MD5 sum: <literal>&libcap-md5;</literal>"
 msgstr "Soma de verificação MD5: <literal>&libcap-md5;</literal>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><term>
-#: lfs-en/chapter03/packages.xml:417
+#: lfs-en/chapter03/packages.xml:426
 #, xml-text
 msgid "Libffi (&libffi-version;) - <token>&libffi-size;</token>:"
 msgstr "Libffi (&libffi-version;) - <token>&libffi-size;</token>:"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:419
+#: lfs-en/chapter03/packages.xml:428
 #, xml-text
 msgid "Home page: <ulink url=\"&libffi-home;\"/>"
 msgstr "Página inicial: <ulink url=\"&libffi-home;\"/>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:420
+#: lfs-en/chapter03/packages.xml:429
 #, xml-text
 msgid "Download: <ulink url=\"&libffi-url;\"/>"
 msgstr "Transferência: <ulink url=\"&libffi-url;\"/>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:421
+#: lfs-en/chapter03/packages.xml:430
 #, xml-text
 msgid "MD5 sum: <literal>&libffi-md5;</literal>"
 msgstr "Soma de verificação MD5: <literal>&libffi-md5;</literal>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><term>
-#: lfs-en/chapter03/packages.xml:426
+#: lfs-en/chapter03/packages.xml:435
 #, xml-text
 msgid ""
 "Libpipeline (&libpipeline-version;) - <token>&libpipeline-size;</token>:"
@@ -1105,97 +1135,97 @@ msgstr ""
 "Libpipeline (&libpipeline-version;) - <token>&libpipeline-size;</token>:"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:428
+#: lfs-en/chapter03/packages.xml:437
 #, xml-text
 msgid "Home page: <ulink url=\"&libpipeline-home;\"/>"
 msgstr "Página inicial: <ulink url=\"&libpipeline-home;\"/>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:429
+#: lfs-en/chapter03/packages.xml:438
 #, xml-text
 msgid "Download: <ulink url=\"&libpipeline-url;\"/>"
 msgstr "Transferência: <ulink url=\"&libpipeline-url;\"/>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:430
+#: lfs-en/chapter03/packages.xml:439
 #, xml-text
 msgid "MD5 sum: <literal>&libpipeline-md5;</literal>"
 msgstr "Soma de verificação MD5: <literal>&libpipeline-md5;</literal>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><term>
-#: lfs-en/chapter03/packages.xml:435
+#: lfs-en/chapter03/packages.xml:444
 #, xml-text
 msgid "Libtool (&libtool-version;) - <token>&libtool-size;</token>:"
 msgstr "Libtool (&libtool-version;) - <token>&libtool-size;</token>:"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:437
+#: lfs-en/chapter03/packages.xml:446
 #, xml-text
 msgid "Home page: <ulink url=\"&libtool-home;\"/>"
 msgstr "Página inicial: <ulink url=\"&libtool-home;\"/>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:438
+#: lfs-en/chapter03/packages.xml:447
 #, xml-text
 msgid "Download: <ulink url=\"&libtool-url;\"/>"
 msgstr "Transferência: <ulink url=\"&libtool-url;\"/>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:439
+#: lfs-en/chapter03/packages.xml:448
 #, xml-text
 msgid "MD5 sum: <literal>&libtool-md5;</literal>"
 msgstr "Soma de verificação MD5: <literal>&libtool-md5;</literal>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><term>
-#: lfs-en/chapter03/packages.xml:444
+#: lfs-en/chapter03/packages.xml:453
 #, xml-text
 msgid "Libxcrypt (&libxcrypt-version;) - <token>&libxcrypt-size;</token>:"
 msgstr "Libxcrypt (&libxcrypt-version;) - <token>&libxcrypt-size;</token>:"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:446
+#: lfs-en/chapter03/packages.xml:455
 #, xml-text
 msgid "Home page: <ulink url=\"&libxcrypt-home;\"/>"
 msgstr "Página inicial: <ulink url=\"&libxcrypt-home;\"/>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:447
+#: lfs-en/chapter03/packages.xml:456
 #, xml-text
 msgid "Download: <ulink url=\"&libxcrypt-url;\"/>"
 msgstr "Transferência: <ulink url=\"&libxcrypt-url;\"/>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:448
+#: lfs-en/chapter03/packages.xml:457
 #, xml-text
 msgid "MD5 sum: <literal>&libxcrypt-md5;</literal>"
 msgstr "Soma de verificação MD5: <literal>&libxcrypt-md5;</literal>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><term>
-#: lfs-en/chapter03/packages.xml:453
+#: lfs-en/chapter03/packages.xml:462
 #, xml-text
 msgid "Linux (&linux-version;) - <token>&linux-size;</token>:"
 msgstr "Linux (&linux-version;) - <token>&linux-size;</token>:"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:455
+#: lfs-en/chapter03/packages.xml:464
 #, xml-text
 msgid "Home page: <ulink url=\"&linux-home;\"/>"
 msgstr "Página inicial: <ulink url=\"&linux-home;\"/>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:456
+#: lfs-en/chapter03/packages.xml:465
 #, xml-text
 msgid "Download: <ulink url=\"&linux-url;\"/>"
 msgstr "Transferência: <ulink url=\"&linux-url;\"/>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:457
+#: lfs-en/chapter03/packages.xml:466
 #, xml-text
 msgid "MD5 sum: <literal>&linux-md5;</literal>"
 msgstr "Soma de verificação MD5: <literal>&linux-md5;</literal>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><note><para>
-#: lfs-en/chapter03/packages.xml:460
+#: lfs-en/chapter03/packages.xml:469
 #, xml-text
 msgid ""
 "The Linux kernel is updated quite frequently, many times due to discoveries "
@@ -1208,7 +1238,7 @@ msgstr ""
 "diga o contrário."
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><note><para>
-#: lfs-en/chapter03/packages.xml:465
+#: lfs-en/chapter03/packages.xml:474
 #, xml-text
 msgid ""
 "For users with limited speed or expensive bandwidth who wish to update the "
@@ -1223,7 +1253,7 @@ msgstr ""
 "contendo um lançamento menor."
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><note><para>
-#: lfs-en/chapter03/packages.xml:472
+#: lfs-en/chapter03/packages.xml:481
 #, xml-text
 msgid ""
 "As an example, for linux-&linux-version;, the following could be downloaded:"
@@ -1232,20 +1262,20 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><variablelist><varlistentry><listitem><note><para><itemizedlist><listitem><para>
-#: lfs-en/chapter03/packages.xml:477
+#: lfs-en/chapter03/packages.xml:486
 #, xml-text
 msgid "<ulink url='&kernel-directory;/linux-&linux-majmin-version;.tar.xz'/>"
 msgstr "<ulink url='&kernel-directory;/linux-&linux-majmin-version;.tar.xz'/>"
 
 #. type: Content of:
 #. <sect1><variablelist><varlistentry><listitem><note><para><itemizedlist><listitem><para>
-#: lfs-en/chapter03/packages.xml:482
+#: lfs-en/chapter03/packages.xml:491
 #, xml-text
 msgid "<ulink url='&kernel-directory;/patch-&linux-version;.xz'/>"
 msgstr "<ulink url='&kernel-directory;/patch-&linux-version;.xz'/>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><note><para>
-#: lfs-en/chapter03/packages.xml:487
+#: lfs-en/chapter03/packages.xml:496
 #, xml-text
 msgid ""
 "Then in <xref linkend='ch-tools-linux-headers'/> and <xref linkend='ch-"
@@ -1259,7 +1289,7 @@ msgstr ""
 "patch -Np1</userinput>."
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><note><para>
-#: lfs-en/chapter03/packages.xml:494
+#: lfs-en/chapter03/packages.xml:503
 #, xml-text
 msgid ""
 "At this point, if a newer point version of the kernel is needed, then only "
@@ -1273,292 +1303,268 @@ msgstr ""
 "quanto o remendo desejado precisarão ser baixados."
 
 #. type: Content of: <sect1><variablelist><varlistentry><term>
-#: lfs-en/chapter03/packages.xml:504
+#: lfs-en/chapter03/packages.xml:513
 #, xml-text
 msgid "Lz4 (&lz4-version;) - <token>&lz4-size;</token>:"
 msgstr "Lz4 (&lz4-version;) - <token>&lz4-size;</token>:"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:506
+#: lfs-en/chapter03/packages.xml:515
 #, xml-text
 msgid "Home page: <ulink url=\"&lz4-home;\"/>"
 msgstr "Página inicial: <ulink url=\"&lz4-home;\"/>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:507
+#: lfs-en/chapter03/packages.xml:516
 #, xml-text
 msgid "Download: <ulink url=\"&lz4-url;\"/>"
 msgstr "Transferência: <ulink url=\"&lz4-url;\"/>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:508
+#: lfs-en/chapter03/packages.xml:517
 #, xml-text
 msgid "MD5 sum: <literal>&lz4-md5;</literal>"
 msgstr "Soma de verificação MD5: <literal>&lz4-md5;</literal>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><term>
-#: lfs-en/chapter03/packages.xml:513
+#: lfs-en/chapter03/packages.xml:522
 #, xml-text
 msgid "M4 (&m4-version;) - <token>&m4-size;</token>:"
 msgstr "M4 (&m4-version;) - <token>&m4-size;</token>:"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:515
+#: lfs-en/chapter03/packages.xml:524
 #, xml-text
 msgid "Home page: <ulink url=\"&m4-home;\"/>"
 msgstr "Página inicial: <ulink url=\"&m4-home;\"/>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:516
+#: lfs-en/chapter03/packages.xml:525
 #, xml-text
 msgid "Download: <ulink url=\"&m4-url;\"/>"
 msgstr "Transferência: <ulink url=\"&m4-url;\"/>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:517
+#: lfs-en/chapter03/packages.xml:526
 #, xml-text
 msgid "MD5 sum: <literal>&m4-md5;</literal>"
 msgstr "Soma de verificação MD5: <literal>&m4-md5;</literal>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><term>
-#: lfs-en/chapter03/packages.xml:522
+#: lfs-en/chapter03/packages.xml:531
 #, xml-text
 msgid "Make (&make-version;) - <token>&make-size;</token>:"
 msgstr "Make (&make-version;) - <token>&make-size;</token>:"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:524
+#: lfs-en/chapter03/packages.xml:533
 #, xml-text
 msgid "Home page: <ulink url=\"&make-home;\"/>"
 msgstr "Página inicial: <ulink url=\"&make-home;\"/>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:525
+#: lfs-en/chapter03/packages.xml:534
 #, xml-text
 msgid "Download: <ulink url=\"&make-url;\"/>"
 msgstr "Transferência: <ulink url=\"&make-url;\"/>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:526
+#: lfs-en/chapter03/packages.xml:535
 #, xml-text
 msgid "MD5 sum: <literal>&make-md5;</literal>"
 msgstr "Soma de verificação MD5: <literal>&make-md5;</literal>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><term>
-#: lfs-en/chapter03/packages.xml:531
+#: lfs-en/chapter03/packages.xml:540
 #, xml-text
 msgid "Man-DB (&man-db-version;) - <token>&man-db-size;</token>:"
 msgstr "Man-DB (&man-db-version;) - <token>&man-db-size;</token>:"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:533
+#: lfs-en/chapter03/packages.xml:542
 #, xml-text
 msgid "Home page: <ulink url=\"&man-db-home;\"/>"
 msgstr "Página inicial: <ulink url=\"&man-db-home;\"/>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:534
+#: lfs-en/chapter03/packages.xml:543
 #, xml-text
 msgid "Download: <ulink url=\"&man-db-url;\"/>"
 msgstr "Transferência: <ulink url=\"&man-db-url;\"/>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:535
+#: lfs-en/chapter03/packages.xml:544
 #, xml-text
 msgid "MD5 sum: <literal>&man-db-md5;</literal>"
 msgstr "Soma de verificação MD5: <literal>&man-db-md5;</literal>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><term>
-#: lfs-en/chapter03/packages.xml:540
+#: lfs-en/chapter03/packages.xml:549
 #, xml-text
 msgid "Man-pages (&man-pages-version;) - <token>&man-pages-size;</token>:"
 msgstr "Man-pages (&man-pages-version;) - <token>&man-pages-size;</token>:"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:542
+#: lfs-en/chapter03/packages.xml:551
 #, xml-text
 msgid "Home page: <ulink url=\"&man-pages-home;\"/>"
 msgstr "Página inicial: <ulink url=\"&man-pages-home;\"/>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:543
+#: lfs-en/chapter03/packages.xml:552
 #, xml-text
 msgid "Download: <ulink url=\"&man-pages-url;\"/>"
 msgstr "Transferência: <ulink url=\"&man-pages-url;\"/>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:544
+#: lfs-en/chapter03/packages.xml:553
 #, xml-text
 msgid "MD5 sum: <literal>&man-pages-md5;</literal>"
 msgstr "Soma de verificação MD5: <literal>&man-pages-md5;</literal>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><term>
-#: lfs-en/chapter03/packages.xml:549
+#: lfs-en/chapter03/packages.xml:558
 #, xml-text
 msgid "MarkupSafe (&markupsafe-version;) - <token>&markupsafe-size;</token>:"
 msgstr "MarkupSafe (&markupsafe-version;) - <token>&markupsafe-size;</token>:"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:551
+#: lfs-en/chapter03/packages.xml:560
 #, xml-text
 msgid "Home page: <ulink url=\"&markupsafe-home;\"/>"
 msgstr "Página inicial: <ulink url=\"&markupsafe-home;\"/>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:552
+#: lfs-en/chapter03/packages.xml:561
 #, xml-text
 msgid "Download: <ulink url=\"&markupsafe-url;\"/>"
 msgstr "Transferência: <ulink url=\"&markupsafe-url;\"/>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:553
+#: lfs-en/chapter03/packages.xml:562
 #, xml-text
 msgid "MD5 sum: <literal>&markupsafe-md5;</literal>"
 msgstr "Soma de verificação MD5: <literal>&markupsafe-md5;</literal>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><term>
-#: lfs-en/chapter03/packages.xml:558
+#: lfs-en/chapter03/packages.xml:567
 #, xml-text
 msgid "Meson (&meson-version;) - <token>&meson-size;</token>:"
 msgstr "Meson (&meson-version;) - <token>&meson-size;</token>:"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:560
+#: lfs-en/chapter03/packages.xml:569
 #, xml-text
 msgid "Home page: <ulink url=\"&meson-home;\"/>"
 msgstr "Página inicial: <ulink url=\"&meson-home;\"/>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:561
+#: lfs-en/chapter03/packages.xml:570
 #, xml-text
 msgid "Download: <ulink url=\"&meson-url;\"/>"
 msgstr "Transferência: <ulink url=\"&meson-url;\"/>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:562
+#: lfs-en/chapter03/packages.xml:571
 #, xml-text
 msgid "MD5 sum: <literal>&meson-md5;</literal>"
 msgstr "Soma de verificação MD5: <literal>&meson-md5;</literal>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><term>
-#: lfs-en/chapter03/packages.xml:567
+#: lfs-en/chapter03/packages.xml:576
 #, xml-text
 msgid "MPC (&mpc-version;) - <token>&mpc-size;</token>:"
 msgstr "MPC (&mpc-version;) - <token>&mpc-size;</token>:"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:569
+#: lfs-en/chapter03/packages.xml:578
 #, xml-text
 msgid "Home page: <ulink url=\"&mpc-home;\"/>"
 msgstr "Página inicial: <ulink url=\"&mpc-home;\"/>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:570
+#: lfs-en/chapter03/packages.xml:579
 #, xml-text
 msgid "Download: <ulink url=\"&mpc-url;\"/>"
 msgstr "Transferência: <ulink url=\"&mpc-url;\"/>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:571
+#: lfs-en/chapter03/packages.xml:580
 #, xml-text
 msgid "MD5 sum: <literal>&mpc-md5;</literal>"
 msgstr "Soma de verificação MD5: <literal>&mpc-md5;</literal>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><term>
-#: lfs-en/chapter03/packages.xml:576
+#: lfs-en/chapter03/packages.xml:585
 #, xml-text
 msgid "MPFR (&mpfr-version;) - <token>&mpfr-size;</token>:"
 msgstr "MPFR (&mpfr-version;) - <token>&mpfr-size;</token>:"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:578
+#: lfs-en/chapter03/packages.xml:587
 #, xml-text
 msgid "Home page: <ulink url=\"&mpfr-home;\"/>"
 msgstr "Página inicial: <ulink url=\"&mpfr-home;\"/>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:579
+#: lfs-en/chapter03/packages.xml:588
 #, xml-text
 msgid "Download: <ulink url=\"&mpfr-url;\"/>"
 msgstr "Transferência: <ulink url=\"&mpfr-url;\"/>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:580
+#: lfs-en/chapter03/packages.xml:589
 #, xml-text
 msgid "MD5 sum: <literal>&mpfr-md5;</literal>"
 msgstr "Soma de verificação MD5: <literal>&mpfr-md5;</literal>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><term>
-#: lfs-en/chapter03/packages.xml:585
+#: lfs-en/chapter03/packages.xml:594
 #, xml-text
 msgid "Ncurses (&ncurses-version;) - <token>&ncurses-size;</token>:"
 msgstr "Ncurses (&ncurses-version;) - <token>&ncurses-size;</token>:"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:587
+#: lfs-en/chapter03/packages.xml:596
 #, xml-text
 msgid "Home page: <ulink url=\"&ncurses-home;\"/>"
 msgstr "Página inicial: <ulink url=\"&ncurses-home;\"/>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:588
+#: lfs-en/chapter03/packages.xml:597
 #, xml-text
 msgid "Download: <ulink url=\"&ncurses-url;\"/>"
 msgstr "Transferência: <ulink url=\"&ncurses-url;\"/>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:589
+#: lfs-en/chapter03/packages.xml:598
 #, xml-text
 msgid "MD5 sum: <literal>&ncurses-md5;</literal>"
 msgstr "Soma de verificação MD5: <literal>&ncurses-md5;</literal>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><term>
-#: lfs-en/chapter03/packages.xml:594
+#: lfs-en/chapter03/packages.xml:603
 #, xml-text
 msgid "Ninja (&ninja-version;) - <token>&ninja-size;</token>:"
 msgstr "Ninja (&ninja-version;) - <token>&ninja-size;</token>:"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:596
+#: lfs-en/chapter03/packages.xml:605
 #, xml-text
 msgid "Home page: <ulink url=\"&ninja-home;\"/>"
 msgstr "Página inicial: <ulink url=\"&ninja-home;\"/>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:597
+#: lfs-en/chapter03/packages.xml:606
 #, xml-text
 msgid "Download: <ulink url=\"&ninja-url;\"/>"
 msgstr "Transferência: <ulink url=\"&ninja-url;\"/>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:598
+#: lfs-en/chapter03/packages.xml:607
 #, xml-text
 msgid "MD5 sum: <literal>&ninja-md5;</literal>"
 msgstr "Soma de verificação MD5: <literal>&ninja-md5;</literal>"
-
-#. type: Content of: <sect1><variablelist><varlistentry><term>
-#: lfs-en/chapter03/packages.xml:603
-#, xml-text
-msgid "OpenRC (&openrc-version;) - <token>&openrc-size;</token>:"
-msgstr "OpenRC (&openrc-version;) - <token>&openrc-size;</token>:"
-
-#. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:605
-#, xml-text
-msgid "Home page: <ulink url=\"&openrc-home;\"/>"
-msgstr "Página inicial: <ulink url=\"&openrc-home;\"/>"
-
-#. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:606
-#, xml-text
-msgid "Download: <ulink url=\"&openrc-url;\"/>"
-msgstr "Transferência: <ulink url=\"&openrc-url;\"/>"
-
-#. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:607
-#, xml-text
-msgid "MD5 sum: <literal>&openrc-md5;</literal>"
-msgstr "Soma de verificação MD5: <literal>&openrc-md5;</literal>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><term>
 #: lfs-en/chapter03/packages.xml:612
@@ -1923,8 +1929,7 @@ msgstr "Soma de verificação MD5: <literal>&sqlite-md5;</literal>"
 msgid ""
 "Sqlite Documentation (&sqlite-version;) - <token>&sqlite-doc-size;</token>:"
 msgstr ""
-"Documentação do Sqlite (&sqlite-version;) - <token>&sqlite-doc-"
-"size;</token>:"
+"Documentação do Sqlite (&sqlite-version;) - <token>&sqlite-doc-size;</token>:"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
 #: lfs-en/chapter03/packages.xml:749
@@ -2032,122 +2037,146 @@ msgstr ""
 "dependências desnecessárias."
 
 #. type: Content of: <sect1><variablelist><varlistentry><term>
-#: lfs-en/chapter03/packages.xml:794
+#: lfs-en/chapter03/packages.xml:795
+#, xml-text
+msgid "SysVinit (&sysvinit-version;) - <token>&sysvinit-size;</token>:"
+msgstr "SysVinit (&sysvinit-version;) - <token>&sysvinit-size;</token>:"
+
+#. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
+#: lfs-en/chapter03/packages.xml:797
+#, xml-text
+msgid "Home page: <ulink url=\"&sysvinit-home;\"/>"
+msgstr "Página inicial: <ulink url=\"&sysvinit-home;\"/>"
+
+#. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
+#: lfs-en/chapter03/packages.xml:798
+#, xml-text
+msgid "Download: <ulink url=\"&sysvinit-url;\"/>"
+msgstr "Transferência: <ulink url=\"&sysvinit-url;\"/>"
+
+#. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
+#: lfs-en/chapter03/packages.xml:799
+#, xml-text
+msgid "MD5 sum: <literal>&sysvinit-md5;</literal>"
+msgstr "Soma de verificação MD5: <literal>&sysvinit-md5;</literal>"
+
+#. type: Content of: <sect1><variablelist><varlistentry><term>
+#: lfs-en/chapter03/packages.xml:804
 #, xml-text
 msgid "Tar (&tar-version;) - <token>&tar-size;</token>:"
 msgstr "Tar (&tar-version;) - <token>&tar-size;</token>:"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:796
+#: lfs-en/chapter03/packages.xml:806
 #, xml-text
 msgid "Home page: <ulink url=\"&tar-home;\"/>"
 msgstr "Página inicial: <ulink url=\"&tar-home;\"/>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:797
+#: lfs-en/chapter03/packages.xml:807
 #, xml-text
 msgid "Download: <ulink url=\"&tar-url;\"/>"
 msgstr "Transferência: <ulink url=\"&tar-url;\"/>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:798
+#: lfs-en/chapter03/packages.xml:808
 #, xml-text
 msgid "MD5 sum: <literal>&tar-md5;</literal>"
 msgstr "Soma de verificação MD5: <literal>&tar-md5;</literal>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><term>
-#: lfs-en/chapter03/packages.xml:803
+#: lfs-en/chapter03/packages.xml:813
 #, xml-text
 msgid "Tcl (&tcl-version;) - <token>&tcl-size;</token>:"
 msgstr "Tcl (&tcl-version;) - <token>&tcl-size;</token>:"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:805
+#: lfs-en/chapter03/packages.xml:815
 #, xml-text
 msgid "Home page: <ulink url=\"&tcl-home;\"/>"
 msgstr "Página inicial: <ulink url=\"&tcl-home;\"/>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:806
+#: lfs-en/chapter03/packages.xml:816
 #, xml-text
 msgid "Download: <ulink url=\"&tcl-url;\"/>"
 msgstr "Transferência: <ulink url=\"&tcl-url;\"/>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:807
+#: lfs-en/chapter03/packages.xml:817
 #, xml-text
 msgid "MD5 sum: <literal>&tcl-md5;</literal>"
 msgstr "Soma de verificação MD5: <literal>&tcl-md5;</literal>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><term>
-#: lfs-en/chapter03/packages.xml:812
+#: lfs-en/chapter03/packages.xml:822
 #, xml-text
 msgid "Tcl Documentation (&tcl-version;) - <token>&tcl-docs-size;</token>:"
 msgstr "Documentação do Tcl (&tcl-version;) - <token>&tcl-docs-size;</token>:"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:814
+#: lfs-en/chapter03/packages.xml:824
 #, xml-text
 msgid "Download: <ulink url=\"&tcl-docs-url;\"/>"
 msgstr "Transferência: <ulink url=\"&tcl-docs-url;\"/>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:815
+#: lfs-en/chapter03/packages.xml:825
 #, xml-text
 msgid "MD5 sum: <literal>&tcl-docs-md5;</literal>"
 msgstr "Soma de verificação MD5: <literal>&tcl-docs-md5;</literal>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><term>
-#: lfs-en/chapter03/packages.xml:820
+#: lfs-en/chapter03/packages.xml:830
 #, xml-text
 msgid "Texinfo (&texinfo-version;) - <token>&texinfo-size;</token>:"
 msgstr "Texinfo (&texinfo-version;) - <token>&texinfo-size;</token>:"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:822
+#: lfs-en/chapter03/packages.xml:832
 #, xml-text
 msgid "Home page: <ulink url=\"&texinfo-home;\"/>"
 msgstr "Página inicial: <ulink url=\"&texinfo-home;\"/>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:823
+#: lfs-en/chapter03/packages.xml:833
 #, xml-text
 msgid "Download: <ulink url=\"&texinfo-url;\"/>"
 msgstr "Transferência: <ulink url=\"&texinfo-url;\"/>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:824
+#: lfs-en/chapter03/packages.xml:834
 #, xml-text
 msgid "MD5 sum: <literal>&texinfo-md5;</literal>"
 msgstr "Soma de verificação MD5: <literal>&texinfo-md5;</literal>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><term>
-#: lfs-en/chapter03/packages.xml:829
+#: lfs-en/chapter03/packages.xml:839
 #, xml-text
 msgid "Time Zone Data (&tzdata-version;) - <token>&tzdata-size;</token>:"
 msgstr ""
 "Dados de Fuso Horário (&tzdata-version;) - <token>&tzdata-size;</token>:"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:831
+#: lfs-en/chapter03/packages.xml:841
 #, xml-text
 msgid "Home page: <ulink url=\"&tzdata-home;\"/>"
 msgstr "Página inicial: <ulink url=\"&tzdata-home;\"/>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:832
+#: lfs-en/chapter03/packages.xml:842
 #, xml-text
 msgid "Download: <ulink url=\"&tzdata-url;\"/>"
 msgstr "Transferência: <ulink url=\"&tzdata-url;\"/>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:833
+#: lfs-en/chapter03/packages.xml:843
 #, xml-text
 msgid "MD5 sum: <literal>&tzdata-md5;</literal>"
 msgstr "Soma de verificação MD5: <literal>&tzdata-md5;</literal>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><term>
-#: lfs-en/chapter03/packages.xml:838
+#: lfs-en/chapter03/packages.xml:848
 #, xml-text
 msgid ""
 "Udev-lfs Tarball (&udev-lfs-version;) - <token>&udev-lfs-size;</token>:"
@@ -2155,67 +2184,67 @@ msgstr ""
 "Tarball do Udev-lfs (&udev-lfs-version;) - <token>&udev-lfs-size;</token>:"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:840
+#: lfs-en/chapter03/packages.xml:850
 #, xml-text
 msgid "Download: <ulink url=\"&udev-lfs-url;\"/>"
 msgstr "Transferência: <ulink url=\"&udev-lfs-url;\"/>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:841
+#: lfs-en/chapter03/packages.xml:851
 #, xml-text
 msgid "MD5 sum: <literal>&udev-lfs-md5;</literal>"
 msgstr "Soma de verificação MD5: <literal>&udev-lfs-md5;</literal>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><term>
-#: lfs-en/chapter03/packages.xml:846
+#: lfs-en/chapter03/packages.xml:856
 #, xml-text
 msgid "Util-linux (&util-linux-version;) - <token>&util-linux-size;</token>:"
 msgstr "Util-linux (&util-linux-version;) - <token>&util-linux-size;</token>:"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:848
+#: lfs-en/chapter03/packages.xml:858
 #, xml-text
 msgid "Home page: <ulink url=\"&util-linux-home;\"/>"
 msgstr "Página inicial: <ulink url=\"&util-linux-home;\"/>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:849
+#: lfs-en/chapter03/packages.xml:859
 #, xml-text
 msgid "Download: <ulink url=\"&util-linux-url;\"/>"
 msgstr "Transferência: <ulink url=\"&util-linux-url;\"/>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:850
+#: lfs-en/chapter03/packages.xml:860
 #, xml-text
 msgid "MD5 sum: <literal>&util-linux-md5;</literal>"
 msgstr "Soma de verificação MD5: <literal>&util-linux-md5;</literal>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><term>
-#: lfs-en/chapter03/packages.xml:869
+#: lfs-en/chapter03/packages.xml:879
 #, xml-text
 msgid "Vim (&vim-version;) - <token>&vim-size;</token>:"
 msgstr "Vim (&vim-version;) - <token>&vim-size;</token>:"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:871
+#: lfs-en/chapter03/packages.xml:881
 #, xml-text
 msgid "Home page: <ulink url=\"&vim-home;\"/>"
 msgstr "Página inicial: <ulink url=\"&vim-home;\"/>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:872
+#: lfs-en/chapter03/packages.xml:882
 #, xml-text
 msgid "Download: <ulink url=\"&vim-url;\"/>"
 msgstr "Transferência: <ulink url=\"&vim-url;\"/>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:873
+#: lfs-en/chapter03/packages.xml:883
 #, xml-text
 msgid "MD5 sum: <literal>&vim-md5;</literal>"
 msgstr "Soma de verificação MD5: <literal>&vim-md5;</literal>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><note><para>
-#: lfs-en/chapter03/packages.xml:876
+#: lfs-en/chapter03/packages.xml:886
 #, xml-text
 msgid ""
 "The version of vim changes daily. To get the latest version, go to <ulink "
@@ -2225,167 +2254,131 @@ msgstr ""
 "<ulink url=\"https://github.com/vim/vim/tags\"/>."
 
 #. type: Content of: <sect1><variablelist><varlistentry><term>
-#: lfs-en/chapter03/packages.xml:884
+#: lfs-en/chapter03/packages.xml:894
 #, xml-text
 msgid "Wheel (&wheel-version;) - <token>&wheel-size;</token>:"
 msgstr "Wheel (&wheel-version;) - <token>&wheel-size;</token>:"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:886
+#: lfs-en/chapter03/packages.xml:896
 #, xml-text
 msgid "Home page: <ulink url=\"&wheel-home;\"/>"
 msgstr "Página inicial: <ulink url=\"&wheel-home;\"/>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:887
+#: lfs-en/chapter03/packages.xml:897
 #, xml-text
 msgid "Download: <ulink url=\"&wheel-url;\"/>"
 msgstr "Transferência: <ulink url=\"&wheel-url;\"/>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:888
+#: lfs-en/chapter03/packages.xml:898
 #, xml-text
 msgid "MD5 sum: <literal>&wheel-md5;</literal>"
 msgstr "Soma de verificação MD5: <literal>&wheel-md5;</literal>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><term>
-#: lfs-en/chapter03/packages.xml:893
+#: lfs-en/chapter03/packages.xml:903
 #, xml-text
 msgid "XML::Parser (&xml-parser-version;) - <token>&xml-parser-size;</token>:"
 msgstr ""
 "XML::Parser (&xml-parser-version;) - <token>&xml-parser-size;</token>:"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:895
+#: lfs-en/chapter03/packages.xml:905
 #, xml-text
 msgid "Home page: <ulink url=\"&xml-parser-home;\"/>"
 msgstr "Página inicial: <ulink url=\"&xml-parser-home;\"/>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:896
+#: lfs-en/chapter03/packages.xml:906
 #, xml-text
 msgid "Download: <ulink url=\"&xml-parser-url;\"/>"
 msgstr "Transferência: <ulink url=\"&xml-parser-url;\"/>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:897
+#: lfs-en/chapter03/packages.xml:907
 #, xml-text
 msgid "MD5 sum: <literal>&xml-parser-md5;</literal>"
 msgstr "Soma de verificação MD5: <literal>&xml-parser-md5;</literal>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><term>
-#: lfs-en/chapter03/packages.xml:902
+#: lfs-en/chapter03/packages.xml:912
 #, xml-text
 msgid "Xz Utils (&xz-version;) - <token>&xz-size;</token>:"
 msgstr "Xz Utils (&xz-version;) - <token>&xz-size;</token>:"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:904
+#: lfs-en/chapter03/packages.xml:914
 #, xml-text
 msgid "Home page: <ulink url=\"&xz-home;\"/>"
 msgstr "Página inicial: <ulink url=\"&xz-home;\"/>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:905
+#: lfs-en/chapter03/packages.xml:915
 #, xml-text
 msgid "Download: <ulink url=\"&xz-url;\"/>"
 msgstr "Transferência: <ulink url=\"&xz-url;\"/>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:906
+#: lfs-en/chapter03/packages.xml:916
 #, xml-text
 msgid "MD5 sum: <literal>&xz-md5;</literal>"
 msgstr "Soma de verificação MD5: <literal>&xz-md5;</literal>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><term>
-#: lfs-en/chapter03/packages.xml:911
+#: lfs-en/chapter03/packages.xml:921
 #, xml-text
 msgid "Zlib (&zlib-version;) - <token>&zlib-size;</token>:"
 msgstr "Zlib (&zlib-version;) - <token>&zlib-size;</token>:"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:913
+#: lfs-en/chapter03/packages.xml:923
 #, xml-text
 msgid "Home page: <ulink url=\"&zlib-home;\"/>"
 msgstr "Página inicial: <ulink url=\"&zlib-home;\"/>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:914
+#: lfs-en/chapter03/packages.xml:924
 #, xml-text
 msgid "Download: <ulink url=\"&zlib-url;\"/>"
 msgstr "Transferência: <ulink url=\"&zlib-url;\"/>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:915
+#: lfs-en/chapter03/packages.xml:925
 #, xml-text
 msgid "MD5 sum: <literal>&zlib-md5;</literal>"
 msgstr "Soma de verificação MD5: <literal>&zlib-md5;</literal>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><term>
-#: lfs-en/chapter03/packages.xml:920
+#: lfs-en/chapter03/packages.xml:930
 #, xml-text
 msgid "Zstd (&zstd-version;) - <token>&zstd-size;</token>:"
 msgstr "Zstd (&zstd-version;) - <token>&zstd-size;</token>:"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:922
+#: lfs-en/chapter03/packages.xml:932
 #, xml-text
 msgid "Home page: <ulink url=\"&zstd-home;\"/>"
 msgstr "Página inicial: <ulink url=\"&zstd-home;\"/>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:923
+#: lfs-en/chapter03/packages.xml:933
 #, xml-text
 msgid "Download: <ulink url=\"&zstd-url;\"/>"
 msgstr "Transferência: <ulink url=\"&zstd-url;\"/>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/packages.xml:924
+#: lfs-en/chapter03/packages.xml:934
 #, xml-text
 msgid "MD5 sum: <literal>&zstd-md5;</literal>"
 msgstr "Soma de verificação MD5: <literal>&zstd-md5;</literal>"
 
 #. type: Content of: <sect1><para>
-#: lfs-en/chapter03/packages.xml:930
+#: lfs-en/chapter03/packages.xml:940
 #, xml-text
 msgid "Total size of these packages: about <returnvalue/>"
 msgstr "Tamanho total desses pacotes: cerca de <returnvalue/>"
-
-#, xml-text
-#~ msgid ""
-#~ "LFS-Bootscripts (&lfs-bootscripts-version;) - <token>&lfs-bootscripts-"
-#~ "size;</token>:"
-#~ msgstr ""
-#~ "LFS-Bootscripts (&lfs-bootscripts-version;) - <token>&lfs-bootscripts-"
-#~ "size;</token>:"
-
-#, xml-text
-#~ msgid "Home page: <ulink url=\"&lfs-bootscripts-home;\"/>"
-#~ msgstr "Página inicial: <ulink url=\"&lfs-bootscripts-home;\"/>"
-
-#, xml-text
-#~ msgid "Download: <ulink url=\"&lfs-bootscripts-url;\"/>"
-#~ msgstr "Transferência: <ulink url=\"&lfs-bootscripts-url;\"/>"
-
-#, xml-text
-#~ msgid "MD5 sum: <literal>&lfs-bootscripts-md5;</literal>"
-#~ msgstr "Soma de verificação MD5: <literal>&lfs-bootscripts-md5;</literal>"
-
-#, xml-text
-#~ msgid "SysVinit (&sysvinit-version;) - <token>&sysvinit-size;</token>:"
-#~ msgstr "SysVinit (&sysvinit-version;) - <token>&sysvinit-size;</token>:"
-
-#, xml-text
-#~ msgid "Home page: <ulink url=\"&sysvinit-home;\"/>"
-#~ msgstr "Página inicial: <ulink url=\"&sysvinit-home;\"/>"
-
-#, xml-text
-#~ msgid "Download: <ulink url=\"&sysvinit-url;\"/>"
-#~ msgstr "Transferência: <ulink url=\"&sysvinit-url;\"/>"
-
-#, xml-text
-#~ msgid "MD5 sum: <literal>&sysvinit-md5;</literal>"
-#~ msgstr "Soma de verificação MD5: <literal>&sysvinit-md5;</literal>"
 
 #, xml-text
 #~ msgid "Check (&check-version;) - <token>&check-size;</token>:"

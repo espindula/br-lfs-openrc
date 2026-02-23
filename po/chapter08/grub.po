@@ -6,10 +6,12 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-10 04:56-0300\n"
-"PO-Revision-Date: 2026-01-29 16:18+0000\n"
-"Last-Translator: Jamenson Ferreira Espindula de Almeida Melo <jafesp@gmail.com>\n"
-"Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/projects/linux-from-scratch/chapter08_grub/pt_BR/>\n"
+"POT-Creation-Date: 2026-02-08 16:18+0000\n"
+"PO-Revision-Date: 2026-02-09 04:18+0000\n"
+"Last-Translator: Jamenson Ferreira Espindula de Almeida Melo "
+"<jafesp@gmail.com>\n"
+"Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/"
+"projects/linux-from-scratch/chapter08_grub/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -130,7 +132,7 @@ msgstr ""
 #: lfs-en/chapter08/grub.xml:68
 #, xml-text
 msgid "First fix a bug introduced in grub-2.14:"
-msgstr ""
+msgstr "Primeiro corrija um defeito introduzido no grub-2.14:"
 
 #. type: Content of: <sect1><sect2><screen>
 #: lfs-en/chapter08/grub.xml:70
@@ -139,6 +141,8 @@ msgid ""
 "<userinput remap=\"pre\">sed 's/--image-base/--nonexist-linker-option/' -i "
 "configure</userinput>"
 msgstr ""
+"<userinput remap=\"pre\">sed 's/--image-base/--nonexist-linker-option/' -i "
+"configure</userinput>"
 
 #. type: Content of: <sect1><sect2><para>
 #: lfs-en/chapter08/grub.xml:72
@@ -828,3 +832,55 @@ msgstr ""
 #, xml-text
 msgid "grub-syslinux2cfg"
 msgstr "grub-syslinux2cfg"
+
+#, xml-text
+#~ msgid "Add a file missing from the release tarball:"
+#~ msgstr "Adicione um arquivo ausente a partir do tarball de lançamento:"
+
+#, no-wrap, xml-text
+#~ msgid ""
+#~ "<userinput remap='pre'>echo <literal>depends bli part_gpt</literal> &gt; "
+#~ "grub-core/extra_deps.lst</userinput>"
+#~ msgstr ""
+#~ "<userinput remap='pre'>echo <literal>depends bli part_gpt</literal> &gt; "
+#~ "grub-core/extra_deps.lst</userinput>"
+
+#, xml-text
+#~ msgid ""
+#~ "Install the package, and move the Bash completion support file to the "
+#~ "location recommended by the Bash completion maintainers:"
+#~ msgstr ""
+#~ "Instale o pacote e mova o arquivo de suporte à completação do Bash para o "
+#~ "local recomendado pelos(as) mantenedores(as) da completação do Bash:"
+
+#, no-wrap, xml-text
+#~ msgid ""
+#~ "<userinput remap=\"install\">make install\n"
+#~ "mv -v /etc/bash_completion.d/grub /usr/share/bash-completion/completions</userinput>"
+#~ msgstr ""
+#~ "<userinput remap=\"install\">make install\n"
+#~ "mv -v /etc/bash_completion.d/grub /usr/share/bash-completion/completions</userinput>"
+
+#, xml-text
+#~ msgid ""
+#~ "Fix an issue causing <command>grub-install</command> to fail when the "
+#~ "<filename class='directory'>/boot</filename> partition (or the root "
+#~ "partition if <filename class='directory'>/boot</filename> is not a separate "
+#~ "partition) is created by e2fsprogs-1.47.0 or later:"
+#~ msgstr ""
+#~ "Corrija um problema que causa <command>grub-install</command> falhar quando "
+#~ "a partição <filename class='directory'>/boot</filename> (ou a partição raiz,"
+#~ " se <filename class='directory'>/boot</filename> não for uma partição "
+#~ "separada) for criada por e2fsprogs-1.47.0 ou posterior:"
+
+#, no-wrap, xml-text
+#~ msgid ""
+#~ "<userinput remap='pre'>patch -Np1 -i ../grub-&grub-"
+#~ "version;-upstream_fixes-1.patch</userinput>"
+#~ msgstr ""
+#~ "<userinput remap='pre'>patch -Np1 -i ../grub-&grub-"
+#~ "version;-upstream_fixes-1.patch</userinput>"
+
+#, fuzzy, xml-text
+#~ msgid "Mac-style bless on HFS or HFS+ files"
+#~ msgstr "Bênção estilo Mac sobre arquivos HFS ou HFS+"
