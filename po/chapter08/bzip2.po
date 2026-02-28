@@ -6,12 +6,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-01-26 04:18+0000\n"
+"POT-Creation-Date: 2026-02-27 21:39-0300\n"
 "PO-Revision-Date: 2026-01-27 04:18+0000\n"
-"Last-Translator: Jamenson Ferreira Espindula de Almeida Melo "
-"<jafesp@gmail.com>\n"
-"Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/"
-"projects/linux-from-scratch/chapter08_bzip2/pt_BR/>\n"
+"Last-Translator: Jamenson Ferreira Espindula de Almeida Melo <jafesp@gmail.com>\n"
+"Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/projects/linux-from-scratch/chapter08_bzip2/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -216,37 +214,50 @@ msgstr "Instale a biblioteca compartilhada:"
 
 #. type: Content of: <sect1><sect2><screen>
 #: lfs-en/chapter08/bzip2.xml:89
-#, no-wrap, xml-text
+#, fuzzy, no-wrap, xml-text
+#| msgid ""
+#| "<userinput remap=\"install\">cp -av libbz2.so.* /usr/lib\n"
+#| "ln -sv libbz2.so.&bzip2-version; /usr/lib/libbz2.so</userinput>"
 msgid ""
 "<userinput remap=\"install\">cp -av libbz2.so.* /usr/lib\n"
-"ln -sv libbz2.so.&bzip2-version; /usr/lib/libbz2.so</userinput>"
+"ln -sfv libbz2.so.&bzip2-version; /usr/lib/libbz2.so</userinput>"
 msgstr ""
 "<userinput remap=\"install\">cp -av libbz2.so.* /usr/lib\n"
 "ln -sv libbz2.so.&bzip2-version; /usr/lib/libbz2.so</userinput>"
 
 #. type: Content of: <sect1><sect2><para>
 #: lfs-en/chapter08/bzip2.xml:92
-#, xml-text
+#, fuzzy, xml-text
+#| msgid ""
+#| "The name of the shared library isn't standardized and it varies among "
+#| "distros.  The instruction above has installed <filename "
+#| "class='libraryfile'>libbz2.so.1.0</filename>, but some applications, for "
+#| "example Kbd, expects a different name <filename "
+#| "class='libraryfile'>libbz2.so.1</filename> that some other distros are "
+#| "using.  Create a compatibility symlink for them:"
 msgid ""
 "The name of the shared library isn't standardized and it varies among "
-"distros.  The instruction above has installed <filename "
+"distros. The instruction above has installed <filename "
 "class='libraryfile'>libbz2.so.1.0</filename>, but some applications, for "
 "example Kbd, expects a different name <filename "
 "class='libraryfile'>libbz2.so.1</filename> that some other distros are "
-"using.  Create a compatibility symlink for them:"
+"using. Create a compatibility symlink for them:"
 msgstr ""
 "O nome da biblioteca compartilhada não é padronizado e varia entre "
-"distribuições. A instrução acima instalou <filename class='libraryfile'>"
-"libbz2.so.1.0</filename>, mas alguns aplicativos, para exemplo Kbd, esperam "
-"um nome diferente, <filename class='libraryfile'>libbz2.so.1</filename>, que "
-"outras distribuições estão usando. Crie um linque simbólico de "
-"compatibilidade para eles:"
+"distribuições. A instrução acima instalou <filename "
+"class='libraryfile'>libbz2.so.1.0</filename>, mas alguns aplicativos, para "
+"exemplo Kbd, esperam um nome diferente, <filename "
+"class='libraryfile'>libbz2.so.1</filename>, que outras distribuições estão "
+"usando. Crie um linque simbólico de compatibilidade para eles:"
 
 #. type: Content of: <sect1><sect2><screen>
 #: lfs-en/chapter08/bzip2.xml:99
-#, no-wrap, xml-text
+#, fuzzy, no-wrap, xml-text
+#| msgid ""
+#| "<userinput>ln -sv libbz2.so.&bzip2-version; /usr/lib/libbz2.so.1</userinput>"
 msgid ""
-"<userinput>ln -sv libbz2.so.&bzip2-version; /usr/lib/libbz2.so.1</userinput>"
+"<userinput>ln -sfv libbz2.so.&bzip2-version; "
+"/usr/lib/libbz2.so.1</userinput>"
 msgstr ""
 "<userinput>ln -sv libbz2.so.&bzip2-version; /usr/lib/libbz2.so.1</userinput>"
 
@@ -263,11 +274,11 @@ msgid ""
 msgstr ""
 "A abordagem de linque simbólico só é válida aqui porque a diferença no nome "
 "da biblioteca é um resultado de diferentes visões estéticas dos(as) "
-"mantenedores(as) de distribuição, não de incompatibilidades reais de ABI. Em "
-"geral, uma diferença no nome da biblioteca provavelmente indica uma "
-"incompatibilidade de ABI e seria muito provavelmente inválido <quote>"
-"ocultar</quote> a diferença por meio de um linque simbólico. Leiam-se <xref "
-"linkend='pkgmgmt-upgrade-issues'/> para detalhes acerca de nomes de "
+"mantenedores(as) de distribuição, não de incompatibilidades reais de ABI. Em"
+" geral, uma diferença no nome da biblioteca provavelmente indica uma "
+"incompatibilidade de ABI e seria muito provavelmente inválido "
+"<quote>ocultar</quote> a diferença por meio de um linque simbólico. Leiam-se"
+" <xref linkend='pkgmgmt-upgrade-issues'/> para detalhes acerca de nomes de "
 "bibliotecas."
 
 #. type: Content of: <sect1><sect2><para>
