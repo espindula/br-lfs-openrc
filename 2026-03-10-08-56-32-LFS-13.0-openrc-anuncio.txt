@@ -1,0 +1,35 @@
+Olá a todos(as).
+
+Estou muito feliz em anunciar o lançamento do livro "Linux From Scratch" (versão 13.0-openrc) traduzido para o português brasileiro.
+
+Este é o repositório principal:
+https://github.com/espindula/br-lfs-openrc
+
+
+Linques para download:
+
+Formato PDF:
+<https://github.com/espindula/br-lfs-openrc/releases/download/v13.0-openrc/LFS-OPENRC-BOOK-13.0-pt_BR.pdf>
+
+Formato HTML (fragmentado):
+<https://github.com/espindula/br-lfs-openrc/releases/download/v13.0-openrc/LFS-OPENRC-BOOK-13.0-pt_BR-HTML.tar.bz2>
+
+Formato HTML (monolítico):
+<https://github.com/espindula/br-lfs-openrc/releases/download/v13.0-openrc/LFS-OPENRC-BOOK-13.0-pt_BR-NOCHUNKS.html>
+
+Formato de texto simples:
+<https://github.com/espindula/br-lfs-openrc/releases/download/v13.0-openrc/LFS-OPENRC-BOOK-13.0-pt_BR-NOCHUNKS.txt>
+
+Formato epub:
+<https://github.com/espindula/br-lfs-openrc/releases/download/v13.0-openrc/LFS-OPENRC-BOOK-13.0-pt_BR.epub>
+
+Soma MD5:
+<https://github.com/espindula/br-lfs-openrc/releases/download/v13.0-openrc/LFS-OPENRC-BOOK-13.0-pt_BR-MD5SUMS.txt>
+
+Soma SHA1:
+<https://github.com/espindula/br-lfs-openrc/releases/download/v13.0-openrc/LFS-OPENRC-BOOK-13.0-pt_BR-SHA1SUMS.txt>
+
+
+Linque para o anúncio na lista internacional de discussão:
+
+ihttps://lists.linuxfromscratch.org/sympa/arc/lfs-dev/2026-03/msg00012.html
