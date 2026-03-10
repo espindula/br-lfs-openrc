@@ -6,10 +6,12 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-23 16:26-0300\n"
-"PO-Revision-Date: 2026-02-01 16:18+0000\n"
-"Last-Translator: Jamenson Ferreira Espindula de Almeida Melo <jafesp@gmail.com>\n"
-"Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/projects/linux-from-scratch/chapter08_binutils/pt_BR/>\n"
+"POT-Creation-Date: 2026-02-20 04:18+0000\n"
+"PO-Revision-Date: 2026-02-20 16:18+0000\n"
+"Last-Translator: Jamenson Ferreira Espindula de Almeida Melo "
+"<jafesp@gmail.com>\n"
+"Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/"
+"projects/linux-from-scratch/chapter08_binutils/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -277,10 +279,9 @@ msgstr "<userinput remap=\"test\">grep '^FAIL:' $(find -name '*.log')</userinput
 
 #. type: Content of: <sect1><sect2><para>
 #: lfs-en/chapter08/binutils.xml:130
-#, fuzzy, xml-text
-#| msgid "Three tests in the gprofng suite are also known to fail."
+#, xml-text
 msgid "One test related to gprofng is known to fail."
-msgstr "Três testes na suíte \"gprofng\" também são conhecidos por falharem."
+msgstr "One teste relacionado a gprofng é conhecido por falhar."
 
 #. type: Content of: <sect1><sect2><para>
 #: lfs-en/chapter08/binutils.xml:132

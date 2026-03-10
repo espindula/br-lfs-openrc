@@ -6,10 +6,12 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-23 16:26-0300\n"
-"PO-Revision-Date: 2026-02-01 16:18+0000\n"
-"Last-Translator: Jamenson Ferreira Espindula de Almeida Melo <jafesp@gmail.com>\n"
-"Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/projects/linux-from-scratch/chapter08_coreutils/pt_BR/>\n"
+"POT-Creation-Date: 2026-02-14 04:18+0000\n"
+"PO-Revision-Date: 2026-02-14 16:18+0000\n"
+"Last-Translator: Jamenson Ferreira Espindula de Almeida Melo "
+"<jafesp@gmail.com>\n"
+"Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/"
+"projects/linux-from-scratch/chapter08_coreutils/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -126,13 +128,7 @@ msgstr "Agora prepare Coreutils para compilação:"
 
 #. type: Content of: <sect1><sect2><screen>
 #: lfs-en/chapter08/coreutils.xml:67
-#, fuzzy, no-wrap, xml-text
-#| msgid ""
-#| "<userinput remap=\"configure\">autoreconf -fv\n"
-#| "automake -af\n"
-#| "FORCE_UNSAFE_CONFIGURE=1 ./configure \\\n"
-#| "            --prefix=/usr            \\\n"
-#| "            --enable-no-install-program=kill,uptime</userinput>"
+#, no-wrap, xml-text
 msgid ""
 "<userinput remap=\"configure\">autoreconf -fv\n"
 "automake -af\n"
@@ -142,8 +138,7 @@ msgstr ""
 "<userinput remap=\"configure\">autoreconf -fv\n"
 "automake -af\n"
 "FORCE_UNSAFE_CONFIGURE=1 ./configure \\\n"
-"            --prefix=/usr            \\\n"
-"            --enable-no-install-program=kill,uptime</userinput>"
+"            --prefix=/usr</userinput>"
 
 #. type: Content of: <sect1><sect2><variablelist><title>
 #: lfs-en/chapter08/coreutils.xml:73
@@ -2703,6 +2698,18 @@ msgid "libstdbuf"
 msgstr "libstdbuf"
 
 #, xml-text
+#~ msgid "<parameter>--enable-no-install-program=kill,uptime</parameter>"
+#~ msgstr "<parameter>--enable-no-install-program=kill,uptime</parameter>"
+
+#, xml-text
+#~ msgid ""
+#~ "The purpose of this switch is to prevent Coreutils from installing programs "
+#~ "that will be installed by other packages."
+#~ msgstr ""
+#~ "O propósito dessa chave é o de impedir que o Coreutils instale aplicativos "
+#~ "que serão instalados por outros pacotes."
+
+#, xml-text
 #~ msgid "First, make a fix required by glibc-2.43 and later:"
 #~ msgstr "Primeiro, faça uma correção exigida pela glibc-2.43 e posteriores:"
 
@@ -2715,13 +2722,97 @@ msgstr "libstdbuf"
 #~ "    -i $(find -name \\*.in.h)</userinput>"
 
 #, xml-text
-#~ msgid "<parameter>--enable-no-install-program=kill,uptime</parameter>"
-#~ msgstr "<parameter>--enable-no-install-program=kill,uptime</parameter>"
+#~ msgid ""
+#~ "Fix a bug causing the <command>cp</command> command to hang forever when "
+#~ "copying sparse files on <systemitem class='filesystem'>ext4</systemitem> "
+#~ "file systems:"
+#~ msgstr ""
+#~ "Corrija um defeito que faz com que o comando <command>cp</command> trave "
+#~ "indefinidamente ao copiar arquivos esparsos em sistemas de arquivos "
+#~ "<systemitem class='filesystem'>ext4</systemitem>:"
+
+#, no-wrap, xml-text
+#~ msgid ""
+#~ "<userinput remap=\"pre\">sed '/off_t ext_end =/s/ipos/src_pos/' -i src/copy-"
+#~ "file-data.c</userinput>"
+#~ msgstr ""
+#~ "<userinput remap=\"pre\">sed '/off_t ext_end =/s/ipos/src_pos/' -i src/copy-"
+#~ "file-data.c</userinput>"
+
+#, xml-text
+#~ msgid "First, apply a patch for a security problem identified upstream:"
+#~ msgstr ""
+#~ "Primeiro, aplique um remendo para um problema de segurança identificado pelo"
+#~ " fluxo de desenvolvimento:"
+
+#, no-wrap, xml-text
+#~ msgid ""
+#~ "<userinput remap=\"pre\">patch -Np1 -i ../&coreutils-upstream-"
+#~ "patch;</userinput>"
+#~ msgstr ""
+#~ "<userinput remap=\"pre\">patch -Np1 -i ../&coreutils-upstream-"
+#~ "patch;</userinput>"
 
 #, xml-text
 #~ msgid ""
-#~ "The purpose of this switch is to prevent Coreutils from installing programs "
-#~ "that will be installed by other packages."
+#~ "The patch for internationalization has modified the build system, so the "
+#~ "configuration files must be regenerated."
 #~ msgstr ""
-#~ "O propósito dessa chave é o de impedir que o Coreutils instale aplicativos "
-#~ "que serão instalados por outros pacotes."
+#~ "O remendo para internacionalização modificou o sistema de construção, de "
+#~ "forma que os arquivos de configuração precisam ser regenerados."
+
+#, xml-text
+#~ msgid "Work around a problem with an older versions of autotools."
+#~ msgstr "Contorne um problema com versões mais antigas do Autotools."
+
+#, xml-text
+#~ msgid ""
+#~ "Two tests, <filename>tests/cp/preserve-mode.sh</filename> and "
+#~ "<filename>tests/mv/acl.sh</filename>, are known to fail in the chroot "
+#~ "environment, but pass in a complete system."
+#~ msgstr ""
+#~ "Dois testes, <filename>tests/cp/preserve-mode.sh</filename> e "
+#~ "<filename>tests/mv/acl.sh</filename>, são conhecidos por falharem no "
+#~ "ambiente chroot, mas passam em um sistema completo."
+
+#, xml-text
+#~ msgid "Fix a security vulnerability in the <command>split</command> utility:"
+#~ msgstr ""
+#~ "Corrija uma vulnerabilidade de segurança no utilitário "
+#~ "&quot;<command>split</command>&quot;:"
+
+#, xml-text
+#~ msgid "Now run the tests:"
+#~ msgstr "Agora execute os testes:"
+
+#, xml-text
+#~ msgid "The test-getlogin test may fail in the LFS chroot environment."
+#~ msgstr "O teste test-getlogin possivelmente falhe no ambiente chroot do LFS."
+
+#, no-wrap, xml-text
+#~ msgid ""
+#~ "<userinput remap=\"test\">echo \"dummy:x:102:tester\" &gt;&gt; "
+#~ "/etc/group</userinput>"
+#~ msgstr ""
+#~ "<userinput remap=\"test\">echo \"dummy:x:102:tester\" &gt;&gt; "
+#~ "/etc/group</userinput>"
+
+#, no-wrap, xml-text
+#~ msgid "<userinput remap=\"test\">sed -i '/dummy/d' /etc/group</userinput>"
+#~ msgstr "<userinput remap=\"test\">sed -i '/dummy/d' /etc/group</userinput>"
+
+#, xml-text
+#~ msgid ""
+#~ "Fix a bug in checksum utilities causing failed checks not reported "
+#~ "correctly:"
+#~ msgstr ""
+#~ "Corrija um defeito nos utilitários de soma de verificação que causa "
+#~ "verificações com falha não informadas corretamente:"
+
+#, fuzzy, xml-text
+#~ msgid "The sort-NaN-infloop test is known to fail with GCC-12."
+#~ msgstr "O teste sort-NaN-infloop é conhecido por falhar com o GCC-12."
+
+#, fuzzy, xml-text
+#~ msgid "Strips the non-directory suffix from a file name"
+#~ msgstr "Remove o sufixo que não é diretório de um nome de arquivo"

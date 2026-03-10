@@ -6,16 +6,18 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-23 16:26-0300\n"
-"PO-Revision-Date: 2025-10-01 16:18+0000\n"
-"Last-Translator: Jamenson Ferreira Espindula de Almeida Melo <jafesp@gmail.com>\n"
-"Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/projects/linux-from-scratch/chapter08_vim/pt_BR/>\n"
+"POT-Creation-Date: 2026-02-16 16:18+0000\n"
+"PO-Revision-Date: 2026-02-17 16:18+0000\n"
+"Last-Translator: Jamenson Ferreira Espindula de Almeida Melo "
+"<jafesp@gmail.com>\n"
+"Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/"
+"projects/linux-from-scratch/chapter08_vim/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.13.1\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. type: Content of: <sect1><sect1info><address>
 #: lfs-en/chapter08/vim.xml:14
@@ -215,6 +217,8 @@ msgid ""
 "Two tests, Test_client_server_stopinsert() and Test_popup_setbuf(), are "
 "known to fail on some systems."
 msgstr ""
+"Dois testes, Test_client_server_stopinsert() e Test_popup_setbuf(), são "
+"conhecidos por falharem em alguns sistemas."
 
 #. type: Content of: <sect1><sect2><para>
 #: lfs-en/chapter08/vim.xml:90
@@ -717,6 +721,19 @@ msgid "xxd"
 msgstr "xxd"
 
 #, xml-text
-#~ msgid "One test, test_matchfuzzy.vim, is known to fail on some systems."
+#~ msgid ""
+#~ "Four tests related to GetLatestVimScripts are known to fail in the chroot "
+#~ "environment because wget or curl are not available to download the required "
+#~ "test scripts."
 #~ msgstr ""
-#~ "Um teste, test_matchfuzzy.vim, é conhecido por falhar em alguns sistemas."
+#~ "Quatro testes relacionados a GetLatestVimScripts são conhecidos por falharem"
+#~ " no ambiente chroot porque wget ou curl não estão disponíveis para baixar os"
+#~ " conjuntos de comandos sequenciais de teste exigidos."
+
+#, fuzzy, xml-text
+#~ msgid ""
+#~ "For more information, see the appropriate README file located at the URL "
+#~ "above."
+#~ msgstr ""
+#~ "Para mais informação, veja o arquivo README apropriado localizado na URL "
+#~ "acima."

@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-23 16:27-0300\n"
-"PO-Revision-Date: 2026-02-01 16:18+0000\n"
+"POT-Creation-Date: 2026-03-06 17:19+0000\n"
+"PO-Revision-Date: 2026-02-20 16:18+0000\n"
 "Last-Translator: Jamenson Ferreira Espindula de Almeida Melo <jafesp@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/projects/linux-from-scratch/chapter01_whatsnew/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -231,12 +231,6 @@ msgid "Tzdata-&tzdata-version;"
 msgstr "Tzdata-&tzdata-version;"
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/chapter01/whatsnew.xml:267
-#, xml-text
-msgid "Udev from Systemd-&systemd-version;"
-msgstr "Udev originário de Systemd-&systemd-version;"
-
-#. type: Content of: <sect1><itemizedlist><listitem><para>
 #: lfs-en/chapter01/whatsnew.xml:270
 #, xml-text
 msgid "Util-linux-&util-linux-version;"
@@ -274,10 +268,9 @@ msgstr "Adicionado:"
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
 #: lfs-en/chapter01/whatsnew.xml:304
-#, fuzzy, xml-text
-#| msgid "Coreutils-9.9-i18n-1.patch"
+#, xml-text
 msgid "Coreutils-9.10-i18n-1.patch"
-msgstr "Coreutils-9.9-i18n-1.patch"
+msgstr "Coreutils-9.10-i18n-1.patch"
 
 #. type: Content of: <sect1><itemizedlist><title>
 #: lfs-en/chapter01/whatsnew.xml:309
@@ -436,6 +429,10 @@ msgstr "Coreutils-9.7-upstream_fix-1.patch"
 #, xml-text
 #~ msgid "Texinfo-&texinfo-version;"
 #~ msgstr "Texinfo-&texinfo-version;"
+
+#, xml-text
+#~ msgid "Udev from Systemd-&systemd-version;"
+#~ msgstr "Udev originário de Systemd-&systemd-version;"
 
 #, xml-text
 #~ msgid "Zstd-&zstd-version;"

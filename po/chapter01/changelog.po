@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-23 16:27-0300\n"
+"POT-Creation-Date: 2026-03-10 07:29-0300\n"
 "PO-Revision-Date: 2026-01-29 16:18+0000\n"
 "Last-Translator: Jamenson Ferreira Espindula de Almeida Melo "
 "<jafesp@gmail.com>\n"
@@ -57,12 +57,42 @@ msgstr "Entradas do Registro das Mudanças:"
 #. type: Content of: <sect1><itemizedlist><listitem><para>
 #: lfs-en/chapter01/changelog.xml:44
 #, xml-text
+msgid "2026-03-05"
+msgstr "2026-03-05"
+
+#. type: Content of:
+#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
+#: lfs-en/chapter01/changelog.xml:47
+#, xml-text
+msgid "[bdubbs] - LFS-13.0 released."
+msgstr "[bdubbs] - LFS-13.0 lançado."
+
+#. type: Content of: <sect1><itemizedlist><listitem><para>
+#: lfs-en/chapter01/changelog.xml:53
+#, xml-text
+msgid "2026-02-27"
+msgstr "2026-02-27"
+
+#. type: Content of:
+#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
+#: lfs-en/chapter01/changelog.xml:56
+#, xml-text
+msgid ""
+"[bdubbs] - Update to vim-9.2.0078 (Security update). Fixes <ulink "
+"url='&lfs-ticket-root;5877'>#5877</ulink>."
+msgstr ""
+"[bdubbs] - Atualização para vim-9.2.0078 (atualização de segurança). "
+"Corrige <ulink url='&lfs-ticket-root;5877'>#5877</ulink>."
+
+#. type: Content of: <sect1><itemizedlist><listitem><para>
+#: lfs-en/chapter01/changelog.xml:63
+#, xml-text
 msgid "2026-02-19"
 msgstr "2026-02-19"
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:47
+#: lfs-en/chapter01/changelog.xml:66
 #, xml-text
 msgid ""
 "[bdubbs] - Update to zlib-1.3.2 (Security update). Fixes <ulink "
@@ -72,14 +102,14 @@ msgstr ""
 "Corrige <ulink url='&lfs-ticket-root;5873'>#5873</ulink>."
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:54
+#: lfs-en/chapter01/changelog.xml:73
 #, xml-text
 msgid "2026-02-15"
 msgstr "2026-02-15"
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:57
+#: lfs-en/chapter01/changelog.xml:76
 #, xml-text
 msgid ""
 "[bdubbs] - Update to vim-9.2.0000. Fixes <ulink "
@@ -89,14 +119,14 @@ msgstr ""
 "url='&lfs-ticket-root;5872'>#5872</ulink>."
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:64
+#: lfs-en/chapter01/changelog.xml:83
 #, xml-text
 msgid "2026-02-14"
 msgstr "2026-02-14"
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:67
+#: lfs-en/chapter01/changelog.xml:86
 #, xml-text
 msgid ""
 "[bdubbs] - Update to vim-9.1.2144 (Security update). Addresses <ulink "
@@ -107,7 +137,7 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:71
+#: lfs-en/chapter01/changelog.xml:90
 #, xml-text
 msgid ""
 "[bdubbs] - Update to setuptools-82.0.0 (Python module). Fixes <ulink "
@@ -118,7 +148,7 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:75
+#: lfs-en/chapter01/changelog.xml:94
 #, xml-text
 msgid ""
 "[bdubbs] - Update to man-pages-6.17. Fixes <ulink "
@@ -129,7 +159,7 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:79
+#: lfs-en/chapter01/changelog.xml:98
 #, xml-text
 msgid ""
 "[bdubbs] - Update to m4-1.4.21. Fixes <ulink "
@@ -140,7 +170,7 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:83
+#: lfs-en/chapter01/changelog.xml:102
 #, xml-text
 msgid ""
 "[bdubbs] - Update to linux-6.18.10. Fixes <ulink "
@@ -151,7 +181,7 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:87
+#: lfs-en/chapter01/changelog.xml:106
 #, xml-text
 msgid ""
 "[bdubbs] - Update to less-692. Fixes <ulink "
@@ -162,7 +192,7 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:91
+#: lfs-en/chapter01/changelog.xml:110
 #, xml-text
 msgid ""
 "[bdubbs] - Update to iana-etc-20260202. Addresses <ulink "
@@ -173,7 +203,7 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:95
+#: lfs-en/chapter01/changelog.xml:114
 #, xml-text
 msgid ""
 "[bdubbs] - Update to binutils-2.46.0. Fixes <ulink "
@@ -183,14 +213,14 @@ msgstr ""
 "url='&lfs-ticket-root;5865'>#5865</ulink>."
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:102
+#: lfs-en/chapter01/changelog.xml:121
 #, xml-text
 msgid "2026-02-08"
 msgstr "2026-02-08"
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:105
+#: lfs-en/chapter01/changelog.xml:124
 #, xml-text
 msgid ""
 "[bdubbs] - Update to systemd-259.1. Fixes <ulink "
@@ -201,7 +231,7 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:109
+#: lfs-en/chapter01/changelog.xml:128
 #, xml-text
 msgid ""
 "[bdubbs] - Update to shadow-4.19.3. Fixes <ulink "
@@ -212,7 +242,7 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:113
+#: lfs-en/chapter01/changelog.xml:132
 #, xml-text
 msgid ""
 "[bdubbs] - Update to setuptools-81.0.0 (Python module). Fixes <ulink "
@@ -223,7 +253,7 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:117
+#: lfs-en/chapter01/changelog.xml:136
 #, xml-text
 msgid ""
 "[bdubbs] - Update to Python3-3.14.3 (Security update). Fixes <ulink "
@@ -234,7 +264,7 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:121
+#: lfs-en/chapter01/changelog.xml:140
 #, xml-text
 msgid ""
 "[bdubbs] - Update to procps-ng-4.0.6. Fixes <ulink "
@@ -245,7 +275,7 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:125
+#: lfs-en/chapter01/changelog.xml:144
 #, xml-text
 msgid ""
 "[bdubbs] - Update to linux-6.18.9. Fixes <ulink "
@@ -256,7 +286,7 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:129
+#: lfs-en/chapter01/changelog.xml:148
 #, xml-text
 msgid ""
 "[bdubbs] - Update to gettext-1.0. Fixes <ulink "
@@ -267,7 +297,7 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:133
+#: lfs-en/chapter01/changelog.xml:152
 #, xml-text
 msgid ""
 "[bdubbs] - Update to expat-2.7.4 (Security update). Fixes <ulink "
@@ -278,7 +308,7 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:137
+#: lfs-en/chapter01/changelog.xml:156
 #, xml-text
 msgid ""
 "[bdubbs] - Update to coreutils-9.10.tar.xz. Fixes <ulink "
@@ -288,14 +318,14 @@ msgstr ""
 "url='&lfs-ticket-root;5862'>#5862</ulink>."
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:144
+#: lfs-en/chapter01/changelog.xml:163
 #, xml-text
 msgid "2026-01-28"
 msgstr "2026-01-28"
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:147
+#: lfs-en/chapter01/changelog.xml:166
 #, xml-text
 msgid ""
 "[bdubbs] - Update to wheel-0.46.3. Fixes <ulink "
@@ -306,7 +336,7 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:151
+#: lfs-en/chapter01/changelog.xml:170
 #, xml-text
 msgid ""
 "[bdubbs] - Update to shadow-4.19.2. Fixes <ulink "
@@ -317,7 +347,7 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:155
+#: lfs-en/chapter01/changelog.xml:174
 #, xml-text
 msgid ""
 "[bdubbs] - Update to setuptools-80.10.2. Fixes <ulink "
@@ -328,7 +358,7 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:159
+#: lfs-en/chapter01/changelog.xml:178
 #, xml-text
 msgid ""
 "[bdubbs] - Update to packaging-26.0. Fixes <ulink "
@@ -339,7 +369,7 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:163
+#: lfs-en/chapter01/changelog.xml:182
 #, xml-text
 msgid ""
 "[bdubbs] - Update to openssl-3.6.1 (Security update). Fixes <ulink "
@@ -350,7 +380,7 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:167
+#: lfs-en/chapter01/changelog.xml:186
 #, xml-text
 msgid ""
 "[bdubbs] - Update to meson-1.10.1. Fixes <ulink "
@@ -361,7 +391,7 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:171
+#: lfs-en/chapter01/changelog.xml:190
 #, xml-text
 msgid ""
 "[bdubbs] - Update to linux-6.18.7. Fixes <ulink "
@@ -372,7 +402,7 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:175
+#: lfs-en/chapter01/changelog.xml:194
 #, xml-text
 msgid ""
 "[bdubbs] - Update to less-691. Fixes <ulink "
@@ -383,7 +413,7 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:179
+#: lfs-en/chapter01/changelog.xml:198
 #, xml-text
 msgid ""
 "[bdubbs] - Update to iana-etc-20260123. Addresses <ulink "
@@ -394,7 +424,7 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:183
+#: lfs-en/chapter01/changelog.xml:202
 #, xml-text
 msgid ""
 "[bdubbs] - Update to grub-2.14. Fixes <ulink "
@@ -405,7 +435,7 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:187
+#: lfs-en/chapter01/changelog.xml:206
 #, xml-text
 msgid ""
 "[bdubbs] - Update to glibc-2.43 (Security update). Fixes <ulink "
@@ -415,14 +445,14 @@ msgstr ""
 "Corrige <ulink url='&lfs-ticket-root;5850'>#5850</ulink>."
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:194
+#: lfs-en/chapter01/changelog.xml:213
 #, xml-text
 msgid "2026-01-15"
 msgstr "2026-01-15"
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:197
+#: lfs-en/chapter01/changelog.xml:216
 #, xml-text
 msgid ""
 "[bdubbs] - Update to sqlite-autoconf-3510200 (3.51.2). Fixes <ulink "
@@ -433,7 +463,7 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:201
+#: lfs-en/chapter01/changelog.xml:220
 #, xml-text
 msgid ""
 "[bdubbs] - Update to ncurses-6.6. Fixes <ulink "
@@ -444,7 +474,7 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:205
+#: lfs-en/chapter01/changelog.xml:224
 #, xml-text
 msgid ""
 "[bdubbs] - Update to linux-6.18.5. Fixes <ulink "
@@ -454,14 +484,14 @@ msgstr ""
 "url='&lfs-ticket-root;5840'>#5840</ulink>."
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:212
+#: lfs-en/chapter01/changelog.xml:231
 #, xml-text
 msgid "2026-01-01"
 msgstr "2026-01-01"
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:215
+#: lfs-en/chapter01/changelog.xml:234
 #, xml-text
 msgid ""
 "[bdubbs] - Update to xz-5.8.2. Fixes <ulink "
@@ -472,18 +502,18 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:219
+#: lfs-en/chapter01/changelog.xml:238
 #, xml-text
 msgid ""
 "[bdubbs] - Update to vim-9.1.2031. Addresses <ulink "
-"url='&lfs-ticket-root;5006'>#4500</ulink>."
+"url='&lfs-ticket-root;4500'>#4500</ulink>."
 msgstr ""
 "[bdubbs] - Atualização para vim-9.1.2031. Endereça <ulink "
-"url='&lfs-ticket-root;5006'>#4500</ulink>."
+"url='&lfs-ticket-root;4500'>#4500</ulink>."
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:223
+#: lfs-en/chapter01/changelog.xml:242
 #, xml-text
 msgid ""
 "[bdubbs] - Update to util-linux-2.41.3. Fixes <ulink "
@@ -494,7 +524,7 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:227
+#: lfs-en/chapter01/changelog.xml:246
 #, xml-text
 msgid ""
 "[bdubbs] - Update to systemd-259. Fixes <ulink "
@@ -505,7 +535,7 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:231
+#: lfs-en/chapter01/changelog.xml:250
 #, xml-text
 msgid ""
 "[bdubbs] - Update to shadow-4.19.0. Fixes <ulink "
@@ -516,7 +546,7 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:235
+#: lfs-en/chapter01/changelog.xml:254
 #, xml-text
 msgid ""
 "[bdubbs] - Update to linux-6.18.2. Fixes <ulink "
@@ -527,7 +557,7 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:239
+#: lfs-en/chapter01/changelog.xml:258
 #, xml-text
 msgid ""
 "[bdubbs] - Update to inetutils-2.7. Fixes <ulink "
@@ -538,7 +568,7 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:243
+#: lfs-en/chapter01/changelog.xml:262
 #, xml-text
 msgid ""
 "[bdubbs] - Update to iana-etc-20251215. Addresses <ulink "
@@ -548,14 +578,14 @@ msgstr ""
 "url='&lfs-ticket-root;5006'>#5006</ulink>."
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:250
+#: lfs-en/chapter01/changelog.xml:269
 #, xml-text
 msgid "2025-12-15"
 msgstr "2025-12-15"
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:253
+#: lfs-en/chapter01/changelog.xml:272
 #, xml-text
 msgid ""
 "[bdubbs] - Update to tzdata2025c. Fixes <ulink "
@@ -566,7 +596,7 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:257
+#: lfs-en/chapter01/changelog.xml:276
 #, xml-text
 msgid ""
 "[bdubbs] - Update to Python-3.14.2 (Security update). Fixes <ulink "
@@ -577,7 +607,7 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:261
+#: lfs-en/chapter01/changelog.xml:280
 #, xml-text
 msgid ""
 "[bdubbs] - Update to meson-1.10.0. Fixes <ulink "
@@ -588,7 +618,7 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:265
+#: lfs-en/chapter01/changelog.xml:284
 #, xml-text
 msgid ""
 "[bdubbs] - Update to linux-6.18.1. Fixes <ulink "
@@ -599,7 +629,7 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:269
+#: lfs-en/chapter01/changelog.xml:288
 #, xml-text
 msgid ""
 "[bdubbs] - Update to iproute2-6.18.0. Fixes <ulink "
@@ -609,38 +639,38 @@ msgstr ""
 "url='&lfs-ticket-root;5829'>#5829</ulink>."
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:276
+#: lfs-en/chapter01/changelog.xml:295
 #, xml-text
 msgid "2025-12-08"
 msgstr "2025-12-08"
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:279
+#: lfs-en/chapter01/changelog.xml:298
 #, xml-text
 msgid "[zeckma] - Replaced SysVinit with OpenRC."
 msgstr "[zeckma] - Substituído SysVinit pelo OpenRC."
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:285
+#: lfs-en/chapter01/changelog.xml:304
 #, xml-text
 msgid "2025-12-01"
 msgstr "2025-12-01"
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:288
+#: lfs-en/chapter01/changelog.xml:307
 #, xml-text
 msgid ""
 "[bdubbs] - Update to vim-9.1.1934. Addresses <ulink "
-"url='&lfs-ticket-root;5006'>#4500</ulink>."
+"url='&lfs-ticket-root;4500'>#4500</ulink>."
 msgstr ""
 "[bdubbs] - Atualização para vim-9.1.1934. Endereça <ulink "
-"url='&lfs-ticket-root;5006'>#4500</ulink>."
+"url='&lfs-ticket-root;4500'>#4500</ulink>."
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:292
+#: lfs-en/chapter01/changelog.xml:311
 #, xml-text
 msgid ""
 "[bdubbs] - Update to sqlite-autoconf-3510100 (3.51.1). Fixes <ulink "
@@ -651,7 +681,7 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:296
+#: lfs-en/chapter01/changelog.xml:315
 #, xml-text
 msgid ""
 "[bdubbs] - Update to ninja-1.13.2. Fixes <ulink "
@@ -662,7 +692,7 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:300
+#: lfs-en/chapter01/changelog.xml:319
 #, xml-text
 msgid ""
 "[bdubbs] - Update to linux-6.17.9. Fixes <ulink "
@@ -673,7 +703,7 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:304
+#: lfs-en/chapter01/changelog.xml:323
 #, xml-text
 msgid ""
 "[bdubbs] - Update to libxcrypt-4.5.2. Fixes <ulink "
@@ -684,7 +714,7 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:308
+#: lfs-en/chapter01/changelog.xml:327
 #, xml-text
 msgid ""
 "[bdubbs] - Update to iana-etc-20251120. Addresses <ulink "
@@ -694,14 +724,14 @@ msgstr ""
 "url='&lfs-ticket-root;5006'>#5006</ulink>."
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:315
+#: lfs-en/chapter01/changelog.xml:334
 #, xml-text
 msgid "2025-11-15"
 msgstr "2025-11-15"
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:318
+#: lfs-en/chapter01/changelog.xml:337
 #, xml-text
 msgid ""
 "[bdubbs] - Update to coreutils-9.9. Fixes <ulink "
@@ -712,7 +742,7 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:322
+#: lfs-en/chapter01/changelog.xml:341
 #, xml-text
 msgid ""
 "[bdubbs] - Update to binutils-2.45.1.  This now requires adding "
@@ -725,7 +755,7 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:327
+#: lfs-en/chapter01/changelog.xml:346
 #, xml-text
 msgid ""
 "[bdubbs] - Update to libxcrypt-4.5.1. Fixes <ulink "
@@ -736,7 +766,7 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:331
+#: lfs-en/chapter01/changelog.xml:350
 #, xml-text
 msgid ""
 "[bdubbs] - Update to linux-6.17.8. Fixes <ulink "
@@ -747,7 +777,7 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:335
+#: lfs-en/chapter01/changelog.xml:354
 #, xml-text
 msgid ""
 "[bdubbs] - Update to sqlite-autoconf-3510000 (3.51.0). Fixes <ulink "
@@ -757,25 +787,25 @@ msgstr ""
 "<ulink url='&lfs-ticket-root;5821'>#5821</ulink>."
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:342
+#: lfs-en/chapter01/changelog.xml:361
 #, xml-text
 msgid "2025-11-01"
 msgstr "2025-11-01"
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:345
+#: lfs-en/chapter01/changelog.xml:364
 #, xml-text
 msgid ""
 "[bdubbs] - Update to vim-9.1.1888. Addresses <ulink "
-"url='&lfs-ticket-root;5006'>#4500</ulink>."
+"url='&lfs-ticket-root;4500'>#4500</ulink>."
 msgstr ""
 "[bdubbs] - Atualização para vim-9.1.1888. Endereça <ulink "
-"url='&lfs-ticket-root;5006'>#4500</ulink>."
+"url='&lfs-ticket-root;4500'>#4500</ulink>."
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:349
+#: lfs-en/chapter01/changelog.xml:368
 #, xml-text
 msgid ""
 "[bdubbs] - Update to iana-etc-20251022. Addresses <ulink "
@@ -786,7 +816,7 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:353
+#: lfs-en/chapter01/changelog.xml:372
 #, xml-text
 msgid ""
 "[bdubbs] - Update to pcre2-10.47. Fixes <ulink "
@@ -797,7 +827,7 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:357
+#: lfs-en/chapter01/changelog.xml:376
 #, xml-text
 msgid ""
 "[bdubbs] - Update to man-pages-6.16. Fixes <ulink "
@@ -808,7 +838,7 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:361
+#: lfs-en/chapter01/changelog.xml:380
 #, xml-text
 msgid ""
 "[bdubbs] - Update to linux-6.17.6. Fixes <ulink "
@@ -819,7 +849,7 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:365
+#: lfs-en/chapter01/changelog.xml:384
 #, xml-text
 msgid ""
 "[bdubbs] - Update to libcap-2.77. Fixes <ulink "
@@ -830,7 +860,7 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:369
+#: lfs-en/chapter01/changelog.xml:388
 #, xml-text
 msgid ""
 "[bdubbs] - Update to elfutils-0.194. Fixes <ulink "
@@ -840,14 +870,14 @@ msgstr ""
 "url='&lfs-ticket-root;5815'>#5815</ulink>."
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:376
+#: lfs-en/chapter01/changelog.xml:395
 #, xml-text
 msgid "2025-10-15"
 msgstr "2025-10-15"
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:379
+#: lfs-en/chapter01/changelog.xml:398
 #, xml-text
 msgid ""
 "[bdubbs] - Update to less-685. Fixes <ulink "
@@ -858,7 +888,7 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:383
+#: lfs-en/chapter01/changelog.xml:402
 #, xml-text
 msgid ""
 "[bdubbs] - Update to systemd-258.1. Fixes <ulink "
@@ -869,7 +899,7 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:387
+#: lfs-en/chapter01/changelog.xml:406
 #, xml-text
 msgid ""
 "[bdubbs] - Update to Python-3.14.0. Fixes <ulink "
@@ -880,7 +910,7 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:391
+#: lfs-en/chapter01/changelog.xml:410
 #, xml-text
 msgid ""
 "[bdubbs] - Update to openssl-3.6.0. Fixes <ulink "
@@ -891,7 +921,7 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:395
+#: lfs-en/chapter01/changelog.xml:414
 #, xml-text
 msgid ""
 "[bdubbs] - Update to linux-6.17.2. Fixes <ulink "
@@ -902,7 +932,7 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:399
+#: lfs-en/chapter01/changelog.xml:418
 #, xml-text
 msgid ""
 "[bdubbs] - Update to iproute2-6.17.0. Fixes <ulink "
@@ -912,14 +942,14 @@ msgstr ""
 "url='&lfs-ticket-root;5803'>#5803</ulink>."
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:406
+#: lfs-en/chapter01/changelog.xml:425
 #, xml-text
 msgid "2025-10-01"
 msgstr "2025-10-01"
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:409
+#: lfs-en/chapter01/changelog.xml:428
 #, xml-text
 msgid ""
 "[renodr] - Update to systemd-258 (including udev for SysV).  Fixes <ulink "
@@ -930,18 +960,18 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:413
+#: lfs-en/chapter01/changelog.xml:432
 #, xml-text
 msgid ""
 "[bdubbs] - Update to vim-9.1.1806. Addresses <ulink "
-"url='&lfs-ticket-root;5006'>#4500</ulink>."
+"url='&lfs-ticket-root;4500'>#4500</ulink>."
 msgstr ""
 "[bdubbs] - Atualização para vim-9.1.1806. Endereça <ulink "
-"url='&lfs-ticket-root;5006'>#4500</ulink>."
+"url='&lfs-ticket-root;4500'>#4500</ulink>."
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:417
+#: lfs-en/chapter01/changelog.xml:436
 #, xml-text
 msgid ""
 "[bdubbs] - Update to iana-etc-20250926. Addresses <ulink "
@@ -952,7 +982,7 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:421
+#: lfs-en/chapter01/changelog.xml:440
 #, xml-text
 msgid ""
 "[bdubbs] - Update to coreutils-9.8. Fixes <ulink "
@@ -963,7 +993,7 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:425
+#: lfs-en/chapter01/changelog.xml:444
 #, xml-text
 msgid ""
 "[bdubbs] - Update to expat-2.7.3 (Security release). Fixes <ulink "
@@ -974,7 +1004,7 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:429
+#: lfs-en/chapter01/changelog.xml:448
 #, xml-text
 msgid ""
 "[bdubbs] - Update to linux-6.16.9. Fixes <ulink "
@@ -985,7 +1015,7 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:433
+#: lfs-en/chapter01/changelog.xml:452
 #, xml-text
 msgid ""
 "[bdubbs] - Update to markupsafe-3.0.3. Fixes <ulink "
@@ -996,7 +1026,7 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:437
+#: lfs-en/chapter01/changelog.xml:456
 #, xml-text
 msgid ""
 "[bdubbs] - Update to meson-1.9.1. Fixes <ulink "
@@ -1007,7 +1037,7 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:441
+#: lfs-en/chapter01/changelog.xml:460
 #, xml-text
 msgid ""
 "[renodr] - Update to openssl-3.5.4 (Security update). Fixes <ulink "
@@ -1018,7 +1048,7 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:445
+#: lfs-en/chapter01/changelog.xml:464
 #, xml-text
 msgid ""
 "[bdubbs] - Update to util-linux-2.41.2. Fixes <ulink "
@@ -1028,25 +1058,25 @@ msgstr ""
 "url='&lfs-ticket-root;5798'>#5798</ulink>."
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:452
+#: lfs-en/chapter01/changelog.xml:471
 #, xml-text
 msgid "2025-09-15"
 msgstr "2025-09-15"
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:455
+#: lfs-en/chapter01/changelog.xml:474
 #, xml-text
 msgid ""
 "[bdubbs] - Update to vim-9.1.1754. Addresses <ulink "
-"url='&lfs-ticket-root;5006'>#4500</ulink>."
+"url='&lfs-ticket-root;4500'>#4500</ulink>."
 msgstr ""
 "[bdubbs] - Atualização para vim-9.1.1754. Endereça <ulink "
-"url='&lfs-ticket-root;5006'>#4500</ulink>."
+"url='&lfs-ticket-root;4500'>#4500</ulink>."
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:459
+#: lfs-en/chapter01/changelog.xml:478
 #, xml-text
 msgid ""
 "[bdubbs] - Update to iana-etc-20250826. Addresses <ulink "
@@ -1057,7 +1087,7 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:463
+#: lfs-en/chapter01/changelog.xml:482
 #, xml-text
 msgid ""
 "[bdubbs] - Update to tcl8.6.17. Fixes <ulink "
@@ -1068,7 +1098,7 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:467
+#: lfs-en/chapter01/changelog.xml:486
 #, xml-text
 msgid ""
 "[bdubbs] - Update to pcre2-10.46. Fixes <ulink "
@@ -1079,7 +1109,7 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:471
+#: lfs-en/chapter01/changelog.xml:490
 #, xml-text
 msgid ""
 "[bdubbs] - Update to meson-1.9.0. Fixes <ulink "
@@ -1090,7 +1120,7 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:475
+#: lfs-en/chapter01/changelog.xml:494
 #, xml-text
 msgid ""
 "[bdubbs] - Update to linux-6.16.7. Fixes <ulink "
@@ -1101,7 +1131,7 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:479
+#: lfs-en/chapter01/changelog.xml:498
 #, xml-text
 msgid ""
 "[bdubbs] - Update to kbd-2.9.0. Fixes <ulink "
@@ -1111,14 +1141,14 @@ msgstr ""
 "url='&lfs-ticket-root;5789'>#5789</ulink>."
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:486
+#: lfs-en/chapter01/changelog.xml:505
 #, xml-text
 msgid "2025-09-03"
 msgstr "2025-09-03"
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:489
+#: lfs-en/chapter01/changelog.xml:508
 #, xml-text
 msgid ""
 "[bdubbs] - Add the sqlite-3.50.4 package. Fixes <ulink "
@@ -1129,7 +1159,7 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:493
+#: lfs-en/chapter01/changelog.xml:512
 #, xml-text
 msgid ""
 "[bdubbs] - Add the pcre2-10.45 package. Fixes <ulink "
@@ -1140,7 +1170,7 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:497
+#: lfs-en/chapter01/changelog.xml:516
 #, xml-text
 msgid ""
 "[bdubbs] - Add a description on how to use a kernel base+patch in Chapter "
@@ -1151,14 +1181,14 @@ msgstr ""
 "url='&lfs-ticket-root;5785'>#5785</ulink>."
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:505
+#: lfs-en/chapter01/changelog.xml:524
 #, xml-text
 msgid "2025-09-01"
 msgstr "2025-09-01"
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:508
+#: lfs-en/chapter01/changelog.xml:527
 #, xml-text
 msgid "[bdubbs] - LFS-12.4 released."
 msgstr "[bdubbs] - LFS-12.4 lançado."

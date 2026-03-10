@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-23 16:26-0300\n"
+"POT-Creation-Date: 2026-02-12 16:18+0000\n"
 "PO-Revision-Date: 2026-02-01 16:18+0000\n"
 "Last-Translator: Jamenson Ferreira Espindula de Almeida Melo <jafesp@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/projects/linux-from-scratch/chapter08_gettext/pt_BR/>\n"
@@ -869,3 +869,50 @@ msgstr "preloadable_libintl"
 #~ msgstr ""
 #~ "<userinput remap=\"pre\">sed -r '/_GL_EXTERN_C/s/w?memchr|bsearch/(&amp;)/' \\\n"
 #~ "    -i $(find -name \\*.in.h)</userinput>"
+
+#, xml-text
+#~ msgid "To test the results (this takes a long time, around 3 SBUs), issue:"
+#~ msgstr ""
+#~ "Para testar os resultados (isso toma um tempo longo, em torno de 3 UPCs), "
+#~ "emita:"
+
+#, xml-text
+#~ msgid ""
+#~ "At first, fix an issue causing the package fail to build with libxml-2.12 or"
+#~ " later.  The fix is optional for building LFS, but required if rebuilding "
+#~ "this package in BLFS with libxml installed:"
+#~ msgstr ""
+#~ "Primeiro, corrija um problema que faz com que o pacote falhe para construir "
+#~ "com libxml-2.12 ou posterior. A correção é opcional para construir o LFS, "
+#~ "mas exigida se reconstruir esse pacote no BLFS com libxml instalada:"
+
+#, no-wrap, xml-text
+#~ msgid ""
+#~ "<userinput remap=\"pre\">sed -e '/^structured/s/xmlError \\*/typeof(xmlCtxtGetLastError(NULL)) /' \\\n"
+#~ "    -i gettext-tools/src/its.c</userinput>"
+#~ msgstr ""
+#~ "<userinput remap=\"pre\">sed -e '/^structured/s/xmlError \\*/typeof(xmlCtxtGetLastError(NULL)) /' \\\n"
+#~ "    -i gettext-tools/src/its.c</userinput>"
+
+#, xml-text
+#~ msgid "First fix some compatibility issues with other programs:"
+#~ msgstr ""
+#~ "Primeiro, corrija alguns problemas de compatibilidade com outros programas:"
+
+#, no-wrap, xml-text
+#~ msgid ""
+#~ "<userinput remap=\"pre\">sed -e '/libxml\\/xmlerror.h/i #include &lt;libxml/xmlversion.h&gt;' \\\n"
+#~ "    -e 's/xmlError *err/const &amp;/'                             \\\n"
+#~ "    -i gettext-tools/src/its.c</userinput>"
+#~ msgstr ""
+#~ "<userinput remap=\"pre\">sed -e '/libxml\\/xmlerror.h/i #include &lt;libxml/xmlversion.h&gt;' \\\n"
+#~ "    -e 's/xmlError *err/const &amp;/'                             \\\n"
+#~ "    -i gettext-tools/src/its.c</userinput>"
+
+#, fuzzy, xml-text
+#~ msgid ""
+#~ "A private library containing common routines used by the various Gettext "
+#~ "programs; these are not intended for general use"
+#~ msgstr ""
+#~ "Uma biblioteca privada contendo rotinas comuns usadas pelos vários "
+#~ "aplicativos Gettext; elas não são destinadas para uso geral"
