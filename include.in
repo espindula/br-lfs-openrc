@@ -1,0 +1,102 @@
+HTMLDIROPENRC_MLANG := html-MLANG-openrc
+HTMLDIRSYSD_MLANG := html-MLANG-systemd
+HTMLTAROPENRC_MLANG := LFS-OPENRC-BOOK-$(MILESTONE)-MLANG-HTML.tar.bz2
+HTMLTARSYSD_MLANG := LFS-SYSD-BOOK-$(MILESTONE)-MLANG-HTML.tar.bz2
+PDFOPENRC_MLANG := LFS-OPENRC-BOOK-$(MILESTONE)-MLANG.pdf
+PDFSYSD_MLANG := LFS-SYSD-BOOK-$(MILESTONE)-MLANG.pdf
+EPUBOPENRC_MLANG := LFS-OPENRC-BOOK-$(MILESTONE)-MLANG.epub
+EPUBSYSD_MLANG := LFS-SYSD-BOOK-$(MILESTONE)-MLANG.epub
+
+XML_MLANG := $(shell find $(ORIGDIR) -name '*.xml' -o -name '*stylesheets*' -prune -a -type f | sed "s|$(ORIGDIR)/|lfsgen-MLANG/|g" | tr '\n' ' ')
+PO_MLANG := $(shell find $(ORIGDIR) -name '*.xml' -o -name '*stylesheets*' -prune -a -type f | sed "s|$(ORIGDIR)/|MLANG/|g" | sed 's|.xml$$|.po|' | tr '\n' ' ')
+PO += $(PO_MLANG)
+IMAGES_MLANG := $(shell find images -type f | sed "s|^|lfsgen-MLANG/|g" | tr '\n' ' ')
+STYLESHEETS_MLANG := $(shell find stylesheets -type f | sed "s|^|lfsgen-MLANG/|g" | tr '\n' ' ')
+COPY_MLANG := $(addprefix lfsgen-MLANG/,$(filestoget))
+
+lfsgen-MLANG/images/%: images/%
+	mkdir -p $$(dirname $@)
+	@rm -f $@
+	cp $< $@
+
+lfsgen-MLANG/stylesheets/%: stylesheets/%
+	mkdir -p $$(dirname $@)
+	@rm -f $@
+	cp $< $@
+
+lfsgen-MLANG/%.xml: $(ORIGDIR)/%.xml MLANG/%.po sed-MLANG
+	mkdir -p $$(dirname $@)
+	LANG=$(LANG_MLANG) po4a-translate -k 0 -f docbook -m $< -l $@.tmp -p $(word 2,$^)
+	./$(word 3,$^) $@
+	rm $@.tmp
+
+MLANG/%.po: $(ORIGDIR)/%.xml
+	mkdir -p $$(dirname $@)
+	LANG=$(LANG_MLANG) po4a-updatepo -f docbook -m $< -p $@
+	python3 set-xml.py $@
+	@touch $@
+
+clean-gen-MLANG:
+	rm -rf lfsgen-MLANG
+
+clean-product-MLANG:
+	rm -rf $(HTMLTAROPENRC_MLANG)
+	rm -rf $(HTMLTARSYSD_MLANG)
+	rm -rf $(HTMLDIROPENRC_MLANG)
+	rm -rf $(HTMLDIRSYSD_MLANG)
+	rm -rf $(PDFOPENRC_MLANG)
+	rm -rf $(PDFSYSD_MLANG)
+	rm -rf $(EPUBOPENRC_MLANG)
+	rm -rf $(EPUBSYSD_MLANG)
+
+.SECONDEXPANSION:
+$(addprefix lfsgen-MLANG/,$(filestocopy)): INPUT=$(ORIGDIR)$(subst lfsgen-MLANG,,$@)
+$(addprefix lfsgen-MLANG/,$(filestocopy)): $$(INPUT)
+	mkdir -p $$(dirname $@)
+	if [ -f $< ]; then cp $< $@; else cp -r $< $$(dirname $@); fi
+
+genhtml-MLANG-openrc: $(XML_MLANG) $(COPY_MLANG) $(IMAGES_MLANG) $(STYLESHEETS_MLANG)
+	LANG=$(LANG_MLANG) make -C lfsgen-MLANG -j1 REV=openrc BASEDIR=../$(HTMLDIROPENRC_MLANG) book
+
+genhtml-MLANG-sysd: $(XML_MLANG) $(COPY_MLANG) $(IMAGES_MLANG) $(STYLESHEETS_MLANG)
+	LANG=$(LANG_MLANG) make -C lfsgen-MLANG -j1 REV=systemd BASEDIR=../$(HTMLDIRSYSD_MLANG) book
+
+genpdf-MLANG-openrc: $(PDFOPENRC_MLANG)
+
+$(PDFOPENRC_MLANG): $(XML_MLANG) $(COPY_MLANG) $(IMAGES_MLANG) $(STYLESHEETS_MLANG)
+	LANG=$(LANG_MLANG) make -C lfsgen-MLANG -j1 REV=openrc BASEDIR=.. pdf
+	mv LFS-OPENRC.pdf $@
+
+genpdf-MLANG-sysd: $(PDFSYSD_MLANG)
+
+$(PDFSYSD_MLANG): $(XML_MLANG) $(COPY_MLANG) $(IMAGES_MLANG) $(STYLESHEETS_MLANG)
+	LANG=$(LANG_MLANG) make -C lfsgen-MLANG -j1 REV=systemd BASEDIR=.. pdf
+	mv LFS-SYSD-BOOK.pdf $@
+
+gentar-MLANG-openrc: $(HTMLTAROPENRC_MLANG)
+$(HTMLTAROPENRC_MLANG): $(XML_MLANG) $(COPY_MLANG) $(IMAGES_MLANG) $(STYLESHEETS_MLANG) genhtml-MLANG-openrc
+	rm -f $@
+	tar cjf $@ $(HTMLDIROPENRC_MLANG)
+
+gentar-MLANG-sysd: $(HTMLTARSYSD_MLANG)
+$(HTMLTARSYSD_MLANG): $(XML_MLANG) $(COPY_MLANG) $(IMAGES_MLANG) $(STYLESHEETS_MLANG) genhtml-MLANG-sysd
+	rm -f $@
+	tar cjf $@ $(HTMLDIRSYSD_MLANG)
+
+genepub-MLANG-openrc: $(EPUBOPENRC_MLANG)
+$(EPUBOPENRC_MLANG): $(XML_MLANG) $(COPY_MLANG) $(IMAGES_MLANG) $(STYLESHEETS_MLANG)
+	LANG=$(LANG_MLANG) make -C lfsgen-MLANG -j1 REV=openrc EPUB_OUTPUT=$@ epub
+
+genepub-MLANG-sysd: $(EPUBSYSD_MLANG)
+$(EPUBSYSD_MLANG): $(XML_MLANG) $(COPY_MLANG) $(IMAGES_MLANG) $(STYLESHEETS_MLANG)
+	LANG=$(LANG_MLANG) make -C lfsgen-MLANG -j1 REV=systemd EPUB_OUTPUT=$@ epub
+
+upload-MLANG-openrc: $(SSH_AGENT)
+	cd $(HTMLDIROPENRC_MLANG) ;\
+	chmod g+w -R . ;\
+	rsync --progress --recursive * $(USER)@www.linuxfromscratch.org:/srv/www/www.MLANG.linuxfromscratch.org/view/lfs-svn/
+
+upload-MLANG-sysd: $(SSH_AGENT)
+	cd $(HTMLDIRSYSD_MLANG) ;\
+	chmod g+w -R . ;\
+	rsync --progress --recursive * $(USER)@www.linuxfromscratch.org:/srv/www/www.MLANG.linuxfromscratch.org/view/lfs-systemd-svn/
