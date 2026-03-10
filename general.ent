@@ -1,14 +1,14 @@
 <!-- Editing  up to the line of ==== should be enough
      to generate a book for development, release, or rc-->
-<!ENTITY % development "INCLUDE"><!-- set to INCLUDE for development,
+<!ENTITY % development "IGNORE"><!-- set to INCLUDE for development,
                                       set to IGNORE for release or rc -->
-<!ENTITY % release     "IGNORE"> <!-- set to INCLUDE for release,
+<!ENTITY % release     "INCLUDE"> <!-- set to INCLUDE for release,
                                       set to IGNORE for development or rc -->
 <!ENTITY % rc          "IGNORE"> <!-- set to INCLUDE for rc,
                                       set to IGNORE for development or
                                        release -->
-<!ENTITY % relnum "12.3"><!-- must be given for release or rc -->
-<!ENTITY % reldate ""><!-- must ve given for release or rc -->
+<!ENTITY % relnum "13.0"><!-- must be given for release or rc -->
+<!ENTITY % reldate "05 de março de 2026"><!-- must ve given for release or rc -->
 <!ENTITY % crdate "1999-2026"><!-- must ve given for release or rc -->
 <!ENTITY % rcnum  "0"><!-- must be given only for rc -->
 <!-- ================================================================== -->
@@ -107,7 +107,7 @@
 <!ENTITY lfs-ticket-root "https://wiki.linuxfromscratch.org/lfs/ticket/">
 <!ENTITY blfs-ticket-root "https://wiki.linuxfromscratch.org/blfs/ticket/">
 
-<!ENTITY anduin-sources  "https://anduin.linuxfromscratch.org/LFS">
+<!ENTITY anduin-sources "https://anduin.linuxfromscratch.org/LFS">
 
 <!ENTITY buildtime       "Tempo aproximado de construção">
 <!ENTITY diskspace       "Espaço em disco exigido">
@@ -141,8 +141,6 @@
 <!ENTITY ch-tmp-cross    "<xref linkend='chapter-temporary-tools'/>">
 <!ENTITY ch-tmp-chroot   "<xref linkend='chapter-chroot-temporary-tools'/>">
 
-<!ENTITY % packages-entities SYSTEM "packages.ent">
-%packages-entities;
+<!ENTITY % packages-entities SYSTEM "packages.ent"> %packages-entities;
 
-<!ENTITY % patches-entities SYSTEM "patches.ent">
-%patches-entities;
+<!ENTITY % patches-entities SYSTEM "patches.ent"> %patches-entities;
