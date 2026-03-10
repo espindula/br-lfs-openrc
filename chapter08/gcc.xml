@@ -208,11 +208,11 @@ conhecidos por falharem.</para>
 
     
     <!-- https://gcc.gnu.org/pipermail/gcc-patches/2026-February/708384.html -->
-<para>Four tests in libstdc++, <filename>17_intro/badnames.cc</filename>,
+<para>Quatro testes na libstdc++, <filename>17_intro/badnames.cc</filename>,
 <filename>17_intro/names.cc</filename>,
-<filename>17_intro/names_fortify.cc</filename>, and
-<filename>experimental/names.cc</filename>, are known to fail due to changes
-with glibc-2.43.</para>
+<filename>17_intro/names_fortify.cc</filename> e
+<filename>experimental/names.cc</filename>, são conhecidos por falharem
+devido a mudanças com o glibc-2.43.</para>
 
     <para><!--The GCC developers
     are usually aware of these issues, but have not resolved them yet.-->

@@ -82,8 +82,8 @@ conforme mostrado acima. Um teste exitoso resultará nas palavras
 <computeroutput>ALL DONE</computeroutput> no arquivo de registro na
 conclusão.</para>
 
-    <para>Two tests, Test_client_server_stopinsert() and Test_popup_setbuf(), are
-known to fail on some systems.</para>
+    <para>Dois testes, Test_client_server_stopinsert() e Test_popup_setbuf(), são
+conhecidos por falharem em alguns sistemas.</para>
 
     <para>Instale o pacote:</para>
 

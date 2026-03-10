@@ -87,9 +87,10 @@ bits.</para>
 <screen><userinput remap="test">chown -R tester .
 su tester -c "PATH=$PATH make check"</userinput></screen>
 
-    <para>One test named <literal>ps with output flag
-bsdtime,cputime,etime,etimes</literal> is known to fail if the host kernel
-is not built with <literal>CONFIG_BSD_PROCESS_ACCT</literal> enabled.</para>
+    <para>Um teste chamado <literal>ps com sinalizador de saída
+bsdtime,cputime,etime,etimes</literal> é conhecido por falhar se o núcleo do
+anfitrião não for construído com <literal>CONFIG_BSD_PROCESS_ACCT</literal>
+habilitado.</para>
 
     <para>Instale o pacote:</para>
 

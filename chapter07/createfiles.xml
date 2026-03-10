@@ -157,23 +157,22 @@ users:x:999:
 nogroup:x:65534:</literal>
 EOF</userinput></screen>
 
-  <para>Os grupos criados não são parte de nenhum padrão&mdash;eles são grupos
-decididos em parte pelas exigências da configuração do Udev no Capítulo 9 e
-em parte pelas convenções comuns empregadas por um número de distribuições
-Linux existentes. Adicionalmente, algumas suítes de teste dependem de
-usuários(as) ou grupos específicos(as). A Linux Standard Base (LSB,
-disponível em <ulink url="https://refspecs.linuxfoundation.org/lsb.shtml"/>)
-somente recomenda que, além do grupo <systemitem
-class="groupname">root</systemitem> com um ID de Grupo (GID) de 0, um grupo
-<systemitem class="groupname">bin</systemitem> com um GID de 1 esteja
-presente. O GID de 5 é amplamente usado para o grupo <systemitem
-class="groupname">tty</systemitem> e o número 5 também é usado no <phrase
-revision="systemd">systemd</phrase><phrase
-revision="openrc"><filename>/etc/fstab</filename></phrase> para o sistema de
-arquivos <systemitem class="filesystem">devpts</systemitem>. Todos os outros
-nomes de grupo e GIDs podem ser escolhidos livremente pelo(a)
-administrador(a) do sistema, uma vez que programas bem escritos não dependem
-de números de GID, mas sim usam o nome do grupo.</para>
+  <para>The created groups are not part of any standard&mdash;they are groups
+decided on in part by the requirements of the Udev configuration in Chapter
+9, and in part by common conventions employed by a number of existing Linux
+distributions. In addition, some test suites rely on specific users or
+groups.  The Linux Standard Base (LSB, available at <ulink
+url="https://refspecs.linuxfoundation.org/lsb.shtml"/>) only recommends
+that, besides the group <systemitem class="groupname">root</systemitem> with
+a Group ID (GID) of 0, a group <systemitem
+class="groupname">bin</systemitem> with a GID of 1 be present. The GID of 5
+is widely used for the <systemitem class="groupname">tty</systemitem> group,
+and the number 5 is also used in <phrase revision="systemd">systemd</phrase>
+<phrase revision="openrc"><filename>/etc/fstab</filename></phrase> for the
+<systemitem class="filesystem">devpts</systemitem> filesystem.  All other
+group names and GIDs can be chosen freely by the system administrator since
+well-written programs do not depend on GID numbers, but rather use the
+group's name.</para>
 
   <para>O ID 65534 é usado pelo núcleo para NFS e espaços de nome de usuário(a)
 separados para usuários(as) e grupos não mapeados(as) (aqueles(as) existem
@@ -224,11 +223,10 @@ cada usuário(a) se logou pela última vez. O arquivo
 arquivo <filename>/var/log/btmp</filename> registra tentativas inválidas de
 login.</para>
 
-  <note><para>O arquivo <filename>/run/utmp</filename> registra os(as) usuários(as) que
-estejam atualmente logados(as). <phrase revision='openrc'>Esse arquivo é
-criado dinamicamente nos conjuntos de comandos sequenciados de
-inicialização.</phrase><phrase revision='systemd'>Esse arquivo é criado
-dinamicamente quando um(a) usuário(a) se loga no sistema.</phrase></para></note>
+  <note><para>The <filename>/run/utmp</filename> file records the users that are currently
+logged in.  <phrase revision='openrc'>This file is created dynamically in
+the boot scripts.</phrase><phrase revision='systemd'>This file is created
+dynamically when a user logs into the system.</phrase></para></note>
 
   
   <!-- AFAIK they are not vital for system function, users requiring such

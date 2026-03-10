@@ -124,7 +124,7 @@ sob quaisquer circunstâncias.</para>
 
 <screen><userinput remap="test">grep '^FAIL:' $(find -name '*.log')</userinput></screen>
 
-    <para>One test related to gprofng is known to fail.</para>
+    <para>One teste relacionado a gprofng é conhecido por falhar.</para>
 
     <para>Instale o pacote:</para>
 
