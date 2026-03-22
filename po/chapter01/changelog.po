@@ -6,13 +6,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-03-10 07:29-0300\n"
-"PO-Revision-Date: 2026-01-29 16:18+0000\n"
-"Last-Translator: Jamenson Ferreira Espindula de Almeida Melo "
-"<jafesp@gmail.com>\n"
-"Language-Team: Portuguese (Brazil) "
-"<https://translate.linuxfromscratch.org/projects/linux-from-scratch/chapter01_changelog/pt_BR/>"
-"\n"
+"POT-Creation-Date: 2026-03-15 04:18+0000\n"
+"PO-Revision-Date: 2026-03-15 16:18+0000\n"
+"Last-Translator: Jamenson Ferreira Espindula de Almeida Melo <jafesp@gmail.com>\n"
+"Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/projects/linux-from-scratch/chapter01_changelog/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -36,14 +33,15 @@ msgid ""
 "mirrors via <ulink url=\"&lfs-root;mirrors.html\"/>."
 msgstr ""
 "Esta é a versão &version; do livro Linux From Scratch, datada de "
-"&releasedate;. Se este livro for mais antigo que seis meses, uma versão "
-"mais nova e melhor provavelmente já está disponível. Para descobrir, por "
-"favor verifique um dos espelhos via <ulink url=\"&lfs-root;mirrors.html\"/>."
+"&releasedate;. Se este livro for mais antigo que seis meses, uma versão mais"
+" nova e melhor provavelmente já está disponível. Para descobrir, por favor "
+"verifique um dos espelhos via <ulink url=\"&lfs-root;mirrors.html\"/>."
 
 #. type: Content of: <sect1><para>
 #: lfs-en/chapter01/changelog.xml:18
 #, xml-text
-msgid "Below is a list of changes made since the previous release of the book."
+msgid ""
+"Below is a list of changes made since the previous release of the book."
 msgstr ""
 "Abaixo está uma lista das mudanças feitas desde o lançamento anterior do "
 "livro."
@@ -57,1146 +55,4976 @@ msgstr "Entradas do Registro das Mudanças:"
 #. type: Content of: <sect1><itemizedlist><listitem><para>
 #: lfs-en/chapter01/changelog.xml:44
 #, xml-text
-msgid "2026-03-05"
-msgstr "2026-03-05"
+#| msgid "2026-03-05"
+msgid "2026-03-15"
+msgstr "2026-03-15"
 
 #. type: Content of:
 #. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
 #: lfs-en/chapter01/changelog.xml:47
 #, xml-text
+msgid ""
+"[bdubbs] - Update to vim-9.2.0161. Addresses <ulink url='&lfs-ticket-"
+"root;4500'>#4500</ulink>."
+msgstr ""
+"[bdubbs] - Atualização para vim-9.2.0161. Endereça <ulink url='&lfs-ticket-"
+"root;4500'>#4500</ulink>."
+
+#. type: Content of:
+#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
+#: lfs-en/chapter01/changelog.xml:51
+#, xml-text
+#| msgid ""
+#| "[bdubbs] - Update to tzdata2025c. Fixes <ulink url='&lfs-ticket-"
+#| "root;5833'>#5833</ulink>."
+msgid ""
+"[bdubbs] - Update to tzdata-2026a. Fixes <ulink url='&lfs-ticket-"
+"root;5882'>#5882</ulink>."
+msgstr ""
+"[bdubbs] - Atualização para tzdata-2026a. Corrige <ulink url='&lfs-ticket-"
+"root;5882'>#5882</ulink>."
+
+#. type: Content of:
+#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
+#: lfs-en/chapter01/changelog.xml:55
+#, xml-text
+#| msgid ""
+#| "[bdubbs] - Update to texinfo-7.1.1. Fixes <ulink url='&lfs-ticket-"
+#| "root;5558'>#5558</ulink>."
+msgid ""
+"[bdubbs] - Update to texinfo-7.3. Fixes <ulink url='&lfs-ticket-"
+"root;5883'>#5883</ulink>."
+msgstr ""
+"[bdubbs] - Atualização para texinfo-7.3. Corrige <ulink url='&lfs-ticket-"
+"root;5883'>#5883</ulink>."
+
+#. type: Content of:
+#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
+#: lfs-en/chapter01/changelog.xml:59
+#, xml-text
+#| msgid ""
+#| "[bdubbs] - Update to systemd-258.1. Fixes <ulink url='&lfs-ticket-"
+#| "root;5809'>#5809</ulink>."
+msgid ""
+"[bdubbs] - Update to systemd-259.5. Fixes <ulink url='&lfs-ticket-"
+"root;5879'>#5879</ulink>."
+msgstr ""
+"[bdubbs] - Atualização para systemd-259.5. Corrige <ulink url='&lfs-ticket-"
+"root;5879'>#5879</ulink>."
+
+#. type: Content of:
+#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
+#: lfs-en/chapter01/changelog.xml:63
+#, xml-text
+#| msgid ""
+#| "[bdubbs] - Update to sqlite-autoconf-3510100 (3.51.1). Fixes <ulink "
+#| "url='&lfs-ticket-root;5828'>#5828</ulink>."
+msgid ""
+"[bdubbs] - Update to sqlite-autoconf-3510300 (3.51.3). Fixes <ulink "
+"url='&lfs-ticket-root;5885'>#5885</ulink>."
+msgstr ""
+"[bdubbs] - Atualização para sqlite-autoconf-3510300 (3.51.3). Corrige <ulink"
+" url='&lfs-ticket-root;5885'>#5885</ulink>."
+
+#. type: Content of:
+#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
+#: lfs-en/chapter01/changelog.xml:67
+#, xml-text
+#| msgid ""
+#| "[bdubbs] - Update to shadow-4.19.3. Fixes <ulink url='&lfs-ticket-"
+#| "root;5858'>#5858</ulink>."
+msgid ""
+"[bdubbs] - Update to shadow-4.19.4. Fixes <ulink url='&lfs-ticket-"
+"root;5881'>#5881</ulink>."
+msgstr ""
+"[bdubbs] - Atualização para shadow-4.19.4. Corrige <ulink url='&lfs-ticket-"
+"root;5881'>#5881</ulink>."
+
+#. type: Content of:
+#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
+#: lfs-en/chapter01/changelog.xml:71
+#, xml-text
+#| msgid ""
+#| "[bdubbs] - Update to setuptools-82.0.0 (Python module). Fixes <ulink "
+#| "url='&lfs-ticket-root;5868'>#5868</ulink>."
+msgid ""
+"[bdubbs] - Update to setuptools-82.0.1 (Python module). Fixes <ulink "
+"url='&lfs-ticket-root;5887'>#5887</ulink>."
+msgstr ""
+"[bdubbs] - Atualização para setuptools-82.0.1 (módulo Python). Corrige "
+"<ulink url='&lfs-ticket-root;5887'>#5887</ulink>."
+
+#. type: Content of:
+#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
+#: lfs-en/chapter01/changelog.xml:75
+#, xml-text
+#| msgid ""
+#| "[bdubbs] - Update to perl-5.42.0. Fixes <ulink url='&lfs-ticket-"
+#| "root;5756'>#5756</ulink>."
+msgid ""
+"[bdubbs] - Update to perl-5.42.1. Fixes <ulink url='&lfs-ticket-"
+"root;5886'>#5886</ulink>."
+msgstr ""
+"[bdubbs] - Atualização para perl-5.42.1. Corrige <ulink url='&lfs-ticket-"
+"root;5886'>#5886</ulink>."
+
+#. type: Content of:
+#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
+#: lfs-en/chapter01/changelog.xml:79
+#, xml-text
+#| msgid ""
+#| "[bdubbs] - Update to linux-6.18.2. Fixes <ulink url='&lfs-ticket-"
+#| "root;5837'>#5837</ulink>."
+msgid ""
+"[bdubbs] - Update to linux-6.19.8. Fixes <ulink url='&lfs-ticket-"
+"root;5867'>#5867</ulink>."
+msgstr ""
+"[bdubbs] - Atualização para linux-6.19.8. Corrige <ulink url='&lfs-ticket-"
+"root;5867'>#5867</ulink>."
+
+#. type: Content of:
+#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
+#: lfs-en/chapter01/changelog.xml:83
+#, xml-text
+#| msgid ""
+#| "[bdubbs] - Update to iproute2-6.9.0. Fixes <ulink url='&lfs-ticket-"
+#| "root;5492'>#5492</ulink>."
+msgid ""
+"[bdubbs] - Update to iproute2-6.19.0. Fixes <ulink url='&lfs-ticket-"
+"root;5874'>#5874</ulink>."
+msgstr ""
+"[bdubbs] - Atualização para iproute2-6.19.0. Corrige <ulink url='&lfs-"
+"ticket-root;5874'>#5874</ulink>."
+
+#. type: Content of:
+#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
+#: lfs-en/chapter01/changelog.xml:87
+#, xml-text
+msgid ""
+"[bdubbs] - Update to iana-etc-20260306. Addresses <ulink url='&lfs-ticket-"
+"root;5006'>#5006</ulink>."
+msgstr ""
+"[bdubbs] - Atualização para iana-etc-20260306. Endereça <ulink url='&lfs-"
+"ticket-root;5006'>#5006</ulink>."
+
+#. type: Content of:
+#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
+#: lfs-en/chapter01/changelog.xml:91
+#, xml-text
+#| msgid ""
+#| "[bdubbs] - Update to meson-1.6.0. Fixes <ulink url='&lfs-ticket-"
+#| "root;5580'>#5580</ulink>."
+msgid ""
+"[bdubbs] - Update to groff-1.24.0. Fixes <ulink url='&lfs-ticket-"
+"root;5880'>#5880</ulink>."
+msgstr ""
+"[bdubbs] - Atualização para groff-1.24.0. Corrige <ulink url='&lfs-ticket-"
+"root;5880'>#5880</ulink>."
+
+#. type: Content of:
+#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
+#: lfs-en/chapter01/changelog.xml:95
+#, xml-text
+#| msgid ""
+#| "[bdubbs] - Update to gawk-5.3.2. Fixes <ulink url='&lfs-ticket-"
+#| "root;5692'>#5692</ulink>."
+msgid ""
+"[bdubbs] - Update to gawk-5.4.0. Fixes <ulink url='&lfs-ticket-"
+"root;5876'>#5876</ulink>."
+msgstr ""
+"[bdubbs] - Atualização para gawk-5.4.0. Corrige <ulink url='&lfs-ticket-"
+"root;5876'>#5876</ulink>."
+
+#. type: Content of:
+#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
+#: lfs-en/chapter01/changelog.xml:99
+#, xml-text
+#| msgid ""
+#| "[bdubbs] - Update to linux-6.4.7. Fixes <ulink url='&lfs-ticket-"
+#| "root;5288'>#5288</ulink>."
+msgid ""
+"[bdubbs] - Update to file-5.47. Fixes <ulink url='&lfs-ticket-"
+"root;5878'>#5878</ulink>."
+msgstr ""
+"[bdubbs] - Atualização para file-5.47. Corrige <ulink url='&lfs-ticket-"
+"root;5878'>#5878</ulink>."
+
+#. type: Content of:
+#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
+#: lfs-en/chapter01/changelog.xml:103
+#, xml-text
+#| msgid ""
+#| "[bdubbs] - Update to e2fsprogs-1.47.3. Fixes <ulink url='&lfs-ticket-"
+#| "root;5758'>#5758</ulink>."
+msgid ""
+"[bdubbs] - Update to e2fsprogs-1.47.4. Fixes <ulink url='&lfs-ticket-"
+"root;5884'>#5884</ulink>."
+msgstr ""
+"[bdubbs] - Atualização para e2fsprogs-1.47.4. Corrige <ulink url='&lfs-"
+"ticket-root;5884'>#5884</ulink>."
+
+#. type: Content of: <sect1><itemizedlist><listitem><para>
+#: lfs-en/chapter01/changelog.xml:110
+#, xml-text
+msgid "2026-03-05"
+msgstr "2026-03-05"
+
+#. type: Content of:
+#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
+#: lfs-en/chapter01/changelog.xml:113
+#, xml-text
 msgid "[bdubbs] - LFS-13.0 released."
 msgstr "[bdubbs] - LFS-13.0 lançado."
 
-#. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:53
 #, xml-text
-msgid "2026-02-27"
-msgstr "2026-02-27"
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:56
-#, xml-text
-msgid ""
-"[bdubbs] - Update to vim-9.2.0078 (Security update). Fixes <ulink "
-"url='&lfs-ticket-root;5877'>#5877</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para vim-9.2.0078 (atualização de segurança). "
-"Corrige <ulink url='&lfs-ticket-root;5877'>#5877</ulink>."
-
-#. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:63
-#, xml-text
-msgid "2026-02-19"
-msgstr "2026-02-19"
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:66
-#, xml-text
-msgid ""
-"[bdubbs] - Update to zlib-1.3.2 (Security update). Fixes <ulink "
-"url='&lfs-ticket-root;5873'>#5873</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para zlib-1.3.2 (atualização de segurança). "
-"Corrige <ulink url='&lfs-ticket-root;5873'>#5873</ulink>."
-
-#. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:73
-#, xml-text
-msgid "2026-02-15"
-msgstr "2026-02-15"
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:76
-#, xml-text
-msgid ""
-"[bdubbs] - Update to vim-9.2.0000. Fixes <ulink "
-"url='&lfs-ticket-root;5872'>#5872</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para vim-9.2.0000. Corrige <ulink "
-"url='&lfs-ticket-root;5872'>#5872</ulink>."
-
-#. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:83
-#, xml-text
-msgid "2026-02-14"
-msgstr "2026-02-14"
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:86
-#, xml-text
-msgid ""
-"[bdubbs] - Update to vim-9.1.2144 (Security update). Addresses <ulink "
-"url='&lfs-ticket-root;4500'>#4500</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para vim-9.1.2144 (atualização de segurança). "
-"Endereça <ulink url='&lfs-ticket-root;4500'>#4500</ulink>."
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:90
-#, xml-text
-msgid ""
-"[bdubbs] - Update to setuptools-82.0.0 (Python module). Fixes <ulink "
-"url='&lfs-ticket-root;5868'>#5868</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para setuptools-82.0.0 (módulo Python). Corrige "
-"<ulink url='&lfs-ticket-root;5868'>#5868</ulink>."
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:94
-#, xml-text
-msgid ""
-"[bdubbs] - Update to man-pages-6.17. Fixes <ulink "
-"url='&lfs-ticket-root;5870'>#5870</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para man-pages-6.17. Corrige <ulink "
-"url='&lfs-ticket-root;5870'>#5870</ulink>."
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:98
-#, xml-text
-msgid ""
-"[bdubbs] - Update to m4-1.4.21. Fixes <ulink "
-"url='&lfs-ticket-root;5866'>#5866</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para m4-1.4.21. Corrige <ulink "
-"url='&lfs-ticket-root;5866'>#5866</ulink>."
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:102
-#, xml-text
-msgid ""
-"[bdubbs] - Update to linux-6.18.10. Fixes <ulink "
-"url='&lfs-ticket-root;5854'>#5854</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para linux-6.18.10. Corrige <ulink "
-"url='&lfs-ticket-root;5854'>#5854</ulink>."
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:106
-#, xml-text
-msgid ""
-"[bdubbs] - Update to less-692. Fixes <ulink "
-"url='&lfs-ticket-root;5869'>#5869</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para less-692. Corrige <ulink "
-"url='&lfs-ticket-root;5869'>#5869</ulink>."
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:110
-#, xml-text
-msgid ""
-"[bdubbs] - Update to iana-etc-20260202. Addresses <ulink "
-"url='&lfs-ticket-root;5006'>#5006</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para iana-etc-20260202. Endereça <ulink "
-"url='&lfs-ticket-root;5006'>#5006</ulink>."
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:114
-#, xml-text
-msgid ""
-"[bdubbs] - Update to binutils-2.46.0. Fixes <ulink "
-"url='&lfs-ticket-root;5865'>#5865</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para binutils-2.46.0. Corrige <ulink "
-"url='&lfs-ticket-root;5865'>#5865</ulink>."
-
-#. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:121
-#, xml-text
-msgid "2026-02-08"
-msgstr "2026-02-08"
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:124
-#, xml-text
-msgid ""
-"[bdubbs] - Update to systemd-259.1. Fixes <ulink "
-"url='&lfs-ticket-root;5864'>#5864</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para systemd-259.1. Corrige <ulink "
-"url='&lfs-ticket-root;5864'>#5864</ulink>."
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:128
-#, xml-text
-msgid ""
-"[bdubbs] - Update to shadow-4.19.3. Fixes <ulink "
-"url='&lfs-ticket-root;5858'>#5858</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para shadow-4.19.3. Corrige <ulink "
-"url='&lfs-ticket-root;5858'>#5858</ulink>."
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:132
-#, xml-text
-msgid ""
-"[bdubbs] - Update to setuptools-81.0.0 (Python module). Fixes <ulink "
-"url='&lfs-ticket-root;5863'>#5863</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para setuptools-81.0.0 (módulo Python). Corrige "
-"<ulink url='&lfs-ticket-root;5863'>#5863</ulink>."
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:136
-#, xml-text
-msgid ""
-"[bdubbs] - Update to Python3-3.14.3 (Security update). Fixes <ulink "
-"url='&lfs-ticket-root;5859'>#5859</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para Python3-3.14.3 (atualização de segurança). "
-"Corrige <ulink url='&lfs-ticket-root;5859'>#5859</ulink>."
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:140
-#, xml-text
-msgid ""
-"[bdubbs] - Update to procps-ng-4.0.6. Fixes <ulink "
-"url='&lfs-ticket-root;5863'>#5853</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para procps-ng-4.0.6. Corrige <ulink "
-"url='&lfs-ticket-root;5863'>#5863</ulink>."
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:144
-#, xml-text
-msgid ""
-"[bdubbs] - Update to linux-6.18.9. Fixes <ulink "
-"url='&lfs-ticket-root;5854'>#5854</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para linux-6.18.9. Corrige <ulink "
-"url='&lfs-ticket-root;5854'>#5854</ulink>."
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:148
-#, xml-text
-msgid ""
-"[bdubbs] - Update to gettext-1.0. Fixes <ulink "
-"url='&lfs-ticket-root;5852'>#5852</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para gettext-1.0. Corrige <ulink "
-"url='&lfs-ticket-root;5852'>#5852</ulink>."
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:152
-#, xml-text
-msgid ""
-"[bdubbs] - Update to expat-2.7.4 (Security update). Fixes <ulink "
-"url='&lfs-ticket-root;5855'>#5855</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para expat-2.7.4 (atualização de segurança). "
-"Corrige <ulink url='&lfs-ticket-root;5855'>#5855</ulink>."
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:156
-#, xml-text
-msgid ""
-"[bdubbs] - Update to coreutils-9.10.tar.xz. Fixes <ulink "
-"url='&lfs-ticket-root;5862'>#5862</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para coreutils-9.10.tar.xz. Corrige <ulink "
-"url='&lfs-ticket-root;5862'>#5862</ulink>."
-
-#. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:163
-#, xml-text
-msgid "2026-01-28"
-msgstr "2026-01-28"
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:166
-#, xml-text
-msgid ""
-"[bdubbs] - Update to wheel-0.46.3. Fixes <ulink "
-"url='&lfs-ticket-root;5849'>#5849</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para wheel-0.46.3. Corrige <ulink "
-"url='&lfs-ticket-root;5849'>#5849</ulink>."
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:170
-#, xml-text
-msgid ""
-"[bdubbs] - Update to shadow-4.19.2. Fixes <ulink "
-"url='&lfs-ticket-root;5845'>#5845</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para shadow-4.19.2. Corrige <ulink "
-"url='&lfs-ticket-root;5845'>#5845</ulink>."
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:174
-#, xml-text
-msgid ""
-"[bdubbs] - Update to setuptools-80.10.2. Fixes <ulink "
-"url='&lfs-ticket-root;5848'>#5848</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para setuptools-80.10.2. Corrige <ulink "
-"url='&lfs-ticket-root;5848'>#5848</ulink>."
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:178
-#, xml-text
-msgid ""
-"[bdubbs] - Update to packaging-26.0. Fixes <ulink "
-"url='&lfs-ticket-root;5847'>#5847</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para packaging-26.0. Corrige <ulink "
-"url='&lfs-ticket-root;5847'>#5847</ulink>."
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:182
-#, xml-text
-msgid ""
-"[bdubbs] - Update to openssl-3.6.1 (Security update). Fixes <ulink "
-"url='&lfs-ticket-root;5851'>#5851</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para openssl-3.6.1 (atualização de segurança). "
-"Corrige <ulink url='&lfs-ticket-root;5851'>#5851</ulink>."
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:186
-#, xml-text
-msgid ""
-"[bdubbs] - Update to meson-1.10.1. Fixes <ulink "
-"url='&lfs-ticket-root;5844'>#5844</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para meson-1.10.1. Corrige <ulink "
-"url='&lfs-ticket-root;5844'>#5844</ulink>."
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:190
-#, xml-text
-msgid ""
-"[bdubbs] - Update to linux-6.18.7. Fixes <ulink "
-"url='&lfs-ticket-root;5843'>#5843</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para linux-6.18.7. Corrige <ulink "
-"url='&lfs-ticket-root;5843'>#5843</ulink>."
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:194
-#, xml-text
-msgid ""
-"[bdubbs] - Update to less-691. Fixes <ulink "
-"url='&lfs-ticket-root;5846'>#5846</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para less-691. Corrige <ulink "
-"url='&lfs-ticket-root;5846'>#5846</ulink>."
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:198
-#, xml-text
-msgid ""
-"[bdubbs] - Update to iana-etc-20260123. Addresses <ulink "
-"url='&lfs-ticket-root;5006'>#5006</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para iana-etc-20260123. Endereça <ulink "
-"url='&lfs-ticket-root;5006'>#5006</ulink>."
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:202
-#, xml-text
-msgid ""
-"[bdubbs] - Update to grub-2.14. Fixes <ulink "
-"url='&lfs-ticket-root;5842'>#5842</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para grub-2.14. Corrige <ulink "
-"url='&lfs-ticket-root;5842'>#5842</ulink>."
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:206
-#, xml-text
-msgid ""
-"[bdubbs] - Update to glibc-2.43 (Security update). Fixes <ulink "
-"url='&lfs-ticket-root;5850'>#5850</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para glibc-2.43 (atualização de segurança). "
-"Corrige <ulink url='&lfs-ticket-root;5850'>#5850</ulink>."
-
-#. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:213
-#, xml-text
-msgid "2026-01-15"
-msgstr "2026-01-15"
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:216
-#, xml-text
-msgid ""
-"[bdubbs] - Update to sqlite-autoconf-3510200 (3.51.2). Fixes <ulink "
-"url='&lfs-ticket-root;5841'>#5841</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para sqlite-autoconf-3510200 (3.51.2). Corrige "
-"<ulink url='&lfs-ticket-root;5841'>#5841</ulink>."
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:220
-#, xml-text
-msgid ""
-"[bdubbs] - Update to ncurses-6.6. Fixes <ulink "
-"url='&lfs-ticket-root;5839'>#5839</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para ncurses-6.6. Corrige <ulink "
-"url='&lfs-ticket-root;5839'>#5839</ulink>."
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:224
-#, xml-text
-msgid ""
-"[bdubbs] - Update to linux-6.18.5. Fixes <ulink "
-"url='&lfs-ticket-root;5840'>#5840</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para linux-6.18.5. Corrige <ulink "
-"url='&lfs-ticket-root;5840'>#5840</ulink>."
-
-#. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:231
-#, xml-text
-msgid "2026-01-01"
-msgstr "2026-01-01"
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:234
-#, xml-text
-msgid ""
-"[bdubbs] - Update to xz-5.8.2. Fixes <ulink "
-"url='&lfs-ticket-root;5836'>#5836</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para xz-5.8.2. Corrige <ulink "
-"url='&lfs-ticket-root;5836'>#5836</ulink>."
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:238
-#, xml-text
-msgid ""
-"[bdubbs] - Update to vim-9.1.2031. Addresses <ulink "
-"url='&lfs-ticket-root;4500'>#4500</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para vim-9.1.2031. Endereça <ulink "
-"url='&lfs-ticket-root;4500'>#4500</ulink>."
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:242
-#, xml-text
-msgid ""
-"[bdubbs] - Update to util-linux-2.41.3. Fixes <ulink "
-"url='&lfs-ticket-root;5834'>#5834</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para util-linux-2.41.3. Corrige <ulink "
-"url='&lfs-ticket-root;5834'>#5834</ulink>."
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:246
-#, xml-text
-msgid ""
-"[bdubbs] - Update to systemd-259. Fixes <ulink "
-"url='&lfs-ticket-root;5822'>#5822</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para systemd-259. Corrige <ulink "
-"url='&lfs-ticket-root;5822'>#5822</ulink>."
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:250
-#, xml-text
-msgid ""
-"[bdubbs] - Update to shadow-4.19.0. Fixes <ulink "
-"url='&lfs-ticket-root;5838'>#5838</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para shadow-4.19.0. Corrige <ulink "
-"url='&lfs-ticket-root;5838'>#5838</ulink>."
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:254
-#, xml-text
-msgid ""
-"[bdubbs] - Update to linux-6.18.2. Fixes <ulink "
-"url='&lfs-ticket-root;5837'>#5837</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para linux-6.18.2. Corrige <ulink "
-"url='&lfs-ticket-root;5837'>#5837</ulink>."
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:258
-#, xml-text
-msgid ""
-"[bdubbs] - Update to inetutils-2.7. Fixes <ulink "
-"url='&lfs-ticket-root;5835'>#5835</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para inetutils-2.7. Corrige <ulink "
-"url='&lfs-ticket-root;5835'>#5835</ulink>."
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:262
-#, xml-text
-msgid ""
-"[bdubbs] - Update to iana-etc-20251215. Addresses <ulink "
-"url='&lfs-ticket-root;5006'>#5006</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para iana-etc-20251215. Endereça <ulink "
-"url='&lfs-ticket-root;5006'>#5006</ulink>."
-
-#. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:269
-#, xml-text
-msgid "2025-12-15"
-msgstr "2025-12-15"
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:272
-#, xml-text
-msgid ""
-"[bdubbs] - Update to tzdata2025c. Fixes <ulink "
-"url='&lfs-ticket-root;5833'>#5833</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para tzdata2025c. Corrige <ulink "
-"url='&lfs-ticket-root;5833'>#5833</ulink>."
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:276
-#, xml-text
-msgid ""
-"[bdubbs] - Update to Python-3.14.2 (Security update). Fixes <ulink "
-"url='&lfs-ticket-root;5831'>#5831</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para Python-3.14.2 (atualização de segurança). "
-"Corrige <ulink url='&lfs-ticket-root;5831'>#5831</ulink>."
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:280
-#, xml-text
-msgid ""
-"[bdubbs] - Update to meson-1.10.0. Fixes <ulink "
-"url='&lfs-ticket-root;5832'>#5832</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para meson-1.10.0. Corrige <ulink "
-"url='&lfs-ticket-root;5832'>#5832</ulink>."
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:284
-#, xml-text
-msgid ""
-"[bdubbs] - Update to linux-6.18.1. Fixes <ulink "
-"url='&lfs-ticket-root;5830'>#5830</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para linux-6.18.1. Corrige <ulink "
-"url='&lfs-ticket-root;5830'>#5830</ulink>."
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:288
-#, xml-text
-msgid ""
-"[bdubbs] - Update to iproute2-6.18.0. Fixes <ulink "
-"url='&lfs-ticket-root;5829'>#5829</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para iproute2-6.18.0. Corrige <ulink "
-"url='&lfs-ticket-root;5829'>#5829</ulink>."
-
-#. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:295
-#, xml-text
-msgid "2025-12-08"
-msgstr "2025-12-08"
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:298
-#, xml-text
-msgid "[zeckma] - Replaced SysVinit with OpenRC."
-msgstr "[zeckma] - Substituído SysVinit pelo OpenRC."
-
-#. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:304
-#, xml-text
-msgid "2025-12-01"
-msgstr "2025-12-01"
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:307
-#, xml-text
-msgid ""
-"[bdubbs] - Update to vim-9.1.1934. Addresses <ulink "
-"url='&lfs-ticket-root;4500'>#4500</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para vim-9.1.1934. Endereça <ulink "
-"url='&lfs-ticket-root;4500'>#4500</ulink>."
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:311
-#, xml-text
-msgid ""
-"[bdubbs] - Update to sqlite-autoconf-3510100 (3.51.1). Fixes <ulink "
-"url='&lfs-ticket-root;5828'>#5828</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para sqlite-autoconf-3510100 (3.51.1). Corrige "
-"<ulink url='&lfs-ticket-root;5828'>#5828</ulink>."
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:315
-#, xml-text
-msgid ""
-"[bdubbs] - Update to ninja-1.13.2. Fixes <ulink "
-"url='&lfs-ticket-root;5826'>#5826</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para ninja-1.13.2. Corrige <ulink "
-"url='&lfs-ticket-root;5826'>#5826</ulink>."
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:319
-#, xml-text
-msgid ""
-"[bdubbs] - Update to linux-6.17.9. Fixes <ulink "
-"url='&lfs-ticket-root;5827'>#5827</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para linux-6.17.9. Corrige <ulink "
-"url='&lfs-ticket-root;5827'>#5827</ulink>."
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:323
-#, xml-text
-msgid ""
-"[bdubbs] - Update to libxcrypt-4.5.2. Fixes <ulink "
-"url='&lfs-ticket-root;5825'>#5825</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para libxcrypt-4.5.2. Corrige <ulink "
-"url='&lfs-ticket-root;5825'>#5825</ulink>."
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:327
-#, xml-text
-msgid ""
-"[bdubbs] - Update to iana-etc-20251120. Addresses <ulink "
-"url='&lfs-ticket-root;5006'>#5006</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para iana-etc-20251120. Endereça <ulink "
-"url='&lfs-ticket-root;5006'>#5006</ulink>."
-
-#. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:334
-#, xml-text
-msgid "2025-11-15"
-msgstr "2025-11-15"
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:337
-#, xml-text
-msgid ""
-"[bdubbs] - Update to coreutils-9.9. Fixes <ulink "
-"url='&lfs-ticket-root;5823'>#5823</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para coreutils-9.9. Corrige <ulink "
-"url='&lfs-ticket-root;5823'>#5823</ulink>."
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:341
-#, xml-text
-msgid ""
-"[bdubbs] - Update to binutils-2.45.1.  This now requires adding "
-"glibc-2.42-upstream_fixes-1.patch. Fixes <ulink "
-"url='&lfs-ticket-root;5824'>#5824</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para binutils-2.45.1. Isso agora exige adicionar "
-"glibc-2.42-upstream_fixes-1.patch. Corrige <ulink "
-"url='&lfs-ticket-root;5824'>#5824</ulink>."
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:346
-#, xml-text
-msgid ""
-"[bdubbs] - Update to libxcrypt-4.5.1. Fixes <ulink "
-"url='&lfs-ticket-root;5820'>#5820</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para libxcrypt-4.5.1. Corrige <ulink "
-"url='&lfs-ticket-root;5820'>#5820</ulink>."
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:350
-#, xml-text
-msgid ""
-"[bdubbs] - Update to linux-6.17.8. Fixes <ulink "
-"url='&lfs-ticket-root;5818'>#5818</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para linux-6.17.8. Corrige <ulink "
-"url='&lfs-ticket-root;5818'>#5818</ulink>."
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:354
-#, xml-text
-msgid ""
-"[bdubbs] - Update to sqlite-autoconf-3510000 (3.51.0). Fixes <ulink "
-"url='&lfs-ticket-root;5821'>#5821</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para sqlite-autoconf-3510000 (3.51.0). Corrige "
-"<ulink url='&lfs-ticket-root;5821'>#5821</ulink>."
-
-#. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:361
-#, xml-text
-msgid "2025-11-01"
-msgstr "2025-11-01"
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:364
-#, xml-text
-msgid ""
-"[bdubbs] - Update to vim-9.1.1888. Addresses <ulink "
-"url='&lfs-ticket-root;4500'>#4500</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para vim-9.1.1888. Endereça <ulink "
-"url='&lfs-ticket-root;4500'>#4500</ulink>."
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:368
-#, xml-text
-msgid ""
-"[bdubbs] - Update to iana-etc-20251022. Addresses <ulink "
-"url='&lfs-ticket-root;5006'>#5006</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para iana-etc-20251022. Endereça <ulink "
-"url='&lfs-ticket-root;5006'>#5006</ulink>."
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:372
-#, xml-text
-msgid ""
-"[bdubbs] - Update to pcre2-10.47. Fixes <ulink "
-"url='&lfs-ticket-root;5813'>#5814</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para pcre2-10.47. Corrige <ulink "
-"url='&lfs-ticket-root;5813'>#5814</ulink>."
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:376
-#, xml-text
-msgid ""
-"[bdubbs] - Update to man-pages-6.16. Fixes <ulink "
-"url='&lfs-ticket-root;5817'>#5817</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para man-pages-6.16. Corrige <ulink "
-"url='&lfs-ticket-root;5817'>#5817</ulink>."
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:380
-#, xml-text
-msgid ""
-"[bdubbs] - Update to linux-6.17.6. Fixes <ulink "
-"url='&lfs-ticket-root;5811'>#5811</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para linux-6.17.6. Corrige <ulink "
-"url='&lfs-ticket-root;5811'>#5811</ulink>."
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:384
-#, xml-text
-msgid ""
-"[bdubbs] - Update to libcap-2.77. Fixes <ulink "
-"url='&lfs-ticket-root;5816'>#5815</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para libcap-2.77. Corrige <ulink "
-"url='&lfs-ticket-root;5816'>#5815</ulink>."
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:388
-#, xml-text
-msgid ""
-"[bdubbs] - Update to elfutils-0.194. Fixes <ulink "
-"url='&lfs-ticket-root;5815'>#5815</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para elfutils-0.194. Corrige <ulink "
-"url='&lfs-ticket-root;5815'>#5815</ulink>."
-
-#. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:395
-#, xml-text
-msgid "2025-10-15"
-msgstr "2025-10-15"
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:398
-#, xml-text
-msgid ""
-"[bdubbs] - Update to less-685. Fixes <ulink "
-"url='&lfs-ticket-root;5810'>#5810</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para less-685. Corrige <ulink "
-"url='&lfs-ticket-root;5810'>#5810</ulink>."
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:402
-#, xml-text
-msgid ""
-"[bdubbs] - Update to systemd-258.1. Fixes <ulink "
-"url='&lfs-ticket-root;5809'>#5809</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para systemd-258.1. Corrige <ulink "
-"url='&lfs-ticket-root;5809'>#5809</ulink>."
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:406
-#, xml-text
-msgid ""
-"[bdubbs] - Update to Python-3.14.0. Fixes <ulink "
-"url='&lfs-ticket-root;5806'>#5806</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para Python-3.14.0. Corrige <ulink "
-"url='&lfs-ticket-root;5806'>#5806</ulink>."
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:410
-#, xml-text
-msgid ""
-"[bdubbs] - Update to openssl-3.6.0. Fixes <ulink "
-"url='&lfs-ticket-root;5804'>#5804</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para openssl-3.6.0. Corrige <ulink "
-"url='&lfs-ticket-root;5804'>#5804</ulink>."
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:414
-#, xml-text
-msgid ""
-"[bdubbs] - Update to linux-6.17.2. Fixes <ulink "
-"url='&lfs-ticket-root;5802'>#5802</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para linux-6.17.2. Corrige <ulink "
-"url='&lfs-ticket-root;5802'>#5802</ulink>."
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:418
-#, xml-text
-msgid ""
-"[bdubbs] - Update to iproute2-6.17.0. Fixes <ulink "
-"url='&lfs-ticket-root;5803'>#5803</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para iproute2-6.17.0. Corrige <ulink "
-"url='&lfs-ticket-root;5803'>#5803</ulink>."
-
-#. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:425
-#, xml-text
-msgid "2025-10-01"
-msgstr "2025-10-01"
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:428
-#, xml-text
-msgid ""
-"[renodr] - Update to systemd-258 (including udev for SysV).  Fixes <ulink "
-"url=\"&lfs-ticket-root;5791\">#5791</ulink>."
-msgstr ""
-"[renodr] - Atualização para systemd-258 (incluindo udev para SysV). "
-"Corrige <ulink url=\"&lfs-ticket-root;5791\">#5791</ulink>."
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:432
-#, xml-text
-msgid ""
-"[bdubbs] - Update to vim-9.1.1806. Addresses <ulink "
-"url='&lfs-ticket-root;4500'>#4500</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para vim-9.1.1806. Endereça <ulink "
-"url='&lfs-ticket-root;4500'>#4500</ulink>."
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:436
-#, xml-text
-msgid ""
-"[bdubbs] - Update to iana-etc-20250926. Addresses <ulink "
-"url='&lfs-ticket-root;5006'>#5006</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para iana-etc-20250926. Endereça <ulink "
-"url='&lfs-ticket-root;5006'>#5006</ulink>."
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:440
-#, xml-text
-msgid ""
-"[bdubbs] - Update to coreutils-9.8. Fixes <ulink "
-"url='&lfs-ticket-root;5795'>#5795</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para coreutils-9.8. Corrige <ulink "
-"url='&lfs-ticket-root;5795'>#5795</ulink>."
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:444
-#, xml-text
-msgid ""
-"[bdubbs] - Update to expat-2.7.3 (Security release). Fixes <ulink "
-"url='&lfs-ticket-root;5792'>#5792</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para expat-2.7.3 (Lançamento de segurança). "
-"Corrige <ulink url='&lfs-ticket-root;5792'>#5792</ulink>."
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:448
-#, xml-text
-msgid ""
-"[bdubbs] - Update to linux-6.16.9. Fixes <ulink "
-"url='&lfs-ticket-root;5796'>#5796</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para linux-6.16.9. Corrige <ulink "
-"url='&lfs-ticket-root;5796'>#5796</ulink>."
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:452
-#, xml-text
-msgid ""
-"[bdubbs] - Update to markupsafe-3.0.3. Fixes <ulink "
-"url='&lfs-ticket-root;5801'>#5801</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para markupsafe-3.0.3. Corrige <ulink "
-"url='&lfs-ticket-root;5801'>#5801</ulink>."
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:456
-#, xml-text
-msgid ""
-"[bdubbs] - Update to meson-1.9.1. Fixes <ulink "
-"url='&lfs-ticket-root;5797'>#5797</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para meson-1.9.1. Corrige <ulink "
-"url='&lfs-ticket-root;5797'>#5797</ulink>."
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:460
-#, xml-text
-msgid ""
-"[renodr] - Update to openssl-3.5.4 (Security update). Fixes <ulink "
-"url='&lfs-ticket-root;5793'>#5793</ulink>."
-msgstr ""
-"[renodr] - Atualização para openssl-3.5.4 (atualização de segurança). "
-"Corrige <ulink url='&lfs-ticket-root;5793'>#5793</ulink>."
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:464
-#, xml-text
-msgid ""
-"[bdubbs] - Update to util-linux-2.41.2. Fixes <ulink "
-"url='&lfs-ticket-root;5798'>#5798</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para util-linux-2.41.2. Corrige <ulink "
-"url='&lfs-ticket-root;5798'>#5798</ulink>."
-
-#. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:471
-#, xml-text
-msgid "2025-09-15"
-msgstr "2025-09-15"
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:474
-#, xml-text
-msgid ""
-"[bdubbs] - Update to vim-9.1.1754. Addresses <ulink "
-"url='&lfs-ticket-root;4500'>#4500</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para vim-9.1.1754. Endereça <ulink "
-"url='&lfs-ticket-root;4500'>#4500</ulink>."
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:478
-#, xml-text
-msgid ""
-"[bdubbs] - Update to iana-etc-20250826. Addresses <ulink "
-"url='&lfs-ticket-root;5006'>#5006</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para iana-etc-20250826. Endereça <ulink "
-"url='&lfs-ticket-root;5006'>#5006</ulink>."
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:482
-#, xml-text
-msgid ""
-"[bdubbs] - Update to tcl8.6.17. Fixes <ulink "
-"url='&lfs-ticket-root;5781'>#5781</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para tcl8.6.17. Corrige <ulink "
-"url='&lfs-ticket-root;5781'>#5781</ulink>."
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:486
-#, xml-text
-msgid ""
-"[bdubbs] - Update to pcre2-10.46. Fixes <ulink "
-"url='&lfs-ticket-root;5790'>#5790</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para pcre2-10.46. Corrige <ulink "
-"url='&lfs-ticket-root;5790'>#5790</ulink>."
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:490
-#, xml-text
-msgid ""
-"[bdubbs] - Update to meson-1.9.0. Fixes <ulink "
-"url='&lfs-ticket-root;5788'>#5788</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para meson-1.9.0. Corrige <ulink "
-"url='&lfs-ticket-root;5788'>#5788</ulink>."
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:494
-#, xml-text
-msgid ""
-"[bdubbs] - Update to linux-6.16.7. Fixes <ulink "
-"url='&lfs-ticket-root;5787'>#5787</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para linux-6.16.7. Corrige <ulink "
-"url='&lfs-ticket-root;5787'>#5787</ulink>."
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:498
-#, xml-text
-msgid ""
-"[bdubbs] - Update to kbd-2.9.0. Fixes <ulink "
-"url='&lfs-ticket-root;5789'>#5789</ulink>."
-msgstr ""
-"[bdubbs] - Atualização para kbd-2.9.0. Corrige <ulink "
-"url='&lfs-ticket-root;5789'>#5789</ulink>."
-
-#. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:505
-#, xml-text
-msgid "2025-09-03"
-msgstr "2025-09-03"
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:508
-#, xml-text
-msgid ""
-"[bdubbs] - Add the sqlite-3.50.4 package. Fixes <ulink "
-"url='&lfs-ticket-root;5784'>#5784</ulink>."
-msgstr ""
-"[bdubbs] - Adicionar o pacote sqlite-3.50.4. Corrige <ulink "
-"url='&lfs-ticket-root;5784'>#5784</ulink>."
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:512
-#, xml-text
-msgid ""
-"[bdubbs] - Add the pcre2-10.45 package. Fixes <ulink "
-"url='&lfs-ticket-root;5782'>#5782</ulink>."
-msgstr ""
-"[bdubbs] - Adicionar o pacote pcre2-10.45. Corrige <ulink "
-"url='&lfs-ticket-root;5782'>#5782</ulink>."
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:516
-#, xml-text
-msgid ""
-"[bdubbs] - Add a description on how to use a kernel base+patch in Chapter "
-"3.  Fixes <ulink url='&lfs-ticket-root;5785'>#5785</ulink>."
-msgstr ""
-"[bdubbs] - Adicionar uma descrição acerca de como se usar um núcleo "
-"base+remendo no Capítulo 3. Corrige <ulink "
-"url='&lfs-ticket-root;5785'>#5785</ulink>."
-
-#. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:524
-#, xml-text
-msgid "2025-09-01"
-msgstr "2025-09-01"
-
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter01/changelog.xml:527
-#, xml-text
-msgid "[bdubbs] - LFS-12.4 released."
-msgstr "[bdubbs] - LFS-12.4 lançado."
+#~ msgid "2026-02-27"
+#~ msgstr "2026-02-27"
 
 #, xml-text
 #~ msgid ""
-#~ "[bdubbs] - Update to Python3-3.14.3. Fixes <ulink "
+#~ "[bdubbs] - Update to vim-9.2.0078 (Security update). Fixes <ulink url='&lfs-"
+#~ "ticket-root;5877'>#5877</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para vim-9.2.0078 (atualização de Segurança). Corrige"
+#~ " <ulink url='&lfs-ticket-root;5877'>#5877</ulink>."
+
+#, xml-text
+#~ msgid "2026-02-19"
+#~ msgstr "2026-02-19"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to zlib-1.3.2 (Security update). Fixes <ulink url='&lfs-"
+#~ "ticket-root;5873'>#5873</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para zlib-1.3.2 (atualização de segurança). Corrige "
+#~ "<ulink url='&lfs-ticket-root;5873'>#5873</ulink>."
+
+#, xml-text
+#~ msgid "2026-02-15"
+#~ msgstr "2026-02-15"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to vim-9.2.0000. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5872'>#5872</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para vim-9.2.0000. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5872'>#5872</ulink>."
+
+#, xml-text
+#~ msgid "2026-02-14"
+#~ msgstr "2026-02-14"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to vim-9.1.2144 (Security update). Addresses <ulink "
+#~ "url='&lfs-ticket-root;4500'>#4500</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para vim-9.1.2144 (atualização de segurança). "
+#~ "Endereça <ulink url='&lfs-ticket-root;4500'>#4500</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to man-pages-6.17. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5870'>#5870</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para man-pages-6.17. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5870'>#5870</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to m4-1.4.21. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5866'>#5866</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para m4-1.4.21. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5866'>#5866</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to linux-6.18.10. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5854'>#5854</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para linux-6.18.10. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5854'>#5854</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to less-692. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5869'>#5869</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para less-692. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5869'>#5869</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to iana-etc-20260202. Addresses <ulink url='&lfs-ticket-"
+#~ "root;5006'>#5006</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para iana-etc-20260202. Endereça <ulink url='&lfs-"
+#~ "ticket-root;5006'>#5006</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to binutils-2.46.0. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5865'>#5865</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para binutils-2.46.0. Corrige <ulink url='&lfs-"
+#~ "ticket-root;5865'>#5865</ulink>."
+
+#, xml-text
+#~ msgid "2026-02-08"
+#~ msgstr "2026-02-08"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to systemd-259.1. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5864'>#5864</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para systemd-259.1. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5864'>#5864</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to setuptools-81.0.0 (Python module). Fixes <ulink "
+#~ "url='&lfs-ticket-root;5863'>#5863</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para setuptools-81.0.0 (módulo Python). Corrige "
+#~ "<ulink url='&lfs-ticket-root;5863'>#5863</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to Python3-3.14.3 (Security update). Fixes <ulink "
 #~ "url='&lfs-ticket-root;5859'>#5859</ulink>."
 #~ msgstr ""
-#~ "[bdubbs] - Atualização para Python3-3.14.3. Corrige <ulink "
-#~ "url='&lfs-ticket-root;5859'>#5859</ulink>."
+#~ "[bdubbs] - Atualização para Python3-3.14.3 (atualização de segurança). "
+#~ "Corrige <ulink url='&lfs-ticket-root;5859'>#5859</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to procps-ng-4.0.6. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5863'>#5853</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para procps-ng-4.0.6. Corrige <ulink url='&lfs-"
+#~ "ticket-root;5863'>#5853</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to linux-6.18.9. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5854'>#5854</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para linux-6.18.9. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5854'>#5854</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to gettext-1.0. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5852'>#5852</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para gettext-1.0. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5852'>#5852</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to expat-2.7.4 (Security update). Fixes <ulink url='&lfs-"
+#~ "ticket-root;5855'>#5855</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para expat-2.7.4 (atualização de Segurança). Corrige "
+#~ "<ulink url='&lfs-ticket-root;5855'>#5855</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to coreutils-9.10.tar.xz. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5862'>#5862</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para coreutils-9.10.tar.xz. Corrige <ulink url='&lfs-"
+#~ "ticket-root;5862'>#5862</ulink>."
+
+#, xml-text
+#~ msgid "2026-01-28"
+#~ msgstr "2026-01-28"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to wheel-0.46.3. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5849'>#5849</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para wheel-0.46.3. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5849'>#5849</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to shadow-4.19.2. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5845'>#5845</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para shadow-4.19.2. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5845'>#5845</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to setuptools-80.10.2. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5848'>#5848</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para setuptools-80.10.2. Corrige <ulink url='&lfs-"
+#~ "ticket-root;5848'>#5848</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to packaging-26.0. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5847'>#5847</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para packaging-26.0. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5847'>#5847</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to openssl-3.6.1 (Security update). Fixes <ulink "
+#~ "url='&lfs-ticket-root;5851'>#5851</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para openssl-3.6.1 (atualização de segurança). "
+#~ "Corrige <ulink url='&lfs-ticket-root;5851'>#5851</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to meson-1.10.1. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5844'>#5844</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para meson-1.10.1. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5844'>#5844</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to linux-6.18.7. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5843'>#5843</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para linux-6.18.7. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5843'>#5843</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to less-691. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5846'>#5846</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para less-691. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5846'>#5846</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to iana-etc-20260123. Addresses <ulink url='&lfs-ticket-"
+#~ "root;5006'>#5006</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para iana-etc-20260123. Endereça <ulink url='&lfs-"
+#~ "ticket-root;5006'>#5006</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to grub-2.14. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5842'>#5842</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para grub-2.14. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5842'>#5842</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to glibc-2.43 (Security update). Fixes <ulink url='&lfs-"
+#~ "ticket-root;5850'>#5850</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para glibc-2.43 (atualização de segurança). Corrige "
+#~ "<ulink url='&lfs-ticket-root;5850'>#5850</ulink>."
+
+#, xml-text
+#~ msgid "2026-01-15"
+#~ msgstr "2026-01-15"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to sqlite-autoconf-3510200 (3.51.2). Fixes <ulink "
+#~ "url='&lfs-ticket-root;5841'>#5841</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para sqlite-autoconf-3510200 (3.51.2). Corrige <ulink"
+#~ " url='&lfs-ticket-root;5841'>#5841</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to ncurses-6.6. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5839'>#5839</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para ncurses-6.6. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5839'>#5839</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to linux-6.18.5. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5840'>#5840</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para linux-6.18.5. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5840'>#5840</ulink>."
+
+#, xml-text
+#~ msgid "2026-01-01"
+#~ msgstr "2026-01-01"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to xz-5.8.2. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5836'>#5836</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para xz-5.8.2. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5836'>#5836</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to vim-9.1.2031. Addresses <ulink url='&lfs-ticket-"
+#~ "root;4500'>#4500</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para vim-9.1.2031. Endereça <ulink url='&lfs-ticket-"
+#~ "root;4500'>#4500</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to util-linux-2.41.3. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5834'>#5834</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para util-linux-2.41.3. Corrige <ulink url='&lfs-"
+#~ "ticket-root;5834'>#5834</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to systemd-259. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5822'>#5822</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para systemd-259. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5822'>#5822</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to shadow-4.19.0. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5838'>#5838</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para shadow-4.19.0. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5838'>#5838</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to inetutils-2.7. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5835'>#5835</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para inetutils-2.7. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5835'>#5835</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to iana-etc-20251215. Addresses <ulink url='&lfs-ticket-"
+#~ "root;5006'>#5006</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para iana-etc-20251215. Endereça <ulink url='&lfs-"
+#~ "ticket-root;5006'>#5006</ulink>."
+
+#, xml-text
+#~ msgid "2025-12-15"
+#~ msgstr "2025-12-15"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to Python-3.14.2 (Security update). Fixes <ulink "
+#~ "url='&lfs-ticket-root;5831'>#5831</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para Python-3.14.2 (atualização de segurança). "
+#~ "Corrige <ulink url='&lfs-ticket-root;5831'>#5831</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to meson-1.10.0. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5832'>#5832</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para meson-1.10.0. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5832'>#5832</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to linux-6.18.1. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5830'>#5830</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para linux-6.18.1. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5830'>#5830</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to iproute2-6.18.0. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5829'>#5829</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para iproute2-6.18.0. Corrige <ulink url='&lfs-"
+#~ "ticket-root;5829'>#5829</ulink>."
+
+#, xml-text
+#~ msgid "2025-12-01"
+#~ msgstr "2025-12-01"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to vim-9.1.1934. Addresses <ulink url='&lfs-ticket-"
+#~ "root;4500'>#4500</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para vim-9.1.1934. Endereça <ulink url='&lfs-ticket-"
+#~ "root;4500'>#4500</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to ninja-1.13.2. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5826'>#5826</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para ninja-1.13.2. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5826'>#5826</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to linux-6.17.9. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5827'>#5827</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para linux-6.17.9. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5827'>#5827</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to libxcrypt-4.5.2. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5825'>#5825</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para libxcrypt-4.5.2. Corrige <ulink url='&lfs-"
+#~ "ticket-root;5825'>#5825</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to iana-etc-20251120. Addresses <ulink url='&lfs-ticket-"
+#~ "root;5006'>#5006</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para iana-etc-20251120. Endereça <ulink url='&lfs-"
+#~ "ticket-root;5006'>#5006</ulink>."
+
+#, xml-text
+#~ msgid "2025-11-15"
+#~ msgstr "2025-11-15"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to coreutils-9.9. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5823'>#5823</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para coreutils-9.9. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5823'>#5823</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to binutils-2.45.1.  This now requires adding "
+#~ "glibc-2.42-upstream_fixes-1.patch. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5824'>#5824</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para binutils-2.45.1. Isso agora exige adicionar "
+#~ "glibc-2.42-upstream_fixes-1.patch. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5824'>#5824</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to libxcrypt-4.5.1. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5820'>#5820</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para libxcrypt-4.5.1. Corrige <ulink url='&lfs-"
+#~ "ticket-root;5820'>#5820</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to linux-6.17.8. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5818'>#5818</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para linux-6.17.8. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5818'>#5818</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to sqlite-autoconf-3510000 (3.51.0). Fixes <ulink "
+#~ "url='&lfs-ticket-root;5821'>#5821</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para sqlite-autoconf-3510000 (3.51.0). Corrige <ulink"
+#~ " url='&lfs-ticket-root;5821'>#5821</ulink>."
+
+#, xml-text
+#~ msgid "2025-11-01"
+#~ msgstr "2025-11-01"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to vim-9.1.1888. Addresses <ulink url='&lfs-ticket-"
+#~ "root;4500'>#4500</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para vim-9.1.1888. Endereça <ulink url='&lfs-ticket-"
+#~ "root;4500'>#4500</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to iana-etc-20251022. Addresses <ulink url='&lfs-ticket-"
+#~ "root;5006'>#5006</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para iana-etc-20251022. Endereça <ulink url='&lfs-"
+#~ "ticket-root;5006'>#5006</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to pcre2-10.47. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5813'>#5814</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para pcre2-10.47. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5813'>#5814</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to man-pages-6.16. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5817'>#5817</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para man-pages-6.16. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5817'>#5817</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to linux-6.17.6. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5811'>#5811</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para linux-6.17.6. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5811'>#5811</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to libcap-2.77. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5816'>#5815</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para libcap-2.77. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5816'>#5815</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to elfutils-0.194. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5815'>#5815</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para elfutils-0.194. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5815'>#5815</ulink>."
+
+#, xml-text
+#~ msgid "2025-10-15"
+#~ msgstr "2025-10-15"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to less-685. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5810'>#5810</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para less-685. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5810'>#5810</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to Python-3.14.0. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5806'>#5806</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para Python-3.14.0. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5806'>#5806</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to openssl-3.6.0. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5804'>#5804</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para openssl-3.6.0. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5804'>#5804</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to linux-6.17.2. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5802'>#5802</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para linux-6.17.2. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5802'>#5802</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to iproute2-6.17.0. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5803'>#5803</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para iproute2-6.17.0. Corrige <ulink url='&lfs-"
+#~ "ticket-root;5803'>#5803</ulink>."
+
+#, xml-text
+#~ msgid "2025-10-01"
+#~ msgstr "2025-10-01"
+
+#, xml-text
+#~ msgid ""
+#~ "[renodr] - Update to systemd-258 (including udev for SysV).  Fixes <ulink "
+#~ "url=\"&lfs-ticket-root;5791\">#5791</ulink>."
+#~ msgstr ""
+#~ "[renodr] - Atualização para systemd-258 (incluindo udev para SysV). Corrige "
+#~ "<ulink url=\"&lfs-ticket-root;5791\">#5791</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to vim-9.1.1806. Addresses <ulink url='&lfs-ticket-"
+#~ "root;4500'>#4500</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para vim-9.1.1806. Endereça <ulink url='&lfs-ticket-"
+#~ "root;4500'>#4500</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to iana-etc-20250926. Addresses <ulink url='&lfs-ticket-"
+#~ "root;5006'>#5006</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para iana-etc-20250926. Endereça <ulink url='&lfs-"
+#~ "ticket-root;5006'>#5006</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to coreutils-9.8. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5795'>#5795</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para coreutils-9.8. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5795'>#5795</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to expat-2.7.3 (Security release). Fixes <ulink url='&lfs-"
+#~ "ticket-root;5792'>#5792</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para expat-2.7.3 (Lançamento de segurança). Corrige "
+#~ "<ulink url='&lfs-ticket-root;5792'>#5792</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to linux-6.16.9. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5796'>#5796</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para linux-6.16.9. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5796'>#5796</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to markupsafe-3.0.3. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5801'>#5801</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para markupsafe-3.0.3. Corrige <ulink url='&lfs-"
+#~ "ticket-root;5801'>#5801</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to meson-1.9.1. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5797'>#5797</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para meson-1.9.1. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5797'>#5797</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[renodr] - Update to openssl-3.5.4 (Security update). Fixes <ulink "
+#~ "url='&lfs-ticket-root;5793'>#5793</ulink>."
+#~ msgstr ""
+#~ "[renodr] - Atualização para openssl-3.5.4 (atualização de segurança). "
+#~ "Corrige <ulink url='&lfs-ticket-root;5793'>#5793</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to util-linux-2.41.2. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5798'>#5798</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para util-linux-2.41.2. Corrige <ulink url='&lfs-"
+#~ "ticket-root;5798'>#5798</ulink>."
+
+#, xml-text
+#~ msgid "2025-09-15"
+#~ msgstr "2025-09-15"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to vim-9.1.1754. Addresses <ulink url='&lfs-ticket-"
+#~ "root;4500'>#4500</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para vim-9.1.1754. Endereça <ulink url='&lfs-ticket-"
+#~ "root;4500'>#4500</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to iana-etc-20250826. Addresses <ulink url='&lfs-ticket-"
+#~ "root;5006'>#5006</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para iana-etc-20250826. Endereça <ulink url='&lfs-"
+#~ "ticket-root;5006'>#5006</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to tcl8.6.17. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5781'>#5781</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para tcl8.6.17. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5781'>#5781</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to pcre2-10.46. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5790'>#5790</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para pcre2-10.46. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5790'>#5790</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to meson-1.9.0. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5788'>#5788</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para meson-1.9.0. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5788'>#5788</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to linux-6.16.7. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5787'>#5787</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para linux-6.16.7. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5787'>#5787</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to kbd-2.9.0. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5789'>#5789</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para kbd-2.9.0. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5789'>#5789</ulink>."
+
+#, xml-text
+#~ msgid "2025-09-03"
+#~ msgstr "2025-09-03"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Add the sqlite-3.50.4 package. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5784'>#5784</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Adicionar o pacote sqlite-3.50.4. Corrige <ulink url='&lfs-"
+#~ "ticket-root;5784'>#5784</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Add the pcre2-10.45 package. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5782'>#5782</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Adicionar o pacote pcre2-10.45. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5782'>#5782</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Add a description on how to use a kernel base+patch in Chapter 3."
+#~ "  Fixes <ulink url='&lfs-ticket-root;5785'>#5785</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Adicionar uma descrição acerca de como se usar um núcleo "
+#~ "base+remendo no Capítulo 3. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5785'>#5785</ulink>."
+
+#, xml-text
+#~ msgid "2025-09-01"
+#~ msgstr "2025-09-01"
+
+#, xml-text
+#~ msgid "[bdubbs] - LFS-12.4 released."
+#~ msgstr "[bdubbs] - LFS-12.4 lançado."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to vim-9.1.2144. Addresses <ulink url='&lfs-ticket-"
+#~ "root;4500'>#4500</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para vim-9.1.2144. Endereça <ulink url='&lfs-ticket-"
+#~ "root;4500'>#4500</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to Python3-3.14.3. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5859'>#5859</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para Python3-3.14.3. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5859'>#5859</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to openssl-3.5.3. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5703'>#5793</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para openssl-3.5.3. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5703'>#5793</ulink>."
+
+#, xml-text
+#~ msgid "2025-08-27"
+#~ msgstr "2025-08-27"
+
+#, xml-text
+#~ msgid "[bdubbs] - Update network boot script corner case."
+#~ msgstr ""
+#~ "[bdubbs] - Atualizar caso especial de conjunto de comandos sequenciais de "
+#~ "inicialização de rede de intercomunicação."
+
+#, xml-text
+#~ msgid "2025-08-15"
+#~ msgstr "2025-08-15"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Add a modification to glibc from upstream to solve an "
+#~ "incompatibility with valgrind. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5778'>#5778</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Adicionar uma modificação para glibc originária do fluxo de "
+#~ "desenvolvimento para solver uma incompatibilidade com valgrind. corrige "
+#~ "<ulink url='&lfs-ticket-root;5778'>#5778</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to vim-9.1.1829. Addresses <ulink url='&lfs-ticket-"
+#~ "root;4500'>#4500</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para vim-9.1.1829. Endereça <ulink url='&lfs-ticket-"
+#~ "root;4500'>#4500</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to ncurses-6.5-20250809. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5780'>#5780</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para ncurses-6.5-20250809. Corrige <ulink url='&lfs-"
+#~ "ticket-root;5780'>#5780</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to linux-6.16.1. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5758'>#5758</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para linux-6.16.1. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5758'>#5758</ulink>."
+
+#, xml-text
+#~ msgid "2025-08-08"
+#~ msgstr "2025-08-08"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to Python-3.13.6 (Security Update). Fixes <ulink "
+#~ "url='&lfs-ticket-root;5776'>#5776</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para Python-3.13.6 (Atualização de Segurança). "
+#~ "Corrige <ulink url='&lfs-ticket-root;5776'>#5776</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to openssl-3.5.2. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5775'>#5775</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para openssl-3.5.2. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5775'>#5775</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to libffi-3.5.2. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5772'>#5772</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para libffi-3.5.2. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5772'>#5772</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to gcc-15.2.0. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5777'>#5777</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para gcc-15.2.0. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5777'>#5777</ulink>."
+
+#, xml-text
+#~ msgid "2025-08-05"
+#~ msgstr "2025-08-05"
+
+#, xml-text
+#~ msgid ""
+#~ "[renodr] - Fixed CVE-2025-8194 in Python. Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5774\">#5774</ulink>."
+#~ msgstr ""
+#~ "[renodr] - Corrigido CVE-2025-8194 no Python. Corrige <ulink url=\"&lfs-"
+#~ "ticket-root;5774\">#5774</ulink>."
+
+#, xml-text
+#~ msgid "2025-08-01"
+#~ msgstr "2025-08-01"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to binutils-2.45. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5766'>#5766</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para binutils-2.45. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5766'>#5766</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to glibc-2.42. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5765'>#5765</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para glibc-2.42. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5765'>#5765</ulink>."
+
+#, xml-text
+#~ msgid "2025-07-15"
+#~ msgstr "2025-07-15"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to ninja-1.13.1. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5759'>#5759</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para ninja-1.13.1. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5759'>#5759</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to linux-6.15.6. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5757'>#5757</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para linux-6.15.6. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5757'>#5757</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to gettext-0.25.1. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5753'>#5753</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para gettext-0.25.1. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5753'>#5753</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to bash-5.3. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5754'>#5754</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para bash-5.3. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5754'>#5754</ulink>."
+
+#, xml-text
+#~ msgid "2025-07-01"
+#~ msgstr "2025-07-01"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to iana-etc-20250618. Addresses <ulink url='&lfs-ticket-"
+#~ "root;5006'>#5006</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para iana-etc-20250618. Endereça <ulink url='&lfs-"
+#~ "ticket-root;5006'>#5006</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to shadow-4.18.0. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5750'>#5750</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para shadow-4.18.0. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5750'>#5750</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to pkgconf-2.5.1. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5746'>#5746</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para pkgconf-2.5.1. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5746'>#5746</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to ninja-1.13.0. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5745'>#5745</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para ninja-1.13.0. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5745'>#5745</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to linux-6.15.4. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5748'>#5748</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para linux-6.15.4. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5748'>#5748</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to automake-1.18.1. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5752'>#5752</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para automake-1.18.1. Corrige <ulink url='&lfs-"
+#~ "ticket-root;5752'>#5752</ulink>."
+
+#, xml-text
+#~ msgid "2025-06-15"
+#~ msgstr "2025-06-15"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to meson-1.8.2. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5742'>#5742</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para meson-1.8.2. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5742'>#5742</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to linux-6.15.2. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5725'>#5725</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para linux-6.15.2. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5725'>#5725</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to libffi-3.5.1. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5741'>#5741</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para libffi-3.5.1. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5741'>#5741</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to iproute2-6.15.0. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5732'>#5732</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para iproute2-6.15.0. Corrige <ulink url='&lfs-"
+#~ "ticket-root;5732'>#5732</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to Python-3.13.5. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5743'>#5743</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para Python-3.13.5. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5743'>#5743</ulink>."
+
+#, xml-text
+#~ msgid "2025-06-04"
+#~ msgstr "2025-06-04"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to ncurses-6.5-20250531. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5737'>#5737</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para ncurses-6.5-20250531. Corrige <ulink url='&lfs-"
+#~ "ticket-root;5737'>#5737</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to readline-8.3-rc2. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5738'>#5738</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para readline-8.3-rc2. Corrige <ulink url='&lfs-"
+#~ "ticket-root;5738'>#5738</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to bash-5.3-rc2. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5738'>#5738</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para bash-5.3-rc2. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5738'>#5738</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to Python-3.13.4. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5739'>#6739</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para Python-3.13.4. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5739'>#6739</ulink>."
+
+#, xml-text
+#~ msgid "2025-06-01"
+#~ msgstr "2025-06-01"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to iana-etc-20250519. Addresses <ulink url='&lfs-ticket-"
+#~ "root;5006'>#5006</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para iana-etc-20250519. Endereça <ulink url='&lfs-"
+#~ "ticket-root;5006'>#5006</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to meson-1.8.1. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5731'>#5731</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para meson-1.8.1. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5731'>#5731</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to automake-1.18. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5734'>#5734</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para automake-1.18. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5734'>#5734</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update build instructions to accommodate gcc-15 for bc, expect, "
+#~ "ncurses, and gmp."
+#~ msgstr ""
+#~ "[bdubbs] - Atualizar instruções de construção para acomodar gcc-15 para bc, "
+#~ "expect, ncurses e gmp."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to gcc-15.1.0. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5707'>#5707</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para gcc-15.1.0. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5707'>#5707</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to less-678. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5724'>#5724</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para less-678. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5724'>#5724</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to readline-8.3-rc1. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5726'>#5726</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para readline-8.3-rc1. Corrige <ulink url='&lfs-"
+#~ "ticket-root;5726'>#5726</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to bash-5.3-rc1. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5714'>#5714</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para bash-5.3-rc1. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5714'>#5714</ulink>."
+
+#, xml-text
+#~ msgid "2025-05-15"
+#~ msgstr "2025-05-15"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to setuptools-80.7.1. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5715'>#5715</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para setuptools-80.7.1. Corrige <ulink url='&lfs-"
+#~ "ticket-root;5715'>#5715</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to man-pages-6.14. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5720'>#5720</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para man-pages-6.14. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5720'>#5720</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to man-db-2.13.1. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5719'>#5719</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para man-db-2.13.1. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5719'>#5719</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to linux-6.14.6. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5717'>#5717</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para linux-6.14.6. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5717'>#5717</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to gettext-0.25. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5718'>#5718</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para gettext-0.25. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5718'>#5718</ulink>."
+
+#, xml-text
+#~ msgid "2025-05-01"
+#~ msgstr "2025-05-01"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to vim-9.1.1353. Addresses <ulink url='&lfs-ticket-"
+#~ "root;4500'>#4500</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para vim-9.1.1353. Endereça <ulink url='&lfs-ticket-"
+#~ "root;4500'>#4500</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to setuptools-80.0.1. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5710'>#5710</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para setuptools-80.0.1. Corrige <ulink url='&lfs-"
+#~ "ticket-root;5710'>#5710</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to iana-etc-20250407. Addresses <ulink url='&lfs-ticket-"
+#~ "root;5006'>#5006</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para iana-etc-20250407. Endereça <ulink url='&lfs-"
+#~ "ticket-root;5006'>#5006</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to gperf-3.3. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5708'>#5708</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para gperf-3.3. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5708'>#5708</ulink>."
+
+#, xml-text
+#~ msgid "2025-04-15"
+#~ msgstr "2025-04-15"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to libcap-2.76. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5704'>#5704</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para libcap-2.76. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5704'>#5704</ulink>."
+
+#, xml-text
+#~ msgid "[bdubbs] - Add packaging-24.2 (Python module). Needed for wheel."
+#~ msgstr ""
+#~ "[bdubbs] - Adicionar packaging-24.2 (módulo Python). Necessário para wheel."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to wheel-0.46.1 (Python Module). Fixes <ulink url='&lfs-"
+#~ "ticket-root;5693'>#5693</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para wheel-0.46.1 (Módulo Python). Corrige <ulink "
+#~ "url='&lfs-ticket-root;5693'>#5693</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to sysklogd-2.7.2. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5690'>#5690</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para sysklogd-2.7.2. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5690'>#5690</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to meson-1.7.2. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5691'>#5691</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para meson-1.7.2. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5691'>#5691</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to libffi-3.4.8. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5700'>#5700</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para libffi-3.4.8. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5700'>#5700</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to gzip-1.14. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5699'>#5699</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para gzip-1.14. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5699'>#5699</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to gperf-3.2.1. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5695'>#5695</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para gperf-3.2.1. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5695'>#5695</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to diffutils-3.12. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5696'>#5696</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para diffutils-3.12. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5696'>#5696</ulink>."
+
+#, xml-text
+#~ msgid "2025-04-01"
+#~ msgstr "2025-04-01"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to vim-9.1.1263. Addresses <ulink url='&lfs-ticket-"
+#~ "root;4500'>#4500</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para vim-9.1.1263. Endereça <ulink url='&lfs-ticket-"
+#~ "root;4500'>#4500</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to iana-etc-20250328. Addresses <ulink url='&lfs-ticket-"
+#~ "root;5006'>#5006</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para iana-etc-20250328. Endereça <ulink url='&lfs-"
+#~ "ticket-root;5006'>#5006</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to xz-5.8.0. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5684'>#5684</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para xz-5.8.0. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5684'>#5684</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to util-linux-2.41. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5648'>#5648</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para util-linux-2.41. Corrige <ulink url='&lfs-"
+#~ "ticket-root;5648'>#5648</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to shadow-4.17.4. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5678'>#5678</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para shadow-4.17.4. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5678'>#5678</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to setuptools-78.1.0. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5676'>#5676</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para setuptools-78.1.0. Corrige <ulink url='&lfs-"
+#~ "ticket-root;5676'>#5676</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to patch-2.8. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5689'>#5689</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para patch-2.8. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5689'>#5689</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to mpfr-4.2.2. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5677'>#5677</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para mpfr-4.2.2. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5677'>#5677</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to kmod-34.2. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5688'>#5688</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para kmod-34.2. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5688'>#5688</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to gdbm-1.25. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5679'>#5679</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para gdbm-1.25. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5679'>#5679</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to flit_core-3.12.0. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5683'>#5683</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para flit_core-3.12.0. Corrige <ulink url='&lfs-"
+#~ "ticket-root;5683'>#5683</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to expat-2.7.1. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5685'>#5685</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para expat-2.7.1. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5685'>#5685</ulink>."
+
+#, xml-text
+#~ msgid "2025-03-15"
+#~ msgstr "2025-03-15"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to vim-9.1.1202. Addresses <ulink url='&lfs-ticket-"
+#~ "root;4500'>#4500</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para vim-9.1.1202. Endereça <ulink url='&lfs-ticket-"
+#~ "root;4500'>#4500</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to iana-etc-20250304. Addresses <ulink url='&lfs-ticket-"
+#~ "root;5006'>#5006</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para iana-etc-20250304. Endereça <ulink url='&lfs-"
+#~ "ticket-root;5006'>#5006</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to sysklogd-2.7.1. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5668'>#5668</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para sysklogd-2.7.1. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5668'>#5668</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to setuptools-76.0.0. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5665'>#5665</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para setuptools-76.0.0. Corrige <ulink url='&lfs-"
+#~ "ticket-root;5665'>#5665</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to pkgconf-2.4.3. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5672'>#5672</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para pkgconf-2.4.3. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5672'>#5672</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to man-pages-6.13. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5673'>#5673</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para man-pages-6.13. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5673'>#5673</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to linux-6.13.7. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5664'>#5664</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para linux-6.13.7. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5664'>#5664</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to libcap-2.75. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5667'>#5667</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para libcap-2.75. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5667'>#5667</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to kmod-34.1. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5671'>#5671</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para kmod-34.1. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5671'>#5671</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to jinja2-3.1.6. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5670'>#5670</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para jinja2-3.1.6. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5670'>#5670</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to expat-2.7.0. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5675'>#5675</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para expat-2.7.0. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5675'>#5675</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to dbus-1.16.2. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5663'>#5663</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para dbus-1.16.2. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5663'>#5663</ulink>."
+
+#, xml-text
+#~ msgid "[bdubbs] - LFS-12.3 released."
+#~ msgstr "[bdubbs] - LFS-12.3 lançado."
+
+#, xml-text
+#~ msgid "2025-03-02"
+#~ msgstr "2025-03-02"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to zstd-1.5.7.  Fixes <ulink url='&lfs-ticket-"
+#~ "root;5652'>#5652</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para zstd-1.5.7.. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5652'>#5652</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to systemd-257.3.  Fixes <ulink url='&lfs-ticket-"
+#~ "root;5612'>#5612</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para systemd-257.3.. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5612'>#5612</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to shadow-4.17.3.  Fixes <ulink url='&lfs-ticket-"
+#~ "root;5660'>#5660</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para shadow-4.17.3.. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5660'>#5660</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to linux-6.13.4.  Fixes <ulink url='&lfs-ticket-"
+#~ "root;5647'>#5647</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para linux-6.13.4.. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5647'>#5647</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to flit_core-3.11.0.  Fixes <ulink url='&lfs-ticket-"
+#~ "root;5654'>#5654</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para flit_core-3.11.0.. Corrige <ulink url='&lfs-"
+#~ "ticket-root;5654'>#5654</ulink>."
+
+#, xml-text
+#~ msgid "2025-02-24"
+#~ msgstr "2025-02-24"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to man-pages-6.12.  Fixes <ulink url='&lfs-ticket-"
+#~ "root;5658'>#5658</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para man-pages-6.12.. Corrige <ulink url='&lfs-"
+#~ "ticket-root;5658'>#5658</ulink>."
+
+#, xml-text
+#~ msgid "2025-02-19"
+#~ msgstr "2025-02-19"
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Update to man-pages-6.11.  Fixes <ulink url='&lfs-ticket-"
+#~ "root;5646'>#5646</ulink>."
+#~ msgstr ""
+#~ "[xry111] - Atualização para man-pages-6.11.. Corrige <ulink url='&lfs-"
+#~ "ticket-root;5646'>#5646</ulink>."
+
+#, xml-text
+#~ msgid "2025-02-13"
+#~ msgstr "2025-02-13"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to vim-9.1.1106. Addresses <ulink url=\"&lfs-ticket-"
+#~ "root;4500\">#4500</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para vim-9.1.1106. Endereça <ulink url=\"&lfs-ticket-"
+#~ "root;4500\">#4500</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to sysvinit-3.14. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5641'>#5641</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para sysvinit-3.14. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5641'>#5641</ulink>."
+
+#, xml-text
+#~ msgid "2025-02-02"
+#~ msgstr "2025-02-02"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to vim-9.1.1071. Addresses <ulink url=\"&lfs-ticket-"
+#~ "root;4500\">#4500</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para vim-9.1.1071. Endereça <ulink url=\"&lfs-ticket-"
+#~ "root;4500\">#4500</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to linux-6.13.1. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5629'>#5629</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para linux-6.13.1. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5629'>#5629</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to xz-5.6.4. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5633'>#5633</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para xz-5.6.4. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5633'>#5633</ulink>."
+
+#, xml-text
+#~ msgid "2025-01-15"
+#~ msgstr "2025-01-15"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to vim-9.1.1016. Addresses <ulink url=\"&lfs-ticket-"
+#~ "root;4500\">#4500</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para vim-9.1.1016. Endereça <ulink url=\"&lfs-ticket-"
+#~ "root;4500\">#4500</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to util-linux-2.40.4. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5624'>#5624</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para util-linux-2.40.4. Corrige <ulink url='&lfs-"
+#~ "ticket-root;5624'>#5624</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to sysvinit-3.13. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5621'>#5621</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para sysvinit-3.13. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5621'>#5621</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to shadow-4.17.2. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5625'>#5625</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para shadow-4.17.2. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5625'>#5625</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to setuptools-75.8.0. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5622'>#5622</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para setuptools-75.8.0. Corrige <ulink url='&lfs-"
+#~ "ticket-root;5622'>#5622</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[renodr] - Update to libxcrypt-4.4.37. Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5618\">#5618</ulink>."
+#~ msgstr ""
+#~ "[renodr] - Atualização para libxcrypt-4.4.37. Corrige <ulink url=\"&lfs-"
+#~ "ticket-root;5618\">#5618</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[renodr] - Update to dbus-1.16.0. Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5609\">#5609</ulink>."
+#~ msgstr ""
+#~ "[renodr] - Atualização para dbus-1.16.0. Corrige <ulink url=\"&lfs-ticket-"
+#~ "root;5609\">#5609</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to iana-etc-20241220. Addresses <ulink url='&lfs-ticket-"
+#~ "root;5006'>#5006</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para iana-etc-20241220. Endereça <ulink url='&lfs-"
+#~ "ticket-root;5006'>#5006</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to texinfo-7.2. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5616'>#5616</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para texinfo-7.2. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5616'>#5616</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to sysvinit-3.12. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5615'>#5615</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para sysvinit-3.12. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5615'>#5615</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to meson-1.6.1. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5510'>#5610</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para meson-1.6.1. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5510'>#5610</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to linux-6.12.7. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5613'>#5613</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para linux-6.12.7. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5613'>#5613</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to kbd-2.7.1. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5608'>#5608</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para kbd-2.7.1. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5608'>#5608</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to jinja2-3.1.5 (Security Update). Fixes <ulink url='&lfs-"
+#~ "ticket-root;5614'>#5614</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para jinja2-3.1.5 (Atualização de Segurança). Corrige"
+#~ " <ulink url='&lfs-ticket-root;5614'>#5614</ulink>."
+
+#, xml-text
+#~ msgid "2024-12-15"
+#~ msgstr "2024-12-15"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to iana-etc-20241206. Addresses <ulink url='&lfs-ticket-"
+#~ "root;5006'>#5006</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para iana-etc-20241206. Endereça <ulink url='&lfs-"
+#~ "ticket-root;5006'>#5006</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to systemd-257. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5559'>#5559</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para systemd-257. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5559'>#5559</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to gettext-0.23. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5603'>#5603</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para gettext-0.23. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5603'>#5603</ulink>."
+
+#, xml-text
+#~ msgid "2024-12-01"
+#~ msgstr "2024-12-01"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to file-5.46. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5601'>#5601</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para file-5.46. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5601'>#5601</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to iproute2-6.12.0. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5597'>#5597</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para iproute2-6.12.0. Corrige <ulink url='&lfs-"
+#~ "ticket-root;5597'>#5597</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to libtool-2.5.4. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5598'>#5598</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para libtool-2.5.4. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5598'>#5598</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to linux-6.12.1. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5596'>#5586</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para linux-6.12.1. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5596'>#5586</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to setuptools-75.6.0 (Python Module). Fixes <ulink "
+#~ "url='&lfs-ticket-root;5599'>#5599</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para setuptools-75.6.0 (Módulo Python). Corrige "
+#~ "<ulink url='&lfs-ticket-root;5599'>#5599</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to wheel-0.45.1 (Python Module). Fixes <ulink url='&lfs-"
+#~ "ticket-root;5600'>#5600</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para wheel-0.45.1 (Módulo Python). Corrige <ulink "
+#~ "url='&lfs-ticket-root;5600'>#5600</ulink>."
+
+#, xml-text
+#~ msgid "2024-11-15"
+#~ msgstr "2024-11-15"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to vim-9.1.0866. Addresses <ulink url='&lfs-ticket-"
+#~ "root;4500'>#4500</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para vim-9.1.0866. Endereça <ulink url='&lfs-ticket-"
+#~ "root;4500'>#4500</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to iana-etc-20241024. Addresses <ulink url='&lfs-ticket-"
+#~ "root;5006'>#5006</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para iana-etc-20241024. Endereça <ulink url='&lfs-"
+#~ "ticket-root;5006'>#5006</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to setuptools-75.5.0 (Python Module). Fixes <ulink "
+#~ "url='&lfs-ticket-root;5595'>#5595</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para setuptools-75.5.0 (Módulo Python). Corrige "
+#~ "<ulink url='&lfs-ticket-root;5595'>#5595</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to linux-6.11.8. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5592'>#5582</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para linux-6.11.8. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5592'>#5582</ulink>."
+
+#, xml-text
+#~ msgid "2024-11-08"
+#~ msgstr "2024-11-08"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to flit_core-3.10.1. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5589'>#5589</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para flit_core-3.10.1. Corrige <ulink url='&lfs-"
+#~ "ticket-root;5589'>#5589</ulink>."
+
+#, xml-text
+#~ msgid "2024-10-25"
+#~ msgstr "2024-10-25"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to linux-6.11.6. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5588'>#5588</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para linux-6.11.6. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5588'>#5588</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to setuptools-75.3.0. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5585'>#5585</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para setuptools-75.3.0. Corrige <ulink url='&lfs-"
+#~ "ticket-root;5585'>#5585</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to iana-etc-20241015. Addresses <ulink url='&lfs-ticket-"
+#~ "root;5006'>#5006</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para iana-etc-20241015. Endereça <ulink url='&lfs-"
+#~ "ticket-root;5006'>#5006</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to vim-9.1.0813. Addresses <ulink url='&lfs-ticket-"
+#~ "root;4500'>#4500</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para vim-9.1.0813. Endereça <ulink url='&lfs-ticket-"
+#~ "root;4500'>#4500</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to xz-5.6.3. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5572'>#5572</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para xz-5.6.3. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5572'>#5572</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to sysvinit-3.11. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5581'>#5581</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para sysvinit-3.11. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5581'>#5581</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to setuptools-75.2.0. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5577'>#5577</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para setuptools-75.2.0. Corrige <ulink url='&lfs-"
+#~ "ticket-root;5577'>#5577</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to Python3-3.13.0. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5575'>#5575</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para Python3-3.13.0. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5575'>#5575</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to openssl-3.4.0. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5582'>#5582</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para openssl-3.4.0. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5582'>#5582</ulink>."
+
+#, xml-text
+#~ msgid "2024-10-03"
+#~ msgstr "2024-10-03"
+
+#, xml-text
+#~ msgid "[bdubbs] - Revert back to tcl8.6.15."
+#~ msgstr "[bdubbs] - Reverter de volta para tcl8.6.15."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to Python3-3.12.7. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5571'>#5571</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para Python3-3.12.7. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5571'>#5571</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to tcl9.0.0. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5570'>#5570</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para tcl9.0.0. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5570'>#5570</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to linux-6.11.1. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5556'>#5556</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para linux-6.11.1. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5556'>#5556</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to libtool-2.5.3. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5569'>#5569</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para libtool-2.5.3. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5569'>#5569</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to iproute2-6.11.0. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5561'>#5561</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para iproute2-6.11.0. Corrige <ulink url='&lfs-"
+#~ "ticket-root;5561'>#5561</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to bc-7.0.3. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5568'>#5568</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para bc-7.0.3. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5568'>#5568</ulink>."
+
+#, xml-text
+#~ msgid "2024-09-20"
+#~ msgstr "2024-09-20"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to vim-9.1.0738. Addresses <ulink url='&lfs-ticket-"
+#~ "root;4500'>#4500</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para vim-9.1.0738. Endereça <ulink url='&lfs-ticket-"
+#~ "root;4500'>#4500</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to tcl8.6.15. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5562'>#5562</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para tcl8.6.15. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5562'>#5562</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to sysklogd-2.6.2. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5557'>#5557</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para sysklogd-2.6.2. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5557'>#5557</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to setuptools-75.1.0. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5560'>#5560</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para setuptools-75.1.0. Corrige <ulink url='&lfs-"
+#~ "ticket-root;5560'>#5560</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to meson-1.5.2. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5566'>#5566</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para meson-1.5.2. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5566'>#5566</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to iana-etc-20240912. Addresses <ulink url='&lfs-ticket-"
+#~ "root;5006'>#5006</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para iana-etc-20240912. Endereça <ulink url='&lfs-"
+#~ "ticket-root;5006'>#5006</ulink>."
+
+#, xml-text
+#~ msgid "2024-09-07"
+#~ msgstr "2024-09-07"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to tzdata-2024b. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5554'>#5554</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para tzdata-2024b. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5554'>#5554</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to setuptools-74.1.2. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5546'>#5546</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para setuptools-74.1.2. Corrige <ulink url='&lfs-"
+#~ "ticket-root;5546'>#5546</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to python3-3.12.6. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5555'>#5555</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para python3-3.12.6. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5555'>#5555</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to openssl-3.3.2. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5552'>#5552</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para openssl-3.3.2. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5552'>#5552</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to man-db-2.13.0. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5550'>#5550</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para man-db-2.13.0. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5550'>#5550</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to linux-6.10.8. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5545'>#5545</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para linux-6.10.8. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5545'>#5545</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to libpipeline-1.5.8. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5548'>#5548</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para libpipeline-1.5.8. Corrige <ulink url='&lfs-"
+#~ "ticket-root;5548'>#5548</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to expat-2.6.3. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5553'>#5553</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para expat-2.6.3. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5553'>#5553</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to bc-7.0.1. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5547'>#5547</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para bc-7.0.1. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5547'>#5547</ulink>."
+
+#, xml-text
+#~ msgid "2024-09-01"
+#~ msgstr "2024-09-01"
+
+#, xml-text
+#~ msgid "[bdubbs] - LFS-12.2 released."
+#~ msgstr "[bdubbs] - LFS-12.2 lançado."
+
+#, xml-text
+#~ msgid "2024-08-23"
+#~ msgstr "2024-08-23"
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Update to lfs-bootscripts-20240825.  Only trivial non-functional "
+#~ "changes."
+#~ msgstr ""
+#~ "[xry111] - Atualização para lfs-bootscripts-20240825. Somente mudanças "
+#~ "triviais não funcionais."
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Update to lfs-bootscripts-20240823, to fix an issue causing VT "
+#~ "2-6 not affected by the FONT= setting in /etc/sysconfig/console."
+#~ msgstr ""
+#~ "[xry111] - Atualização para lfs-bootscripts-20240823, para corrigir um "
+#~ "problema causante de Terminal Virtual 2-6 não afetados pela configuração "
+#~ "FONT= em /etc/sysconfig/console."
+
+#, xml-text
+#~ msgid "2024-08-17"
+#~ msgstr "2024-08-17"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to setuptools-72.2.0. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5542'>#5542</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para setuptools-72.2.0. Corrige <ulink url='&lfs-"
+#~ "ticket-root;5542'>#5542</ulink>."
+
+#, xml-text
+#~ msgid "2024-08-15"
+#~ msgstr "2024-08-15"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to linux-6.10.4. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5539'>#5539</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para linux-6.10.4. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5539'>#5539</ulink>."
+
+#, xml-text
+#~ msgid "2024-08-05"
+#~ msgstr "2024-08-05"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to iana-etc-20240801. Addresses <ulink url='&lfs-ticket-"
+#~ "root;5006'>#5006</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para iana-etc-20240801. Endereça <ulink url='&lfs-"
+#~ "ticket-root;5006'>#5006</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to wheel-0.44.0. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5536'>#5536</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para wheel-0.44.0. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5536'>#5536</ulink>."
+
+#, xml-text
+#~ msgid "2024-08-01"
+#~ msgstr "2024-08-01"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to linux-6.10.2. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5521'>#5521</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para linux-6.10.2. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5521'>#5521</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to meson-1.5.1. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5527'>#5527</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para meson-1.5.1. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5527'>#5527</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to setuptools-72.1.0. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5531'>#5531</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para setuptools-72.1.0. Corrige <ulink url='&lfs-"
+#~ "ticket-root;5531'>#5531</ulink>."
+
+#, xml-text
+#~ msgid "2024-07-15"
+#~ msgstr "2024-07-15"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to iana-etc-20240701. Addresses <ulink url='&lfs-ticket-"
+#~ "root;5006'>#5006</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para iana-etc-20240701. Endereça <ulink url='&lfs-"
+#~ "ticket-root;5006'>#5006</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to vim-9.1.0580. Addresses <ulink url='&lfs-ticket-"
+#~ "root;4500'>#4500</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para vim-9.1.0580. Endereça <ulink url='&lfs-ticket-"
+#~ "root;4500'>#4500</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to setuptools-70.3.0. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5514'>#5514</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para setuptools-70.3.0. Corrige <ulink url='&lfs-"
+#~ "ticket-root;5514'>#5514</ulink>."
+
+#, xml-text
+#~ msgid "2024-07-01"
+#~ msgstr "2024-07-01"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update lfs-bootscripts to only output escape sequences to a "
+#~ "terminal."
+#~ msgstr ""
+#~ "[bdubbs] - Atualizar lfs-bootscripts para gerar somente sequências de escape"
+#~ " para um terminal."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to bc-6.7.6. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5506'>#5506</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para bc-6.7.6. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5506'>#5506</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to man-pages-6.9.1. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5507'>#5507</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para man-pages-6.9.1. Corrige <ulink url='&lfs-"
+#~ "ticket-root;5507'>#5507</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to sysklogd-2.5.2. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5509'>#5509</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para sysklogd-2.5.2. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5509'>#5509</ulink>."
+
+#, xml-text
+#~ msgid "2024-06-15"
+#~ msgstr "2024-06-15"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to iana-etc-20240607. Addresses <ulink url='&lfs-ticket-"
+#~ "root;5006'>#5006</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para iana-etc-20240607. Endereça <ulink url='&lfs-"
+#~ "ticket-root;5006'>#5006</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to python3-3.12.4. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5502'>#5502</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para python3-3.12.4. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5502'>#5502</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to openssl-3.3.1 (Security fix). Fixes <ulink url='&lfs-"
+#~ "ticket-root;5500'>#5500</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para openssl-3.3.1 (correção de segurança). Corrige "
+#~ "<ulink url='&lfs-ticket-root;5500'>#5500</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to linux-6.9.4. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5505'>#5505</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para linux-6.9.4. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5505'>#5505</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to findutils-4.10.0. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5499'>#5499</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para findutils-4.10.0. Corrige <ulink url='&lfs-"
+#~ "ticket-root;5499'>#5499</ulink>."
+
+#, xml-text
+#~ msgid "2024-05-31"
+#~ msgstr "2024-05-31"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to meson-1.4.1. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5498'>#5498</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para meson-1.4.1. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5498'>#5498</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Add linux-6.9.x compatibility instructions to <phrase "
+#~ "revision=\"systemd\">systemd</phrase> <phrase "
+#~ "revision=\"sysv\">udev</phrase>.  Fixes <ulink url='&lfs-ticket-"
+#~ "root;5496'>#5496</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Adicionar instruções de compatibilidade do linux-6.9.x ao <phrase"
+#~ " revision=\"systemd\">systemd</phrase> <phrase "
+#~ "revision=\"sysv\">udev</phrase>. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5496'>#5496</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to man-pages-6.8. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5494'>#5494</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para man-pages-6.8. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5494'>#5494</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to linux-6.9.3. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5491'>#5491</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para linux-6.9.3. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5491'>#5491</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to libcap-2.70. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5493'>#5493</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para libcap-2.70. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5493'>#5493</ulink>."
+
+#, xml-text
+#~ msgid "2024-05-13"
+#~ msgstr "2024-05-13"
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Synchronize coreutils i18n patch from Fedora to fix a build "
+#~ "failure on 32-bit x86 and an alarming compiler warning on both 32-bit x86 "
+#~ "and x86_64 with GCC 14.1 or later."
+#~ msgstr ""
+#~ "[xry111] - Sincronizar o remendo i18n do coreutils oriundo do Fedora para "
+#~ "corrigir uma falha de construção no x86 de 32 bits e um aviso alarmante do "
+#~ "compilador em ambos, x86 de 32 bits e x86_64, com GCC 14.1 ou posterior."
+
+#, xml-text
+#~ msgid "2024-05-11"
+#~ msgstr "2024-05-11"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to vim-9.1.0405. Addresses <ulink url='&lfs-ticket-"
+#~ "root;4500'>#4500</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para vim-9.1.0405. Endereça <ulink url='&lfs-ticket-"
+#~ "root;4500'>#4500</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to jinja2-3.1.4 (Python module). Fixes <ulink url='&lfs-"
+#~ "ticket-root;5485'>#5485</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para jinja2-3.1.4 (módulo Python). Corrige <ulink "
+#~ "url='&lfs-ticket-root;5485'>#5485</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to iana-etc-20240502. Addresses <ulink url='&lfs-ticket-"
+#~ "root;5006'>#5006</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para iana-etc-20240502. Endereça <ulink url='&lfs-"
+#~ "ticket-root;5006'>#5006</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to gcc-14.1.0. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5486'>#5486</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para gcc-14.1.0. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5486'>#5486</ulink>."
+
+#, xml-text
+#~ msgid "2024-05-01"
+#~ msgstr "2024-05-01"
+
+#, xml-text
+#~ msgid "2024-04-16"
+#~ msgstr "2024-04-16"
+
+#, xml-text
+#~ msgid "[bdubbs] - Make minor change to ifup script output text."
+#~ msgstr ""
+#~ "[bdubbs] - Fazer pequenas mudanças no texto da saída gerada do conjunto de "
+#~ "comandos sequenciais ifup."
+
+#, xml-text
+#~ msgid "2024-04-15"
+#~ msgstr "2024-04-15"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to setuptools-69.5.1. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5478'>#5478</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para setuptools-69.5.1. Corrige <ulink url='&lfs-"
+#~ "ticket-root;5478'>#5478</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to python3-3.12.3. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5476'>#5476</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para python3-3.12.3. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5476'>#5476</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to linux-6.8.6. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5472'>#5472</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para linux-6.8.6. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5472'>#5472</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to iana-etc-20240412. Addresses <ulink url='&lfs-ticket-"
+#~ "root;5006'>#5006</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para iana-etc-20240412. Endereça <ulink url='&lfs-"
+#~ "ticket-root;5006'>#5006</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to vim-9.1.0330. Addresses <ulink url='&lfs-ticket-"
+#~ "root;4500'>#4500</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para vim-9.1.0330. Endereça <ulink url='&lfs-ticket-"
+#~ "root;4500'>#4500</ulink>."
+
+#, xml-text
+#~ msgid "2024-03-31"
+#~ msgstr "2024-03-31"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to util-linux-2.40. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5430'>#5430</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para util-linux-2.40. Corrige <ulink url='&lfs-"
+#~ "ticket-root;5430'>#5430</ulink>."
+
+#, xml-text
+#~ msgid "2024-03-29"
+#~ msgstr "2024-03-29"
+
+#, xml-text
+#~ msgid "[bdubbs] - Revert to xz-5.4.6 due to upstream compromise."
+#~ msgstr ""
+#~ "[bdubbs] - Reverter para xz-5.4.6 devido a comprometimento do fluxo de "
+#~ "desenvolvimento."
+
+#, xml-text
+#~ msgid ""
+#~ "[timtas] - Update to sysvinit-3.09. Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5466\">#5466</ulink>."
+#~ msgstr ""
+#~ "[timtas] - Atualização para sysvinit-3.09. Corrige <ulink url=\"&lfs-ticket-"
+#~ "root;5466\">#5466</ulink>."
+
+#, xml-text
+#~ msgid "2024-03-19"
+#~ msgstr "2024-03-19"
+
+#, xml-text
+#~ msgid ""
+#~ "[renodr] - Update to iproute2-6.8.0. Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5458\">#5458</ulink>."
+#~ msgstr ""
+#~ "[renodr] - Atualização para iproute2-6.8.0. Corrige <ulink url=\"&lfs-"
+#~ "ticket-root;5458\">#5458</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[renodr] - Update to Linux-6.8.1. Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5453\">#5453</ulink>."
+#~ msgstr ""
+#~ "[renodr] - Atualização para Linux-6.8.1. Corrige <ulink url=\"&lfs-ticket-"
+#~ "root;5453\">#5453</ulink>."
+
+#, xml-text
+#~ msgid "2024-03-15"
+#~ msgstr "2024-03-15"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to meson-1.4.0. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5460'>#5460</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para meson-1.4.0. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5460'>#5460</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to psmisc-23.7. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5454'>#5454</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para psmisc-23.7. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5454'>#5454</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to kmod-32. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5455'>#5455</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para kmod-32. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5455'>#5455</ulink>."
+
+#, xml-text
+#~ msgid "2024-03-02"
+#~ msgstr "2024-03-02"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to shadow-4.14.6. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5450'>#5450</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para shadow-4.14.6. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5450'>#5450</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to setuptools-69.1.1. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5446'>#5446</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para setuptools-69.1.1. Corrige <ulink url='&lfs-"
+#~ "ticket-root;5446'>#5446</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to linux-6.7.7. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5444'>#5444</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para linux-6.7.7. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5444'>#5444</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to gettext-0.22.5. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5445'>#5445</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para gettext-0.22.5. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5445'>#5445</ulink>."
+
+#, xml-text
+#~ msgid "2024-03-01"
+#~ msgstr "2024-03-01"
+
+#, xml-text
+#~ msgid "[bdubbs] - LFS-12.1 released."
+#~ msgstr "[bdubbs] - LFS-12.1 lançado."
+
+#, xml-text
+#~ msgid "2024-02-12"
+#~ msgstr "2024-02-12"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to MarkupSafe-2.1.5 (Python module).  Fixes <ulink "
+#~ "url='&lfs-ticket-root;5431'>#5431</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para MarkupSafe-2.1.5 (módulo Python). Corrige <ulink"
+#~ " url='&lfs-ticket-root;5431'>#5431</ulink>."
+
+#, xml-text
+#~ msgid "2024-02-10"
+#~ msgstr "2024-02-10"
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Fix a bug in systemd breaking running systemd-analyze on an "
+#~ "instantiated systemd unit."
+#~ msgstr ""
+#~ "[xry111] - Corrigir um defeito no systemd que quebra systemd-analyze "
+#~ "executando em uma unidade instanciada do systemd."
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Update to tzdata-2024a.  Fixes <ulink url='&lfs-ticket-"
+#~ "root;5428'>#5428</ulink>."
+#~ msgstr ""
+#~ "[xry111] - Atualização para tzdata-2024a.. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5428'>#5428</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Update to glibc-2.39 (security fix).  Fixes <ulink url='&lfs-"
+#~ "ticket-root;5426'>#5426</ulink>."
+#~ msgstr ""
+#~ "[xry111] - Atualização para glibc-2.39 (correção de segurança). Corrige "
+#~ "<ulink url='&lfs-ticket-root;5426'>#5426</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Update to linux-6.7.3.  Fixes <ulink url='&lfs-ticket-"
+#~ "root;5427'>#5427</ulink>."
+#~ msgstr ""
+#~ "[xry111] - Atualização para linux-6.7.3.. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5427'>#5427</ulink>."
+
+#, xml-text
+#~ msgid "2024-02-01"
+#~ msgstr "2024-02-01"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to acl-2.3.2. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5421'>#5421</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para acl-2.3.2. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5421'>#5421</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update upstream fixes for readline-8.2. Fixes <ulink url='&lfs-"
+#~ "ticket-root;5420'>#5420</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Correções de atualização de desenvolvedor(a) para readline-8.2. "
+#~ "Corrige <ulink url='&lfs-ticket-root;5420'>#5420</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Apply upstream fix for bash-5.2.21. Fixes <ulink url='&lfs-"
+#~ "ticket-root;5420'>#5420</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Aplicar correções de desenvolvedor(a) para bash-5.2.21. Corrige "
+#~ "<ulink url='&lfs-ticket-root;5420'>#5420</ulink>."
+
+#, xml-text
+#~ msgid "2024-01-21"
+#~ msgstr "2024-01-21"
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Apply upstream fix for pkgconf-2.1.0 regression.  Fixes <ulink "
+#~ "url='&lfs-ticket-root;5414'>#5414</ulink>."
+#~ msgstr ""
+#~ "[xry111] - Aplicar correção de desenvolvedor(a) para a regressão do "
+#~ "&quot;pkgconf-2.1.0&quot;. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5414'>#5414</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Update to jinja2-3.1.3 (security fix).  Fixes <ulink url='&lfs-"
+#~ "ticket-root;5411'>#5411</ulink>."
+#~ msgstr ""
+#~ "[xry111] - Atualizar para &quot;jinja2-3.1.3&quot; (correção de segurança). "
+#~ "Corrige <ulink url='&lfs-ticket-root;5411'>#5411</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Update to bc-6.7.5.  Fixes <ulink url='&lfs-ticket-"
+#~ "root;5408'>#5408</ulink>."
+#~ msgstr ""
+#~ "[xry111] - Atualização para bc-6.7.5.. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5408'>#5408</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Update to attr-2.5.2.  Fixes <ulink url='&lfs-ticket-"
+#~ "root;5412'>#5412</ulink>."
+#~ msgstr ""
+#~ "[xry111] - Atualização para attr-2.5.2.. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5412'>#5412</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Update to ncurses-6.4-20230520 (security fix).  Fixes <ulink "
+#~ "url='&lfs-ticket-root;5416'>#5416</ulink>."
+#~ msgstr ""
+#~ "[xry111] - Atualizar para &quot;ncurses-6.4-20230520&quot; (correção de "
+#~ "segurança). Corrige <ulink url='&lfs-ticket-root;5416'>#5416</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Update to markupsafe-2.1.4.  Fixes <ulink url='&lfs-ticket-"
+#~ "root;5418'>#5418</ulink>."
+#~ msgstr ""
+#~ "[xry111] - Atualização para markupsafe-2.1.4.. Corrige <ulink url='&lfs-"
+#~ "ticket-root;5418'>#5418</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Update to iproute2-6.7.0.  Fixes <ulink url='&lfs-ticket-"
+#~ "root;5410'>#5410</ulink>."
+#~ msgstr ""
+#~ "[xry111] - Atualização para iproute2-6.7.0.. Corrige <ulink url='&lfs-"
+#~ "ticket-root;5410'>#5410</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Update to vim-9.1.0041.  Addresses <ulink url='&lfs-ticket-"
+#~ "root;4500'>#4500</ulink>."
+#~ msgstr ""
+#~ "[xry111] - Atualização para &quot;vim-9.1.0041&quot;. Endereça <ulink "
+#~ "url='&lfs-ticket-root;4500'>#4500</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Update to iana-etc-20240117.  Addresses <ulink url='&lfs-ticket-"
+#~ "root;5006'>#5006</ulink>."
+#~ msgstr ""
+#~ "[xry111] - Atualização para &quot;iana-etc-20240117&quot;. Endereça <ulink "
+#~ "url='&lfs-ticket-root;5006'>#5006</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Update to shadow-4.14.3.  Fixes <ulink url='&lfs-ticket-"
+#~ "root;5413'>#5413</ulink>."
+#~ msgstr ""
+#~ "[xry111] - Atualização para shadow-4.14.3.. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5413'>#5413</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Fix CVE-2024-0684 for coreutils-9.4.  Fixes <ulink url=\"&lfs-"
+#~ "ticket-root;5417\">#5417</ulink>."
+#~ msgstr ""
+#~ "[xry111] - Corrigir &quot;CVE-2024-0684&quot; para o "
+#~ "&quot;coreutils-9.4&quot;. Corrige <ulink url=\"&lfs-ticket-"
+#~ "root;5417\">#5417</ulink>."
+
+#, xml-text
+#~ msgid "2024-01-18"
+#~ msgstr "2024-01-18"
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Edit a ncurses header to always use the wide-character ABI "
+#~ "compatible with libncursesw.so because we are faking the 8-bit libncurses.so"
+#~ " with it.  Fixes <ulink url=\"&lfs-ticket-root;5415\">#5415</ulink>."
+#~ msgstr ""
+#~ "[xry111] - Editar um cabeçalho do &quot;ncurses&quot; para sempre usar a "
+#~ "&quot;ABI&quot; de caracteres largos compatível com "
+#~ "&quot;libncursesw.so&quot; porque estamos falseando a "
+#~ "&quot;libncurses.so&quot; de 8 bits com ele. Corrige <ulink url=\"&lfs-"
+#~ "ticket-root;5415\">#5415</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[renodr] - Fix the definition of the C.UTF-8 locale. Fixes <ulink "
+#~ "url=\"&lfs-ticket-root;5409\">#5409</ulink>."
+#~ msgstr ""
+#~ "[renodr] - Corrigir a definição da localidade &quot;C.UTF-8&quot;. Corrige "
+#~ "<ulink url=\"&lfs-ticket-root;5409\">#5409</ulink>."
+
+#, xml-text
+#~ msgid "2023-12-31"
+#~ msgstr "2023-12-31"
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Add --enable-default-hash-style=gnu configuring binutils.  Fixes "
+#~ "<ulink url='&lfs-ticket-root;5401'>#5401</ulink>."
+#~ msgstr ""
+#~ "[xry111] - Adicionar &quot;--enable-default-hash-style=gnu&quot; "
+#~ "configurando o &quot;binutils&quot;. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5401'>#5401</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Fix CVE-2023-7008 for systemd-255.  Fixes <ulink url='&lfs-"
+#~ "ticket-root;5405'>#5405</ulink>."
+#~ msgstr ""
+#~ "[xry111] - Corrigir &quot;CVE-2023-7008&quot; para o "
+#~ "&quot;systemd-255&quot;. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5405'>#5405</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Update to iana-etc-20231205.  Addresses <ulink url='&lfs-ticket-"
+#~ "root;5006'>#5006</ulink>."
+#~ msgstr ""
+#~ "[xry111] - Atualização para &quot;iana-etc-20231205&quot;. Endereça <ulink "
+#~ "url='&lfs-ticket-root;5006'>#5006</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Update to tzdata-2023d.  Fixes <ulink url='&lfs-ticket-"
+#~ "root;5399'>#5399</ulink>."
+#~ msgstr ""
+#~ "[xry111] - Atualização para tzdata-2023d.. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5399'>#5399</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Update to linux-6.6.8.  Fixes <ulink url='&lfs-ticket-"
+#~ "root;5397'>#5397</ulink>."
+#~ msgstr ""
+#~ "[xry111] - Atualização para linux-6.6.8.. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5397'>#5397</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Update to meson-1.3.1.  Fixes <ulink url='&lfs-ticket-"
+#~ "root;5402'>#5402</ulink>."
+#~ msgstr ""
+#~ "[xry111] - Atualização para meson-1.3.1.. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5402'>#5402</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Update to grub-2.12.  Fixes <ulink url='&lfs-ticket-"
+#~ "root;5396'>#5396</ulink>."
+#~ msgstr ""
+#~ "[xry111] - Atualização para grub-2.12.. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5396'>#5396</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Update to inetutils-2.5.  Fixes <ulink url='&lfs-ticket-"
+#~ "root;5404'>#5404</ulink>."
+#~ msgstr ""
+#~ "[xry111] - Atualização para inetutils-2.5.. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5404'>#5404</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Update to setuptools-69.0.3.  Fixes <ulink url='&lfs-ticket-"
+#~ "root;5400'>#5400</ulink>."
+#~ msgstr ""
+#~ "[xry111] - Atualização para setuptools-69.0.3.. Corrige <ulink url='&lfs-"
+#~ "ticket-root;5400'>#5400</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Update to xml-parser-2.47.  Fixes <ulink url='&lfs-ticket-"
+#~ "root;5403'>#5403</ulink>."
+#~ msgstr ""
+#~ "[xry111] - Atualização para xml-parser-2.47.. Corrige <ulink url='&lfs-"
+#~ "ticket-root;5403'>#5403</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Update to vim-9.0.2189.  Addresses <ulink url='&lfs-ticket-"
+#~ "root;4500'>#4500</ulink>."
+#~ msgstr ""
+#~ "[xry111] - Atualização para &quot;vim-9.0.2189&quot;. Endereça <ulink "
+#~ "url='&lfs-ticket-root;4500'>#4500</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Update to autoconf-2.72.  Fixes <ulink url='&lfs-ticket-"
+#~ "root;5398'>#5398</ulink>."
+#~ msgstr ""
+#~ "[xry111] - Atualização para autoconf-2.72.. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5398'>#5398</ulink>."
+
+#, xml-text
+#~ msgid "2023-12-16"
+#~ msgstr "2023-12-16"
+
+#, xml-text
+#~ msgid "2023-12-14"
+#~ msgstr "2023-12-14"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to util-linux v2.39.3. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5388'>#5388</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para &quot;util-linux v2.39.3&quot;. Corrige <ulink "
+#~ "url='&lfs-ticket-root;5388'>#5388</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Reformat util-linux configure parameters.  Fixes <ulink "
+#~ "url='&lfs-ticket-root;5395'>#5395</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Reformatação dos parâmetros de configuração do &quot;util-"
+#~ "linux&quot;. Corrige <ulink url='&lfs-ticket-root;5395'>#5395</ulink>."
+
+#, xml-text
+#~ msgid "2023-12-04"
+#~ msgstr "2023-12-04"
+
+#, xml-text
+#~ msgid ""
+#~ "[thomas] - Modify commands for install Python docs to avoid too restrictive "
+#~ "permissions on the files and dirs."
+#~ msgstr ""
+#~ "[thomas] - Modificar os comandos para instalar documentos do "
+#~ "&quot;Python&quot; para evitar permissões muito restritivas nos arquivos e "
+#~ "diretórios."
+
+#, xml-text
+#~ msgid "2023-12-01"
+#~ msgstr "2023-12-01"
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Restore NIC naming based on physical system characteristics.  "
+#~ "Fixes <ulink url='&lfs-ticket-root;5386'>#5386</ulink>."
+#~ msgstr ""
+#~ "[xry111] - Restaurar a nomenclatura da &quot;NIC&quot; baseada nas "
+#~ "características físicas do sistema. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5386'>#5386</ulink>."
+
+#, xml-text
+#~ msgid "2023-11-30"
+#~ msgstr "2023-11-30"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to vim-9.0.2136. Addresses <ulink url='&lfs-ticket-"
+#~ "root;4500'>#4500</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para \"vim-9.0.2136\". Endereça <ulink url='&lfs-"
+#~ "ticket-root;4500'>#4500</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to iana-etc-20231117. Addresses <ulink url='&lfs-ticket-"
+#~ "root;5006'>#5006</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para &quot;iana-etc-20231117&quot;. Endereça <ulink "
+#~ "url='&lfs-ticket-root;5006'>#5006</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to bc-6.7.3.  Fixes <ulink url='&lfs-ticket-"
+#~ "root;5385'>#5385</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para bc-6.7.3.. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5385'>#5385</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to wheel-0.42.0 (Python Module).  Fixes <ulink url='&lfs-"
+#~ "ticket-root;5384'>#5384</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para &quot;wheel-0.42.0&quot; (Módulo "
+#~ "&quot;Python&quot;). Corrige <ulink url='&lfs-ticket-"
+#~ "root;5384'>#5384</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to readline patches 002 through 007.  Fixes <ulink "
+#~ "url='&lfs-ticket-root;5381'>#5381</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para os remendos do &quot;Readline&quot; 002 a 007. "
+#~ "Corrige <ulink url='&lfs-ticket-root;5381'>#5381</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to linux-6.6.3.  Fixes <ulink url='&lfs-ticket-"
+#~ "root;5378'>#5378</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para linux-6.6.3.. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5378'>#5378</ulink>."
+
+#, xml-text
+#~ msgid "2023-11-13"
+#~ msgstr "2023-11-13"
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Update to elfutils-0.190.  Fixes <ulink url='&lfs-ticket-"
+#~ "root;5373'>#5373</ulink>."
+#~ msgstr ""
+#~ "[xry111] - Atualização para elfutils-0.190.. Corrige <ulink url='&lfs-"
+#~ "ticket-root;5373'>#5373</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Update to vim-9.0.2103.  Addresses <ulink url='&lfs-ticket-"
+#~ "root;4500'>#4500</ulink>."
+#~ msgstr ""
+#~ "[xry111] - Atualização para &quot;vim-9.0.2103&quot;. Endereça <ulink "
+#~ "url='&lfs-ticket-root;4500'>#4500</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Update to linux-6.6.1.  Fixes <ulink url='&lfs-ticket-"
+#~ "root;5369'>#5369</ulink>."
+#~ msgstr ""
+#~ "[xry111] - Atualização para linux-6.6.1.. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5369'>#5369</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Update to xz-5.4.5.  Fixes <ulink url='&lfs-ticket-"
+#~ "root;5371'>#5371</ulink>."
+#~ msgstr ""
+#~ "[xry111] - Atualização para xz-5.4.5.. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5371'>#5371</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Update to iana-etc-20231107.  Addresses <ulink url='&lfs-ticket-"
+#~ "root;5006'>#5006</ulink>."
+#~ msgstr ""
+#~ "[xry111] - Atualização para &quot;iana-etc-20231107&quot;. Endereça <ulink "
+#~ "url='&lfs-ticket-root;5006'>#5006</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Update to gawk-5.3.0.  Fixes <ulink url='&lfs-ticket-"
+#~ "root;5372'>#5372</ulink>."
+#~ msgstr ""
+#~ "[xry111] - Atualização para gawk-5.3.0.. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5372'>#5372</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Update to bash-5.2.21.  Fixes <ulink url='&lfs-ticket-"
+#~ "root;5375'>#5375</ulink>."
+#~ msgstr ""
+#~ "[xry111] - Atualização para bash-5.2.21.. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5375'>#5375</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Update to iproute2-6.6.0.  Fixes <ulink url='&lfs-ticket-"
+#~ "root;5374'>#5374</ulink>."
+#~ msgstr ""
+#~ "[xry111] - Atualização para iproute2-6.6.0.. Corrige <ulink url='&lfs-"
+#~ "ticket-root;5374'>#5374</ulink>."
+
+#, xml-text
+#~ msgid "2023-11-01"
+#~ msgstr "2023-11-01"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to iana-etc-20231019. Addresses <ulink url='&lfs-ticket-"
+#~ "root;5006'>#5006</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para &quot;iana-etc-20231019&quot;. Endereça <ulink "
+#~ "url='&lfs-ticket-root;5006'>#5006</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to meson-1.2.3. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5366'>#5366</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para meson-1.2.3. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5366'>#5366</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to linux-6.5.9. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5365'>#5365</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para linux-6.5.9. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5365'>#5365</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Add setuptools-68.2.2. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5358'>#5358</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Adicionar &quot;setuptools-68.2.2&quot;. Corrige <ulink "
+#~ "url='&lfs-ticket-root;5358'>#5358</ulink>."
+
+#, xml-text
+#~ msgid "2023-10-15"
+#~ msgstr "2023-10-15"
+
+#, xml-text
+#~ msgid "2023-10-03"
+#~ msgstr "2023-10-03"
+
+#, xml-text
+#~ msgid "[xry111] - Update Glibc upstream fixes patch to fix CVE-2023-4911."
+#~ msgstr ""
+#~ "[xry111] - Remendo de atualização de correções de desenvolvedor(a) da "
+#~ "\"Glibc\" para corrigir \"CVE-2023-4911\"."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Disable building nscd in glibc. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5349'>#5349</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Desabilitar a construção do \"nscd\" na \"glibc\". Corrige <ulink"
+#~ " url='&lfs-ticket-root;5349'>#5349</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to iana-etc-20230929. Addresses <ulink url='&lfs-ticket-"
+#~ "root;5006'>#5006</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para \"iana-etc-20230929\". Endereça <ulink "
+#~ "url='&lfs-ticket-root;5006'>#5006</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to vim-9.0.1968. Addresses <ulink url='&lfs-ticket-"
+#~ "root;4500'>#4500</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para \"vim-9.0.1968\". Endereça <ulink url='&lfs-"
+#~ "ticket-root;4500'>#4500</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to openssl-3.1.3. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5350'>#5350</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para openssl-3.1.3. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5350'>#5350</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to linux-6.5.5. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5352'>#5352</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para linux-6.5.5. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5352'>#5352</ulink>."
+
+#, xml-text
+#~ msgid "2023-09-24"
+#~ msgstr "2023-09-24"
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Update Glibc upstream fixes patch to plug a memory leak "
+#~ "introduced by the security fix."
+#~ msgstr ""
+#~ "[xry111] - Atualizar a \" Glibc\"; remendo de correções do(a) "
+#~ "desenvolvedor(a) para corrigir um vazamento de memória introduzido pela "
+#~ "correção de segurança."
+
+#, xml-text
+#~ msgid "2023-09-17"
+#~ msgstr "2023-09-17"
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Update to linux-6.5.3.  Fixes <ulink url='&lfs-ticket-"
+#~ "root;5343'>#5343</ulink>."
+#~ msgstr ""
+#~ "[xry111] - Atualização para linux-6.5.3.. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5343'>#5343</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Update to iana-etc-20230912.  Addresses <ulink url='&lfs-ticket-"
+#~ "root;5006'>#5006</ulink>."
+#~ msgstr ""
+#~ "[xry111] - Atualização para \"iana-etc-20230912\". Endereça <ulink "
+#~ "url='&lfs-ticket-root;5006'>#5006</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Update to iproute2-6.5.0.  Fixes <ulink url='&lfs-ticket-"
+#~ "root;5342'>#5342</ulink>."
+#~ msgstr ""
+#~ "[xry111] - Atualização para iproute2-6.5.0.. Corrige <ulink url='&lfs-"
+#~ "ticket-root;5342'>#5342</ulink>."
+
+#, xml-text
+#~ msgid "2023-09-13"
+#~ msgstr "2023-09-13"
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Fix CVE-2023-4806 for Glibc-2.38.  Fixes <ulink url='&lfs-ticket-"
+#~ "root;5347'>#5347</ulink>."
+#~ msgstr ""
+#~ "[xry111] - Corrige \"CVE-2023-4806\" para \"Glibc-2.38\". Corrige <ulink "
+#~ "url='&lfs-ticket-root;5347'>#5347</ulink>."
+
+#, xml-text
+#~ msgid "2023-09-12"
+#~ msgstr "2023-09-12"
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Fix CVE-2023-4527 for Glibc-2.38.  Fixes <ulink url='&lfs-ticket-"
+#~ "root;5346'>#5346</ulink>."
+#~ msgstr ""
+#~ "[xry111] - Corrige \"CVE-2023-4527\" para \"Glibc-2.38\". Corrige <ulink "
+#~ "url='&lfs-ticket-root;5346'>#5346</ulink>."
+
+#, xml-text
+#~ msgid "2023-09-07"
+#~ msgstr "2023-09-07"
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Fix an issue in pkgconf-2.0.3 causing BLFS packages fail to "
+#~ "build.  Fixes <ulink url='&lfs-ticket-root;5341'>#5341</ulink>."
+#~ msgstr ""
+#~ "[xry111] - Corrigir um problema no \"pkgconf-2.0.3\" causando falha dos "
+#~ "pacotes do BLFS para construir. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5341'>#5341</ulink>."
+
+#, xml-text
+#~ msgid "2023-09-05"
+#~ msgstr "2023-09-05"
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Move pkgconf before binutils for binutils building system to "
+#~ "detect zstd properly.  Fixes <ulink url='&lfs-ticket-"
+#~ "root;5340'>#5340</ulink>."
+#~ msgstr ""
+#~ "[xry111] - Mover \"pkgconf\" para antes de \"binutils\" para o sistema de "
+#~ "construção do \"binutils\" detectar \"zstd\" adequadamente. Corrige <ulink "
+#~ "url='&lfs-ticket-root;5340'>#5340</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Update to linux-6.5.1.  Fixes <ulink url='&lfs-ticket-"
+#~ "root;5332'>#5332</ulink>."
+#~ msgstr ""
+#~ "[xry111] - Atualização para linux-6.5.1.. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5332'>#5332</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Update to pkgconf-2.0.3.  Fixes <ulink url='&lfs-ticket-"
+#~ "root;5339'>#5339</ulink>."
+#~ msgstr ""
+#~ "[xry111] - Atualização para pkgconf-2.0.3.. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5339'>#5339</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Update to dbus-1.14.10.  Fixes <ulink url='&lfs-ticket-"
+#~ "root;5337'>#5337</ulink>."
+#~ msgstr ""
+#~ "[xry111] - Atualização para dbus-1.14.10.. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5337'>#5337</ulink>."
+
+#, xml-text
+#~ msgid "2023-09-04"
+#~ msgstr "2023-09-04"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Move caution regarding building by mixing different version of "
+#~ "LFS to General Compilation Instructions. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5338'>#5338</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Mover aviso relativo a construir misturando versão diferente do "
+#~ "LFS para Instruções Gerais de Compilação. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5338'>#5338</ulink>."
+
+#, xml-text
+#~ msgid "2023-09-02"
+#~ msgstr "2023-09-02"
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Add --no-cache-dir option for pip3 wheel commands.  Addresses "
+#~ "<ulink url='&blfs-ticket-root;18466'>BLFS #18466</ulink>."
+#~ msgstr ""
+#~ "[xry111] - Adicionar opção \"--no-cache-dir\" para comandos \"wheel\" do "
+#~ "\"pip3\". Endereça <ulink url='&blfs-ticket-root;18466'>BLFS #18466</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to vim-9.0.1837. Addresses <ulink url='&lfs-ticket-"
+#~ "root;4500'>#4500</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para vim-9.0.1837. Endereça <ulink url='&lfs-ticket-"
+#~ "root;4500'>#4500</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to zlib-1.3. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5324'>#5324</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para zlib-1.3. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5324'>#5324</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to shadow-4.14.0. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5319'>#5319</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para shadow-4.14.0. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5319'>#5319</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to procps-ng-4.0.4 (security fix for 32-bit systems). "
+#~ "Fixes <ulink url='&lfs-ticket-root;5335'>#5335</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para procps-ng-4.0.4 (correção de segurança para "
+#~ "sistemas de 32 bits). Corrige <ulink url='&lfs-ticket-"
+#~ "root;5335'>#5335</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to pkgconf-2.0.2. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5323'>#5323</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para pkgconf-2.0.2. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5323'>#5323</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Specify the 'nobody-group' for systemd. Fixes <ulink url='&lfs-"
+#~ "ticket-root;5333'>#5333</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Especificar o grupo \"nobody\" para o \"systemd\". Corrige <ulink"
+#~ " url='&lfs-ticket-root;5333'>#5333</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Remove unused usb group. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5331'>#5331</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Remover grupo não usado \"usb\". Corrige <ulink url='&lfs-ticket-"
+#~ "root;5331'>#5331</ulink>."
+
+#, xml-text
+#~ msgid "2023-09-01"
+#~ msgstr "2023-09-01"
+
+#, xml-text
+#~ msgid "2023-08-18"
+#~ msgstr "2023-08-18"
+
+#, xml-text
+#~ msgid "[bdubbs] - Update to udev-lfs-20230818."
+#~ msgstr "[bdubbs] - Atualização para udev-lfs-20230818."
+
+#, xml-text
+#~ msgid "2023-08-15"
+#~ msgstr "2023-08-15"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Add a patch to fix a performance regression in glibc's "
+#~ "posix_memalign() function. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5315'>#5315</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Adicionar um remendo para corrigir uma regressão de desempenho na"
+#~ " função \"posix_memalign()\" da \"glibc\". Corrige <ulink url='&lfs-ticket-"
+#~ "root;5315'>#5315</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[rahul] - Update to pkgconf-2.0.1. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5316'>#5316</ulink>."
+#~ msgstr ""
+#~ "[rahul] - Atualização para pkgconf-2.0.1. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5316'>#5316</ulink>."
+
+#, xml-text
+#~ msgid "2023-08-07"
+#~ msgstr "2023-08-07"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to iana-etc-20230804.  Addresses <ulink url='&lfs-ticket-"
+#~ "root;5006'>#5006</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para iana-etc-20230804. Endereça <ulink url='&lfs-"
+#~ "ticket-root;5006'>#5006</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[rahul] - Update to pkgconf-2.0.0. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5310'>#5310</ulink>."
+#~ msgstr ""
+#~ "[rahul] - Atualização para pkgconf-2.0.0. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5310'>#5310</ulink>."
+
+#, xml-text
+#~ msgid "2023-08-01"
+#~ msgstr "2023-08-01"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to gmp-6.3.0. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5301'>#5301</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para gmp-6.3.0. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5301'>#5301</ulink>."
+
+#, xml-text
+#~ msgid "2023-07-28"
+#~ msgstr "2023-07-28"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update udev-lfs tarball to remove obsolete cdrom rules and "
+#~ "references to ISDN devices. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5291'>#5291</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualiza o tarball do \"udev-lfs\" para remover regras obsoletas "
+#~ "de CDROM e referências a dispositivos ISDN. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5291'>#5291</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to tar-1.35. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5287'>#5287</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para tar-1.35. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5287'>#5287</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Enable cgroup-based memory pressure information in kernel, and "
+#~ "add the cgroup file system into /etc/fstab and the mountvirtfs bootscript.  "
+#~ "This is a preparation for udev from systemd-254.  Addresses <ulink "
+#~ "url='&lfs-ticket-root;5293'>#5293</ulink>."
+#~ msgstr ""
+#~ "[xry111] - Habilita informação de pressão de memória baseada em \"cgroup\" "
+#~ "no núcleo e adiciona o sistema de arquivos \"cgroup\" no /etc/fstab e o "
+#~ "script de inicialização \"mountvirtfs\". Isso é uma preparaçao para \"udev\""
+#~ " originário de systemd-254. Endereça <ulink url='&lfs-ticket-"
+#~ "root;5293'>#5293</ulink>."
+
+#, xml-text
+#~ msgid "2023-07-22"
+#~ msgstr "2023-07-22"
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Make the mountvirtfs bootscript create essential symlinks in "
+#~ "/dev.  Fixes <ulink url='&lfs-ticket-root;5289'>#5289</ulink>."
+#~ msgstr ""
+#~ "[xry111] - Fazer com que o script de inicialização \"mountvirtfs\" crie "
+#~ "links simbólicos essenciais em /dev. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5289'>#5289</ulink>."
+
+#, xml-text
+#~ msgid "2023-07-15"
+#~ msgstr "2023-07-15"
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Replace eudev-3.2.12 with udev from systemd-253.  Fixes <ulink "
+#~ "url='&lfs-ticket-root;5285'>#5085</ulink>."
+#~ msgstr ""
+#~ "[xry111] - Substituir eudev-3.2.12 por udev originário do systemd-253. "
+#~ "Corrige <ulink url='&lfs-ticket-root;5285'>#5085</ulink>."
+
+#, xml-text
+#~ msgid "2023-07-02"
+#~ msgstr "2023-07-02"
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Add libxcrypt-4.4.35.  Fixes <ulink url='&lfs-ticket-"
+#~ "root;5280'>#5280</ulink>."
+#~ msgstr ""
+#~ "[xry111] - Adicionar libxcrypt-4.4.35. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5280'>#5280</ulink>."
+
+#, xml-text
+#~ msgid "2023-07-01"
+#~ msgstr "2023-07-01"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to util-linux-2.39.1.  Addresses <ulink url='&lfs-ticket-"
+#~ "root;5278'>#5278</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualizar para util-linux-2.39.1. Endereça <ulink url='&lfs-"
+#~ "ticket-root;5278'>#5278</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to linux-6.3.10.  Addresses <ulink url='&lfs-ticket-"
+#~ "root;5276'>#5276</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualizar para linux-6.3.10. Endereça <ulink url='&lfs-ticket-"
+#~ "root;5276'>#5276</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[rahul] - Update to kbd-2.6.1.  Fixes <ulink url='&lfs-ticket-"
+#~ "root;5279'>#5279</ulink>."
+#~ msgstr ""
+#~ "[rahul] - Atualização para kbd-2.6.1.. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5279'>#5279</ulink>."
+
+#, xml-text
+#~ msgid "2023-06-17"
+#~ msgstr "2023-06-17"
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Update to kbd-2.6.0.  Fixes <ulink url='&lfs-ticket-"
+#~ "root;5273'>#5273</ulink>."
+#~ msgstr ""
+#~ "[xry111] - Atualização para kbd-2.6.0.. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5273'>#5273</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[rahul] - Changed from pkg-config to pkgconf-1.9.5.  Fixes <ulink url='&lfs-"
+#~ "ticket-root;5274'>#5274</ulink>."
+#~ msgstr ""
+#~ "[rahul] - Mudado de pkg-config para pkgconf-1.9.5. Corrige <ulink url='&lfs-"
+#~ "ticket-root;5274'>#5274</ulink>."
+
+#, xml-text
+#~ msgid "2023-06-09"
+#~ msgstr "2023-06-09"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to dbus-1.14.8. Fixes <ulink url='&lfs-ticket-"
+#~ "root;5271'>#5271</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para dbus-1.14.8. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5271'>#5271</ulink>."
+
+#, xml-text
+#~ msgid "2023-06-03"
+#~ msgstr "2023-06-03"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to iana-etc-20230524.  Addresses <ulink url='&lfs-ticket-"
+#~ "root;5006'>#5006</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para iana-etc-20230524. Endereça <ulink url='&lfs-"
+#~ "ticket-root;5006'>#5006</ulink>."
+
+#, xml-text
+#~ msgid "2023-05-25"
+#~ msgstr "2023-05-25"
+
+#, xml-text
+#~ msgid ""
+#~ "[ken] - Remove unneeded group sgx from eudev rules.  Fixes <ulink url='&lfs-"
+#~ "ticket-root;5265'>#5265</ulink>."
+#~ msgstr ""
+#~ "[ken] - Remover grupo desnecessário sgx das regras eudev. Corrige <ulink "
+#~ "url='&lfs-ticket-root;5265'>#5265</ulink>."
+
+#, xml-text
+#~ msgid "2023-05-18"
+#~ msgstr "2023-05-18"
+
+#, xml-text
+#~ msgid "2023-05-13"
+#~ msgstr "2023-05-13"
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Update to linux-6.3.2.  Fixes <ulink url='&lfs-ticket-"
+#~ "root;5255'>#5255</ulink>."
+#~ msgstr ""
+#~ "[xry111] - Atualização para linux-6.3.2.. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5255'>#5255</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Fix systemd runtime issue exploited by GCC 13.  Fixes <ulink "
+#~ "url='&lfs-ticket-root;5254'>#5254</ulink>."
+#~ msgstr ""
+#~ "[xry111] - Corrige problema do systemd em tempo de execução explorado pelo "
+#~ "GCC 13. Corrige <ulink url='&lfs-ticket-root;5254'>#5254</ulink>."
+
+#, xml-text
+#~ msgid "2023-05-01"
+#~ msgstr "2023-05-01"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to iana-etc-20230418.  Addresses <ulink url='&lfs-ticket-"
+#~ "root;5006'>#5006</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para iana-etc-20230418. Endereça <ulink url='&lfs-"
+#~ "ticket-root;5006'>#5006</ulink>."
+
+#, xml-text
+#~ msgid "2023-04-15"
+#~ msgstr "2023-04-15"
+
+#, xml-text
+#~ msgid "2023-03-31"
+#~ msgstr "2023-03-31"
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Update to grep-3.10.  Fixes <ulink url='&lfs-ticket-"
+#~ "root;5234'>#5234</ulink>."
+#~ msgstr ""
+#~ "[xry111] - Atualização para grep-3.10.. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5234'>#5234</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Update to wheel-0.40.0.  Fixes <ulink url='&lfs-ticket-"
+#~ "root;5229'>#5229</ulink>."
+#~ msgstr ""
+#~ "[xry111] - Atualização para wheel-0.40.0.. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5229'>#5229</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Update to texinfo-7.0.3.  Fixes <ulink url='&lfs-ticket-"
+#~ "root;5235'>#5235</ulink>."
+#~ msgstr ""
+#~ "[xry111] - Atualização para texinfo-7.0.3.. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5235'>#5235</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Update to openssl-3.1.0.  Fixes <ulink url='&lfs-ticket-"
+#~ "root;5227'>#5227</ulink>."
+#~ msgstr ""
+#~ "[xry111] - Atualização para openssl-3.1.0.. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5227'>#5227</ulink>."
+
+#, xml-text
+#~ msgid "[xry111] - Add flit-core-3.8.0."
+#~ msgstr "[xry111] - Arescentar flit-core-3.8.0."
+
+#, xml-text
+#~ msgid "2023-03-15"
+#~ msgstr "2023-03-15"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to bc-6.4.0.  Fixes <ulink url='&lfs-ticket-"
+#~ "root;5217'>#5217</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para bc-6.4.0.. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5217'>#5217</ulink>."
+
+#, xml-text
+#~ msgid "2023-03-04"
+#~ msgstr "2023-03-04"
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Update to bc-6.3.1.  Fixes <ulink url='&lfs-ticket-"
+#~ "root;5217'>#5217</ulink>."
+#~ msgstr ""
+#~ "[xry111] - Atualização para bc-6.3.1.. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5217'>#5217</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Update to iproute2-6.2.0.  Fixes <ulink url='&lfs-ticket-"
+#~ "root;5221'>#5221</ulink>."
+#~ msgstr ""
+#~ "[xry111] - Atualização para iproute2-6.2.0.. Corrige <ulink url='&lfs-"
+#~ "ticket-root;5221'>#5221</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Update to libelf-0.189.  Fixes <ulink url='&lfs-ticket-"
+#~ "root;5224'>#5224</ulink>."
+#~ msgstr ""
+#~ "[xry111] - Atualização para libelf-0.189.. Corrige <ulink url='&lfs-ticket-"
+#~ "root;5224'>#5224</ulink>."
+
+#, xml-text
+#~ msgid "[bdubbs] - Change to a better host requirements script in Chapter 2."
+#~ msgstr ""
+#~ "[bdubbs] - Mudar para um script melhor das exigências do anfitrião no "
+#~ "Capítulo 2."
+
+#, xml-text
+#~ msgid "2023-03-01"
+#~ msgstr "2023-03-01"
+
+#, xml-text
+#~ msgid "[bdubbs] - LFS-11.3 released."
+#~ msgstr "[bdubbs] - LFS-11.3 lançado."
+
+#, xml-text
+#~ msgid "2023-02-19"
+#~ msgstr "2023-02-19"
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Apply a patch for GRUB for an issue triggered with "
+#~ "e2fsprogs-1.47.0.  Fixes <ulink url=\"&lfs-ticket-root;5219\">#5219</ulink>."
+#~ msgstr ""
+#~ "[xry111] - Aplica um remendo para o GRUB para um problema deflagrado com o "
+#~ "e2fsprogs-1.47.0. Corrige <ulink url=\"&lfs-ticket-"
+#~ "root;5219\">#5219</ulink>."
+
+#, xml-text
+#~ msgid "2023-02-11"
+#~ msgstr "2023-02-11"
+
+#, xml-text
+#~ msgid "2023-02-07"
+#~ msgstr "2023-02-07"
+
+#, xml-text
+#~ msgid ""
+#~ "[renodr] - Update to OpenSSL-3.0.8 (Security Update). Fixes <ulink "
+#~ "url=\"&lfs-ticket-root;5211\">#5211</ulink>."
+#~ msgstr ""
+#~ "[renodr] - Atualização para OpenSSL-3.0.8 (Atualização de Segurança). "
+#~ "Corrige <ulink url=\"&lfs-ticket-root;5211\">#5211</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[renodr] - Update to e2fsprogs-1.46.6 (Security Update). Fixes <ulink "
+#~ "url=\"&lfs-ticket-root;5208\">#5208</ulink>."
+#~ msgstr ""
+#~ "[renodr] - Atualização para e2fsprogs-1.46.6 (Atualização de Segurança). "
+#~ "Corrige <ulink url=\"&lfs-ticket-root;5208\">#5208</ulink>."
+
+#, xml-text
+#~ msgid "2023-02-06"
+#~ msgstr "2023-02-06"
+
+#, xml-text
+#~ msgid ""
+#~ "[renodr] - Repackage the systemd man pages to prevent stray man pages from "
+#~ "ending up in /usr/share/man."
+#~ msgstr ""
+#~ "[renodr] - Reempacotar as páginas de manual do systemd para evitar páginas "
+#~ "de manual perdidas de terminar em /usr/share/man."
+
+#, xml-text
+#~ msgid "2023-02-02"
+#~ msgstr "2023-02-02"
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Remove <option>--disable-exec-static-tramp</option> for libffi."
+#~ msgstr ""
+#~ "[xry111] - Remove <option>--disable-exec-static-tramp</option> para o "
+#~ "libffi."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to texinfo-7.0.2. Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5202\">#5202</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para texinfo-7.0.2. Corrige <ulink url=\"&lfs-ticket-"
+#~ "root;5202\">#5202</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to linux-6.1.8. Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5201\">#5201</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para linux-6.1.8. Corrige <ulink url=\"&lfs-ticket-"
+#~ "root;5201\">#5201</ulink>."
+
+#, xml-text
+#~ msgid "2023-01-22"
+#~ msgstr "2023-01-22"
+
+#, xml-text
+#~ msgid "2023-01-15"
+#~ msgstr "2023-01-15"
+
+#, xml-text
+#~ msgid ""
+#~ "[thomas] - Add libsframe to online_usrlib in stripping.  libsframe.so.0.0.0 "
+#~ "is in use by strip."
+#~ msgstr ""
+#~ "[thomas] - Acrescenta libsframe a online_usrlib em despojando. "
+#~ "libsframe.so.0.0.0 está em uso por strip."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to iana-etc-20230109. Addresses <ulink url=\"&lfs-ticket-"
+#~ "root;5006\">#5006</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para iana-etc-20230109. Endereça <ulink url=\"&lfs-"
+#~ "ticket-root;5006\">#5006</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to bc-6.2.2. Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5192\">#5192</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para bc-6.2.2. Corrige <ulink url=\"&lfs-ticket-"
+#~ "root;5192\">#5192</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to linux-6.1.6. Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5193\">#5193</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para linux-6.1.6. Corrige <ulink url=\"&lfs-ticket-"
+#~ "root;5193\">#5193</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to mpfr-4.2.0. Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5195\">#5195</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para mpfr-4.2.0. Corrige <ulink url=\"&lfs-ticket-"
+#~ "root;5195\">#5195</ulink>."
+
+#, xml-text
+#~ msgid "[thomas] - Remove an obsolete sed from mpc."
+#~ msgstr "[thomas] - Remove um sed obsoleto do mpc."
+
+#, xml-text
+#~ msgid "2022-12-31"
+#~ msgstr "2022-12-31"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to iana-etc-20221220. Addresses <ulink url=\"&lfs-ticket-"
+#~ "root;5006\">#5006</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para iana-etc-20221220. Endereça <ulink url=\"&lfs-"
+#~ "ticket-root;5006\">#5006</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to mpc-1.3.1. Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5185\">#5185</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para mpc-1.3.1. Corrige <ulink url=\"&lfs-ticket-"
+#~ "root;5185\">#5185</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to man-pages-6.02. Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5188\">#5188</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para man-pages-6.02. Corrige <ulink url=\"&lfs-"
+#~ "ticket-root;5188\">#5188</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to linux-6.1.1. Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5179\">#5179</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para linux-6.1.1. Corrige <ulink url=\"&lfs-ticket-"
+#~ "root;5179\">#5179</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to bc-6.2.1. Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5189\">#5189</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para bc-6.2.1. Corrige <ulink url=\"&lfs-ticket-"
+#~ "root;5189\">#5189</ulink>."
+
+#, xml-text
+#~ msgid "2022-12-28"
+#~ msgstr "2022-12-28"
+
+#, xml-text
+#~ msgid ""
+#~ "[renodr] - Patch systemd against CVE-2022-4415. Fixes <ulink url=\"&lfs-"
+#~ "ticket-root;5187\">#5187</ulink>."
+#~ msgstr ""
+#~ "[renodr] - Remenda systemd contra CVE-2022-4415. Corrige <ulink url=\"&lfs-"
+#~ "ticket-root;5187\">#5187</ulink>."
+
+#, xml-text
+#~ msgid "2022-12-15"
+#~ msgstr "2022-12-15"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Ensure a gawk hard link is updated in Chapter 8. Fixes <ulink "
+#~ "url=\"&lfs-ticket-root;5180\">#5180</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Garante que um link rígido gawk está atualizado no Capítulo 8. "
+#~ "Corrige <ulink url=\"&lfs-ticket-root;5180\">#5180</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to iana-etc-20221209. Addresses <ulink url=\"&lfs-ticket-"
+#~ "root;5006\">#5006</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para iana-etc-20221209. Endereça <ulink url=\"&lfs-"
+#~ "ticket-root;5006\">#5006</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to xz-5.4.0. Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5183\">#5183</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para xz-5.4.0. Corrige <ulink url=\"&lfs-ticket-"
+#~ "root;5183\">#5183</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to psmisc-23.6. Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5181\">#5181</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para psmisc-23.6. Corrige <ulink url=\"&lfs-ticket-"
+#~ "root;5181\">#5181</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to mpc-1.3.0. Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5178\">#5178</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para mpc-1.3.0. Corrige <ulink url=\"&lfs-ticket-"
+#~ "root;5178\">#5178</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to python3-3.11.1. Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5177\">#5177</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para python3-3.11.1. Corrige <ulink url=\"&lfs-"
+#~ "ticket-root;5177\">#5177</ulink>."
+
+#, xml-text
+#~ msgid "2022-12-01"
+#~ msgstr "2022-12-01"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to linux-6.0.11 (Security update). Fixes <ulink "
+#~ "url=\"&lfs-ticket-root;5175\">#5175</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para linux-6.0.11 (Atualização de segurança). Corrige"
+#~ " <ulink url=\"&lfs-ticket-root;5175\">#5175</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to iana-etc-20221122. Addresses <ulink url=\"&lfs-ticket-"
+#~ "root;5006\">#5006</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para iana-etc-20221122. Endereça <ulink url=\"&lfs-"
+#~ "ticket-root;5006\">#5006</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to xz-5.2.9. Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5174\">#5174</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para xz-5.2.9. Corrige <ulink url=\"&lfs-ticket-"
+#~ "root;5174\">#5174</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to tzdata-2022g. Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5172\">#5172</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para tzdata-2022g. Corrige <ulink url=\"&lfs-ticket-"
+#~ "root;5172\">#5172</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to tcl-8.6.13. Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5170\">#5170</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para tcl-8.6.13. Corrige <ulink url=\"&lfs-ticket-"
+#~ "root;5170\">#5170</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to meson-0.64.1. Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5169\">#5169</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para meson-0.64.1. Corrige <ulink url=\"&lfs-ticket-"
+#~ "root;5169\">#5169</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to linux-6.0.10. Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5171\">#5171</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para linux-6.0.10. Corrige <ulink url=\"&lfs-ticket-"
+#~ "root;5171\">#5171</ulink>."
+
+#, xml-text
+#~ msgid "2022-11-22"
+#~ msgstr "2022-11-22"
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Update to linux-6.0.9. Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5162\">#5162</ulink>."
+#~ msgstr ""
+#~ "[xry111] - Atualização para linux-6.0.9. Corrige <ulink url=\"&lfs-ticket-"
+#~ "root;5162\">#5162</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Update to libpipeline-1.5.7. Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5163\">#5163</ulink>."
+#~ msgstr ""
+#~ "[xry111] - Atualização para libpipeline-1.5.7. Corrige <ulink url=\"&lfs-"
+#~ "ticket-root;5163\">#5163</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Update to man-db-2.11.1. Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5166\">#5166</ulink>."
+#~ msgstr ""
+#~ "[xry111] - Atualização para man-db-2.11.1. Corrige <ulink url=\"&lfs-ticket-"
+#~ "root;5166\">#5166</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Update to mpfr-4.1.1. Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5167\">#5167</ulink>."
+#~ msgstr ""
+#~ "[xry111] - Atualização para mpfr-4.1.1. Corrige <ulink url=\"&lfs-ticket-"
+#~ "root;5167\">#5167</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Stop disabling decimal float for temporary GCC, so mpfr will be "
+#~ "built with decimal float support."
+#~ msgstr ""
+#~ "[xry111] - Cessa a desabilitação de flutuação decimal para o GCC temporário,"
+#~ " de modo que o mpfr será construído com suporte a flutuação decimal."
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Update instruction for wheel to avoid relying on deprecated "
+#~ "Python features."
+#~ msgstr ""
+#~ "[xry111] - Atualiza instrução para o wheel para evitar confiar em recursos "
+#~ "deprecados do Python."
+
+#, xml-text
+#~ msgid "2022-11-10"
+#~ msgstr "2022-11-10"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Fix make-4.4 bug. Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5160\">#5160</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Corrige defeito do make-4.4. Corrige <ulink url=\"&lfs-ticket-"
+#~ "root;5160\">#5160</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to shadow-4.13. Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5161\">#5161</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para shadow-4.13. Corrige <ulink url=\"&lfs-ticket-"
+#~ "root;5161\">#5161</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to sed-4.9. Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5157\">#5157</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para sed-4.9. Corrige <ulink url=\"&lfs-ticket-"
+#~ "root;5157\">#5157</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to meson-0.64.0. Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5156\">#5156</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para meson-0.64.0. Corrige <ulink url=\"&lfs-ticket-"
+#~ "root;5156\">#5156</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to linux-6.0.7. Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5154\">#5154</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para linux-6.0.7. Corrige <ulink url=\"&lfs-ticket-"
+#~ "root;5154\">#5154</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to bc-6.1.1. Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5151\">#5151</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para bc-6.1.1. Corrige <ulink url=\"&lfs-ticket-"
+#~ "root;5151\">#5151</ulink>."
+
+#, xml-text
+#~ msgid "2022-11-03"
+#~ msgstr "2022-11-03"
+
+#, xml-text
+#~ msgid "2022-11-01"
+#~ msgstr "2022-11-01"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to iana-etc-20221025. Addresses <ulink url=\"&lfs-ticket-"
+#~ "root;5006\">#5006</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para iana-etc-20221025. Endereça <ulink url=\"&lfs-"
+#~ "ticket-root;5006\">#5006</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to Python3-3.11.0. Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5145\">#5145</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para Python3-3.11.0. Corrige <ulink url=\"&lfs-"
+#~ "ticket-root;5145\">#5145</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to make-4.4. Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5149\">#5149</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para make-4.4. Corrige <ulink url=\"&lfs-ticket-"
+#~ "root;5149\">#5149</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to inetutils-2.4. Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5147\">#5147</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para inetutils-2.4. Corrige <ulink url=\"&lfs-ticket-"
+#~ "root;5147\">#5147</ulink>."
+
+#, xml-text
+#~ msgid "2022-10-17"
+#~ msgstr "2022-10-17"
+
+#, xml-text
+#~ msgid "2022-10-15"
+#~ msgstr "2022-10-15"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to iana-etc-20221007. Addresses <ulink url=\"&lfs-ticket-"
+#~ "root;5006\">#5006</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para iana-etc-20221007. Endereça <ulink url=\"&lfs-"
+#~ "ticket-root;5006\">#5006</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to vim-9.0.0739. Addresses <ulink url=\"&lfs-ticket-"
+#~ "root;5006\">#5006</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para vim-9.0.0739. Endereça <ulink url=\"&lfs-ticket-"
+#~ "root;5006\">#5006</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to zlib-1.2.13. Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5137\">#5137</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para zlib-1.2.13. Corrige <ulink url=\"&lfs-ticket-"
+#~ "root;5137\">#5137</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to gettext-0.21.1. Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5130\">#5130</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para gettext-0.21.1. Corrige <ulink url=\"&lfs-"
+#~ "ticket-root;5130\">#5130</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to meson-0.63.3. Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5129\">#5129</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para meson-0.63.3. Corrige <ulink url=\"&lfs-ticket-"
+#~ "root;5129\">#5129</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to xz-5.2.7. Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5133\">#5133</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para xz-5.2.7. Corrige <ulink url=\"&lfs-ticket-"
+#~ "root;5133\">#5133</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to tzdata-2022e. Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5119\">#5134</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para tzdata-2022e. Corrige <ulink url=\"&lfs-ticket-"
+#~ "root;5119\">#5134</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to dbus-1.14.4. Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5128\">#5128</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para dbus-1.14.4. Corrige <ulink url=\"&lfs-ticket-"
+#~ "root;5128\">#5128</ulink>."
+
+#, xml-text
+#~ msgid "2022-10-04"
+#~ msgstr "2022-10-04"
+
+#, xml-text
+#~ msgid ""
+#~ "[renodr] - Update to Linux-5.19.13. If you are using an Intel GPU on a "
+#~ "laptop, please update from Linux-5.19.12 immediately to prevent damage to "
+#~ "your display. Fixes <ulink url=\"&lfs-ticket-root;5125\">#5125</ulink>."
+#~ msgstr ""
+#~ "[renodr] - Atualização para Linux-5.19.13. Se você estiver usando uma GPU "
+#~ "Intel em um laptop, [então], por favor, atualize a partir do Linux-5.19.12 "
+#~ "imediatamente para evitar danos à sua tela. Corrige <ulink url=\"&lfs-"
+#~ "ticket-root;5125\">#5125</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to iana-etc-20220922. Addresses <ulink url=\"&lfs-ticket-"
+#~ "root;5006\">#5006</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para iana-etc-20220922. Endereça <ulink url=\"&lfs-"
+#~ "ticket-root;5006\">#5006</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to tzdata-2022d. Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5119\">#5119</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para tzdata-2022d. Corrige <ulink url=\"&lfs-ticket-"
+#~ "root;5119\">#5119</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to linux-5.19.12. Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5115\">#5115</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para linux-5.19.12. Corrige <ulink url=\"&lfs-ticket-"
+#~ "root;5115\">#5115</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to libffi-3.4.3. Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5116\">#5116</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para libffi-3.4.3. Corrige <ulink url=\"&lfs-ticket-"
+#~ "root;5116\">#5116</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to libcap-2.66. Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5120\">#5120</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para libcap-2.66. Corrige <ulink url=\"&lfs-ticket-"
+#~ "root;5120\">#5120</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to dbus-1.14.2. Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5123\">#5123</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para dbus-1.14.2. Corrige <ulink url=\"&lfs-ticket-"
+#~ "root;5123\">#5123</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to bc-6.0.4. Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5114\">#5114</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para bc-6.0.4. Corrige <ulink url=\"&lfs-ticket-"
+#~ "root;5114\">#5114</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to bash-5.2. Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5122\">#5122</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para bash-5.2. Corrige <ulink url=\"&lfs-ticket-"
+#~ "root;5122\">#5122</ulink>."
+
+#, xml-text
+#~ msgid "2022-09-22"
+#~ msgstr "2022-09-22"
+
+#, xml-text
+#~ msgid "2022-09-20"
+#~ msgstr "2022-09-20"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Adapt instructions depending on host setup of /dev/shm when "
+#~ "creating virtual filesystems for chroot."
+#~ msgstr ""
+#~ "[bdubbs] - Adapta as instruções dependendo da configuração do anfitrião de "
+#~ "/dev/shm quando da criação de sistemas de arquivos virtuais para chroot."
+
+#, xml-text
+#~ msgid "2022-09-15"
+#~ msgstr "2022-09-15"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to file-5.43. Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5113\">#5113</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para file-5.43. Corrige <ulink url=\"&lfs-ticket-"
+#~ "root;5113\">#5113</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to linux-5.19.8. Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5111\">#5111</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para linux-5.19.8. Corrige <ulink url=\"&lfs-ticket-"
+#~ "root;5111\">#5111</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to gawk-5.2.0. Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5108\">#5108</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para gawk-5.2.0. Corrige <ulink url=\"&lfs-ticket-"
+#~ "root;5108\">#5108</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to meson-0.63.2. Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5106\">#5106</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para meson-0.63.2. Corrige <ulink url=\"&lfs-ticket-"
+#~ "root;5106\">#5106</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to ninja-1.11.1. Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5103\">#5103</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para ninja-1.11.1. Corrige <ulink url=\"&lfs-ticket-"
+#~ "root;5103\">#5103</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to bc-6.0.2. Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5102\">#5102</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para bc-6.0.2. Corrige <ulink url=\"&lfs-ticket-"
+#~ "root;5102\">#5102</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Fix the location of udev rules in eudev.  Fixes <ulink "
+#~ "url=\"&lfs-ticket-root;5112\">#5112</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Corrige o local das regras do udev em eudev. Corrige <ulink "
+#~ "url=\"&lfs-ticket-root;5112\">#5112</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Remove a warning for egrep and fgrep that makes tests for some "
+#~ "packages fail."
+#~ msgstr ""
+#~ "[bdubbs] - Remove um aviso para egrep e fgrep que faz com que os testes para"
+#~ " alguns pacotes falhem."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Delete an empty binutils man page.  Fixes <ulink url=\"&lfs-"
+#~ "ticket-root;5100\">#5100</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Deleta uma página de manual vazia do binutils. Corrige <ulink "
+#~ "url=\"&lfs-ticket-root;5100\">#5100</ulink>."
+
+#, xml-text
+#~ msgid "2022-09-10"
+#~ msgstr "2022-09-10"
+
+#, xml-text
+#~ msgid ""
+#~ "[pierre] - Add <option>--enable-default-pie</option> and <option>--enable-"
+#~ "default-ssp</option> to GCC build. Rationale and some reports at <ulink "
+#~ "url=\"&lfs-ticket-root;5107\">#5107</ulink>."
+#~ msgstr ""
+#~ "[pierre] - Acrescenta <option>--enable-default-pie</option> e "
+#~ "<option>--enable-default-ssp</option> à construção do GCC. A justificativa e"
+#~ " alguns relatórios em <ulink url=\"&lfs-ticket-root;5107\">#5107</ulink>."
+
+#, xml-text
+#~ msgid "2022-09-07"
+#~ msgstr "2022-09-07"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to Python3-3.10.7. Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5109\">#5109</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para Python3-3.10.7. Corrige <ulink url=\"&lfs-"
+#~ "ticket-root;5109\">#5109</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to linux-5.19.7. Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5099\">#5099</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para linux-5.19.7. Corrige <ulink url=\"&lfs-ticket-"
+#~ "root;5099\">#5099</ulink>."
+
+#, xml-text
+#~ msgid "2022-09-01"
+#~ msgstr "2022-09-01"
+
+#, xml-text
+#~ msgid "[bdubbs] - LFS-11.2 released."
+#~ msgstr "[bdubbs] - LFS-11.2 lançado."
+
+#, fuzzy, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to vim-9.0.0228. Addresses <ulink url=\"&lfs-ticket-"
+#~ "root;4500\">#4500</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualizar para vim-9.0.0228.  Endereça <ulink url=\"&lfs-ticket-"
+#~ "root;4500\">#4500</ulink>."
+
+#, fuzzy, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to linux-5.19.2 (security fixes). Fixes <ulink url=\"&lfs-"
+#~ "ticket-root;5097\">#5097</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualizar para linux-5.19.2 (consertos de segurança).  Conserta "
+#~ "<ulink url=\"&lfs-ticket-root;5097\">#5097</ulink>."
+
+#, fuzzy, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to shadow-4.12.2 (security fix). Fixes <ulink url=\"&lfs-"
+#~ "ticket-root;5095\">#5095</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualizar para shadow-4.12.2 (conserto de segurança).  Conserta "
+#~ "<ulink url=\"&lfs-ticket-root;5095\">#5095</ulink>."
+
+#, xml-text
+#~ msgid "2022-08-18"
+#~ msgstr "2022-08-18"
+
+#, fuzzy, xml-text
+#~ msgid ""
+#~ "[xry111] - Remove libtool archive (.la) files in Chapter 5 and 6 because "
+#~ "those files are harmful for cross compilation."
+#~ msgstr ""
+#~ "[xry111] - Remover arquivos de arquivamento (.la) do libtool no Capítulo 5 e"
+#~ " 6, pois aqueles arquivos são danosos para compilação cruzada."
+
+#, xml-text
+#~ msgid "2022-08-11"
+#~ msgstr "2022-08-11"
+
+#, xml-text
+#~ msgid "2022-08-06"
+#~ msgstr "2022-08-06"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to util-linux-2.38.1. Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5088\">#5088</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para util-linux-2.38.1. Corrige <ulink url=\"&lfs-"
+#~ "ticket-root;5088\">#5088</ulink>."
+
+#, fuzzy, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to linux-5.18.14. (Security fixes for machines affected by"
+#~ " the RETBleed vulnerability). Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5082\">#5082</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualizar para linux-5.18.14. (Consertos de segurança para "
+#~ "máquinas afetadas pela vulnerabilidade RETBleed).  Conserta <ulink "
+#~ "url=\"&lfs-ticket-root;5082\">#5082</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to kmod-30. Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5077\">#5077</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para kmod-30. Corrige <ulink url=\"&lfs-ticket-"
+#~ "root;5077\">#5077</ulink>."
+
+#, xml-text
+#~ msgid "2022-07-01"
+#~ msgstr "2022-07-01"
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to OpenSSL-3.0.4. Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5076\">#5076</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para OpenSSL-3.0.4. Corrige <ulink url=\"&lfs-ticket-"
+#~ "root;5076\">#5076</ulink>."
+
+#, fuzzy, xml-text
+#~ msgid ""
+#~ "[pierre] - Generate shared C++ bindings for ncurses, instead of generating "
+#~ "and then removing the static ones."
+#~ msgstr ""
+#~ "[pierre] - Gerar vínculos C++ compartilhados para ncurses, em vez de gerar e"
+#~ " então remover os estáticos."
+
+#, xml-text
+#~ msgid "2022-06-14"
+#~ msgstr "2022-06-14"
+
+#, xml-text
+#~ msgid "2022-05-29"
+#~ msgstr "2022-05-29"
+
+#, fuzzy, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to iana-etc-20220524.  Addresses <ulink url=\"&lfs-ticket-"
+#~ "root;5006\">#5006</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualizar para iana-etc-20220524.  Endereça <ulink url=\"&lfs-"
+#~ "ticket-root;5006\">#5006</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to iproute2-5.18.0.  Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5065\">#5065</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para iproute2-5.18.0.. Corrige <ulink url=\"&lfs-"
+#~ "ticket-root;5065\">#5065</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Update to ninja-1.11.0.  Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5062\">#5062</ulink>."
+#~ msgstr ""
+#~ "[xry111] - Atualização para ninja-1.11.0.. Corrige <ulink url=\"&lfs-ticket-"
+#~ "root;5062\">#5062</ulink>."
+
+#, xml-text
+#~ msgid "2022-05-16"
+#~ msgstr "2022-05-16"
+
+#, xml-text
+#~ msgid "2022-05-01"
+#~ msgstr "2022-05-01"
+
+#, fuzzy, xml-text
+#~ msgid "[bdubbs] - Change nobody/nogroup uid/gid to 65534."
+#~ msgstr "[bdubbs] - Mudar nobody/nogroup uid/gid para 65534."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to meson-0.62.1.  Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5052\">#5052</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para meson-0.62.1.. Corrige <ulink url=\"&lfs-ticket-"
+#~ "root;5052\">#5052</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to Jinja2-3.1.2.  Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5055\">#5055</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para Jinja2-3.1.2.. Corrige <ulink url=\"&lfs-ticket-"
+#~ "root;5055\">#5055</ulink>."
+
+#, fuzzy, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to vim-8.2.4814.  Addresses <ulink url=\"&lfs-ticket-"
+#~ "root;4500\">#4500</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualizar para vim-8.2.4814.  Endereça <ulink url=\"&lfs-ticket-"
+#~ "root;4500\">#4500</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to linux-5.17.5.  Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5050\">#5050</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para linux-5.17.5.. Corrige <ulink url=\"&lfs-ticket-"
+#~ "root;5050\">#5050</ulink>."
+
+#, xml-text
+#~ msgid "2022-04-15"
+#~ msgstr "2022-04-15"
+
+#, fuzzy, xml-text
+#~ msgid ""
+#~ "[ken] - Patch Xz for a security fix.  Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5047\">#5047</ulink>."
+#~ msgstr ""
+#~ "[ken] - Remenda Xz para um conserto de segurança.  Conserta <ulink "
+#~ "url=\"&lfs-ticket-root;5047\">#5047</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to linux-5.17.3.  Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5043\">#5043</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para linux-5.17.3.. Corrige <ulink url=\"&lfs-ticket-"
+#~ "root;5043\">#5043</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to gzip-1.12.  Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5042\">#5042</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para gzip-1.12.. Corrige <ulink url=\"&lfs-ticket-"
+#~ "root;5042\">#5042</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to iproute2-5.17.0.  Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5035\">#5035</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para iproute2-5.17.0.. Corrige <ulink url=\"&lfs-"
+#~ "ticket-root;5035\">#5035</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[bdubbs] - Update to util-linux-2.38.  Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;4997\">#4997</ulink>."
+#~ msgstr ""
+#~ "[bdubbs] - Atualização para util-linux-2.38.. Corrige <ulink url=\"&lfs-"
+#~ "ticket-root;4997\">#4997</ulink>."
+
+#, xml-text
+#~ msgid "2022-03-25"
+#~ msgstr "2022-03-25"
+
+#, fuzzy, xml-text
+#~ msgid ""
+#~ "[pierre] - Update bootscripts to 20220324.  Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5027\">#5027</ulink>."
+#~ msgstr ""
+#~ "[pierre] - Atualizar bootscripts para 20220324.  Conserta <ulink url=\"&lfs-"
+#~ "ticket-root;5027\">#5027</ulink>."
+
+#, xml-text
+#~ msgid "2022-03-20"
+#~ msgstr "2022-03-20"
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Update to Python-3.10.3.  Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5028\">#5028</ulink>."
+#~ msgstr ""
+#~ "[xry111] - Atualização para Python-3.10.3.. Corrige <ulink url=\"&lfs-"
+#~ "ticket-root;5028\">#5028</ulink>."
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Update to linux-5.16.16.  Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5030\">#5030</ulink>."
+#~ msgstr ""
+#~ "[xry111] - Atualização para linux-5.16.16.. Corrige <ulink url=\"&lfs-"
+#~ "ticket-root;5030\">#5030</ulink>."
+
+#, xml-text
+#~ msgid "2022-03-16"
+#~ msgstr "2022-03-16"
+
+#, xml-text
+#~ msgid "2022-03-15"
+#~ msgstr "2022-03-15"
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Update to expat-2.4.7. Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5019\">#5019</ulink>."
+#~ msgstr ""
+#~ "[xry111] - Atualização para expat-2.4.7. Corrige <ulink url=\"&lfs-ticket-"
+#~ "root;5019\">#5019</ulink>."
+
+#, fuzzy, xml-text
+#~ msgid ""
+#~ "[xry111] - Update to vim-8.2.4567 (security fix).  Addresses <ulink "
+#~ "url=\"&lfs-ticket-root;4500\">#4500</ulink>."
+#~ msgstr ""
+#~ "[xry111] - Atualizar para vim-8.2.4567 (conserto de segurança).  Endereça "
+#~ "<ulink url=\"&lfs-ticket-root;4500\">#4500</ulink>."
+
+#, xml-text
+#~ msgid "2022-03-05"
+#~ msgstr "2022-03-05"
+
+#, fuzzy, xml-text
+#~ msgid ""
+#~ "[xry111] - Stop changing the owner of <filename "
+#~ "class='directory'>$LFS/source</filename> to <systemitem "
+#~ "class='username'>lfs</systemitem>. Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5018\">#5018</ulink>."
+#~ msgstr ""
+#~ "[xry111] - Parar mudança de proprietário(a) do <filename "
+#~ "class='directory'>$LFS/source</filename> para <systemitem "
+#~ "class='username'>lfs</systemitem>.  Conserta <ulink url=\"&lfs-ticket-"
+#~ "root;5018\">#5018</ulink>."
+
+#, fuzzy, xml-text
+#~ msgid "[xry111] - Add zstd-1.5.2 upstream fixes patch."
+#~ msgstr "[xry111] - Adiciona patch de consertos do upstream do zstd-1.5.2"
+
+#, xml-text
+#~ msgid ""
+#~ "[xry111] - Update to meson-0.61.2. Fixes <ulink url=\"&lfs-ticket-"
+#~ "root;5013\">#5013</ulink>."
+#~ msgstr ""
+#~ "[xry111] - Atualização para meson-0.61.2. Corrige <ulink url=\"&lfs-ticket-"
+#~ "root;5013\">#5013</ulink>."
+
+#, fuzzy, xml-text
+#~ msgid ""
+#~ "[xry111] - Update to vim-8.2.4489 (security fixes).  Addresses <ulink "
+#~ "url=\"&lfs-ticket-root;4500\">#4500</ulink>."
+#~ msgstr ""
+#~ "[xry111] - Atualizar para vim-8.2.4489 (consertos de segurança).  Endereça "
+#~ "<ulink url=\"&lfs-ticket-root;4500\">#4500</ulink>."
+
+#, fuzzy, xml-text
+#~ msgid ""
+#~ "[xry111] - Build libstdc++ in GCC pass 2, and remove the separate libstdc++ "
+#~ "pass 2."
+#~ msgstr ""
+#~ "[xry111] - Construir libstdc++ em GCC passagem 2; e remover o libstdc++ "
+#~ "passagem 2 separado."
+
+#, fuzzy, xml-text
+#~ msgid ""
+#~ "[xry111] - Remove unneeded <parameter>--enable-64bit</parameter> for tcl."
+#~ msgstr ""
+#~ "[xry111] - Remover <parameter>--enable-64bit</parameter> desnecessário para "
+#~ "tcl."
+
+#, fuzzy, xml-text
+#~ msgid "[bdubbs] - LFS-11.1 released."
+#~ msgstr "[bdubbs] - LFS-11.1 lançado."

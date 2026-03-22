@@ -6,12 +6,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-09-05 04:18+0000\n"
+"POT-Creation-Date: 2026-03-21 23:06-0300\n"
 "PO-Revision-Date: 2025-11-23 04:18+0000\n"
-"Last-Translator: Jamenson Ferreira Espindula de Almeida Melo "
-"<jafesp@gmail.com>\n"
-"Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/"
-"projects/linux-from-scratch/prologue_why/pt_BR/>\n"
+"Last-Translator: Jamenson Ferreira Espindula de Almeida Melo <jafesp@gmail.com>\n"
+"Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/projects/linux-from-scratch/prologue_why/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -475,10 +473,14 @@ msgstr "Gperf"
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
 #: lfs-en/prologue/why.xml:225
-#, xml-text
+#, fuzzy, xml-text
+#| msgid ""
+#| "This package produces a program that generates a perfect hash function from "
+#| "a set of keys. It is required by <phrase revision='sysv'>Udev</phrase> "
+#| "<phrase revision='systemd'>Systemd</phrase>."
 msgid ""
 "This package produces a program that generates a perfect hash function from "
-"a set of keys. It is required by <phrase revision='sysv'>Udev</phrase> "
+"a set of keys. It is required by <phrase revision='openrc'>Udev</phrase> "
 "<phrase revision='systemd'>Systemd</phrase>."
 msgstr ""
 "Esse pacote produz um aplicativo que gera uma função perfeita de resumo a "
@@ -985,12 +987,36 @@ msgstr ""
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
 #: lfs-en/prologue/why.xml:467
+#, fuzzy, xml-text
+#| msgid "Openssl"
+msgid "OpenRC"
+msgstr "Openssl"
+
+#. type: Content of: <sect1><itemizedlist><listitem><para>
+#: lfs-en/prologue/why.xml:469
+#, fuzzy, xml-text
+#| msgid ""
+#| "This package provides an <application>init</application> program and several"
+#| " additional boot and system control capabilities as an alternative to "
+#| "SysVinit.  It is used by many Linux distributions."
+msgid ""
+"This package provides an <application>init</application> program and system "
+"control capabilities as an alternative to Systemd. It has a smaller "
+"installation size but strong support compared to others like SysVinit. It is"
+" used by a few Linux distributions such as Gentoo and Alpine."
+msgstr ""
+"Esse pacote fornece um programa <application>init</application> e vários "
+"recursos adicionais de inicialização e de controle de sistema como uma "
+"alternativa ao SysVinit. Ele é usado por muitas distribuições do Linux."
+
+#. type: Content of: <sect1><itemizedlist><listitem><para>
+#: lfs-en/prologue/why.xml:477
 #, xml-text
 msgid "Openssl"
 msgstr "Openssl"
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/prologue/why.xml:469
+#: lfs-en/prologue/why.xml:479
 #, xml-text
 msgid ""
 "This package provides management tools and libraries relating to "
@@ -1002,13 +1028,13 @@ msgstr ""
 "incluindo o núcleo Linux."
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/prologue/why.xml:475
+#: lfs-en/prologue/why.xml:485
 #, xml-text
 msgid "Patch"
 msgstr "Patch"
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/prologue/why.xml:477
+#: lfs-en/prologue/why.xml:487
 #, xml-text
 msgid ""
 "This package contains a program for modifying or creating files by applying "
@@ -1022,13 +1048,13 @@ msgstr ""
 "procedimento de construção para vários pacotes do LFS."
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/prologue/why.xml:484
+#: lfs-en/prologue/why.xml:494
 #, xml-text
 msgid "Pcre2"
 msgstr "Pcre2"
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/prologue/why.xml:486
+#: lfs-en/prologue/why.xml:496
 #, xml-text
 msgid ""
 "This package provides a set of functions that implement regular expression "
@@ -1039,13 +1065,13 @@ msgstr ""
 "Perl 5."
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/prologue/why.xml:492
+#: lfs-en/prologue/why.xml:502
 #, xml-text
 msgid "Perl"
 msgstr "Perl"
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/prologue/why.xml:494
+#: lfs-en/prologue/why.xml:504
 #, xml-text
 msgid ""
 "This package is an interpreter for the runtime language PERL. It is needed "
@@ -1056,13 +1082,13 @@ msgstr ""
 "LFS."
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/prologue/why.xml:500
+#: lfs-en/prologue/why.xml:510
 #, xml-text
 msgid "Pkgconf"
 msgstr "Pkgconf"
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/prologue/why.xml:502
+#: lfs-en/prologue/why.xml:512
 #, xml-text
 msgid ""
 "This package contains a program which helps to configure compiler and linker"
@@ -1079,13 +1105,13 @@ msgstr ""
 "Pkg-config original."
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/prologue/why.xml:511
+#: lfs-en/prologue/why.xml:521
 #, xml-text
 msgid "Procps-NG"
 msgstr "Procps-NG"
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/prologue/why.xml:513
+#: lfs-en/prologue/why.xml:523
 #, xml-text
 msgid ""
 "This package contains programs for monitoring processes. These programs are "
@@ -1096,13 +1122,13 @@ msgstr ""
 " inicialização do LFS."
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/prologue/why.xml:519
+#: lfs-en/prologue/why.xml:529
 #, xml-text
 msgid "Psmisc"
 msgstr "Psmisc"
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/prologue/why.xml:521
+#: lfs-en/prologue/why.xml:531
 #, xml-text
 msgid ""
 "This package produces programs for displaying information about running "
@@ -1112,13 +1138,13 @@ msgstr ""
 "em execução. Esses aplicativos são úteis para administração de sistema."
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/prologue/why.xml:527
+#: lfs-en/prologue/why.xml:537
 #, xml-text
 msgid "Python 3"
 msgstr "Python 3"
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/prologue/why.xml:529
+#: lfs-en/prologue/why.xml:539
 #, xml-text
 msgid ""
 "This package provides an interpreted language that has a design philosophy "
@@ -1128,13 +1154,13 @@ msgstr ""
 "projeto que enfatiza a legibilidade de código."
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/prologue/why.xml:535
+#: lfs-en/prologue/why.xml:545
 #, xml-text
 msgid "Readline"
 msgstr "Readline"
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/prologue/why.xml:537
+#: lfs-en/prologue/why.xml:547
 #, xml-text
 msgid ""
 "This package is a set of libraries that offer command-line editing and "
@@ -1144,13 +1170,13 @@ msgstr ""
 "de histórico de linha de comando. Ele é usado pelo Bash."
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/prologue/why.xml:542
+#: lfs-en/prologue/why.xml:552
 #, xml-text
 msgid "Sed"
 msgstr "Sed"
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/prologue/why.xml:544
+#: lfs-en/prologue/why.xml:554
 #, xml-text
 msgid ""
 "This package allows editing of text without opening it in a text editor. It "
@@ -1160,25 +1186,25 @@ msgstr ""
 "também é necessitado por muitos scripts de configuração dos pacotes do LFS."
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/prologue/why.xml:550
+#: lfs-en/prologue/why.xml:560
 #, xml-text
 msgid "Shadow"
 msgstr "Shadow"
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/prologue/why.xml:552
+#: lfs-en/prologue/why.xml:562
 #, xml-text
 msgid "This package contains programs for handling passwords securely."
 msgstr "Esse pacote contém aplicativos para manusear senhas seguramente."
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/prologue/why.xml:557
+#: lfs-en/prologue/why.xml:567
 #, xml-text
 msgid "Sqlite"
 msgstr "Sqlite"
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/prologue/why.xml:559
+#: lfs-en/prologue/why.xml:569
 #, xml-text
 msgid ""
 "This package provides a serverless, zero-configuration, transactional SQL "
@@ -1188,13 +1214,13 @@ msgstr ""
 "servidor e com configuração zero."
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/prologue/why.xml:564
+#: lfs-en/prologue/why.xml:574
 #, xml-text
 msgid "Sysklogd"
 msgstr "Sysklogd"
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/prologue/why.xml:566
+#: lfs-en/prologue/why.xml:576
 #, xml-text
 msgid ""
 "This package supplies programs for logging system messages, such as those "
@@ -1205,47 +1231,35 @@ msgstr ""
 "não-usuais acontecem."
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/prologue/why.xml:572
+#: lfs-en/prologue/why.xml:582
 #, xml-text
 msgid "Systemd"
 msgstr "Systemd"
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/prologue/why.xml:574
-#, xml-text
+#: lfs-en/prologue/why.xml:584
+#, fuzzy, xml-text
+#| msgid ""
+#| "This package provides an <application>init</application> program and several"
+#| " additional boot and system control capabilities as an alternative to "
+#| "SysVinit.  It is used by many Linux distributions."
 msgid ""
 "This package provides an <application>init</application> program and several"
 " additional boot and system control capabilities as an alternative to "
-"SysVinit.  It is used by many Linux distributions."
+"OpenRC.  It is used by many Linux distributions."
 msgstr ""
 "Esse pacote fornece um programa <application>init</application> e vários "
 "recursos adicionais de inicialização e de controle de sistema como uma "
 "alternativa ao SysVinit. Ele é usado por muitas distribuições do Linux."
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/prologue/why.xml:581
-#, xml-text
-msgid "SysVinit"
-msgstr "SysVinit"
-
-#. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/prologue/why.xml:583
-#, xml-text
-msgid ""
-"This package provides the <application>init</application> program, the "
-"parent of all the other processes on a running Linux system."
-msgstr ""
-"Esse pacote fornece o aplicativo <application>init</application>, o "
-"antepassado de todos os outros processos em um Linux em execução."
-
-#. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/prologue/why.xml:589
+#: lfs-en/prologue/why.xml:591
 #, xml-text
 msgid "Udev"
 msgstr "Udev"
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/prologue/why.xml:591
+#: lfs-en/prologue/why.xml:593
 #, xml-text
 msgid ""
 "This package is a device manager.  It dynamically controls the ownership, "
@@ -1258,13 +1272,13 @@ msgstr ""
 "removidos do sistema."
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/prologue/why.xml:598
+#: lfs-en/prologue/why.xml:600
 #, xml-text
 msgid "Tar"
 msgstr "Tar"
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/prologue/why.xml:600
+#: lfs-en/prologue/why.xml:602
 #, xml-text
 msgid ""
 "This package provides archiving and extraction capabilities of virtually all"
@@ -1274,13 +1288,13 @@ msgstr ""
 "todos os pacotes usados no LFS."
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/prologue/why.xml:605
+#: lfs-en/prologue/why.xml:607
 #, xml-text
 msgid "Tcl"
 msgstr "Tcl"
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/prologue/why.xml:607
+#: lfs-en/prologue/why.xml:609
 #, xml-text
 msgid ""
 "This package contains the Tool Command Language used in many test suites."
@@ -1288,13 +1302,13 @@ msgstr ""
 "Esse pacote contém a Tool Command Language usada em muitas suítes de teste."
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/prologue/why.xml:612
+#: lfs-en/prologue/why.xml:614
 #, xml-text
 msgid "Texinfo"
 msgstr "Texinfo"
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/prologue/why.xml:614
+#: lfs-en/prologue/why.xml:616
 #, xml-text
 msgid ""
 "This package supplies programs for reading, writing, and converting info "
@@ -1304,13 +1318,13 @@ msgstr ""
 " Ele é usado nos procedimentos de instalação de muitos pacotes do LFS."
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/prologue/why.xml:620
+#: lfs-en/prologue/why.xml:622
 #, xml-text
 msgid "Util-linux"
 msgstr "Util-linux"
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/prologue/why.xml:622
+#: lfs-en/prologue/why.xml:624
 #, xml-text
 msgid ""
 "This package contains miscellaneous utility programs.  Among them are "
@@ -1321,13 +1335,13 @@ msgstr ""
 "mensagens."
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/prologue/why.xml:628
+#: lfs-en/prologue/why.xml:630
 #, xml-text
 msgid "Vim"
 msgstr "Vim"
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/prologue/why.xml:630
+#: lfs-en/prologue/why.xml:632
 #, xml-text
 msgid ""
 "This package provides an editor. It was chosen because of its compatibility "
@@ -1336,18 +1350,18 @@ msgid ""
 "substituted, if you wish."
 msgstr ""
 "Esse pacote fornece um editor. Ele foi escolhido por causa da "
-"compatibilidade dele com o clássico editor vi e o número gigante de recursos "
-"poderosos dele. Um editor é uma escolha muito pessoal para muitos(as) "
+"compatibilidade dele com o clássico editor vi e o número gigante de recursos"
+" poderosos dele. Um editor é uma escolha muito pessoal para muitos(as) "
 "usuários(as). Qualquer outro editor pode ser substituído, se você desejar."
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/prologue/why.xml:637
+#: lfs-en/prologue/why.xml:639
 #, xml-text
 msgid "Wheel"
 msgstr "Wheel"
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/prologue/why.xml:639
+#: lfs-en/prologue/why.xml:641
 #, xml-text
 msgid ""
 "This package supplies a Python module that is the reference implementation "
@@ -1357,25 +1371,25 @@ msgstr ""
 "do padrão de empacotamento roda do Python."
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/prologue/why.xml:645
+#: lfs-en/prologue/why.xml:647
 #, xml-text
 msgid "XML::Parser"
 msgstr "XML::Parser"
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/prologue/why.xml:647
+#: lfs-en/prologue/why.xml:649
 #, xml-text
 msgid "This package is a Perl module that interfaces with Expat."
 msgstr "Esse pacote é um módulo do Perl que interage com o Expat."
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/prologue/why.xml:651
+#: lfs-en/prologue/why.xml:653
 #, xml-text
 msgid "XZ Utils"
 msgstr "XZ Utils"
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/prologue/why.xml:653
+#: lfs-en/prologue/why.xml:655
 #, xml-text
 msgid ""
 "This package contains programs for compressing and decompressing files.  It "
@@ -1387,13 +1401,13 @@ msgstr ""
 "pacotes no formato XZ ou LZMA."
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/prologue/why.xml:659
+#: lfs-en/prologue/why.xml:661
 #, xml-text
 msgid "Zlib"
 msgstr "Zlib"
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/prologue/why.xml:661
+#: lfs-en/prologue/why.xml:663
 #, xml-text
 msgid ""
 "This package contains compression and decompression routines used by some "
@@ -1403,13 +1417,13 @@ msgstr ""
 "alguns aplicativos."
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/prologue/why.xml:666
+#: lfs-en/prologue/why.xml:668
 #, xml-text
 msgid "Zstd"
 msgstr "Zstd"
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/prologue/why.xml:668
+#: lfs-en/prologue/why.xml:670
 #, xml-text
 msgid ""
 "This package supplies compression and decompression routines used by some "
@@ -1419,6 +1433,18 @@ msgstr ""
 "Esse pacote fornece rotinas de compressão e de descompressão usadas por "
 "alguns aplicativos. Ele fornece taxas altas de compressão e um intervalo "
 "muito amplo de intercâmbios entre compressão / velocidade."
+
+#, xml-text
+#~ msgid "SysVinit"
+#~ msgstr "SysVinit"
+
+#, xml-text
+#~ msgid ""
+#~ "This package provides the <application>init</application> program, the "
+#~ "parent of all the other processes on a running Linux system."
+#~ msgstr ""
+#~ "Esse pacote fornece o aplicativo <application>init</application>, o "
+#~ "antepassado de todos os outros processos em um Linux em execução."
 
 #, xml-text
 #~ msgid "Check"
