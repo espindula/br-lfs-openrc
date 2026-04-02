@@ -76,7 +76,8 @@ não está instalado.</para>
 
     <para>Instale o pacote:</para>
 
-<screen><userinput remap="install">ninja install</userinput></screen>
+<screen><userinput remap="install">ninja install &amp;&amp;
+mv -v /sbin/rc-update /bin</userinput></screen>
 
     <para>OpenRC fornece <application>init</application> e outros programas
 próprios. No entanto, os atalhos para eles não são criados. Crie os linques

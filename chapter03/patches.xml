@@ -112,7 +112,8 @@ necessários para construir um sistema LFS:</para>
         <para>Soma de verificação MD5: <literal>&kbd-backspace-patch-md5;</literal></para>
       </listitem>
     </varlistentry>
-<!--
+
+    <!--
     <varlistentry>
 
       <term>Meson Upstream Fix Patch - <token>&meson-fix-patch-size;</token>:</term>
@@ -137,15 +138,17 @@ necessários para construir um sistema LFS:</para>
         <para>MD5 sum: <literal>&perl-upstream-fix-patch-md5;</literal></para>
       </listitem>
     </varlistentry>
-
-    <varlistentry>
-      <term>Python Security Fix Patch - <token>&python-security-fixes-patch-size;</token>:</term>
+-->
+<varlistentry>
+      <term>Remendo de Correção de Segurança do Python -
+<token>&python-security-fixes-patch-size;</token>:</term>
       <listitem>
-        <para>Download: <ulink url="&patches-root;&python-security-fixes-patch;"/></para>
-        <para>MD5 sum: <literal>&python-security-fixes-patch-md5;</literal></para>
+        <para>Transferência: <ulink url="&patches-root;&python-security-fixes-patch;"/></para>
+        <para>Soma de verificação MD5:
+<literal>&python-security-fixes-patch-md5;</literal></para>
       </listitem>
     </varlistentry>
--->
+
 <!--
     <varlistentry revision="systemd">
 
@@ -176,8 +179,6 @@ necessários para construir um sistema LFS:</para>
       </listitem>
     </varlistentry>
 -->
-
-
 
 
 
