@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-03-21 23:04-0300\n"
-"PO-Revision-Date: 2026-02-20 16:18+0000\n"
+"POT-Creation-Date: 2026-04-10 21:26-0300\n"
+"PO-Revision-Date: 2026-03-15 16:18+0000\n"
 "Last-Translator: Jamenson Ferreira Espindula de Almeida Melo <jafesp@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/projects/linux-from-scratch/chapter08_shadow/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -116,36 +116,22 @@ msgstr ""
 
 #. type: Content of: <sect1><sect2><para>
 #: lfs-en/chapter08/shadow.xml:73
-#, fuzzy, xml-text
-#| msgid ""
-#| "Disable the installation of the <command>groups</command> program and its "
-#| "man pages, as Coreutils provides a better version. Also, prevent the "
-#| "installation of manual pages that were already installed in <xref "
-#| "linkend=\"ch-system-man-pages\"/>:"
+#, xml-text
 msgid ""
 "Prevent the installation of manual pages that were already installed in "
 "<xref linkend=\"ch-system-man-pages\"/>:"
 msgstr ""
-"Desabilite a instalação do aplicativo <command>groups</command> e as páginas"
-" de manual dele, uma vez que o Coreutils fornece uma versão melhor. Também, "
-"impeça a instalação de páginas de manual que já foram instaladas no <xref "
+"Impeça a instalação de páginas de manual que já foram instaladas no <xref "
 "linkend=\"ch-system-man-pages\"/>:"
 
 #. type: Content of: <sect1><sect2><screen>
 #: lfs-en/chapter08/shadow.xml:76
-#, fuzzy, no-wrap, xml-text
-#| msgid ""
-#| "<userinput remap=\"pre\">sed -i 's/groups$(EXEEXT) //' src/Makefile.in\n"
-#| "find man -name Makefile.in -exec sed -i 's/groups\\.1 / /'   {} \\;\n"
-#| "find man -name Makefile.in -exec sed -i 's/getspnam\\.3 / /' {} \\;\n"
-#| "find man -name Makefile.in -exec sed -i 's/passwd\\.5 / /'   {} \\;</userinput>"
+#, no-wrap, xml-text
 msgid ""
 "<userinput remap=\"pre\">find man -name Makefile.in -exec sed -i 's/getspnam\\.3 / /' {} \\;\n"
 "find man -name Makefile.in -exec sed -i 's/passwd\\.5 / /'   {} \\;</userinput>"
 msgstr ""
-"<userinput remap=\"pre\">sed -i 's/groups$(EXEEXT) //' src/Makefile.in\n"
-"find man -name Makefile.in -exec sed -i 's/groups\\.1 / /'   {} \\;\n"
-"find man -name Makefile.in -exec sed -i 's/getspnam\\.3 / /' {} \\;\n"
+"<userinput remap=\"pre\">find man -name Makefile.in -exec sed -i 's/getspnam\\.3 / /' {} \\;\n"
 "find man -name Makefile.in -exec sed -i 's/passwd\\.5 / /'   {} \\;</userinput>"
 
 #. type: Content of: <sect1><sect2><para>

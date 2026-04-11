@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-03-21 23:05-0300\n"
+"POT-Creation-Date: 2026-04-02 09:57-0300\n"
 "PO-Revision-Date: 2025-11-17 04:18+0000\n"
 "Last-Translator: Jamenson Ferreira Espindula de Almeida Melo <jafesp@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/projects/linux-from-scratch/chapter03_patches/pt_BR/>\n"
@@ -138,14 +138,39 @@ msgstr "Transferência: <ulink url=\"&patches-root;&kbd-backspace-patch;\"/>"
 msgid "MD5 sum: <literal>&kbd-backspace-patch-md5;</literal>"
 msgstr "Soma de verificação MD5: <literal>&kbd-backspace-patch-md5;</literal>"
 
+#. type: Content of: <sect1><variablelist><varlistentry><term>
+#: lfs-en/chapter03/patches.xml:131
+#, xml-text
+msgid ""
+"Python Security Fix Patch - <token>&python-security-fixes-patch-"
+"size;</token>:"
+msgstr ""
+"Remendo de Correção de Segurança do Python - <token>&python-security-fixes-"
+"patch-size;</token>:"
+
+#. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
+#: lfs-en/chapter03/patches.xml:133
+#, xml-text
+msgid "Download: <ulink url=\"&patches-root;&python-security-fixes-patch;\"/>"
+msgstr ""
+"Transferência: <ulink url=\"&patches-root;&python-security-fixes-patch;\"/>"
+
+#. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
+#: lfs-en/chapter03/patches.xml:134
+#, xml-text
+msgid "MD5 sum: <literal>&python-security-fixes-patch-md5;</literal>"
+msgstr ""
+"Soma de verificação MD5: <literal>&python-security-fixes-patch-"
+"md5;</literal>"
+
 #. type: Content of: <sect1><para>
-#: lfs-en/chapter03/patches.xml:168
+#: lfs-en/chapter03/patches.xml:167
 #, xml-text
 msgid "Total size of these patches: about <returnvalue/>"
 msgstr "Tamanho total desses remendos: cerca de <returnvalue/>"
 
 #. type: Content of: <sect1><para>
-#: lfs-en/chapter03/patches.xml:170
+#: lfs-en/chapter03/patches.xml:169
 #, xml-text
 msgid ""
 "In addition to the above required patches, there exist a number of optional "
@@ -247,25 +272,6 @@ msgstr ""
 #~ msgid "MD5 sum: <literal>&bash-crosscompile-fix-patch-md5;</literal>"
 #~ msgstr ""
 #~ "Soma de verificação MD5: <literal>&bash-crosscompile-fix-patch-"
-#~ "md5;</literal>"
-
-#, xml-text
-#~ msgid ""
-#~ "Python Security Fix Patch - <token>&python-security-fixes-patch-"
-#~ "size;</token>:"
-#~ msgstr ""
-#~ "Remendo de Correção de Segurança do Python - <token>&python-security-fixes-"
-#~ "patch-size;</token>:"
-
-#, xml-text
-#~ msgid "Download: <ulink url=\"&patches-root;&python-security-fixes-patch;\"/>"
-#~ msgstr ""
-#~ "Transferência: <ulink url=\"&patches-root;&python-security-fixes-patch;\"/>"
-
-#, xml-text
-#~ msgid "MD5 sum: <literal>&python-security-fixes-patch-md5;</literal>"
-#~ msgstr ""
-#~ "Soma de verificação MD5: <literal>&python-security-fixes-patch-"
 #~ "md5;</literal>"
 
 #, xml-text

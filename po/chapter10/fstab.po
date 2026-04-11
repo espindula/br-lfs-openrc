@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-03-21 23:06-0300\n"
+"POT-Creation-Date: 2026-04-10 21:28-0300\n"
 "PO-Revision-Date: 2024-01-28 04:18+0000\n"
 "Last-Translator: Jamenson Ferreira Espindula de Almeida Melo <jafesp@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/projects/linux-from-scratch/chapter10_fstab/pt_BR/>\n"
@@ -173,7 +173,49 @@ msgstr ""
 " interpretados no locale UTF-8."
 
 #. type: Content of: <sect1><para>
+#: lfs-en/chapter10/fstab.xml:73
+#, xml-text
+msgid ""
+"When installing GRUB with UEFI, the ESP must be formatted as a FAT "
+"filesystem, most commonly VFAT. This file sees it as VFAT regardless. An "
+"example of how you would go about an entry for the ESP would look like this:"
+msgstr ""
+
+#. type: Content of: <sect1><screen>
+#: lfs-en/chapter10/fstab.xml:78
+#, no-wrap, xml-text
+msgid ""
+"<userinput>cat &gt;&gt; /etc/fstab &lt;&lt; \"EOF\"\n"
+"<literal>/dev/<replaceable>&lt;zzz&gt;</replaceable>  /boot/efi  vfat  rw,relatime,codepage=437,iocharset=iso8859-1   0   2</literal>\n"
+"EOF</userinput>"
+msgstr ""
+
+#. type: Content of: <sect1><para>
 #: lfs-en/chapter10/fstab.xml:83
+#, xml-text
+msgid ""
+"The <literal>iso8859-1</literal> IO charset is used here as we'll enable it "
+"as a part of the kernel UEFI configuration in <xref linkend='ch-bootable-"
+"kernel'/>.  Technically the IO charset should match your locale as we've "
+"discussed above.  However the name of all the files in the ESP only contains"
+" 7-bit ASCII characters, so things will be OK as long as the character set "
+"for your locale treats 7-bit ASCII characters in the same way as ISO-8859-1."
+"  For example, UTF-8 is such a character set."
+msgstr ""
+
+#. type: Content of: <sect1><note><para>
+#: lfs-en/chapter10/fstab.xml:95
+#, xml-text
+msgid ""
+"The EFI filesystem only needs to be mounted when installing GRUB.  The "
+"system uses this partition before the kernel is loaded and is not used "
+"otherwise.  An alternative to adding this entry to the fstab file is to "
+"manually mount it before running <command>grub-install</command> below in "
+"<xref linkend=\"ch-bootable-grub\"/>."
+msgstr ""
+
+#. type: Content of: <sect1><para>
+#: lfs-en/chapter10/fstab.xml:114
 #, xml-text
 msgid ""
 "It is also possible to specify default codepage and iocharset values for "

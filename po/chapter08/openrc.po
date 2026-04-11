@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-03-21 23:03-0300\n"
+"POT-Creation-Date: 2026-04-10 21:25-0300\n"
 "PO-Revision-Date: 2026-02-10 06:01:54-0300\n"
 "Last-Translator: Jamenson Ferreira Espindula de Almeida Melo <jafesp@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) Language: pt_BR\n"
@@ -179,12 +179,15 @@ msgstr "Instale o pacote:"
 
 #. type: Content of: <sect1><sect2><screen>
 #: lfs-en/chapter08/openrc.xml:80
-#, no-wrap, xml-text
-msgid "<userinput remap=\"install\">ninja install</userinput>"
+#, fuzzy, no-wrap, xml-text
+#| msgid "<userinput remap=\"install\">ninja install</userinput>"
+msgid ""
+"<userinput remap=\"install\">ninja install &amp;&amp;\n"
+"mv -v /sbin/rc-update /bin</userinput>"
 msgstr "<userinput remap=\"install\">ninja install</userinput>"
 
 #. type: Content of: <sect1><sect2><para>
-#: lfs-en/chapter08/openrc.xml:82
+#: lfs-en/chapter08/openrc.xml:83
 #, xml-text
 msgid ""
 "OpenRC provides <application>init</application> and other programs of its "
@@ -195,7 +198,7 @@ msgstr ""
 "simbólicos:"
 
 #. type: Content of: <sect1><sect2><screen>
-#: lfs-en/chapter08/openrc.xml:86
+#: lfs-en/chapter08/openrc.xml:87
 #, no-wrap, xml-text
 msgid ""
 "<userinput>for i in {init,shutdown}; do\n"
@@ -231,31 +234,31 @@ msgstr ""
 "chmod 755 /sbin/poweroff /sbin/reboot</userinput>"
 
 #. type: Content of: <sect1><sect2><title>
-#: lfs-en/chapter08/openrc.xml:105
+#: lfs-en/chapter08/openrc.xml:106
 #, xml-text
 msgid "Contents of OpenRC"
 msgstr "Conteúdo do OpenRC"
 
 #. type: Content of: <sect1><sect2><segmentedlist><segtitle>
-#: lfs-en/chapter08/openrc.xml:108
+#: lfs-en/chapter08/openrc.xml:109
 #, xml-text
 msgid "Installed programs"
 msgstr "Programas instalados"
 
 #. type: Content of: <sect1><sect2><segmentedlist><segtitle>
-#: lfs-en/chapter08/openrc.xml:109
+#: lfs-en/chapter08/openrc.xml:110
 #, xml-text
 msgid "Installed libraries"
 msgstr "Bibliotecas instaladas"
 
 #. type: Content of: <sect1><sect2><segmentedlist><segtitle>
-#: lfs-en/chapter08/openrc.xml:110
+#: lfs-en/chapter08/openrc.xml:111
 #, xml-text
 msgid "Installed directories"
 msgstr "Diretórios instalados"
 
 #. type: Content of: <sect1><sect2><segmentedlist><seglistitem><seg>
-#: lfs-en/chapter08/openrc.xml:114
+#: lfs-en/chapter08/openrc.xml:115
 #, xml-text
 msgid ""
 "rc-status, init (link to openrc-init), openrc, openrc-init, openrc-run, "
@@ -267,13 +270,13 @@ msgstr ""
 " (linque para openrc-shutdown), start-stop-daemon e supervise-daemon"
 
 #. type: Content of: <sect1><sect2><segmentedlist><seglistitem><seg>
-#: lfs-en/chapter08/openrc.xml:130
+#: lfs-en/chapter08/openrc.xml:131
 #, xml-text
 msgid "libeinfo.so and librc.so"
 msgstr "libeinfo.so e librc.so"
 
 #. type: Content of: <sect1><sect2><segmentedlist><seglistitem><seg>
-#: lfs-en/chapter08/openrc.xml:134
+#: lfs-en/chapter08/openrc.xml:135
 #, xml-text
 msgid ""
 "/etc/conf.d, /etc/init.d, /etc/local.d, /etc/runlevels, /etc/sysctl.d, "
@@ -283,46 +286,46 @@ msgstr ""
 "/usr/libexec/rc e /usr/share/openrc"
 
 #. type: Content of: <sect1><sect2><variablelist><bridgehead>
-#: lfs-en/chapter08/openrc.xml:146
+#: lfs-en/chapter08/openrc.xml:147
 #, xml-text
 msgid "Short Descriptions"
 msgstr "Descrições Curtas"
 
 #. type: Content of: <sect1><sect2><variablelist>
-#: lfs-en/chapter08/openrc.xml:147
+#: lfs-en/chapter08/openrc.xml:148
 #, xml-text
 msgid "<?dbfo list-presentation=\"list\"?> <?dbhtml list-presentation=\"table\"?>"
 msgstr "<?dbfo list-presentation=\"list\"?> <?dbhtml list-presentation=\"table\"?>"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/openrc.xml:151
+#: lfs-en/chapter08/openrc.xml:152
 #, xml-text
 msgid "<command>rc-status</command>"
 msgstr "<command>rc-status</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/openrc.xml:154
+#: lfs-en/chapter08/openrc.xml:155
 #, xml-text
 msgid "Gives the status of a service"
 msgstr "Fornece a situação de um serviço"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/openrc.xml:157
+#: lfs-en/chapter08/openrc.xml:158
 #, xml-text
 msgid "rc-status"
 msgstr "rc-status"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/openrc.xml:163
+#: lfs-en/chapter08/openrc.xml:164
 #, xml-text
 msgid "<command>init</command>"
 msgstr "<command>init</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/openrc.xml:166
+#: lfs-en/chapter08/openrc.xml:167
 #, xml-text
 msgid ""
 "Is the first process to be started when the kernel has initialized the "
@@ -335,40 +338,40 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/openrc.xml:171
+#: lfs-en/chapter08/openrc.xml:172
 #, xml-text
 msgid "init"
 msgstr "init"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/openrc.xml:177
+#: lfs-en/chapter08/openrc.xml:178
 #, xml-text
 msgid "<command>openrc</command>"
 msgstr "<command>openrc</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/openrc.xml:180
+#: lfs-en/chapter08/openrc.xml:181
 #, xml-text
 msgid "starts and stops services on a given runlevel"
 msgstr "Inicia e para serviços em um determinado nível de execução"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/openrc.xml:183
+#: lfs-en/chapter08/openrc.xml:184
 #, xml-text
 msgid "openrc"
 msgstr "openrc"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/openrc.xml:189
+#: lfs-en/chapter08/openrc.xml:190
 #, xml-text
 msgid "<command>openrc-init</command>"
 msgstr "<command>openrc-init</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/openrc.xml:192
+#: lfs-en/chapter08/openrc.xml:193
 #, xml-text
 msgid ""
 "Gets called from <command>init</command> and starts every service as needed"
@@ -378,40 +381,40 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/openrc.xml:196
+#: lfs-en/chapter08/openrc.xml:197
 #, xml-text
 msgid "openrc-init"
 msgstr "openrc-init"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/openrc.xml:202
+#: lfs-en/chapter08/openrc.xml:203
 #, xml-text
 msgid "<command>openrc-run</command>"
 msgstr "<command>openrc-run</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/openrc.xml:205
+#: lfs-en/chapter08/openrc.xml:206
 #, xml-text
 msgid "Allows using shell commands in a service file"
 msgstr "Permite usar-se comandos de shell em um arquivo de serviço"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/openrc.xml:208
+#: lfs-en/chapter08/openrc.xml:209
 #, xml-text
 msgid "openrc-run"
 msgstr "openrc-run"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/openrc.xml:214
+#: lfs-en/chapter08/openrc.xml:215
 #, xml-text
 msgid "<command>openrc-shutdown</command>"
 msgstr "<command>openrc-shutdown</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/openrc.xml:217
+#: lfs-en/chapter08/openrc.xml:218
 #, xml-text
 msgid ""
 "Brings the system down in a secure way, signaling all processes and "
@@ -422,20 +425,20 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/openrc.xml:221
+#: lfs-en/chapter08/openrc.xml:222
 #, xml-text
 msgid "openrc-shutdown"
 msgstr "openrc-shutdown"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/openrc.xml:227
+#: lfs-en/chapter08/openrc.xml:228
 #, xml-text
 msgid "<command>poweroff</command>"
 msgstr "<command>poweroff</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/openrc.xml:230
+#: lfs-en/chapter08/openrc.xml:231
 #, xml-text
 msgid ""
 "Calls <command>openrc-shutdown</command> with "
@@ -448,40 +451,40 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/openrc.xml:235
+#: lfs-en/chapter08/openrc.xml:236
 #, xml-text
 msgid "poweroff"
 msgstr "poweroff"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/openrc.xml:241
+#: lfs-en/chapter08/openrc.xml:242
 #, xml-text
 msgid "<command>rc-service</command>"
 msgstr "<command>rc-service</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/openrc.xml:244
+#: lfs-en/chapter08/openrc.xml:245
 #, xml-text
 msgid "Runs a given service after locating it"
 msgstr "Executa um determinado serviço depois de localizá-lo"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/openrc.xml:247
+#: lfs-en/chapter08/openrc.xml:248
 #, xml-text
 msgid "rc-service"
 msgstr "rc-service"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/openrc.xml:253
+#: lfs-en/chapter08/openrc.xml:254
 #, xml-text
 msgid "<command>rc-sstat</command>"
 msgstr "<command>rc-sstat</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/openrc.xml:256
+#: lfs-en/chapter08/openrc.xml:257
 #, xml-text
 msgid ""
 "Gives the status of the most crucial services, followed by normal services"
@@ -491,40 +494,40 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/openrc.xml:260
+#: lfs-en/chapter08/openrc.xml:261
 #, xml-text
 msgid "rc-sstat"
 msgstr "rc-sstat"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/openrc.xml:266
+#: lfs-en/chapter08/openrc.xml:267
 #, xml-text
 msgid "<command>rc-update</command>"
 msgstr "<command>rc-update</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/openrc.xml:269
+#: lfs-en/chapter08/openrc.xml:270
 #, xml-text
 msgid "Adds and removes services on a runlevel"
 msgstr "Adiciona e remove serviços em um nível de execução"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/openrc.xml:272
+#: lfs-en/chapter08/openrc.xml:273
 #, xml-text
 msgid "rc-update"
 msgstr "rc-update"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/openrc.xml:278
+#: lfs-en/chapter08/openrc.xml:279
 #, xml-text
 msgid "<command>reboot</command>"
 msgstr "<command>reboot</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/openrc.xml:281
+#: lfs-en/chapter08/openrc.xml:282
 #, xml-text
 msgid ""
 "Calls <command>openrc-shutdown</command> with "
@@ -537,107 +540,107 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/openrc.xml:286
+#: lfs-en/chapter08/openrc.xml:287
 #, xml-text
 msgid "reboot"
 msgstr "reboot"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/openrc.xml:292
+#: lfs-en/chapter08/openrc.xml:293
 #, xml-text
 msgid "<command>shutdown</command>"
 msgstr "<command>shutdown</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/openrc.xml:295
+#: lfs-en/chapter08/openrc.xml:296
 #, xml-text
 msgid "Is a symlink to <command>openrc-shutdown</command>"
 msgstr "É um linque simbólico para <command>openrc-shutdown</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/openrc.xml:298
+#: lfs-en/chapter08/openrc.xml:299
 #, xml-text
 msgid "shutdown"
 msgstr "shutdown"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/openrc.xml:304
+#: lfs-en/chapter08/openrc.xml:305
 #, xml-text
 msgid "<command>start-stop-daemon</command>"
 msgstr "<command>start-stop-daemon</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/openrc.xml:307
+#: lfs-en/chapter08/openrc.xml:308
 #, xml-text
 msgid "Starts or stops a daemon in a service file"
 msgstr "Inicia ou para um processo de segundo plano em um arquivo de serviço"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/openrc.xml:310
+#: lfs-en/chapter08/openrc.xml:311
 #, xml-text
 msgid "start-stop-daemon"
 msgstr "start-stop-daemon"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/openrc.xml:316
+#: lfs-en/chapter08/openrc.xml:317
 #, xml-text
 msgid "<command>supervise-daemon</command>"
 msgstr "<command>supervise-daemon</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/openrc.xml:319
+#: lfs-en/chapter08/openrc.xml:320
 #, xml-text
 msgid "Supervises a daemon in a service file"
 msgstr "Supervisiona um processo de segundo plano em um arquivo de serviço"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/openrc.xml:322
+#: lfs-en/chapter08/openrc.xml:323
 #, xml-text
 msgid "supervise-daemon"
 msgstr "supervise-daemon"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/openrc.xml:328
+#: lfs-en/chapter08/openrc.xml:329
 #, xml-text
 msgid "<filename class=\"libraryfile\">libeinfo</filename>"
 msgstr "<filename class=\"libraryfile\">libeinfo</filename>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/openrc.xml:331
+#: lfs-en/chapter08/openrc.xml:332
 #, xml-text
 msgid "Contains functions for outputting colored messages"
 msgstr "Contém funções para gerar mensagens coloridas"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/openrc.xml:334
+#: lfs-en/chapter08/openrc.xml:335
 #, xml-text
 msgid "libeinfo"
 msgstr "libeinfo"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/openrc.xml:340
+#: lfs-en/chapter08/openrc.xml:341
 #, xml-text
 msgid "<filename class=\"libraryfile\">librc</filename>"
 msgstr "<filename class=\"libraryfile\">librc</filename>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/openrc.xml:343
+#: lfs-en/chapter08/openrc.xml:344
 #, xml-text
 msgid "Provides the core OpenRC functions"
 msgstr "Fornece as funções centrais do OpenRC"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/openrc.xml:346
+#: lfs-en/chapter08/openrc.xml:347
 #, xml-text
 msgid "librc"
 msgstr "librc"

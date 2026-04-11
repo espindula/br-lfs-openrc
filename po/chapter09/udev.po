@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-03-21 23:05-0300\n"
+"POT-Creation-Date: 2026-04-10 21:27-0300\n"
 "PO-Revision-Date: 2024-01-28 12:50+0000\n"
 "Last-Translator: Jamenson Ferreira Espindula de Almeida Melo <jafesp@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/projects/linux-from-scratch/chapter09_udev/pt_BR/>\n"
@@ -545,31 +545,14 @@ msgstr ""
 "url='&man;modprobe.d.5'>modprobe.d(5)</ulink>&quot; para mais informação a "
 "respeito da sintaxe e recursos do <quote>softdep</quote>."
 
-#. type: Content of: <sect1><sect2><sect3><para>
-#: lfs-en/chapter09/udev.xml:232
-#, xml-text
-msgid ""
-"If the module in question is not a wrapper and is useful by itself, "
-"configure the <command>modules</command> bootscript to load this module on "
-"system boot. To do this, add the module name to the "
-"<filename>/etc/sysconfig/modules</filename> file on a separate line.  This "
-"works for wrapper modules too, but is suboptimal in that case."
-msgstr ""
-"Se o módulo em questão não é um encapsulador e é útil por ele próprio, "
-"[então] configure o script de inicialização <command>modules</command> para "
-"carregar esse módulo na inicialização do sistema. Para fazer isso, adicione "
-"o nome do módulo ao arquivo <filename>/etc/sysconfig/modules</filename> em "
-"uma linha separada. Isso funciona para módulos encapsuladores também, mas é "
-"abaixo do ideal nesse caso."
-
 #. type: Content of: <sect1><sect2><sect3><title>
-#: lfs-en/chapter09/udev.xml:241
+#: lfs-en/chapter09/udev.xml:235
 #, xml-text
 msgid "Udev Loads Some Unwanted Module"
 msgstr "O Udev Carrega Algum Módulo Indesejado"
 
 #. type: Content of: <sect1><sect2><sect3><para>
-#: lfs-en/chapter09/udev.xml:243
+#: lfs-en/chapter09/udev.xml:237
 #, xml-text
 msgid ""
 "Either don't build the module, or blacklist it in a "
@@ -581,13 +564,13 @@ msgstr ""
 "<emphasis>forte</emphasis> no exemplo abaixo:"
 
 #. type: Content of: <sect1><sect2><sect3><screen>
-#: lfs-en/chapter09/udev.xml:247
+#: lfs-en/chapter09/udev.xml:241
 #, no-wrap, xml-text
 msgid "<literal>blacklist forte</literal>"
 msgstr "<literal>blacklist forte</literal>"
 
 #. type: Content of: <sect1><sect2><sect3><para>
-#: lfs-en/chapter09/udev.xml:249
+#: lfs-en/chapter09/udev.xml:243
 #, xml-text
 msgid ""
 "Blacklisted modules can still be loaded manually with the explicit "
@@ -597,14 +580,14 @@ msgstr ""
 "comando explícito <command>modprobe</command>."
 
 #. type: Content of: <sect1><sect2><sect3><title>
-#: lfs-en/chapter09/udev.xml:255
+#: lfs-en/chapter09/udev.xml:249
 #, xml-text
 msgid "Udev Creates a Device Incorrectly, or Makes the Wrong Symlink"
 msgstr ""
 "O Udev Cria um Dispositivo Incorretamente ou Faz o Link Simbólico Errado"
 
 #. type: Content of: <sect1><sect2><sect3><para>
-#: lfs-en/chapter09/udev.xml:257
+#: lfs-en/chapter09/udev.xml:251
 #, xml-text
 msgid ""
 "This usually happens if a rule unexpectedly matches a device. For example, a"
@@ -620,13 +603,13 @@ msgstr ""
 "mais específica, com a ajuda do comando <command>udevadm info</command>."
 
 #. type: Content of: <sect1><sect2><sect3><title>
-#: lfs-en/chapter09/udev.xml:266
+#: lfs-en/chapter09/udev.xml:260
 #, xml-text
 msgid "Udev Rule Works Unreliably"
 msgstr "Regra do Udev Funciona de Forma Não Confiável"
 
 #. type: Content of: <sect1><sect2><sect3><para>
-#: lfs-en/chapter09/udev.xml:268
+#: lfs-en/chapter09/udev.xml:262
 #, xml-text
 msgid ""
 "This may be another manifestation of the previous problem. If not, and your "
@@ -649,13 +632,13 @@ msgstr ""
 "Development se você o fizer e isso ajudar."
 
 #. type: Content of: <sect1><sect2><sect3><title>
-#: lfs-en/chapter09/udev.xml:280
+#: lfs-en/chapter09/udev.xml:274
 #, xml-text
 msgid "Udev Does Not Create a Device"
 msgstr "O Udev Não Cria um Dispositivo"
 
 #. type: Content of: <sect1><sect2><sect3><para>
-#: lfs-en/chapter09/udev.xml:282
+#: lfs-en/chapter09/udev.xml:276
 #, xml-text
 msgid ""
 "First, be certain that the driver is built into the kernel or already loaded"
@@ -666,7 +649,7 @@ msgstr ""
 "dispositivo mal nomeado."
 
 #. type: Content of: <sect1><sect2><sect3><para>
-#: lfs-en/chapter09/udev.xml:286
+#: lfs-en/chapter09/udev.xml:280
 #, xml-text
 msgid ""
 "If a kernel driver does not export its data to <systemitem "
@@ -691,7 +674,7 @@ msgstr ""
 "<filename class=\"directory\">/dev</filename> pelo <command>udev</command>."
 
 #. type: Content of: <sect1><sect2><sect3><title>
-#: lfs-en/chapter09/udev.xml:300
+#: lfs-en/chapter09/udev.xml:294
 #, xml-text
 msgid "Device Naming Order Changes Randomly After Rebooting"
 msgstr ""
@@ -699,7 +682,7 @@ msgstr ""
 "Reinicializar"
 
 #. type: Content of: <sect1><sect2><sect3><para>
-#: lfs-en/chapter09/udev.xml:302
+#: lfs-en/chapter09/udev.xml:296
 #, xml-text
 msgid ""
 "This is due to the fact that udev, by design, handles uevents and loads "
@@ -723,19 +706,19 @@ msgstr ""
 "exemplos."
 
 #. type: Content of: <sect1><sect2><title>
-#: lfs-en/chapter09/udev.xml:316
+#: lfs-en/chapter09/udev.xml:310
 #, xml-text
 msgid "Useful Reading"
 msgstr "Leitura Útil"
 
 #. type: Content of: <sect1><sect2><para>
-#: lfs-en/chapter09/udev.xml:318
+#: lfs-en/chapter09/udev.xml:312
 #, xml-text
 msgid "Additional helpful documentation is available at the following sites:"
 msgstr "Documentação útil adicional está disponível nos seguintes sítios:"
 
 #. type: Content of: <sect1><sect2><itemizedlist><listitem><para>
-#: lfs-en/chapter09/udev.xml:324
+#: lfs-en/chapter09/udev.xml:318
 #, xml-text
 msgid ""
 "A Userspace Implementation of <systemitem "
@@ -749,7 +732,7 @@ msgstr ""
 "Hartman-OLS2003.pdf\"/>"
 
 #. type: Content of: <sect1><sect2><itemizedlist><listitem><para>
-#: lfs-en/chapter09/udev.xml:329
+#: lfs-en/chapter09/udev.xml:323
 #, xml-text
 msgid ""
 "The <systemitem class=\"filesystem\">sysfs</systemitem> Filesystem <ulink "
@@ -758,3 +741,18 @@ msgstr ""
 "O Sistema de Arquivos <systemitem class=\"filesystem\">sysfs</systemitem> "
 "<ulink "
 "url=\"http://www.kernel.org/pub/linux/kernel/people/mochel/doc/papers/ols-2005/mochel.pdf\"/>"
+
+#, xml-text
+#~ msgid ""
+#~ "If the module in question is not a wrapper and is useful by itself, "
+#~ "configure the <command>modules</command> bootscript to load this module on "
+#~ "system boot. To do this, add the module name to the "
+#~ "<filename>/etc/sysconfig/modules</filename> file on a separate line.  This "
+#~ "works for wrapper modules too, but is suboptimal in that case."
+#~ msgstr ""
+#~ "Se o módulo em questão não é um encapsulador e é útil por ele próprio, "
+#~ "[então] configure o script de inicialização <command>modules</command> para "
+#~ "carregar esse módulo na inicialização do sistema. Para fazer isso, adicione "
+#~ "o nome do módulo ao arquivo <filename>/etc/sysconfig/modules</filename> em "
+#~ "uma linha separada. Isso funciona para módulos encapsuladores também, mas é "
+#~ "abaixo do ideal nesse caso."

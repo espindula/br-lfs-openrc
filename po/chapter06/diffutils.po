@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-03-21 23:06-0300\n"
+"POT-Creation-Date: 2026-04-10 21:28-0300\n"
 "PO-Revision-Date: 2025-05-23 04:18+0000\n"
 "Last-Translator: Jamenson Ferreira Espindula de Almeida Melo <jafesp@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/projects/linux-from-scratch/chapter06_diffutils/pt_BR/>\n"
@@ -89,11 +89,16 @@ msgstr "Prepare o Diffutils para compilação:"
 
 #. type: Content of: <sect1><sect2><screen>
 #: lfs-en/chapter06/diffutils.xml:48
-#, no-wrap, xml-text
+#, fuzzy, no-wrap, xml-text
+#| msgid ""
+#| "<userinput remap=\"configure\">./configure --prefix=/usr   \\\n"
+#| "            --host=$LFS_TGT \\\n"
+#| "            gl_cv_func_strcasecmp_works=y \\\n"
+#| "            --build=$(./build-aux/config.guess)</userinput>"
 msgid ""
 "<userinput remap=\"configure\">./configure --prefix=/usr   \\\n"
 "            --host=$LFS_TGT \\\n"
-"            gl_cv_func_strcasecmp_works=y \\\n"
+"            gl_cv_func_strcasecmp_works=yes \\\n"
 "            --build=$(./build-aux/config.guess)</userinput>"
 msgstr ""
 "<userinput remap=\"configure\">./configure --prefix=/usr   \\\n"
@@ -109,28 +114,43 @@ msgstr "O significado das opções do configure:"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
 #: lfs-en/chapter06/diffutils.xml:58
-#, xml-text
-msgid "<parameter>gl_cv_func_strcasecmp_works=y</parameter>"
+#, fuzzy, xml-text
+#| msgid "<parameter>gl_cv_func_strcasecmp_works=y</parameter>"
+msgid "<parameter>gl_cv_func_strcasecmp_works=yes</parameter>"
 msgstr "<parameter>gl_cv_func_strcasecmp_works=y</parameter>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
 #: lfs-en/chapter06/diffutils.xml:60
-#, xml-text
+#, fuzzy, xml-text
+#| msgid ""
+#| "This option specify the result of a check for the "
+#| "<function>strcasecmp</function>.  The check requires running a compiled C "
+#| "program, and this is impossible during cross-compilation because in general "
+#| "a cross-compiled program cannot run on the host distro.  Normally for such a"
+#| " check the <command>configure</command> script would use a fall-back value "
+#| "for cross-compilation, but the fall-back value for this check is absent and "
+#| "the <command>configure</command> script would have no value to use and error"
+#| " out.  The upstream has already fixed the issue, but to apply the fix we'd "
+#| "need to run <command>autoconf</command> that the host distro may lack.  So "
+#| "we just specify the check result (<literal>y</literal> as we know the "
+#| "<function>strcasecmp</function> function in Glibc-&glibc-version; works "
+#| "fine) instead, then <command>configure</command> will just use the specified"
+#| " value and skip the check."
 msgid ""
 "This option specify the result of a check for the "
-"<function>strcasecmp</function>.  The check requires running a compiled C "
-"program, and this is impossible during cross-compilation because in general "
-"a cross-compiled program cannot run on the host distro.  Normally for such a"
-" check the <command>configure</command> script would use a fall-back value "
-"for cross-compilation, but the fall-back value for this check is absent and "
-"the <command>configure</command> script would have no value to use and error"
-" out.  The upstream has already fixed the issue, but to apply the fix we'd "
-"need to run <command>autoconf</command> that the host distro may lack.  So "
-"we just specify the check result (<literal>y</literal> as we know the "
-"<function>strcasecmp</function> function in Glibc-&glibc-version; works "
-"fine) instead, then <command>configure</command> will just use the specified"
-" value and skip the check."
+"<function>strcasecmp</function> function. The check requires running a "
+"compiled C program, and this is impossible during cross-compilation because "
+"in general a cross-compiled program cannot run on the host distro.  Normally"
+" for such a check the <command>configure</command> script would use a fall-"
+"back value for cross-compilation, but the fall-back value for this check is "
+"absent and the <command>configure</command> script would have no value to "
+"use and error out.  Upstream have already fixed the issue, but to apply the "
+"fix we'd need to run <command>autoconf</command> that the host distro may "
+"lack.  So we just specify the check result (<literal>yes</literal> as we "
+"know the <function>strcasecmp</function> function in Glibc-&glibc-version; "
+"works fine) instead, then <command>configure</command> will just use the "
+"specified value and skip the check."
 msgstr ""
 "Essa opção especifica o resultado de uma verificação para "
 "<function>strcasecmp</function>. A verificação exige executar um programa em"

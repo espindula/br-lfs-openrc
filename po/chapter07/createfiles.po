@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-03-21 23:03-0300\n"
+"POT-Creation-Date: 2026-04-10 21:25-0300\n"
 "PO-Revision-Date: 2026-01-16 16:18+0000\n"
 "Last-Translator: Jamenson Ferreira Espindula de Almeida Melo <jafesp@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/projects/linux-from-scratch/chapter07_createfiles/pt_BR/>\n"
@@ -534,9 +534,9 @@ msgstr ""
 #| "dynamically when a user logs into the system.</phrase>"
 msgid ""
 "The <filename>/run/utmp</filename> file records the users that are currently"
-" logged in.  <phrase revision='openrc'>This file is created dynamically in "
-"the boot scripts.</phrase><phrase revision='systemd'>This file is created "
-"dynamically when a user logs into the system.</phrase>"
+" logged in.  This file is created dynamically <phrase revision='openrc'>by "
+"the OpenRC services.</phrase> <phrase revision='systemd'>when a user logs "
+"into the system.</phrase>"
 msgstr ""
 "O arquivo <filename>/run/utmp</filename> registra os(as) usuários(as) que "
 "estejam atualmente logados(as). <phrase revision='sysv'>Esse arquivo é "
@@ -545,7 +545,7 @@ msgstr ""
 "dinamicamente quando um(a) usuário(a) se loga no sistema.</phrase>"
 
 #. type: Content of: <sect1><note><para>
-#: lfs-en/chapter07/createfiles.xml:235
+#: lfs-en/chapter07/createfiles.xml:236
 #, xml-text
 msgid ""
 "The <filename>utmp</filename>, <filename>wtmp</filename>, "

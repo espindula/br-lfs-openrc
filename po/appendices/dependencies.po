@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-03-21 23:05-0300\n"
+"POT-Creation-Date: 2026-04-10 21:27-0300\n"
 "PO-Revision-Date: 2026-01-27 04:18+0000\n"
 "Last-Translator: Jamenson Ferreira Espindula de Almeida Melo <jafesp@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/projects/linux-from-scratch/appendices_dependencies/pt_BR/>\n"
@@ -711,7 +711,6 @@ msgstr "&external;"
 #: lfs-en/appendices/dependencies.xml:3206
 #: lfs-en/appendices/dependencies.xml:3231
 #: lfs-en/appendices/dependencies.xml:3238
-#: lfs-en/appendices/dependencies.xml:3245
 #: lfs-en/appendices/dependencies.xml:3271
 #: lfs-en/appendices/dependencies.xml:3285
 #: lfs-en/appendices/dependencies.xml:3311
@@ -2780,6 +2779,12 @@ msgid ""
 msgstr ""
 "Bash, Binutils, Coreutils, GCC, Gettext, Glibc, Grep, Make, Ncurses, Patch e"
 " Sed"
+
+#. type: Content of: <appendix><segmentedlist><seglistitem><seg>
+#: lfs-en/appendices/dependencies.xml:3245
+#, xml-text
+msgid "SWIG"
+msgstr ""
 
 #. type: Content of: <appendix><bridgehead>
 #: lfs-en/appendices/dependencies.xml:3250

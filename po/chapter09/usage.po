@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-03-21 23:05-0300\n"
+"POT-Creation-Date: 2026-04-10 21:27-0300\n"
 "PO-Revision-Date: 2024-09-18 16:18+0000\n"
 "Last-Translator: Jamenson Ferreira Espindula de Almeida Melo <jafesp@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/projects/linux-from-scratch/chapter09_usage/pt_BR/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Generator: Weblate 5.6.2\n"
 
 #. type: Content of: <sect1><title>
-#: lfs-en/chapter09/usage.xml:12
+#: lfs-en/chapter09/usage.xml:11
 #, fuzzy, xml-text
 #| msgid "System V Bootscript Usage and Configuration"
 msgid "OpenRC Usage and Configuration"
@@ -27,26 +27,26 @@ msgstr ""
 "System V"
 
 #. type: Content of: <sect1><indexterm><primary>
-#: lfs-en/chapter09/usage.xml:15
+#: lfs-en/chapter09/usage.xml:14
 #, fuzzy, xml-text
 #| msgid "usage"
 msgid "Usage"
 msgstr "uso"
 
 #. type: Content of: <sect1><indexterm><secondary>
-#: lfs-en/chapter09/usage.xml:16
+#: lfs-en/chapter09/usage.xml:15
 #, xml-text
 msgid "usage"
 msgstr "uso"
 
 #. type: Content of: <sect1><sect2><title>
-#: lfs-en/chapter09/usage.xml:20
+#: lfs-en/chapter09/usage.xml:19
 #, xml-text
 msgid "How Does OpenRC Work?"
 msgstr ""
 
 #. type: Content of: <sect1><sect2><para>
-#: lfs-en/chapter09/usage.xml:22
+#: lfs-en/chapter09/usage.xml:21
 #, xml-text
 msgid ""
 "This version of LFS uses a special booting facility named OpenRC, which "
@@ -57,7 +57,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <sect1><sect2><para>
-#: lfs-en/chapter09/usage.xml:29
+#: lfs-en/chapter09/usage.xml:28
 #, xml-text
 msgid ""
 "There is an alternative boot procedure called <command>systemd</command>. We"
@@ -72,7 +72,7 @@ msgstr ""
 "systemd/\"/>."
 
 #. type: Content of: <sect1><sect2><para>
-#: lfs-en/chapter09/usage.xml:34
+#: lfs-en/chapter09/usage.xml:33
 #, xml-text
 msgid ""
 "OpenRC's run level scheme has five run levels that are the most important, "
@@ -83,13 +83,13 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <sect1><sect2><itemizedlist><listitem><para>
-#: lfs-en/chapter09/usage.xml:43
+#: lfs-en/chapter09/usage.xml:42
 #, xml-text
 msgid "sysinit: brings up and mounts kernel virtual filesystems"
 msgstr ""
 
 #. type: Content of: <sect1><sect2><itemizedlist><listitem><para>
-#: lfs-en/chapter09/usage.xml:48
+#: lfs-en/chapter09/usage.xml:47
 #, xml-text
 msgid ""
 "boot: starts up important services like setting the time and checks the "
@@ -97,19 +97,19 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <sect1><sect2><itemizedlist><listitem><para>
-#: lfs-en/chapter09/usage.xml:54
+#: lfs-en/chapter09/usage.xml:53
 #, xml-text
 msgid "nonetwork: default without networking"
 msgstr ""
 
 #. type: Content of: <sect1><sect2><itemizedlist><listitem><para>
-#: lfs-en/chapter09/usage.xml:59
+#: lfs-en/chapter09/usage.xml:58
 #, xml-text
 msgid "default: where most services should be, like setting up audio services"
 msgstr ""
 
 #. type: Content of: <sect1><sect2><itemizedlist><listitem><para>
-#: lfs-en/chapter09/usage.xml:65
+#: lfs-en/chapter09/usage.xml:64
 #, xml-text
 msgid ""
 "shutdown: kills all processes and remounts <filename "
@@ -117,7 +117,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <sect1><sect2><para>
-#: lfs-en/chapter09/usage.xml:72
+#: lfs-en/chapter09/usage.xml:71
 #, xml-text
 msgid ""
 "Each service has dependency information, so a service on a given run level "
@@ -126,27 +126,28 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <sect1><sect2><title>
-#: lfs-en/chapter09/usage.xml:80
+#: lfs-en/chapter09/usage.xml:79
 #, fuzzy, xml-text
 #| msgid "configuring"
 msgid "Configuring OpenRC"
 msgstr "configurando"
 
 #. type: Content of: <sect1><sect2><indexterm><primary>
-#: lfs-en/chapter09/usage.xml:83
+#: lfs-en/chapter09/usage.xml:82
 #, xml-text
 msgid "OpenRC"
 msgstr ""
 
 #. type: Content of: <sect1><sect2><indexterm><secondary>
-#: lfs-en/chapter09/usage.xml:84 lfs-en/chapter09/usage.xml:109
-#: lfs-en/chapter09/usage.xml:186 lfs-en/chapter09/usage.xml:220
+#: lfs-en/chapter09/usage.xml:83 lfs-en/chapter09/usage.xml:108
+#: lfs-en/chapter09/usage.xml:185 lfs-en/chapter09/usage.xml:225
+#: lfs-en/chapter09/usage.xml:259
 #, xml-text
 msgid "configuring"
 msgstr "configurando"
 
 #. type: Content of: <sect1><sect2><para>
-#: lfs-en/chapter09/usage.xml:87
+#: lfs-en/chapter09/usage.xml:86
 #, xml-text
 msgid ""
 "Whenever a system is started, <command>agetty</command> is ran for a number "
@@ -156,7 +157,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <sect1><sect2><screen>
-#: lfs-en/chapter09/usage.xml:93
+#: lfs-en/chapter09/usage.xml:92
 #, no-wrap, xml-text
 msgid ""
 "<userinput>rm -vf /etc/runlevels/default/agetty*\n"
@@ -167,7 +168,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <sect1><sect2><para>
-#: lfs-en/chapter09/usage.xml:99
+#: lfs-en/chapter09/usage.xml:98
 #, xml-text
 msgid ""
 "These <literal>tty</literal> services are started on the "
@@ -175,19 +176,19 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <sect1><sect2><title>
-#: lfs-en/chapter09/usage.xml:105
+#: lfs-en/chapter09/usage.xml:104
 #, xml-text
 msgid "Creating the Udevd Service"
 msgstr ""
 
 #. type: Content of: <sect1><sect2><indexterm><primary>
-#: lfs-en/chapter09/usage.xml:108
+#: lfs-en/chapter09/usage.xml:107
 #, xml-text
 msgid "udevd"
 msgstr ""
 
 #. type: Content of: <sect1><sect2><para>
-#: lfs-en/chapter09/usage.xml:111
+#: lfs-en/chapter09/usage.xml:110
 #, xml-text
 msgid ""
 "OpenRC doesn't ship services for <command>udevd</command>, leading to kernel"
@@ -195,14 +196,14 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <sect1><sect2><screen>
-#: lfs-en/chapter09/usage.xml:114
+#: lfs-en/chapter09/usage.xml:113
 #, no-wrap, xml-text
 msgid ""
 "<userinput>cat &gt; /etc/init.d/udevd &lt;&lt; \"EOF\"\n"
 "<literal>#!/sbin/openrc-run\n"
 "# Starts the udevd daemon.\n"
-"# Authors: Zeckma - zeckma.tech@gmail.com\n"
-"# Version: LFS 13.0\n"
+"# Authors: Zeckma - zeckma@linuxfromscratch.com\n"
+"# Version: LFS &version;\n"
 "\n"
 "description=\"starts the udevd daemon\"\n"
 "\n"
@@ -225,8 +226,8 @@ msgid ""
 "cat &gt; /etc/init.d/udev-trigger &lt;&lt; \"EOF\"\n"
 "<literal>#!/sbin/openrc-run\n"
 "# Coldplugs devices and settles the udevd daemon.\n"
-"# Authors: Zeckma - zeckma.tech@gmail.com\n"
-"# Version: LFS 13.0\n"
+"# Authors: Zeckma - zeckma@linuxfromscratch.com\n"
+"# Version: LFS &version;\n"
 "\n"
 "description=\"coldplugs devices\"\n"
 "\n"
@@ -259,7 +260,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <sect1><sect2><para>
-#: lfs-en/chapter09/usage.xml:174
+#: lfs-en/chapter09/usage.xml:173
 #, xml-text
 msgid ""
 "These services should load most if not all modules automatically. If you "
@@ -268,19 +269,73 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <sect1><sect2><title>
-#: lfs-en/chapter09/usage.xml:182
+#: lfs-en/chapter09/usage.xml:181
+#, fuzzy, xml-text
+#| msgid "Configuring the Sysklogd Script"
+msgid "Creating the Sysklogd Service"
+msgstr "Configurando o Conjunto de Comandos Sequenciais Sysklogd"
+
+#. type: Content of: <sect1><sect2><indexterm><primary>
+#: lfs-en/chapter09/usage.xml:184
+#, xml-text
+msgid "sysklogd"
+msgstr "sysklogd"
+
+#. type: Content of: <sect1><sect2><para>
+#: lfs-en/chapter09/usage.xml:187
+#, xml-text
+msgid ""
+"OpenRC doesn't ship a service for <command>syslogd</command>, leading "
+"important messages not being captured. Create and enable the service for the"
+" logger:"
+msgstr ""
+
+#. type: Content of: <sect1><sect2><screen>
+#: lfs-en/chapter09/usage.xml:191
+#, no-wrap, xml-text
+msgid ""
+"<userinput>cat &gt; /etc/init.d/sysklogd &lt;&lt; \"EOF\"\n"
+"<literal>#!/sbin/openrc-run\n"
+"# Starts the sysklogd daemon.\n"
+"# Authors: Zeckma - zeckma@linuxfromscratch.com\n"
+"# Version: LFS &version;\n"
+"\n"
+"command=/sbin/syslogd\n"
+"pidfile=\"/run/${RC_SVCNAME}.pid\"\n"
+"command_background=true\n"
+"command_args=\"-F ${sysklogd_options}\"\n"
+"\n"
+"depend() {\n"
+"  need clock hostname\n"
+"  after root\n"
+"  provide logger\n"
+"}\n"
+"\n"
+"reload() {\n"
+"  ebegin \"Reloading sysklogd\"\n"
+"  start-stop-daemon --signal HUP --pidfile ${pidfile}\n"
+"  eend $?\n"
+"}</literal>\n"
+"EOF\n"
+"\n"
+"chmod 755 /etc/init.d/sysklogd\n"
+"rc-update add sysklogd boot</userinput>"
+msgstr ""
+
+#. type: Content of: <sect1><sect2><title>
+#: lfs-en/chapter09/usage.xml:221
 #, xml-text
 msgid "Configuring the System Clock"
 msgstr "Configurando o Relógio do Sistema"
 
 #. type: Content of: <sect1><sect2><indexterm><primary>
-#: lfs-en/chapter09/usage.xml:185
+#: lfs-en/chapter09/usage.xml:224
 #, xml-text
 msgid "setclock"
 msgstr "setclock"
 
 #. type: Content of: <sect1><sect2><para>
-#: lfs-en/chapter09/usage.xml:188
+#: lfs-en/chapter09/usage.xml:227
 #, xml-text
 msgid ""
 "OpenRC provides a <command>hwclock</command> service which reads from the "
@@ -293,7 +348,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <sect1><sect2><para>
-#: lfs-en/chapter09/usage.xml:196
+#: lfs-en/chapter09/usage.xml:235
 #, fuzzy, xml-text
 #| msgid ""
 #| "If you cannot remember whether or not the hardware clock is set to UTC, find"
@@ -331,7 +386,7 @@ msgstr ""
 "como GMT -0700, adicione sete horas à hora local."
 
 #. type: Content of: <sect1><sect2><para>
-#: lfs-en/chapter09/usage.xml:207
+#: lfs-en/chapter09/usage.xml:246
 #, xml-text
 msgid ""
 "Once you know the hardware time uses, edit "
@@ -340,19 +395,19 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <sect1><sect2><title>
-#: lfs-en/chapter09/usage.xml:216
+#: lfs-en/chapter09/usage.xml:255
 #, xml-text
 msgid "Configuring the Linux Console"
 msgstr "Configurando o Console do Linux"
 
 #. type: Content of: <sect1><sect2><indexterm><primary>
-#: lfs-en/chapter09/usage.xml:219
+#: lfs-en/chapter09/usage.xml:258
 #, xml-text
 msgid "console"
 msgstr "console"
 
 #. type: Content of: <sect1><sect2><para>
-#: lfs-en/chapter09/usage.xml:223
+#: lfs-en/chapter09/usage.xml:262
 #, fuzzy, xml-text
 #| msgid ""
 #| "This section discusses how to configure the <command>console</command> "
@@ -382,7 +437,7 @@ msgstr ""
 "inicialização <command>console</command> não fará nada."
 
 #. type: Content of: <sect1><sect2><para>
-#: lfs-en/chapter09/usage.xml:231
+#: lfs-en/chapter09/usage.xml:270
 #, xml-text
 msgid ""
 "The <command>consolefont</command> service reads the "
@@ -392,7 +447,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <sect1><sect2><para>
-#: lfs-en/chapter09/usage.xml:236
+#: lfs-en/chapter09/usage.xml:275
 #, fuzzy, xml-text
 #| msgid ""
 #| "The <command>console</command> script reads the "
@@ -430,7 +485,7 @@ msgstr ""
 "corretos para esses aplicativos."
 
 #. type: Content of: <sect1><sect2><para>
-#: lfs-en/chapter09/usage.xml:244
+#: lfs-en/chapter09/usage.xml:283
 #, xml-text
 msgid ""
 "For both <command>consolefont</command> and <command>keymaps</command>, "
@@ -439,7 +494,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <sect1><sect2><note><para>
-#: lfs-en/chapter09/usage.xml:251
+#: lfs-en/chapter09/usage.xml:290
 #, fuzzy, xml-text
 #| msgid ""
 #| "The <filename>/etc/sysconfig/console</filename> file only controls the Linux"
@@ -461,14 +516,14 @@ msgstr ""
 "aplicam."
 
 #. type: Content of: <sect1><sect2><title>
-#: lfs-en/chapter09/usage.xml:260
+#: lfs-en/chapter09/usage.xml:299
 #, fuzzy, xml-text
 #| msgid "configuring"
 msgid "Configuring Agetty"
 msgstr "configurando"
 
 #. type: Content of: <sect1><sect2><para>
-#: lfs-en/chapter09/usage.xml:263
+#: lfs-en/chapter09/usage.xml:302
 #, xml-text
 msgid ""
 "If you don't want the boot logs to be cleared on the first TTY, which Agetty"
@@ -478,20 +533,20 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <sect1><sect2><title>
-#: lfs-en/chapter09/usage.xml:272
+#: lfs-en/chapter09/usage.xml:311
 #, fuzzy, xml-text
 #| msgid "The rc.site File"
 msgid "The rc.conf File"
 msgstr "O Arquivo rc.site"
 
 #. type: Content of: <sect1><sect2><indexterm><primary>
-#: lfs-en/chapter09/usage.xml:275
+#: lfs-en/chapter09/usage.xml:314
 #, xml-text
 msgid "rc.conf"
 msgstr ""
 
 #. type: Content of: <sect1><sect2><para>
-#: lfs-en/chapter09/usage.xml:278
+#: lfs-en/chapter09/usage.xml:317
 #, xml-text
 msgid ""
 "The <filename>/etc/rc.conf</filename> file contains settings that control "
@@ -501,13 +556,13 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <sect1><sect2><title>
-#: lfs-en/chapter09/usage.xml:286
+#: lfs-en/chapter09/usage.xml:325
 #, xml-text
 msgid "Other OpenRC Configuration Files"
 msgstr ""
 
 #. type: Content of: <sect1><sect2><para>
-#: lfs-en/chapter09/usage.xml:288
+#: lfs-en/chapter09/usage.xml:327
 #, xml-text
 msgid ""
 "Many other services have configuration files in <filename "
@@ -1457,14 +1512,6 @@ msgstr ""
 #~ "conjunto de comandos sequenciais de configuração "
 #~ "<filename>/etc/sysconfig/createfiles</filename>. O formato desse arquivo "
 #~ "está embutido nos comentários do arquivo padrão de configuração."
-
-#, xml-text
-#~ msgid "Configuring the Sysklogd Script"
-#~ msgstr "Configurando o Conjunto de Comandos Sequenciais Sysklogd"
-
-#, xml-text
-#~ msgid "sysklogd"
-#~ msgstr "sysklogd"
 
 #, xml-text
 #~ msgid ""
