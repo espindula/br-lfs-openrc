@@ -14,27 +14,15 @@
 
   <title>Usando o GRUB para Configurar o Processo de Inicialização</title>
 
-  <note>
-    <para>
-      Se teu sistema tiver suporte UEFI e você desejar inicializar o LFS com UEFI,
-você deveria ignorar as instruções nesta página, mas ainda assim aprender a
-sintaxe do <filename>grub.cfg</filename> e o método para especificar uma
-partição no arquivo a partir desta página e configurar o GRUB com suporte
-UEFI usando as instruções fornecidas na <ulink
-url="&blfs-book;postlfs/grub-setup.html">página BLFS</ulink>.
-    </para>
-  </note>
-
   <sect2>
     <title>Introdução</title>
 
-    <warning><para>Configurar o GRUB incorretamente pode tornar teu sistema inoperável sem um
-dispositivo alternativo de inicialização, como um CD-ROM ou unidade USB
-inicializável. Esta seção não é exigida para inicializar teu sistema
-LFS. Você possivelmente queira apenas modificar teu carregador de
-inicialização atual, por exemplo, Grub-Legacy, GRUB2 ou LILO.</para></warning>
+    <warning><para>Configuring GRUB incorrectly can render your system inoperable without an
+alternate boot device such as a CD-ROM or bootable USB drive. This section
+is not required to boot your LFS system.  You may just want to modify your
+current boot loader, e.g. Grub-Legacy or GRUB2.</para></warning>
 
-    <para> Certifique-se de que um disco de inicialização de emergência esteja pronto
+    <para>Certifique-se de que um disco de inicialização de emergência esteja pronto
 para <quote>resgatar</quote> o computador se o computador se tornar inusável
 (não inicializável). Se já não tiver um dispositivo de inicialização, você
 consegue criar um. Para a finalidade de que o procedimento abaixo funcione,
@@ -46,6 +34,16 @@ url="&blfs-book;multimedia/libisoburn.html">libisoburn</ulink>.</para>
 grub-mkrescue --output=grub-img.iso
 xorriso -as cdrecord -v dev=/dev/cdrw blank=as_needed grub-img.iso</userinput></screen>
 
+  </sect2>
+
+  <sect2>
+    <title>Turn off Secure Boot</title>
+
+    <para>LFS does not have the essential packages to support Secure Boot.  To set up
+the boot process following the instructions in this section, Secure Boot
+must be turned off from the configuration interface of the firmware. Read
+the documentation provided by the manufacturer of your system to find out
+how to turn off Secure Boot support.</para>
   </sect2>
 
   <sect2>
@@ -71,53 +69,189 @@ ainda seria <emphasis>(hd1)</emphasis>.</para>
   <sect2>
     <title>Definindo a Configuração</title>
 
-    <para>O GRUB funciona escrevendo dados na primeira trilha física do disco
-rígido. Essa área não é parte de nenhum sistema de arquivos. Os programas lá
-acessam módulos do GRUB na partição de inicialização. O local padrão é
-/boot/grub/.</para>
+    <para>If booting the system via BIOS, GRUB works by writing a stub to the first
+sector (named the Master Boot Record, or MBR) of the hard disk. This area is
+not part of any file system. The BIOS loads and executes the content of MBR,
+then the stub loads the main GRUB image from the BIOS Boot Partition. The
+GRUB image is stored as raw data instead of a file (there must be no file
+system on the BIOS Boot Partition), so the stub doesn't need to support any
+file system and it can be made small enough to fit in the MBR.</para>
 
-    <para>O local da partição de inicialização é uma escolha do(a) usuário(a) que
-afeta a configuração. Uma recomendação é a de ter uma partição pequena
-(tamanho sugerido é 200 MB) separada somente para informações de
-inicialização. Dessa forma, cada construção, seja LFS ou alguma distribuição
-comercial, consegue acessar os mesmos arquivos de inicialização e o acesso
-consegue ser feito a partir de qualquer sistema inicializado. Se escolher
-fazer isso, você precisará montar a partição separada, mover todos os
-arquivos no diretório <filename class="directory">/boot</filename> atual
-(por exemplo, o núcleo Linux que você recém construiu na seção anterior)
-para a nova partição. Você então precisará desmontar a partição e remontá-la
-como <filename class="directory">/boot</filename>. Se você fizer isso, tenha
-certeza de atualizar <filename>/etc/fstab</filename>.</para>
+    <para>If booting the system via UEFI, GRUB works by storing the main GRUB image as
+a PE-COFF executable file at a standard location in the EFI System
+Partition: <filename>EFI/BOOT/BOOTX64.EFI</filename> (or
+<filename>EFI/BOOT/BOOTIA32.EFI</filename> for
+<literal>i386-efi</literal>). The UEFI firmware loads it from the standard
+location and executes it, launching GRUB.</para>
+
+    <para>Many GRUB functions (including booting the Linux kernel) are not included in
+the main GRUB image. Instead, they are stored in a file system as GRUB
+modules. That file system is usually mounted in a way that the GRUB modules
+can be accessed in <filename class='directory'>/boot/grub</filename> on most
+Linux distributions. To avoid the chicken-and-egg problem,
+<command>grub-install</command> embeds the modules necessary to access this
+file system into the main GRUB image, so it can find and load other modules.</para>
+
+    <para>The location of the boot partition is a choice of the user that affects the
+configuration. One recommendation is to have a separate small (suggested
+size is 200 MB) partition just for boot information. In doing so, not just
+LFS, but any Linux distribution, can access the same boot files, and in turn
+any booted system. If you choose to do this, you will need to mount the
+separate partition, move all files in the current <filename
+class="directory">/boot</filename> directory (e.g. the Linux kernel you just
+built in the previous section) to the new partition.  You will then need to
+unmount the partition and remount it as <filename
+class="directory">/boot</filename>. If you do this, be sure to update
+<filename>/etc/fstab</filename>.</para>
+
+    <note>
+      <para>If the host distro utilizes a separate partition for <filename
+class="directory">/boot</filename> and you want the LFS system to use that
+partition for <filename class="directory">/boot</filename> as well, just
+mount the partition at <filename class="directory">$LFS/boot</filename> in
+the host distro. The Linux kernel supports mounting partitions at multiple
+mount points.</para>
+    </note>
 
     <para>Deixar <filename class="directory">/boot</filename> na partição LFS atual
 também funcionará, porém a configuração para múltiplos sistemas é mais
 complicada.</para>
+
+    <para>For examples and more information on boot partition layouts, looking at
+<xref linkend="ch-partitioning-creatingpartition"/> may be informative.</para>
 
     <para>Usando as informações acima, determine o designador apropriado para a
 partição raiz (ou partição de inicialização, se uma separada for
 usada). Para o exemplo seguinte, é assumido que a partição raiz (ou
 inicialização separada) é <filename class="partition">sda2</filename>.</para>
 
-    <para>Instale os arquivos do GRUB em <filename
-class="directory">/boot/grub</filename> e configure a trilha de
-inicialização:</para>
+    <para>
+      The following sections go over how to boot with BIOS and UEFI.  The GRUB
+installations for BIOS, 64-bit UEFI, and 32-bit UEFI can coexist and share
+the same configuration. The images and data live at different locations, so
+you can create both the BIOS Boot Partition and the EFI System Partition,
+and install GRUB for all the supported firmware types (i.e. running three
+<command>grub-install</command> commands). If you are unsure about your
+firmware type, or you plan to move the hard drive to a different computer,
+this is something you can do as a blanket strategy.
+    </para>
 
-    <warning>
-      <para>O seguinte comando sobrescreverá o carregador de inicialização atual. Não
-execute o comando de isso não for desejado, por exemplo, se usar um
-gerenciador de inicialização de terceiro(a) para gerenciar o Master Boot
-Record (MBR).</para>
-    </warning>
+    <note><para>
+      If you're doing UEFI boot but have created the Grub BIOS partition, it may
+be a good idea to run the command for BIOS in case UEFI booting does not
+work as expected.
+    </para></note>
 
-<screen role="nodump"><userinput>grub-install /dev/sda</userinput></screen>
+    <note><para>
+      If you only need to install GRUB for one boot method, you don't have to run
+commands for both methods. You can just run the command for the boot method
+you need.
+    </para></note>
 
-    <note>
-      <para>Se o sistema tiver sido inicializado usando UEFI,
-<command>grub-install</command> tentará instalar arquivos para o alvo
-<emphasis>x86_64-efi</emphasis>, porém aqueles arquivos não foram instalados
-no <xref linkend="chapter-building-system"/>. Se esse for o caso, adicione
-<option>--target i386-pc</option> ao comando acima.</para>
-    </note>
+    <sect3>
+      <title>Booting With BIOS</title>
+
+      <para>For booting with BIOS, make sure the boot partition is mounted (if using a
+separate one) and the BIOS Boot partition exists. After that, install the
+GRUB files into <filename class="directory">/boot/grub</filename> and set up
+the boot track:</para>
+
+      <warning>
+        <para>The following command will overwrite the current boot loader. Do not run the
+command if this is not desired, for example, if using a third party boot
+manager to manage the MBR.</para>
+      </warning>
+
+<screen role="nodump"><userinput>grub-install /dev/sda --target=i386-pc</userinput></screen>
+
+    </sect3>
+
+    <sect3>
+      <title>Booting With UEFI</title>
+
+      <para>For booting with UEFI, make sure the boot partition is mounted (if using a
+separate one) and the EFI System Partition is mounted at <filename
+class='directory'>/boot/efi</filename>. After that, install the GRUB files
+into <filename class="directory">/boot/grub</filename> and the main GRUB
+image at <filename>/boot/efi/EFI/BOOT/BOOTX64.EFI</filename>:</para>
+
+      <warning>
+        <para>The following command will overwrite the
+<filename>/boot/efi/EFI/BOOT/BOOTX64.EFI</filename> file.  If it already
+exists, it's likely that it's the entry of another boot loader (for example
+the GRUB installation from the host distro, or the Windows Boot
+Manager). Backup the file so it can be restored later or loaded as a
+secondary boot loader by the new GRUB installation from LFS.</para>
+      </warning>
+
+<screen role="nodump"><userinput>grub-install --target=x86_64-efi --removable</userinput></screen>
+
+      <para>
+        The command above assumes that you have 64-bit UEFI firmware.  If you want
+to make the system bootable on 32-bit UEFI firmware, run the command with
+<literal>x86_64-efi</literal> replaced by <literal>i386-efi</literal>.
+      </para>
+
+      <para>
+        The <parameter>--removable</parameter> option makes
+<command>grub-install</command> use the standard location,
+<filename>EFI/BOOT/BOOTX64.EFI</filename> (or
+<filename>EFI/BOOT/BOOTIA32.EFI</filename> for <literal>i386-efi</literal>),
+instead of the location GRUB prefers
+(<filename>EFI/GRUB/GRUBX64.EFI</filename> or
+<filename>EFI/GRUB/GRUBIA32.EFI</filename>).  Using a non-standard location
+would result in the location in a EFI variable be recorded, but LFS lacks
+the BLFS package <ulink
+url="&blfs-book;postlfs/efibootmgr.html">efibootmgr</ulink>, which is needed
+to manipulate EFI variables.
+      </para>
+
+      <note>
+        <para>
+          Some UEFI bootloaders, while rare, skip the hardcoded EFI path. Such systems
+most of the time are old, like Lenovo ThinkPads or HP desktops/laptops. When
+the boot entry is missing in the BIOS, you will need to install the BLFS
+package <ulink url="&blfs-book;postlfs/efibootmgr.html">efibootmgr</ulink>
+to create a boot entry for UEFI. If it's easier, the package can be
+installed via the distribution's package manager, if applicable, and used on
+the host instead of on the LFS system. This can prevent the need for
+downloading more tarballs onto the LFS system for now.
+        </para>
+        <para>
+          First install the package, then mount the EFI variable file system if it
+isn't already mounted:
+        </para>
+<screen role="nodump"><userinput>mountpoint /sys/firmware/efi/efivars ||
+  mount -v -t efivarfs efivarfs /sys/firmware/efi/efivars</userinput></screen>
+        <para>
+          Now create a boot entry for the EFI:
+        </para>
+<screen role="nodump"><userinput>efibootmgr -c -d /dev/sd<replaceable>&lt;x&gt;</replaceable> \
+  -p <replaceable>&lt;y&gt;</replaceable> -L "LFS" -l '\EFI\BOOT\BOOT<replaceable>&lt;X64&gt;</replaceable>.EFI'</userinput></screen>
+        <para>
+          The <literal>/dev/sd<replaceable>&lt;x&gt;</replaceable></literal> drive
+should match the one you are installing LFS onto. The
+<replaceable>&lt;y&gt;</replaceable> partition number should match the
+number which the ESP is mounted. If the ESP is on
+<literal>/dev/sda2</literal>, then the partition number would be
+<literal>2</literal>. If you are using 32-bit UEFI, replace
+<replaceable>&lt;X64&gt;</replaceable> with <literal>IA32</literal>.
+        </para>
+
+        <para>
+          Some (broken) firmware may require additional parameters for
+<command>efibootmgr</command>, like <parameter>--full-dev-path</parameter>
+or <parameter>-e 1 -E</parameter>.  Read the man page <ulink role='man'
+url='&man;efibootmgr.8'>efibootmgr(8)</ulink> for details.
+        </para>
+
+        <para>
+          Now unmount the EFI variable file system:
+        </para>
+<screen role="nodump"><userinput>umount -v /sys/firmware/efi/efivars</userinput></screen>
+      </note>
+
+    </sect3>
 
   </sect2>
 
@@ -126,14 +260,22 @@ no <xref linkend="chapter-building-system"/>. Se esse for o caso, adicione
 
     <para>Gere o <filename>/boot/grub/grub.cfg</filename>:</para>
 
-    <screen><userinput>cat &gt; /boot/grub/grub.cfg &lt;&lt; "EOF"
-<literal># Inicia /boot/grub/grub.cfg
+    <!-- GOP is probably not needed anyhow, since we're not using terminal_output
+     gfxterm. -->
+<screen><userinput>cat &gt; /boot/grub/grub.cfg &lt;&lt; "EOF"
+<literal># Begin /boot/grub/grub.cfg
 set default=0
 set timeout=5
 
 insmod part_gpt
 insmod ext2
+
 set root=(hd0,2)
+
+# For UEFI
+insmod efi_gop
+insmod efi_uga
+
 set gfxpayload=1024x768x32
 
 menuentry "GNU/Linux, Linux &linux-version;-lfs-&version;" {
@@ -141,30 +283,32 @@ menuentry "GNU/Linux, Linux &linux-version;-lfs-&version;" {
 }</literal>
 EOF</userinput></screen>
 
+
     <para>
-      Os comandos <command>insmod</command> carregam os módulos do
-<application>GRUB</application> chamados <filename>part_gpt</filename> e
-<filename>ext2</filename>. Apesar da nomenclatura, <filename>ext2</filename>
-na verdade suporta sistemas de arquivos <systemitem
-class='filesystem'>ext2</systemitem>, <systemitem
-class='filesystem'>ext3</systemitem> e <systemitem
-class='filesystem'>ext4</systemitem>. O comando
-<command>grub-install</command> embutiu alguns módulos na imagem principal
-do <application>GRUB</application> (instalada no MBR ou na partição BIOS do
-GRUB) para acessar os outros módulos (em <filename
-class='directory'>/boot/grub/i386-pc</filename>) sem um problema de galinha
-ou ovo, de modo que, com uma configuração típica, esses dois módulos já
-estão embutidos e esses dois comandos <command>insmod</command> não farão
-nada. Mas eles não causam danos de qualquer maneira e possivelmente sejam
-necessários com algumas configurações raras.
+      The <command>insmod</command> commands load the
+<application>GRUB</application> modules named <filename>part_gpt</filename>,
+<filename>ext2</filename>, <filename>efi_gop</filename>, and
+<filename>efi_uga</filename>.  Despite the naming, <filename>ext2</filename>
+actually supports <systemitem class='filesystem'>ext2</systemitem>,
+<systemitem class='filesystem'>ext3</systemitem>, and <systemitem
+class='filesystem'>ext4</systemitem> filesystems.  On UEFI systems,
+<filename>efi_gop</filename> and <filename>efi_uga</filename> are for video
+support. GOP, or Graphics Output Protocol, is the modern approach. UGA, or
+UGA Draw Protocol, is a legacy way of handling it.  In a typical
+configuration, the <filename>part_gpt</filename> and
+<filename>ext2</filename> modules are already embedded in the main GRUB
+image by <command>grub-install</command>, and the <command>insmod</command>
+commands for them will do nothing. However, they do no harm anyway, and they
+may be needed with some rare configurations.
     </para>
 
     <para>
-      O comando <command>set gfxpayload=1024x768x32</command> configura a
-resolução e a profundidade de cor do framebuffer VESA a ser passado para o
-núcleo. Ele é necessário para o controlador SimpleDRM do núcleo usar o
-framebuffer VESA. Você pode usar um valor diferente de resolução ou de
-profundidade de cor que melhor se adeque para teu monitor.
+      The <command>set gfxpayload=1024x768x32</command> command sets the
+resolution and color depth of the VESA framebuffer to be passed to the
+kernel.  It's necessary for the kernel SimpleDRM driver to use the VESA
+framebuffer.  You can use a different resolution or color depth value which
+better suits for your monitor.  This line does nothing when the system is
+booted via UEFI, but it does no harm anyway.
     </para>
 
     <note><para>A partir da perspectiva do <application>GRUB</application>, os arquivos do
@@ -198,14 +342,13 @@ de arquivos&gt;</replaceable></literal>, em vez do
 <literal>root=PARTUUID=<replaceable>&lt;UUID da
 partição&gt;</replaceable></literal>, porém fazer isso exigirá um initramfs,
 o qual está além do escopo do LFS.</para>
-      <para>O nome do nó de dispositivo para uma partição em <filename
-class='directory'>/dev</filename> também possivelmente mude (isso é menos
-provável que uma mudança do designador do GRUB). Você também pode substituir
-caminhos para nós de dispositivo, como <literal>/dev/sda1</literal>, por
-<literal>PARTUUID=<replaceable>&lt;UUID da
-partição&gt;</replaceable></literal>, no <filename>/etc/fstab</filename>,
-para evitar uma potencial falha de inicialização no caso do nome do nó de
-dispositivo tiver mudado.</para>
+      <para>The name of the device node for a partition in <filename
+class='directory'>/dev</filename> may also change (very frequently on some
+systems with multiple NVME disks).  You can also replace paths to device
+nodes like <literal>/dev/sda1</literal> with
+<literal>PARTUUID=<replaceable>&lt;partition
+UUID&gt;</replaceable></literal>, in <filename>/etc/fstab</filename>, to
+avoid a potential boot failure in case the device node name has changed.</para>
     </note>
 
     <para>O GRUB é um programa extremamente poderoso e ele fornece um tremendo número
@@ -215,14 +358,13 @@ personalização, tais como telas gráficas de abertura; reprodução de sons;
 entrada gerada de mouse; etc. Os detalhes dessas opções estão além do escopo
 desta introdução.</para>
 
-    <caution><para>Existe um comando, <application>grub-mkconfig</application>, que consegue
-escrever um arquivo de configuração automaticamente. Ele usa um conjunto de
-scripts em /etc/grub.d/ e destruirá quaisquer personalizações que você
-fizer. Esses scripts são projetados primariamente para distribuições não
-fonte e não são recomendados para o LFS. Se você instalar uma distribuição
-comercial do Linux, existe uma boa chance de que esse programa seja
-executado. Tenha certeza de produzir uma cópia de segurança do teu arquivo
-grub.cfg.</para></caution>
+    <caution><para>There is a command, <application>grub-mkconfig</application>, that can write
+a configuration file automatically.  It uses a set of scripts in
+/etc/grub.d/ and will destroy any customizations that you make.  These
+scripts are designed primarily for non-source distributions and are not
+recommended for LFS. If you install a commercial Linux distribution, there
+is a good chance that this program will be run.  Be sure to back up your
+grub.cfg file.</para></caution>
 
    </sect2>
 

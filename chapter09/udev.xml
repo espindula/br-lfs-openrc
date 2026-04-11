@@ -246,13 +246,6 @@ correspondente. Por exemplo:</para>
 para mais informação a respeito da sintaxe e recursos do
 <quote>softdep</quote>.</para>
 
-      <para revision="openrc">Se o módulo em questão não é um encapsulador e é útil por ele próprio,
-[então] configure o script de inicialização <command>modules</command> para
-carregar esse módulo na inicialização do sistema. Para fazer isso, adicione
-o nome do módulo ao arquivo <filename>/etc/sysconfig/modules</filename> em
-uma linha separada. Isso funciona para módulos encapsuladores também, mas é
-abaixo do ideal nesse caso.</para>
-
     </sect3>
 
     <sect3>

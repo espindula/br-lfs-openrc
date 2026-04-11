@@ -164,6 +164,20 @@ não inicializaria:</para>
 
       <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
         href="kernel/nvme.xml"/>
+
+      <para>If you are booting with UEFI, adjust the kernel so it can have EFI partition
+and runtime support, on top of supporting the DOS VFAT filesystem which is
+needed for the EFI partition:</para>
+
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+        href="kernel/uefi.xml"/>
+
+      <para>
+        If <literal>PARTITION_ADVANCED</literal> is not selected,
+<literal>EFI_PARTITION</literal> will be hidden but implicitly
+selected. Don't select <literal>PARTITION_ADVANCED</literal> just because
+you need to boot via UEFI.
+      </para>
     </note>
 
     <note revision="systemd">
@@ -176,15 +190,6 @@ das exigências para o sistema. Para uma lista das opções necessárias para
 pacotes do BLFS, veja-se o <ulink
 url="&lfs-root;blfs/view/&short-version;/longindex.html#kernel-config-index">Índice
 do BLFS das Configurações do Núcleo</ulink>.</para>
-
-    <note>
-      <para>Se teu hardware do anfitrião estiver usando UEFI e você desejar inicializar
-o sistema LFS com ela, você deveria ajustar alguma configuração do núcleo
-seguindo <ulink url="&blfs-book;postlfs/grub-setup.html#uefi-kernel"> a
-página do BLFS</ulink>, <emphasis role='bold'>mesmo se você usará o
-carregador de inicialização UEFI proveniente da distribuição
-anfitriã</emphasis>.</para>
-    </note>
 
     <variablelist>
       <title>A justificativa para os itens de configuração acima:</title>

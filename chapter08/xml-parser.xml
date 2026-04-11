@@ -61,7 +61,7 @@ instruction</ulink>, and then install this package.</para>
 <screen><userinput remap="pre">yes | cpan -i File::ShareDir
 yes | cpan -i File::ShareDir::Install</userinput></screen>
 
-    <para>Finish this temproary workaround by removing /etc/resolv.conf.  A discussion
+    <para>Finish this temporary workaround by removing /etc/resolv.conf.  A discussion
 of this file will be made at <xref linkend='resolv.conf'/></para>
 
 <screen><userinput remap="pre">rm /etc/resolv.conf</userinput></screen>

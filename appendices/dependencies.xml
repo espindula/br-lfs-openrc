@@ -3262,7 +3262,7 @@ Sed</seg>
       <segmentedlist id="texinfo-optdeps">
         <segtitle>&external;</segtitle>
         <seglistitem>
-          <seg>Nenhum</seg>
+          <seg>SWIG</seg>
         </seglistitem>
       </segmentedlist>
 

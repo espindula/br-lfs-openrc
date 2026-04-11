@@ -375,13 +375,8 @@ file via network transfer or CD-ROM / USB stick to the new system, and
 expanding it.  After that, a few configuration files will have to be
 changed.  Configuration files that may need to be updated include:
 <filename>/etc/hosts</filename>, <filename>/etc/fstab</filename>,
-<filename>/etc/passwd</filename>, <filename>/etc/group</filename>, <phrase
-revision="systemd"> <filename>/etc/shadow</filename>, and
-<filename>/etc/ld.so.conf</filename>.  </phrase> <phrase revision="openrc">
-<filename>/etc/shadow</filename>, <filename>/etc/ld.so.conf</filename>,
-<filename>/etc/sysconfig/rc.site</filename>,
-<filename>/etc/sysconfig/network</filename>, and
-<filename>/etc/sysconfig/ifconfig.eth0</filename>.  </phrase>
+<filename>/etc/passwd</filename>, <filename>/etc/group</filename>,
+<filename>/etc/shadow</filename>, and <filename>/etc/ld.so.conf</filename>.
     </para>
 
     <para>Um núcleo personalizado possivelmente seja necessário para o novo sistema,
