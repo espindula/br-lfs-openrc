@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-04-10 21:28-0300\n"
+"POT-Creation-Date: 2026-06-21 22:31-0300\n"
 "PO-Revision-Date: 2025-05-22 04:18+0000\n"
 "Last-Translator: Jamenson Ferreira Espindula de Almeida Melo <jafesp@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/projects/linux-from-scratch/chapter10_grub/pt_BR/>\n"
@@ -245,8 +245,8 @@ msgid ""
 "class=\"directory\">/boot</filename> and you want the LFS system to use that"
 " partition for <filename class=\"directory\">/boot</filename> as well, just "
 "mount the partition at <filename class=\"directory\">$LFS/boot</filename> in"
-" the host distro. The Linux kernel supports mounting partitions at multiple "
-"mount points."
+" the host distro. The Linux kernel supports mounting one partition at "
+"multiple mount points."
 msgstr ""
 
 #. type: Content of: <sect1><sect2><para>
@@ -419,18 +419,18 @@ msgid ""
 "<filename>EFI/GRUB/GRUBIA32.EFI</filename>).  Using a non-standard location "
 "would result in the location in a EFI variable be recorded, but LFS lacks "
 "the BLFS package <ulink url=\"&blfs-"
-"book;postlfs/efibootmgr.html\">efibootmgr</ulink>, which is needed to "
-"manipulate EFI variables."
+"book;postlfs/efibootmgr.html\">efibootmgr</ulink>, which is needed by GRUB "
+"to record the location into the EFI variable."
 msgstr ""
 
 #. type: Content of: <sect1><sect2><sect3><note><para>
 #: lfs-en/chapter10/grub.xml:224
 #, xml-text
 msgid ""
-"Some UEFI bootloaders, while rare, skip the hardcoded EFI path. Such systems"
-" most of the time are old, like Lenovo ThinkPads or HP desktops/laptops. "
-"When the boot entry is missing in the BIOS, you will need to install the "
-"BLFS package <ulink url=\"&blfs-"
+"Some UEFI firmware implementations, while rare, skip the standard EFI path. "
+"Such systems most of the time are old, like Lenovo ThinkPads or HP "
+"desktops/laptops. When the boot entry is missing in the firmware setup, you "
+"will need to install the BLFS package <ulink url=\"&blfs-"
 "book;postlfs/efibootmgr.html\">efibootmgr</ulink> to create a boot entry for"
 " UEFI. If it's easier, the package can be installed via the distribution's "
 "package manager, if applicable, and used on the host instead of on the LFS "
@@ -439,7 +439,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <sect1><sect2><sect3><note><para>
-#: lfs-en/chapter10/grub.xml:235
+#: lfs-en/chapter10/grub.xml:236
 #, xml-text
 msgid ""
 "First install the package, then mount the EFI variable file system if it "
@@ -447,7 +447,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <sect1><sect2><sect3><note><screen>
-#: lfs-en/chapter10/grub.xml:238
+#: lfs-en/chapter10/grub.xml:239
 #, no-wrap, xml-text
 msgid ""
 "<userinput>mountpoint /sys/firmware/efi/efivars ||\n"
@@ -455,13 +455,13 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <sect1><sect2><sect3><note><para>
-#: lfs-en/chapter10/grub.xml:241
+#: lfs-en/chapter10/grub.xml:242
 #, xml-text
 msgid "Now create a boot entry for the EFI:"
 msgstr ""
 
 #. type: Content of: <sect1><sect2><sect3><note><screen>
-#: lfs-en/chapter10/grub.xml:243
+#: lfs-en/chapter10/grub.xml:244
 #, no-wrap, xml-text
 msgid ""
 "<userinput>efibootmgr -c -d /dev/sd<replaceable>&lt;x&gt;</replaceable> \\\n"
@@ -469,20 +469,20 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <sect1><sect2><sect3><note><para>
-#: lfs-en/chapter10/grub.xml:246
+#: lfs-en/chapter10/grub.xml:247
 #, xml-text
 msgid ""
 "The <literal>/dev/sd<replaceable>&lt;x&gt;</replaceable></literal> drive "
-"should match the one you are installing LFS onto. The "
+"should be the device node for the disk where the ESP exists. The "
 "<replaceable>&lt;y&gt;</replaceable> partition number should match the "
-"number which the ESP is mounted. If the ESP is on "
-"<literal>/dev/sda2</literal>, then the partition number would be "
-"<literal>2</literal>. If you are using 32-bit UEFI, replace "
-"<replaceable>&lt;X64&gt;</replaceable> with <literal>IA32</literal>."
+"number of the ESP. If the ESP is on <literal>/dev/sda2</literal>, then the "
+"partition number would be <literal>2</literal>. If you are using 32-bit "
+"UEFI, replace <replaceable>&lt;X64&gt;</replaceable> with "
+"<literal>IA32</literal>."
 msgstr ""
 
 #. type: Content of: <sect1><sect2><sect3><note><para>
-#: lfs-en/chapter10/grub.xml:256
+#: lfs-en/chapter10/grub.xml:257
 #, xml-text
 msgid ""
 "Some (broken) firmware may require additional parameters for "
@@ -492,32 +492,32 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <sect1><sect2><sect3><note><para>
-#: lfs-en/chapter10/grub.xml:265
+#: lfs-en/chapter10/grub.xml:266
 #, xml-text
 msgid "Now unmount the EFI variable file system:"
 msgstr ""
 
 #. type: Content of: <sect1><sect2><sect3><note><screen>
-#: lfs-en/chapter10/grub.xml:267
+#: lfs-en/chapter10/grub.xml:268
 #, fuzzy, no-wrap, xml-text
 #| msgid "<userinput>grub-install /dev/sda</userinput>"
 msgid "<userinput>umount -v /sys/firmware/efi/efivars</userinput>"
 msgstr "<userinput>grub-install /dev/sda</userinput>"
 
 #. type: Content of: <sect1><sect2><title>
-#: lfs-en/chapter10/grub.xml:275
+#: lfs-en/chapter10/grub.xml:276
 #, xml-text
 msgid "Creating the GRUB Configuration File"
 msgstr "Criando o Arquivo de Configuração do GRUB"
 
 #. type: Content of: <sect1><sect2><para>
-#: lfs-en/chapter10/grub.xml:277
+#: lfs-en/chapter10/grub.xml:278
 #, xml-text
 msgid "Generate <filename>/boot/grub/grub.cfg</filename>:"
 msgstr "Gere o <filename>/boot/grub/grub.cfg</filename>:"
 
 #. type: Content of: <sect1><sect2><screen>
-#: lfs-en/chapter10/grub.xml:279
+#: lfs-en/chapter10/grub.xml:280
 #, fuzzy, no-wrap, xml-text
 #| msgid ""
 #| "<userinput>cat &gt; /boot/grub/grub.cfg &lt;&lt; \"EOF\"\n"
@@ -572,7 +572,7 @@ msgstr ""
 "EOF</userinput>"
 
 #. type: Content of: <sect1><sect2><para>
-#: lfs-en/chapter10/grub.xml:303
+#: lfs-en/chapter10/grub.xml:304
 #, fuzzy, xml-text
 #| msgid ""
 #| "The <command>insmod</command> commands load the "
@@ -600,7 +600,7 @@ msgid ""
 "class='filesystem'>ext4</systemitem> filesystems.  On UEFI systems, "
 "<filename>efi_gop</filename> and <filename>efi_uga</filename> are for video "
 "support. GOP, or Graphics Output Protocol, is the modern approach. UGA, or "
-"UGA Draw Protocol, is a legacy way of handling it.  In a typical "
+"Universal Graphics Adaptor, is a legacy way of handling it.  In a typical "
 "configuration, the <filename>part_gpt</filename> and "
 "<filename>ext2</filename> modules are already embedded in the main GRUB "
 "image by <command>grub-install</command>, and the <command>insmod</command> "
@@ -624,7 +624,7 @@ msgstr ""
 "necessários com algumas configurações raras."
 
 #. type: Content of: <sect1><sect2><para>
-#: lfs-en/chapter10/grub.xml:325
+#: lfs-en/chapter10/grub.xml:326
 #, fuzzy, xml-text
 #| msgid ""
 #| "The <command>set gfxpayload=1024x768x32</command> command sets the "
@@ -647,7 +647,7 @@ msgstr ""
 "profundidade de cor que melhor se adeque para teu monitor."
 
 #. type: Content of: <sect1><sect2><note><para>
-#: lfs-en/chapter10/grub.xml:333
+#: lfs-en/chapter10/grub.xml:334
 #, xml-text
 msgid ""
 "From <application>GRUB</application>'s perspective, the kernel files are "
@@ -663,7 +663,7 @@ msgstr ""
 "para a partição de inicialização."
 
 #. type: Content of: <sect1><sect2><note><para>
-#: lfs-en/chapter10/grub.xml:341
+#: lfs-en/chapter10/grub.xml:342
 #, xml-text
 msgid ""
 "The GRUB designator for a partition may change if you added or removed some "
@@ -700,7 +700,7 @@ msgstr ""
 "construído&gt;</replaceable></literal>."
 
 #. type: Content of: <sect1><sect2><note><para>
-#: lfs-en/chapter10/grub.xml:357
+#: lfs-en/chapter10/grub.xml:358
 #, xml-text
 msgid ""
 "Note that the UUID of a partition is completely different from the UUID of "
@@ -720,7 +720,7 @@ msgstr ""
 " o qual está além do escopo do LFS."
 
 #. type: Content of: <sect1><sect2><note><para>
-#: lfs-en/chapter10/grub.xml:365
+#: lfs-en/chapter10/grub.xml:366
 #, fuzzy, xml-text
 #| msgid ""
 #| "The name of the device node for a partition in <filename "
@@ -749,7 +749,7 @@ msgstr ""
 "dispositivo tiver mudado."
 
 #. type: Content of: <sect1><sect2><para>
-#: lfs-en/chapter10/grub.xml:374
+#: lfs-en/chapter10/grub.xml:375
 #, xml-text
 msgid ""
 "GRUB is an extremely powerful program and it provides a tremendous number of"
@@ -766,7 +766,7 @@ msgstr ""
 " desta introdução."
 
 #. type: Content of: <sect1><sect2><caution><para>
-#: lfs-en/chapter10/grub.xml:380
+#: lfs-en/chapter10/grub.xml:381
 #, fuzzy, xml-text
 #| msgid ""
 #| "There is a command, <application>grub-mkconfig</application>, that can write"

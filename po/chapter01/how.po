@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-04-04 20:04+0000\n"
+"POT-Creation-Date: 2026-06-21 22:31-0300\n"
 "PO-Revision-Date: 2023-04-12 17:47+0000\n"
 "Last-Translator: Jamenson Ferreira Espindula de Almeida Melo <jafesp@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/projects/linux-from-scratch/chapter01_how/pt_BR/>\n"
@@ -66,8 +66,15 @@ msgstr ""
 "Como uma alternativa a instalar uma distribuição separada em sua máquina, "
 "você possivelmente deseje usar um LiveCD de uma distribuição comercial."
 
+#. type: Content of: <sect1><note><para>
+#: lfs-en/chapter01/how.xml:29
+#, xml-text
+msgid ""
+"The host distro must satisfy <xref linkend='ch-partitioning-hostreqs'/>."
+msgstr ""
+
 #. type: Content of: <sect1><para>
-#: lfs-en/chapter01/how.xml:36
+#: lfs-en/chapter01/how.xml:39
 #, xml-text
 msgid ""
 "<xref linkend=\"chapter-partitioning\"/> of this book describes how to "
@@ -93,7 +100,7 @@ msgstr ""
 "seu trabalho ao longo do <xref linkend=\"chapter-cross-tools\"/> e além."
 
 #. type: Content of: <sect1><para>
-#: lfs-en/chapter01/how.xml:47
+#: lfs-en/chapter01/how.xml:50
 #, xml-text
 msgid ""
 "<xref linkend=\"chapter-cross-tools\"/> explains the installation of the "
@@ -106,7 +113,7 @@ msgstr ""
 "anfitrião."
 
 #. type: Content of: <sect1><para>
-#: lfs-en/chapter01/how.xml:51
+#: lfs-en/chapter01/how.xml:54
 #, xml-text
 msgid ""
 "<xref linkend=\"chapter-temporary-tools\"/> shows you how to cross-compile "
@@ -117,7 +124,7 @@ msgstr ""
 "de ferramentas."
 
 #. type: Content of: <sect1><para>
-#: lfs-en/chapter01/how.xml:54
+#: lfs-en/chapter01/how.xml:57
 #, xml-text
 msgid ""
 "<xref linkend=\"chapter-chroot-temporary-tools\"/> then enters a \"chroot\" "
@@ -129,7 +136,7 @@ msgstr ""
 "todos o restante das ferramentas necessárias para criar o sistema LFS."
 
 #. type: Content of: <sect1><para>
-#: lfs-en/chapter01/how.xml:58
+#: lfs-en/chapter01/how.xml:61
 #, xml-text
 msgid ""
 "This effort to isolate the new system from the host distribution may seem "
@@ -141,7 +148,7 @@ msgstr ""
 "fornecida nas <xref linkend=\"ch-tools-toolchaintechnotes\"/>."
 
 #. type: Content of: <sect1><para>
-#: lfs-en/chapter01/how.xml:62
+#: lfs-en/chapter01/how.xml:65
 #, xml-text
 msgid ""
 "In <xref linkend=\"chapter-building-system\"/> the full-blown LFS system is "
@@ -157,7 +164,7 @@ msgstr ""
 "pode continuar usando seu computador normalmente."
 
 #. type: Content of: <sect1><para>
-#: lfs-en/chapter01/how.xml:68
+#: lfs-en/chapter01/how.xml:71
 #, xml-text
 msgid ""
 "To finish the installation, the basic system configuration is set up in "
@@ -176,7 +183,7 @@ msgstr ""
 " LFS."
 
 #. type: Content of: <sect1><para>
-#: lfs-en/chapter01/how.xml:75
+#: lfs-en/chapter01/how.xml:78
 #, xml-text
 msgid ""
 "This is the process in a nutshell. Detailed information on each step is "

@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-04-10 21:27-0300\n"
+"POT-Creation-Date: 2026-06-21 22:31-0300\n"
 "PO-Revision-Date: 2024-09-18 16:18+0000\n"
 "Last-Translator: Jamenson Ferreira Espindula de Almeida Melo <jafesp@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/projects/linux-from-scratch/chapter09_usage/pt_BR/>\n"
@@ -140,8 +140,8 @@ msgstr ""
 
 #. type: Content of: <sect1><sect2><indexterm><secondary>
 #: lfs-en/chapter09/usage.xml:83 lfs-en/chapter09/usage.xml:108
-#: lfs-en/chapter09/usage.xml:185 lfs-en/chapter09/usage.xml:225
-#: lfs-en/chapter09/usage.xml:259
+#: lfs-en/chapter09/usage.xml:185 lfs-en/chapter09/usage.xml:226
+#: lfs-en/chapter09/usage.xml:260
 #, xml-text
 msgid "configuring"
 msgstr "configurando"
@@ -285,13 +285,14 @@ msgstr "sysklogd"
 #: lfs-en/chapter09/usage.xml:187
 #, xml-text
 msgid ""
-"OpenRC doesn't ship a service for <command>syslogd</command>, leading "
-"important messages not being captured. Create and enable the service for the"
-" logger:"
+"OpenRC doesn't ship a service for <command>syslogd</command>, which can lead"
+" to messages from stuff like daemons, authorization calls, and the kernel "
+"not being captured and saved for auditing. Create and enable the service for"
+" the logger:"
 msgstr ""
 
 #. type: Content of: <sect1><sect2><screen>
-#: lfs-en/chapter09/usage.xml:191
+#: lfs-en/chapter09/usage.xml:192
 #, no-wrap, xml-text
 msgid ""
 "<userinput>cat &gt; /etc/init.d/sysklogd &lt;&lt; \"EOF\"\n"
@@ -323,19 +324,19 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <sect1><sect2><title>
-#: lfs-en/chapter09/usage.xml:221
+#: lfs-en/chapter09/usage.xml:222
 #, xml-text
 msgid "Configuring the System Clock"
 msgstr "Configurando o Relógio do Sistema"
 
 #. type: Content of: <sect1><sect2><indexterm><primary>
-#: lfs-en/chapter09/usage.xml:224
+#: lfs-en/chapter09/usage.xml:225
 #, xml-text
 msgid "setclock"
 msgstr "setclock"
 
 #. type: Content of: <sect1><sect2><para>
-#: lfs-en/chapter09/usage.xml:227
+#: lfs-en/chapter09/usage.xml:228
 #, xml-text
 msgid ""
 "OpenRC provides a <command>hwclock</command> service which reads from the "
@@ -348,7 +349,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <sect1><sect2><para>
-#: lfs-en/chapter09/usage.xml:235
+#: lfs-en/chapter09/usage.xml:236
 #, fuzzy, xml-text
 #| msgid ""
 #| "If you cannot remember whether or not the hardware clock is set to UTC, find"
@@ -386,7 +387,7 @@ msgstr ""
 "como GMT -0700, adicione sete horas à hora local."
 
 #. type: Content of: <sect1><sect2><para>
-#: lfs-en/chapter09/usage.xml:246
+#: lfs-en/chapter09/usage.xml:247
 #, xml-text
 msgid ""
 "Once you know the hardware time uses, edit "
@@ -395,19 +396,19 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <sect1><sect2><title>
-#: lfs-en/chapter09/usage.xml:255
+#: lfs-en/chapter09/usage.xml:256
 #, xml-text
 msgid "Configuring the Linux Console"
 msgstr "Configurando o Console do Linux"
 
 #. type: Content of: <sect1><sect2><indexterm><primary>
-#: lfs-en/chapter09/usage.xml:258
+#: lfs-en/chapter09/usage.xml:259
 #, xml-text
 msgid "console"
 msgstr "console"
 
 #. type: Content of: <sect1><sect2><para>
-#: lfs-en/chapter09/usage.xml:262
+#: lfs-en/chapter09/usage.xml:263
 #, fuzzy, xml-text
 #| msgid ""
 #| "This section discusses how to configure the <command>console</command> "
@@ -437,7 +438,7 @@ msgstr ""
 "inicialização <command>console</command> não fará nada."
 
 #. type: Content of: <sect1><sect2><para>
-#: lfs-en/chapter09/usage.xml:270
+#: lfs-en/chapter09/usage.xml:271
 #, xml-text
 msgid ""
 "The <command>consolefont</command> service reads the "
@@ -447,7 +448,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <sect1><sect2><para>
-#: lfs-en/chapter09/usage.xml:275
+#: lfs-en/chapter09/usage.xml:276
 #, fuzzy, xml-text
 #| msgid ""
 #| "The <command>console</command> script reads the "
@@ -485,7 +486,7 @@ msgstr ""
 "corretos para esses aplicativos."
 
 #. type: Content of: <sect1><sect2><para>
-#: lfs-en/chapter09/usage.xml:283
+#: lfs-en/chapter09/usage.xml:284
 #, xml-text
 msgid ""
 "For both <command>consolefont</command> and <command>keymaps</command>, "
@@ -494,7 +495,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <sect1><sect2><note><para>
-#: lfs-en/chapter09/usage.xml:290
+#: lfs-en/chapter09/usage.xml:291
 #, fuzzy, xml-text
 #| msgid ""
 #| "The <filename>/etc/sysconfig/console</filename> file only controls the Linux"
@@ -516,14 +517,14 @@ msgstr ""
 "aplicam."
 
 #. type: Content of: <sect1><sect2><title>
-#: lfs-en/chapter09/usage.xml:299
+#: lfs-en/chapter09/usage.xml:300
 #, fuzzy, xml-text
 #| msgid "configuring"
 msgid "Configuring Agetty"
 msgstr "configurando"
 
 #. type: Content of: <sect1><sect2><para>
-#: lfs-en/chapter09/usage.xml:302
+#: lfs-en/chapter09/usage.xml:303
 #, xml-text
 msgid ""
 "If you don't want the boot logs to be cleared on the first TTY, which Agetty"
@@ -533,20 +534,20 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <sect1><sect2><title>
-#: lfs-en/chapter09/usage.xml:311
+#: lfs-en/chapter09/usage.xml:312
 #, fuzzy, xml-text
 #| msgid "The rc.site File"
 msgid "The rc.conf File"
 msgstr "O Arquivo rc.site"
 
 #. type: Content of: <sect1><sect2><indexterm><primary>
-#: lfs-en/chapter09/usage.xml:314
+#: lfs-en/chapter09/usage.xml:315
 #, xml-text
 msgid "rc.conf"
 msgstr ""
 
 #. type: Content of: <sect1><sect2><para>
-#: lfs-en/chapter09/usage.xml:317
+#: lfs-en/chapter09/usage.xml:318
 #, xml-text
 msgid ""
 "The <filename>/etc/rc.conf</filename> file contains settings that control "
@@ -556,13 +557,13 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <sect1><sect2><title>
-#: lfs-en/chapter09/usage.xml:325
+#: lfs-en/chapter09/usage.xml:326
 #, xml-text
 msgid "Other OpenRC Configuration Files"
 msgstr ""
 
 #. type: Content of: <sect1><sect2><para>
-#: lfs-en/chapter09/usage.xml:327
+#: lfs-en/chapter09/usage.xml:328
 #, xml-text
 msgid ""
 "Many other services have configuration files in <filename "

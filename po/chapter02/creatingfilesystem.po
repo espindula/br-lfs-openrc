@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-04-10 21:27-0300\n"
+"POT-Creation-Date: 2026-06-21 22:31-0300\n"
 "PO-Revision-Date: 2024-05-14 04:18+0000\n"
 "Last-Translator: Jamenson Ferreira Espindula de Almeida Melo <jafesp@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/projects/linux-from-scratch/chapter02_creatingfilesystem/pt_BR/>\n"
@@ -172,10 +172,10 @@ msgstr ""
 #| " class=\"filesystem\"> swap</systemitem> partition was created, it will need"
 #| " to be initialized with this command:"
 msgid ""
-"If you are using an existing <systemitem class=\"filesystem\">swap "
-"</systemitem> partition, there is no need to format it. If a new <systemitem"
-" class=\"filesystem\">swap</systemitem> partition was created, it will need "
-"to be initialized with this command:"
+"If you are using an existing <systemitem "
+"class=\"filesystem\">swap</systemitem> partition, there is no need to format"
+" it. If a new <systemitem class=\"filesystem\">swap</systemitem> partition "
+"was created, it will need to be initialized with this command:"
 msgstr ""
 "Se você estiver usando uma partição <systemitem "
 "class=\"filesystem\">swap</systemitem> existente, [então] não há necessidade"
@@ -184,7 +184,7 @@ msgstr ""
 " inicializada com este comando:"
 
 #. type: Content of: <sect1><screen>
-#: lfs-en/chapter02/creatingfilesystem.xml:72
+#: lfs-en/chapter02/creatingfilesystem.xml:73
 #, no-wrap, xml-text
 msgid ""
 "<userinput>mkswap /dev/<replaceable>&lt;yyy&gt;</replaceable></userinput>"
@@ -192,7 +192,7 @@ msgstr ""
 "<userinput>mkswap /dev/<replaceable>&lt;yyy&gt;</replaceable></userinput>"
 
 #. type: Content of: <sect1><para>
-#: lfs-en/chapter02/creatingfilesystem.xml:74
+#: lfs-en/chapter02/creatingfilesystem.xml:75
 #, xml-text
 msgid ""
 "Replace <replaceable>&lt;yyy&gt;</replaceable> with the name of the "
@@ -202,7 +202,7 @@ msgstr ""
 "<systemitem class=\"filesystem\">swap</systemitem>."
 
 #. type: Content of: <sect1><para>
-#: lfs-en/chapter02/creatingfilesystem.xml:77
+#: lfs-en/chapter02/creatingfilesystem.xml:78
 #, xml-text
 msgid ""
 "If you have created an EFI System Partition, you have a few options.  "
@@ -212,7 +212,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <sect1><para>
-#: lfs-en/chapter02/creatingfilesystem.xml:82
+#: lfs-en/chapter02/creatingfilesystem.xml:83
 #, fuzzy, xml-text
 #| msgid ""
 #| "LFS assumes that the root file system (/) is of type ext4. To create an "
@@ -227,7 +227,7 @@ msgstr ""
 " partição do LFS, emita o seguinte comando:"
 
 #. type: Content of: <sect1><screen>
-#: lfs-en/chapter02/creatingfilesystem.xml:85
+#: lfs-en/chapter02/creatingfilesystem.xml:86
 #, fuzzy, no-wrap, xml-text
 #| msgid ""
 #| "<userinput>mkswap /dev/<replaceable>&lt;yyy&gt;</replaceable></userinput>"
@@ -238,7 +238,7 @@ msgstr ""
 "<userinput>mkswap /dev/<replaceable>&lt;yyy&gt;</replaceable></userinput>"
 
 #. type: Content of: <sect1><para>
-#: lfs-en/chapter02/creatingfilesystem.xml:87
+#: lfs-en/chapter02/creatingfilesystem.xml:88
 #, xml-text
 msgid ""
 "On the other hand, if you have chosen <systemitem "
@@ -246,7 +246,7 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <sect1><screen>
-#: lfs-en/chapter02/creatingfilesystem.xml:91
+#: lfs-en/chapter02/creatingfilesystem.xml:92
 #, fuzzy, no-wrap, xml-text
 #| msgid ""
 #| "<userinput>mkswap /dev/<replaceable>&lt;yyy&gt;</replaceable></userinput>"
@@ -256,7 +256,7 @@ msgstr ""
 "<userinput>mkswap /dev/<replaceable>&lt;yyy&gt;</replaceable></userinput>"
 
 #. type: Content of: <sect1><para>
-#: lfs-en/chapter02/creatingfilesystem.xml:93
+#: lfs-en/chapter02/creatingfilesystem.xml:94
 #, fuzzy, xml-text
 #| msgid ""
 #| "Replace <replaceable>&lt;xxx&gt;</replaceable> with the name of the LFS "

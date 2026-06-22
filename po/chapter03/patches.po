@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-04-02 09:57-0300\n"
+"POT-Creation-Date: 2026-06-21 22:31-0300\n"
 "PO-Revision-Date: 2025-11-17 04:18+0000\n"
 "Last-Translator: Jamenson Ferreira Espindula de Almeida Melo <jafesp@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/projects/linux-from-scratch/chapter03_patches/pt_BR/>\n"
@@ -100,25 +100,49 @@ msgid "MD5 sum: <literal>&expect-gcc15-patch-md5;</literal>"
 msgstr "Soma de verificação MD5: <literal>&expect-gcc15-patch-md5;</literal>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><term>
-#: lfs-en/chapter03/patches.xml:91
+#: lfs-en/chapter03/patches.xml:81
+#, fuzzy, xml-text
+#| msgid ""
+#| "Glibc Upstream Fix Patch - <token>&glibc-upstream-patch-size;</token>:"
+msgid ""
+"Glibc Upstream Fixes Patch - <token>&glibc-upstream-patch-size;</token>:"
+msgstr ""
+"Remendo de Correção de Fluxo de Desenvolvimento da Glibc - <token>&glibc-"
+"upstream-patch-size;</token>:"
+
+#. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
+#: lfs-en/chapter03/patches.xml:83
+#, xml-text
+msgid "Download: <ulink url=\"&patches-root;&glibc-upstream-patch;\"/>"
+msgstr "Transferência: <ulink url=\"&patches-root;&glibc-upstream-patch;\"/>"
+
+#. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
+#: lfs-en/chapter03/patches.xml:84
+#, xml-text
+msgid "MD5 sum: <literal>&glibc-upstream-patch-md5;</literal>"
+msgstr ""
+"Soma de verificação MD5: <literal>&glibc-upstream-patch-md5;</literal>"
+
+#. type: Content of: <sect1><variablelist><varlistentry><term>
+#: lfs-en/chapter03/patches.xml:89
 #, xml-text
 msgid "Glibc FHS Patch - <token>&glibc-fhs-patch-size;</token>:"
 msgstr "Remendo do FHS da Glibc - <token>&glibc-fhs-patch-size;</token>:"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/patches.xml:93
+#: lfs-en/chapter03/patches.xml:91
 #, xml-text
 msgid "Download: <ulink url=\"&patches-root;&glibc-fhs-patch;\"/>"
 msgstr "Transferência: <ulink url=\"&patches-root;&glibc-fhs-patch;\"/>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/patches.xml:94
+#: lfs-en/chapter03/patches.xml:92
 #, xml-text
 msgid "MD5 sum: <literal>&glibc-fhs-patch-md5;</literal>"
 msgstr "Soma de verificação MD5: <literal>&glibc-fhs-patch-md5;</literal>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><term>
-#: lfs-en/chapter03/patches.xml:99
+#: lfs-en/chapter03/patches.xml:97
 #, xml-text
 msgid ""
 "Kbd Backspace/Delete Fix Patch - <token>&kbd-backspace-patch-size;</token>:"
@@ -127,36 +151,93 @@ msgstr ""
 "patch-size;</token>:"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/patches.xml:101
+#: lfs-en/chapter03/patches.xml:99
 #, xml-text
 msgid "Download: <ulink url=\"&patches-root;&kbd-backspace-patch;\"/>"
 msgstr "Transferência: <ulink url=\"&patches-root;&kbd-backspace-patch;\"/>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/patches.xml:102
+#: lfs-en/chapter03/patches.xml:100
 #, xml-text
 msgid "MD5 sum: <literal>&kbd-backspace-patch-md5;</literal>"
 msgstr "Soma de verificação MD5: <literal>&kbd-backspace-patch-md5;</literal>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><term>
-#: lfs-en/chapter03/patches.xml:131
-#, xml-text
+#: lfs-en/chapter03/patches.xml:121
+#, fuzzy, xml-text
+#| msgid ""
+#| "Expect GCC15 Patch - <token>&expect-gcc15-patch-size;</token>:"
+msgid "OpenRC Lock Patch - <token>&openrc-lock-patch-size;</token>:"
+msgstr "Remendo GCC15 do Expect - <token>&expect-gcc15-patch-size;</token>:"
+
+#. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
+#: lfs-en/chapter03/patches.xml:123
+#, fuzzy, xml-text
+#| msgid "Download: <ulink url=\"&patches-root;&expect-gcc15-patch;\"/>"
 msgid ""
-"Python Security Fix Patch - <token>&python-security-fixes-patch-"
+"Download: <ulink url=\"&lfs-root;glfs/view/dev/download/openrc/&openrc-lock-"
+"patch;\"/>"
+msgstr "Download: <ulink url=\"&patches-root;&expect-gcc15-patch;\"/>"
+
+#. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
+#: lfs-en/chapter03/patches.xml:124
+#, fuzzy, xml-text
+#| msgid "MD5 sum: <literal>&expect-gcc15-patch-md5;</literal>"
+msgid "MD5 sum: <literal>&openrc-lock-patch-md5;</literal>"
+msgstr "Soma de verificação MD5: <literal>&expect-gcc15-patch-md5;</literal>"
+
+#. type: Content of: <sect1><variablelist><varlistentry><term>
+#: lfs-en/chapter03/patches.xml:137
+#, fuzzy, xml-text
+#| msgid ""
+#| "Python Security Fix Patch - <token>&python-security-fixes-patch-"
+#| "size;</token>:"
+msgid ""
+"Python OpenSSL 4 Patch - <token>&python-openssl4-fixes-patch-size;</token>:"
+msgstr ""
+"Remendo de Correção de Segurança do Python - <token>&python-security-fixes-"
+"patch-size;</token>:"
+
+#. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
+#: lfs-en/chapter03/patches.xml:139
+#, fuzzy, xml-text
+#| msgid ""
+#| "Download: <ulink url=\"&patches-root;&python-security-fixes-patch;\"/>"
+msgid "Download: <ulink url=\"&patches-root;&python-openssl4-fixes-patch;\"/>"
+msgstr ""
+"Transferência: <ulink url=\"&patches-root;&python-security-fixes-patch;\"/>"
+
+#. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
+#: lfs-en/chapter03/patches.xml:140
+#, fuzzy, xml-text
+#| msgid "MD5 sum: <literal>&python-security-fixes-patch-md5;</literal>"
+msgid "MD5 sum: <literal>&python-openssl4-fixes-patch-md5;</literal>"
+msgstr ""
+"Soma de verificação MD5: <literal>&python-security-fixes-patch-"
+"md5;</literal>"
+
+#. type: Content of: <sect1><variablelist><varlistentry><term>
+#: lfs-en/chapter03/patches.xml:145
+#, fuzzy, xml-text
+#| msgid ""
+#| "Python Security Fix Patch - <token>&python-security-fixes-patch-"
+#| "size;</token>:"
+msgid ""
+"Python Security Fixes Patch - <token>&python-security-fixes-patch-"
 "size;</token>:"
 msgstr ""
 "Remendo de Correção de Segurança do Python - <token>&python-security-fixes-"
 "patch-size;</token>:"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/patches.xml:133
+#: lfs-en/chapter03/patches.xml:147
 #, xml-text
 msgid "Download: <ulink url=\"&patches-root;&python-security-fixes-patch;\"/>"
 msgstr ""
 "Transferência: <ulink url=\"&patches-root;&python-security-fixes-patch;\"/>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/patches.xml:134
+#: lfs-en/chapter03/patches.xml:148
 #, xml-text
 msgid "MD5 sum: <literal>&python-security-fixes-patch-md5;</literal>"
 msgstr ""
@@ -164,13 +245,13 @@ msgstr ""
 "md5;</literal>"
 
 #. type: Content of: <sect1><para>
-#: lfs-en/chapter03/patches.xml:167
+#: lfs-en/chapter03/patches.xml:189
 #, xml-text
 msgid "Total size of these patches: about <returnvalue/>"
 msgstr "Tamanho total desses remendos: cerca de <returnvalue/>"
 
 #. type: Content of: <sect1><para>
-#: lfs-en/chapter03/patches.xml:169
+#: lfs-en/chapter03/patches.xml:191
 #, xml-text
 msgid ""
 "In addition to the above required patches, there exist a number of optional "
@@ -206,21 +287,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Soma de verificação MD5: <literal>&sysvinit-consolidated-patch-"
 #~ "md5;</literal>"
-
-#, xml-text
-#~ msgid "Glibc Upstream Fix Patch - <token>&glibc-upstream-patch-size;</token>:"
-#~ msgstr ""
-#~ "Remendo de Correção de Fluxo de Desenvolvimento da Glibc - <token>&glibc-"
-#~ "upstream-patch-size;</token>:"
-
-#, xml-text
-#~ msgid "Download: <ulink url=\"&patches-root;&glibc-upstream-patch;\"/>"
-#~ msgstr "Transferência: <ulink url=\"&patches-root;&glibc-upstream-patch;\"/>"
-
-#, xml-text
-#~ msgid "MD5 sum: <literal>&glibc-upstream-patch-md5;</literal>"
-#~ msgstr ""
-#~ "Soma de verificação MD5: <literal>&glibc-upstream-patch-md5;</literal>"
 
 #, xml-text
 #~ msgid ""

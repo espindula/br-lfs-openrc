@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-04-10 21:27-0300\n"
+"POT-Creation-Date: 2026-06-21 22:31-0300\n"
 "PO-Revision-Date: 2025-11-23 04:18+0000\n"
 "Last-Translator: Jamenson Ferreira Espindula de Almeida Melo <jafesp@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/projects/linux-from-scratch/chapter02_creatingpartition/pt_BR/>\n"
@@ -363,9 +363,9 @@ msgstr ""
 #: lfs-en/chapter02/creatingpartition.xml:148
 #, xml-text
 msgid ""
-"A lot of UEFI systems have a Compatibility Support Mode (CSM) or Legacy Boot"
-" option, allowing to boot with BIOS. It could be a good idea to create a "
-"Grub BIOS partition if your system supports CSM in case UEFI booting does "
+"A lot of UEFI systems have a Compatibility Support Module (CSM) or Legacy "
+"Boot option, allowing to boot with BIOS. It could be a good idea to create a"
+" Grub BIOS partition if your system supports CSM in case UEFI booting does "
 "not work as expected."
 msgstr ""
 
@@ -565,11 +565,11 @@ msgstr ""
 #, xml-text
 msgid ""
 "Both EFI and BIOS Boot partitions are present, although only one will be "
-"used. Which is used depends on the system BIOS.  If the system is old, it "
-"will not have UEFI capabilities at all.  Some later systems can disable UEFI"
-" through the BIOS by disabling \"Secure Boot\" and enabling \"Legacy "
-"Support\" or \"CSM\" (Compatibility Support Mode).  If you know in advance "
-"which mode you will use, the other partition can be omitted."
+"used. Which is used depends on the system firmware.  If the system is old, "
+"it will not have UEFI capabilities at all.  Some later systems can disable "
+"UEFI through the firmware setup by disabling \"Secure Boot\" and enabling "
+"\"Legacy Support\" or \"CSM\" (Compatibility Support Module).  If you know "
+"in advance which mode you will use, the other partition can be omitted."
 msgstr ""
 
 #. type: Content of: <sect1><sect2><para><itemizedlist><listitem><para>
@@ -587,7 +587,7 @@ msgstr ""
 #. type: Content of: <sect1><sect2><para><itemizedlist><listitem><para>
 #: lfs-en/chapter02/creatingpartition.xml:264
 #, xml-text
-msgid "The swap partition must be formatted as swap."
+msgid "The swap partition must be initialized."
 msgstr ""
 
 #. type: Content of: <sect1><sect2><para><itemizedlist><listitem><para>
