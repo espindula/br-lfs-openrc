@@ -47,12 +47,11 @@ GCC. Desempacote cada pacote dentro do diretório de fonte do GCC e renomeie
 os diretórios resultantes, de forma que os procedimentos de construção do
 GCC automaticamente os usarão:</para>
 
-    <note><para>Existem mal-entendidos frequentes a respeito deste capítulo. Os
-procedimentos são os mesmos que todos os outros capítulos, conforme
-explicados anteriormente (<xref linkend='buildinstr'/>). Primeiro, extraia o
-tarball gcc-&gcc-version; a partir do diretório dos fontes e então mude para
-o diretório criado. Somente então deveria você prosseguir com as instruções
-abaixo.</para></note>
+    <note><para>There are frequent misunderstandings about the instructions here.  The
+procedures are the same as every other package, as explained earlier (<xref
+linkend='buildinstr'/>).  First, extract the gcc-&gcc-version; tarball from
+the sources directory, and then change to the directory created.  Only then
+should you proceed with the instructions below.</para></note>
 
 <screen><userinput remap="pre">tar -xf ../mpfr-&mpfr-version;.tar.xz
 mv -v mpfr-&mpfr-version; mpfr
@@ -222,18 +221,8 @@ cabeçalho interno completo será necessário posteriormente. Crie uma versão
 completa do cabeçalho interno usando um comando que é idêntico ao que o
 sistema de construção do GCC faz em circunstâncias normais:</para>
 
-    <note>
-      <para>O comando abaixo mostra um exemplo da substituição de comando aninhada
-usando dois métodos: aspas invertidas e uma construção
-<literal>$()</literal>. Poderia ser reescrito usando o mesmo método para
-ambas as substituições, porém é mostrado dessa maneira para demonstrar o
-como eles podem ser misturados. Geralmente o método <literal>$()</literal> é
-preferido.</para>
-    </note>
-
-<screen><userinput remap="install">cd ..
-cat gcc/limitx.h gcc/glimits.h gcc/limity.h > \
-  `dirname $($LFS_TGT-gcc -print-libgcc-file-name)`/include/limits.h</userinput></screen>
+<screen><userinput remap="install">cat ../gcc/{limitx,glimits,limity}.h  > \
+  $($LFS_TGT-gcc -print-file-name=include)/limits.h</userinput></screen>
   </sect2>
 
   <sect2 role="content">

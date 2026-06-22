@@ -75,9 +75,11 @@ para converter os nomes de arquivo usando UTF-8, de forma que eles podem ser
 interpretados no locale UTF-8.</para>
 
   <para>
-    When installing GRUB with UEFI, the ESP must be formatted as a FAT
-filesystem, most commonly VFAT. This file sees it as VFAT regardless. An
-example of how you would go about an entry for the ESP would look like this:
+    When installing GRUB with UEFI, the ESP must be formatted as a FAT file
+system (EXFAT should not be considered one).  In the Linux kernel the VFAT
+driver handles all the FAT file systems, so this file will contain
+<literal>vfat</literal> regardless.  An example of how you would go about an
+entry for the ESP would look like this:
   </para>
 
 <screen><userinput>cat &gt;&gt; /etc/fstab &lt;&lt; "EOF"
@@ -87,11 +89,11 @@ EOF</userinput></screen>
   <para>
     The <literal>iso8859-1</literal> IO charset is used here as we'll enable it
 as a part of the kernel UEFI configuration in <xref
-linkend='ch-bootable-kernel'/>.  Technically the IO charset should match
-your locale as we've discussed above.  However the name of all the files in
-the ESP only contains 7-bit ASCII characters, so things will be OK as long
-as the character set for your locale treats 7-bit ASCII characters in the
-same way as ISO-8859-1.  For example, UTF-8 is such a character set.
+linkend='ch-bootable-kernel' role='.'/> Technically the IO charset should
+match your locale as we've discussed above.  However the name of all the
+files in the ESP only contains 7-bit ASCII characters, so things will be OK
+as long as the character set for your locale treats 7-bit ASCII characters
+in the same way as ISO-8859-1.  For example, UTF-8 is such a character set.
   </para>
 
   <note>
@@ -100,7 +102,7 @@ same way as ISO-8859-1.  For example, UTF-8 is such a character set.
 system uses this partition before the kernel is loaded and is not used
 otherwise.  An alternative to adding this entry to the fstab file is to
 manually mount it before running <command>grub-install</command> below in
-<xref linkend="ch-bootable-grub"/>.
+<xref linkend="ch-bootable-grub" role='.'/>
     </para>
   </note>
 

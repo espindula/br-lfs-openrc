@@ -39,6 +39,11 @@ desligamento do sistema.</para>
   <sect2 role="installation">
     <title>Instalaçãoo do OpenRC</title>
 
+    <para>Apply a patch to make the group which manages <filename
+class="directory">/run/lock</filename> configurable:</para>
+
+<screen><userinput remap="pre">patch -Np1 -i ../&openrc-lock-patch;</userinput></screen>
+
     <para>Corrija um conjunto de comandos sequenciados para permitir uma instalação
 normal:</para>
 
@@ -51,10 +56,22 @@ cd    build
 
 meson setup --prefix=/usr       \
             --buildtype=release \
+            -D uucp_group=root  \
             -D pam=false ..</userinput></screen>
 
     <variablelist>
       <title>O significado das opções de configuração:</title>
+
+      <varlistentry>
+        <term><parameter>-D uucp_group=root</parameter></term>
+        <listitem>
+          <para>This changes who owns and manages <filename
+class="directory">/run/lock</filename>, as OpenRC will try to use the
+<systemitem class="groupname">uucp</systemitem> group to manage it.  Many
+distributions today use the <systemitem class="groupname">lock</systemitem>
+group, but LFS uses <systemitem class="groupname">root</systemitem> instead.</para>
+        </listitem>
+      </varlistentry>
 
       <varlistentry>
         <term><parameter>-D pam=false</parameter></term>
@@ -76,15 +93,32 @@ não está instalado.</para>
 
     <para>Instale o pacote:</para>
 
-<screen><userinput remap="install">ninja install &amp;&amp;
-mv -v /sbin/rc-update /bin</userinput></screen>
+<screen><userinput remap="install">if [ -d /etc/conf.d ]; then
+  mv -v  /etc/conf.d{,.tmp}
+  ninja install
+  cp -vR /etc/conf.d.tmp/* /etc/conf.d
+  rm -rf /etc/conf.d.tmp
+else
+  ninja install
+fi
+mv -v /usr/{s,}bin/rc-update</userinput></screen>
+
+    <note><para>
+      OpenRC by default reinstalls the configuration files for the base services,
+meaning that if you have configured a service like
+<literal>agetty</literal>, a normal installation would have reset the
+configuration to the default. The above ensures that doesn't happen when
+applicable. The <command>rc-update</command> under some circumstances is
+meant to be ran as a normal user as well, so it should be in <filename
+class="directory">/usr/bin</filename>.
+    </para></note>
 
     <para>OpenRC fornece <application>init</application> e outros programas
 próprios. No entanto, os atalhos para eles não são criados. Crie os linques
 simbólicos:</para>
 
 <screen><userinput>for i in {init,shutdown}; do
-  ln -sv openrc-$i /sbin/$i
+  ln -svf openrc-$i /sbin/$i
 done
 
 cat &gt; /sbin/poweroff &lt;&lt; "EOF"
@@ -159,7 +193,7 @@ linque simbólico para <command>openrc-init</command>
         <term><command>openrc</command></term>
         <listitem>
           <para>
-            Inicia e para serviços em um determinado nível de execução
+            Starts and stops services on a given runlevel
           </para>
           <indexterm zone="ch-system-openrc openrc">
             <primary sortas="b-openrc">openrc</primary>
