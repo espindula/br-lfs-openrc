@@ -7,8 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2026-06-21 22:31-0300\n"
-"PO-Revision-Date: 2026-02-10 06:01:54-0300\n"
-"Last-Translator: Jamenson Ferreira Espindula de Almeida Melo <jafesp@gmail.com>\n"
+"PO-Revision-Date: 2026-06-23 00:23-0300\n"
+"Last-Translator: Jamenson Ferreira Espindula de Almeida Melo "
+"<jafesp@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) Language: pt_BR\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -26,11 +27,13 @@ msgstr "&openrc-url;"
 #: lfs-en/chapter08/openrc.xml:12
 #, xml-text
 msgid ""
-"<productname>openrc</productname> <productnumber>&openrc-"
-"version;</productnumber> <placeholder type=\"address\" id=\"0\"/>"
+"<productname>openrc</productname> "
+"<productnumber>&openrc-version;</productnumber> <placeholder "
+"type=\"address\" id=\"0\"/>"
 msgstr ""
-"<productname>openrc</productname> <productnumber>&openrc-"
-"version;</productnumber> <placeholder type=\"address\" id=\"0\"/>"
+"<productname>openrc</productname> "
+"<productnumber>&openrc-version;</productnumber> <placeholder "
+"type=\"address\" id=\"0\"/>"
 
 #. type: Content of: <sect1><title>
 #: lfs-en/chapter08/openrc.xml:17
@@ -51,8 +54,8 @@ msgid ""
 "The OpenRC package contains programs for controlling the startup, running, "
 "and shutdown of the system."
 msgstr ""
-"O pacote OpenRC contém programas para controlar a inicialização, execução e "
-"desligamento do sistema."
+"O pacote OpenRC contém programas para controlar a inicialização, "
+"execução e desligamento do sistema."
 
 #. type: Content of: <sect1><sect2><segmentedlist><segtitle>
 #: lfs-en/chapter08/openrc.xml:30
@@ -82,7 +85,7 @@ msgstr "&openrc-fin-du;"
 #: lfs-en/chapter08/openrc.xml:42
 #, xml-text
 msgid "Installation of OpenRC"
-msgstr "Instalaçãoo do OpenRC"
+msgstr "Instalação do OpenRC"
 
 #. type: Content of: <sect1><sect2><para>
 #: lfs-en/chapter08/openrc.xml:44
@@ -91,13 +94,16 @@ msgid ""
 "Apply a patch to make the group which manages <filename "
 "class=\"directory\">/run/lock</filename> configurable:"
 msgstr ""
+"Apique um remendo para tornar o grupo que gerencia <filename "
+"class=\"directory\">/run/lock</filename> configurável:"
 
 #. type: Content of: <sect1><sect2><screen>
 #: lfs-en/chapter08/openrc.xml:47
-#, fuzzy, no-wrap, xml-text
-#| msgid "<userinput remap=\"make\">ninja</userinput>"
-msgid "<userinput remap=\"pre\">patch -Np1 -i ../&openrc-lock-patch;</userinput>"
-msgstr "<userinput remap=\"make\">ninja</userinput>"
+#, no-wrap, xml-text
+msgid ""
+"<userinput remap=\"pre\">patch -Np1 -i ../&openrc-lock-patch;</userinput>"
+msgstr ""
+"<userinput remap=\"pre\">patch -Np1 -i ../&openrc-lock-patch;</userinput>"
 
 #. type: Content of: <sect1><sect2><para>
 #: lfs-en/chapter08/openrc.xml:49
@@ -123,14 +129,7 @@ msgstr "Prepare OpenRC para compilação:"
 
 #. type: Content of: <sect1><sect2><screen>
 #: lfs-en/chapter08/openrc.xml:55
-#, fuzzy, no-wrap, xml-text
-#| msgid ""
-#| "<userinput remap=\"configure\">mkdir build\n"
-#| "cd    build\n"
-#| "\n"
-#| "meson setup --prefix=/usr       \\\n"
-#| "            --buildtype=release \\\n"
-#| "            -D pam=false ..</userinput>"
+#, no-wrap, xml-text
 msgid ""
 "<userinput remap=\"configure\">mkdir build\n"
 "cd    build\n"
@@ -145,6 +144,7 @@ msgstr ""
 "\n"
 "meson setup --prefix=/usr       \\\n"
 "            --buildtype=release \\\n"
+"            -D uucp_group=root  \\\n"
 "            -D pam=false ..</userinput>"
 
 #. type: Content of: <sect1><sect2><variablelist><title>
@@ -155,10 +155,9 @@ msgstr "O significado das opções de configuração:"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
 #: lfs-en/chapter08/openrc.xml:67
-#, fuzzy, xml-text
-#| msgid "<parameter>-D pam=false</parameter>"
+#, xml-text
 msgid "<parameter>-D uucp_group=root</parameter>"
-msgstr "<parameter>-D pam=false</parameter>"
+msgstr "<parameter>-D uucp_group=root</parameter>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
@@ -172,6 +171,12 @@ msgid ""
 "class=\"groupname\">lock</systemitem> group, but LFS uses <systemitem "
 "class=\"groupname\">root</systemitem> instead."
 msgstr ""
+"Isso muda quem titulariza e gerencia <filename "
+"class=\"directory\">/run/lock</filename>, vez que OpenRC tentará usar o "
+"grupo <systemitem class=\"groupname\">uucp</systemitem> para gerenciá-lo. "
+"Muitas distribuições hoje usam o grupo <systemitem "
+"class=\"groupname\">lock</systemitem>, porém LFS usa <systemitem "
+"class=\"groupname\">root</systemitem>."
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
 #: lfs-en/chapter08/openrc.xml:79
@@ -184,11 +189,10 @@ msgstr "<parameter>-D pam=false</parameter>"
 #: lfs-en/chapter08/openrc.xml:81
 #, xml-text
 msgid ""
-"This disables needing Linux-PAM for the build, since it is not installed "
-"yet."
+"This disables needing Linux-PAM for the build, since it is not installed yet."
 msgstr ""
-"Isso desabilita a necessidade do Linux-PAM para a construção, pois ele ainda"
-" não está instalado."
+"Isso desabilita a necessidade do Linux-PAM para a construção, pois ele "
+"ainda não está instalado."
 
 #. type: Content of: <sect1><sect2><para>
 #: lfs-en/chapter08/openrc.xml:88
@@ -234,6 +238,15 @@ msgid ""
 "fi\n"
 "mv -v /usr/{s,}bin/rc-update</userinput>"
 msgstr ""
+"<userinput remap=\"install\">if [ -d /etc/conf.d ]; then\n"
+"  mv -v  /etc/conf.d{,.tmp}\n"
+"  ninja install\n"
+"  cp -vR /etc/conf.d.tmp/* /etc/conf.d\n"
+"  rm -rf /etc/conf.d.tmp\n"
+"else\n"
+"  ninja install\n"
+"fi\n"
+"mv -v /usr/{s,}bin/rc-update</userinput>"
 
 #. type: Content of: <sect1><sect2><note><para>
 #: lfs-en/chapter08/openrc.xml:109
@@ -247,6 +260,13 @@ msgid ""
 "meant to be ran as a normal user as well, so it should be in <filename "
 "class=\"directory\">/usr/bin</filename>."
 msgstr ""
+"OpenRC, por padrão, reinstala os arquivos de configuração para os "
+"serviços básicos, significando que, se você tiver configurado um serviço "
+"como <literal>agetty</literal>, uma instalação normal teria reconfigurado "
+"a configuração para o padrão. O acima garante que não aconteça quando "
+"aplicável. O <command>rc-update</command> em algumas circunstâncias "
+"também deve ser executado como um(a) usante normal, de modo que ele deveria "
+"estar em <filename class=\"directory\">/usr/bin</filename>."
 
 #. type: Content of: <sect1><sect2><para>
 #: lfs-en/chapter08/openrc.xml:118
@@ -261,23 +281,7 @@ msgstr ""
 
 #. type: Content of: <sect1><sect2><screen>
 #: lfs-en/chapter08/openrc.xml:122
-#, fuzzy, no-wrap, xml-text
-#| msgid ""
-#| "<userinput>for i in {init,shutdown}; do\n"
-#| "  ln -sv openrc-$i /sbin/$i\n"
-#| "done\n"
-#| "\n"
-#| "cat &gt; /sbin/poweroff &lt;&lt; \"EOF\"\n"
-#| "<literal>#!/bin/sh\n"
-#| "/sbin/shutdown --poweroff now</literal>\n"
-#| "EOF\n"
-#| "\n"
-#| "cat &gt; /sbin/reboot &lt;&lt; \"EOF\"\n"
-#| "<literal>#!/bin/sh\n"
-#| "/sbin/shutdown --reboot now</literal>\n"
-#| "EOF\n"
-#| "\n"
-#| "chmod 755 /sbin/poweroff /sbin/reboot</userinput>"
+#, no-wrap, xml-text
 msgid ""
 "<userinput>for i in {init,shutdown}; do\n"
 "  ln -svf openrc-$i /sbin/$i\n"
@@ -296,7 +300,7 @@ msgid ""
 "chmod 755 /sbin/poweroff /sbin/reboot</userinput>"
 msgstr ""
 "<userinput>for i in {init,shutdown}; do\n"
-"  ln -sv openrc-$i /sbin/$i\n"
+"  ln -svf openrc-$i /sbin/$i\n"
 "done\n"
 "\n"
 "cat &gt; /sbin/poweroff &lt;&lt; \"EOF\"\n"
@@ -340,12 +344,12 @@ msgstr "Diretórios instalados"
 #, xml-text
 msgid ""
 "rc-status, init (link to openrc-init), openrc, openrc-init, openrc-run, "
-"openrc-shutdown, poweroff, rc-service, rc-sstat, rc-update, reboot, shutdown"
-" (link to openrc-shutdown), start-stop-daemon, and supervise-daemon"
+"openrc-shutdown, poweroff, rc-service, rc-sstat, rc-update, reboot, shutdown "
+"(link to openrc-shutdown), start-stop-daemon, and supervise-daemon"
 msgstr ""
 "rc-status, init (linque para openrc-init), openrc, openrc-init, openrc-run, "
-"openrc-shutdown, poweroff, rc-service, rc-sstat, rc-update, reboot, shutdown"
-" (linque para openrc-shutdown), start-stop-daemon e supervise-daemon"
+"openrc-shutdown, poweroff, rc-service, rc-sstat, rc-update, reboot, shutdown "
+"(linque para openrc-shutdown), start-stop-daemon e supervise-daemon"
 
 #. type: Content of: <sect1><sect2><segmentedlist><seglistitem><seg>
 #: lfs-en/chapter08/openrc.xml:166
@@ -372,8 +376,10 @@ msgstr "Descrições Curtas"
 #. type: Content of: <sect1><sect2><variablelist>
 #: lfs-en/chapter08/openrc.xml:183
 #, xml-text
-msgid "<?dbfo list-presentation=\"list\"?> <?dbhtml list-presentation=\"table\"?>"
-msgstr "<?dbfo list-presentation=\"list\"?> <?dbhtml list-presentation=\"table\"?>"
+msgid ""
+"<?dbfo list-presentation=\"list\"?> <?dbhtml list-presentation=\"table\"?>"
+msgstr ""
+"<?dbfo list-presentation=\"list\"?> <?dbhtml list-presentation=\"table\"?>"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
 #: lfs-en/chapter08/openrc.xml:187
@@ -411,8 +417,8 @@ msgid ""
 "symlink to <command>openrc-init</command>"
 msgstr ""
 "É o primeiro processo a ser iniciado quando o núcleo tiver inicializado o "
-"hardware; ele assume o processo de inicialização e inicia todos os serviços;"
-" linque simbólico para <command>openrc-init</command>"
+"hardware; ele assume o processo de inicialização e inicia todos os "
+"serviços; linque simbólico para <command>openrc-init</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
@@ -430,8 +436,7 @@ msgstr "<command>openrc</command>"
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
 #: lfs-en/chapter08/openrc.xml:216
-#, fuzzy, xml-text
-#| msgid "starts and stops services on a given runlevel"
+#, xml-text
 msgid "Starts and stops services on a given runlevel"
 msgstr "Inicia e para serviços em um determinado nível de execução"
 
@@ -455,8 +460,8 @@ msgstr "<command>openrc-init</command>"
 msgid ""
 "Gets called from <command>init</command> and starts every service as needed"
 msgstr ""
-"É chamado a partir do <command>init</command> e inicia cada serviço conforme"
-" necessário"
+"É chamado a partir do <command>init</command> e inicia cada serviço "
+"conforme necessário"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
@@ -499,8 +504,8 @@ msgid ""
 "Brings the system down in a secure way, signaling all processes and "
 "notifying all logged-in users"
 msgstr ""
-"Desativa o sistema de forma segura, sinalizando todos os processos e "
-"notificando todos(as) os(as) usuários(as) logados(as)"
+"Desativa o sistema de maneira segura, sinalizando todos os processos e "
+"notificando todos(as) os(as) usantes logados(as)"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
@@ -614,8 +619,8 @@ msgid ""
 "telling the system to reboot"
 msgstr ""
 "Chama <command>openrc-shutdown</command> com "
-"<parameter>--reboot</parameter>, parando todos os serviços e processos antes"
-" de informar o sistema para reinicializar"
+"<parameter>--reboot</parameter>, parando todos os serviços e processos "
+"antes de informar o sistema para reinicializar"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
