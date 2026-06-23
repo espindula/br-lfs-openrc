@@ -120,17 +120,6 @@ atualizar o GCC em um sistema LFS completo (em vez de construir o LFS).</para>
       </varlistentry>
 
       <varlistentry>
-        <term><parameter>--disable-fixincludes</parameter></term>
-        <listitem>
-          <para>Por padrão, durante a instalação do GCC alguns cabeçalhos de sistema seriam
-<quote>corrigidos</quote> para serem usados com o GCC. Isso não é necessário
-para um sistema moderno Linux e potencialmente danoso se um pacote for
-reinstalado depois de instalar o GCC. Essa chave evita que o GCC
-<quote>corrija</quote> os cabeçalhos.</para>
-        </listitem>
-      </varlistentry>
-
-      <varlistentry>
         <term><parameter>--with-system-zlib</parameter></term>
         <listitem>
           <para>Essa chave diz ao GCC para vincular à cópia instalada do sistema da

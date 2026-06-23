@@ -153,16 +153,16 @@ url="&lfs-root;glfs/view/dev/download/openrc/&openrc-lock-patch;"/></para>
         <para>MD5 sum: <literal>&python-openssl4-fixes-patch-md5;</literal></para>
       </listitem>
     </varlistentry>
-
+<!--
     <varlistentry>
-      <term>Python Security Fixes Patch -
-<token>&python-security-fixes-patch-size;</token>:</term>
+
+      <term>Python Security Fixes Patch - <token>&python-security-fixes-patch-size;</token>:</term>
       <listitem>
-        <para>Transferência: <ulink url="&patches-root;&python-security-fixes-patch;"/></para>
-        <para>Soma de verificação MD5:
-<literal>&python-security-fixes-patch-md5;</literal></para>
+        <para>Download: <ulink url="&patches-root;&python-security-fixes-patch;"/></para>
+        <para>MD5 sum: <literal>&python-security-fixes-patch-md5;</literal></para>
       </listitem>
     </varlistentry>
+-->
 <!--
     <varlistentry revision="sysv">
 
@@ -203,6 +203,7 @@ url="&lfs-root;glfs/view/dev/download/openrc/&openrc-lock-patch;"/></para>
       </listitem>
     </varlistentry>
 -->
+
 
 
 

@@ -47,11 +47,12 @@ GCC. Desempacote cada pacote dentro do diretório de fonte do GCC e renomeie
 os diretórios resultantes, de forma que os procedimentos de construção do
 GCC automaticamente os usarão:</para>
 
-    <note><para>There are frequent misunderstandings about the instructions here.  The
-procedures are the same as every other package, as explained earlier (<xref
-linkend='buildinstr'/>).  First, extract the gcc-&gcc-version; tarball from
-the sources directory, and then change to the directory created.  Only then
-should you proceed with the instructions below.</para></note>
+    <note><para>Existem mal-entendidos frequentes a respeito das instruções aqui. Os
+procedimentos são os mesmos que os de cada um dos outros pacotes, conforme
+explicados anteriormente (<xref linkend='buildinstr'/>). Primeiro, extraia o
+tarball gcc-&gcc-version; a partir do diretório dos fontes e então mude para
+o diretório criado. Somente então deveria você prosseguir com as instruções
+abaixo.</para></note>
 
 <screen><userinput remap="pre">tar -xf ../mpfr-&mpfr-version;.tar.xz
 mv -v mpfr-&mpfr-version; mpfr
@@ -103,6 +104,7 @@ cd      build</userinput></screen>
     --without-headers         \
     --enable-default-pie      \
     --enable-default-ssp      \
+    --disable-fixincludes     \
     --disable-nls             \
     --disable-shared          \
     --disable-multilib        \
@@ -157,6 +159,18 @@ estritamente necessárias neste estágio, pois o compilador produzirá apenas
 executáveis temporários. Mas, é mais limpo ter os pacotes temporários o mais
 próximo possível dos finais.
           </para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term><parameter>--disable-fixincludes</parameter></term>
+        <listitem>
+          <para>Por padrão, durante a instalação do GCC, alguns cabeçalhos do sistema seriam
+<quote>corrigidos</quote> para serem usados com o GCC. Neste ponto, nós não
+instalamos nenhum cabeçalho para o compilador cruzado usar, de forma que
+construir os programas auxiliares para a <quote>correção</quote> apenas
+desperdiçaria tempo. Esta chave desabilita a <quote>correção</quote> e
+ignora a construção desses programas.</para>
         </listitem>
       </varlistentry>
 

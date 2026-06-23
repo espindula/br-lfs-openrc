@@ -79,6 +79,7 @@ variáveis de ambiente que substituam os sinalizadores de otimização padrão.<
     --with-build-sysroot=$LFS  \
     --enable-default-pie       \
     --enable-default-ssp       \
+    --disable-fixincludes      \
     --disable-nls              \
     --disable-multilib         \
     --disable-libatomic        \
@@ -122,6 +123,17 @@ usa ferramentas adicionais, que não estão cientes desse local. Essa chave é
 necessária, de forma que tais ferramentas procurarão pelos arquivos
 necessários em <filename class="directory">$LFS</filename>, e não no
 anfitrião.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term><parameter>--disable-fixincludes</parameter></term>
+        <listitem>
+          <para>By default, during the installation of GCC some system headers would be
+<quote>fixed</quote> to be used with GCC.  This is not necessary for a
+modern Linux system, and potentially harmful if a package is reinstalled
+after installing GCC.  This switch prevents GCC from <quote>fixing</quote>
+the headers.</para>
         </listitem>
       </varlistentry>
 

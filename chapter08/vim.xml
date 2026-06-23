@@ -73,12 +73,13 @@ class="username">tester</systemitem>:</para>
 <screen><userinput remap="test">su tester -c "TERM=xterm-256color LANG=en_US.UTF-8 make -j1 test" \
    &amp;> vim-test.log</userinput></screen>
 
-    <para>The test suite outputs a lot of binary data to the screen.  This can cause
-issues with the settings of the current terminal (especially while we are
-overriding the <envar>TERM</envar> variable to satisfy some assumptions of
-the test suite).  The problem can be avoided by redirecting the output to a
-log file as shown above.  A successful test will show
-<computeroutput>FAILED: 0</computeroutput> in the log file at completion.</para>
+    <para>A suíte de teste emite um monte de dados binários para a tela. Isso pode
+causar problemas com as configurações do terminal atual (especialmente
+enquanto nós estivermos substituindo a variável <envar>TERM</envar> para
+satisfazer algumas suposições da suíte de teste). O problema pode ser
+evitado redirecionando-se a saída gerada para um arquivo de registro
+conforme mostrado acima. Um teste exitoso mostrará <computeroutput>FAILED:
+0</computeroutput> no arquivo de registro na conclusão.</para>
 
     <para>Dois testes, Test_client_server_stopinsert() e Test_popup_setbuf(), são
 conhecidos por falharem em alguns sistemas.</para>
