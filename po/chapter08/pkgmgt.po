@@ -6,10 +6,12 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-04-10 21:26-0300\n"
+"POT-Creation-Date: 2025-09-27 04:18+0000\n"
 "PO-Revision-Date: 2025-11-23 04:18+0000\n"
-"Last-Translator: Jamenson Ferreira Espindula de Almeida Melo <jafesp@gmail.com>\n"
-"Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/projects/linux-from-scratch/chapter08_pkgmgt/pt_BR/>\n"
+"Last-Translator: Jamenson Ferreira Espindula de Almeida Melo "
+"<jafesp@gmail.com>\n"
+"Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/"
+"projects/linux-from-scratch/chapter08_pkgmgt/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -128,8 +130,8 @@ msgid ""
 msgstr ""
 "Se o núcleo Linux precisar ser atualizado (por exemplo, de 5.10.17 para "
 "5.10.18 ou 5.11.1), nada mais precisará ser reconstruído. O sistema seguirá "
-"funcionando bem graças à interface bem definida entre o núcleo e o espaço de"
-" usuário(a). Especificamente, os cabeçalhos da API do Linux não precisarão "
+"funcionando bem graças à interface bem definida entre o núcleo e o espaço de "
+"usuário(a). Especificamente, os cabeçalhos da API do Linux não precisarão "
 "ser atualizados juntamente com o núcleo. Você meramente precisará "
 "reinicializar o teu sistema para usar o núcleo atualizado."
 
@@ -775,8 +777,8 @@ msgid ""
 "url=\"&hints-root;more_control_and_pkg_man.txt\"/>."
 msgstr ""
 "Esse esquema, único para LFS, foi concebido por Matthias Benkmann e está "
-"disponível a partir do <ulink url=\"&hints-root;\">Projetos de "
-"Dicas</ulink>. Nesse esquema, cada pacote é instalado como um(a) usuário(a) "
+"disponível a partir do <ulink url=\"&hints-root;\">Projetos de Dicas</"
+"ulink>. Nesse esquema, cada pacote é instalado como um(a) usuário(a) "
 "separado(a) nos locais padrão. Arquivos pertencentes a um pacote são "
 "facilmente identificados checando-se o ID de usuário(a). Ao recursos e "
 "deficiências dessa abordagem são muito complexas para se descrever nesta "
@@ -793,24 +795,7 @@ msgstr "Implantando o LFS em Múltiplos Sistemas"
 #. his rsync archive.
 #. type: Content of: <sect1><sect2><para>
 #: lfs-en/chapter08/pkgmgt.xml:358
-#, fuzzy, xml-text
-#| msgid ""
-#| "One of the advantages of an LFS system is that there are no files that "
-#| "depend on the position of files on a disk system.  Cloning an LFS build to "
-#| "another computer with the same architecture as the base system is as simple "
-#| "as using <command>tar</command> on the LFS partition that contains the root "
-#| "directory (about 900MB uncompressed for a basic LFS build), copying that "
-#| "file via network transfer or CD-ROM / USB stick to the new system, and "
-#| "expanding it.  After that, a few configuration files will have to be "
-#| "changed.  Configuration files that may need to be updated include: "
-#| "<filename>/etc/hosts</filename>, <filename>/etc/fstab</filename>, "
-#| "<filename>/etc/passwd</filename>, <filename>/etc/group</filename>, <phrase "
-#| "revision=\"systemd\"> <filename>/etc/shadow</filename>, and "
-#| "<filename>/etc/ld.so.conf</filename>.  </phrase> <phrase revision=\"sysv\"> "
-#| "<filename>/etc/shadow</filename>, <filename>/etc/ld.so.conf</filename>, "
-#| "<filename>/etc/sysconfig/rc.site</filename>, "
-#| "<filename>/etc/sysconfig/network</filename>, and "
-#| "<filename>/etc/sysconfig/ifconfig.eth0</filename>.  </phrase>"
+#, xml-text
 msgid ""
 "One of the advantages of an LFS system is that there are no files that "
 "depend on the position of files on a disk system.  Cloning an LFS build to "
@@ -821,8 +806,13 @@ msgid ""
 "expanding it.  After that, a few configuration files will have to be "
 "changed.  Configuration files that may need to be updated include: "
 "<filename>/etc/hosts</filename>, <filename>/etc/fstab</filename>, "
-"<filename>/etc/passwd</filename>, <filename>/etc/group</filename>, "
-"<filename>/etc/shadow</filename>, and <filename>/etc/ld.so.conf</filename>."
+"<filename>/etc/passwd</filename>, <filename>/etc/group</filename>, <phrase "
+"revision=\"systemd\"> <filename>/etc/shadow</filename>, and "
+"<filename>/etc/ld.so.conf</filename>.  </phrase> <phrase revision=\"sysv\"> "
+"<filename>/etc/shadow</filename>, <filename>/etc/ld.so.conf</filename>, "
+"<filename>/etc/sysconfig/rc.site</filename>, "
+"<filename>/etc/sysconfig/network</filename>, and "
+"<filename>/etc/sysconfig/ifconfig.eth0</filename>.  </phrase>"
 msgstr ""
 "Uma das vantagens de um sistema LFS é a de que não existem arquivos que "
 "dependam da posição de arquivos em um sistema de disco. Clonar uma "
@@ -843,7 +833,7 @@ msgstr ""
 "<filename>/etc/sysconfig/ifconfig.eth0</filename>. </phrase>"
 
 #. type: Content of: <sect1><sect2><para>
-#: lfs-en/chapter08/pkgmgt.xml:375
+#: lfs-en/chapter08/pkgmgt.xml:384
 #, xml-text
 msgid ""
 "A custom kernel may be needed for the new system, depending on differences "
@@ -854,7 +844,7 @@ msgstr ""
 "do núcleo."
 
 #. type: Content of: <sect1><sect2><important><para>
-#: lfs-en/chapter08/pkgmgt.xml:379
+#: lfs-en/chapter08/pkgmgt.xml:388
 #, xml-text
 msgid ""
 "If you want to deploy the LFS system onto a system with a different CPU, "
@@ -873,7 +863,7 @@ msgstr ""
 "<computeroutput>Illegal Instruction</computeroutput> ao executar o LFS."
 
 #. type: Content of: <sect1><sect2><important><para>
-#: lfs-en/chapter08/pkgmgt.xml:387
+#: lfs-en/chapter08/pkgmgt.xml:396
 #, xml-text
 msgid ""
 "The GMP build system stores the architecture-specific optimization option "
@@ -886,16 +876,16 @@ msgid ""
 msgstr ""
 "O sistema de construção do GMP armazena a opção de otimização específica da "
 "arquitetura usada para construir o GMP em <filename>gmp.h</filename>, e o "
-"sistema de construção de algum pacote que use GMP consegue lê-la a partir do"
-" cabeçalho e usá-la ao construir o próprio pacote. Pelo menos o sistema de "
+"sistema de construção de algum pacote que use GMP consegue lê-la a partir do "
+"cabeçalho e usá-la ao construir o próprio pacote. Pelo menos o sistema de "
 "construção do MPFR é conhecido por fazer isso. Portanto, simplesmente "
 "reconstruir o GMP em um sistema LFS completo não é suficiente: você "
 "precisará recompilar o MPFR e talvez outros pacotes que usem GMP se quiser "
-"<quote>converter</quote> um sistema LFS completo para ser usado para uma CPU"
-" diferente."
+"<quote>converter</quote> um sistema LFS completo para ser usado para uma CPU "
+"diferente."
 
 #. type: Content of: <sect1><sect2><para>
-#: lfs-en/chapter08/pkgmgt.xml:396
+#: lfs-en/chapter08/pkgmgt.xml:405
 #, xml-text
 msgid ""
 "Finally, the new system has to be made bootable via <xref linkend=\"ch-"

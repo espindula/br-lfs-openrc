@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-06-21 22:31-0300\n"
+"POT-Creation-Date: 2026-06-22 20:32-0300\n"
 "PO-Revision-Date: 2026-02-20 16:18+0000\n"
 "Last-Translator: Jamenson Ferreira Espindula de Almeida Melo <jafesp@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/projects/linux-from-scratch/chapter01_whatsnew/pt_BR/>\n"
@@ -43,6 +43,12 @@ msgstr "Atualizado para:"
 #, xml-text
 msgid "Autoconf-&autoconf-version;"
 msgstr "Autoconf-&autoconf-version;"
+
+#. type: Content of: <sect1><itemizedlist><listitem><para>
+#: lfs-en/chapter01/whatsnew.xml:48
+#, xml-text
+msgid "Binutils-&binutils-version;"
+msgstr "Binutils-&binutils-version;"
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
 #: lfs-en/chapter01/whatsnew.xml:57
@@ -268,47 +274,40 @@ msgstr "glibc-2.38-memalign_fix-1.patch"
 #: lfs-en/chapter01/whatsnew.xml:308
 #, fuzzy, xml-text
 #| msgid "Python-3.13.3-security_fixes-1.patch"
-msgid "Python-3.14.5-openssl_4-1.patch"
+msgid "Python-3.14.6-openssl_4-1.patch"
 msgstr "Python-3.13.3-security_fixes-1.patch"
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
 #: lfs-en/chapter01/whatsnew.xml:309
-#, fuzzy, xml-text
-#| msgid "Python-3.13.3-security_fixes-1.patch"
-msgid "Python-3.14.5-security_fixes-1.patch"
-msgstr "Python-3.13.3-security_fixes-1.patch"
-
-#. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/chapter01/whatsnew.xml:310
 #, xml-text
 msgid "systemd-260.1-buildfix-1.patch"
 msgstr ""
 
 #. type: Content of: <sect1><itemizedlist><title>
-#: lfs-en/chapter01/whatsnew.xml:314
+#: lfs-en/chapter01/whatsnew.xml:313
 #, xml-text
 msgid "Removed:"
 msgstr "Removido:"
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/chapter01/whatsnew.xml:316
+#: lfs-en/chapter01/whatsnew.xml:315
 #, xml-text
 msgid "XML-Parser (Moved to BLFS)"
 msgstr ""
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
-#: lfs-en/chapter01/whatsnew.xml:317
+#: lfs-en/chapter01/whatsnew.xml:316
 #, xml-text
 msgid "intltool (Moved to BLFS)"
 msgstr ""
 
+#, fuzzy, xml-text
+#~ msgid "Python-3.14.5-security_fixes-1.patch"
+#~ msgstr "Python-3.13.3-security_fixes-1.patch"
+
 #, xml-text
 #~ msgid "XML::Parser-&xml-parser-version;"
 #~ msgstr "XML::Parser-&xml-parser-version;"
-
-#, xml-text
-#~ msgid "Binutils-&binutils-version;"
-#~ msgstr "Binutils-&binutils-version;"
 
 #, xml-text
 #~ msgid "Gettext-&gettext-version;"

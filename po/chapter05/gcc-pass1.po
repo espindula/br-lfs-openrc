@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-06-21 22:31-0300\n"
-"PO-Revision-Date: 2025-08-18 04:18+0000\n"
+"POT-Creation-Date: 2026-06-22 20:32-0300\n"
+"PO-Revision-Date: 2026-06-22 00:38+0000\n"
 "Last-Translator: Jamenson Ferreira Espindula de Almeida Melo <jafesp@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/projects/linux-from-scratch/chapter05_gcc-pass1/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.10\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. type: Attribute 'xreflabel' of: <sect1>
 #: lfs-en/chapter05/gcc-pass1.xml:8
@@ -104,13 +104,7 @@ msgstr ""
 
 #. type: Content of: <sect1><sect2><note><para>
 #: lfs-en/chapter05/gcc-pass1.xml:52
-#, fuzzy, xml-text
-#| msgid ""
-#| "There are frequent misunderstandings about this chapter.  The procedures are"
-#| " the same as every other chapter, as explained earlier (<xref "
-#| "linkend='buildinstr'/>).  First, extract the gcc-&gcc-version; tarball from "
-#| "the sources directory, and then change to the directory created.  Only then "
-#| "should you proceed with the instructions below."
+#, xml-text
 msgid ""
 "There are frequent misunderstandings about the instructions here.  The "
 "procedures are the same as every other package, as explained earlier (<xref "
@@ -118,8 +112,8 @@ msgid ""
 "the sources directory, and then change to the directory created.  Only then "
 "should you proceed with the instructions below."
 msgstr ""
-"Existem mal-entendidos frequentes a respeito deste capítulo. Os "
-"procedimentos são os mesmos que todos os outros capítulos, conforme "
+"Existem mal-entendidos frequentes a respeito das instruções aqui. Os "
+"procedimentos são os mesmos que os de cada um dos outros pacotes, conforme "
 "explicados anteriormente (<xref linkend='buildinstr'/>). Primeiro, extraia o"
 " tarball gcc-&gcc-version; a partir do diretório dos fontes e então mude "
 "para o diretório criado. Somente então deveria você prosseguir com as "
@@ -127,14 +121,7 @@ msgstr ""
 
 #. type: Content of: <sect1><sect2><screen>
 #: lfs-en/chapter05/gcc-pass1.xml:58
-#, fuzzy, no-wrap, xml-text
-#| msgid ""
-#| "<userinput remap=\"pre\">tar -xf ../mpfr-&mpfr-version;.tar.xz\n"
-#| "mv -v mpfr-&mpfr-version; mpfr\n"
-#| "tar -xf ../gmp-&gmp-version;.tar.xz\n"
-#| "mv -v gmp-&gmp-version; gmp\n"
-#| "tar -xf ../mpc-&mpc-version;.tar.gz\n"
-#| "mv -v mpc-&mpc-version; mpc</userinput>"
+#, no-wrap, xml-text
 msgid ""
 "<userinput remap=\"pre\">tar -xf ../mpfr-&mpfr-version;.tar.xz\n"
 "mv -v mpfr-&mpfr-version; mpfr\n"
@@ -147,7 +134,7 @@ msgstr ""
 "mv -v mpfr-&mpfr-version; mpfr\n"
 "tar -xf ../gmp-&gmp-version;.tar.xz\n"
 "mv -v gmp-&gmp-version; gmp\n"
-"tar -xf ../mpc-&mpc-version;.tar.gz\n"
+"tar -xf ../mpc-&mpc-version;.tar.xz\n"
 "mv -v mpc-&mpc-version; mpc</userinput>"
 
 #. type: Content of: <sect1><sect2><para>
@@ -244,6 +231,7 @@ msgid ""
 "    --without-headers         \\\n"
 "    --enable-default-pie      \\\n"
 "    --enable-default-ssp      \\\n"
+"    --disable-fixincludes     \\\n"
 "    --disable-nls             \\\n"
 "    --disable-shared          \\\n"
 "    --disable-multilib        \\\n"
@@ -265,6 +253,7 @@ msgstr ""
 "    --without-headers         \\\n"
 "    --enable-default-pie      \\\n"
 "    --enable-default-ssp      \\\n"
+"    --disable-fixincludes     \\\n"
 "    --disable-nls             \\\n"
 "    --disable-shared          \\\n"
 "    --disable-multilib        \\\n"
@@ -278,20 +267,20 @@ msgstr ""
 "    --enable-languages=c,c++</userinput>"
 
 #. type: Content of: <sect1><sect2><variablelist><title>
-#: lfs-en/chapter05/gcc-pass1.xml:121
+#: lfs-en/chapter05/gcc-pass1.xml:122
 #, xml-text
 msgid "The meaning of the configure options:"
 msgstr "O significado das opções do configure:"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter05/gcc-pass1.xml:124
+#: lfs-en/chapter05/gcc-pass1.xml:125
 #, xml-text
 msgid "<parameter>--with-glibc-version=&glibc-version;</parameter>"
 msgstr "<parameter>--with-glibc-version=&glibc-version;</parameter>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter05/gcc-pass1.xml:126
+#: lfs-en/chapter05/gcc-pass1.xml:127
 #, xml-text
 msgid ""
 "This option specifies the version of Glibc which will be used on the target."
@@ -305,14 +294,14 @@ msgstr ""
 "distribuição anfitriã."
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter05/gcc-pass1.xml:135
+#: lfs-en/chapter05/gcc-pass1.xml:136
 #, xml-text
 msgid "<parameter>--with-newlib</parameter>"
 msgstr "<parameter>--with-newlib</parameter>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter05/gcc-pass1.xml:137
+#: lfs-en/chapter05/gcc-pass1.xml:138
 #, xml-text
 msgid ""
 "Since a working C library is not yet available, this ensures that the "
@@ -325,14 +314,14 @@ msgstr ""
 "libc."
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter05/gcc-pass1.xml:144
+#: lfs-en/chapter05/gcc-pass1.xml:145
 #, xml-text
 msgid "<parameter>--without-headers</parameter>"
 msgstr "<parameter>--without-headers</parameter>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter05/gcc-pass1.xml:146
+#: lfs-en/chapter05/gcc-pass1.xml:147
 #, xml-text
 msgid ""
 "When creating a complete cross-compiler, GCC requires standard headers "
@@ -345,14 +334,14 @@ msgstr ""
 "eles."
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter05/gcc-pass1.xml:154
+#: lfs-en/chapter05/gcc-pass1.xml:155
 #, xml-text
 msgid "<parameter>--enable-default-pie and --enable-default-ssp</parameter>"
 msgstr "<parameter>--enable-default-pie e --enable-default-ssp</parameter>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter05/gcc-pass1.xml:157
+#: lfs-en/chapter05/gcc-pass1.xml:158
 #, xml-text
 msgid ""
 "Those switches allow GCC to compile programs with some hardening security "
@@ -369,14 +358,38 @@ msgstr ""
 " próximo possível dos finais."
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter05/gcc-pass1.xml:168
+#: lfs-en/chapter05/gcc-pass1.xml:169
+#, xml-text
+msgid "<parameter>--disable-fixincludes</parameter>"
+msgstr "<parameter>--disable-fixincludes</parameter>"
+
+#. type: Content of:
+#. <sect1><sect2><variablelist><varlistentry><listitem><para>
+#: lfs-en/chapter05/gcc-pass1.xml:171
+#, xml-text
+msgid ""
+"By default, during the installation of GCC some system headers would be "
+"<quote>fixed</quote> to be used with GCC.  At this point we've installed no "
+"headers for the cross-compiler to use, so building the auxiliary programs "
+"for the <quote>fix</quote> would just waste time.  This switch disables the "
+"<quote>fix</quote> and skips the build of those programs."
+msgstr ""
+"Por padrão, durante a instalação do GCC, alguns cabeçalhos do sistema seriam"
+" <quote>corrigidos</quote> para serem usados com o GCC. Neste ponto, nós não"
+" instalamos nenhum cabeçalho para o compilador cruzado usar, de forma que "
+"construir os programas auxiliares para a <quote>correção</quote> apenas "
+"desperdiçaria tempo. Esta chave desabilita a <quote>correção</quote> e "
+"ignora a construção desses programas."
+
+#. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
+#: lfs-en/chapter05/gcc-pass1.xml:181
 #, xml-text
 msgid "<parameter>--disable-shared</parameter>"
 msgstr "<parameter>--disable-shared</parameter>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter05/gcc-pass1.xml:170
+#: lfs-en/chapter05/gcc-pass1.xml:183
 #, xml-text
 msgid ""
 "This switch forces GCC to link its internal libraries statically. We need "
@@ -388,14 +401,14 @@ msgstr ""
 "exigem a Glibc, que ainda não está instalada no sistema alvo."
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter05/gcc-pass1.xml:177
+#: lfs-en/chapter05/gcc-pass1.xml:190
 #, xml-text
 msgid "<parameter>--disable-multilib</parameter>"
 msgstr "<parameter>--disable-multilib</parameter>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter05/gcc-pass1.xml:179
+#: lfs-en/chapter05/gcc-pass1.xml:192
 #, xml-text
 msgid ""
 "On x86_64, LFS does not support a multilib configuration.  This switch is "
@@ -405,7 +418,7 @@ msgstr ""
 "é inofensiva para x86."
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter05/gcc-pass1.xml:185
+#: lfs-en/chapter05/gcc-pass1.xml:198
 #, xml-text
 msgid ""
 "<parameter>--disable-threads, --disable-libatomic, --disable-libgomp, "
@@ -418,7 +431,7 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter05/gcc-pass1.xml:190
+#: lfs-en/chapter05/gcc-pass1.xml:203
 #, xml-text
 msgid ""
 "These switches disable support for threading, libatomic, libgomp, "
@@ -433,14 +446,14 @@ msgstr ""
 "cruzadamente a libc temporária."
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter05/gcc-pass1.xml:199
+#: lfs-en/chapter05/gcc-pass1.xml:212
 #, xml-text
 msgid "<parameter>--enable-languages=c,c++</parameter>"
 msgstr "<parameter>--enable-languages=c,c++</parameter>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter05/gcc-pass1.xml:201
+#: lfs-en/chapter05/gcc-pass1.xml:214
 #, xml-text
 msgid ""
 "This option ensures that only the C and C++ compilers are built.  These are "
@@ -450,31 +463,31 @@ msgstr ""
 "Essas são as únicas linguagens necessárias agora."
 
 #. type: Content of: <sect1><sect2><para>
-#: lfs-en/chapter05/gcc-pass1.xml:208
+#: lfs-en/chapter05/gcc-pass1.xml:221
 #, xml-text
 msgid "Compile GCC by running:"
 msgstr "Compile o GCC executando:"
 
 #. type: Content of: <sect1><sect2><screen>
-#: lfs-en/chapter05/gcc-pass1.xml:210
+#: lfs-en/chapter05/gcc-pass1.xml:223
 #, no-wrap, xml-text
 msgid "<userinput remap=\"make\">make</userinput>"
 msgstr "<userinput remap=\"make\">make</userinput>"
 
 #. type: Content of: <sect1><sect2><para>
-#: lfs-en/chapter05/gcc-pass1.xml:212
+#: lfs-en/chapter05/gcc-pass1.xml:225
 #, xml-text
 msgid "Install the package:"
 msgstr "Instale o pacote:"
 
 #. type: Content of: <sect1><sect2><screen>
-#: lfs-en/chapter05/gcc-pass1.xml:214
+#: lfs-en/chapter05/gcc-pass1.xml:227
 #, no-wrap, xml-text
 msgid "<userinput remap=\"install\">make install</userinput>"
 msgstr "<userinput remap=\"install\">make install</userinput>"
 
 #. type: Content of: <sect1><sect2><para>
-#: lfs-en/chapter05/gcc-pass1.xml:216
+#: lfs-en/chapter05/gcc-pass1.xml:229
 #, xml-text
 msgid ""
 "This build of GCC has installed a couple of internal system headers.  "
@@ -503,22 +516,17 @@ msgstr ""
 "sistema de construção do GCC faz em circunstâncias normais:"
 
 #. type: Content of: <sect1><sect2><screen>
-#: lfs-en/chapter05/gcc-pass1.xml:228
-#, fuzzy, no-wrap, xml-text
-#| msgid ""
-#| "<userinput remap=\"install\">cd ..\n"
-#| "cat gcc/limitx.h gcc/glimits.h gcc/limity.h > \\\n"
-#| "  `dirname $($LFS_TGT-gcc -print-libgcc-file-name)`/include/limits.h</userinput>"
+#: lfs-en/chapter05/gcc-pass1.xml:241
+#, no-wrap, xml-text
 msgid ""
 "<userinput remap=\"install\">cat ../gcc/{limitx,glimits,limity}.h  > \\\n"
 "  $($LFS_TGT-gcc -print-file-name=include)/limits.h</userinput>"
 msgstr ""
-"<userinput remap=\"install\">cd ..\n"
-"cat gcc/limitx.h gcc/glimits.h gcc/limity.h > \\\n"
-"  `dirname $($LFS_TGT-gcc -print-libgcc-file-name)`/include/limits.h</userinput>"
+"<userinput remap=\"install\">cat ../gcc/{limitx,glimits,limity}.h  > \\\n"
+"  $($LFS_TGT-gcc -print-file-name=include)/limits.h</userinput>"
 
 #. type: Content of: <sect1><sect2><para>
-#: lfs-en/chapter05/gcc-pass1.xml:235
+#: lfs-en/chapter05/gcc-pass1.xml:248
 #, xml-text
 msgid ""
 "Details on this package are located in <xref linkend=\"contents-gcc\" "

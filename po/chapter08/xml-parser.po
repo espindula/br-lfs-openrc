@@ -6,16 +6,18 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-04-10 21:25-0300\n"
-"PO-Revision-Date: 2025-05-23 04:18+0000\n"
-"Last-Translator: Jamenson Ferreira Espindula de Almeida Melo <jafesp@gmail.com>\n"
-"Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/projects/linux-from-scratch/chapter08_xml-parser/pt_BR/>\n"
+"POT-Creation-Date: 2026-04-02 16:18+0000\n"
+"PO-Revision-Date: 2026-04-03 04:18+0000\n"
+"Last-Translator: Jamenson Ferreira Espindula de Almeida Melo "
+"<jafesp@gmail.com>\n"
+"Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/"
+"projects/linux-from-scratch/chapter08_xml-parser/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.10\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. type: Content of: <sect1><sect1info><address>
 #: lfs-en/chapter08/xml-parser.xml:14
@@ -93,6 +95,10 @@ msgid ""
 " modules need to be added.  To do that, we also have to enable DNS by "
 "temporarily adding /etc/resolv.conf."
 msgstr ""
+"Esse pacote está agendado para mover para o BLFS. Até que isso possa ser "
+"feito, dois módulos Perl precisam ser adicionados. Para fazer isso, nós "
+"também temos que habilitar o DNS adicionando temporariamente "
+"/etc/resolv.conf."
 
 #. type: Content of: <sect1><sect2><note><screen>
 #: lfs-en/chapter08/xml-parser.xml:49
@@ -103,6 +109,10 @@ msgid ""
 "nameserver 8.8.4.4\n"
 "EOF</userinput>"
 msgstr ""
+"<userinput role=\"nodump\">cat > /etc/resolv.conf &lt;&lt; EOF\n"
+"nameserver 8.8.8.8\n"
+"nameserver 8.8.4.4\n"
+"EOF</userinput>"
 
 #. type: Content of: <sect1><sect2><note><para>
 #: lfs-en/chapter08/xml-parser.xml:54
@@ -114,12 +124,17 @@ msgid ""
 "book;general/perl-deps.html#perl-file-sharedir'>the BLFS "
 "instruction</ulink>, and then install this package."
 msgstr ""
+"Alternativamente, você pode ignorar esse pacote e o próximo (intltool), pois"
+" nada mais no LFS precisa deles. Quando você construir um pacote do BLFS que"
+" exija XML::Parser ou intltool, instale esses módulos seguindo <ulink "
+"url='&blfs-book;general/perl-deps.html#perl-file-sharedir'>as instruções do "
+"BLFS</ulink> e, então, instale esse pacote."
 
 #. type: Content of: <sect1><sect2><para>
 #: lfs-en/chapter08/xml-parser.xml:62
 #, xml-text
 msgid "Now add two Perl modules:"
-msgstr ""
+msgstr "Agora adicione dois módulos Perl:"
 
 #. type: Content of: <sect1><sect2><screen>
 #: lfs-en/chapter08/xml-parser.xml:64
@@ -128,6 +143,8 @@ msgid ""
 "<userinput remap=\"pre\">yes | cpan -i File::ShareDir\n"
 "yes | cpan -i File::ShareDir::Install</userinput>"
 msgstr ""
+"<userinput remap=\"pre\">yes | cpan -i File::ShareDir\n"
+"yes | cpan -i File::ShareDir::Install</userinput>"
 
 #. type: Content of: <sect1><sect2><para>
 #: lfs-en/chapter08/xml-parser.xml:67
@@ -136,13 +153,14 @@ msgid ""
 "Finish this temporary workaround by removing /etc/resolv.conf.  A discussion"
 " of this file will be made at <xref linkend='resolv.conf'/>"
 msgstr ""
+"Finalize essa solução temporária removendo /etc/resolv.conf. Uma discussão "
+"desse arquivo será feita em <xref linkend='resolv.conf'/>"
 
 #. type: Content of: <sect1><sect2><screen>
 #: lfs-en/chapter08/xml-parser.xml:71
-#, fuzzy, no-wrap, xml-text
-#| msgid "<userinput remap=\"test\">make test</userinput>"
+#, no-wrap, xml-text
 msgid "<userinput remap=\"pre\">rm /etc/resolv.conf</userinput>"
-msgstr "<userinput remap=\"test\">make test</userinput>"
+msgstr "<userinput remap=\"pre\">rm /etc/resolv.conf</userinput>"
 
 #. type: Content of: <sect1><sect2><para>
 #: lfs-en/chapter08/xml-parser.xml:73
