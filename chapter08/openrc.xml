@@ -37,10 +37,10 @@ desligamento do sistema.</para>
   </sect2>
 
   <sect2 role="installation">
-    <title>Instalaçãoo do OpenRC</title>
+    <title>Instalação do OpenRC</title>
 
-    <para>Apply a patch to make the group which manages <filename
-class="directory">/run/lock</filename> configurable:</para>
+    <para>Apique um remendo para tornar o grupo que gerencia <filename
+class="directory">/run/lock</filename> configurável:</para>
 
 <screen><userinput remap="pre">patch -Np1 -i ../&openrc-lock-patch;</userinput></screen>
 
@@ -65,11 +65,12 @@ meson setup --prefix=/usr       \
       <varlistentry>
         <term><parameter>-D uucp_group=root</parameter></term>
         <listitem>
-          <para>This changes who owns and manages <filename
-class="directory">/run/lock</filename>, as OpenRC will try to use the
-<systemitem class="groupname">uucp</systemitem> group to manage it.  Many
-distributions today use the <systemitem class="groupname">lock</systemitem>
-group, but LFS uses <systemitem class="groupname">root</systemitem> instead.</para>
+          <para>Isso muda quem titulariza e gerencia <filename
+class="directory">/run/lock</filename>, vez que OpenRC tentará usar o grupo
+<systemitem class="groupname">uucp</systemitem> para gerenciá-lo. Muitas
+distribuições hoje usam o grupo <systemitem
+class="groupname">lock</systemitem>, porém LFS usa <systemitem
+class="groupname">root</systemitem>.</para>
         </listitem>
       </varlistentry>
 
@@ -104,13 +105,13 @@ fi
 mv -v /usr/{s,}bin/rc-update</userinput></screen>
 
     <note><para>
-      OpenRC by default reinstalls the configuration files for the base services,
-meaning that if you have configured a service like
-<literal>agetty</literal>, a normal installation would have reset the
-configuration to the default. The above ensures that doesn't happen when
-applicable. The <command>rc-update</command> under some circumstances is
-meant to be ran as a normal user as well, so it should be in <filename
-class="directory">/usr/bin</filename>.
+      OpenRC, por padrão, reinstala os arquivos de configuração para os serviços
+básicos, significando que, se você tiver configurado um serviço como
+<literal>agetty</literal>, uma instalação normal teria reconfigurado a
+configuração para o padrão. O acima garante que não aconteça quando
+aplicável. O <command>rc-update</command> em algumas circunstâncias também
+deve ser executado como um(a) usante normal, de modo que ele deveria estar
+em <filename class="directory">/usr/bin</filename>.
     </para></note>
 
     <para>OpenRC fornece <application>init</application> e outros programas
@@ -193,7 +194,7 @@ linque simbólico para <command>openrc-init</command>
         <term><command>openrc</command></term>
         <listitem>
           <para>
-            Starts and stops services on a given runlevel
+            Inicia e para serviços em um determinado nível de execução
           </para>
           <indexterm zone="ch-system-openrc openrc">
             <primary sortas="b-openrc">openrc</primary>
@@ -230,8 +231,8 @@ necessário
         <term><command>openrc-shutdown</command></term>
         <listitem>
           <para>
-            Desativa o sistema de forma segura, sinalizando todos os processos e
-notificando todos(as) os(as) usuários(as) logados(as)
+            Desativa o sistema de maneira segura, sinalizando todos os processos e
+notificando todos(as) os(as) usantes logados(as)
           </para>
           <indexterm zone="ch-system-openrc openrc-shutdown">
             <primary sortas="b-openrc-shutdown">openrc-shutdown</primary>
