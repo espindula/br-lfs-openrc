@@ -98,7 +98,7 @@ construção.</para>
         <term><envar>FORCE_UNSAFE_CONFIGURE=1</envar></term>
         <listitem>
           <para>Essa variável de ambiente permite que o pacote seja construído pelo(a)
-usuário(a) <systemitem class="username">root</systemitem>.
+usante <systemitem class="username">root</systemitem>.
           </para>
         </listitem>
       </varlistentry>
@@ -123,20 +123,20 @@ usuário(a) <systemitem class="username">root</systemitem>.
     <para>Pule para <quote>Instale o pacote</quote> se não executar a suíte de teste.</para>
 
     <para>Agora a suíte de teste está pronta para ser executada. Primeiro, execute os
-testes que são destinados a serem executados como usuário(a) <systemitem
+testes que são destinados a serem executados como usante <systemitem
 class="username">root</systemitem>:</para>
 
 <screen><userinput remap="test">make NON_ROOT_USERNAME=tester check-root</userinput></screen>
 
-    <para>Nós vamos executar o resto dos testes como o(a) usuário(a) <systemitem
-class="username">tester</systemitem>. Certos testes exigem que o(a)
-usuário(a) seja um(a) membro(a) de mais que um grupo. Portanto, para que
-esses testes não sejam pulados, adicione um grupo temporário e torne o(a)
-usuário(a) <systemitem class="username">tester</systemitem> uma parte dele:</para>
+    <para>Nós vamos executar o resto dos testes como o(a) usante <systemitem
+class="username">tester</systemitem>. Certos testes exigem que o(a) usante
+seja um(a) membro(a) de mais que um grupo. Portanto, para que esses testes
+não sejam ignorados, adicione um grupo temporário e torne o(a) usante
+<systemitem class="username">tester</systemitem> uma parte dele:</para>
 
 <screen><userinput remap="test">groupadd -g 102 dummy -U tester</userinput></screen>
 
-    <para>Corrija algumas das permissões, de modo que o(a) usuário(a) não &root; possa
+    <para>Corrija algumas das permissões, de modo que o(a) usante não &root; consiga
 compilar e executar os testes:</para>
 
 <!-- To editors: in jhalfs the standard input is always piped to "make"

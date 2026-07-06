@@ -129,11 +129,11 @@ anfitrião.</para>
       <varlistentry>
         <term><parameter>--disable-fixincludes</parameter></term>
         <listitem>
-          <para>By default, during the installation of GCC some system headers would be
-<quote>fixed</quote> to be used with GCC.  This is not necessary for a
-modern Linux system, and potentially harmful if a package is reinstalled
-after installing GCC.  This switch prevents GCC from <quote>fixing</quote>
-the headers.</para>
+          <para>Por padrão, durante a instalação do GCC, alguns cabeçalhos do sistema seriam
+<quote>corrigidos</quote> para serem usados com o GCC. Isso não é necessário
+para um sistema Linux moderno e potencialmente danoso se um pacote for
+reinstalado depois da instalação do GCC. Essa chave impede o GCC de
+<quote>corrigir</quote> os cabeçalhos.</para>
         </listitem>
       </varlistentry>
 
@@ -163,11 +163,11 @@ a libc.</para>
       <varlistentry>
         <term><parameter>target_configargs=gcc_cv_target_thread_file=posix</parameter></term>
         <listitem>
-          <para>Build the target libraries libgcc and libstdc++ with POSIX thread support
-enabled.  The default is following the configuration of the compiler used
-for building the target library (in this case, <xref
-linkend='ch-tools-gcc-pass1'/> which was configured with none thread
-support).</para>
+          <para>Construa as bibliotecas alvo libgcc e libstdc++ com suporte de camada POSIX
+habilitado. O padrão é o de seguir a configuração do compilador usado para
+construir a biblioteca alvo (nesse caso, <xref
+linkend='ch-tools-gcc-pass1'/> que foi configurado com nenhum suporte a
+camada).</para>
         </listitem>
       </varlistentry>
 

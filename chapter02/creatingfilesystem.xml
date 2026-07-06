@@ -67,32 +67,33 @@ partição do LFS, emita o seguinte comando:</para>
   <para>Substitua <replaceable>&lt;xxx&gt;</replaceable> pelo nome da partição do
 LFS.</para>
 
-  <para>If you are using an existing <systemitem
-class="filesystem">swap</systemitem> partition, there is no need to format
-it. If a new <systemitem class="filesystem">swap</systemitem> partition was
-created, it will need to be initialized with this command:</para>
+  <para>Se você estiver usando uma partição de <systemitem
+class="filesystem">swap</systemitem> existente, não existe necessidade de
+formatá-la. Se uma nova partição de <systemitem
+class="filesystem">swap</systemitem> foi criada, ela precisará ser
+inicializada com este comando:</para>
 
 <screen role="nodump"><userinput>mkswap /dev/<replaceable>&lt;yyy&gt;</replaceable></userinput></screen>
 
   <para>Substitua <replaceable>&lt;yyy&gt;</replaceable> pelo nome da partição
 <systemitem class="filesystem">swap</systemitem>.</para>
 
-  <para>If you have created an EFI System Partition, you have a few options.
-Motherboards when booting with UEFI look for EFI applications in partitions
-formatted with a FAT variant (FAT12, FAT16, FAT32, VFAT, etc).  Usually,
-FAT32 or VFAT are the recommended options.</para>
+  <para>Se tiver criado uma Partição EFI de Sistema, você terá algumas opções. As
+placas-mãe, ao inicializar com UEFI, procuram aplicativos EFI em partições
+formatadas com uma variante de FAT (FAT12, FAT16, FAT32, VFAT, entre
+outras). Geralmente, FAT32 ou VFAT são as opções recomendadas.</para>
 
-  <para>If you have chosen <systemitem class="filesystem">FAT32</systemitem>, format
-the ESP with the following command:</para>
+  <para>Se você tiver escolhido <systemitem class="filesystem">FAT32</systemitem>,
+formate a ESP com o seguinte comando:</para>
 
 <screen role="nodump"><userinput>mkfs.fat -F 32 /dev/<replaceable>&lt;yyy&gt;</replaceable></userinput></screen>
 
-  <para>On the other hand, if you have chosen <systemitem
-class="filesystem">VFAT</systemitem>, you can run the following instead:</para>
+  <para>Por outro lado, se tiver escolhido <systemitem
+class="filesystem">VFAT</systemitem>, você pode executar o seguinte comando:</para>
 
 <screen role="nodump"><userinput>mkfs.vfat /dev/<replaceable>&lt;zzz&gt;</replaceable></userinput></screen>
 
-  <para>Replace <replaceable>&lt;zzz&gt;</replaceable> with the name of the EFI
-System Partition.</para>
+  <para>Substitua <replaceable>&lt;zzz&gt;</replaceable> pelo nome da Partição EFI
+de Sistema.</para>
 
 </sect1>

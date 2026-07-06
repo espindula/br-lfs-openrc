@@ -65,15 +65,15 @@ vez de usar a própria versão dele da readline.</para>
 
     <para>Pule para <quote>Instale o pacote</quote> se não executar a suíte de teste.</para>
 
-    <para>Para preparar os testes, garanta que o(a) usuário(a) <systemitem
-class="username">tester</systemitem> consegue escrever na árvore dos fontes:</para>
+    <para>Para preparar os testes, garanta que o(a) usante <systemitem
+class="username">tester</systemitem> consiga escrever na árvore dos fontes:</para>
 
 <screen><userinput remap="test">chown -R tester .</userinput></screen>
 
     <para>A suíte de teste desse pacote é projetada para ser executada como um(a)
-usuário(a) não &root; que é proprietário(a) do terminal conectado à entrada
+usante não &root; que é proprietário(a) do terminal conectado à entrada
 padrão. Para satisfazer a exigência, gere um novo pseudo terminal usando o
-<application>Expect</application> e execute os testes como o(a) usuário(a)
+<application>Expect</application> e execute os testes como o(a) usante
 <systemitem class="username">tester</systemitem>:</para>
 
 <screen><userinput remap="test">LC_ALL=C.UTF-8 su -s /usr/bin/expect tester &lt;&lt; "EOF"
@@ -143,8 +143,9 @@ executá-la, portanto fazendo desse interpretador uma ferramenta poderosa</para>
       <varlistentry id="bashbug">
         <term><command>bashbug</command></term>
         <listitem>
-          <para>Um script de shell para ajudar o(a) usuário(a) a compor e enviar relatórios
-de defeitos formatados padrão concernentes ao <command>bash</command></para>
+          <para>Um conjunto de comandos sequenciados de shell para ajudar o(a) usante a
+compor e enviar informes padrão formatados de defeitos concernentes ao
+<command>bash</command></para>
           <indexterm zone="ch-system-bash bashbug">
             <primary sortas="b-bashbug">bashbug</primary>
           </indexterm>

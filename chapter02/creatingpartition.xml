@@ -47,14 +47,14 @@ url='&man;cfdisk.8'>cfdisk(8)</ulink>&quot; ou a &quot;<ulink role='man'
 url='&man;fdisk.8'>fdisk(8)</ulink>&quot; se você ainda não sabe como usar
 os aplicativos.</para>
 
-  <note><para>Para usuários(as) experientes, outros esquemas de particionamento são
+  <note><para>Para usantes experientes, outros esquemas de particionamento são
 possíveis. O novo sistema LFS pode estar em um vetor de software <ulink
 url="&blfs-book;postlfs/raid.html">RAID</ulink> ou em um volume lógico
 <ulink url="&blfs-book;postlfs/aboutlvm.html">LVM</ulink>. Entretanto,
 algumas dessas opções exigem um <ulink
 url="&blfs-book;postlfs/initramfs.html">initramfs</ulink>, o que é um tópico
 avançado. Essas metodologias de particionamento não são recomendadas para
-usuários(as) iniciantes do LFS.</para></note>
+usantes iniciantes do LFS.</para></note>
 
   <para>Lembre-se da designação da nova partição (por exemplo, <filename
 class="devicefile">sda5</filename>). Este livro se referirá a essa como a
@@ -111,49 +111,52 @@ ocorrência recorrente, [então] a melhor solução é a de comprar mais RAM par
 seu sistema.</para> </sect3>
 
     <sect3>
-    <title>The Grub BIOS Partition</title>
+    <title>A Partição de BIOS do Grub</title>
 
-    <para>If the <emphasis>boot disk</emphasis> has been partitioned with a GUID
-Partition Table (GPT), then a small, typically 1 MB, partition must be
-created if the system is being booted with BIOS and it does not already
-exist.  This partition is not formatted, but must be available for GRUB to
-use during installation of the boot loader.  This partition will normally be
-labeled 'BIOS Boot' if using <command>fdisk</command> or have a code of
-<emphasis>EF02</emphasis> if using the <command>gdisk</command> command.</para>
+    <para>Se o <emphasis>disco de inicialização</emphasis> tiver sido particionado com
+a Tabela de Partição GUID (GPT), então uma partição pequena, tipicamente um
+(1) MB, precisará ser criada se o sistema estiver sendo inicializado com
+BIOS e ela já não existir. Essa partição não é formatada, porém precisa
+estar disponível para o GRUB usar durante a instalação do carregador de
+inicialização. Essa partição normalmente será rotulada de 'BIOS Boot' se
+usar o <command>fdisk</command> ou terá um código de
+<emphasis>EF02</emphasis> se usar o comando <command>gdisk</command>.</para>
 
-    <para>If the boot disk is partitioned with an MBR Partition Table, or DOS
-disklabel, then this partition is not needed as space already exists before
-the first partition that Grub can use.</para>
+    <para>Se o disco de inicialização estiver particionado com uma Tabela MBR de
+Partição ou um rótulo DOS de disco, então essa partição não será necessária,
+pois já existe espaço antes da primeira partição que o Grub consegue usar.</para>
 
-    <note><para>The Grub BIOS partition must be on the drive that the BIOS uses to boot the
-system.  This is not necessarily the drive that holds the LFS root
-partition. The disks on a system may use different partition table
-types. The necessity of the Grub BIOS partition depends only on the
-partition table type of the boot disk.</para></note>
+    <note><para>A Partição de BIOS do Grub precisa estar na unidade que o BIOS usa para
+inicializar o sistema. Essa não é necessariamente a unidade que mantém a
+partição raiz do LFS. Os discos em um sistema possivelmente usem tipos
+diferentes de tabela de partição. A necessidade da partição de BIOS do Grub
+depende somente do tipo de tabela de partição do disco de inicialização.</para></note>
     </sect3>
 
     <sect3>
-    <title>The EFI System Partition</title>
+    <title>A Partição EFI de Sistema</title>
 
-    <para>This partition, also known as the <emphasis>ESP</emphasis>, is needed when
-booting the system with UEFI.  It stores the EFI application that is ran
-during bootup. The boot drive can be partitioned with MBR Partition Table,
-or DOS, but compatibility issues will tend to arise as a result.  Therefore,
-it is always a good idea in this case to partition the boot drive with a
-GUID Partition Table (GPT). If you're only booting LFS from the partition,
-20 MB or lower can suffice. The partition should be bigger than the EFI
-image size because GRUB dumps a lot of data to the partition before creating
-the EFI image. To be safe, 128 MB to 256 MB is recommended but can be
-dropped much lower with some experimentation. The partition label should be
-'EFI System' if using <command>fdisk</command>.</para>
+    <para>Essa partição, também conhecida como a <emphasis>ESP</emphasis>, é
+necessária ao inicializar o sistema com UEFI. Ela armazena o aplicativo EFI
+que é executado durante a inicialização. A unidade de inicialização pode ser
+particionada com a Tabela MBR de Partição ou DOS, mas problemas de
+compatibilidade tenderão a surgir como um resultado. Portanto, é sempre uma
+boa ideia, nesse caso, particionar a unidade de inicialização com uma Tabela
+GUID de Partição (GPT). Se você estiver inicializando somente o LFS a partir
+da partição, 20 MB ou menos podem ser suficientes. A partição deveria ser
+maior que o tamanho da imagem da EFI, porque o GRUB despeja muitos dados na
+partição antes de criar a imagem da EFI. Para maior segurança, de 128 MB a
+256 MB é recomendado, mas pode ser reduzida consideravelmente com alguma
+experimentação. O rótulo da partição deveria ser 'EFI System' se usar
+<command>fdisk</command>.</para>
 
-    <para>For Grub, the EFI System Partition should be located at <filename
+    <para>Para Grub, a Partição EFI de Sistema deveria estar localizada em <filename
 class="directory">/boot/efi</filename>.</para>
 
-    <para>A lot of UEFI systems have a Compatibility Support Module (CSM) or Legacy
-Boot option, allowing to boot with BIOS. It could be a good idea to create a
-Grub BIOS partition if your system supports CSM in case UEFI booting does
-not work as expected.</para>
+    <para>Muitos sistemas UEFI têm um Módulo de Suporte de Compatibilidade (MSC) ou
+opção de Inicialização Legada, permitindo inicializar com BIOS. Poderia ser
+uma boa ideia criar uma partição de BIOS do Grub se teu sistema suportar
+MSC, caso a inicialização UEFI não funcione como esperado.</para>
     </sect3>
 
     <sect3>
@@ -171,9 +174,9 @@ problemas de inicialização com discos maiores, torne essa a primeira
 partição física na sua primeira unidade de disco. Um tamanho de partição de
 duzentos (200) megabytes é adequado.</para></listitem>
 
-      <listitem><para>/home &ndash; Altamente recomendada. Compartilhe seu diretório home e
-personalizações de usuário(a) entre múltiplas distribuições ou construções
-do LFS. O tamanho geralmente é bastante grande e depende do espaço de disco
+      <listitem><para>/home &ndash; Altamente recomendada. Compartilhe teu diretório lar e
+personalizações de usante entre múltiplas distribuições ou construções do
+LFS. O tamanho geralmente é bastante grande e depende do espaço de disco
 disponível.</para></listitem>
 
       <listitem><para>/usr &ndash; No LFS, <filename class="directory">/bin</filename>, <filename
@@ -226,9 +229,9 @@ partições serão discutidos na <xref linkend="ch-bootable-fstab"/>.</para>
   </sect2>
 
   <sect2>
-  <title>An Example Disk Layout</title>
+  <title>Um Esquema de Disco de Exemplo</title>
 
-  <para>Below is an example layout for an empty disk drive.</para>
+  <para>Abaixo, está um exemplo de esquema para uma unidade de disco vazia.</para>
 
 <screen>Number  Start (sector)    End (sector)        Size   Code  Name
    1            2048           22527       10.0 MiB  EF00  EFI system partition
@@ -238,46 +241,48 @@ partições serão discutidos na <xref linkend="ch-bootable-fstab"/>.</para>
    5         5242880        89128959       40.0 GiB  8300  lfs13.0+
    6        89128960       173015039       40.0 GiB  8300  /home</screen>
 
-  <para>The above example makes a few assumptions:
+  <para>O exemplo acima faz algumas presunções:
      <itemizedlist>
        <listitem>
-         <para>The partition table is a GUID Partition Table (GPT).</para>
+         <para>A tabela de partições é uma GUID Partition Table (GPT).</para>
        </listitem>
 
        <listitem>
-         <para>Both EFI and BIOS Boot partitions are present, although only one will be
-used. Which is used depends on the system firmware.  If the system is old,
-it will not have UEFI capabilities at all.  Some later systems can disable
-UEFI through the firmware setup by disabling "Secure Boot" and enabling
-"Legacy Support" or "CSM" (Compatibility Support Module).  If you know in
-advance which mode you will use, the other partition can be omitted.</para>
+         <para>Ambas as partições de inicialização, EFI e BIOS, estão presentes, embora
+somente uma será usada. Qual será usada depende do firmware do sistema. Se o
+sistema for antigo, ele não terá recursos UEFI em absoluto. Alguns sistemas
+mais recentes conseguem desabilitar a UEFI por intermédio da configuração do
+firmware, desabilitando a "Inicialização Segura" e habilitando o "Suporte
+Legado" ou o "CSM" (Compatibility Support Module). Se você souber
+antecipadamente qual modo usará, a outra partição pode ser omitida.</para>
        </listitem>
 
        <listitem>
-         <para>The EFI partition must be formatted as VFAT.</para>
+         <para>A partição EFI precisa ser formatada como VFAT.</para>
        </listitem>
 
        <listitem>
-         <para>The BIOS partition is not formatted.</para>
+         <para>A partição do BIOS não está formatada.</para>
        </listitem>
        
        <listitem>
-         <para>The swap partition must be initialized.</para>
+         <para>A partição de área de troca precisa ser inicializada.</para>
        </listitem>
        
        <listitem>
-         <para>The /boot partition can be formatted as ext2 since it is rarely written (and
-then only by root) and does not need a journal.</para>
+         <para>A partição /boot pode ser formatada como ext2, já que ela raramente é
+escrita (e mesmo assim, somente pelo(a) root) e não precisa de um diário.</para>
        </listitem>
        
        <listitem>
-         <para>The recommendation for all other partitions is to use ext4 formatting.</para>
+         <para>A recomendação para todas as outras partições é a de usar formatação ext4.</para>
        </listitem>
 
        <listitem>
-         <para>Another partition can be added for installing the "host" system for building
-LFS. A minimal sized partition, 10 GiB, should be sufficient. If you are
-building the system using a LiveCD, a host partition may not be required.</para>
+         <para>Outra partição pode ser adicionada para instalar o sistema "anfitrião" para
+construir o LFS. Uma partição de tamanho mínimo, de 10 GiB, deveria ser
+suficiente. Se você estiver construindo o sistema usando um LiveCD, uma
+partição de anfitrião possivelmente não seja exigida.</para>
        </listitem>
 
      </itemizedlist>

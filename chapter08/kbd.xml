@@ -88,9 +88,8 @@ biblioteca PAM, a qual não está disponível no ambiente chroot.</para>
     <note>
       <para>Para alguns idiomas (por exemplo, Bielorrusso) o pacote Kbd não fornece um
 mapa de tecla útil onde o mapa de tecla <quote>by</quote> regular supõe a
-codificação ISO-8859-5 e o mapa de tecla CP1251 normalmente é
-usado. Usuários(as) de tais idiomas tem que transferir mapas de tecla
-funcionais separadamente.</para>
+codificação ISO-8859-5 e o mapa de tecla CP1251 normalmente é usado. Usantes
+de tais idiomas tem que transferir mapas de tecla funcionais separadamente.</para>
     </note>
 
     <para>Se desejado, instale a documentação:</para>

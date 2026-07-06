@@ -131,7 +131,7 @@ mais longo. Remova essa opção para habilitar a execução de
 configurar os arquivos <filename>/etc/group</filename> e
 <filename>/etc/passwd</filename>. Ambos os arquivos foram criados no
 capítulo anterior. Esse processo de segundo plano não é útil em um sistema
-LFS dado que contas de usuário(a) são criadas manualmente.</para>
+LFS dado que contas de usante são criadas manualmente.</para>
         </listitem>
       </varlistentry>
 
@@ -180,9 +180,9 @@ LFS.</para>
       <varlistentry>
         <term><parameter>-D dev-kvm-mode=0660</parameter></term>
         <listitem>
-          <para>A regra padrão do "udev" permitiria que todos(as) os(as) usuários(as)
-acessassem <filename class='devicefile'>/dev/kvm</filename>. Os(As)
-editores(as) a consideram perigosa. Essa opção a substitui.</para>
+          <para>A regra padrão do udev permitiria que todos(as) usantes acessassem <filename
+class='devicefile'>/dev/kvm</filename>. Os(As) editores(as) a consideram
+perigosa. Essa opção a substitui.</para>
         </listitem>
       </varlistentry>
 
@@ -237,13 +237,12 @@ término da suíte de teste):</para>
 unshare -m ninja test</userinput></screen>
 
     
-    <para>Um teste chamado <literal>systemd:core / test-namespace</literal> é
-conhecido por falhar no ambiente chroot do LFS. Alguns outros testes
-possivelmente falhem porque eles dependem de várias opções de configuração
-do núcleo. O teste chamado <literal>systemd:test / test-copy</literal>
-possivelmente expire devido a um congestionamento de E/S com um grande
-número de tarefas paralelas, mas passaria se executado sozinho com
-<command>meson test test-copy</command>.</para>
+    <para>One test named <literal>systemd:core / test-namespace</literal> is known to
+fail in the LFS chroot environment.  Some other tests may fail because they
+depend on various kernel configuration options.  The test named
+<literal>systemd:test / test-copy</literal> may time out due to an I/O
+congestion with a large parallel job number, but it would pass if running
+alone with <command>meson test test-copy</command>.</para>
 
     <para>Instale o pacote:</para>
 

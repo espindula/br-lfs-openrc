@@ -426,8 +426,8 @@ LFS.</para>
     <title>Removido:</title>
     <listitem><para></para></listitem>  
     <!-- satisfy build -->
-<listitem><para>XML-Parser (Moved to BLFS)</para></listitem> 
-    <listitem><para>intltool (Moved to BLFS)</para></listitem>  
+<listitem><para>XML-Parser (Movido para BLFS)</para></listitem> 
+    <listitem><para>intltool (Movido para BLFS)</para></listitem>  
     
   <!--<listitem>
 <para>Coreutils-9.7-i18n-1.patch</para></listitem>-->

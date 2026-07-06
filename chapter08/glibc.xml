@@ -50,8 +50,9 @@ conformes com o FHS:</para>
 
 <screen><userinput remap="pre">patch -Np1 -i ../&glibc-fhs-patch;</userinput></screen>
 
-    <para>Now add some fixes to address building and testing with Linux 7, and fix 5
-security vulnerabilities found after the glibc-2.43 release:</para>
+    <para>Agora, adicione algumas correções para endereçar construção e testagem com
+Linux 7 e corrigir 5 vulnerabilidades de segurança encontradas depois do
+lançamento da glibc-2.43:</para>
 
 <screen><userinput remap="pre">patch -Np1 -i ../&glibc-upstream-patch;</userinput></screen>
 
@@ -197,10 +198,11 @@ limite original.</para>
       </listitem>
 
       <listitem>
-        <para>Additionally, some tests may fail with a relatively old CPU model (for
-example <emphasis>elf/tst-cpu-features-cpuinfo</emphasis>) or host kernel
-version (for example <emphasis>stdlib/tst-arc4random-thread</emphasis>), or
-with a host kernel newer than &linux-version;.</para>
+        <para>Adicionalmente, alguns testes possivelmente falhem com um modelo de CPU
+relativamente antigo (por exemplo
+<emphasis>elf/tst-cpu-features-cpuinfo</emphasis>) ou versão do núcleo do
+anfitrião (por exemplo <emphasis>stdlib/tst-arc4random-thread</emphasis>),
+ou com um núcleo do anfitrião mais recente que &linux-version;.</para>
       </listitem>
     </itemizedlist>
 

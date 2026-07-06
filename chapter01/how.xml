@@ -26,7 +26,8 @@ url="&lfs-root;hints/downloads/files/partitioning-for-lfs.txt"/>.</para></note>
   <para>Como uma alternativa a instalar uma distribuição separada em sua máquina,
 você possivelmente deseje usar um LiveCD de uma distribuição comercial.</para>
 
-  <note><para>The host distro must satisfy <xref linkend='ch-partitioning-hostreqs'/>.</para></note>
+  <note><para>A distribuição anfitriã precisa satisfazer <xref
+linkend='ch-partitioning-hostreqs'/>.</para></note>
 
   
 

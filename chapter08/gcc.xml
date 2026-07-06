@@ -76,20 +76,20 @@ cd      build</userinput></screen>
              --disable-fixincludes    \
              --with-system-zlib</userinput></screen>
 
-    <para>We only enable C and C++ here to save the build time as no packages in LFS
-and BLFS require GCC to compile other languages. Append
-<literal>algol68</literal> for Algol 68, <literal>fortran</literal> for
-Fortran, <literal>go</literal> for Go, <literal>objc</literal> for Objective
-C, <literal>obj-c++</literal> for Objective C++, and/or
-<literal>m2</literal> for Modula 2 into the value of
-<parameter>--enable-languages</parameter> option if you want to compile
-programs in one or more of those languages with GCC.</para>
+    <para>Nós habilitamos somente C e C++ aqui para economizar o tempo de construção,
+já que nenhum pacote no LFS e no BLFS exige o GCC para compilar outras
+linguagens. Posponha <literal>algol68</literal> para Algol 68,
+<literal>fortran</literal> para Fortran, <literal>go</literal> para Go,
+<literal>objc</literal> para Objective C, <literal>obj-c++</literal> para
+Objective C++ e (ou) <literal>m2</literal> para Modula 2 no valor da opção
+<parameter>--enable-languages</parameter> se você quiser compilar programas
+em uma ou mais dessas linguagens com o GCC.</para>
 
-    <para>GCC also supports the Ada, COBOL, and D languages.  But that would require
-some dependencies which are not available in the base LFS system and would
-exceed the scope of this book.  Read <ulink
-url='https://gcc.gnu.org/install/prerequisites.html'>the upstream
-documentation</ulink> for details.</para>
+    <para>O GCC também suporta as linguagens Ada, COBOL e D. No entanto, isso exigiria
+algumas dependências que não estão disponíveis no sistema LFS básico e que
+extrapolariam o escopo deste livro. Leia-se <ulink
+url='https://gcc.gnu.org/install/prerequisites.html'>a documentação de fluxo
+de desenvolvimento</ulink> para detalhes.</para>
 
     <variablelist>
       <title>O significado dos novos parâmetros de configuração:</title>
@@ -130,9 +130,10 @@ biblioteca Zlib, em vez da própria cópia interna dele.</para>
       <varlistentry>
        <term><parameter>--enable-targets=all</parameter></term>
         <listitem>
-          <para>This switch tells GCC to enable 64-bit code generation support even if we
-are building it for a 32-bit system.  It's needed to build GRUB for 64-bit
-UEFI.  This switch has no effect if building for 64-bit.</para>
+          <para>Essa chave instrui o GCC a habilitar o suporte à geração de código de 64
+bits, mesmo se nós estivermos construindo para um sistema de 32 bits. Ela é
+necessária para construir o GRUB para UEFI de 64 bits. Essa chave não tem
+efeito se a construção for para 64 bits.</para>
         </listitem>
       </varlistentry>
     </variablelist>
@@ -181,8 +182,8 @@ limite rígido:</para>
 
 <screen><userinput remap="test">ulimit -s -H unlimited</userinput></screen>
 
-    <para>Teste os resultados como um(a) usuário(a) não privilegiado(a), porém não
-pare em erros:</para>
+    <para>Teste os resultados como um(a) usante não privilegiado(a), porém não pare em
+erros:</para>
 
 <screen><userinput remap="test">chown -R tester .
 su tester -c "PATH=$PATH make -k check"</userinput></screen>
@@ -198,30 +199,30 @@ su tester -c "PATH=$PATH make -k check"</userinput></screen>
 url="&test-results;"/> e <ulink
 url="https://gcc.gnu.org/ml/gcc-testresults/"/>.</para>
 
-    <para>In the <filename class='directory'>gcc.target/i386</filename> tests, the
-tests named <filename>auto-init-padding-9.c</filename>,
+    <para>Nos testes <filename class='directory'>gcc.target/i386</filename>, os testes
+nominados de <filename>auto-init-padding-9.c</filename>,
 <filename>builtin-memmove-*.c</filename>,
 <filename>mem{cpy,set}-pr120683-*.c</filename>,
 <filename>pr111657-1.c</filename>, <filename>pr115102.c</filename>,
-<filename>pr116896.c</filename>, <filename>pr120881-2a.c</filename>, and
-<filename>pr122343-4a.c</filename> are known to fail.  The test named
-<filename>shift-gf2p8affine-2.c</filename> is known to fail if the processor
-does not support AVX512.</para>
+<filename>pr116896.c</filename>, <filename>pr120881-2a.c</filename> e
+<filename>pr122343-4a.c</filename> são conhecidos por falharem. O teste
+nominado de <filename>shift-gf2p8affine-2.c</filename> é conhecido por
+falhar se o processador não suportar AVX512.</para>
 
-    <para>In the <filename class='directory'>g++.target/i386</filename> tests, the
-tests named <filename>memset-pr108585-1{a,b}.C</filename>,
-<filename>mv{,c}-symbols*.C</filename>, <filename>pr112824-2.C</filename>,
-and <filename>pr116896-1.C</filename> are known to fail.</para>
+    <para>Nos testes <filename class='directory'>g++.target/i386</filename>, os testes
+nominados de <filename>memset-pr108585-1{a,b}.C</filename>,
+<filename>mv{,c}-symbols*.C</filename>, <filename>pr112824-2.C</filename> e
+<filename>pr116896-1.C</filename> são conhecidos por falharem.</para>
 
-    <para>Additionally, the tests <filename>gcc.dg/ipa/pr122458.c</filename>,
-<filename>gcc.dg/lto/toplevel-*-asm-*</filename>, and
-<filename>gcc.dg/plugin/crash-test-nested-*.c</filename> are known to fail.
-The test <filename>g++.dg/gomp/deprecate-1.C</filename> is known to fail
-sometimes.</para>
+    <para>Adicionalmente, os testes <filename>gcc.dg/ipa/pr122458.c</filename>,
+<filename>gcc.dg/lto/toplevel-*-asm-*</filename> e
+<filename>gcc.dg/plugin/crash-test-nested-*.c</filename> são conhecidos por
+falharem. O teste <filename>g++.dg/gomp/deprecate-1.C</filename> é conhecido
+por falhar algumas vezes.</para>
 
-    <para>The LFS editors have investigated those failures and confirmed none
-indicates a critical issue.  Most of them are because the test case author
-did not anticipate <parameter>--enable-default-ssp</parameter> or
+    <para>Os(As) editores(as) do LFS investigaram essas falhas e confirmaram que
+nenhuma indica um problema crítico. A maioria delas é porque o(a) autor(a)
+do caso de teste não previu <parameter>--enable-default-ssp</parameter> ou
 <parameter>--enable-default-pie</parameter>.</para>
 
     <para><!--The GCC developers

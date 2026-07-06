@@ -79,12 +79,12 @@ find man -name Makefile.in -exec sed -i 's/passwd\.5 / /'   {} \;</userinput></s
 muito mais seguro <emphasis>YESCRYPT</emphasis> de encriptação de senha, que
 também permite senhas com mais de oito (08) caracteres. Também é necessário
 mudar o local obsoleto <filename
-class="directory">/var/spool/mail</filename> para as caixas de correio de
-usuário(a) que o Shadow usa por padrão para o local <filename
+class="directory">/var/spool/mail</filename> para caixas de correio de
+usante que Shadow usa por padrão para o local <filename
 class="directory">/var/mail</filename> usado atualmente. E, remova <filename
 class="directory">/bin</filename> e <filename
 class="directory">/sbin</filename> do <envar>PATH</envar>, pois eles são
-simplesmente links simbólicos para seus contrapartes em <filename
+simplesmente linques simbólicos para as contrapartes deles em <filename
 class="directory">/usr</filename>.</para>
 
     <warning>
@@ -139,7 +139,7 @@ em GPU) que os algoritmos SHA tradicionais.</para>
       <varlistentry>
         <term><parameter>--with-group-name-max-length=32</parameter></term>
         <listitem>
-          <para>O nome de usuário(a) mais longo permissível é o de trinta e dois (32)
+          <para>O nome de usante mais longo permissível é o de trinta e dois (32)
 caracteres. Torne o comprimento máximo de um nome de grupo o mesmo.</para>
         </listitem>
       </varlistentry>
@@ -211,14 +211,14 @@ make -C man install-man</userinput></screen>
       <secondary>configurando</secondary>
     </indexterm>
 
-    <para>Esse pacote contém utilitários para adicionar, modificar e deletar
-usuários(as) e grupos; configurar e modificar as senhas deles(as); e
-realizar outras tarefas administrativas. Para uma explicação completa do que
+    <para>Esse pacote contém utilitários para adicionar, modificar e deletar usantes e
+grupos; configurar e modificar as senhas deles(as); e realizar outras
+tarefas administrativas. Para uma explicação completa do que
 <emphasis>sombreamento de senha</emphasis> significa, veja-se o arquivo
 <filename>doc/HOWTO</filename> dentro da árvore desempacotada do fonte. Se
-usar suporte ao Shadow, [então] tenha na mente que aplicativos que
-necessitem verificar senhas (gerenciadores de tela, aplicativos de FTP,
-processos de segundo plano pop3, etc.) precisam ser conformantes com o
+usar suporte ao Shadow, tenha na mente que programas que necessitem
+verificar senhas (gerenciadores de exibição, programas de FTP, processos de
+segundo plano pop3, entre outros) precisam ser conformantes com o
 Shadow. Isto é, eles precisam ser capazes de funcionar com senhas
 sombreadas.</para>
 

@@ -57,8 +57,8 @@ make -C libelf</userinput></screen>
 
 <screen><userinput remap="test">make -k check</userinput></screen>
 
-    <para>The above command builds the utilities that are part of the package as well
-as the unit tests.</para>
+    <para>O comando acima constrói os utilitários que são parte do pacote, bem como os
+testes de unidade.</para>
 
     <!--
     <para>

@@ -12,26 +12,26 @@
 
   <para>Configure um bom ambiente de trabalho criando dois novos arquivos de
 inicialização para o shell <command>bash</command>. Enquanto logado(a) como
-usuário(a) <systemitem class="username">lfs</systemitem>, emita o seguinte
+usante <systemitem class="username">lfs</systemitem>, emita o seguinte
 comando para criar um novo <filename>.bash_profile</filename>:</para>
 
 <screen><userinput>cat &gt; ~/.bash_profile &lt;&lt; "EOF"
 <literal>exec env -i HOME=$HOME TERM=$TERM PS1='\u:\w\$ ' /bin/bash</literal>
 EOF</userinput></screen>
 
-  <para>Enquanto logado(a) como usuário(a) <systemitem
-class="username">lfs</systemitem> ou quando comutado para o(a) usuário(a)
-&lfs-user; usando um comando <command>su</command> com a opção
-<quote><parameter>-</parameter></quote>, o shell inicial é um shell de
-<emphasis>login</emphasis> que lê o <filename>/etc/profile</filename> do
-anfitrião (provavelmente contendo algumas configurações e variáveis de
-ambiente) e então <filename>.bash_profile</filename>. O comando
-<command>exec env -i.../bin/bash</command> no arquivo
-<filename>.bash_profile</filename> substitui o shell em execução por um novo
-com um ambiente completamente vazio, exceto pelas variáveis
-<envar>HOME</envar>, <envar>TERM</envar> e <envar>PS1</envar>. Isso garante
-que nenhuma variável de ambiente indesejada e potencialmente danosa oriunda
-do sistema anfitrião vaze para o ambiente de construção.</para>
+  <para>Enquanto logado(a) como usante <systemitem class="username">lfs</systemitem>
+ou quando comutado para o(a) usante &lfs-user; usando um comando
+<command>su</command> com a opção <quote><parameter>-</parameter></quote>, o
+shell inicial é um shell de <emphasis>login</emphasis> que lê o
+<filename>/etc/profile</filename> do anfitrião (provavelmente contendo
+algumas configurações e variáveis de ambiente) e então
+<filename>.bash_profile</filename>. O comando <command>exec env
+-i.../bin/bash</command> no arquivo <filename>.bash_profile</filename>
+substitui o shell executante por um novo com um ambiente completamente
+vazio, exceto pelas variáveis <envar>HOME</envar>, <envar>TERM</envar> e
+<envar>PS1</envar>. Isso garante que nenhuma variável de ambiente indesejada
+e potencialmente danosa oriunda do sistema anfitrião vaze para o ambiente de
+construção.</para>
 
   <para>A nova instância do shell é um shell de <emphasis>não-login</emphasis>, que
 não lê, e executa, o conteúdo dos arquivos <filename>/etc/profile</filename>
@@ -175,18 +175,18 @@ as exportamos.</para>
      <para>Muitas distribuições comerciais acrescentam uma instância não documentada de
 <filename>/etc/bash.bashrc</filename> à inicialização do
 <command>bash</command>. Esse arquivo tem o potencial de modificar o
-ambiente do(a) usuário(a) <systemitem class="username">lfs</systemitem> de
-formas que podem afetar a construção de pacotes LFS críticos. Para assegurar
-que o ambiente do(a) usuário(a) <systemitem
-class="username">lfs</systemitem> esteja limpo, verifique a presença de
+ambiente do(a) usante <systemitem class="username">lfs</systemitem> de
+maneiras que conseguem afetar a construção de pacotes LFS críticos. Para
+assegurar que o ambiente do(a) usante <systemitem
+class="username">lfs</systemitem> esteja limpo, verifique a presença do
 <filename>/etc/bash.bashrc</filename> e, se presente, mova-o para fora do
-caminho. Como o(a) usuário(a) <systemitem
-class="username">root</systemitem>, execute:</para>
+caminho. Como o(a) usante <systemitem class="username">root</systemitem>,
+execute:</para>
 
      <screen role="nodump"><userinput>[ ! -e /etc/bash.bashrc ] || mv -v /etc/bash.bashrc /etc/bash.bashrc.NOUSE</userinput></screen>
 
-     <para>Quando o(a) usuário(a) <systemitem class="username">lfs</systemitem> não
-mais for necessária(o) (no início do <xref
+     <para>Quando o(a) usante <systemitem class="username">lfs</systemitem> não mais
+for necessário(a) (no início do <xref
 linkend="chapter-chroot-temporary-tools"/>), você pode seguramente restaurar
 <filename>/etc/bash.bashrc</filename> (se desejado).</para>
 
@@ -252,9 +252,9 @@ núcleos lógicos que você deseja usar se não quiser usar todos os núcleos
 lógicos.
   </para>
 
-  <para>Finalmente, para garantir que o ambiente esteja totalmente preparado para a
-construção das ferramentas temporárias, force o shell
-<command>bash</command> a ler o perfil do(a) novo(a) usuário(a):</para>
+  <para>Finalmente, para garantir que o ambiente esteja totalmente preparado para
+construir as ferramentas temporárias, force o shell <command>bash</command>
+a ler o perfil do(a) novo(a) usante:</para>
 
 <screen><userinput>source ~/.bash_profile</userinput></screen>
 

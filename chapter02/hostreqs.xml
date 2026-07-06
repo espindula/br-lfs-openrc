@@ -39,24 +39,25 @@ porém não foram testados.</para>
 
    <warning>
      <para>
-       Be aware that GCC newer than &gcc-version; or Binutils newer than
-&binutils-version; are not tested.  A newer GCC is highly likely to break
-the build of this LFS release.  Do not report such a breakage to the LFS
-editors.  If your host distro has newer versions of these packages, you have
-several options:
+       Esteja ciente que GCC mais recente que &gcc-version; ou Binutils mais
+recente que &binutils-version; não foram testadas. Um GCC mais recente é
+altamente provável quebrar a construção deste lançamento do LFS. Não informe
+tal quebra para os(as) editores(as) do LFS. Se tua distribuição anfitriã
+tiver versões mais recentes desses pacotes, você tem várias opções:
        <itemizedlist>
          <listitem>
-           <simpara>Use a newer release of the LFS book if one exists</simpara>
+           <simpara>Usar um lançamento mais recente do livro LFS, se existir um</simpara>
          </listitem>
          <listitem>
-           <simpara>Use an older host distro</simpara>
+           <simpara>Usar uma distribuição anfitriã mais antiga</simpara>
          </listitem>
          <listitem>
-           <simpara>Downgrade GCC if that is supported by the host distro</simpara>
+           <simpara>Desatualizar o GCC se isso for suportado pela distribuição anfitriã</simpara>
          </listitem>
          <listitem>
-           <simpara>Use the latest LFS development book. Updates to the latest version of
-packages in LFS are usually added within two to four weeks after release.</simpara>
+           <simpara>Usar o livro mais recente de desenvolvimento do LFS. As atualizações para a
+versão mais recente dos pacotes no LFS geralmente são adicionadas dentro de
+duas a quatro semanas depois do lançamento.</simpara>
          </listitem>
        </itemizedlist>
      </para>
@@ -70,8 +71,9 @@ simbólico ou real para bash)</para>
     </listitem>
 
     <listitem>
-      <para><emphasis role="strong">Binutils-2.13.1</emphasis> (Versions greater than
-&binutils-version; may not work as they have not been tested)</para>
+      <para><emphasis role="strong">Binutils-2.13.1</emphasis> (Versões maiores que
+&binutils-version; possivelmente não funcionem dado que elas não foram
+testadas)</para>
     </listitem>
 
     <listitem>
@@ -84,7 +86,7 @@ link para bison ou script pequeno que executa bison)</para>
          is the first supported version, since it is the one introduced
          in ubuntu-26.04-->
 <listitem>
-      <para><emphasis role="strong">GNU Coreutils-8.1</emphasis> or <emphasis
+      <para><emphasis role="strong">GNU Coreutils-8.1</emphasis> ou <emphasis
 role="strong">Uutils Coreutils-0.8</emphasis></para>
     </listitem>
 
@@ -104,10 +106,11 @@ link para gawk)</para>
     <listitem>
       
       <!-- See https://gcc.gnu.org/r15-4719.  -->
-<para><emphasis role="strong">GCC-5.4</emphasis> including the C++ compiler,
-<command>g++</command> (Versions greater than &gcc-version; may not work as
-they have not been tested). C and C++ standard libraries (with headers) must
-also be present so the C++ compiler can build hosted programs</para>
+<para><emphasis role="strong">GCC-5.4</emphasis> incluindo o compilador C++,
+<command>g++</command> (Versões maiores que &gcc-version; possivelmente não
+funcionem dado que elas não foram testadas). As bibliotecas C e C++ padrão
+(com cabeçalhos) também precisam estar presentes, de modo que o compilador
+C++ consiga construir programas hospedados</para>
     </listitem>
 
     <listitem>
@@ -192,9 +195,9 @@ de que <option>CONFIG_UNIX98_PTYS</option> esteja configurada como
   </itemizedlist>
 
   <para>
-    Additionally, if you need to create a new ESP (EFI System Partition, read
-<xref linkend='ch-partitioning-creatingfilesystem'/> for details), <ulink
-url='&blfs-book;postlfs/dosfstools.html'>dosfstools</ulink> is needed.
+    Além disso, se você precisar criar uma nova ESP (EFI System Partition, leia
+<xref linkend='ch-partitioning-creatingfilesystem'/> para detalhes), <ulink
+url='&blfs-book;postlfs/dosfstools.html'>dosfstools</ulink> é necessário.
   </para>
 
   <important>

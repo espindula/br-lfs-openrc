@@ -126,8 +126,8 @@ rtacct, rtmon, rtpr, rtstat (link para lnstat), ss e tc</seg>
       <varlistentry id="genl">
         <term><command>genl</command></term>
         <listitem>
-          <para>Estrutura genérica de interação direta com o(a) usuário(a) do utilitário de
-link de rede de comunicação</para>
+          <para>Estrutura genérica de interação direta com o(a) usante do utilitário de
+linque de rede de intercomunicação</para>
           <indexterm zone="ch-system-iproute2 genl">
             <primary sortas="b-genl">genl</primary>
           </indexterm>
