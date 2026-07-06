@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-06-22 20:31-0300\n"
-"PO-Revision-Date: 2026-02-15 04:18+0000\n"
+"POT-Creation-Date: 2026-07-06 02:08-0300\n"
+"PO-Revision-Date: 2026-07-05 04:18+0000\n"
 "Last-Translator: Jamenson Ferreira Espindula de Almeida Melo <jafesp@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/projects/linux-from-scratch/chapter08_gcc/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -141,18 +141,7 @@ msgstr "Prepare o GCC para compilação:"
 
 #. type: Content of: <sect1><sect2><screen>
 #: lfs-en/chapter08/gcc.xml:66
-#, fuzzy, no-wrap, xml-text
-#| msgid ""
-#| "<userinput remap=\"configure\">../configure --prefix=/usr            \\\n"
-#| "             LD=ld                    \\\n"
-#| "             --enable-languages=c,c++ \\\n"
-#| "             --enable-default-pie     \\\n"
-#| "             --enable-default-ssp     \\\n"
-#| "             --enable-host-pie        \\\n"
-#| "             --disable-multilib       \\\n"
-#| "             --disable-bootstrap      \\\n"
-#| "             --disable-fixincludes    \\\n"
-#| "             --with-system-zlib</userinput>"
+#, no-wrap, xml-text
 msgid ""
 "<userinput remap=\"configure\">../configure --prefix=/usr            \\\n"
 "             LD=ld                    \\\n"
@@ -172,6 +161,7 @@ msgstr ""
 "             --enable-default-pie     \\\n"
 "             --enable-default-ssp     \\\n"
 "             --enable-host-pie        \\\n"
+"             --enable-targets=all     \\\n"
 "             --disable-multilib       \\\n"
 "             --disable-bootstrap      \\\n"
 "             --disable-fixincludes    \\\n"
@@ -179,20 +169,7 @@ msgstr ""
 
 #. type: Content of: <sect1><sect2><para>
 #: lfs-en/chapter08/gcc.xml:78
-#, fuzzy, xml-text
-#| msgid ""
-#| "We only enable C and C++ here to save the build time as no packages in LFS "
-#| "and BLFS require GCC to compile other languages. Append "
-#| "<literal>cobol</literal> for Cobol (note that it will cause GCC fail to "
-#| "build on a 32-bit LFS system), <literal>fortran</literal> for Fortran, "
-#| "<literal>go</literal> for Go, <literal>objc</literal> for Objective C, "
-#| "<literal>obj-c++</literal> for Objective C++, and/or <literal>m2</literal> "
-#| "for Modula 2 into the value of <parameter>--enable-languages</parameter> "
-#| "option if you want to compile programs in one or more of those languages "
-#| "with GCC.  GCC also supports Ada and D, but the code to support Ada or D is "
-#| "written in Ada or D itself, so the support can only be built with an "
-#| "existing Ada or D compiler installation and we cannot enable the support "
-#| "here."
+#, xml-text
 msgid ""
 "We only enable C and C++ here to save the build time as no packages in LFS "
 "and BLFS require GCC to compile other languages. Append "
@@ -205,16 +182,12 @@ msgid ""
 msgstr ""
 "Nós habilitamos somente C e C++ aqui para economizar o tempo de construção, "
 "já que nenhum pacote no LFS e no BLFS exige o GCC para compilar outras "
-"linguagens. Posponha <literal>cobol</literal> para Cobol (observe que isso "
-"fará com que o GCC falhe para construir em um sistema LFS de 32 bits), "
+"linguagens. Posponha <literal>algol68</literal> para Algol 68, "
 "<literal>fortran</literal> para Fortran, <literal>go</literal> para Go, "
 "<literal>objc</literal> para Objective C, <literal>obj-c++</literal> para "
 "Objective C++ e (ou) <literal>m2</literal> para Modula 2 no valor da opção "
 "<parameter>--enable-languages</parameter> se você quiser compilar programas "
-"em uma ou mais dessas linguagens com o GCC. O GCC também suporta Ada e D, "
-"mas o código para suportar Ada ou D é escrito na própria Ada ou D, de forma "
-"que o suporte só pode ser construído com uma instalação existente do "
-"compilador Ada ou D e nós não conseguimos habilitar o suporte aqui."
+"em uma ou mais dessas linguagens com o GCC."
 
 #. type: Content of: <sect1><sect2><para>
 #: lfs-en/chapter08/gcc.xml:89
@@ -226,6 +199,11 @@ msgid ""
 "url='https://gcc.gnu.org/install/prerequisites.html'>the upstream "
 "documentation</ulink> for details."
 msgstr ""
+"O GCC também suporta as linguagens Ada, COBOL e D. No entanto, isso exigiria"
+" algumas dependências que não estão disponíveis no sistema LFS básico e que "
+"extrapolariam o escopo deste livro. Leia-se <ulink "
+"url='https://gcc.gnu.org/install/prerequisites.html'>a documentação de fluxo"
+" de desenvolvimento</ulink> para detalhes."
 
 #. type: Content of: <sect1><sect2><variablelist><title>
 #: lfs-en/chapter08/gcc.xml:96
@@ -302,10 +280,9 @@ msgstr ""
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
 #: lfs-en/chapter08/gcc.xml:132
-#, fuzzy, xml-text
-#| msgid "<parameter>--disable-bootstrap</parameter>"
+#, xml-text
 msgid "<parameter>--enable-targets=all</parameter>"
-msgstr "<parameter>--disable-bootstrap</parameter>"
+msgstr "<parameter>--enable-targets=all</parameter>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
@@ -316,6 +293,10 @@ msgid ""
 "are building it for a 32-bit system.  It's needed to build GRUB for 64-bit "
 "UEFI.  This switch has no effect if building for 64-bit."
 msgstr ""
+"Essa chave instrui o GCC a habilitar o suporte à geração de código de 64 "
+"bits, mesmo se nós estivermos construindo para um sistema de 32 bits. Ela é "
+"necessária para construir o GRUB para UEFI de 64 bits. Essa chave não tem "
+"efeito se a construção for para 64 bits."
 
 #. type: Attribute 'xreflabel' of: <sect1><sect2><note><anchor>
 #: lfs-en/chapter08/gcc.xml:143
@@ -420,8 +401,8 @@ msgstr "<userinput remap=\"test\">ulimit -s -H unlimited</userinput>"
 #, xml-text
 msgid "Test the results as a non-privileged user, but do not stop at errors:"
 msgstr ""
-"Teste os resultados como um(a) usuário(a) não privilegiado(a), porém não "
-"pare em erros:"
+"Teste os resultados como um(a) usante não privilegiado(a), porém não pare em"
+" erros:"
 
 #. type: Content of: <sect1><sect2><screen>
 #: lfs-en/chapter08/gcc.xml:188
@@ -441,10 +422,9 @@ msgstr "Para extrair um sumário dos resultados da suíte de teste, execute:"
 
 #. type: Content of: <sect1><sect2><screen>
 #: lfs-en/chapter08/gcc.xml:193
-#, fuzzy, no-wrap, xml-text
-#| msgid "<userinput remap=\"test\">../contrib/test_summary</userinput>"
+#, no-wrap, xml-text
 msgid "<userinput remap=\"test\">../contrib/test_summary -t</userinput>"
-msgstr "<userinput remap=\"test\">../contrib/test_summary</userinput>"
+msgstr "<userinput remap=\"test\">../contrib/test_summary -t</userinput>"
 
 #. type: Content of: <sect1><sect2><para>
 #: lfs-en/chapter08/gcc.xml:195
@@ -480,6 +460,14 @@ msgid ""
 "<filename>shift-gf2p8affine-2.c</filename> is known to fail if the processor"
 " does not support AVX512."
 msgstr ""
+"Nos testes <filename class='directory'>gcc.target/i386</filename>, os testes"
+" nominados de <filename>auto-init-padding-9.c</filename>, <filename>builtin-"
+"memmove-*.c</filename>, <filename>mem{cpy,set}-pr120683-*.c</filename>, "
+"<filename>pr111657-1.c</filename>, <filename>pr115102.c</filename>, "
+"<filename>pr116896.c</filename>, <filename>pr120881-2a.c</filename> e "
+"<filename>pr122343-4a.c</filename> são conhecidos por falharem. O teste "
+"nominado de <filename>shift-gf2p8affine-2.c</filename> é conhecido por "
+"falhar se o processador não suportar AVX512."
 
 #. type: Content of: <sect1><sect2><para>
 #: lfs-en/chapter08/gcc.xml:215
@@ -490,16 +478,14 @@ msgid ""
 "<filename>mv{,c}-symbols*.C</filename>, <filename>pr112824-2.C</filename>, "
 "and <filename>pr116896-1.C</filename> are known to fail."
 msgstr ""
+"Nos testes <filename class='directory'>g++.target/i386</filename>, os testes"
+" nominados de <filename>memset-pr108585-1{a,b}.C</filename>, "
+"<filename>mv{,c}-symbols*.C</filename>, <filename>pr112824-2.C</filename> e "
+"<filename>pr116896-1.C</filename> são conhecidos por falharem."
 
 #. type: Content of: <sect1><sect2><para>
 #: lfs-en/chapter08/gcc.xml:222
-#, fuzzy, xml-text
-#| msgid ""
-#| "With Glibc-2.38, the analyzer tests named <filename>data-"
-#| "model-4.c</filename> and <filename>conftest-1.c</filename> are known to "
-#| "fail.  In the asan tests, several tests in <filename>asan_test.C</filename> "
-#| "are known to fail.  The test named <filename>interception-malloc-"
-#| "test-1.C</filename> is known to fail."
+#, xml-text
 msgid ""
 "Additionally, the tests <filename>gcc.dg/ipa/pr122458.c</filename>, "
 "<filename>gcc.dg/lto/toplevel-*-asm-*</filename>, and "
@@ -507,12 +493,11 @@ msgid ""
 "  The test <filename>g++.dg/gomp/deprecate-1.C</filename> is known to fail "
 "sometimes."
 msgstr ""
-"Com \"Glibc-2.38\", os testes do analisador chamados <filename>data-"
-"model-4.c</filename> e <filename>conftest-1.c</filename> são conhecidos por "
-"falharem. Nos testes \"asan\", vários testes em "
-"<filename>asan_test.C</filename> são conhecidos por falharem. O teste "
-"chamado <filename>interception-malloc-test-1.C</filename> é conhecido por "
-"falhar."
+"Adicionalmente, os testes <filename>gcc.dg/ipa/pr122458.c</filename>, "
+"<filename>gcc.dg/lto/toplevel-*-asm-*</filename> e "
+"<filename>gcc.dg/plugin/crash-test-nested-*.c</filename> são conhecidos por "
+"falharem. O teste <filename>g++.dg/gomp/deprecate-1.C</filename> é conhecido"
+" por falhar algumas vezes."
 
 #. type: Content of: <sect1><sect2><para>
 #: lfs-en/chapter08/gcc.xml:229
@@ -523,6 +508,10 @@ msgid ""
 "did not anticipate <parameter>--enable-default-ssp</parameter> or "
 "<parameter>--enable-default-pie</parameter>."
 msgstr ""
+"Os(As) editores(as) do LFS investigaram essas falhas e confirmaram que "
+"nenhuma indica um problema crítico. A maioria delas é porque o(a) autor(a) "
+"do caso de teste não previu <parameter>--enable-default-ssp</parameter> ou "
+"<parameter>--enable-default-pie</parameter>."
 
 #. The GCC developers
 #.     are usually aware of these issues, but have not resolved them yet.
@@ -568,16 +557,13 @@ msgstr ""
 
 #. type: Content of: <sect1><sect2><screen>
 #: lfs-en/chapter08/gcc.xml:249
-#, fuzzy, no-wrap, xml-text
-#| msgid ""
-#| "<userinput remap=\"install\">chown -v -R root:root \\\n"
-#| "    /usr/lib/gcc/$(gcc -dumpmachine)/&gcc-version;/include{,-fixed}</userinput>"
+#, no-wrap, xml-text
 msgid ""
 "<userinput remap=\"install\">chown -v -R root:root $(gcc -print-file-"
 "name=include){,-fixed}</userinput>"
 msgstr ""
-"<userinput remap=\"install\">chown -v -R root:root \\\n"
-"    /usr/lib/gcc/$(gcc -dumpmachine)/&gcc-version;/include{,-fixed}</userinput>"
+"<userinput remap=\"install\">chown -v -R root:root $(gcc -print-file-"
+"name=include){,-fixed}</userinput>"
 
 #. type: Content of: <sect1><sect2><para>
 #: lfs-en/chapter08/gcc.xml:251
@@ -632,16 +618,13 @@ msgstr ""
 
 #. type: Content of: <sect1><sect2><screen>
 #: lfs-en/chapter08/gcc.xml:267
-#, fuzzy, no-wrap, xml-text
-#| msgid ""
-#| "<userinput remap=\"install\">ln -sfv ../../libexec/gcc/$(gcc -dumpmachine)/&gcc-version;/liblto_plugin.so \\\n"
-#| "        /usr/lib/bfd-plugins/</userinput>"
+#, no-wrap, xml-text
 msgid ""
 "<userinput remap=\"install\">ln -sfvr $(gcc -print-prog-"
 "name=liblto_plugin.so) /usr/lib/bfd-plugins/</userinput>"
 msgstr ""
-"<userinput remap=\"install\">ln -sfv ../../libexec/gcc/$(gcc -dumpmachine)/&gcc-version;/liblto_plugin.so \\\n"
-"        /usr/lib/bfd-plugins/</userinput>"
+"<userinput remap=\"install\">ln -sfvr $(gcc -print-prog-"
+"name=liblto_plugin.so) /usr/lib/bfd-plugins/</userinput>"
 
 #. type: Content of: <sect1><sect2><para>
 #: lfs-en/chapter08/gcc.xml:269
@@ -1722,12 +1705,12 @@ msgstr "libubsan"
 #~ "Quatro testes relacionados a <filename>pr90579.c</filename> são conhecidos "
 #~ "por falharem."
 
-#, fuzzy, xml-text
+#, xml-text
 #~ msgid ""
 #~ "Eight tests related to <filename>builtin-math-6.c</filename> are known to "
 #~ "fail."
 #~ msgstr ""
-#~ "Cinco testes relacionados a <filename>analyzer/strchr-1.c</filename> são "
+#~ "Oito testes relacionados a <filename>builtin-math-6.c</filename> são "
 #~ "conhecidos por falharem."
 
 #, xml-text
@@ -1825,6 +1808,21 @@ msgstr "libubsan"
 #~ "<filename>pr56837.c</filename> são conhecidos por falharem. Adicionalmente, "
 #~ "vários testes no diretório <filename class='directory'>vect</filename> são "
 #~ "conhecidos por falharem se o hardware não suportar \"AVX\"."
+
+#, xml-text
+#~ msgid ""
+#~ "With Glibc-2.38, the analyzer tests named <filename>data-"
+#~ "model-4.c</filename> and <filename>conftest-1.c</filename> are known to "
+#~ "fail.  In the asan tests, several tests in <filename>asan_test.C</filename> "
+#~ "are known to fail.  The test named <filename>interception-malloc-"
+#~ "test-1.C</filename> is known to fail."
+#~ msgstr ""
+#~ "Com \"Glibc-2.38\", os testes do analisador chamados <filename>data-"
+#~ "model-4.c</filename> e <filename>conftest-1.c</filename> são conhecidos por "
+#~ "falharem. Nos testes \"asan\", vários testes em "
+#~ "<filename>asan_test.C</filename> são conhecidos por falharem. O teste "
+#~ "chamado <filename>interception-malloc-test-1.C</filename> é conhecido por "
+#~ "falhar."
 
 #, xml-text
 #~ msgid "The C preprocessing library"

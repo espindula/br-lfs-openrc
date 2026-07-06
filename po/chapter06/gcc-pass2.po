@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-06-22 20:32-0300\n"
-"PO-Revision-Date: 2025-08-12 04:18+0000\n"
+"POT-Creation-Date: 2026-07-06 02:11-0300\n"
+"PO-Revision-Date: 2026-06-15 04:18+0000\n"
 "Last-Translator: Jamenson Ferreira Espindula de Almeida Melo <jafesp@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/projects/linux-from-scratch/chapter06_gcc-pass2/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.10\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. type: Attribute 'xreflabel' of: <sect1>
 #: lfs-en/chapter06/gcc-pass2.xml:8
@@ -99,14 +99,7 @@ msgstr ""
 
 #. type: Content of: <sect1><sect2><screen>
 #: lfs-en/chapter06/gcc-pass2.xml:49
-#, fuzzy, no-wrap, xml-text
-#| msgid ""
-#| "<userinput remap=\"pre\">tar -xf ../mpfr-&mpfr-version;.tar.xz\n"
-#| "mv -v mpfr-&mpfr-version; mpfr\n"
-#| "tar -xf ../gmp-&gmp-version;.tar.xz\n"
-#| "mv -v gmp-&gmp-version; gmp\n"
-#| "tar -xf ../mpc-&mpc-version;.tar.gz\n"
-#| "mv -v mpc-&mpc-version; mpc</userinput>"
+#, no-wrap, xml-text
 msgid ""
 "<userinput remap=\"pre\">tar -xf ../mpfr-&mpfr-version;.tar.xz\n"
 "mv -v mpfr-&mpfr-version; mpfr\n"
@@ -119,7 +112,7 @@ msgstr ""
 "mv -v mpfr-&mpfr-version; mpfr\n"
 "tar -xf ../gmp-&gmp-version;.tar.xz\n"
 "mv -v gmp-&gmp-version; gmp\n"
-"tar -xf ../mpc-&mpc-version;.tar.gz\n"
+"tar -xf ../mpc-&mpc-version;.tar.xz\n"
 "mv -v mpc-&mpc-version; mpc</userinput>"
 
 #. type: Content of: <sect1><sect2><para>
@@ -184,26 +177,7 @@ msgstr "Agora prepare o GCC para compilação:"
 
 #. type: Content of: <sect1><sect2><screen>
 #: lfs-en/chapter06/gcc-pass2.xml:76
-#, fuzzy, no-wrap, xml-text
-#| msgid ""
-#| "<userinput remap=\"configure\">../configure                   \\\n"
-#| "    --build=$(../config.guess) \\\n"
-#| "    --host=$LFS_TGT            \\\n"
-#| "    --target=$LFS_TGT          \\\n"
-#| "    --prefix=/usr              \\\n"
-#| "    --with-build-sysroot=$LFS  \\\n"
-#| "    --enable-default-pie       \\\n"
-#| "    --enable-default-ssp       \\\n"
-#| "    --disable-nls              \\\n"
-#| "    --disable-multilib         \\\n"
-#| "    --disable-libatomic        \\\n"
-#| "    --disable-libgomp          \\\n"
-#| "    --disable-libquadmath      \\\n"
-#| "    --disable-libsanitizer     \\\n"
-#| "    --disable-libssp           \\\n"
-#| "    --disable-libvtv           \\\n"
-#| "    --enable-languages=c,c++   \\\n"
-#| "    LDFLAGS_FOR_TARGET=-L$PWD/$LFS_TGT/libgcc</userinput>"
+#, no-wrap, xml-text
 msgid ""
 "<userinput remap=\"configure\">../configure                   \\\n"
 "    --build=$(../config.guess) \\\n"
@@ -234,6 +208,7 @@ msgstr ""
 "    --with-build-sysroot=$LFS  \\\n"
 "    --enable-default-pie       \\\n"
 "    --enable-default-ssp       \\\n"
+"    --disable-fixincludes      \\\n"
 "    --disable-nls              \\\n"
 "    --disable-multilib         \\\n"
 "    --disable-libatomic        \\\n"
@@ -243,7 +218,8 @@ msgstr ""
 "    --disable-libssp           \\\n"
 "    --disable-libvtv           \\\n"
 "    --enable-languages=c,c++   \\\n"
-"    LDFLAGS_FOR_TARGET=-L$PWD/$LFS_TGT/libgcc</userinput>"
+"    LDFLAGS_FOR_TARGET=-L$PWD/$LFS_TGT/libgcc \\\n"
+"    target_configargs=gcc_cv_target_thread_file=posix</userinput>"
 
 #. type: Content of: <sect1><sect2><variablelist><title>
 #: lfs-en/chapter06/gcc-pass2.xml:98
@@ -312,10 +288,9 @@ msgstr ""
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
 #: lfs-en/chapter06/gcc-pass2.xml:130
-#, fuzzy, xml-text
-#| msgid "<parameter>--disable-libsanitizer</parameter>"
+#, xml-text
 msgid "<parameter>--disable-fixincludes</parameter>"
-msgstr "<parameter>--disable-libsanitizer</parameter>"
+msgstr "<parameter>--disable-fixincludes</parameter>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
@@ -328,6 +303,11 @@ msgid ""
 "after installing GCC.  This switch prevents GCC from <quote>fixing</quote> "
 "the headers."
 msgstr ""
+"Por padrão, durante a instalação do GCC, alguns cabeçalhos do sistema seriam"
+" <quote>corrigidos</quote> para serem usados com o GCC. Isso não é "
+"necessário para um sistema Linux moderno e potencialmente danoso se um "
+"pacote for reinstalado depois da instalação do GCC. Essa chave impede o GCC "
+"de <quote>corrigir</quote> os cabeçalhos."
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
 #: lfs-en/chapter06/gcc-pass2.xml:141
@@ -379,6 +359,7 @@ msgstr ""
 msgid ""
 "<parameter>target_configargs=gcc_cv_target_thread_file=posix</parameter>"
 msgstr ""
+"<parameter>target_configargs=gcc_cv_target_thread_file=posix</parameter>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
@@ -390,6 +371,10 @@ msgid ""
 "for building the target library (in this case, <xref linkend='ch-tools-gcc-"
 "pass1'/> which was configured with none thread support)."
 msgstr ""
+"Construa as bibliotecas alvo libgcc e libstdc++ com suporte de camada POSIX "
+"habilitado. O padrão é o de seguir a configuração do compilador usado para "
+"construir a biblioteca alvo (nesse caso, <xref linkend='ch-tools-gcc-"
+"pass1'/> que foi configurado com nenhum suporte a camada)."
 
 #. type: Content of: <sect1><sect2><para>
 #: lfs-en/chapter06/gcc-pass2.xml:176

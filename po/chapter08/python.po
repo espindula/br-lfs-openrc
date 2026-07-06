@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-06-22 20:32-0300\n"
-"PO-Revision-Date: 2025-12-21 16:18+0000\n"
+"POT-Creation-Date: 2026-07-06 02:10-0300\n"
+"PO-Revision-Date: 2026-07-05 04:18+0000\n"
 "Last-Translator: Jamenson Ferreira Espindula de Almeida Melo <jafesp@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/projects/linux-from-scratch/chapter08_python/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.15.1\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. type: Content of: <sect1><sect1info><address>
 #: lfs-en/chapter08/python.xml:14
@@ -93,19 +93,19 @@ msgstr "Instalação do Python 3"
 #: lfs-en/chapter08/python.xml:46
 #, xml-text
 msgid "First, apply a patch for compatibility with OpenSSL 4:"
-msgstr ""
+msgstr "Primeiro, aplique um remendo para compatibilidade com OpenSSL 4:"
 
 #. type: Content of: <sect1><sect2><screen>
 #: lfs-en/chapter08/python.xml:48
 #, fuzzy, no-wrap, xml-text
 #| msgid ""
-#| "<userinput remap=\"pre\">patch -Np1 -i ../&python-security-fixes-"
+#| "<userinput remap=\"pre\">patch -Np1 -i ../&python-consolidated-fixes-"
 #| "patch;</userinput>"
 msgid ""
 "<userinput remap=\"pre\">patch -Np1 -i ../&python-openssl4-fixes-"
 "patch;</userinput>"
 msgstr ""
-"<userinput remap=\"pre\">patch -Np1 -i ../&python-security-fixes-"
+"<userinput remap=\"pre\">patch -Np1 -i ../&python-consolidated-fixes-"
 "patch;</userinput>"
 
 #. type: Content of: <sect1><sect2><para>
@@ -227,6 +227,9 @@ msgid ""
 "<literal>test_urllibnet</literal>, are known to fail because name resolution"
 " is not configured in the incomplete LFS environment."
 msgstr ""
+"Dois testes, <literal>test_urllib2</literal> e "
+"<literal>test_urllibnet</literal>, são conhecidos por falharem porque a "
+"resolução de nomes não está configurada no ambiente incompleto do LFS."
 
 #. type: Content of: <sect1><sect2><para>
 #: lfs-en/chapter08/python.xml:105
@@ -252,14 +255,14 @@ msgid ""
 " user). A multi-line warning is triggered whenever <command>pip3</command> "
 "is issued by the <systemitem class='username'>root</systemitem> user."
 msgstr ""
-"Nós usamos o comando <command>pip3</command> para instalar os aplicativos e "
-"módulos do Python 3 para todos(as) os(as) usuários(as) como <systemitem "
+"Nós usamos o comando <command>pip3</command> para instalar programas e "
+"módulos do Python 3 para todos(as) os(as) usantes como <systemitem "
 "class='username'>root</systemitem> em vários lugares neste livro. Isso "
 "conflita com a recomendação dos(as) desenvolvedores(as) do Python: instalar "
-"pacotes no ambiente virtual ou no diretório home de um(a) usuário(a) regular"
-" (executando <command>pip3</command> como esse(a) usuário(a)). Um aviso "
-"multi linhas é deflagrado sempre que <command>pip3</command> for emitido "
-"pelo(a) usuário(a) <systemitem class='username'>root</systemitem>."
+"pacotes em um ambiente virtual ou no diretório lar de um(a) usante regular "
+"(executando <command>pip3</command> como esse(a) usante). Um aviso multi "
+"linhas será deflagrado sempre que <command>pip3</command> for emitido "
+"pelo(a) usante <systemitem class='username'>root</systemitem>."
 
 #. type: Content of: <sect1><sect2><para>
 #: lfs-en/chapter08/python.xml:118
@@ -297,12 +300,12 @@ msgid ""
 "following command, which creates a configuration file:"
 msgstr ""
 "Depois que nós inicializarmos o sistema LFS e configurarmos uma conexão de "
-"rede de comunicação, um aviso diferente será emitido, informando para o(a) "
-"usuário(a) atualizar o <command>pip3</command> a partir de uma roda pré-"
+"rede de intercomunicação, um aviso diferente será emitido, informando para "
+"o(a) usante atualizar o <command>pip3</command> a partir de uma roda pré "
 "construída em PyPI (sempre que uma nova versão estiver disponível). Porém, o"
 " LFS considera que o <command>pip3</command> é uma parte do Python 3, de "
-"forma que ele não deveria ser atualizado separadamente. Além disso, uma "
-"atualização a partir de uma roda pré-construída se desviaria do nosso "
+"modo que ele não deveria ser atualizado separadamente. Além disso, uma "
+"atualização a partir de uma roda pré construída se desviaria do nosso "
 "objetivo: construir um sistema Linux a partir do código fonte. Assim, o "
 "aviso a respeito da nova versão do <command>pip3</command> deveria ser "
 "ignorado também. Se desejar, você pode suprimir todos esses avisos "
@@ -340,10 +343,10 @@ msgstr ""
 "No LFS e no BLFS normalmente nós construímos e instalamos módulos do Python "
 "com o comando <command>pip3</command>. Por favor, tenha certeza de que os "
 "comandos <command>pip3 install</command> em ambos os livros sejam executados"
-" como o(a) usuário(a) &root; (a menos que seja para um ambiente virtual do "
-"Python). Executar um <command>pip3 install</command> como um(a) usuário(a) "
-"não &root; possivelmente aparente funcionar, porém causará o módulo "
-"instalado ficar inacessível por outros(as) usuários(as)."
+" como o(a) usante &root; (a menos que seja para um ambiente virtual do "
+"Python). Executar <command>pip3 install</command> como um(a) usante não "
+"&root; possivelmente aparente funcionar, porém causará o módulo instalado "
+"ficar inacessível por outros(as) usantes."
 
 #. type: Content of: <sect1><sect2><important><para>
 #: lfs-en/chapter08/python.xml:161
@@ -587,9 +590,9 @@ msgstr ""
 msgid "python3"
 msgstr "python3"
 
-#, fuzzy, xml-text
+#, xml-text
 #~ msgid "Next, fix two security vulnerabilities:"
-#~ msgstr "Primeiro, corrija uma vulnerabilidade de segurança no módulo tarfile:"
+#~ msgstr "Primeiro, duas vulnerabilidades de segurança:"
 
 #, no-wrap, xml-text
 #~ msgid ""
@@ -599,9 +602,11 @@ msgstr "python3"
 #~ "<userinput remap=\"pre\">patch -Np1 -i ../&python-security-fixes-"
 #~ "patch;</userinput>"
 
-#, fuzzy, xml-text
+#, xml-text
 #~ msgid "First, apply a security patch for issues identified upstream:"
-#~ msgstr "Primeiro, aplique um remendo de segurança para o pacote atual:"
+#~ msgstr ""
+#~ "Primeiro, aplique um remendo de segurança para problemas identificados pelo "
+#~ "fluxo de desenvolvimento:"
 
 #, xml-text
 #~ msgid "Fix a regression that causes issues in BLFS packages like pyatspi:"

@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-06-21 22:31-0300\n"
-"PO-Revision-Date: 2025-05-22 04:18+0000\n"
+"POT-Creation-Date: 2026-07-06 02:11-0300\n"
+"PO-Revision-Date: 2026-06-30 23:24+0000\n"
 "Last-Translator: Jamenson Ferreira Espindula de Almeida Melo <jafesp@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/projects/linux-from-scratch/chapter10_grub/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.10\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. type: Content of: <sect1><sect1info><address>
 #: lfs-en/chapter10/grub.xml:14
@@ -47,12 +47,7 @@ msgstr "Introdução"
 
 #. type: Content of: <sect1><sect2><warning><para>
 #: lfs-en/chapter10/grub.xml:22
-#, fuzzy, xml-text
-#| msgid ""
-#| "Configuring GRUB incorrectly can render your system inoperable without an "
-#| "alternate boot device such as a CD-ROM or bootable USB drive. This section "
-#| "is not required to boot your LFS system.  You may just want to modify your "
-#| "current boot loader, e.g. Grub-Legacy, GRUB2, or LILO."
+#, xml-text
 msgid ""
 "Configuring GRUB incorrectly can render your system inoperable without an "
 "alternate boot device such as a CD-ROM or bootable USB drive. This section "
@@ -60,10 +55,10 @@ msgid ""
 "current boot loader, e.g. Grub-Legacy or GRUB2."
 msgstr ""
 "Configurar o GRUB incorretamente pode tornar teu sistema inoperável sem um "
-"dispositivo alternativo de inicialização, como um CD-ROM ou unidade USB "
+"dispositivo alternativo de inicialização, como um CD-ROM ou uma unidade USB "
 "inicializável. Esta seção não é exigida para inicializar teu sistema LFS. "
 "Você possivelmente queira apenas modificar teu carregador de inicialização "
-"atual, por exemplo, Grub-Legacy, GRUB2 ou LILO."
+"atual, por exemplo, Grub-Legacy ou GRUB2."
 
 #. type: Content of: <sect1><sect2><para>
 #: lfs-en/chapter10/grub.xml:28
@@ -100,7 +95,7 @@ msgstr ""
 #: lfs-en/chapter10/grub.xml:43
 #, xml-text
 msgid "Turn off Secure Boot"
-msgstr ""
+msgstr "Desativar Inicialização de Segurança"
 
 #. type: Content of: <sect1><sect2><para>
 #: lfs-en/chapter10/grub.xml:45
@@ -112,6 +107,12 @@ msgid ""
 "the documentation provided by the manufacturer of your system to find out "
 "how to turn off Secure Boot support."
 msgstr ""
+"O LFS não tem os pacotes essenciais para suportar a Inicialização Segura. "
+"Para configurar o processo de inicialização seguindo as instruções desta "
+"seção, a Inicialização Segura precisa ser desativada a partir da interface "
+"de configuração do firmware. Leia-se a documentação fornecida pelo(a) "
+"fabricante do teu sistema para saber como desativar o suporte de "
+"Inicialização Segura."
 
 #. type: Content of: <sect1><sect2><title>
 #: lfs-en/chapter10/grub.xml:53
@@ -170,6 +171,16 @@ msgid ""
 "file system on the BIOS Boot Partition), so the stub doesn't need to support"
 " any file system and it can be made small enough to fit in the MBR."
 msgstr ""
+"Se inicializar o sistema via BIOS, o GRUB funcionará escrevendo um Código de"
+" Carregador de Estágio Inicial no primeiro setor (nominado de Master Boot "
+"Record, ou MBR) do disco rígido. Essa área não é parte de nenhum sistema de "
+"arquivos. O BIOS carrega e executa o conteúdo do MBR e, em seguida, o Código"
+" de Carregador de Estágio Inicial carrega a imagem principal do GRUB a "
+"partir da Partição de Inicialização do BIOS. A imagem do GRUB é armazenada "
+"como dados brutos em vez de um arquivo (precisa não existir sistema de "
+"arquivos na Partição de Inicialização do BIOS), de modo que o Código de "
+"Carregador de Estágio Inicial não precise suportar nenhum sistema de "
+"arquivos e possa ser pequeno o suficiente para caber no MBR."
 
 #. type: Content of: <sect1><sect2><para>
 #: lfs-en/chapter10/grub.xml:84
@@ -182,6 +193,12 @@ msgid ""
 " The UEFI firmware loads it from the standard location and executes it, "
 "launching GRUB."
 msgstr ""
+"Se inicializar o sistema via UEFI, o GRUB funcionará armazenando a imagem "
+"principal do GRUB como um arquivo executável PE-COFF em um local padrão na "
+"Partição EFI de Sistema: <filename>EFI/BOOT/BOOTX64.EFI</filename> (ou "
+"<filename>EFI/BOOT/BOOTIA32.EFI</filename> para "
+"<literal>i386-efi</literal>). O firmware UEFI o carrega a partir do local "
+"padrão e o executa, iniciando o GRUB."
 
 #. type: Content of: <sect1><sect2><para>
 #: lfs-en/chapter10/grub.xml:91
@@ -195,22 +212,19 @@ msgid ""
 "install</command> embeds the modules necessary to access this file system "
 "into the main GRUB image, so it can find and load other modules."
 msgstr ""
+"Muitas funções do GRUB (incluindo inicializar o núcleo Linux) não estão "
+"incluídas na imagem principal do GRUB. Em vez disso, elas estão armazenadas "
+"em um sistema de arquivos como módulos do GRUB. Esse sistema de arquivos "
+"geralmente é montado de maneira que os módulos do GRUB possam ser acessados "
+"em <filename class='directory'>/boot/grub</filename> na maioria das "
+"distribuições Linux. Para evitar o problema do ovo e da galinha, "
+"<command>grub-install</command> embute os módulos necessários para acessar "
+"esse sistema de arquivos na imagem principal do GRUB, de modo que ele "
+"consiga encontrar e carregar outros módulos."
 
 #. type: Content of: <sect1><sect2><para>
 #: lfs-en/chapter10/grub.xml:101
-#, fuzzy, xml-text
-#| msgid ""
-#| "The location of the boot partition is a choice of the user that affects the "
-#| "configuration.  One recommendation is to have a separate small (suggested "
-#| "size is 200 MB) partition just for boot information.  That way each build, "
-#| "whether LFS or some commercial distro, can access the same boot files and "
-#| "access can be made from any booted system.  If you choose to do this, you "
-#| "will need to mount the separate partition, move all files in the current "
-#| "<filename class=\"directory\">/boot</filename> directory (e.g. the Linux "
-#| "kernel you just built in the previous section) to the new partition.  You "
-#| "will then need to unmount the partition and remount it as <filename "
-#| "class=\"directory\">/boot</filename>.  If you do this, be sure to update "
-#| "<filename>/etc/fstab</filename>."
+#, xml-text
 msgid ""
 "The location of the boot partition is a choice of the user that affects the "
 "configuration. One recommendation is to have a separate small (suggested "
@@ -224,18 +238,18 @@ msgid ""
 "class=\"directory\">/boot</filename>. If you do this, be sure to update "
 "<filename>/etc/fstab</filename>."
 msgstr ""
-"O local da partição de inicialização é uma escolha do(a) usuário(a) que "
-"afeta a configuração. Uma recomendação é a de ter uma partição pequena "
-"(tamanho sugerido é 200 MB) separada somente para informações de "
-"inicialização. Dessa forma, cada construção, seja LFS ou alguma distribuição"
-" comercial, consegue acessar os mesmos arquivos de inicialização e o acesso "
-"consegue ser feito a partir de qualquer sistema inicializado. Se escolher "
-"fazer isso, você precisará montar a partição separada, mover todos os "
-"arquivos no diretório <filename class=\"directory\">/boot</filename> atual "
-"(por exemplo, o núcleo Linux que você recém construiu na seção anterior) "
-"para a nova partição. Você então precisará desmontar a partição e remontá-la"
-" como <filename class=\"directory\">/boot</filename>. Se você fizer isso, "
-"tenha certeza de atualizar <filename>/etc/fstab</filename>."
+"O local da partição de inicialização é uma escolha do(a) usante que afeta a "
+"configuração. Uma recomendação é a de ter-se uma pequena partição separada "
+"(tamanho sugerido de 200 MB) apenas para informações de inicialização. Ao "
+"fazer isso, não apenas o LFS, mas qualquer distribuição Linux, poderá "
+"acessar os mesmos arquivos de inicialização e, consequentemente, qualquer "
+"sistema inicializado. Se optar por fazer isso, você precisará montar a "
+"partição separada, mover todos os arquivos no diretório atual <filename "
+"class=\"directory\">/boot</filename> (por exemplo, o núcleo Linux que você "
+"recém construiu na seção anterior) para a nova partição. Você precisará, "
+"então, desmontar a partição e remontá-la como <filename "
+"class=\"directory\">/boot</filename>. Se você fizer isso, certifique-se de "
+"atualizar o arquivo <filename>/etc/fstab</filename>."
 
 #. type: Content of: <sect1><sect2><note><para>
 #: lfs-en/chapter10/grub.xml:114
@@ -248,6 +262,12 @@ msgid ""
 " the host distro. The Linux kernel supports mounting one partition at "
 "multiple mount points."
 msgstr ""
+"Se a distribuição anfitriã utilizar uma partição separada para <filename "
+"class=\"directory\">/boot</filename> e você quiser que o sistema LFS também "
+"use essa partição para <filename class=\"directory\">/boot</filename>, basta"
+" montar a partição em <filename class=\"directory\">$LFS/boot</filename> na "
+"distribuição anfitriã. O núcleo Linux suporta montar uma partição em "
+"múltiplos pontos de montagem."
 
 #. type: Content of: <sect1><sect2><para>
 #: lfs-en/chapter10/grub.xml:123
@@ -268,6 +288,9 @@ msgid ""
 "For examples and more information on boot partition layouts, looking at "
 "<xref linkend=\"ch-partitioning-creatingpartition\"/> may be informative."
 msgstr ""
+"Para exemplos e mais informações acerca de esquemas de partição de "
+"inicialização, olhar para a <xref linkend=\"ch-partitioning-"
+"creatingpartition\"/> possivelmente seja informativo."
 
 #. type: Content of: <sect1><sect2><para>
 #: lfs-en/chapter10/grub.xml:131
@@ -296,6 +319,16 @@ msgid ""
 "firmware type, or you plan to move the hard drive to a different computer, "
 "this is something you can do as a blanket strategy."
 msgstr ""
+"As seguintes seções explicam como inicializar com BIOS e UEFI. As "
+"instalações do GRUB para BIOS, UEFI de 64 bits e UEFI de 32 bits podem "
+"coexistir e compartilhar a mesma configuração. As imagens e os dados ficam "
+"em locais diferentes, de modo que você pode criar tanto a Partição de "
+"Inicialização do BIOS quanto a Partição EFI de Sistema e instalar o GRUB "
+"para todos os tipos suportados de firmware (ou seja, executando três "
+"comandos <command>grub-install</command>). Se você não tiver certeza acerca "
+"do teu tipo de firmware ou se planeja mover o disco rígido para um "
+"computador diferente, isso é algo que você pode fazer como uma estratégia "
+"abrangente."
 
 #. type: Content of: <sect1><sect2><note><para>
 #: lfs-en/chapter10/grub.xml:150
@@ -305,6 +338,9 @@ msgid ""
 "be a good idea to run the command for BIOS in case UEFI booting does not "
 "work as expected."
 msgstr ""
+"Se você estiver fazendo inicialização UEFI, mas tiver criado a partição de "
+"BIOS do Grub, possivelmente seja uma boa ideia executar o comando para BIOS "
+"caso a inicialização UEFI não funcione como esperado."
 
 #. type: Content of: <sect1><sect2><note><para>
 #: lfs-en/chapter10/grub.xml:156
@@ -314,36 +350,34 @@ msgid ""
 "commands for both methods. You can just run the command for the boot method "
 "you need."
 msgstr ""
+"Se você precisar instalar o GRUB somente para um método de inicialização, "
+"não tem que executar comandos para ambos os métodos. Você pode executar "
+"apenas o comando para o método de inicialização que precisar."
 
 #. type: Content of: <sect1><sect2><sect3><title>
 #: lfs-en/chapter10/grub.xml:162
 #, xml-text
 msgid "Booting With BIOS"
-msgstr ""
+msgstr "Inicialização com BIOS"
 
 #. type: Content of: <sect1><sect2><sect3><para>
 #: lfs-en/chapter10/grub.xml:164
-#, fuzzy, xml-text
-#| msgid ""
-#| "Install the GRUB files into <filename "
-#| "class=\"directory\">/boot/grub</filename> and set up the boot track:"
+#, xml-text
 msgid ""
 "For booting with BIOS, make sure the boot partition is mounted (if using a "
 "separate one) and the BIOS Boot partition exists. After that, install the "
 "GRUB files into <filename class=\"directory\">/boot/grub</filename> and set "
 "up the boot track:"
 msgstr ""
-"Instale os arquivos do GRUB em <filename "
-"class=\"directory\">/boot/grub</filename> e configure a trilha de "
+"Para inicializar com BIOS, certifique-se de que a partição de inicialização "
+"esteja montada (se usar uma separada) e de que a Partição de BIOS de "
+"inicialização exista. Depois disso, instale os arquivos do GRUB em <filename"
+" class=\"directory\">/boot/grub</filename> e configure a trilha de "
 "inicialização:"
 
 #. type: Content of: <sect1><sect2><sect3><warning><para>
 #: lfs-en/chapter10/grub.xml:170
-#, fuzzy, xml-text
-#| msgid ""
-#| "The following command will overwrite the current boot loader. Do not run the"
-#| " command if this is not desired, for example, if using a third party boot "
-#| "manager to manage the Master Boot Record (MBR)."
+#, xml-text
 msgid ""
 "The following command will overwrite the current boot loader. Do not run the"
 " command if this is not desired, for example, if using a third party boot "
@@ -351,21 +385,19 @@ msgid ""
 msgstr ""
 "O seguinte comando sobrescreverá o carregador de inicialização atual. Não "
 "execute o comando de isso não for desejado, por exemplo, se usar um "
-"gerenciador de inicialização de terceiro(a) para gerenciar o Master Boot "
-"Record (MBR)."
+"gerenciador de inicialização de terceiro(a) para gerenciar o MBR."
 
 #. type: Content of: <sect1><sect2><sect3><screen>
 #: lfs-en/chapter10/grub.xml:175
-#, fuzzy, no-wrap, xml-text
-#| msgid "<userinput>grub-install /dev/sda</userinput>"
+#, no-wrap, xml-text
 msgid "<userinput>grub-install /dev/sda --target=i386-pc</userinput>"
-msgstr "<userinput>grub-install /dev/sda</userinput>"
+msgstr "<userinput>grub-install /dev/sda --target=i386-pc</userinput>"
 
 #. type: Content of: <sect1><sect2><sect3><title>
 #: lfs-en/chapter10/grub.xml:180
 #, xml-text
 msgid "Booting With UEFI"
-msgstr ""
+msgstr "Inicializando com UEFI"
 
 #. type: Content of: <sect1><sect2><sect3><para>
 #: lfs-en/chapter10/grub.xml:182
@@ -377,6 +409,12 @@ msgid ""
 "into <filename class=\"directory\">/boot/grub</filename> and the main GRUB "
 "image at <filename>/boot/efi/EFI/BOOT/BOOTX64.EFI</filename>:"
 msgstr ""
+"Para inicializar com UEFI, certifique-se de que a partição de inicialização "
+"esteja montada (se usar uma separada) e de que a Partição EFI de Sistema "
+"esteja montada em <filename class='directory'>/boot/efi</filename>. Depois "
+"disso, instale os arquivos do GRUB em <filename "
+"class=\"directory\">/boot/grub</filename> e a imagem principal do GRUB em "
+"<filename>/boot/efi/EFI/BOOT/BOOTX64.EFI</filename>:"
 
 #. type: Content of: <sect1><sect2><sect3><warning><para>
 #: lfs-en/chapter10/grub.xml:190
@@ -389,13 +427,20 @@ msgid ""
 "Backup the file so it can be restored later or loaded as a secondary boot "
 "loader by the new GRUB installation from LFS."
 msgstr ""
+"O seguinte comando sobrescreverá o arquivo "
+"<filename>/boot/efi/EFI/BOOT/BOOTX64.EFI</filename>. Se ele já existir, é "
+"provável que seja a entrada de outro carregador de inicialização (por "
+"exemplo, a instalação do GRUB proveniente da distribuição anfitriã ou o "
+"Gerenciador de Inicialização do Windows). Produza uma cópia de segurança do "
+"arquivo, de modo que ele possa ser restaurado posteriormente ou carregado "
+"como um carregador secundário de inicialização pela nova instalação do GRUB "
+"originária do LFS."
 
 #. type: Content of: <sect1><sect2><sect3><screen>
 #: lfs-en/chapter10/grub.xml:199
-#, fuzzy, no-wrap, xml-text
-#| msgid "<userinput>grub-install /dev/sda</userinput>"
+#, no-wrap, xml-text
 msgid "<userinput>grub-install --target=x86_64-efi --removable</userinput>"
-msgstr "<userinput>grub-install /dev/sda</userinput>"
+msgstr "<userinput>grub-install --target=x86_64-efi --removable</userinput>"
 
 #. type: Content of: <sect1><sect2><sect3><para>
 #: lfs-en/chapter10/grub.xml:202
@@ -405,6 +450,10 @@ msgid ""
 "to make the system bootable on 32-bit UEFI firmware, run the command with "
 "<literal>x86_64-efi</literal> replaced by <literal>i386-efi</literal>."
 msgstr ""
+"O comando acima assume que você tenha um firmware UEFI de 64 bits. Se você "
+"quiser tornar o sistema inicializável sobre um firmware UEFI de 32 bits, "
+"execute o comando com <literal>x86_64-efi</literal> substituído por "
+"<literal>i386-efi</literal>."
 
 #. type: Content of: <sect1><sect2><sect3><para>
 #: lfs-en/chapter10/grub.xml:209
@@ -422,6 +471,17 @@ msgid ""
 "book;postlfs/efibootmgr.html\">efibootmgr</ulink>, which is needed by GRUB "
 "to record the location into the EFI variable."
 msgstr ""
+"A opção <parameter>--removable</parameter> faz com que <command>grub-"
+"install</command> use o local padrão, "
+"<filename>EFI/BOOT/BOOTX64.EFI</filename> (ou "
+"<filename>EFI/BOOT/BOOTIA32.EFI</filename> para "
+"<literal>i386-efi</literal>), em vez do local que o GRUB prefere "
+"(<filename>EFI/GRUB/GRUBX64.EFI</filename> ou "
+"<filename>EFI/GRUB/GRUBIA32.EFI</filename>). Usar um local não padrão "
+"resultaria no local em uma variável EFI ser registrada, mas o LFS carece do "
+"pacote do BLFS <ulink url=\"&blfs-"
+"book;postlfs/efibootmgr.html\">efibootmgr</ulink>, o qual é necessário para "
+"o GRUB registrar o local na variável EFI."
 
 #. type: Content of: <sect1><sect2><sect3><note><para>
 #: lfs-en/chapter10/grub.xml:224
@@ -437,6 +497,16 @@ msgid ""
 "system. This can prevent the need for downloading more tarballs onto the LFS"
 " system for now."
 msgstr ""
+"Algumas implementações de firmware UEFI, embora raras, ignoram o caminho EFI"
+" padrão. Tais sistemas, na maioria das vezes, são antigos, como Lenovo "
+"ThinkPads ou desktops/laptops HP. Quando a entrada de inicialização estiver "
+"ausente na configuração do firmware, você precisará instalar o pacote do "
+"BLFS <ulink url=\"&blfs-book;postlfs/efibootmgr.html\">efibootmgr</ulink> "
+"para criar uma entrada de inicialização para UEFI. Se for mais fácil, o "
+"pacote pode ser instalado pelo gerenciador de pacotes da distribuição, se "
+"aplicável, e usado no anfitrião em vez de no sistema LFS. Isso consegue "
+"evitar a necessidade de baixar mais tarballs para o sistema LFS por "
+"enquanto."
 
 #. type: Content of: <sect1><sect2><sect3><note><para>
 #: lfs-en/chapter10/grub.xml:236
@@ -445,6 +515,8 @@ msgid ""
 "First install the package, then mount the EFI variable file system if it "
 "isn't already mounted:"
 msgstr ""
+"Primeiro instale o pacote e, em seguida, monte o sistema de arquivos da "
+"variável EFI, se ele já não estiver montado:"
 
 #. type: Content of: <sect1><sect2><sect3><note><screen>
 #: lfs-en/chapter10/grub.xml:239
@@ -453,12 +525,14 @@ msgid ""
 "<userinput>mountpoint /sys/firmware/efi/efivars ||\n"
 "  mount -v -t efivarfs efivarfs /sys/firmware/efi/efivars</userinput>"
 msgstr ""
+"<userinput>mountpoint /sys/firmware/efi/efivars ||\n"
+"  mount -v -t efivarfs efivarfs /sys/firmware/efi/efivars</userinput>"
 
 #. type: Content of: <sect1><sect2><sect3><note><para>
 #: lfs-en/chapter10/grub.xml:242
 #, xml-text
 msgid "Now create a boot entry for the EFI:"
-msgstr ""
+msgstr "Agora crie uma entrada de inicialização para a EFI:"
 
 #. type: Content of: <sect1><sect2><sect3><note><screen>
 #: lfs-en/chapter10/grub.xml:244
@@ -467,6 +541,8 @@ msgid ""
 "<userinput>efibootmgr -c -d /dev/sd<replaceable>&lt;x&gt;</replaceable> \\\n"
 "  -p <replaceable>&lt;y&gt;</replaceable> -L \"LFS\" -l '\\EFI\\BOOT\\BOOT<replaceable>&lt;X64&gt;</replaceable>.EFI'</userinput>"
 msgstr ""
+"<userinput>efibootmgr -c -d /dev/sd<replaceable>&lt;x&gt;</replaceable> \\\n"
+"  -p <replaceable>&lt;y&gt;</replaceable> -L \"LFS\" -l '\\EFI\\BOOT\\BOOT<replaceable>&lt;X64&gt;</replaceable>.EFI'</userinput>"
 
 #. type: Content of: <sect1><sect2><sect3><note><para>
 #: lfs-en/chapter10/grub.xml:247
@@ -480,6 +556,13 @@ msgid ""
 "UEFI, replace <replaceable>&lt;X64&gt;</replaceable> with "
 "<literal>IA32</literal>."
 msgstr ""
+"A unidade <literal>/dev/sd<replaceable>&lt;x&gt;</replaceable></literal> "
+"deveria ser o nó de dispositivo para o disco onde a ESP existir. O número da"
+" partição <replaceable>&lt;y&gt;</replaceable> deveria corresponder ao "
+"número da ESP. Se a ESP estiver em <literal>/dev/sda2</literal>, então o "
+"número da partição seria <literal>2</literal>. Se você estiver usando UEFI "
+"de 32 bits, substitua <replaceable>&lt;X64&gt;</replaceable> por "
+"<literal>IA32</literal>."
 
 #. type: Content of: <sect1><sect2><sect3><note><para>
 #: lfs-en/chapter10/grub.xml:257
@@ -490,6 +573,10 @@ msgid ""
 "or <parameter>-e 1 -E</parameter>.  Read the man page <ulink role='man' "
 "url='&man;efibootmgr.8'>efibootmgr(8)</ulink> for details."
 msgstr ""
+"Algum firmware (quebrado) possivelmente exija parâmetros adicionais para "
+"<command>efibootmgr</command>, como <parameter>--full-dev-path</parameter> "
+"ou <parameter>-e 1 -E</parameter>. Leia-se a página de manual <ulink "
+"role='man' url='&man;efibootmgr.8'>efibootmgr(8)</ulink> para detalhes."
 
 #. type: Content of: <sect1><sect2><sect3><note><para>
 #: lfs-en/chapter10/grub.xml:266
@@ -499,10 +586,9 @@ msgstr ""
 
 #. type: Content of: <sect1><sect2><sect3><note><screen>
 #: lfs-en/chapter10/grub.xml:268
-#, fuzzy, no-wrap, xml-text
-#| msgid "<userinput>grub-install /dev/sda</userinput>"
+#, no-wrap, xml-text
 msgid "<userinput>umount -v /sys/firmware/efi/efivars</userinput>"
-msgstr "<userinput>grub-install /dev/sda</userinput>"
+msgstr "<userinput>umount -v /sys/firmware/efi/efivars</userinput>"
 
 #. type: Content of: <sect1><sect2><title>
 #: lfs-en/chapter10/grub.xml:276
@@ -518,22 +604,7 @@ msgstr "Gere o <filename>/boot/grub/grub.cfg</filename>:"
 
 #. type: Content of: <sect1><sect2><screen>
 #: lfs-en/chapter10/grub.xml:280
-#, fuzzy, no-wrap, xml-text
-#| msgid ""
-#| "<userinput>cat &gt; /boot/grub/grub.cfg &lt;&lt; \"EOF\"\n"
-#| "<literal># Begin /boot/grub/grub.cfg\n"
-#| "set default=0\n"
-#| "set timeout=5\n"
-#| "\n"
-#| "insmod part_gpt\n"
-#| "insmod ext2\n"
-#| "set root=(hd0,2)\n"
-#| "set gfxpayload=1024x768x32\n"
-#| "\n"
-#| "menuentry \"GNU/Linux, Linux &linux-version;-lfs-&version;\" {\n"
-#| "        linux   /boot/vmlinuz-&linux-version;-lfs-&version; root=/dev/sda2 ro\n"
-#| "}</literal>\n"
-#| "EOF</userinput>"
+#, no-wrap, xml-text
 msgid ""
 "<userinput>cat &gt; /boot/grub/grub.cfg &lt;&lt; \"EOF\"\n"
 "<literal># Begin /boot/grub/grub.cfg\n"
@@ -557,13 +628,19 @@ msgid ""
 "EOF</userinput>"
 msgstr ""
 "<userinput>cat &gt; /boot/grub/grub.cfg &lt;&lt; \"EOF\"\n"
-"<literal># Inicia /boot/grub/grub.cfg\n"
+"<literal># Begin /boot/grub/grub.cfg\n"
 "set default=0\n"
 "set timeout=5\n"
 "\n"
 "insmod part_gpt\n"
 "insmod ext2\n"
+"\n"
 "set root=(hd0,2)\n"
+"\n"
+"# For UEFI\n"
+"insmod efi_gop\n"
+"insmod efi_uga\n"
+"\n"
 "set gfxpayload=1024x768x32\n"
 "\n"
 "menuentry \"GNU/Linux, Linux &linux-version;-lfs-&version;\" {\n"
@@ -573,23 +650,7 @@ msgstr ""
 
 #. type: Content of: <sect1><sect2><para>
 #: lfs-en/chapter10/grub.xml:304
-#, fuzzy, xml-text
-#| msgid ""
-#| "The <command>insmod</command> commands load the "
-#| "<application>GRUB</application> modules named <filename>part_gpt</filename> "
-#| "and <filename>ext2</filename>.  Despite the naming, "
-#| "<filename>ext2</filename> actually supports <systemitem "
-#| "class='filesystem'>ext2</systemitem>, <systemitem "
-#| "class='filesystem'>ext3</systemitem>, and <systemitem "
-#| "class='filesystem'>ext4</systemitem> filesystems.  The <command>grub-"
-#| "install</command> command has embedded some modules into the main "
-#| "<application>GRUB</application> image (installed into the MBR or the GRUB "
-#| "BIOS partition) to access the other modules (in <filename "
-#| "class='directory'>/boot/grub/i386-pc</filename>) without a chicken-or-egg "
-#| "issue, so with a typical configuration these two modules are already "
-#| "embedded and those two <command>insmod</command> commands will do nothing.  "
-#| "But they do no harm anyway, and they may be needed with some rare "
-#| "configurations."
+#, xml-text
 msgid ""
 "The <command>insmod</command> commands load the "
 "<application>GRUB</application> modules named <filename>part_gpt</filename>,"
@@ -608,30 +669,26 @@ msgid ""
 " may be needed with some rare configurations."
 msgstr ""
 "Os comandos <command>insmod</command> carregam os módulos do "
-"<application>GRUB</application> chamados <filename>part_gpt</filename> e "
-"<filename>ext2</filename>. Apesar da nomenclatura, <filename>ext2</filename>"
-" na verdade suporta sistemas de arquivos <systemitem "
-"class='filesystem'>ext2</systemitem>, <systemitem "
+"<application>GRUB</application> nominados <filename>part_gpt</filename>, "
+"<filename>ext2</filename>, <filename>efi_gop</filename> e "
+"<filename>efi_uga</filename>. Apesar da nomenclatura, o módulo "
+"<filename>ext2</filename> suporta, na verdade, os sistemas de arquivos "
+"<systemitem class='filesystem'>ext2</systemitem>, <systemitem "
 "class='filesystem'>ext3</systemitem> e <systemitem "
-"class='filesystem'>ext4</systemitem>. O comando <command>grub-"
-"install</command> embutiu alguns módulos na imagem principal do "
-"<application>GRUB</application> (instalada no MBR ou na partição BIOS do "
-"GRUB) para acessar os outros módulos (em <filename "
-"class='directory'>/boot/grub/i386-pc</filename>) sem um problema de galinha "
-"ou ovo, de modo que, com uma configuração típica, esses dois módulos já "
-"estão embutidos e esses dois comandos <command>insmod</command> não farão "
-"nada. Mas eles não causam danos de qualquer maneira e possivelmente sejam "
-"necessários com algumas configurações raras."
+"class='filesystem'>ext4</systemitem>. Em sistemas UEFI, "
+"<filename>efi_gop</filename> e <filename>efi_uga</filename> são para suporte"
+" a vídeo. GOP, ou Graphics Output Protocol, é a abordagem moderna. UGA, ou "
+"Universal Graphics Aadaptor, é uma maneira legada de lidar com isso. Em uma "
+"configuração típica, os módulos <filename>part_gpt</filename> e "
+"<filename>ext2</filename> já estão embutidos na imagem principal do GRUB "
+"pelo <command>grub-install</command>, e os comandos "
+"<command>insmod</command> para eles não farão nada. No entanto, eles não "
+"danificam de qualquer maneira e podem ser necessários com algumas "
+"configurações raras."
 
 #. type: Content of: <sect1><sect2><para>
 #: lfs-en/chapter10/grub.xml:326
-#, fuzzy, xml-text
-#| msgid ""
-#| "The <command>set gfxpayload=1024x768x32</command> command sets the "
-#| "resolution and color depth of the VESA framebuffer to be passed to the "
-#| "kernel.  It's necessary for the kernel SimpleDRM driver to use the VESA "
-#| "framebuffer.  You can use a different resolution or color depth value which "
-#| "better suits for your monitor."
+#, xml-text
 msgid ""
 "The <command>set gfxpayload=1024x768x32</command> command sets the "
 "resolution and color depth of the VESA framebuffer to be passed to the "
@@ -644,7 +701,9 @@ msgstr ""
 "resolução e a profundidade de cor do framebuffer VESA a ser passado para o "
 "núcleo. Ele é necessário para o controlador SimpleDRM do núcleo usar o "
 "framebuffer VESA. Você pode usar um valor diferente de resolução ou de "
-"profundidade de cor que melhor se adeque para teu monitor."
+"profundidade de cor que melhor se adeque para teu monitor. Essa linha não "
+"faz nada quando o sistema for inicializado via UEFI, mas ela não danifica de"
+" qualquer maneira."
 
 #. type: Content of: <sect1><sect2><note><para>
 #: lfs-en/chapter10/grub.xml:334
@@ -721,15 +780,7 @@ msgstr ""
 
 #. type: Content of: <sect1><sect2><note><para>
 #: lfs-en/chapter10/grub.xml:366
-#, fuzzy, xml-text
-#| msgid ""
-#| "The name of the device node for a partition in <filename "
-#| "class='directory'>/dev</filename> may also change (this is less likely than "
-#| "a GRUB designator change).  You can also replace paths to device nodes like "
-#| "<literal>/dev/sda1</literal> with "
-#| "<literal>PARTUUID=<replaceable>&lt;partition "
-#| "UUID&gt;</replaceable></literal>, in <filename>/etc/fstab</filename>, to "
-#| "avoid a potential boot failure in case the device node name has changed."
+#, xml-text
 msgid ""
 "The name of the device node for a partition in <filename "
 "class='directory'>/dev</filename> may also change (very frequently on some "
@@ -740,11 +791,11 @@ msgid ""
 "avoid a potential boot failure in case the device node name has changed."
 msgstr ""
 "O nome do nó de dispositivo para uma partição em <filename "
-"class='directory'>/dev</filename> também possivelmente mude (isso é menos "
-"provável que uma mudança do designador do GRUB). Você também pode substituir"
-" caminhos para nós de dispositivo, como <literal>/dev/sda1</literal>, por "
-"<literal>PARTUUID=<replaceable>&lt;UUID da "
-"partição&gt;</replaceable></literal>, no <filename>/etc/fstab</filename>, "
+"class='directory'>/dev</filename> também possivelmente mude (muito "
+"frequentemente em alguns sistemas com múltiplos discos NVME). Você também "
+"pode substituir caminhos para nós de dispositivo, como "
+"<literal>/dev/sda1</literal>, por <literal>PARTUUID=<replaceable>&lt;UUID da"
+" partição&gt;</replaceable></literal>, no <filename>/etc/fstab</filename>, "
 "para evitar uma potencial falha de inicialização no caso do nome do nó de "
 "dispositivo tiver mudado."
 
@@ -767,15 +818,7 @@ msgstr ""
 
 #. type: Content of: <sect1><sect2><caution><para>
 #: lfs-en/chapter10/grub.xml:381
-#, fuzzy, xml-text
-#| msgid ""
-#| "There is a command, <application>grub-mkconfig</application>, that can write"
-#| " a configuration file automatically.  It uses a set of scripts in "
-#| "/etc/grub.d/ and will destroy any customizations that you make.  These "
-#| "scripts are designed primarily for non-source distributions and are not "
-#| "recommended for LFS.  If you install a commercial Linux distribution, there "
-#| "is a good chance that this program will be run.  Be sure to back up your "
-#| "grub.cfg file."
+#, xml-text
 msgid ""
 "There is a command, <application>grub-mkconfig</application>, that can write"
 " a configuration file automatically.  It uses a set of scripts in "
@@ -793,6 +836,40 @@ msgstr ""
 "comercial do Linux, existe uma boa chance de que esse programa seja "
 "executado. Tenha certeza de produzir uma cópia de segurança do teu arquivo "
 "grub.cfg."
+
+#, xml-text
+#~ msgid ""
+#~ "Now unmount the EFI variable file system<phrase revision='sysv'>, which "
+#~ "should no longer be needed for the boot process, as the file system is only "
+#~ "used for EFI variable manipulation</phrase>:"
+#~ msgstr ""
+#~ "Agora desmonte o sistema de arquivos da variável EFI<phrase "
+#~ "revision='sysv'>, que deveria não mais ser necessário para o processo de "
+#~ "inicialização, pois o sistema de arquivos é usado somente para manipulação "
+#~ "da variável EFI</phrase>:"
+
+#, fuzzy, xml-text
+#~ msgid ""
+#~ "<filename class=\"directory\">/boot</filename> can reside on the host. With "
+#~ "this configuration, you should bind-mount it so that LFS can access the "
+#~ "directory."
+#~ msgstr ""
+#~ "Deixar <filename class=\"directory\">/boot</filename> na partição LFS atual "
+#~ "também funcionará, porém a configuração para múltiplos sistemas é mais "
+#~ "complicada."
+
+#, fuzzy, xml-text
+#~ msgid ""
+#~ "Outside the chroot, you should bind <filename "
+#~ "class=\"directory\">/boot</filename> as such:"
+#~ msgstr ""
+#~ "Instale os arquivos do GRUB em <filename "
+#~ "class=\"directory\">/boot/grub</filename> e configure a trilha de "
+#~ "inicialização:"
+
+#, fuzzy, no-wrap, xml-text
+#~ msgid "<userinput>mount -v --bind /boot $LFS/boot</userinput>"
+#~ msgstr "<userinput>grub-install /dev/sda</userinput>"
 
 #, xml-text
 #~ msgid ""

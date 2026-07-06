@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-06-21 22:31-0300\n"
-"PO-Revision-Date: 2025-06-01 16:18+0000\n"
+"POT-Creation-Date: 2026-07-06 02:11-0300\n"
+"PO-Revision-Date: 2026-06-04 04:18+0000\n"
 "Last-Translator: Jamenson Ferreira Espindula de Almeida Melo <jafesp@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/projects/linux-from-scratch/chapter06_bash/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.10\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. type: Content of: <sect1><sect1info><address>
 #: lfs-en/chapter06/bash.xml:14
@@ -89,12 +89,7 @@ msgstr "Prepare o Bash para compilação:"
 
 #. type: Content of: <sect1><sect2><screen>
 #: lfs-en/chapter06/bash.xml:48
-#, fuzzy, no-wrap, xml-text
-#| msgid ""
-#| "<userinput remap=\"configure\">./configure --prefix=/usr                      \\\n"
-#| "            --build=$(sh support/config.guess) \\\n"
-#| "            --host=$LFS_TGT                    \\\n"
-#| "            --without-bash-malloc</userinput>"
+#, no-wrap, xml-text
 msgid ""
 "<userinput remap=\"configure\">./configure --prefix=/usr                      \\\n"
 "            --build=$(sh support/config.guess) \\\n"
@@ -105,7 +100,8 @@ msgstr ""
 "<userinput remap=\"configure\">./configure --prefix=/usr                      \\\n"
 "            --build=$(sh support/config.guess) \\\n"
 "            --host=$LFS_TGT                    \\\n"
-"            --without-bash-malloc</userinput>"
+"            --without-bash-malloc              \\\n"
+"            --docdir=/usr/share/doc/bash-&bash-version;</userinput>"
 
 #. type: Content of: <sect1><sect2><variablelist><title>
 #: lfs-en/chapter06/bash.xml:55

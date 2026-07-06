@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-06-21 22:31-0300\n"
-"PO-Revision-Date: 2026-01-16 16:18+0000\n"
+"POT-Creation-Date: 2026-07-06 02:11-0300\n"
+"PO-Revision-Date: 2026-06-29 19:25+0000\n"
 "Last-Translator: Jamenson Ferreira Espindula de Almeida Melo <jafesp@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/projects/linux-from-scratch/chapter10_kernel/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.15.1\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. type: Content of: <sect1><sect1info><address>
 #: lfs-en/chapter10/kernel.xml:14
@@ -114,12 +114,12 @@ msgstr ""
 "alvo e de tuas necessidades específicas. Existem quase 12.000 itens de "
 "configuração que estão disponíveis para o núcleo, embora somente cerca de um"
 " terço deles sejam necessários para a maioria dos computadores. Os(As) "
-"editores(as) do LFS recomendam que os(as) usuários(as) não "
-"familiarizados(as) com esse processo sigam os procedimentos abaixo bastante "
-"de perto. O objetivo é o de obter um sistema inicial em um ponto onde você "
-"consiga se logar na linha de comando quando reinicializar posteriormente na "
-"<xref linkend=\"ch-finish-reboot\" role='.'/> Nesse ponto, otimização e "
-"personalização não é um objetivo."
+"editores(as) do LFS recomendam que os(as) usantes não familiarizados(as) com"
+" esse processo sigam os procedimentos abaixo bastante de perto. O objetivo é"
+" o de obter um sistema inicial em um ponto onde você consiga se logar na "
+"linha de comando quando reinicializar posteriormente na <xref linkend=\"ch-"
+"finish-reboot\" role='.'/> Nesse ponto, otimização e personalização não é um"
+" objetivo."
 
 #. type: Content of: <sect1><sect2><important><para>
 #: lfs-en/chapter10/kernel.xml:64
@@ -324,6 +324,10 @@ msgid ""
 " and runtime support, on top of supporting the DOS VFAT filesystem which is "
 "needed for the EFI partition:"
 msgstr ""
+"Se você estiver inicializando com UEFI, ajuste o núcleo de modo que ele "
+"consiga ter suporte de partição e de tempo de execução para EFI no topo do "
+"suporte para sistema de arquivos VFAT do DOS, o qual é necessário para a "
+"partição EFI:"
 
 #. type: Content of: <sect1><sect2><note><para>
 #: lfs-en/chapter10/kernel.xml:177
@@ -334,6 +338,10 @@ msgid ""
 "Don't select <literal>PARTITION_ADVANCED</literal> just because you need to "
 "boot via UEFI."
 msgstr ""
+"Se <literal>PARTITION_ADVANCED</literal> não estiver selecionada, "
+"<literal>EFI_PARTITION</literal> estará oculta, porém implicitamente "
+"selecionada. Não selecione <literal>PARTITION_ADVANCED</literal> apenas "
+"porquê você precisa inicializar via UEFI."
 
 #. type: Content of: <sect1><sect2><note><para>
 #: lfs-en/chapter10/kernel.xml:185

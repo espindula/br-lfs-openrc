@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-06-21 22:31-0300\n"
-"PO-Revision-Date: 2025-05-23 04:18+0000\n"
+"POT-Creation-Date: 2026-07-06 02:08-0300\n"
+"PO-Revision-Date: 2026-04-30 04:18+0000\n"
 "Last-Translator: Jamenson Ferreira Espindula de Almeida Melo <jafesp@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/projects/linux-from-scratch/chapter08_sed/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.10\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. type: Content of: <sect1><sect1info><address>
 #: lfs-en/chapter08/sed.xml:14
@@ -133,18 +133,13 @@ msgstr "Instale o pacote e a documentação dele:"
 
 #. type: Content of: <sect1><sect2><screen>
 #: lfs-en/chapter08/sed.xml:59
-#, fuzzy, no-wrap, xml-text
-#| msgid ""
-#| "<userinput remap=\"install\">make install\n"
-#| "install -d -m755           /usr/share/doc/sed-&sed-version;\n"
-#| "install -m644 doc/sed.html /usr/share/doc/sed-&sed-version;</userinput>"
+#, no-wrap, xml-text
 msgid ""
 "<userinput remap=\"install\">make install\n"
 "install -vDm644 doc/sed.html -t /usr/share/doc/sed-&sed-version;</userinput>"
 msgstr ""
 "<userinput remap=\"install\">make install\n"
-"install -d -m755           /usr/share/doc/sed-&sed-version;\n"
-"install -m644 doc/sed.html /usr/share/doc/sed-&sed-version;</userinput>"
+"install -vDm644 doc/sed.html -t /usr/share/doc/sed-&sed-version;</userinput>"
 
 #. type: Content of: <sect1><sect2><title>
 #: lfs-en/chapter08/sed.xml:65

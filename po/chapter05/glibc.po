@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-06-21 22:31-0300\n"
-"PO-Revision-Date: 2026-01-29 16:18+0000\n"
+"POT-Creation-Date: 2026-07-06 02:11-0300\n"
+"PO-Revision-Date: 2026-05-20 04:18+0000\n"
 "Last-Translator: Jamenson Ferreira Espindula de Almeida Melo <jafesp@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/projects/linux-from-scratch/chapter05_glibc/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -153,16 +153,15 @@ msgstr "<userinput remap=\"pre\">patch -Np1 -i ../&glibc-fhs-patch;</userinput>"
 #: lfs-en/chapter05/glibc.xml:75
 #, xml-text
 msgid "Now fix glibc to build against Linux 7:"
-msgstr ""
+msgstr "Agora, corrija glibc para construir contra Linux 7:"
 
 #. type: Content of: <sect1><sect2><screen>
 #: lfs-en/chapter05/glibc.xml:77
-#, fuzzy, no-wrap, xml-text
-#| msgid ""
-#| "<userinput remap=\"pre\">patch -Np1 -i ../&glibc-fhs-patch;</userinput>"
+#, no-wrap, xml-text
 msgid ""
 "<userinput remap=\"pre\">patch -Np1 -i ../&glibc-upstream-patch;</userinput>"
-msgstr "<userinput remap=\"pre\">patch -Np1 -i ../&glibc-fhs-patch;</userinput>"
+msgstr ""
+"<userinput remap=\"pre\">patch -Np1 -i ../&glibc-upstream-patch;</userinput>"
 
 #. type: Content of: <sect1><sect2><para>
 #: lfs-en/chapter05/glibc.xml:79
@@ -172,6 +171,9 @@ msgid ""
 "vulnerabilities.  The fix is not needed but also harmless for a temporary "
 "glibc installation."
 msgstr ""
+"O remendo aplicado acima também contém correções de algumas vulnerabilidades"
+" de segurança. A correção não é necessária, mas também inofensiva para uma "
+"instalação temporária da glibc."
 
 #. type: Content of: <sect1><sect2><para>
 #: lfs-en/chapter05/glibc.xml:83

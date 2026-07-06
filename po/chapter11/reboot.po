@@ -6,18 +6,16 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-06-01 16:18+0000\n"
-"PO-Revision-Date: 2025-06-02 16:18+0000\n"
-"Last-Translator: Jamenson Ferreira Espindula de Almeida Melo "
-"<jafesp@gmail.com>\n"
-"Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/"
-"projects/linux-from-scratch/chapter11_reboot/pt_BR/>\n"
+"POT-Creation-Date: 2026-07-06 02:10-0300\n"
+"PO-Revision-Date: 2026-06-27 02:36+0000\n"
+"Last-Translator: Jamenson Ferreira Espindula de Almeida Melo <jafesp@gmail.com>\n"
+"Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/projects/linux-from-scratch/chapter11_reboot/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.10\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. type: Content of: <sect1><title>
 #: lfs-en/chapter11/reboot.xml:11
@@ -55,7 +53,7 @@ msgstr ""
 #, xml-text
 msgid "Ensure a password is set for the &root; user."
 msgstr ""
-"Certifique-se de que uma senha seja definida para o(a) usuário(a) &root;."
+"Certifique-se de que uma senha seja configurada para o(a) usante &root;."
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
 #: lfs-en/chapter11/reboot.xml:86
@@ -109,15 +107,8 @@ msgstr "/etc/resolv.conf <phrase revision='systemd'>(opcional)</phrase>"
 msgid "/etc/vimrc"
 msgstr "/etc/vimrc"
 
-#. type: Content of:
-#. <sect1><itemizedlist><listitem><itemizedlist><listitem><para>
-#: lfs-en/chapter11/reboot.xml:98
-#, xml-text
-msgid "/etc/sysconfig/ifconfig.eth0"
-msgstr "/etc/sysconfig/ifconfig.eth0"
-
 #. type: Content of: <sect1><para>
-#: lfs-en/chapter11/reboot.xml:103
+#: lfs-en/chapter11/reboot.xml:102
 #, xml-text
 msgid ""
 "Now that we have said that, let's move on to booting our shiny new LFS "
@@ -129,19 +120,19 @@ msgstr ""
 "saia do ambiente chroot</emphasis>:"
 
 #. type: Content of: <sect1><screen>
-#: lfs-en/chapter11/reboot.xml:107
+#: lfs-en/chapter11/reboot.xml:106
 #, no-wrap, xml-text
 msgid "<userinput>logout</userinput>"
 msgstr "<userinput>logout</userinput>"
 
 #. type: Content of: <sect1><para>
-#: lfs-en/chapter11/reboot.xml:110
+#: lfs-en/chapter11/reboot.xml:109
 #, xml-text
 msgid "Then unmount the virtual file systems:"
 msgstr "Então desmonte os sistemas virtuais de arquivos:"
 
 #. type: Content of: <sect1><screen>
-#: lfs-en/chapter11/reboot.xml:112
+#: lfs-en/chapter11/reboot.xml:111
 #, no-wrap, xml-text
 msgid ""
 "<userinput>umount -v $LFS/dev/pts\n"
@@ -159,7 +150,7 @@ msgstr ""
 "umount -v $LFS/sys</userinput>"
 
 #. type: Content of: <sect1><para>
-#: lfs-en/chapter11/reboot.xml:119
+#: lfs-en/chapter11/reboot.xml:118
 #, xml-text
 msgid ""
 "If multiple partitions were created, unmount the other partitions before "
@@ -169,7 +160,7 @@ msgstr ""
 "antes de desmontar a principal, como isto:"
 
 #. type: Content of: <sect1><screen>
-#: lfs-en/chapter11/reboot.xml:122
+#: lfs-en/chapter11/reboot.xml:121
 #, no-wrap, xml-text
 msgid ""
 "<userinput>umount -v $LFS/home\n"
@@ -179,25 +170,25 @@ msgstr ""
 "umount -v $LFS</userinput>"
 
 #. type: Content of: <sect1><para>
-#: lfs-en/chapter11/reboot.xml:125
+#: lfs-en/chapter11/reboot.xml:124
 #, xml-text
 msgid "Unmount the LFS file system itself:"
 msgstr "Desmonte o próprio sistema de arquivos do LFS:"
 
 #. type: Content of: <sect1><screen>
-#: lfs-en/chapter11/reboot.xml:127
+#: lfs-en/chapter11/reboot.xml:126
 #, no-wrap, xml-text
 msgid "<userinput>umount -v $LFS</userinput>"
 msgstr "<userinput>umount -v $LFS</userinput>"
 
 #. type: Content of: <sect1><para>
-#: lfs-en/chapter11/reboot.xml:129
+#: lfs-en/chapter11/reboot.xml:128
 #, xml-text
 msgid "Now, reboot the system."
 msgstr "Agora, reinicialize o sistema."
 
 #. type: Content of: <sect1><para>
-#: lfs-en/chapter11/reboot.xml:136
+#: lfs-en/chapter11/reboot.xml:135
 #, xml-text
 msgid ""
 "Assuming the GRUB boot loader was set up as outlined earlier, the menu is "
@@ -208,7 +199,7 @@ msgstr ""
 "<emphasis>LFS &version;</emphasis> automaticamente."
 
 #. type: Content of: <sect1><para>
-#: lfs-en/chapter11/reboot.xml:139
+#: lfs-en/chapter11/reboot.xml:138
 #, xml-text
 msgid ""
 "When the reboot is complete, the LFS system is ready for use.  What you will"
@@ -223,7 +214,7 @@ msgstr ""
 "necessidades."
 
 #. type: Content of: <sect1><para>
-#: lfs-en/chapter11/reboot.xml:145
+#: lfs-en/chapter11/reboot.xml:144
 #, xml-text
 msgid ""
 "If your reboot is <emphasis role=\"bold\">not</emphasis> successful, it is "
@@ -234,6 +225,10 @@ msgstr ""
 "sucedida, é hora de solucionar o problema. Para dicas a respeito de como "
 "solucionar problemas iniciais da inicialização, veja-se <ulink "
 "url=\"https://www.linuxfromscratch.org/lfs/troubleshooting.html\"/>."
+
+#, xml-text
+#~ msgid "/etc/sysconfig/ifconfig.eth0"
+#~ msgstr "/etc/sysconfig/ifconfig.eth0"
 
 #, xml-text
 #~ msgid "/etc/bashrc"

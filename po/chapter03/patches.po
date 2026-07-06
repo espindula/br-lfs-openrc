@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-06-22 20:32-0300\n"
-"PO-Revision-Date: 2025-11-17 04:18+0000\n"
+"POT-Creation-Date: 2026-07-06 02:10-0300\n"
+"PO-Revision-Date: 2026-07-02 03:06+0000\n"
 "Last-Translator: Jamenson Ferreira Espindula de Almeida Melo <jafesp@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/projects/linux-from-scratch/chapter03_patches/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.13.1\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. type: Content of: <sect1><title>
 #: lfs-en/chapter03/patches.xml:11
@@ -101,13 +101,11 @@ msgstr "Soma de verificação MD5: <literal>&expect-gcc15-patch-md5;</literal>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><term>
 #: lfs-en/chapter03/patches.xml:81
-#, fuzzy, xml-text
-#| msgid ""
-#| "Glibc Upstream Fix Patch - <token>&glibc-upstream-patch-size;</token>:"
+#, xml-text
 msgid ""
 "Glibc Upstream Fixes Patch - <token>&glibc-upstream-patch-size;</token>:"
 msgstr ""
-"Remendo de Correção de Fluxo de Desenvolvimento da Glibc - <token>&glibc-"
+"Remendo de Correções de Fluxo de Desenvolvimento da Glibc - <token>&glibc-"
 "upstream-patch-size;</token>:"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
@@ -188,32 +186,31 @@ msgstr "Soma de verificação MD5: <literal>&expect-gcc15-patch-md5;</literal>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><term>
 #: lfs-en/chapter03/patches.xml:137
-#, fuzzy, xml-text
-#| msgid ""
-#| "Python Security Fix Patch - <token>&python-security-fixes-patch-"
-#| "size;</token>:"
+#, xml-text
 msgid ""
 "Python OpenSSL 4 Patch - <token>&python-openssl4-fixes-patch-size;</token>:"
 msgstr ""
-"Remendo de Correção de Segurança do Python - <token>&python-security-fixes-"
-"patch-size;</token>:"
+"Remendo OpenSSL 4 do Python - <token>&python-openssl4-fixes-patch-"
+"size;</token>:"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
 #: lfs-en/chapter03/patches.xml:139
 #, fuzzy, xml-text
 #| msgid ""
-#| "Download: <ulink url=\"&patches-root;&python-security-fixes-patch;\"/>"
+#| "Download: <ulink url=\"&patches-root;&python-consolidated-fixes-patch;\"/>"
 msgid "Download: <ulink url=\"&patches-root;&python-openssl4-fixes-patch;\"/>"
 msgstr ""
-"Transferência: <ulink url=\"&patches-root;&python-security-fixes-patch;\"/>"
+"Transferência: <ulink url=\"&patches-root;&python-consolidated-fixes-"
+"patch;\"/>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
 #: lfs-en/chapter03/patches.xml:140
 #, fuzzy, xml-text
-#| msgid "MD5 sum: <literal>&python-security-fixes-patch-md5;</literal>"
+#| msgid ""
+#| "MD5 sum: <literal>&python-consolidated-fixes-patch-md5;</literal>"
 msgid "MD5 sum: <literal>&python-openssl4-fixes-patch-md5;</literal>"
 msgstr ""
-"Soma de verificação MD5: <literal>&python-security-fixes-patch-"
+"Soma de verificação MD5: <literal>&python-consolidated-fixes-patch-"
 "md5;</literal>"
 
 #. type: Content of: <sect1><para>
@@ -241,24 +238,13 @@ msgstr ""
 "adquirir quaisquer remendos adicionais para atender às necessidades do seu "
 "sistema."
 
-#, fuzzy, xml-text
+#, xml-text
 #~ msgid ""
-#~ "Python Security Fixes Patch - <token>&python-security-fixes-patch-"
+#~ "Python Consolidated Patch - <token>&python-consolidated-fixes-patch-"
 #~ "size;</token>:"
 #~ msgstr ""
-#~ "Remendo de Correção de Segurança do Python - <token>&python-security-fixes-"
-#~ "patch-size;</token>:"
-
-#, xml-text
-#~ msgid "Download: <ulink url=\"&patches-root;&python-security-fixes-patch;\"/>"
-#~ msgstr ""
-#~ "Transferência: <ulink url=\"&patches-root;&python-security-fixes-patch;\"/>"
-
-#, xml-text
-#~ msgid "MD5 sum: <literal>&python-security-fixes-patch-md5;</literal>"
-#~ msgstr ""
-#~ "Soma de verificação MD5: <literal>&python-security-fixes-patch-"
-#~ "md5;</literal>"
+#~ "Remendo Consolidado do Python - <token>&python-consolidated-fixes-patch-"
+#~ "size;</token>:"
 
 #, xml-text
 #~ msgid ""
@@ -280,6 +266,58 @@ msgstr ""
 #~ "md5;</literal>"
 
 #, xml-text
+#~ msgid "Tar Upstream Patch - <token>&tar-aclfix-patch-size;</token>:"
+#~ msgstr ""
+#~ "Remendo de Fluxo de Desenvolvimento do Tar - <token>&tar-aclfix-patch-"
+#~ "size;</token>:"
+
+#, xml-text
+#~ msgid "Download: <ulink url=\"&patches-root;&tar-aclfix-patch;\"/>"
+#~ msgstr "Transferência: <ulink url=\"&patches-root;&tar-aclfix-patch;\"/>"
+
+#, xml-text
+#~ msgid "MD5 sum: <literal>&tar-aclfix-patch-md5;</literal>"
+#~ msgstr "Soma de verificação MD5: <literal>&tar-aclfix-patch-md5;</literal>"
+
+#, fuzzy, xml-text
+#~ msgid "Download: <ulink url=\"&tar-aclfix-patch;\"/>"
+#~ msgstr "Download: <ulink url=\"&patches-root;&glibc-memalign-patch;\"/>"
+
+#, xml-text
+#~ msgid ""
+#~ "Python Security Fixes Patch - <token>&python-security-fixes-patch-"
+#~ "size;</token>:"
+#~ msgstr ""
+#~ "Remendo de Correções de Segurança do Python - <token>&python-security-fixes-"
+#~ "patch-size;</token>:"
+
+#, xml-text
+#~ msgid "Download: <ulink url=\"&patches-root;&python-security-fixes-patch;\"/>"
+#~ msgstr ""
+#~ "Transferência: <ulink url=\"&patches-root;&python-security-fixes-patch;\"/>"
+
+#, xml-text
+#~ msgid "MD5 sum: <literal>&python-security-fixes-patch-md5;</literal>"
+#~ msgstr ""
+#~ "Soma de verificação MD5: <literal>&python-security-fixes-patch-"
+#~ "md5;</literal>"
+
+#, xml-text
+#~ msgid ""
+#~ "Systemd OpenSSL 4 Patch - <token>&systemd-upstream-patch-size;</token>:"
+#~ msgstr ""
+#~ "Remendo OpenSSL 4 do Systemd - <token>&systemd-upstream-patch-size;</token>:"
+
+#, xml-text
+#~ msgid "Download: <ulink url=\"&patches-root;&systemd-upstream-patch;\"/>"
+#~ msgstr "Transferência: <ulink url=\"&patches-root;&systemd-upstream-patch;\"/>"
+
+#, xml-text
+#~ msgid "MD5 sum: <literal>&systemd-upstream-patch-md5;</literal>"
+#~ msgstr ""
+#~ "Soma de verificação MD5: <literal>&systemd-upstream-patch-md5;</literal>"
+
+#, xml-text
 #~ msgid ""
 #~ "Coreutils Upstream Fix Patch - <token>&coreutils-upstream-patch-"
 #~ "size;</token>:"
@@ -295,22 +333,6 @@ msgstr ""
 #~ msgid "MD5 sum: <literal>&coreutils-upstream-patch-md5;</literal>"
 #~ msgstr ""
 #~ "Soma de verificação MD5: <literal>&coreutils-upstream-patch-md5;</literal>"
-
-#, xml-text
-#~ msgid ""
-#~ "Perl Upstream Fix Patch - <token>&perl-upstream-fix-patch-size;</token>:"
-#~ msgstr ""
-#~ "Remendo de Correção de Fluxo de Desenvolvimento do Perl - <token>&perl-"
-#~ "upstream-fix-patch-size;</token>:"
-
-#, xml-text
-#~ msgid "Download: <ulink url=\"&patches-root;&perl-upstream-fix-patch;\"/>"
-#~ msgstr "Transferência: <ulink url=\"&patches-root;&perl-upstream-fix-patch;\"/>"
-
-#, xml-text
-#~ msgid "MD5 sum: <literal>&perl-upstream-fix-patch-md5;</literal>"
-#~ msgstr ""
-#~ "Soma de verificação MD5: <literal>&perl-upstream-fix-patch-md5;</literal>"
 
 #, xml-text
 #~ msgid ""
@@ -339,28 +361,8 @@ msgstr ""
 #~ "fixes-patch-size;</token>:"
 
 #, xml-text
-#~ msgid ""
-#~ "Systemd Upstream Fixes Patch - <token>&systemd-upstream-patch-size;</token>:"
-#~ msgstr ""
-#~ "Remendo de Correções de Desenvolvedor(a) do Systemd - <token>&systemd-"
-#~ "upstream-patch-size;</token>:"
-
-#, xml-text
-#~ msgid "Download: <ulink url=\"&patches-root;&systemd-upstream-patch;\"/>"
-#~ msgstr "Transferência: <ulink url=\"&patches-root;&systemd-upstream-patch;\"/>"
-
-#, xml-text
-#~ msgid "MD5 sum: <literal>&systemd-upstream-patch-md5;</literal>"
-#~ msgstr ""
-#~ "Soma de verificação MD5: <literal>&systemd-upstream-patch-md5;</literal>"
-
-#, xml-text
 #~ msgid "Glibc Memalign Patch - <token>&glibc-memalign-patch-size;</token>:"
 #~ msgstr "Remendo \"Glibc Memalign\" - <token>&glibc-memalign-patch-size;</token>:"
-
-#, xml-text
-#~ msgid "Download: <ulink url=\"&patches-root;&glibc-memalign-patch;\"/>"
-#~ msgstr "Download: <ulink url=\"&patches-root;&glibc-memalign-patch;\"/>"
 
 #, xml-text
 #~ msgid "MD5 sum: <literal>&glibc-memalign-patch-md5;</literal>"

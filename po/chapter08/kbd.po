@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-01-26 04:18+0000\n"
-"PO-Revision-Date: 2025-09-05 04:18+0000\n"
+"POT-Creation-Date: 2026-07-06 02:08-0300\n"
+"PO-Revision-Date: 2026-07-04 16:18+0000\n"
 "Last-Translator: Jamenson Ferreira Espindula de Almeida Melo <jafesp@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/projects/linux-from-scratch/chapter08_kbd/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.10\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. type: Content of: <sect1><sect1info><address>
 #: lfs-en/chapter08/kbd.xml:14
@@ -225,9 +225,8 @@ msgid ""
 msgstr ""
 "Para alguns idiomas (por exemplo, Bielorrusso) o pacote Kbd não fornece um "
 "mapa de tecla útil onde o mapa de tecla <quote>by</quote> regular supõe a "
-"codificação ISO-8859-5 e o mapa de tecla CP1251 normalmente é usado. "
-"Usuários(as) de tais idiomas tem que transferir mapas de tecla funcionais "
-"separadamente."
+"codificação ISO-8859-5 e o mapa de tecla CP1251 normalmente é usado. Usantes"
+" de tais idiomas tem que transferir mapas de tecla funcionais separadamente."
 
 #. type: Content of: <sect1><sect2><para>
 #: lfs-en/chapter08/kbd.xml:98

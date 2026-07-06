@@ -6,16 +6,18 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-06-21 22:31-0300\n"
-"PO-Revision-Date: 2025-11-23 04:18+0000\n"
-"Last-Translator: Jamenson Ferreira Espindula de Almeida Melo <jafesp@gmail.com>\n"
-"Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/projects/linux-from-scratch/chapter02_creatingpartition/pt_BR/>\n"
+"POT-Creation-Date: 2026-05-01 04:18+0000\n"
+"PO-Revision-Date: 2026-07-04 16:18+0000\n"
+"Last-Translator: Jamenson Ferreira Espindula de Almeida Melo "
+"<jafesp@gmail.com>\n"
+"Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/"
+"projects/linux-from-scratch/chapter02_creatingpartition/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.13.1\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. type: Content of: <sect1><title>
 #: lfs-en/chapter02/creatingpartition.xml:11
@@ -125,14 +127,13 @@ msgid ""
 "  These partitioning methodologies are not recommended for first time LFS "
 "users."
 msgstr ""
-"Para usuários(as) experientes, outros esquemas de particionamento são "
-"possíveis. O novo sistema LFS pode estar em um vetor de software <ulink "
-"url=\"&blfs-book;postlfs/raid.html\">RAID</ulink> ou em um volume lógico "
-"<ulink url=\"&blfs-book;postlfs/aboutlvm.html\">LVM</ulink>. Entretanto, "
-"algumas dessas opções exigem um <ulink url=\"&blfs-"
-"book;postlfs/initramfs.html\">initramfs</ulink>, o que é um tópico avançado."
-" Essas metodologias de particionamento não são recomendadas para "
-"usuários(as) iniciantes do LFS."
+"Para usantes experientes, outros esquemas de particionamento são possíveis. "
+"O novo sistema LFS pode estar em um vetor de software <ulink url=\"&blfs-"
+"book;postlfs/raid.html\">RAID</ulink> ou em um volume lógico <ulink "
+"url=\"&blfs-book;postlfs/aboutlvm.html\">LVM</ulink>. Entretanto, algumas "
+"dessas opções exigem um <ulink url=\"&blfs-book;postlfs/initramfs.html\">"
+"initramfs</ulink>, o que é um tópico avançado. Essas metodologias de "
+"particionamento não são recomendadas para usantes iniciantes do LFS."
 
 #. type: Content of: <sect1><para>
 #: lfs-en/chapter02/creatingpartition.xml:56
@@ -263,22 +264,13 @@ msgstr ""
 
 #. type: Content of: <sect1><sect2><sect3><title>
 #: lfs-en/chapter02/creatingpartition.xml:108
-#, fuzzy, xml-text
-#| msgid "The Grub Bios Partition"
+#, xml-text
 msgid "The Grub BIOS Partition"
-msgstr "A Partição de Bios Grub"
+msgstr "A Partição de BIOS do Grub"
 
 #. type: Content of: <sect1><sect2><sect3><para>
 #: lfs-en/chapter02/creatingpartition.xml:110
-#, fuzzy, xml-text
-#| msgid ""
-#| "If the <emphasis>boot disk</emphasis> has been partitioned with a GUID "
-#| "Partition Table (GPT), then a small, typically 1 MB, partition must be "
-#| "created if it does not already exist.  This partition is not formatted, but "
-#| "must be available for GRUB to use during installation of the boot loader. "
-#| "This partition will normally be labeled 'BIOS Boot' if using "
-#| "<command>fdisk</command> or have a code of <emphasis>EF02</emphasis> if "
-#| "using the <command>gdisk</command> command."
+#, xml-text
 msgid ""
 "If the <emphasis>boot disk</emphasis> has been partitioned with a GUID "
 "Partition Table (GPT), then a small, typically 1 MB, partition must be "
@@ -290,11 +282,12 @@ msgid ""
 msgstr ""
 "Se o <emphasis>disco de inicialização</emphasis> tiver sido particionado com"
 " a Tabela de Partição GUID (GPT), então uma partição pequena, tipicamente um"
-" (1) MB, precisa ser criada se ela já não existir. Essa partição não é "
-"formatada, porém precisa estar disponível para o GRUB usar durante a "
-"instalação do carregador de inicialização. Essa partição normalmente será "
-"rotulada de 'BIOS Boot' se usar o <command>fdisk</command> ou terá um código"
-" de <emphasis>EF02</emphasis> se usar o comando <command>gdisk</command>."
+" (1) MB, precisará ser criada se o sistema estiver sendo inicializado com "
+"BIOS e ela já não existir. Essa partição não é formatada, porém precisa "
+"estar disponível para o GRUB usar durante a instalação do carregador de "
+"inicialização. Essa partição normalmente será rotulada de 'BIOS Boot' se "
+"usar o <command>fdisk</command> ou terá um código de "
+"<emphasis>EF02</emphasis> se usar o comando <command>gdisk</command>."
 
 #. type: Content of: <sect1><sect2><sect3><para>
 #: lfs-en/chapter02/creatingpartition.xml:119
@@ -304,16 +297,13 @@ msgid ""
 "disklabel, then this partition is not needed as space already exists before "
 "the first partition that Grub can use."
 msgstr ""
+"Se o disco de inicialização estiver particionado com uma Tabela MBR de "
+"Partição ou um rótulo DOS de disco, então essa partição não será necessária,"
+" pois já existe espaço antes da primeira partição que o Grub consegue usar."
 
 #. type: Content of: <sect1><sect2><sect3><note><para>
 #: lfs-en/chapter02/creatingpartition.xml:123
-#, fuzzy, xml-text
-#| msgid ""
-#| "The Grub Bios partition must be on the drive that the BIOS uses to boot the "
-#| "system.  This is not necessarily the drive that holds the LFS root "
-#| "partition. The disks on a system may use different partition table types. "
-#| "The necessity of the Grub Bios partition depends only on the partition table"
-#| " type of the boot disk."
+#, xml-text
 msgid ""
 "The Grub BIOS partition must be on the drive that the BIOS uses to boot the "
 "system.  This is not necessarily the drive that holds the LFS root "
@@ -321,18 +311,17 @@ msgid ""
 "The necessity of the Grub BIOS partition depends only on the partition table"
 " type of the boot disk."
 msgstr ""
-"A Partição de Bios Grub precisa estar na unidade que o BIOS usa para "
+"A Partição de BIOS do Grub precisa estar na unidade que o BIOS usa para "
 "inicializar o sistema. Essa não é necessariamente a unidade que mantém a "
 "partição raiz do LFS. Os discos em um sistema possivelmente usem tipos "
-"diferentes de tabela de partição. A necessidade da partição de Bios Grub "
-"depende apenas do tipo de tabela de partição do disco de inicialização."
+"diferentes de tabela de partição. A necessidade da partição de BIOS do Grub "
+"depende somente do tipo de tabela de partição do disco de inicialização."
 
 #. type: Content of: <sect1><sect2><sect3><title>
 #: lfs-en/chapter02/creatingpartition.xml:131
-#, fuzzy, xml-text
-#| msgid "The Root Partition"
+#, xml-text
 msgid "The EFI System Partition"
-msgstr "A Partição Raiz"
+msgstr "A Partição EFI de Sistema"
 
 #. type: Content of: <sect1><sect2><sect3><para>
 #: lfs-en/chapter02/creatingpartition.xml:133
@@ -350,6 +339,19 @@ msgid ""
 "dropped much lower with some experimentation. The partition label should be "
 "'EFI System' if using <command>fdisk</command>."
 msgstr ""
+"Essa partição, também conhecida como a <emphasis>ESP</emphasis>, é "
+"necessária ao inicializar o sistema com UEFI. Ela armazena o aplicativo EFI "
+"que é executado durante a inicialização. A unidade de inicialização pode ser"
+" particionada com a Tabela MBR de Partição ou DOS, mas problemas de "
+"compatibilidade tenderão a surgir como um resultado. Portanto, é sempre uma "
+"boa ideia, nesse caso, particionar a unidade de inicialização com uma Tabela"
+" GUID de Partição (GPT). Se você estiver inicializando somente o LFS a "
+"partir da partição, 20 MB ou menos podem ser suficientes. A partição deveria"
+" ser maior que o tamanho da imagem da EFI, porque o GRUB despeja muitos "
+"dados na partição antes de criar a imagem da EFI. Para maior segurança, de "
+"128 MB a 256 MB é recomendado, mas pode ser reduzida consideravelmente com "
+"alguma experimentação. O rótulo da partição deveria ser 'EFI System' se usar"
+" <command>fdisk</command>."
 
 #. type: Content of: <sect1><sect2><sect3><para>
 #: lfs-en/chapter02/creatingpartition.xml:145
@@ -358,6 +360,8 @@ msgid ""
 "For Grub, the EFI System Partition should be located at <filename "
 "class=\"directory\">/boot/efi</filename>."
 msgstr ""
+"Para Grub, a Partição EFI de Sistema deveria estar localizada em <filename "
+"class=\"directory\">/boot/efi</filename>."
 
 #. type: Content of: <sect1><sect2><sect3><para>
 #: lfs-en/chapter02/creatingpartition.xml:148
@@ -368,6 +372,10 @@ msgid ""
 " Grub BIOS partition if your system supports CSM in case UEFI booting does "
 "not work as expected."
 msgstr ""
+"Muitos sistemas UEFI têm um Módulo de Suporte de Compatibilidade (MSC) ou "
+"opção de Inicialização Legada, permitindo inicializar com BIOS. Poderia ser "
+"uma boa ideia criar uma partição de BIOS do Grub se teu sistema suportar "
+"MSC, caso a inicialização UEFI não funcione como esperado."
 
 #. type: Content of: <sect1><sect2><sect3><title>
 #: lfs-en/chapter02/creatingpartition.xml:155
@@ -410,9 +418,9 @@ msgid ""
 "customization across multiple distributions or LFS builds.  The size is "
 "generally fairly large and depends on available disk space."
 msgstr ""
-"/home &ndash; Altamente recomendada. Compartilhe seu diretório home e "
-"personalizações de usuário(a) entre múltiplas distribuições ou construções "
-"do LFS. O tamanho geralmente é bastante grande e depende do espaço de disco "
+"/home &ndash; Altamente recomendada. Compartilhe teu diretório lar e "
+"personalizações de usante entre múltiplas distribuições ou construções do "
+"LFS. O tamanho geralmente é bastante grande e depende do espaço de disco "
 "disponível."
 
 #. type: Content of: <sect1><sect2><sect3><itemizedlist><listitem><para>
@@ -527,13 +535,13 @@ msgstr ""
 #: lfs-en/chapter02/creatingpartition.xml:227
 #, xml-text
 msgid "An Example Disk Layout"
-msgstr ""
+msgstr "Um Esquema de Disco de Exemplo"
 
 #. type: Content of: <sect1><sect2><para>
 #: lfs-en/chapter02/creatingpartition.xml:229
 #, xml-text
 msgid "Below is an example layout for an empty disk drive."
-msgstr ""
+msgstr "Abaixo, está um exemplo de esquema para uma unidade de disco vazia."
 
 #. type: Content of: <sect1><sect2><screen>
 #: lfs-en/chapter02/creatingpartition.xml:231
@@ -547,18 +555,25 @@ msgid ""
 "   5         5242880        89128959       40.0 GiB  8300  lfs13.0+\n"
 "   6        89128960       173015039       40.0 GiB  8300  /home"
 msgstr ""
+"Number  Start (sector)    End (sector)        Size   Code  Name\n"
+"   1            2048           22527       10.0 MiB  EF00  EFI system partition\n"
+"   2           22528           24575     1024.0 KiB  EF02  BIOS boot partition\n"
+"   3           24576         1048575      500.0 MiB  8300  /boot\n"
+"   4         1048576         5242879        2.0 GiB  8200  swap\n"
+"   5         5242880        89128959       40.0 GiB  8300  lfs13.0+\n"
+"   6        89128960       173015039       40.0 GiB  8300  /home"
 
 #. type: Content of: <sect1><sect2><para>
 #: lfs-en/chapter02/creatingpartition.xml:239
 #, xml-text
 msgid "The above example makes a few assumptions:"
-msgstr ""
+msgstr "O exemplo acima faz algumas presunções:"
 
 #. type: Content of: <sect1><sect2><para><itemizedlist><listitem><para>
 #: lfs-en/chapter02/creatingpartition.xml:242
 #, xml-text
 msgid "The partition table is a GUID Partition Table (GPT)."
-msgstr ""
+msgstr "A tabela de partições é uma GUID Partition Table (GPT)."
 
 #. type: Content of: <sect1><sect2><para><itemizedlist><listitem><para>
 #: lfs-en/chapter02/creatingpartition.xml:246
@@ -571,24 +586,31 @@ msgid ""
 "\"Legacy Support\" or \"CSM\" (Compatibility Support Module).  If you know "
 "in advance which mode you will use, the other partition can be omitted."
 msgstr ""
+"Ambas as partições de inicialização, EFI e BIOS, estão presentes, embora "
+"somente uma será usada. Qual será usada depende do firmware do sistema. Se o "
+"sistema for antigo, ele não terá recursos UEFI em absoluto. Alguns sistemas "
+"mais recentes conseguem desabilitar a UEFI por intermédio da configuração do "
+"firmware, desabilitando a \"Inicialização Segura\" e habilitando o \"Suporte "
+"Legado\" ou o \"CSM\" (Compatibility Support Module). Se você souber "
+"antecipadamente qual modo usará, a outra partição pode ser omitida."
 
 #. type: Content of: <sect1><sect2><para><itemizedlist><listitem><para>
 #: lfs-en/chapter02/creatingpartition.xml:256
 #, xml-text
 msgid "The EFI partition must be formatted as VFAT."
-msgstr ""
+msgstr "A partição EFI precisa ser formatada como VFAT."
 
 #. type: Content of: <sect1><sect2><para><itemizedlist><listitem><para>
 #: lfs-en/chapter02/creatingpartition.xml:260
 #, xml-text
 msgid "The BIOS partition is not formatted."
-msgstr ""
+msgstr "A partição do BIOS não está formatada."
 
 #. type: Content of: <sect1><sect2><para><itemizedlist><listitem><para>
 #: lfs-en/chapter02/creatingpartition.xml:264
 #, xml-text
 msgid "The swap partition must be initialized."
-msgstr ""
+msgstr "A partição de área de troca precisa ser inicializada."
 
 #. type: Content of: <sect1><sect2><para><itemizedlist><listitem><para>
 #: lfs-en/chapter02/creatingpartition.xml:268
@@ -597,12 +619,15 @@ msgid ""
 "The /boot partition can be formatted as ext2 since it is rarely written (and"
 " then only by root) and does not need a journal."
 msgstr ""
+"A partição /boot pode ser formatada como ext2, já que ela raramente é "
+"escrita (e mesmo assim, somente pelo(a) root) e não precisa de um diário."
 
 #. type: Content of: <sect1><sect2><para><itemizedlist><listitem><para>
 #: lfs-en/chapter02/creatingpartition.xml:274
 #, xml-text
 msgid "The recommendation for all other partitions is to use ext4 formatting."
 msgstr ""
+"A recomendação para todas as outras partições é a de usar formatação ext4."
 
 #. type: Content of: <sect1><sect2><para><itemizedlist><listitem><para>
 #: lfs-en/chapter02/creatingpartition.xml:279
@@ -613,6 +638,10 @@ msgid ""
 "you are building the system using a LiveCD, a host partition may not be "
 "required."
 msgstr ""
+"Outra partição pode ser adicionada para instalar o sistema \"anfitrião\" "
+"para construir o LFS. Uma partição de tamanho mínimo, de 10 GiB, deveria ser"
+" suficiente. Se você estiver construindo o sistema usando um LiveCD, uma "
+"partição de anfitrião possivelmente não seja exigida."
 
 #, xml-text
 #~ msgid ""

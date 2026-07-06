@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-06-21 22:31-0300\n"
+"POT-Creation-Date: 2026-07-06 02:10-0300\n"
 "PO-Revision-Date: 2025-09-06 04:18+0000\n"
 "Last-Translator: Jamenson Ferreira Espindula de Almeida Melo <jafesp@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/projects/linux-from-scratch/chapter03_packages/pt_BR/>\n"
@@ -2307,39 +2307,6 @@ msgid "Total size of these packages: about <returnvalue/>"
 msgstr "Tamanho total desses pacotes: cerca de <returnvalue/>"
 
 #, xml-text
-#~ msgid "Intltool (&intltool-version;) - <token>&intltool-size;</token>:"
-#~ msgstr "Intltool (&intltool-version;) - <token>&intltool-size;</token>:"
-
-#, xml-text
-#~ msgid "Home page: <ulink url=\"&intltool-home;\"/>"
-#~ msgstr "Página inicial: <ulink url=\"&intltool-home;\"/>"
-
-#, xml-text
-#~ msgid "Download: <ulink url=\"&intltool-url;\"/>"
-#~ msgstr "Transferência: <ulink url=\"&intltool-url;\"/>"
-
-#, xml-text
-#~ msgid "MD5 sum: <literal>&intltool-md5;</literal>"
-#~ msgstr "Soma de verificação MD5: <literal>&intltool-md5;</literal>"
-
-#, xml-text
-#~ msgid "XML::Parser (&xml-parser-version;) - <token>&xml-parser-size;</token>:"
-#~ msgstr ""
-#~ "XML::Parser (&xml-parser-version;) - <token>&xml-parser-size;</token>:"
-
-#, xml-text
-#~ msgid "Home page: <ulink url=\"&xml-parser-home;\"/>"
-#~ msgstr "Página inicial: <ulink url=\"&xml-parser-home;\"/>"
-
-#, xml-text
-#~ msgid "Download: <ulink url=\"&xml-parser-url;\"/>"
-#~ msgstr "Transferência: <ulink url=\"&xml-parser-url;\"/>"
-
-#, xml-text
-#~ msgid "MD5 sum: <literal>&xml-parser-md5;</literal>"
-#~ msgstr "Soma de verificação MD5: <literal>&xml-parser-md5;</literal>"
-
-#, xml-text
 #~ msgid ""
 #~ "LFS-Bootscripts (&lfs-bootscripts-version;) - <token>&lfs-bootscripts-"
 #~ "size;</token>:"
@@ -2374,6 +2341,39 @@ msgstr "Tamanho total desses pacotes: cerca de <returnvalue/>"
 #, xml-text
 #~ msgid "MD5 sum: <literal>&sysvinit-md5;</literal>"
 #~ msgstr "Soma de verificação MD5: <literal>&sysvinit-md5;</literal>"
+
+#, xml-text
+#~ msgid "Intltool (&intltool-version;) - <token>&intltool-size;</token>:"
+#~ msgstr "Intltool (&intltool-version;) - <token>&intltool-size;</token>:"
+
+#, xml-text
+#~ msgid "Home page: <ulink url=\"&intltool-home;\"/>"
+#~ msgstr "Página inicial: <ulink url=\"&intltool-home;\"/>"
+
+#, xml-text
+#~ msgid "Download: <ulink url=\"&intltool-url;\"/>"
+#~ msgstr "Transferência: <ulink url=\"&intltool-url;\"/>"
+
+#, xml-text
+#~ msgid "MD5 sum: <literal>&intltool-md5;</literal>"
+#~ msgstr "Soma de verificação MD5: <literal>&intltool-md5;</literal>"
+
+#, xml-text
+#~ msgid "XML::Parser (&xml-parser-version;) - <token>&xml-parser-size;</token>:"
+#~ msgstr ""
+#~ "XML::Parser (&xml-parser-version;) - <token>&xml-parser-size;</token>:"
+
+#, xml-text
+#~ msgid "Home page: <ulink url=\"&xml-parser-home;\"/>"
+#~ msgstr "Página inicial: <ulink url=\"&xml-parser-home;\"/>"
+
+#, xml-text
+#~ msgid "Download: <ulink url=\"&xml-parser-url;\"/>"
+#~ msgstr "Transferência: <ulink url=\"&xml-parser-url;\"/>"
+
+#, xml-text
+#~ msgid "MD5 sum: <literal>&xml-parser-md5;</literal>"
+#~ msgstr "Soma de verificação MD5: <literal>&xml-parser-md5;</literal>"
 
 #, xml-text
 #~ msgid "Check (&check-version;) - <token>&check-size;</token>:"

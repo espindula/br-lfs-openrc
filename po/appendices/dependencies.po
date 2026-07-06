@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-06-21 22:31-0300\n"
-"PO-Revision-Date: 2026-01-27 04:18+0000\n"
+"POT-Creation-Date: 2026-07-06 02:10-0300\n"
+"PO-Revision-Date: 2026-07-02 03:06+0000\n"
 "Last-Translator: Jamenson Ferreira Espindula de Almeida Melo <jafesp@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/projects/linux-from-scratch/appendices_dependencies/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -110,11 +110,11 @@ msgid ""
 "installation is addressed in BLFS."
 msgstr ""
 "A última lista de dependências são pacotes opcionais que não são endereçados"
-" no LFS, porém poderiam ser úteis para o(a) usuário(a). Esses pacotes "
+" no LFS, porém poderiam ser úteis para o(a) usante. Esses pacotes "
 "possivelmente tenham dependências adicionais obrigatórias ou opcionais deles"
 " próprios. Para essas dependências, a prática recomendada é a de instalá-las"
 " depois de completar o livro LFS e então voltar e reconstruir o pacote LFS. "
-"Em muitos casos, a reinstalação é endereçada no BLFS."
+"Em muitos casos, a reinstalação está endereçada no BLFS."
 
 #. type: Content of: <appendix><bridgehead>
 #: lfs-en/appendices/dependencies.xml:42
@@ -212,13 +212,15 @@ msgstr "&dependencies;"
 
 #. type: Content of: <appendix><segmentedlist><seglistitem><seg>
 #: lfs-en/appendices/dependencies.xml:47
-#, xml-text
+#, fuzzy, xml-text
+#| msgid ""
+#| "Bash, Binutils, Coreutils, GCC, Gettext, Grep, M4, Make, Perl, Sed, and "
+#| "Texinfo"
 msgid ""
 "Attr, Bash, Binutils, Coreutils, GCC, Gettext, Grep, M4, Make, Perl, Sed, "
 "and Texinfo"
 msgstr ""
-"Attr, Bash, Binutils, Coreutils, GCC, Gettext, Grep, M4, Make, Perl, Sed e "
-"Texinfo"
+"Bash, Binutils, Coreutils, GCC, Gettext, Grep, M4, Make, Perl, Sed e Texinfo"
 
 #. type: Content of: <appendix><segmentedlist><segtitle>
 #: lfs-en/appendices/dependencies.xml:53 lfs-en/appendices/dependencies.xml:93
@@ -2769,7 +2771,7 @@ msgstr ""
 #: lfs-en/appendices/dependencies.xml:3245
 #, xml-text
 msgid "SWIG"
-msgstr ""
+msgstr "SWIG"
 
 #. type: Content of: <appendix><bridgehead>
 #: lfs-en/appendices/dependencies.xml:3250
@@ -2955,6 +2957,14 @@ msgid "Binutils, File, GCC, Kmod, Libelf, Python, and &systemd-udev;"
 msgstr "Binutils, File, GCC, Kmod, Libelf, Python e &systemd-udev;"
 
 #, xml-text
+#~ msgid "SysVinit"
+#~ msgstr "SysVinit"
+
+#, xml-text
+#~ msgid "Binutils, Coreutils, GCC, Glibc, Make, and Sed"
+#~ msgstr "Binutils, Coreutils, GCC, Glibc, Make e Sed"
+
+#, xml-text
 #~ msgid "Bash, Gawk, Glibc, Make, Perl, Sed, and XML::Parser"
 #~ msgstr "Bash, Gawk, Glibc, Make, Perl, Sed e XML::Parser"
 
@@ -2965,14 +2975,6 @@ msgstr "Binutils, File, GCC, Kmod, Libelf, Python e &systemd-udev;"
 #, xml-text
 #~ msgid "Bash, Binutils, Coreutils, Expat, GCC, Glibc, Make, and Perl"
 #~ msgstr "Bash, Binutils, Coreutils, Expat, GCC, Glibc, Make e Perl"
-
-#, xml-text
-#~ msgid "SysVinit"
-#~ msgstr "SysVinit"
-
-#, xml-text
-#~ msgid "Binutils, Coreutils, GCC, Glibc, Make, and Sed"
-#~ msgstr "Binutils, Coreutils, GCC, Glibc, Make e Sed"
 
 #, xml-text
 #~ msgid ""

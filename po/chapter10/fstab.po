@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-06-21 22:31-0300\n"
-"PO-Revision-Date: 2024-01-28 04:18+0000\n"
+"POT-Creation-Date: 2026-07-06 02:11-0300\n"
+"PO-Revision-Date: 2026-06-29 19:25+0000\n"
 "Last-Translator: Jamenson Ferreira Espindula de Almeida Melo <jafesp@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/projects/linux-from-scratch/chapter10_fstab/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.3.1\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. type: Content of: <sect1><title>
 #: lfs-en/chapter10/fstab.xml:11
@@ -119,21 +119,21 @@ msgstr ""
 "Sistemas de arquivos com origem MS-DOS ou Windows (isto é, vfat, ntfs, "
 "smbfs, cifs, iso9660, udf) precisam de uma opção especial, utf8, para a "
 "finalidade de caracteres não ASCII nos nomes de arquivo serem interpretados "
-"corretamente. Para locales não UTF-8, o valor de <option>iocharset</option> "
-"deveria ser configurado para ser o mesmo que o conjunto de caracteres do "
-"locale, ajustado de tal maneira que o núcleo o entenda. Isso funciona se a "
-"definição relevante de conjunto de caracteres (encontrada sob File systems "
-"-&gt; Native Language Support quando da configuração do núcleo) tenha sido "
-"compilada no núcleo ou construída como um módulo. Entretanto, se o conjunto "
-"de caracteres do locale for UTF-8, [então] a correspondente opção "
-"<option>iocharset=utf8</option> tornaria o sistema de arquivos sensível a "
-"maiúsculas e minúsculas. Para corrigir isso, use a opção especial "
-"<option>utf8</option> em vez de <option>iocharset=utf8</option>, para "
-"locales UTF-8. A opção <quote>codepage</quote> também é necessária para "
-"sistemas de arquivos vfat e smbfs. Ela deveria ser configurada para o número"
-" da página de código usada sob MS-DOS em seu país. Por exemplo, para a "
-"finalidade de montar unidades USB flash, um(a) usuário(a) do ru_RU.KOI8-R "
-"precisaria do seguinte na porção de opções da linha mount dele em "
+"corretamente. Para localidades não UTF-8, o valor de "
+"<option>iocharset</option> deveria ser configurado para ser o mesmo que o "
+"conjunto de caracteres da localidade, ajustado de tal maneira que o núcleo o"
+" entenda. Isso funciona se a definição relevante de conjunto de caracteres "
+"(encontrada sob File systems -&gt; Native Language Support quando da "
+"configuração do núcleo) tiver sido compilada no núcleo ou construída como um"
+" módulo. Entretanto, se o conjunto de caracteres da localidade for UTF-8, a "
+"correspondente opção <option>iocharset=utf8</option> tornaria o sistema de "
+"arquivos sensível a maiúsculas e minúsculas. Para corrigir isso, use a opção"
+" especial <option>utf8</option> em vez de <option>iocharset=utf8</option>, "
+"para localidades UTF-8. A opção <quote>codepage</quote> também é necessária "
+"para sistemas de arquivos vfat e smbfs. Ela deveria ser configurada para o "
+"número da página de código usada sob MS-DOS em teu país. Por exemplo, para a"
+" finalidade de montar unidades USB flash, um(a) usante do ru_RU.KOI8-R "
+"precisaria do seguinte na porção de opções da linha mount dele(a) em "
 "<filename>/etc/fstab</filename>:"
 
 #. type: Content of: <sect1><screen>
@@ -148,8 +148,7 @@ msgstr ""
 #: lfs-en/chapter10/fstab.xml:62
 #, xml-text
 msgid "The corresponding options fragment for ru_RU.UTF-8 users is:"
-msgstr ""
-"O correspondente fragmento das opções para usuários(as) do ru_RU.UTF-8 é:"
+msgstr "O correspondente fragmento das opções para usantes do ru_RU.UTF-8 é:"
 
 #. type: Content of: <sect1><screen>
 #: lfs-en/chapter10/fstab.xml:64
@@ -182,6 +181,11 @@ msgid ""
 "<literal>vfat</literal> regardless.  An example of how you would go about an"
 " entry for the ESP would look like this:"
 msgstr ""
+"Ao instalar o GRUB com UEFI, a ESP precisa ser formatada como um sistema de "
+"arquivos FAT (EXFAT deveria não ser considerado). No núcleo Linux, o "
+"controlador VFAT lida com todos os sistemas de arquivo FAT, de modo que esse"
+" arquivo conterá <literal>vfat</literal> independentemente. Um exemplo de "
+"como você faria acerca de uma entrada para a ESP se pareceria com isto:"
 
 #. type: Content of: <sect1><screen>
 #: lfs-en/chapter10/fstab.xml:81
@@ -191,6 +195,9 @@ msgid ""
 "<literal>/dev/<replaceable>&lt;zzz&gt;</replaceable>  /boot/efi  vfat  rw,relatime,codepage=437,iocharset=iso8859-1   0   2</literal>\n"
 "EOF</userinput>"
 msgstr ""
+"<userinput>cat &gt;&gt; /etc/fstab &lt;&lt; \"EOF\"\n"
+"<literal>/dev/<replaceable>&lt;zzz&gt;</replaceable>  /boot/efi  vfat  rw,relatime,codepage=437,iocharset=iso8859-1   0   2</literal>\n"
+"EOF</userinput>"
 
 #. type: Content of: <sect1><para>
 #: lfs-en/chapter10/fstab.xml:86
@@ -204,6 +211,15 @@ msgid ""
 "character set for your locale treats 7-bit ASCII characters in the same way "
 "as ISO-8859-1.  For example, UTF-8 is such a character set."
 msgstr ""
+"O conjunto de caracteres de E/S <literal>iso8859-1</literal> é usado aqui, "
+"pois nós o habilitaremos como uma parte da configuração UEFI do núcleo na "
+"<xref linkend='ch-bootable-kernel' role='.'/>. Tecnicamente, o conjunto de "
+"caracteres de E/S deveria corresponder à tua localidade, conforme nós "
+"discutimos acima. No entanto, o nome de todos os arquivos na partição ESP "
+"contém somente caracteres ASCII de 7 bits, de modo que tudo funcionará bem, "
+"desde que o conjunto de caracteres para tua localidade trate caracteres "
+"ASCII de 7 bits da mesma maneira que ISO-8859-1. Por exemplo, UTF-8 é um "
+"conjunto de caracteres desse tipo."
 
 #. type: Content of: <sect1><note><para>
 #: lfs-en/chapter10/fstab.xml:99
@@ -215,6 +231,11 @@ msgid ""
 "manually mount it before running <command>grub-install</command> below in "
 "<xref linkend=\"ch-bootable-grub\" role='.'/>"
 msgstr ""
+"O sistema de arquivos EFI só precisa ser montado ao instalar-se o GRUB. O "
+"sistema usa essa partição antes que o núcleo seja carregado e não a usa em "
+"outras situações. Uma alternativa a adicionar essa entrada ao arquivo fstab "
+"é a de montá-lo manualmente antes de executar <command>grub-"
+"install</command> abaixo na <xref linkend=\"ch-bootable-grub\" role='.'/>"
 
 #. type: Content of: <sect1><para>
 #: lfs-en/chapter10/fstab.xml:118
@@ -280,6 +301,21 @@ msgstr ""
 #~ "\n"
 #~ "# Fim /etc/fstab</literal>\n"
 #~ "EOF</userinput>"
+
+#, xml-text
+#~ msgid ""
+#~ "The <literal>iso8859-1</literal> IO charset is used here since UEFI firmware"
+#~ " implementations search for <filename "
+#~ "class=\"directory\">\\EFI\\BOOT\\BOOT...EFI</filename>, which in a case-"
+#~ "sensitive environment would not be satisfied. So that charset is used to "
+#~ "ensure the EFI image can be found."
+#~ msgstr ""
+#~ "O conjunto de caracteres de E/S <literal>iso8859-1</literal> é usado aqui "
+#~ "porque as implementações de firmware UEFI procuram por <filename "
+#~ "class=\"directory\">\\EFI\\BOOT\\BOOT...EFI</filename>, o que, em um "
+#~ "ambiente que diferencia maiúsculas de minúsculas, não seria satisfeito. "
+#~ "Portanto, esse conjunto de caracteres é usado para garantir que a imagem EFI"
+#~ " possa ser encontrada."
 
 #, xml-text
 #~ msgid ""

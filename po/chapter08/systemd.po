@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-06-21 22:31-0300\n"
-"PO-Revision-Date: 2026-03-06 04:18+0000\n"
+"POT-Creation-Date: 2026-07-06 02:08-0300\n"
+"PO-Revision-Date: 2026-07-04 16:18+0000\n"
 "Last-Translator: Jamenson Ferreira Espindula de Almeida Melo <jafesp@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/projects/linux-from-scratch/chapter08_systemd/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -274,7 +274,7 @@ msgstr ""
 "configurar os arquivos <filename>/etc/group</filename> e "
 "<filename>/etc/passwd</filename>. Ambos os arquivos foram criados no "
 "capítulo anterior. Esse processo de segundo plano não é útil em um sistema "
-"LFS dado que contas de usuário(a) são criadas manualmente."
+"LFS dado que contas de usante são criadas manualmente."
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
 #: lfs-en/chapter08/systemd.xml:142
@@ -374,9 +374,9 @@ msgid ""
 "class='devicefile'>/dev/kvm</filename>.  The editors consider it dangerous."
 "  This option overrides it."
 msgstr ""
-"A regra padrão do \"udev\" permitiria que todos(as) os(as) usuários(as) "
-"acessassem <filename class='devicefile'>/dev/kvm</filename>. Os(As) "
-"editores(as) a consideram perigosa. Essa opção a substitui."
+"A regra padrão do udev permitiria que todos(as) usantes acessassem <filename"
+" class='devicefile'>/dev/kvm</filename>. Os(As) editores(as) a consideram "
+"perigosa. Essa opção a substitui."
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
 #: lfs-en/chapter08/systemd.xml:192
@@ -483,7 +483,16 @@ msgstr ""
 
 #. type: Content of: <sect1><sect2><para>
 #: lfs-en/chapter08/systemd.xml:239
-#, xml-text
+#, fuzzy, xml-text
+#| msgid ""
+#| "Three tests are known to fail in the LFS chroot environment but pass in a "
+#| "full installation: <literal>core - systemd:test-namespace</literal>, "
+#| "<literal>test - systemd:test-chase</literal>, and <literal>tmpfiles - "
+#| "systemd:test-systemd-tmpfiles</literal>.  Some additional tests may fail "
+#| "because they depend on various kernel configuration options. The test named "
+#| "<literal>test - systemd:test-copy</literal> may time out due to I/O "
+#| "congestion with a large parallel job number, but will pass if running alone "
+#| "with <command>meson test test-copy</command>."
 msgid ""
 "One test named <literal>systemd:core / test-namespace</literal> is known to "
 "fail in the LFS chroot environment.  Some other tests may fail because they "
@@ -492,13 +501,15 @@ msgid ""
 "congestion with a large parallel job number, but it would pass if running "
 "alone with <command>meson test test-copy</command>."
 msgstr ""
-"Um teste chamado <literal>systemd:core / test-namespace</literal> é "
-"conhecido por falhar no ambiente chroot do LFS. Alguns outros testes "
-"possivelmente falhem porque eles dependem de várias opções de configuração "
-"do núcleo. O teste chamado <literal>systemd:test / test-copy</literal> "
-"possivelmente expire devido a um congestionamento de E/S com um grande "
-"número de tarefas paralelas, mas passaria se executado sozinho com "
-"<command>meson test test-copy</command>."
+"Três testes são conhecidos por falharem no ambiente chroot do LFS, mas "
+"passam em uma instalação completa: <literal>core - systemd:test-"
+"namespace</literal>, <literal>test - systemd:test-chase</literal> e "
+"<literal>tmpfiles - systemd:test-systemd-tmpfiles</literal>. Alguns testes "
+"adicionais possivelmente falhem porque eles dependem de várias opções de "
+"configuração do núcleo. O teste nominado <literal>test - systemd:test-"
+"copy</literal> possivelmente exceda o tempo limite devido à congestão de E/S"
+" com um grande número de tarefas paralelas, mas passará se executado "
+"isoladamente com <command>meson test test-copy</command>."
 
 #. type: Content of: <sect1><sect2><para>
 #: lfs-en/chapter08/systemd.xml:247
@@ -1969,6 +1980,22 @@ msgstr "libudev"
 
 #, xml-text
 #~ msgid ""
+#~ "First apply a patch to adjust the package to build and function against "
+#~ "OpenSSL-4:"
+#~ msgstr ""
+#~ "Primeiro, aplique um remendo para ajustar o pacote para construir e "
+#~ "funcionar contra OpenSSL-4:"
+
+#, no-wrap, xml-text
+#~ msgid ""
+#~ "<userinput remap=\"pre\">patch -Np1 -i ../&systemd-upstream-"
+#~ "patch;</userinput>"
+#~ msgstr ""
+#~ "<userinput remap=\"pre\">patch -Np1 -i ../&systemd-upstream-"
+#~ "patch;</userinput>"
+
+#, xml-text
+#~ msgid ""
 #~ "Some tests need a basic <filename>/etc/os-release</filename> file.  To test "
 #~ "the results, issue:"
 #~ msgstr ""
@@ -2033,12 +2060,6 @@ msgstr "libudev"
 #~ "<command>systemd-resolved</command> e um defeito que quebra "
 #~ "<command>systemd-analyze verify</command> em uma unidade instanciada do "
 #~ "systemd:"
-
-#, no-wrap, xml-text
-#~ msgid ""
-#~ "<userinput remap='pre'>patch -Np1 -i ../&systemd-upstream-patch;</userinput>"
-#~ msgstr ""
-#~ "<userinput remap='pre'>patch -Np1 -i ../&systemd-upstream-patch;</userinput>"
 
 #, no-wrap, xml-text
 #~ msgid ""

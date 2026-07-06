@@ -6,10 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-06-21 22:31-0300\n"
+"POT-Creation-Date: 2026-07-06 02:09-0300\n"
 "PO-Revision-Date: 2026-06-23 00:23-0300\n"
-"Last-Translator: Jamenson Ferreira Espindula de Almeida Melo "
-"<jafesp@gmail.com>\n"
+"Last-Translator: Jamenson Ferreira Espindula de Almeida Melo <jafesp@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) Language: pt_BR\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -27,13 +26,11 @@ msgstr "&openrc-url;"
 #: lfs-en/chapter08/openrc.xml:12
 #, xml-text
 msgid ""
-"<productname>openrc</productname> "
-"<productnumber>&openrc-version;</productnumber> <placeholder "
-"type=\"address\" id=\"0\"/>"
+"<productname>openrc</productname> <productnumber>&openrc-"
+"version;</productnumber> <placeholder type=\"address\" id=\"0\"/>"
 msgstr ""
-"<productname>openrc</productname> "
-"<productnumber>&openrc-version;</productnumber> <placeholder "
-"type=\"address\" id=\"0\"/>"
+"<productname>openrc</productname> <productnumber>&openrc-"
+"version;</productnumber> <placeholder type=\"address\" id=\"0\"/>"
 
 #. type: Content of: <sect1><title>
 #: lfs-en/chapter08/openrc.xml:17
@@ -54,8 +51,8 @@ msgid ""
 "The OpenRC package contains programs for controlling the startup, running, "
 "and shutdown of the system."
 msgstr ""
-"O pacote OpenRC contém programas para controlar a inicialização, "
-"execução e desligamento do sistema."
+"O pacote OpenRC contém programas para controlar a inicialização, execução e "
+"desligamento do sistema."
 
 #. type: Content of: <sect1><sect2><segmentedlist><segtitle>
 #: lfs-en/chapter08/openrc.xml:30
@@ -100,10 +97,8 @@ msgstr ""
 #. type: Content of: <sect1><sect2><screen>
 #: lfs-en/chapter08/openrc.xml:47
 #, no-wrap, xml-text
-msgid ""
-"<userinput remap=\"pre\">patch -Np1 -i ../&openrc-lock-patch;</userinput>"
-msgstr ""
-"<userinput remap=\"pre\">patch -Np1 -i ../&openrc-lock-patch;</userinput>"
+msgid "<userinput remap=\"pre\">patch -Np1 -i ../&openrc-lock-patch;</userinput>"
+msgstr "<userinput remap=\"pre\">patch -Np1 -i ../&openrc-lock-patch;</userinput>"
 
 #. type: Content of: <sect1><sect2><para>
 #: lfs-en/chapter08/openrc.xml:49
@@ -189,10 +184,11 @@ msgstr "<parameter>-D pam=false</parameter>"
 #: lfs-en/chapter08/openrc.xml:81
 #, xml-text
 msgid ""
-"This disables needing Linux-PAM for the build, since it is not installed yet."
+"This disables needing Linux-PAM for the build, since it is not installed "
+"yet."
 msgstr ""
-"Isso desabilita a necessidade do Linux-PAM para a construção, pois ele "
-"ainda não está instalado."
+"Isso desabilita a necessidade do Linux-PAM para a construção, pois ele ainda"
+" não está instalado."
 
 #. type: Content of: <sect1><sect2><para>
 #: lfs-en/chapter08/openrc.xml:88
@@ -260,13 +256,13 @@ msgid ""
 "meant to be ran as a normal user as well, so it should be in <filename "
 "class=\"directory\">/usr/bin</filename>."
 msgstr ""
-"OpenRC, por padrão, reinstala os arquivos de configuração para os "
-"serviços básicos, significando que, se você tiver configurado um serviço "
-"como <literal>agetty</literal>, uma instalação normal teria reconfigurado "
-"a configuração para o padrão. O acima garante que não aconteça quando "
-"aplicável. O <command>rc-update</command> em algumas circunstâncias "
-"também deve ser executado como um(a) usante normal, de modo que ele deveria "
-"estar em <filename class=\"directory\">/usr/bin</filename>."
+"OpenRC, por padrão, reinstala os arquivos de configuração para os serviços "
+"básicos, significando que, se você tiver configurado um serviço como "
+"<literal>agetty</literal>, uma instalação normal teria reconfigurado a "
+"configuração para o padrão. O acima garante que não aconteça quando "
+"aplicável. O <command>rc-update</command> em algumas circunstâncias também "
+"deve ser executado como um(a) usante normal, de modo que ele deveria estar "
+"em <filename class=\"directory\">/usr/bin</filename>."
 
 #. type: Content of: <sect1><sect2><para>
 #: lfs-en/chapter08/openrc.xml:118
@@ -344,12 +340,12 @@ msgstr "Diretórios instalados"
 #, xml-text
 msgid ""
 "rc-status, init (link to openrc-init), openrc, openrc-init, openrc-run, "
-"openrc-shutdown, poweroff, rc-service, rc-sstat, rc-update, reboot, shutdown "
-"(link to openrc-shutdown), start-stop-daemon, and supervise-daemon"
+"openrc-shutdown, poweroff, rc-service, rc-sstat, rc-update, reboot, shutdown"
+" (link to openrc-shutdown), start-stop-daemon, and supervise-daemon"
 msgstr ""
 "rc-status, init (linque para openrc-init), openrc, openrc-init, openrc-run, "
-"openrc-shutdown, poweroff, rc-service, rc-sstat, rc-update, reboot, shutdown "
-"(linque para openrc-shutdown), start-stop-daemon e supervise-daemon"
+"openrc-shutdown, poweroff, rc-service, rc-sstat, rc-update, reboot, shutdown"
+" (linque para openrc-shutdown), start-stop-daemon e supervise-daemon"
 
 #. type: Content of: <sect1><sect2><segmentedlist><seglistitem><seg>
 #: lfs-en/chapter08/openrc.xml:166
@@ -376,10 +372,8 @@ msgstr "Descrições Curtas"
 #. type: Content of: <sect1><sect2><variablelist>
 #: lfs-en/chapter08/openrc.xml:183
 #, xml-text
-msgid ""
-"<?dbfo list-presentation=\"list\"?> <?dbhtml list-presentation=\"table\"?>"
-msgstr ""
-"<?dbfo list-presentation=\"list\"?> <?dbhtml list-presentation=\"table\"?>"
+msgid "<?dbfo list-presentation=\"list\"?> <?dbhtml list-presentation=\"table\"?>"
+msgstr "<?dbfo list-presentation=\"list\"?> <?dbhtml list-presentation=\"table\"?>"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
 #: lfs-en/chapter08/openrc.xml:187
@@ -417,8 +411,8 @@ msgid ""
 "symlink to <command>openrc-init</command>"
 msgstr ""
 "É o primeiro processo a ser iniciado quando o núcleo tiver inicializado o "
-"hardware; ele assume o processo de inicialização e inicia todos os "
-"serviços; linque simbólico para <command>openrc-init</command>"
+"hardware; ele assume o processo de inicialização e inicia todos os serviços;"
+" linque simbólico para <command>openrc-init</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
@@ -460,8 +454,8 @@ msgstr "<command>openrc-init</command>"
 msgid ""
 "Gets called from <command>init</command> and starts every service as needed"
 msgstr ""
-"É chamado a partir do <command>init</command> e inicia cada serviço "
-"conforme necessário"
+"É chamado a partir do <command>init</command> e inicia cada serviço conforme"
+" necessário"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
@@ -619,8 +613,8 @@ msgid ""
 "telling the system to reboot"
 msgstr ""
 "Chama <command>openrc-shutdown</command> com "
-"<parameter>--reboot</parameter>, parando todos os serviços e processos "
-"antes de informar o sistema para reinicializar"
+"<parameter>--reboot</parameter>, parando todos os serviços e processos antes"
+" de informar o sistema para reinicializar"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>

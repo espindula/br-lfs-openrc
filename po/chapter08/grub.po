@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-06-21 22:31-0300\n"
-"PO-Revision-Date: 2026-02-09 04:18+0000\n"
+"POT-Creation-Date: 2026-07-06 02:08-0300\n"
+"PO-Revision-Date: 2026-05-01 04:18+0000\n"
 "Last-Translator: Jamenson Ferreira Espindula de Almeida Melo <jafesp@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/projects/linux-from-scratch/chapter08_grub/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -59,6 +59,10 @@ msgid ""
 " boot method (BIOS, 64-bit UEFI, and 32-bit UEFI). GRUB cannot be built with"
 " all the boot method architectures at once."
 msgstr ""
+"Esta página está dividida em múltiplas seções destinadas para instalar para "
+"um método específico de inicialização (BIOS, UEFI de 64 bits e UEFI de 32 "
+"bits). O GRUB não pode ser construído com todas as arquiteturas de métodos "
+"de inicialização de uma vez."
 
 #. type: Content of: <sect1><sect2><note><para>
 #: lfs-en/chapter08/grub.xml:31
@@ -70,6 +74,12 @@ msgid ""
 "rest of the packages in this chapter. Making your LFS system bootable with "
 "GRUB will be discussed in <xref linkend=\"ch-bootable-grub\" role='.'/>"
 msgstr ""
+"Você pode ignorar outras seções para ir para o método de inicialização que "
+"precisa. Se em dúvida, você pode seguir todas as seções, ao custo de tempo "
+"extra de construção. Depois que você tiver instalado suporte para teu método"
+" de inicialização, continue construindo o restante dos pacotes neste "
+"capítulo. Tornar teu sistema LFS inicializável com GRUB será discutido na "
+"<xref linkend=\"ch-bootable-grub\" role='.'/>"
 
 #. type: Content of: <sect1><sect2><warning><para>
 #: lfs-en/chapter08/grub.xml:39
@@ -124,10 +134,9 @@ msgstr "&grub-fin-du;"
 
 #. type: Content of: <sect1><sect2><title>
 #: lfs-en/chapter08/grub.xml:62
-#, fuzzy, xml-text
-#| msgid "Installation of GRUB"
+#, xml-text
 msgid "Installation of GRUB for BIOS"
-msgstr "Instalação do GRUB"
+msgstr "Instalação do GRUB para BIOS"
 
 #. type: Content of: <sect1><sect2><para>
 #: lfs-en/chapter08/grub.xml:66
@@ -246,16 +255,17 @@ msgstr "<userinput remap=\"install\">make install</userinput>"
 
 #. type: Content of: <sect1><sect2><title>
 #: lfs-en/chapter08/grub.xml:113
-#, fuzzy, xml-text
-#| msgid "Installation of GRUB"
+#, xml-text
 msgid "Installation of GRUB for 64-bit UEFI"
-msgstr "Instalação do GRUB"
+msgstr "Instalação do GRUB para UEFI de 64 Bits"
 
 #. type: Content of: <sect1><sect2><para>
 #: lfs-en/chapter08/grub.xml:115
 #, xml-text
 msgid "If you want to boot with 64-bit UEFI, you should build support for it."
 msgstr ""
+"Se quiser inicializar com UEFI de 64 bits, você deveria construir suporte "
+"para ela."
 
 #. type: Content of: <sect1><sect2><para>
 #: lfs-en/chapter08/grub.xml:118
@@ -263,28 +273,24 @@ msgstr ""
 msgid ""
 "First, if you built GRUB from the section above, clean the source tree:"
 msgstr ""
+"Primeiro, se você construiu o GRUB a partir da seção acima, limpe a árvore "
+"do fonte:"
 
 #. type: Content of: <sect1><sect2><screen>
 #: lfs-en/chapter08/grub.xml:121 lfs-en/chapter08/grub.xml:174
-#, fuzzy, no-wrap, xml-text
-#| msgid "<userinput remap=\"make\">make</userinput>"
+#, no-wrap, xml-text
 msgid "<userinput remap=\"pre\">make clean</userinput>"
-msgstr "<userinput remap=\"make\">make</userinput>"
+msgstr "<userinput remap=\"pre\">make clean</userinput>"
 
 #. type: Content of: <sect1><sect2><para>
 #: lfs-en/chapter08/grub.xml:123
 #, xml-text
 msgid "Now configure GRUB for 64-bit UEFI support:"
-msgstr ""
+msgstr "Agora configure o GRUB para suporte UEFI de 64 bits:"
 
 #. type: Content of: <sect1><sect2><screen>
 #: lfs-en/chapter08/grub.xml:125
-#, fuzzy, no-wrap, xml-text
-#| msgid ""
-#| "<userinput remap=\"configure\">./configure --prefix=/usr     \\\n"
-#| "            --sysconfdir=/etc \\\n"
-#| "            --disable-efiemu  \\\n"
-#| "            --disable-werror</userinput>"
+#, no-wrap, xml-text
 msgid ""
 "<userinput remap=\"configure\">./configure --prefix=/usr       \\\n"
 "            --sysconfdir=/etc   \\\n"
@@ -293,17 +299,18 @@ msgid ""
 "            --disable-efiemu    \\\n"
 "            --disable-werror</userinput>"
 msgstr ""
-"<userinput remap=\"configure\">./configure --prefix=/usr     \\\n"
-"            --sysconfdir=/etc \\\n"
-"            --disable-efiemu  \\\n"
+"<userinput remap=\"configure\">./configure --prefix=/usr       \\\n"
+"            --sysconfdir=/etc   \\\n"
+"            --target=x86_64     \\\n"
+"            --with-platform=efi \\\n"
+"            --disable-efiemu    \\\n"
 "            --disable-werror</userinput>"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
 #: lfs-en/chapter08/grub.xml:136
-#, fuzzy, xml-text
-#| msgid "<parameter>--disable-werror</parameter>"
+#, xml-text
 msgid "<parameter>--target=x86_64</parameter>"
-msgstr "<parameter>--disable-werror</parameter>"
+msgstr "<parameter>--target=x86_64</parameter>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
@@ -313,13 +320,14 @@ msgid ""
 "This defines that the UEFI firmware architecture is x86_64, which GRUB "
 "should target."
 msgstr ""
+"Isso define que a arquitetura do firmware UEFI é x86_64, a qual o GRUB "
+"deveria alvejar."
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
 #: lfs-en/chapter08/grub.xml:144
-#, fuzzy, xml-text
-#| msgid "<parameter>--disable-efiemu</parameter>"
+#, xml-text
 msgid "<parameter>--with-platform=efi</parameter>"
-msgstr "<parameter>--disable-efiemu</parameter>"
+msgstr "<parameter>--with-platform=efi</parameter>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
@@ -330,26 +338,27 @@ msgid ""
 "with <parameter>--target=x86_64</parameter>, GRUB will have the ability to "
 "target the <literal>x86_64-efi</literal> platform."
 msgstr ""
+"Isso especifica que EFI é uma plataforma que o GRUB deveria alvejar. Em "
+"combinação com <parameter>--target=x86_64</parameter>, o GRUB terá a "
+"capacidade para alvejar a plataforma <literal>x86_64-efi</literal>."
 
 #. type: Content of: <sect1><sect2><para>
 #: lfs-en/chapter08/grub.xml:155
-#, fuzzy, xml-text
-#| msgid "Compile the package:"
+#, xml-text
 msgid "Compile the package for 64-bit UEFI support:"
-msgstr "Compile o pacote:"
+msgstr "Compile o pacote para suporte UEFI de 64 bits:"
 
 #. type: Content of: <sect1><sect2><para>
 #: lfs-en/chapter08/grub.xml:159
 #, xml-text
 msgid "Install support for 64-bit UEFI:"
-msgstr ""
+msgstr "Instale suporte para UEFI de 64 bits:"
 
 #. type: Content of: <sect1><sect2><title>
 #: lfs-en/chapter08/grub.xml:166
-#, fuzzy, xml-text
-#| msgid "Installation of GRUB"
+#, xml-text
 msgid "Installation of GRUB for 32-bit UEFI"
-msgstr "Instalação do GRUB"
+msgstr "Instalação do GRUB para UEFI de 32 Bits"
 
 #. type: Content of: <sect1><sect2><para>
 #: lfs-en/chapter08/grub.xml:168
@@ -358,6 +367,8 @@ msgid ""
 "If you want to boot with 32-bit UEFI, which is very rare, you should build "
 "support for it."
 msgstr ""
+"Se quiser inicializar com UEFI de 32 bits, o que é muito raro, você deveria "
+"construir suporte para ela."
 
 #. type: Content of: <sect1><sect2><para>
 #: lfs-en/chapter08/grub.xml:171
@@ -366,21 +377,18 @@ msgid ""
 "First, if you built GRUB from any of the sections above, clean the source "
 "tree:"
 msgstr ""
+"Primeiro, se você construiu o GRUB a partir de alguma das seções acima, "
+"limpe a árvore do fonte:"
 
 #. type: Content of: <sect1><sect2><para>
 #: lfs-en/chapter08/grub.xml:176
 #, xml-text
 msgid "Now configure GRUB for 32-bit UEFI support:"
-msgstr ""
+msgstr "Agora configure o GRUB para suporte UEFI de 32 bits:"
 
 #. type: Content of: <sect1><sect2><screen>
 #: lfs-en/chapter08/grub.xml:178
-#, fuzzy, no-wrap, xml-text
-#| msgid ""
-#| "<userinput remap=\"configure\">./configure --prefix=/usr     \\\n"
-#| "            --sysconfdir=/etc \\\n"
-#| "            --disable-efiemu  \\\n"
-#| "            --disable-werror</userinput>"
+#, no-wrap, xml-text
 msgid ""
 "<userinput remap=\"configure\">./configure --prefix=/usr       \\\n"
 "            --sysconfdir=/etc   \\\n"
@@ -389,17 +397,18 @@ msgid ""
 "            --disable-efiemu    \\\n"
 "            --disable-werror</userinput>"
 msgstr ""
-"<userinput remap=\"configure\">./configure --prefix=/usr     \\\n"
-"            --sysconfdir=/etc \\\n"
-"            --disable-efiemu  \\\n"
+"<userinput remap=\"configure\">./configure --prefix=/usr       \\\n"
+"            --sysconfdir=/etc   \\\n"
+"            --target=i386       \\\n"
+"            --with-platform=efi \\\n"
+"            --disable-efiemu    \\\n"
 "            --disable-werror</userinput>"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
 #: lfs-en/chapter08/grub.xml:189
-#, fuzzy, xml-text
-#| msgid "<parameter>--disable-efiemu</parameter>"
+#, xml-text
 msgid "<parameter>--target=i386</parameter>"
-msgstr "<parameter>--disable-efiemu</parameter>"
+msgstr "<parameter>--target=i386</parameter>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
@@ -411,19 +420,22 @@ msgid ""
 "platform=efi</parameter>, GRUB will have the ability to target the "
 "<literal>i386-efi</literal> platform."
 msgstr ""
+"Isso define que a arquitetura de firmware UEFI é i386/32 bits, que o GRUB "
+"deveria alvejar. Em combinação com <parameter>--with-"
+"platform=efi</parameter>, o GRUB terá a capacidade de alvejar a plataforma "
+"<literal>i386-efi</literal>."
 
 #. type: Content of: <sect1><sect2><para>
 #: lfs-en/chapter08/grub.xml:201
-#, fuzzy, xml-text
-#| msgid "Compile the package:"
+#, xml-text
 msgid "Compile the package for 32-bit UEFI support:"
-msgstr "Compile o pacote:"
+msgstr "Compile o pacote para suporte UEFI de 32 bits:"
 
 #. type: Content of: <sect1><sect2><para>
 #: lfs-en/chapter08/grub.xml:205
 #, xml-text
 msgid "Install support for 32-bit UEFI:"
-msgstr ""
+msgstr "Instale o suporte para UEFI de 32 bits:"
 
 #. type: Content of: <sect1><sect2><title>
 #: lfs-en/chapter08/grub.xml:212
@@ -479,6 +491,9 @@ msgid ""
 "contents based on what platform(s) you have installed GRUB for. Namely, "
 "there will be different GRUB modules for each platform."
 msgstr ""
+"<filename class=\"directory\">/usr/lib/grub</filename> terá conteúdo "
+"diferente baseado em qual(is) plataforma(s) você tiver instalado o GRUB. Ou "
+"seja, existirão diferentes módulos do GRUB para cada plataforma."
 
 #. type: Content of: <sect1><sect2><variablelist><bridgehead>
 #: lfs-en/chapter08/grub.xml:241
@@ -1017,9 +1032,9 @@ msgstr ""
 msgid "grub-syslinux2cfg"
 msgstr "grub-syslinux2cfg"
 
-#, fuzzy, xml-text
+#, xml-text
 #~ msgid "Fix a bug introduced in grub-2.14:"
-#~ msgstr "Primeiro corrija um defeito introduzido no grub-2.14:"
+#~ msgstr "Corrija um defeito introduzido no grub-2.14:"
 
 #, xml-text
 #~ msgid ""
