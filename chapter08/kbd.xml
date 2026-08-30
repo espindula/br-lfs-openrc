@@ -225,9 +225,9 @@ tecla do núcleo</para>
       <varlistentry id="mapscrn">
         <term><command>mapscrn</command></term>
         <listitem>
-          <para>Um aplicativo obsoleto que costumava carregar uma tabela de mapeamento de
-caractere de saída gerada definida pelo(a) usuário(a) para dentro do
-controlador de console; isso é feito agora por <command>setfont</command></para>
+          <para>Um programa obsoleto que costumava carregar uma tabela de mapeamento de
+caractere de saída gerada definida pelo(a) usante para dentro do controlador
+de console; isso agora é feito por <command>setfont</command></para>
           <indexterm zone="ch-system-kbd mapscrn">
             <primary sortas="b-mapscrn">mapscrn</primary>
           </indexterm>

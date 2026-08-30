@@ -8,83 +8,87 @@
 <sect1 id="ch-config-usage" revision="openrc">
   <?dbhtml filename="usage.html"?>
 
-  <title>OpenRC Usage and Configuration</title>
+  <title>Uso e Configuração do OpenRC</title>
 
   <indexterm zone="ch-config-usage">
-    <primary sortas="a-Usage">Usage</primary>
+    <primary sortas="a-Usage">Uso</primary>
     <secondary>uso</secondary>
   </indexterm>
 
   <sect2>
-    <title>How Does OpenRC Work?</title>
+    <title>Como OpenRC Funciona?</title>
 
-    <para>This version of LFS uses a special booting facility named OpenRC, which
-starts services according to a series of <emphasis>run
-levels</emphasis>. These runlevels are slightly different from init systems
-like SysVinit. While these runlevels exist, there is much less complexity
-involved with OpenRC services. The process doesn't require bootscripts.</para>
+    <para>Esta versão do LFS usa um recurso de inicialização especial nominado OpenRC,
+que inicia serviços de acordo com uma série de <emphasis>níveis de
+execução</emphasis>. Esses níveis de execução são ligeiramente diferentes
+dos sistemas de inicialização como o SysVinit. Embora existam esses níveis
+de execução, existe muito menos complexidade envolvida nos serviços
+OpenRC. O processo não exige conjuntos de comandos sequenciados de
+inicialização.</para>
   
     <para>Existe um procedimento alternativo de inicialização chamado
 <command>systemd</command>. Nós não mais discutiremos esse processo de
 inicialização aqui. Para uma descrição detalhada, visite-se <ulink
 url="https://www.linux.com/training-tutorials/understanding-and-using-systemd/"/>.</para>
 
-    <para>OpenRC's run level scheme has five run levels that are the most important,
-with the ability to add more.  Each one of the five corresponds to certain
-modes the computer is in, like if it's booting, shutting down, or has no
-networking. Here are the descriptions of the different run levels as they
-are implemented in LFS:</para>
+    <para>O esquema de níveis de execução do OpenRC tem cinco níveis de execução que
+são os mais importantes, com a capacidade de adicionar mais. Cada um dos
+cinco corresponde a determinados modos nos quais o computador está, como
+inicializar, desligar ou não ter rede de intercomunicação. Aqui estão as
+descrições dos diferentes níveis de execução conforme estão implementados no
+LFS:</para>
 
     <itemizedlist>
       <listitem>
         <para>
-          sysinit: brings up and mounts kernel virtual filesystems
+          sysinit: ativa e monta sistemas de arquivos virtuais do núcleo
         </para>
       </listitem>
       <listitem>
         <para>
-          boot: starts up important services like setting the time and checks the
-filesystem
+          boot: inicia serviços importantes, como configurar a hora, e verifica o
+sistema de arquivos
         </para>
       </listitem>
       <listitem>
         <para>
-          nonetwork: default without networking
+          nonetwork: padrão sem rede de intercomunicação
         </para>
       </listitem>
       <listitem>
         <para>
-          default: where most services should be, like setting up audio services
+          default: onde a maioria dos serviços deveria estar, como configurar serviços
+de áudio
         </para>
       </listitem>
       <listitem>
         <para>
-          shutdown: kills all processes and remounts <filename
-class="directory">/</filename> in read-only mode
+          shutdown: mata todos os processos e remonta <filename
+class="directory">/</filename> em modo somente leitura
         </para>
       </listitem>
     </itemizedlist>
 
     <para>
-      Each service has dependency information, so a service on a given run level
-will be started at the correct time if it has correct dependency
-information.
+      Cada serviço tem informações de dependência, de modo que um serviço em um
+determinado nível de execução será iniciado no momento correto se ele tiver
+informações corretas de dependência.
     </para>
 
   </sect2>
 
   <sect2 id="conf-openrc" role="configuration">
-  <title>Configuring OpenRC</title>
+  <title>Configurando OpenRC</title>
 
   <indexterm zone="conf-openrc">
     <primary sortas="a-OpenRC">OpenRC</primary>
     <secondary>configurando</secondary>
   </indexterm>
 
-  <para>Whenever a system is started, <command>agetty</command> is ran for a number
-of <literal>tty</literal> devices. OpenRC provides an
-<command>agetty</command> service but doesn't start it for each
-<literal>tty</literal> that's needed. Create and enable those services:</para>
+  <para>Sempre que um sistema for iniciado, <command>agetty</command> será executado
+para vários dispositivos <literal>tty</literal>. OpenRC fornece um serviço
+<command>agetty</command>, mas não o inicia para cada <literal>tty</literal>
+que seja necessário. Crie e habilite esses serviços:</para>
 
 <screen><userinput>rm -vf /etc/runlevels/default/agetty*
 for i in $(seq 1 6); do
@@ -92,20 +96,20 @@ for i in $(seq 1 6); do
   rc-update add agetty.tty$i default
 done</userinput></screen>
 
-  <para>These <literal>tty</literal> services are started on the
-<literal>default</literal> run level.</para>
+  <para>Esses serviços <literal>tty</literal> são iniciados no nível de execução
+<literal>default</literal>.</para>
 
   </sect2>
 
   <sect2 id="ch-config-udevd">
-    <title>Creating the Udevd Service</title>
+    <title>Criando o Serviço Udevd</title>
 
     <indexterm zone="ch-config-udevd">
       <primary sortas="d-udevd">udevd</primary>
     <secondary>configurando</secondary></indexterm>
 
-  <para>OpenRC doesn't ship services for <command>udevd</command>, leading to kernel
-modules not being loaded. Create and enable them now:</para>
+  <para>OpenRC não fornece serviços para <command>udevd</command>, fazendo com que
+os módulos do núcleo não sejam carregados. Crie e habilite-os agora:</para>
 
 <screen><userinput>cat &gt; /etc/init.d/udevd &lt;&lt; "EOF"
 <literal>#!/sbin/openrc-run
@@ -167,24 +171,25 @@ for i in udev{d,-trigger}; do
 done</userinput></screen>
 
     <para>
-      These services should load most if not all modules automatically. If you
-need to load a given module but it isn't being loaded, pass the module name
-to the <filename>/etc/conf.d/modules</filename> configuration file.
+      Esses serviços deveriam carregar a maioria, senão todos, os módulos
+automaticamente. Se você precisar carregar um determinado módulo, mas ele
+não estiver sendo carregado, passe o nome do módulo para o arquivo de
+configuração <filename>/etc/conf.d/modules</filename>.
     </para>
 
   </sect2>
 
   <sect2 id="ch-config-sysklogd">
-    <title>Creating the Sysklogd Service</title>
+    <title>Criando o Serviço Sysklogd</title>
 
     <indexterm zone="ch-config-sysklogd">
       <primary sortas="d-sysklogd">sysklogd</primary>
     <secondary>configurando</secondary></indexterm>
 
-  <para>OpenRC doesn't ship a service for <command>syslogd</command>, which can lead
-to messages from stuff like daemons, authorization calls, and the kernel not
-being captured and saved for auditing. Create and enable the service for the
-logger:</para>
+  <para>O OpenRC não fornece um serviço para <command>syslogd</command>, o que pode
+fazer com que mensagens originárias de coisas como processos de segundo
+plano, chamadas de autorização e o núcleo não sejam capturadas e salvas para
+auditoria. Crie e habilite o serviço para o registrador:</para>
 
 <screen><userinput>cat &gt; /etc/init.d/sysklogd &lt;&lt; "EOF"
 <literal>#!/sbin/openrc-run
@@ -222,28 +227,30 @@ rc-update add sysklogd boot</userinput></screen>
       <primary sortas="d-setclock">setclock</primary>
     <secondary>configurando</secondary></indexterm>
 
-  <para>OpenRC provides a <command>hwclock</command> service which reads from the
-hardware clock. It then sets the time. This time is obtained from either
-applying timezone data from <filename>/etc/localtime</filename>, or it
-simply doesn't do anything and displays the time as-is. In order to know
-what to do with the hardware time, it needs to decide whether the time is
-UTC or local.  It has no way to do this on its own, so a configuration file
-is needed.  OpenRC provides one already, and should be edited.</para>
+  <para>OpenRC fornece um serviço <command>hwclock</command> que lê a partir do
+relógio do hardware. Em seguida, ele configura a hora. Esse horário é obtido
+ou aplicando dados de fuso horário provenientes de
+<filename>/etc/localtime</filename> ou simplesmente não faz nada e exibe o
+horário como está. Para a finalidade de saber o que fazer com a hora do
+hardware, ele precisa decidir se a hora é UTC ou local. Ele não tem como
+fazer isso sozinho, de modo que um arquivo de configuração é necessário. O
+OpenRC já fornece um e deveria ser editado.</para>
 
-  <para>If you cannot remember whether or not the hardware clock is set to UTC, find
-out by running the <userinput>hwclock --localtime --show</userinput>
-command. This will display what the current time is according to the
-hardware clock. If this time matches whatever your watch says, then the
-hardware clock is set to local time. If the output from
-<command>hwclock</command> is not local time, chances are it is set to UTC
-time. Verify this by adding or subtracting the proper amount of hours for
-the timezone to the time shown by <command>hwclock</command>. For example,
-if you are currently in the MST timezone, which is also known as GMT -0700,
-add seven hours to the local time.</para>
+  <para>Se você não conseguir lembrar se o relógio do hardware está ou não
+configurado para UTC, descubra executando o comando <userinput>hwclock
+--localtime --show</userinput>. Isso exibirá o que é a hora atual de acordo
+com o relógio do hardware. Se essa hora corresponder à que o teu relógio
+diz, então o relógio do hardware está configurado para hora local. Se a
+saída gerada originária do <command>hwclock</command> não for a hora local,
+as chances são as de que ele esteja configurado para hora UTC. Verifique
+isso adicionando ou subtraindo a quantidade apropriada de horas para o teu
+fuso horário à hora mostrada pelo <command>hwclock</command>. Por exemplo,
+se você estiver atualmente no fuso horário MST, o qual é conhecido também
+como GMT -0700, adicione sete horas à hora local.</para>
 
-  <para>Once you know the hardware time uses, edit
-<filename>/etc/conf.d/hwclock</filename> as necessary. There are plenty of
-comments explaining what to edit.</para>
+  <para>Depois que você souber o uso da hora do hardware, edite
+<filename>/etc/conf.d/hwclock</filename> conforme necessário. Existem muitos
+comentários explicando o que editar.</para>
 
   </sect2>
 
@@ -257,77 +264,81 @@ comments explaining what to edit.</para>
     <secondary>configurando</secondary>
   </indexterm>
 
-  <para>This section discusses how to configure the <command>consolefont</command>
-and <command>keymap</command> services that set up the console font and
-keyboard map. If non-ASCII characters (e.g., the copyright sign, the British
-pound sign, and the Euro symbol) will not be used and the keyboard is a
-U.S. one, much of this section can be skipped. Without the configuration
-files, the <command>consolefont</command> and <command>keymap</command>
-services will use the defaults.</para>
+  <para>Esta seção discute como configurar os serviços
+<command>consolefont</command> e <command>keymap</command>, que configuram a
+fonte do console e o mapa de teclado. Se caracteres não-ASCII (por exemplo,
+o sinal de direitos autorais, o sinal da libra britânica e o símbolo do
+Euro) não serão usados e o teclado for um dos Estados Unidos da América do
+Norte, muito desta seção pode ser ignorada. Sem os arquivos de configuração,
+os serviços <command>consolefont</command> e <command>keymap</command>
+usarão os padrões.</para>
 
-  <para>The <command>consolefont</command> service reads the
-<filename>/etc/conf.d/consolefont</filename> file for configuration
-information. Decide which screen font will be used. Search <filename
-class="directory">/usr/share/consolefonts</filename> for valid fonts.</para>
+  <para>O serviço <command>consolefont</command> lê o arquivo
+<filename>/etc/conf.d/consolefont</filename> para informações de
+configuração. Decida qual fonte de tela será usada. Pesquise <filename
+class="directory">/usr/share/consolefonts</filename> por fontes válidas.</para>
 
-  <para>The <command>keymaps</command> service reads the
-<filename>/etc/conf.d/keymaps</filename> file for configuration
-information. Decide which keymap will be used. Various language-specific
-HOWTOs can also help with this; see <ulink
-url="https://tldp.org/HOWTO/HOWTO-INDEX/other-lang.html"/>. If still in
-doubt, look in the <filename class="directory">/usr/share/keymaps</filename>
-directory for valid keymaps.</para>
+  <para>O serviço <command>keymaps</command> lê o arquivo
+<filename>/etc/conf.d/keymaps</filename> para informação de
+configuração. Decida qual mapa de teclas será usado. Vários HOWTOs
+específicos de idiomas também podem ajudar com isso; veja-se <ulink
+url="https://tldp.org/HOWTO/HOWTO-INDEX/other-lang.html"/>. Se ainda em
+dúvida, olhe no diretório <filename
+class="directory">/usr/share/keymaps</filename> para mapas de teclas
+válidos.</para>
 
-  <para>For both <command>consolefont</command> and <command>keymaps</command>,
-configuration files exist for both and have comments that give good
-information about what to provide to each parameter.</para>
+  <para>Tanto para <command>consolefont</command> quanto para
+<command>keymaps</command>, existem arquivos de configuração para ambos e
+têm comentários que fornecem boas informações acerca do que fornecer para
+cada parâmetro.</para>
 
   
   <!-- Added because folks keep posting their console file with X questions
   to blfs-support list -->
 <note>
-    <para>The configuration files for the console only control the Linux text console
-localization. It has nothing to do with setting the proper keyboard layout
-and terminal fonts in the X Window System, with ssh sessions, or with a
-serial console.</para>
+    <para>Os arquivos de configuração para o console somente controlam a localização
+do console de texto do Linux. Elem não têm nada a ver com configurar o
+esquema adequado de teclado e fontes de terminal no Sistema de Janelas X;
+com sessões do ssh; ou com um console serial.</para>
   </note>
 
   </sect2>
 
   <sect2 id="ch-config-agetty">
-    <title>Configuring Agetty</title>
+    <title>Configurando Agetty</title>
 
     <para>
-      If you don't want the boot logs to be cleared on the first TTY, which Agetty
-will clear them by default, add <option>--noclear</option> to
-<literal>agetty_options</literal> in the
-<filename>/etc/conf.d/agetty</filename> file.
+      Se você não quiser que os registros de inicialização sejam eliminados no
+primeiro TTY, quais o Agetty irá eliminá-los por padrão, adicione
+<option>--noclear</option> a <literal>agetty_options</literal> no arquivo
+<filename>/etc/conf.d/agetty</filename>.
     </para>
 
   </sect2>
 
   <sect2 id="ch-config-rc">
-    <title>The rc.conf File</title>
+    <title>O Arquivo rc.conf</title>
 
     <indexterm zone="ch-config-rc">
       <primary sortas="a-rc.conf">rc.conf</primary>
     </indexterm>
 
-    <para>The <filename>/etc/rc.conf</filename> file contains settings that control
-how OpenRC starts and operates. For example, you can tell OpenRC to start
-services in parallel, or you can specify what run level you want the system
-to run at. In most cases, you won't need to edit this file.</para>
+    <para>O arquivo <filename>/etc/rc.conf</filename> contém configurações que
+controlam como o OpenRC inicia e opera. Por exemplo, você consegue dizer ao
+OpenRC para iniciar serviços em paralelo ou consegue especificar em qual
+nível de execução quer que o sistema seja executado. Na maioria dos casos,
+você não precisará editar esse arquivo.</para>
 
   </sect2>
 
   <sect2 id="ch-config-other-rc">
-    <title>Other OpenRC Configuration Files</title>
+    <title>Outros Arquivos de Configuração do OpenRC</title>
 
-    <para>Many other services have configuration files in <filename
-class="directory">/etc/conf.d</filename> and should match the service name
-found in <filename class="directory">/etc/init.d</filename>. If a service
-gives you any trouble, there may be a configuration file for it already, and
-should have comments provided.</para>
+    <para>Muitos outros serviços têm arquivos de configuração em <filename
+class="directory">/etc/conf.d</filename> e deveriam corresponder ao nome do
+serviço encontrado em <filename class="directory">/etc/init.d</filename>. Se
+um serviço causar algum problema, possivelmente já exista um arquivo de
+configuração para ele e deveria ter comentários fornecidos.</para>
 
   </sect2>
 </sect1>

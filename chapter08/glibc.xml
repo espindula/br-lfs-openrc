@@ -50,23 +50,25 @@ conformes com o FHS:</para>
 
 <screen><userinput remap="pre">patch -Np1 -i ../&glibc-fhs-patch;</userinput></screen>
 
-    <para>Agora, adicione algumas correções para endereçar construção e testagem com
-Linux 7 e corrigir 5 vulnerabilidades de segurança encontradas depois do
-lançamento da glibc-2.43:</para>
+    <para>Corrija um problema que faz com que a função <ulink role='man'
+url='&man;tanh.3'>tanh(3)</ulink> quebre em alguns processadores x86_64
+antigos e corrija instalar com múltiplas tarefas do <command>make</command>:</para>
 
 <screen><userinput remap="pre">patch -Np1 -i ../&glibc-upstream-patch;</userinput></screen>
 
     <para>A documentação da Glibc recomenda construir a Glibc em um diretório dedicado
 à construção:</para>
 
-<screen><userinput remap="pre">mkdir -v build
-cd      build</userinput></screen>
-
-    <para>Garanta que os utilitários <command>ldconfig</command> e
-<command>sln</command> serão instalados no <filename
-class="directory">/usr/sbin</filename>:</para>
+<!--
+    <para>
+Ensure that the <command>ldconfig</command> and <command>sln</command>
+    utilities will be installed into
+    <filename class="directory">/usr/sbin</filename>:</para>
 
 <screen><userinput remap="pre">echo "rootsbindir=/usr/sbin" &gt; configparms</userinput></screen>
+-->
+<screen><userinput remap="pre">mkdir -v build
+cd      build</userinput></screen>
 
     <para>Prepare a Glibc para compilação:</para>
 
@@ -841,7 +843,7 @@ comando especificado</para>
       <varlistentry id="tzselect">
         <term><command>tzselect</command></term>
         <listitem>
-          <para>Pergunta ao(à) usuário(a) a respeito do local do sistema e relata a
+          <para>Pergunta para o(a) usante a respeito do local do sistema e informa a
 correspondente descrição de fuso horário</para>
           <indexterm zone="ch-system-glibc tzselect">
             <primary sortas="b-tzselect">tzselect</primary>
@@ -1014,8 +1016,8 @@ respeito do uso de memória de um aplicativo</para>
         <term><filename class="libraryfile">libnss_*</filename></term>
         <listitem>
           <para>Os módulos de Name Service Switch, contendo funções para resolução de nomes
-de dispositivos, nomes de usuários(as), nomes de grupos, pseudônimos,
-serviços, protocolos, entre outras coisas. Carregados pela <filename
+de dispositivos, nomes de usantes, nomes de grupos, pseudônimos, serviços,
+protocolos, entre outras coisas. Carregados pela <filename
 class='libraryfile'>libc</filename> conforme a configuração em
 <filename>/etc/nsswitch.conf</filename></para>
           <indexterm zone="ch-system-glibc libnss">

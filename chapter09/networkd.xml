@@ -371,14 +371,14 @@ ff02::2   ip6-allrouters
 EOF</userinput></screen>
 
      <para>Os valores <replaceable>&lt;192.168.0.2&gt;</replaceable> e
-<replaceable>&lt;FQDN&gt;</replaceable> precisam ser mudados para
-usuários(as) ou exigências específicos(as) (se atribuído um endereço de IP
-por um(a) administrador(a) de rede de comunicação/sistema e a máquina estará
-conectada a uma rede existente de comunicação). O(s) nome(s) de apelido(s)
-opcional(is) pode(m) ser omitido(s) e a linha
+<replaceable>&lt;FQDN&gt;</replaceable> precisam ser mudados para usantes ou
+exigências específicos(as) (se atribuído um endereço de IP por um(a)
+administrador(a) de rede de intercomunicação/sistema e a máquina estará
+conectada a uma rede existente de intercomunicação). O(s) nome(s) de
+apelido(s) opcional(is) pode(m) ser omitido(s) e a linha
 <replaceable>&lt;192.168.0.2&gt;</replaceable> pode ser omitida se você
-estiver usando uma conexão configurada com "DHCP" ou autoconfiguração de
-"IPv6" ou usando <literal>localhost.localdomain</literal> como o "FQDN".</para>
+estiver usando uma conexão configurada com DHCP ou autoconfiguração de IPv6
+ou usando <literal>localhost.localdomain</literal> como o FQDN.</para>
 
      <para>O &quot;<filename>/etc/hostname</filename>&quot; não contém entradas para
 &quot;<literal>localhost</literal>&quot;,

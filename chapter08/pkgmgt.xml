@@ -347,14 +347,14 @@ url="http://www.slackbook.org/html/package-management.html"/>.</para>
     </sect3>
 
     <sect3>
-      <title>Gerenciamento Baseado em Usuário(a)</title>
+      <title>Gerenciamento Baseado em Usante</title>
 
       <para>Esse esquema, único para LFS, foi concebido por Matthias Benkmann e está
 disponível a partir do <ulink url="&hints-root;">Projetos de
-Dicas</ulink>. Nesse esquema, cada pacote é instalado como um(a) usuário(a)
+Dicas</ulink>. Nesse esquema, cada pacote é instalado como um(a) usante
 separado(a) nos locais padrão. Arquivos pertencentes a um pacote são
-facilmente identificados checando-se o ID de usuário(a). Ao recursos e
-deficiências dessa abordagem são muito complexas para se descrever nesta
+facilmente identificados checando-se o ID de usante. Os recursos e
+deficiências dessa abordagem são muito complexos para se descrever nesta
 seção. Para os detalhes, por favor veja-se a dica em <ulink
 url="&hints-root;more_control_and_pkg_man.txt"/>.</para>
 

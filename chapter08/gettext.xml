@@ -270,7 +270,7 @@ determinado padrão ou pertencem a alguns arquivos fonte fornecidos</para>
         <listitem>
           <para>Cria um novo arquivo <filename class="extension">.po</filename>,
 inicializando a meta informação com valores oriundos do ambiente do(a)
-usuário(a)</para>
+usante</para>
           <indexterm zone="ch-system-gettext msginit">
             <primary sortas="b-msginit">msginit</primary>
           </indexterm>

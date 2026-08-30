@@ -179,9 +179,9 @@ EOF</userinput></screen>
      <para>Os valores <replaceable>&lt;192.168.1.2&gt;</replaceable>,
 <replaceable>&lt;FQDN&gt;</replaceable> e
 <replaceable>&lt;NOMEDISPOSITIVO&gt;</replaceable> precisam ser mudados para
-usuários(as) ou exigências específicos(as) (se atribuído um endereço de IP
-por um(a) administrador(a) da rede de intercomunicação/sistema e a máquina
-estará conectada a uma rede existente de intercomunicação). O(s) nome(s) de
+usantes ou exigências específicos (se atribuído um endereço de IP por um(a)
+administrador(a) da rede de intercomunicação/sistema e a máquina estará
+conectada a uma rede existente de intercomunicação). O(s) nome(s) de
 apelido(s) opcional(is) pode(m) ser omitido(s).</para>
 
 

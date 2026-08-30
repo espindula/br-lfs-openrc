@@ -5,7 +5,7 @@
   %general-entities;
 ]>
 
-<sect1 id="ch-system-zlib" role="wrap">
+<sect1 id="ch-tools-zlib" role="wrap">
   <?dbhtml filename="zlib.html"?>
 
   <sect1info condition="script">
@@ -14,23 +14,24 @@
 
   <title>Zlib-&zlib-version;</title>
 
-  <indexterm zone="ch-system-zlib">
+  <indexterm zone="ch-tools-zlib">
     <primary sortas="a-Zlib">Zlib</primary>
   </indexterm>
 
   <sect2 role="package">
     <title/>
 
-    <para>O pacote Zlib contém rotinas de compressão e descompressão usadas por alguns
-aplicativos.</para>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+    href="../chapter08/zlib.xml"
+    xpointer="xpointer(/sect1/sect2[1]/para[1])"/>
 
     <segmentedlist>
       <segtitle>&buildtime;</segtitle>
       <segtitle>&diskspace;</segtitle>
 
       <seglistitem>
-        <seg>&zlib-fin-sbu;</seg>
-        <seg>&zlib-fin-du;</seg>
+        <seg>&zlib-tmp-sbu;</seg>
+        <seg>&zlib-tmp-du;</seg>
       </seglistitem>
     </segmentedlist>
 
@@ -47,10 +48,6 @@ aplicativos.</para>
 
 <screen><userinput remap="make">make</userinput></screen>
 
-    <para>Para testar os resultados, emita:</para>
-
-<screen><userinput remap="test">make check</userinput></screen>
-
     <para>Instale o pacote:</para>
 
 <screen><userinput remap="install">make install</userinput></screen>
@@ -61,32 +58,11 @@ aplicativos.</para>
 
   </sect2>
 
-  <sect2 id="contents-zlib" role="content">
-    <title>Conteúdo do Zlib</title>
+  <sect2 role="content">
+    <title/>
 
-    <segmentedlist>
-      <segtitle>Bibliotecas instaladas</segtitle>
-
-      <seglistitem>
-        <seg>libz.so</seg>
-      </seglistitem>
-    </segmentedlist>
-
-    <variablelist>
-      <bridgehead renderas="sect3">Descrições Curtas</bridgehead>
-      <?dbfo list-presentation="list"?> <?dbhtml list-presentation="table"?>
-
-      <varlistentry id="libz">
-        <term><filename class="libraryfile">libz</filename></term>
-        <listitem>
-          <para>Contém funções de compressão e descompressão usadas por alguns aplicativos</para>
-          <indexterm zone="ch-system-zlib libz">
-            <primary sortas="c-libz">libz</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
-
-    </variablelist>
+    <para>Detalhes acerca desse pacote estão localizados na <xref
+linkend="contents-zlib" role="."/></para>
 
   </sect2>
 
