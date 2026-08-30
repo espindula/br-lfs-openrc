@@ -6,10 +6,12 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-07-06 02:11-0300\n"
+"POT-Creation-Date: 2024-10-06 04:18+0000\n"
 "PO-Revision-Date: 2026-06-24 04:18+0000\n"
-"Last-Translator: Jamenson Ferreira Espindula de Almeida Melo <jafesp@gmail.com>\n"
-"Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/projects/linux-from-scratch/prologue_standards/pt_BR/>\n"
+"Last-Translator: Jamenson Ferreira Espindula de Almeida Melo "
+"<jafesp@gmail.com>\n"
+"Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/"
+"projects/linux-from-scratch/prologue_standards/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -40,8 +42,8 @@ msgid ""
 "<ulink url=\"https://pubs.opengroup.org/onlinepubs/9699919799/\"> "
 "POSIX.1-2008</ulink>."
 msgstr ""
-"<ulink url=\"https://pubs.opengroup.org/onlinepubs/9699919799/\"> "
-"POSIX.1-2008</ulink>."
+"<ulink url=\"https://pubs.opengroup.org/onlinepubs/9699919799/\"> POSIX.1-"
+"2008</ulink>."
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
 #: lfs-en/prologue/standards.xml:25
@@ -60,8 +62,8 @@ msgid ""
 "<ulink url=\"https://refspecs.linuxfoundation.org/lsb.shtml\">Linux Standard"
 " Base (LSB) Version 5.0 (2015)</ulink>"
 msgstr ""
-"<ulink url=\"https://refspecs.linuxfoundation.org/lsb.shtml\">Linux Standard"
-" Base (LSB) Versão 5.0 (2015)</ulink>"
+"<ulink url=\"https://refspecs.linuxfoundation.org/lsb.shtml\">Linux Standard "
+"Base (LSB) Versão 5.0 (2015)</ulink>"
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
 #: lfs-en/prologue/standards.xml:34
@@ -73,11 +75,11 @@ msgid ""
 "attempts to conform to the LSB specifications for the IA32 (32-bit x86) or "
 "AMD64 (x86_64)  architectures discussed in the previous section."
 msgstr ""
-"O LSB tem quatro especificações: Core, Desktop, Languages e Imaging. Algumas"
-" partes das especificações Core e Desktop são específicas de arquitetura. "
+"O LSB tem quatro especificações: Core, Desktop, Languages e Imaging. Algumas "
+"partes das especificações Core e Desktop são específicas de arquitetura. "
 "Existem também duas especificações experimentais: Gtk3 e Graphics. O LFS "
-"tenta obedecer às especificações da LSB para as arquiteturas IA32 (x86 de 32"
-" bits) ou AMD64 (x86_64) discutidas na sessão anterior."
+"tenta obedecer às especificações da LSB para as arquiteturas IA32 (x86 de 32 "
+"bits) ou AMD64 (x86_64) discutidas na sessão anterior."
 
 #. type: Content of: <sect1><itemizedlist><listitem><note><para>
 #: lfs-en/prologue/standards.xml:41
@@ -93,8 +95,8 @@ msgstr ""
 "LSB é o de garantir que software proprietário consiga ser instalado e "
 "execute em um sistema compatível. Dado que o LFS é baseado no fonte, o(a) "
 "usante tem total controle sobre quais pacotes são desejados; você "
-"possivelmente escolha não instalar alguns pacotes que são especificados pelo"
-" LSB."
+"possivelmente escolha não instalar alguns pacotes que são especificados pelo "
+"LSB."
 
 #. type: Content of: <sect1><para>
 #: lfs-en/prologue/standards.xml:51
@@ -107,10 +109,10 @@ msgid ""
 " in BLFS."
 msgstr ""
 "Embora seja possível criar um sistema completo que passará nos testes de "
-"certificação da LSB <quote>desde o zero</quote>, isso não pode ser feito sem"
-" muitos pacotes adicionais que estão além do escopo do livro LFS. Instruções"
-" de instalação para alguns desses pacotes adicionais podem ser encontradas "
-"no BLFS."
+"certificação da LSB <quote>desde o zero</quote>, isso não pode ser feito sem "
+"muitos pacotes adicionais que estão além do escopo do livro LFS. Instruções "
+"de instalação para alguns desses pacotes adicionais podem ser encontradas no "
+"BLFS."
 
 #. type: Content of: <sect1><variablelist><bridgehead>
 #: lfs-en/prologue/standards.xml:57
@@ -120,32 +122,27 @@ msgstr ""
 "Pacotes fornecidos pelo LFS necessários para satisfazer as Exigências do LSB"
 
 #. type: Content of: <sect1><variablelist>
-#: lfs-en/prologue/standards.xml:59 lfs-en/prologue/standards.xml:108
-#: lfs-en/prologue/standards.xml:157
+#: lfs-en/prologue/standards.xml:59 lfs-en/prologue/standards.xml:107
+#: lfs-en/prologue/standards.xml:156
 #, xml-text
 msgid "<?dbfo list-presentation=\"list\"?> <?dbhtml list-presentation=\"table\"?>"
 msgstr "<?dbfo list-presentation=\"list\"?> <?dbhtml list-presentation=\"table\"?>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><term>
-#: lfs-en/prologue/standards.xml:63 lfs-en/prologue/standards.xml:112
-#: lfs-en/prologue/standards.xml:161
+#: lfs-en/prologue/standards.xml:63 lfs-en/prologue/standards.xml:111
+#: lfs-en/prologue/standards.xml:160
 #, xml-text
 msgid "<emphasis>LSB Core:</emphasis>"
 msgstr "<emphasis>Núcleo do LSB:</emphasis>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
 #: lfs-en/prologue/standards.xml:66
-#, fuzzy, xml-text
-#| msgid ""
-#| "Bash, Bc, Binutils, Coreutils, Diffutils, File, Findutils, Gawk, GCC, "
-#| "Gettext, Glibc, Grep, Gzip, M4, Man-DB, Procps, Psmisc, Sed, Shadow, <phrase"
-#| " revision='sysv'>SysVinit</phrase><phrase "
-#| "revision='systemd'>Systemd</phrase>, Tar, Util-linux, Zlib"
+#, xml-text
 msgid ""
 "Bash, Bc, Binutils, Coreutils, Diffutils, File, Findutils, Gawk, GCC, "
-"Gettext, Glibc, Grep, Gzip, M4, Man-DB, <phrase "
-"revision='openrc'>OpenRC,</phrase> Procps, Psmisc, Sed, Shadow, <phrase "
-"revision='systemd'>Systemd,</phrase> Tar, Util-linux, Zlib"
+"Gettext, Glibc, Grep, Gzip, M4, Man-DB, Procps, Psmisc, Sed, Shadow, <phrase"
+" revision='sysv'>SysVinit</phrase><phrase "
+"revision='systemd'>Systemd</phrase>, Tar, Util-linux, Zlib"
 msgstr ""
 "Bash, Bc, Binutils, Coreutils, Diffutils, File, Findutils, Gawk, GCC, "
 "Gettext, Glibc, Grep, Gzip, M4, Man-DB, Procps, Psmisc, Sed, Shadow, <phrase"
@@ -153,48 +150,48 @@ msgstr ""
 "revision='systemd'>Systemd</phrase>, Tar, Util-linux, Zlib"
 
 #. type: Content of: <sect1><variablelist><varlistentry><term>
-#: lfs-en/prologue/standards.xml:76 lfs-en/prologue/standards.xml:122
-#: lfs-en/prologue/standards.xml:179
+#: lfs-en/prologue/standards.xml:75 lfs-en/prologue/standards.xml:121
+#: lfs-en/prologue/standards.xml:178
 #, xml-text
 msgid "<emphasis>LSB Desktop:</emphasis>"
 msgstr "<emphasis>Área de trabalho do LSB:</emphasis>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/prologue/standards.xml:78 lfs-en/prologue/standards.xml:92
-#: lfs-en/prologue/standards.xml:99 lfs-en/prologue/standards.xml:213
+#: lfs-en/prologue/standards.xml:77 lfs-en/prologue/standards.xml:91
+#: lfs-en/prologue/standards.xml:98 lfs-en/prologue/standards.xml:212
 #, xml-text
 msgid "None"
 msgstr "Nenhum"
 
 #. type: Content of: <sect1><variablelist><varlistentry><term>
-#: lfs-en/prologue/standards.xml:83 lfs-en/prologue/standards.xml:131
-#: lfs-en/prologue/standards.xml:203
+#: lfs-en/prologue/standards.xml:82 lfs-en/prologue/standards.xml:130
+#: lfs-en/prologue/standards.xml:202
 #, xml-text
 msgid "<emphasis>LSB Languages:</emphasis>"
 msgstr "<emphasis>Linguagens da LSB:</emphasis>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/prologue/standards.xml:85
+#: lfs-en/prologue/standards.xml:84
 #, xml-text
 msgid "Perl"
 msgstr "Perl"
 
 #. type: Content of: <sect1><variablelist><varlistentry><term>
-#: lfs-en/prologue/standards.xml:90 lfs-en/prologue/standards.xml:138
-#: lfs-en/prologue/standards.xml:211
+#: lfs-en/prologue/standards.xml:89 lfs-en/prologue/standards.xml:137
+#: lfs-en/prologue/standards.xml:210
 #, xml-text
 msgid "<emphasis>LSB Imaging:</emphasis>"
 msgstr "<emphasis>Imagem no LSB:</emphasis>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><term>
-#: lfs-en/prologue/standards.xml:97 lfs-en/prologue/standards.xml:145
-#: lfs-en/prologue/standards.xml:218
+#: lfs-en/prologue/standards.xml:96 lfs-en/prologue/standards.xml:144
+#: lfs-en/prologue/standards.xml:217
 #, xml-text
 msgid "<emphasis>LSB Gtk3 and LSB Graphics (Trial Use):</emphasis>"
 msgstr "<emphasis>LSB Gtk3 e Gráficos LSB (Uso Experimental):</emphasis>"
 
 #. type: Content of: <sect1><variablelist><bridgehead>
-#: lfs-en/prologue/standards.xml:106
+#: lfs-en/prologue/standards.xml:105
 #, xml-text
 msgid "Packages supplied by BLFS needed to satisfy the LSB Requirements"
 msgstr ""
@@ -202,7 +199,7 @@ msgstr ""
 "LSB"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/prologue/standards.xml:114
+#: lfs-en/prologue/standards.xml:113
 #, xml-text
 msgid ""
 "At, Batch (a part of At), BLFS Bash Startup Files, Cpio, Ed, Fcrontab, LSB-"
@@ -213,7 +210,7 @@ msgstr ""
 "Exim), Time"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/prologue/standards.xml:124
+#: lfs-en/prologue/standards.xml:123
 #, xml-text
 msgid ""
 "Alsa, ATK, Cairo, Desktop-file-utils, Freetype, Fontconfig, Gdk-pixbuf, "
@@ -225,25 +222,25 @@ msgstr ""
 "utils, Xorg"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/prologue/standards.xml:133
+#: lfs-en/prologue/standards.xml:132
 #, xml-text
 msgid "Libxml2, Libxslt"
 msgstr "Libxml2 e Libxslt"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/prologue/standards.xml:140
+#: lfs-en/prologue/standards.xml:139
 #, xml-text
 msgid "CUPS, Cups-filters, Ghostscript, SANE"
 msgstr "CUPS, Cups-filters, Ghostscript e SANE"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/prologue/standards.xml:147
+#: lfs-en/prologue/standards.xml:146
 #, xml-text
 msgid "GTK+3"
 msgstr "GTK+3"
 
 #. type: Content of: <sect1><variablelist><bridgehead>
-#: lfs-en/prologue/standards.xml:154
+#: lfs-en/prologue/standards.xml:153
 #, xml-text
 msgid ""
 "Components not supplied or optionally supplied by LFS or BLFS needed to "
@@ -253,7 +250,7 @@ msgstr ""
 " necessários para satisfazer as Exigências da LSB"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/prologue/standards.xml:164
+#: lfs-en/prologue/standards.xml:163
 #, xml-text
 msgid ""
 "<command>install_initd</command>, <filename "
@@ -275,7 +272,7 @@ msgstr ""
 "Ncurses do LFS)"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/prologue/standards.xml:182
+#: lfs-en/prologue/standards.xml:181
 #, xml-text
 msgid ""
 "<filename class='libraryfile'>libgdk-x11-2.0.so</filename> (but <filename "
@@ -292,21 +289,20 @@ msgid ""
 "the BLFS Libtiff package)"
 msgstr ""
 "<filename class='libraryfile'>libgdk-x11-2.0.so</filename> (mas <filename "
-"class='libraryfile'>libgdk-3.so</filename> é fornecido pelo pacote GTK+-3 do"
-" BLFS), <filename class='libraryfile'>libgtk-x11-2.0.so</filename> (mas "
+"class='libraryfile'>libgdk-3.so</filename> é fornecido pelo pacote GTK+-3 do "
+"BLFS), <filename class='libraryfile'>libgtk-x11-2.0.so</filename> (mas "
 "<filename class='libraryfile'>libgtk-3.so</filename> e <filename "
-"class='libraryfile'>libgtk-4.so</filename> são fornecidos pelos pacotes "
-"GTK+-3 e GTK-4 do BLFS), <filename "
-"class='libraryfile'>libpng12.so</filename> (mas <filename "
-"class='libraryfile'>libpng16.so</filename> é fornecido pelo pacote Libpng do"
-" BLFS), <filename class='libraryfile'>libQt*.so.4</filename> (mas <filename "
-"class='libraryfile'>libQt6*.so.6</filename> são fornecidos pelo pacote Qt6 "
-"do BLFS), <filename class='libraryfile'>libtiff.so.4</filename> (mas "
-"<filename class='libraryfile'>libtiff.so.6</filename> é fornecido pelo "
-"pacote Libtiff do BLFS)"
+"class='libraryfile'>libgtk-4.so</filename> são fornecidos pelos pacotes GTK+-"
+"3 e GTK-4 do BLFS), <filename class='libraryfile'>libpng12.so</filename> ("
+"mas <filename class='libraryfile'>libpng16.so</filename> é fornecido pelo "
+"pacote Libpng do BLFS), <filename class='libraryfile'>libQt*.so.4</filename> "
+"(mas <filename class='libraryfile'>libQt6*.so.6</filename> são fornecidos "
+"pelo pacote Qt6 do BLFS), <filename class='libraryfile'>libtiff.so.4</"
+"filename> (mas <filename class='libraryfile'>libtiff.so.6</filename> é "
+"fornecido pelo pacote Libtiff do BLFS)"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/prologue/standards.xml:205
+#: lfs-en/prologue/standards.xml:204
 #, xml-text
 msgid ""
 "<command>/usr/bin/python</command> (LSB requires Python2 but LFS and BLFS "
@@ -316,7 +312,7 @@ msgstr ""
 "fornecem somente Python3)"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/prologue/standards.xml:221
+#: lfs-en/prologue/standards.xml:220
 #, xml-text
 msgid ""
 "<filename class='libraryfile'>libpng15.so</filename> (but <filename "

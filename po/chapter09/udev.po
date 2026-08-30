@@ -6,10 +6,12 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-07-06 02:10-0300\n"
-"PO-Revision-Date: 2026-06-30 23:24+0000\n"
-"Last-Translator: Jamenson Ferreira Espindula de Almeida Melo <jafesp@gmail.com>\n"
-"Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/projects/linux-from-scratch/chapter09_udev/pt_BR/>\n"
+"POT-Creation-Date: 2024-01-27 04:18+0000\n"
+"PO-Revision-Date: 2026-07-10 10:50+0000\n"
+"Last-Translator: Jamenson Ferreira Espindula de Almeida Melo "
+"<jafesp@gmail.com>\n"
+"Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/"
+"projects/linux-from-scratch/chapter09_udev/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -37,16 +39,10 @@ msgstr "uso"
 
 #. type: Content of: <sect1><para>
 #: lfs-en/chapter09/udev.xml:18
-#, fuzzy, xml-text
-#| msgid ""
-#| "In <xref linkend=\"chapter-building-system\"/>, we installed the udev daemon"
-#| " when <phrase revision=\"sysv\">udev</phrase> <phrase "
-#| "revision=\"systemd\">systemd</phrase> was built. Before we go into the "
-#| "details regarding how udev works, a brief history of previous methods of "
-#| "handling devices is in order."
+#, xml-text
 msgid ""
 "In <xref linkend=\"chapter-building-system\"/>, we installed the udev daemon"
-" when <phrase revision=\"openrc\">udev</phrase> <phrase "
+" when <phrase revision=\"sysv\">udev</phrase> <phrase "
 "revision=\"systemd\">systemd</phrase> was built. Before we go into the "
 "details regarding how udev works, a brief history of previous methods of "
 "handling devices is in order."
@@ -167,13 +163,13 @@ msgid ""
 msgstr ""
 "Com o desenvolvimento da árvore do núcleo instável 2.5, liberada "
 "posteriormente como a série 2.6 dos núcleos estáveis, um novo sistema de "
-"arquivos virtuais chamado <systemitem "
-"class=\"filesystem\">sysfs</systemitem> veio a existir. O trabalho do "
-"<systemitem class=\"filesystem\">sysfs</systemitem> é o de fornecer "
-"informação a respeito da configuração de hardware do sistema para processos "
-"do espaço de usante. Com essa representação visível ao espaço de usante, "
-"tornou-se possível desenvolver um substituto de espaço de usante para o "
-"<systemitem class=\"filesystem\">devfs</systemitem>."
+"arquivos virtuais chamado <systemitem class=\"filesystem\">sysfs</"
+"systemitem> veio a existir. O trabalho do <systemitem class=\"filesystem\">"
+"sysfs</systemitem> é o de fornecer informação a respeito da configuração de "
+"hardware do sistema para processos do espaço de usante. Com essa "
+"representação visível ao espaço de usante, tornou-se possível desenvolver um "
+"substituto de espaço de usante para o <systemitem class=\"filesystem\">"
+"devfs</systemitem>."
 
 #. type: Content of: <sect1><sect2><title>
 #: lfs-en/chapter09/udev.xml:75
@@ -208,18 +204,17 @@ msgstr ""
 "O sistema de arquivos <systemitem class=\"filesystem\">sysfs</systemitem> "
 "foi brevemente mencionado acima. Alguém possivelmente questione como o "
 "<systemitem class=\"filesystem\">sysfs</systemitem> sabe a respeito dos "
-"dispositivos presentes em um sistema e quais números de dispositivo deveriam"
-" ser usados para eles. Controladores que tenham sido compilados internamente"
-" no núcleo registram os objetos deles em <systemitem "
-"class=\"filesystem\">sysfs</systemitem> (devtmpfs internamente) assim que "
-"são detectados pelo núcleo. Para controladores compilados como módulos, o "
-"registro acontece quando o módulo for carregado. Assim que o sistema de "
-"arquivos <systemitem class=\"filesystem\">sysfs</systemitem> for montado (em"
-" <filename class=\"directory\">/sys</filename>), os dados os quais os "
-"controladores tenham registrado com <systemitem "
-"class=\"filesystem\">sysfs</systemitem> ficam disponíveis para os processos "
-"de espaço de usante e para o udevd para processamento (incluindo "
-"modificações para nós de dispositivo)."
+"dispositivos presentes em um sistema e quais números de dispositivo deveriam "
+"ser usados para eles. Controladores que tenham sido compilados internamente "
+"no núcleo registram os objetos deles em <systemitem class=\"filesystem\">"
+"sysfs</systemitem> (devtmpfs internamente) assim que são detectados pelo "
+"núcleo. Para controladores compilados como módulos, o registro acontece "
+"quando o módulo for carregado. Assim que o sistema de arquivos <systemitem "
+"class=\"filesystem\">sysfs</systemitem> for montado (em <filename "
+"class=\"directory\">/sys</filename>), os dados os quais os controladores "
+"tenham registrado com <systemitem class=\"filesystem\">sysfs</systemitem> "
+"ficam disponíveis para os processos de espaço de usante e para o udevd para "
+"processamento (incluindo modificações para nós de dispositivo)."
 
 #. type: Content of: <sect1><sect2><sect3><title>
 #: lfs-en/chapter09/udev.xml:98
@@ -241,14 +236,13 @@ msgid ""
 "owner."
 msgstr ""
 "Arquivos de dispositivo são criados pelo núcleo no sistema de arquivos "
-"<systemitem class=\"filesystem\">devtmpfs</systemitem>. Qualquer controlador"
-" que deseje registrar um nó de dispositivo usará o <systemitem "
+"<systemitem class=\"filesystem\">devtmpfs</systemitem>. Qualquer controlador "
+"que deseje registrar um nó de dispositivo usará o <systemitem "
 "class=\"filesystem\">devtmpfs</systemitem> (via núcleo do controlador) para "
-"fazê-lo. Quando uma instância do <systemitem "
-"class=\"filesystem\">devtmpfs</systemitem> é montada em <filename "
-"class=\"directory\">/dev</filename>, o nó de dispositivo inicialmente será "
-"exposto para o espaço de usante com um nome, permissões e proprietário(a) "
-"fixos."
+"fazê-lo. Quando uma instância do <systemitem class=\"filesystem\">devtmpfs</"
+"systemitem> é montada em <filename class=\"directory\">/dev</filename>, o nó "
+"de dispositivo inicialmente será exposto para o espaço de usante com um "
+"nome, permissões e proprietário(a) fixos."
 
 #. type: Content of: <sect1><sect2><sect3><para>
 #: lfs-en/chapter09/udev.xml:109
@@ -326,20 +320,20 @@ msgstr ""
 "&quot;ID&quot; de fornecedor &quot;0x1319&quot; e &quot;ID&quot; de "
 "dispositivo &quot;0x0801&quot; e tem um apelido de "
 "&quot;<literal>pci:v00001319d00000801sv*sd*bc04sc01i*</literal>&quot;. Para "
-"a maioria dos dispositivos, o controlador de barramento exporta o apelido do"
-" controlador que lidaria com o dispositivo via &quot;<systemitem "
-"class=\"filesystem\">sysfs</systemitem>&quot;. Por exemplo, o arquivo "
+"a maioria dos dispositivos, o controlador de barramento exporta o apelido do "
+"controlador que lidaria com o dispositivo via &quot;<systemitem class="
+"\"filesystem\">sysfs</systemitem>&quot;. Por exemplo, o arquivo "
 "&quot;<filename>/sys/bus/pci/devices/0000:00:0d.0/modalias</filename>&quot; "
-"pode conter a sequência de caracteres "
-"&quot;<literal>pci:v00001319d00000801sv00001319sd00001319bc04sc01i00</literal>&quot;."
-" As regras padrão fornecidas com o &quot;Udev&quot; causarão o "
-"&quot;<command>udevd</command>&quot; chamar "
-"&quot;<command>/sbin/modprobe</command>&quot; com o conteúdo da variável de "
-"ambiente do &quot;uevent&quot; &quot;<envar>MODALIAS</envar>&quot; (o qual "
-"deveria ser o mesmo que o conteúdo do arquivo "
-"&quot;<filename>modalias</filename>&quot; em &quot;sysfs&quot;), dessa forma"
-" carregando todos os módulos cujos apelidos correspondam a essa sequência de"
-" caracteres depois da expansão de carácter curinga."
+"pode conter a sequência de caracteres &quot;<literal>pci:v00001319d00000801sv"
+"00001319sd00001319bc04sc01i00</literal>&quot;. As regras padrão fornecidas "
+"com o &quot;Udev&quot; causarão o &quot;<command>udevd</command>&quot; "
+"chamar &quot;<command>/sbin/modprobe</command>&quot; com o conteúdo da "
+"variável de ambiente do &quot;uevent&quot; "
+"&quot;<envar>MODALIAS</envar>&quot; (o qual deveria ser o mesmo que o "
+"conteúdo do arquivo &quot;<filename>modalias</filename>&quot; em "
+"&quot;sysfs&quot;), dessa forma carregando todos os módulos cujos apelidos "
+"correspondam a essa sequência de caracteres depois da expansão de carácter "
+"curinga."
 
 #. type: Content of: <sect1><sect2><sect3><para>
 #: lfs-en/chapter09/udev.xml:146
@@ -539,20 +533,37 @@ msgid ""
 "for more information on <quote>softdep</quote> syntax and capabilities."
 msgstr ""
 "Observe que o comando <quote>softdep</quote> também permite dependências "
-"&quot;<literal>pre:</literal>&quot;, ou uma mistura de ambas as dependências"
-" &quot;<literal>pre:</literal>&quot; e &quot;<literal>post:</literal>&quot;."
-" Veja-se a página de manual &quot;<ulink role='man' "
-"url='&man;modprobe.d.5'>modprobe.d(5)</ulink>&quot; para mais informação a "
-"respeito da sintaxe e recursos do <quote>softdep</quote>."
+"&quot;<literal>pre:</literal>&quot;, ou uma mistura de ambas as dependências "
+"&quot;<literal>pre:</literal>&quot; e &quot;<literal>post:</literal>&quot;. "
+"Veja-se a página de manual &quot;<ulink role='man' url='&man;modprobe.d."
+"5'>modprobe.d(5)</ulink>&quot; para mais informação a respeito da sintaxe e "
+"recursos do <quote>softdep</quote>."
+
+#. type: Content of: <sect1><sect2><sect3><para>
+#: lfs-en/chapter09/udev.xml:232
+#, xml-text
+msgid ""
+"If the module in question is not a wrapper and is useful by itself, "
+"configure the <command>modules</command> bootscript to load this module on "
+"system boot. To do this, add the module name to the "
+"<filename>/etc/sysconfig/modules</filename> file on a separate line.  This "
+"works for wrapper modules too, but is suboptimal in that case."
+msgstr ""
+"Se o módulo em questão não é um encapsulador e é útil por ele próprio, "
+"[então] configure o script de inicialização <command>modules</command> para "
+"carregar esse módulo na inicialização do sistema. Para fazer isso, adicione "
+"o nome do módulo ao arquivo <filename>/etc/sysconfig/modules</filename> em "
+"uma linha separada. Isso funciona para módulos encapsuladores também, mas é "
+"abaixo do ideal nesse caso."
 
 #. type: Content of: <sect1><sect2><sect3><title>
-#: lfs-en/chapter09/udev.xml:235
+#: lfs-en/chapter09/udev.xml:241
 #, xml-text
 msgid "Udev Loads Some Unwanted Module"
 msgstr "O Udev Carrega Algum Módulo Indesejado"
 
 #. type: Content of: <sect1><sect2><sect3><para>
-#: lfs-en/chapter09/udev.xml:237
+#: lfs-en/chapter09/udev.xml:243
 #, xml-text
 msgid ""
 "Either don't build the module, or blacklist it in a "
@@ -564,13 +575,13 @@ msgstr ""
 "<emphasis>forte</emphasis> no exemplo abaixo:"
 
 #. type: Content of: <sect1><sect2><sect3><screen>
-#: lfs-en/chapter09/udev.xml:241
+#: lfs-en/chapter09/udev.xml:247
 #, no-wrap, xml-text
 msgid "<literal>blacklist forte</literal>"
 msgstr "<literal>blacklist forte</literal>"
 
 #. type: Content of: <sect1><sect2><sect3><para>
-#: lfs-en/chapter09/udev.xml:243
+#: lfs-en/chapter09/udev.xml:249
 #, xml-text
 msgid ""
 "Blacklisted modules can still be loaded manually with the explicit "
@@ -580,14 +591,14 @@ msgstr ""
 "comando explícito <command>modprobe</command>."
 
 #. type: Content of: <sect1><sect2><sect3><title>
-#: lfs-en/chapter09/udev.xml:249
+#: lfs-en/chapter09/udev.xml:255
 #, xml-text
 msgid "Udev Creates a Device Incorrectly, or Makes the Wrong Symlink"
 msgstr ""
 "O Udev Cria um Dispositivo Incorretamente ou Faz o Link Simbólico Errado"
 
 #. type: Content of: <sect1><sect2><sect3><para>
-#: lfs-en/chapter09/udev.xml:251
+#: lfs-en/chapter09/udev.xml:257
 #, xml-text
 msgid ""
 "This usually happens if a rule unexpectedly matches a device. For example, a"
@@ -603,13 +614,13 @@ msgstr ""
 "mais específica, com a ajuda do comando <command>udevadm info</command>."
 
 #. type: Content of: <sect1><sect2><sect3><title>
-#: lfs-en/chapter09/udev.xml:260
+#: lfs-en/chapter09/udev.xml:266
 #, xml-text
 msgid "Udev Rule Works Unreliably"
 msgstr "Regra do Udev Funciona de Forma Não Confiável"
 
 #. type: Content of: <sect1><sect2><sect3><para>
-#: lfs-en/chapter09/udev.xml:262
+#: lfs-en/chapter09/udev.xml:268
 #, xml-text
 msgid ""
 "This may be another manifestation of the previous problem. If not, and your "
@@ -632,13 +643,13 @@ msgstr ""
 "Development se você o fizer e isso ajudar."
 
 #. type: Content of: <sect1><sect2><sect3><title>
-#: lfs-en/chapter09/udev.xml:274
+#: lfs-en/chapter09/udev.xml:280
 #, xml-text
 msgid "Udev Does Not Create a Device"
 msgstr "O Udev Não Cria um Dispositivo"
 
 #. type: Content of: <sect1><sect2><sect3><para>
-#: lfs-en/chapter09/udev.xml:276
+#: lfs-en/chapter09/udev.xml:282
 #, xml-text
 msgid ""
 "First, be certain that the driver is built into the kernel or already loaded"
@@ -649,7 +660,7 @@ msgstr ""
 "dispositivo mal nomeado."
 
 #. type: Content of: <sect1><sect2><sect3><para>
-#: lfs-en/chapter09/udev.xml:280
+#: lfs-en/chapter09/udev.xml:286
 #, xml-text
 msgid ""
 "If a kernel driver does not export its data to <systemitem "
@@ -674,7 +685,7 @@ msgstr ""
 "<filename class=\"directory\">/dev</filename> pelo <command>udev</command>."
 
 #. type: Content of: <sect1><sect2><sect3><title>
-#: lfs-en/chapter09/udev.xml:294
+#: lfs-en/chapter09/udev.xml:300
 #, xml-text
 msgid "Device Naming Order Changes Randomly After Rebooting"
 msgstr ""
@@ -682,7 +693,7 @@ msgstr ""
 "Reinicializar"
 
 #. type: Content of: <sect1><sect2><sect3><para>
-#: lfs-en/chapter09/udev.xml:296
+#: lfs-en/chapter09/udev.xml:302
 #, xml-text
 msgid ""
 "This is due to the fact that udev, by design, handles uevents and loads "
@@ -699,26 +710,25 @@ msgstr ""
 "imprevisível. Isso nunca será <quote>corrigido</quote>. Você não deveria "
 "confiar nos nomes de dispositivos do núcleo sendo estáveis. Em vez disso, "
 "crie as tuas próprias regras que fazem links simbólicos com nomes estáveis "
-"baseados em alguns atributos estáveis do dispositivo, tais como um número de"
-" série ou a saída gerada dos vários utilitários &quot;*_id&quot; instalados "
-"pelo &quot;Udev&quot;. Veja-se a &quot;<xref linkend=\"ch-config-"
-"symlinks\"/>&quot; e &quot;<xref linkend=\"ch-config-network\"/>&quot; para "
-"exemplos."
+"baseados em alguns atributos estáveis do dispositivo, tais como um número de "
+"série ou a saída gerada dos vários utilitários &quot;*_id&quot; instalados "
+"pelo &quot;Udev&quot;. Veja-se a &quot;<xref linkend=\"ch-config-symlinks\""
+"/>&quot; e &quot;<xref linkend=\"ch-config-network\"/>&quot; para exemplos."
 
 #. type: Content of: <sect1><sect2><title>
-#: lfs-en/chapter09/udev.xml:310
+#: lfs-en/chapter09/udev.xml:316
 #, xml-text
 msgid "Useful Reading"
 msgstr "Leitura Útil"
 
 #. type: Content of: <sect1><sect2><para>
-#: lfs-en/chapter09/udev.xml:312
+#: lfs-en/chapter09/udev.xml:318
 #, xml-text
 msgid "Additional helpful documentation is available at the following sites:"
 msgstr "Documentação útil adicional está disponível nos seguintes sítios:"
 
 #. type: Content of: <sect1><sect2><itemizedlist><listitem><para>
-#: lfs-en/chapter09/udev.xml:318
+#: lfs-en/chapter09/udev.xml:324
 #, xml-text
 msgid ""
 "A Userspace Implementation of <systemitem "
@@ -726,13 +736,12 @@ msgid ""
 "url=\"http://www.kroah.com/linux/talks/ols_2003_udev_paper/Reprint-Kroah-"
 "Hartman-OLS2003.pdf\"/>"
 msgstr ""
-"Uma implementação de espaço de usuário(a) do <systemitem "
-"class=\"filesystem\">devfs</systemitem> <ulink "
-"url=\"http://www.kroah.com/linux/talks/ols_2003_udev_paper/Reprint-Kroah-"
-"Hartman-OLS2003.pdf\"/>"
+"Uma implementação de espaço de usante do <systemitem class=\"filesystem\">"
+"devfs</systemitem> <ulink url=\"http://www.kroah.com/linux/talks/"
+"ols_2003_udev_paper/Reprint-Kroah-Hartman-OLS2003.pdf\"/>"
 
 #. type: Content of: <sect1><sect2><itemizedlist><listitem><para>
-#: lfs-en/chapter09/udev.xml:323
+#: lfs-en/chapter09/udev.xml:329
 #, xml-text
 msgid ""
 "The <systemitem class=\"filesystem\">sysfs</systemitem> Filesystem <ulink "
@@ -741,18 +750,3 @@ msgstr ""
 "O Sistema de Arquivos <systemitem class=\"filesystem\">sysfs</systemitem> "
 "<ulink "
 "url=\"http://www.kernel.org/pub/linux/kernel/people/mochel/doc/papers/ols-2005/mochel.pdf\"/>"
-
-#, xml-text
-#~ msgid ""
-#~ "If the module in question is not a wrapper and is useful by itself, "
-#~ "configure the <command>modules</command> bootscript to load this module on "
-#~ "system boot. To do this, add the module name to the "
-#~ "<filename>/etc/sysconfig/modules</filename> file on a separate line.  This "
-#~ "works for wrapper modules too, but is suboptimal in that case."
-#~ msgstr ""
-#~ "Se o módulo em questão não é um encapsulador e é útil por ele próprio, "
-#~ "[então] configure o script de inicialização <command>modules</command> para "
-#~ "carregar esse módulo na inicialização do sistema. Para fazer isso, adicione "
-#~ "o nome do módulo ao arquivo <filename>/etc/sysconfig/modules</filename> em "
-#~ "uma linha separada. Isso funciona para módulos encapsuladores também, mas é "
-#~ "abaixo do ideal nesse caso."

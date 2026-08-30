@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-07-06 02:09-0300\n"
-"PO-Revision-Date: 2025-06-06 16:18+0000\n"
+"POT-Creation-Date: 2026-08-30 16:58-0300\n"
+"PO-Revision-Date: 2026-08-15 16:18+0000\n"
 "Last-Translator: Jamenson Ferreira Espindula de Almeida Melo <jafesp@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/projects/linux-from-scratch/chapter08_gmp/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.10\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. type: Content of: <sect1><sect1info><address>
 #: lfs-en/chapter08/gmp.xml:14
@@ -109,7 +109,13 @@ msgstr ""
 
 #. type: Content of: <sect1><sect2><note><para>
 #: lfs-en/chapter08/gmp.xml:54
-#, xml-text
+#, fuzzy, xml-text
+#| msgid ""
+#| "The default settings of GMP produce libraries optimized for the host "
+#| "processor.  If libraries suitable for processors less capable than the "
+#| "host's CPU are desired, generic libraries can be created by appending the "
+#| "<option>--disable-assembly</option> option to the "
+#| "<command>configure</command> command."
 msgid ""
 "The default settings of GMP produce libraries optimized for the host "
 "processor.  If libraries suitable for processors less capable than the "
@@ -117,11 +123,11 @@ msgid ""
 "<option>--host=none-linux-gnu</option> option to the "
 "<command>configure</command> command."
 msgstr ""
-"As configurações padrão do \"GMP\" produzem bibliotecas otimizadas para o "
+"As configurações padrão do GMP produzem bibliotecas otimizadas para o "
 "processador anfitrião. Se bibliotecas adequadas para processadores menos "
-"capazes que a CPU do anfitrião forem desejadas, [então] bibliotecas "
-"genéricas podem ser criadas anexando a opção <option>--host=none-linux-"
-"gnu</option> ao comando <command>configure</command>."
+"capazes que a CPU do anfitrião forem desejadas, bibliotecas genéricas podem "
+"ser criadas pospondo-se a opção <option>--disable-assembly</option> ao "
+"comando <command>configure</command>."
 
 #. type: Content of: <sect1><sect2><para>
 #: lfs-en/chapter08/gmp.xml:65
@@ -227,12 +233,8 @@ msgstr "Teste os resultados:"
 #. type: Content of: <sect1><sect2><screen>
 #: lfs-en/chapter08/gmp.xml:108
 #, no-wrap, xml-text
-msgid ""
-"<userinput remap=\"test\">make check 2>&amp;1 | tee gmp-check-"
-"log</userinput>"
-msgstr ""
-"<userinput remap=\"test\">make check 2>&amp;1 | tee gmp-check-"
-"log</userinput>"
+msgid "<userinput remap=\"test\">make check</userinput>"
+msgstr "<userinput remap=\"test\">make check</userinput>"
 
 #. type: Content of: <sect1><sect2><caution><para>
 #: lfs-en/chapter08/gmp.xml:110
@@ -267,11 +269,11 @@ msgstr ""
 #: lfs-en/chapter08/gmp.xml:123
 #, no-wrap, xml-text
 msgid ""
-"<userinput remap=\"test\">awk '/# PASS:/{total+=$3} ; END{print total}' gmp-"
-"check-log</userinput>"
+"<userinput remap=\"test\">cat $(find -name '*.log') | grep -c "
+"^PASS</userinput>"
 msgstr ""
-"<userinput remap=\"test\">awk '/# PASS:/{total+=$3} ; END{print total}' gmp-"
-"check-log</userinput>"
+"<userinput remap=\"test\">cat $(find -name '*.log') | grep -c "
+"^PASS</userinput>"
 
 #. type: Content of: <sect1><sect2><para>
 #: lfs-en/chapter08/gmp.xml:125
@@ -370,6 +372,14 @@ msgstr "Contém funções matemáticas de precisão C++"
 #, xml-text
 msgid "libgmpxx"
 msgstr "libgmpxx"
+
+#, no-wrap, xml-text
+#~ msgid ""
+#~ "<userinput remap=\"test\">awk '/# PASS:/{total+=$3} ; END{print total}' gmp-"
+#~ "check-log</userinput>"
+#~ msgstr ""
+#~ "<userinput remap=\"test\">awk '/# PASS:/{total+=$3} ; END{print total}' gmp-"
+#~ "check-log</userinput>"
 
 #, no-wrap, xml-text
 #~ msgid ""

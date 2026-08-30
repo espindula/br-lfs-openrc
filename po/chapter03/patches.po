@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-07-06 02:10-0300\n"
-"PO-Revision-Date: 2026-07-02 03:06+0000\n"
+"POT-Creation-Date: 2026-08-30 16:59-0300\n"
+"PO-Revision-Date: 2026-08-17 04:18+0000\n"
 "Last-Translator: Jamenson Ferreira Espindula de Almeida Melo <jafesp@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/projects/linux-from-scratch/chapter03_patches/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -48,8 +48,9 @@ msgstr ""
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
 #: lfs-en/chapter03/patches.xml:49
-#, xml-text
-msgid "Download: <ulink url=\"&patches-root;&bzip2-docs-patch;\"/>"
+#, fuzzy, xml-text
+#| msgid "Download: <ulink url=\"&patches-root;&bzip2-docs-patch;\"/>"
+msgid "Download: <ulink url=\"&patches-root;bzip2/&bzip2-docs-patch;\"/>"
 msgstr "Transferência: <ulink url=\"&patches-root;&bzip2-docs-patch;\"/>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
@@ -70,8 +71,9 @@ msgstr ""
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
 #: lfs-en/chapter03/patches.xml:57
-#, xml-text
-msgid "Download: <ulink url=\"&patches-root;&coreutils-i18n-patch;\"/>"
+#, fuzzy, xml-text
+#| msgid "Download: <ulink url=\"&patches-root;&coreutils-i18n-patch;\"/>"
+msgid "Download: <ulink url=\"&patches-root;coreutils/&coreutils-i18n-patch;\"/>"
 msgstr "Transferência: <ulink url=\"&patches-root;&coreutils-i18n-patch;\"/>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
@@ -89,8 +91,9 @@ msgstr "Remendo GCC15 do Expect - <token>&expect-gcc15-patch-size;</token>:"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
 #: lfs-en/chapter03/patches.xml:65
-#, xml-text
-msgid "Download: <ulink url=\"&patches-root;&expect-gcc15-patch;\"/>"
+#, fuzzy, xml-text
+#| msgid "Download: <ulink url=\"&patches-root;&expect-gcc15-patch;\"/>"
+msgid "Download: <ulink url=\"&patches-root;expect/&expect-gcc15-patch;\"/>"
 msgstr "Download: <ulink url=\"&patches-root;&expect-gcc15-patch;\"/>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
@@ -110,8 +113,9 @@ msgstr ""
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
 #: lfs-en/chapter03/patches.xml:83
-#, xml-text
-msgid "Download: <ulink url=\"&patches-root;&glibc-upstream-patch;\"/>"
+#, fuzzy, xml-text
+#| msgid "Download: <ulink url=\"&patches-root;&glibc-upstream-patch;\"/>"
+msgid "Download: <ulink url=\"&patches-root;glibc/&glibc-upstream-patch;\"/>"
 msgstr "Transferência: <ulink url=\"&patches-root;&glibc-upstream-patch;\"/>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
@@ -129,8 +133,9 @@ msgstr "Remendo do FHS da Glibc - <token>&glibc-fhs-patch-size;</token>:"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
 #: lfs-en/chapter03/patches.xml:91
-#, xml-text
-msgid "Download: <ulink url=\"&patches-root;&glibc-fhs-patch;\"/>"
+#, fuzzy, xml-text
+#| msgid "Download: <ulink url=\"&patches-root;&glibc-fhs-patch;\"/>"
+msgid "Download: <ulink url=\"&patches-root;glibc/&glibc-fhs-patch;\"/>"
 msgstr "Transferência: <ulink url=\"&patches-root;&glibc-fhs-patch;\"/>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
@@ -150,8 +155,9 @@ msgstr ""
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
 #: lfs-en/chapter03/patches.xml:99
-#, xml-text
-msgid "Download: <ulink url=\"&patches-root;&kbd-backspace-patch;\"/>"
+#, fuzzy, xml-text
+#| msgid "Download: <ulink url=\"&patches-root;&kbd-backspace-patch;\"/>"
+msgid "Download: <ulink url=\"&patches-root;kbd/&kbd-backspace-patch;\"/>"
 msgstr "Transferência: <ulink url=\"&patches-root;&kbd-backspace-patch;\"/>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
@@ -188,39 +194,59 @@ msgstr "Soma de verificação MD5: <literal>&expect-gcc15-patch-md5;</literal>"
 #: lfs-en/chapter03/patches.xml:137
 #, xml-text
 msgid ""
-"Python OpenSSL 4 Patch - <token>&python-openssl4-fixes-patch-size;</token>:"
+"Python Openssl4 Patch - <token>&python-openssl4-fixes-patch-size;</token>:"
 msgstr ""
-"Remendo OpenSSL 4 do Python - <token>&python-openssl4-fixes-patch-"
+"Remendo Openssl4 do Python - <token>&python-openssl4-fixes-patch-"
 "size;</token>:"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
 #: lfs-en/chapter03/patches.xml:139
 #, fuzzy, xml-text
 #| msgid ""
-#| "Download: <ulink url=\"&patches-root;&python-consolidated-fixes-patch;\"/>"
-msgid "Download: <ulink url=\"&patches-root;&python-openssl4-fixes-patch;\"/>"
-msgstr ""
-"Transferência: <ulink url=\"&patches-root;&python-consolidated-fixes-"
+#| "Download: <ulink url=\"&patches-root;&python-openssl4-fixes-patch;\"/>"
+msgid ""
+"Download: <ulink url=\"&patches-root;Python/&python-openssl4-fixes-"
 "patch;\"/>"
+msgstr ""
+"Transferência: <ulink url=\"&patches-root;&python-openssl4-fixes-patch;\"/>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
 #: lfs-en/chapter03/patches.xml:140
-#, fuzzy, xml-text
-#| msgid ""
-#| "MD5 sum: <literal>&python-consolidated-fixes-patch-md5;</literal>"
+#, xml-text
 msgid "MD5 sum: <literal>&python-openssl4-fixes-patch-md5;</literal>"
 msgstr ""
-"Soma de verificação MD5: <literal>&python-consolidated-fixes-patch-"
+"Soma de verificação MD5: <literal>&python-openssl4-fixes-patch-"
 "md5;</literal>"
 
+#. type: Content of: <sect1><variablelist><varlistentry><term>
+#: lfs-en/chapter03/patches.xml:171
+#, xml-text
+msgid "Tar Upstream Patch - <token>&tar-aclfix-patch-size;</token>:"
+msgstr ""
+"Remendo de Fluxo de Desenvolvimento do Tar - <token>&tar-aclfix-patch-"
+"size;</token>:"
+
+#. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
+#: lfs-en/chapter03/patches.xml:173
+#, fuzzy, xml-text
+#| msgid "Download: <ulink url=\"&patches-root;&tar-aclfix-patch;\"/>"
+msgid "Download: <ulink url=\"&patches-root;tar/&tar-aclfix-patch;\"/>"
+msgstr "Transferência: <ulink url=\"&patches-root;&tar-aclfix-patch;\"/>"
+
+#. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
+#: lfs-en/chapter03/patches.xml:174
+#, xml-text
+msgid "MD5 sum: <literal>&tar-aclfix-patch-md5;</literal>"
+msgstr "Soma de verificação MD5: <literal>&tar-aclfix-patch-md5;</literal>"
+
 #. type: Content of: <sect1><para>
-#: lfs-en/chapter03/patches.xml:190
+#: lfs-en/chapter03/patches.xml:197
 #, xml-text
 msgid "Total size of these patches: about <returnvalue/>"
 msgstr "Tamanho total desses remendos: cerca de <returnvalue/>"
 
 #. type: Content of: <sect1><para>
-#: lfs-en/chapter03/patches.xml:192
+#: lfs-en/chapter03/patches.xml:199
 #, xml-text
 msgid ""
 "In addition to the above required patches, there exist a number of optional "
@@ -237,14 +263,6 @@ msgstr ""
 "remendos localizada em <ulink url=\"&lfs-root;patches/downloads/\"/> e "
 "adquirir quaisquer remendos adicionais para atender às necessidades do seu "
 "sistema."
-
-#, xml-text
-#~ msgid ""
-#~ "Python Consolidated Patch - <token>&python-consolidated-fixes-patch-"
-#~ "size;</token>:"
-#~ msgstr ""
-#~ "Remendo Consolidado do Python - <token>&python-consolidated-fixes-patch-"
-#~ "size;</token>:"
 
 #, xml-text
 #~ msgid ""
@@ -266,18 +284,12 @@ msgstr ""
 #~ "md5;</literal>"
 
 #, xml-text
-#~ msgid "Tar Upstream Patch - <token>&tar-aclfix-patch-size;</token>:"
-#~ msgstr ""
-#~ "Remendo de Fluxo de Desenvolvimento do Tar - <token>&tar-aclfix-patch-"
+#~ msgid ""
+#~ "Python Consolidated Patch - <token>&python-consolidated-fixes-patch-"
 #~ "size;</token>:"
-
-#, xml-text
-#~ msgid "Download: <ulink url=\"&patches-root;&tar-aclfix-patch;\"/>"
-#~ msgstr "Transferência: <ulink url=\"&patches-root;&tar-aclfix-patch;\"/>"
-
-#, xml-text
-#~ msgid "MD5 sum: <literal>&tar-aclfix-patch-md5;</literal>"
-#~ msgstr "Soma de verificação MD5: <literal>&tar-aclfix-patch-md5;</literal>"
+#~ msgstr ""
+#~ "Remendo Consolidado do Python - <token>&python-consolidated-fixes-patch-"
+#~ "size;</token>:"
 
 #, fuzzy, xml-text
 #~ msgid "Download: <ulink url=\"&tar-aclfix-patch;\"/>"

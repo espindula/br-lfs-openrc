@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-07-06 02:11-0300\n"
-"PO-Revision-Date: 2026-07-02 03:06+0000\n"
+"POT-Creation-Date: 2026-08-30 16:59-0300\n"
+"PO-Revision-Date: 2026-08-08 11:03+0000\n"
 "Last-Translator: Jamenson Ferreira Espindula de Almeida Melo <jafesp@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/projects/linux-from-scratch/chapter01_whatsnew/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -37,6 +37,18 @@ msgstr ""
 #, xml-text
 msgid "Upgraded to:"
 msgstr "Atualizado para:"
+
+#. type: Content of: <sect1><itemizedlist><listitem><para>
+#: lfs-en/chapter01/whatsnew.xml:30
+#, xml-text
+msgid "Acl-&acl-version;"
+msgstr "Acl-&acl-version;"
+
+#. type: Content of: <sect1><itemizedlist><listitem><para>
+#: lfs-en/chapter01/whatsnew.xml:33
+#, xml-text
+msgid "Attr-&attr-version;"
+msgstr "Attr-&attr-version;"
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
 #: lfs-en/chapter01/whatsnew.xml:36
@@ -75,10 +87,34 @@ msgid "File-&file-version;"
 msgstr "File-&file-version;"
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
+#: lfs-en/chapter01/whatsnew.xml:81
+#, xml-text
+msgid "Findutils-&findutils-version;"
+msgstr "Findutils-&findutils-version;"
+
+#. type: Content of: <sect1><itemizedlist><listitem><para>
+#: lfs-en/chapter01/whatsnew.xml:87
+#, xml-text
+msgid "Flit-Core-&flit-core-version;"
+msgstr "Flit-Core-&flit-core-version;"
+
+#. type: Content of: <sect1><itemizedlist><listitem><para>
 #: lfs-en/chapter01/whatsnew.xml:90
 #, xml-text
 msgid "Gawk-&gawk-version;"
 msgstr "Gawk-&gawk-version;"
+
+#. type: Content of: <sect1><itemizedlist><listitem><para>
+#: lfs-en/chapter01/whatsnew.xml:93
+#, xml-text
+msgid "GCC-&gcc-version;"
+msgstr "GCC-&gcc-version;"
+
+#. type: Content of: <sect1><itemizedlist><listitem><para>
+#: lfs-en/chapter01/whatsnew.xml:102
+#, xml-text
+msgid "Glibc-&glibc-version;"
+msgstr "Glibc-&glibc-version;"
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
 #: lfs-en/chapter01/whatsnew.xml:114
@@ -129,6 +165,18 @@ msgid "Libelf from Elfutils-&elfutils-version;"
 msgstr "Libelf originário do Elfutils-&elfutils-version;"
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
+#: lfs-en/chapter01/whatsnew.xml:156
+#, xml-text
+msgid "Libffi-&libffi-version;"
+msgstr "Libffi-&libffi-version;"
+
+#. type: Content of: <sect1><itemizedlist><listitem><para>
+#: lfs-en/chapter01/whatsnew.xml:162
+#, xml-text
+msgid "Libtool-&libtool-version;"
+msgstr "Libtool-&libtool-version;"
+
+#. type: Content of: <sect1><itemizedlist><listitem><para>
 #: lfs-en/chapter01/whatsnew.xml:168
 #, xml-text
 msgid "Linux-&linux-version;"
@@ -169,6 +217,18 @@ msgstr "Packaging-&packaging-version;"
 #, xml-text
 msgid "Perl-&perl-version;"
 msgstr "Perl-&perl-version;"
+
+#. type: Content of: <sect1><itemizedlist><listitem><para>
+#: lfs-en/chapter01/whatsnew.xml:222
+#, xml-text
+msgid "Pkgconf-&pkgconf-version;"
+msgstr "Pkgconf-&pkgconf-version;"
+
+#. type: Content of: <sect1><itemizedlist><listitem><para>
+#: lfs-en/chapter01/whatsnew.xml:225
+#, xml-text
+msgid "Procps-ng-&procps-ng-version;"
+msgstr "Procps-ng-&procps-ng-version;"
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
 #: lfs-en/chapter01/whatsnew.xml:231
@@ -263,20 +323,20 @@ msgstr "Adicionado:"
 #. type: Content of: <sect1><itemizedlist><listitem><para>
 #: lfs-en/chapter01/whatsnew.xml:307
 #, xml-text
-msgid "glibc-2.43-linux7_fixes-1.patch"
-msgstr "glibc-2.43-linux7_fixes-1.patch"
+msgid "mpdecimal-4.0.1"
+msgstr "mpdecimal-4.0.1"
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
 #: lfs-en/chapter01/whatsnew.xml:308
 #, xml-text
-msgid "Python-3.14.6-openssl_4-1.patch"
-msgstr "Python-3.14.6-openssl_4-1.patch"
+msgid "tar-1.35-acl_fix-1.patch"
+msgstr "tar-1.35-acl_fix-1.patch"
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
 #: lfs-en/chapter01/whatsnew.xml:309
 #, xml-text
-msgid "systemd-260.1-buildfix-1.patch"
-msgstr "systemd-260.1-buildfix-1.patch"
+msgid "Python-3.14.6-consolidated_fixes-1.patch"
+msgstr "Python-3.14.6-consolidated_fixes-1.patch"
 
 #. type: Content of: <sect1><itemizedlist><title>
 #: lfs-en/chapter01/whatsnew.xml:313
@@ -297,24 +357,16 @@ msgid "intltool (Moved to BLFS)"
 msgstr "intltool (Movido para BLFS)"
 
 #, xml-text
-#~ msgid "Acl-&acl-version;"
-#~ msgstr "Acl-&acl-version;"
+#~ msgid "glibc-2.43-linux7_fixes-1.patch"
+#~ msgstr "glibc-2.43-linux7_fixes-1.patch"
 
 #, xml-text
-#~ msgid "Attr-&attr-version;"
-#~ msgstr "Attr-&attr-version;"
+#~ msgid "Python-3.14.6-openssl_4-1.patch"
+#~ msgstr "Python-3.14.6-openssl_4-1.patch"
 
 #, xml-text
-#~ msgid "Libffi-&libffi-version;"
-#~ msgstr "Libffi-&libffi-version;"
-
-#, xml-text
-#~ msgid "tar-1.35-acl_fix-1.patch"
-#~ msgstr "tar-1.35-acl_fix-1.patch"
-
-#, xml-text
-#~ msgid "Python-3.14.6-consolidated_fixes-1.patch"
-#~ msgstr "Python-3.14.6-consolidated_fixes-1.patch"
+#~ msgid "systemd-260.1-buildfix-1.patch"
+#~ msgstr "systemd-260.1-buildfix-1.patch"
 
 #, xml-text
 #~ msgid "XML::Parser-&xml-parser-version;"
@@ -323,10 +375,6 @@ msgstr "intltool (Movido para BLFS)"
 #, xml-text
 #~ msgid "Gettext-&gettext-version;"
 #~ msgstr "Gettext-&gettext-version;"
-
-#, xml-text
-#~ msgid "Glibc-&glibc-version;"
-#~ msgstr "Glibc-&glibc-version;"
 
 #, xml-text
 #~ msgid "GRUB-&grub-version;"
@@ -355,10 +403,6 @@ msgstr "intltool (Movido para BLFS)"
 #, xml-text
 #~ msgid "Pcre2-&pcre2-version;"
 #~ msgstr "Pcre2-&pcre2-version;"
-
-#, xml-text
-#~ msgid "Procps-ng-&procps-ng-version;"
-#~ msgstr "Procps-ng-&procps-ng-version;"
 
 #, xml-text
 #~ msgid "Zlib-&zlib-version;"
@@ -409,10 +453,6 @@ msgstr "intltool (Movido para BLFS)"
 #~ msgstr "Diffutils-&diffutils-version;"
 
 #, xml-text
-#~ msgid "GCC-&gcc-version;"
-#~ msgstr "GCC-&gcc-version;"
-
-#, xml-text
 #~ msgid "Grep-&grep-version;"
 #~ msgstr "Grep-&grep-version;"
 
@@ -439,10 +479,6 @@ msgstr "intltool (Movido para BLFS)"
 #, xml-text
 #~ msgid "Patch-&patch-version;"
 #~ msgstr "Patch-&patch-version;"
-
-#, xml-text
-#~ msgid "Pkgconf-&pkgconf-version;"
-#~ msgstr "Pkgconf-&pkgconf-version;"
 
 #, xml-text
 #~ msgid "Readline-&readline-version;"
@@ -473,10 +509,6 @@ msgstr "intltool (Movido para BLFS)"
 #~ msgstr "Bc-&bc-version;"
 
 #, xml-text
-#~ msgid "Libtool-&libtool-version;"
-#~ msgstr "Libtool-&libtool-version;"
-
-#, xml-text
 #~ msgid "SysVinit-&sysvinit-version;"
 #~ msgstr "SysVinit-&sysvinit-version;"
 
@@ -491,10 +523,6 @@ msgstr "intltool (Movido para BLFS)"
 #, xml-text
 #~ msgid "expect-5.45.4-gcc14-1.patch"
 #~ msgstr "expect-5.45.4-gcc14-1.patch"
-
-#, xml-text
-#~ msgid "Findutils-&findutils-version;"
-#~ msgstr "Findutils-&findutils-version;"
 
 #, xml-text
 #~ msgid "Psmisc-&psmisc-version;"
