@@ -28,8 +28,8 @@
 <!ENTITY glibc-fhs-patch-size "2.8 KB">
 
 <!ENTITY glibc-upstream-patch "glibc-&glibc-version;-upstream_fixes-1.patch">
-<!ENTITY glibc-upstream-patch-md5 "1f5074a1dce85a72d2ea465ca76e420b">
-<!ENTITY glibc-upstream-patch-size "49 KB">
+<!ENTITY glibc-upstream-patch-md5 "990574184b25aa3029a2444e81865098">
+<!ENTITY glibc-upstream-patch-size "172 KB">
 
 <!ENTITY kbd-backspace-patch "kbd-&kbd-version;-backspace-1.patch">
 <!ENTITY kbd-backspace-patch-md5 "f75cca16a38da6caa7d52151f7136895">
@@ -56,13 +56,12 @@
 -->
 
 <!--
-<!ENTITY sysvinit-consolidated-patch "sysvinit-&sysvinit-version;-consolidated-1.patch">
-<!ENTITY sysvinit-consolidated-patch-md5 "3af8fd8e13cad481eeeaa48be4247445">
-<!ENTITY sysvinit-consolidated-patch-size "2.5 KB">
--->
-
-<!--
 <!ENTITY systemd-upstream-patch "systemd-&systemd-version;-buildfix-1.patch">
 <!ENTITY systemd-upstream-patch-md5 "f08b5f6d1337ac9b0ed06ff9fa4226af">
 <!ENTITY systemd-upstream-patch-size "4.2 KB">
 -->
+
+<!ENTITY tar-aclfix-patch "tar-&tar-version;-acl_fix-1.patch">
+<!ENTITY tar-aclfix-patch-md5 "dbab49e317105539611866dac5dd54f6">
+<!ENTITY tar-aclfix-patch-size "4.3 KB">
+

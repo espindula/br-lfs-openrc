@@ -1,8 +1,8 @@
 <![ %openrc; [
-<!ENTITY version           "r13.0-225-openrc-wip">
+<!ENTITY version           "r13.0-301-openrc-wip">
 ]]>
 <![ %systemd; [
-<!ENTITY version          "r13.0-225-systemd-wip">
+<!ENTITY version          "r13.0-301-systemd-wip">
 ]]>
-<!ENTITY releasedate       "June 22nd, 2026">
+<!ENTITY releasedate       "28 de agosto de 2026">
 <!ENTITY copyrightdate     "1999-2026">
