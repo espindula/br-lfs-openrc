@@ -38,15 +38,25 @@ livro.</para>
       </itemizedlist>
     </listitem>
 
-    Note:  If a change is only specific to openrc or systemd, then use
-    <listitem revision="openrc"> or <listitem revision="systemd"> as
+    Note:  If a change is only specific to sysv or systemd, then use
+    <listitem revision="sysv"> or <listitem revision="systemd"> as
     appropriate for the entry or if needed the entire day's listitem.
     -->
-<listitem revision="openrc">
-      <para>2026-08-25</para>
+<listitem>
+      <para>2026-09-01</para>
       <itemizedlist>
         <listitem>
-          <para>[zeckma] - Atualização para openrc-0.63.3.</para>
+          <para>[bdubbs] - LFS-13.1 lançado.</para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
+      <para>2026-08-31</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Atualização para vim-9.2.1025 (atualização de segurança). Corrige
+<ulink url="&lfs-ticket-root;6006">#6006</ulink>.</para>
         </listitem>
       </itemizedlist>
     </listitem>
@@ -599,8 +609,7 @@ url='&lfs-ticket-root;5892'>#5892</ulink>.</para>
 url='&lfs-ticket-root;4500'>#4500</ulink>.</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - Atualização para <phrase revision="sysv">Udev originário
-do</phrase> systemd-260.1. Corrige <ulink
+          <para>[bdubbs] - Atualização para systemd-260.1. Corrige <ulink
 url='&lfs-ticket-root;5890'>#5890</ulink>.</para>
         </listitem>
         <listitem>
@@ -672,8 +681,7 @@ url='&lfs-ticket-root;5882'>#5882</ulink>.</para>
 url='&lfs-ticket-root;5883'>#5883</ulink>.</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - Atualização para <phrase revision="sysv">Udev originário
-do</phrase> systemd-259.5. Corrige <ulink
+          <para>[bdubbs] - Atualização para systemd-259.5. Corrige <ulink
 url='&lfs-ticket-root;5879'>#5879</ulink>.</para>
         </listitem>
         <listitem>
