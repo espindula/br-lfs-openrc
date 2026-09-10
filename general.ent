@@ -1,14 +1,14 @@
 <!-- Editing  up to the line of ==== should be enough
      to generate a book for development, release, or rc-->
-<!ENTITY % development "INCLUDE"><!-- set to INCLUDE for development,
+<!ENTITY % development "IGNORE"><!-- set to INCLUDE for development,
                                       set to IGNORE for release or rc -->
-<!ENTITY % release     "IGNORE"> <!-- set to INCLUDE for release,
+<!ENTITY % release     "INCLUDE"> <!-- set to INCLUDE for release,
                                       set to IGNORE for development or rc -->
 <!ENTITY % rc          "IGNORE"> <!-- set to INCLUDE for rc,
                                       set to IGNORE for development or
                                        release -->
-<!ENTITY % relnum "13.0"><!-- must be given for release or rc -->
-<!ENTITY % reldate "05 de março de 2026"><!-- must ve given for release or rc -->
+<!ENTITY % relnum "13.1"><!-- must be given for release or rc -->
+<!ENTITY % reldate "1º de setembro de 2026"><!-- must ve given for release or rc -->
 <!ENTITY % crdate "1999-2026"><!-- must ve given for release or rc -->
 <!ENTITY % rcnum  "0"><!-- must be given only for rc -->
 <!-- ================================================================== -->
@@ -89,14 +89,15 @@
 <!ENTITY hints-root      "&lfs-root;hints/downloads/files/">
 <!ENTITY hints-index     "&lfs-root;hints/list.html">
 <!ENTITY patches-root    "&lfs-root;patches/lfs/&generic-version;/">
+<!-- Only used for sysv (lfs-bootscripts): -->
 <!ENTITY downloads-root  "&lfs-root;lfs/downloads/&generic-version;/">
 <!ENTITY livecd-root     "&lfs-root;livecd/">
 <!ENTITY test-results    "&lfs-root;lfs/build-logs/&generic-version;/">
-<!ENTITY secadv          "&lfs-root;lfs/advisories/">
+<!ENTITY secadv          "&lfs-root;advisories/">
 
-<!-- 5.4 EOL is Dec 2025
-	 so for LFS 12.5 we may consider moving to 5.10. -->
-<!ENTITY min-kernel      "5.4">
+<!-- 5.10 EOL is Dec 2026
+	 so for LFS 13.2 we may consider moving to 5.15. -->
+<!ENTITY min-kernel      "5.10">
 
 <!--
 <!ENTITY patches-rootd   "&lfs-root;patches/lfs/&generic-versiond;/">
