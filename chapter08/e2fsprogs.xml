@@ -328,7 +328,7 @@ class="filesystem">ext[234}</systemitem> para erros</para>
         <listitem>
           <para>Repete o registro de desfazer para um sistema de arquivos <systemitem
 class="filesystem">ext[234}</systemitem> encontrado em um dispositivo. [Isso
-pode ser usado para desfazer uma operação falha por um aplicativo do
+pode ser usado para desfazer uma operação falha por um programa do
 E2fsprogs].</para>
           <indexterm zone="ch-system-e2fsprogs e2undo">
             <primary sortas="b-e2undo">e2undo</primary>

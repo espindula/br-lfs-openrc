@@ -87,9 +87,9 @@ dentro dos manuais. Por exemplo, o <command>passwd</command> tem duas
 páginas de manual. Conforme as instruções de instalação do LFS, essas duas
 páginas de manual estarão localizadas em
 <filename>/usr/share/man/man1/passwd.1</filename> e
-<filename>/usr/share/man/man5/passwd.5</filename>. Quando o livro usa <ulink
-role='man' url='&man;/passwd.5'>passwd(5)</ulink> ele está se referindo
-especificamente a
+<filename>/usr/share/man/man5/passwd.5</filename>. Quando o livro usar
+<ulink role='man' url='&man;/passwd.5'>passwd(5)</ulink> ele está se
+referindo especificamente a
 <filename>/usr/share/man/man5/passwd.5</filename>. <command>man
 passwd</command> imprimirá a primeira página de manual que achar que
 corresponde a <quote>passwd</quote>, a qual será

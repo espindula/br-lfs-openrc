@@ -315,7 +315,7 @@ Reinicializar</title>
       <para>Isso é devido ao fato de o udev, pelo projeto, lidar com uevents e carregar
 módulos em paralelo e, assim, em uma ordem imprevisível. Isso nunca será
 <quote>corrigido</quote>. Você não deveria confiar nos nomes de dispositivos
-do núcleo sendo estáveis. Em vez disso, crie tuas próprias regras que fazem
+do núcleo sendo estáveis. Em vez disso, crie tuas próprias regras que façam
 linques simbólicos com nomes estáveis baseados em alguns atributos estáveis
 do dispositivo, tais como um número serial ou a saída gerada dos vários
 utilitários *_id instalados pelo udev. Veja-se a <xref

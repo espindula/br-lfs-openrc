@@ -2722,7 +2722,7 @@ Sed e Zlib</seg>
       <segmentedlist id="pkgconf-before">
         <segtitle>&before;</segtitle>
         <seglistitem>
-          <seg>Binutils, <phrase revision='systemd'>D-Bus, </phrase>E2fsprogs, IProute2,
+          <seg>Binutils, <phrase revision='systemd'>D-Bus, </phrase> E2fsprogs, IProute2,
 Kmod, Man-DB, Procps-ng, Python, &systemd-udev; e Util-linux</seg>
         </seglistitem>
       </segmentedlist>

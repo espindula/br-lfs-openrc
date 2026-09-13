@@ -8,7 +8,7 @@
 <sect1 id="ch-system-cleanup">
   <?dbhtml filename="cleanup.html"?>
 
-  <title>Limpando</title>
+  <title>Organizando</title>
 
   <para>Finalmente, limpe alguns arquivos extras deixados pela execução de testes:</para>
 

@@ -231,7 +231,7 @@ seguro continuar.</para>
 <screen><userinput remap="install">make install</userinput></screen>
 
     <para>O diretório de construção do GCC é de propriedade de <systemitem
-class="username">tester</systemitem> agora e a titularidade de propriedade
+class="username"> tester</systemitem> agora e a titularidade de propriedade
 do diretório instalado do cabeçalho (e o conteúdo dele) está incorreto. Mude
 a titularidade de propriedade para o(a) usante e grupo <systemitem
 class="username">root</systemitem>:</para>

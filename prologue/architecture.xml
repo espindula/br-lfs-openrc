@@ -10,15 +10,15 @@
 
   <title>Arquiteturas Alvo do LFS</title>
 
-<para>As arquiteturas alvo primárias do LFS são as CPUs AMD/Intel x86 (32 bits) e
-x86_64 (64 bits). Por outro lado, as instruções neste livro também são
-conhecidas por funcionar, com algumas modificações, com as CPUs Power PC e
-ARM. Para construir um sistema que utiliza uma dessas CPUs alternativas, o
-principal pré-requisito, em adição àqueles na próxima página, é um sistema
-Linux existente, como uma instalação prévia do LFS, Ubuntu, Red Hat/Fedora,
-SuSE ou alguma outra distribuição que atinja essa arquitetura. (Observe que
-uma distribuição de 32 bits pode ser instalada e usada como um sistema
-anfitrião em um computador AMD/Intel de 64 bits).</para>
+<para>The primary target architectures of LFS are the AMD/Intel x86 (32-bit)  and
+x86_64 (64-bit) CPUs.  On the other hand, the instructions in this book are
+also known to work, with some modifications, with the Power PC and ARM
+CPUs. To build a system that utilizes one of these alternative CPUs, the
+main prerequisite, in addition to those on the next page, is an existing
+Linux system such as an earlier LFS installation, Ubuntu, Red Hat/Fedora,
+SuSE, or some other distribution that targets that architecture. (Note that
+a 32-bit distribution can be installed and used as a host system on a 64-bit
+AMD/Intel computer.)</para>
 
 <para>O ganho oriundo da construção em um sistema de 64 bits comparado a um
 sistema de 32 bits é mínimo. Por exemplo, em uma construção de teste do
@@ -37,16 +37,15 @@ atualmente precisam de mais que 4 GB de RAM para serem construídos e (ou)
 para executarem; se você planeja usar o LFS como um desktop, os(as)
 autores(as) do LFS recomendam construir um sistema de 64 bits.</para>
 
-<para>A construção padrão de 64 bits que resulta do LFS é um sistema de 64 bits
-<quote>puro</quote>. Ou seja, ele suporta somente executáveis de 64
-bits. Construir um sistema <quote>multi biblioteca</quote> exige compilar
-muitos aplicativos duas vezes, uma vez para um sistema de 32 bits e outra
-vez para um sistema de 64 bits. Isso não é diretamente suportado no LFS,
-pois interferiria no objetivo educacional de fornecer as instruções mínimas
-necessárias para um sistema básico Linux. Alguns(mas) dos(as) editores(as)
-do LFS/BLFS mantém uma bifurcação multi biblioteca do LFS, acessível em
+<para>The default 64-bit build that results from LFS is a <quote>pure</quote>
+64-bit system. That is, it supports 64-bit executables only. Building a
+<quote>multi-lib</quote> system requires compiling many applications twice,
+once for a 32-bit system and once for a 64-bit system.  This is not directly
+supported in LFS because it would interfere with the educational objective
+of providing the minimal instructions needed for a basic Linux system. Some
+of the LFS/BLFS editors maintain a multilib fork of LFS, accessible at
 <ulink
-url="https://www.linuxfromscratch.org/~thomas/multilib/index.html"/>. Porém,
-esse é um tópico avançado.</para>
+url="https://www.linuxfromscratch.org/~thomas/multilib/index.html"/>. But
+that's an advanced topic.</para>
 
 </sect1>

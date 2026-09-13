@@ -292,7 +292,7 @@ você habilitar a persistência para teu(ua) usante, a user@.service
 continuará, mesmo depois que todas as sessões de login forem fechadas e
 automaticamente iniciará na inicialização do sistema. Isso tem a vantagem de
 explicitamente permitir e proibir processos para execução depois que a
-sessão de usante tenha terminado, porém quebra retrocompatibilidade com
+sessão de usante tiver terminado, porém quebra retrocompatibilidade com
 ferramentas como <command>nohup</command> e utilitários que usam
 <function>daemon()</function>.
         </para>

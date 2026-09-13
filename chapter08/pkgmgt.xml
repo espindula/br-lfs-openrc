@@ -306,7 +306,7 @@ gravados. Existem duas técnicas que se pode usar:</para>
 apontar para uma biblioteca a ser pré-carregada antes da instalação. Durante
 a instalação, essa biblioteca rastreia os pacotes que estão sendo instalados
 anexando-se a vários executáveis, tais como o <command>cp</command>, o
-<command>install</command>e o <command>mv</command>, e rastreando as
+<command>install</command> e o <command>mv</command>, e rastreando as
 chamadas de sistema que modificam o sistema de arquivos. Para essa abordagem
 funcionar, todos os executáveis precisam ser dinamicamente vinculados sem o
 bit suid ou sgid. Pré-carregar a biblioteca possivelmente cause alguns
