@@ -6,12 +6,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-03-11 19:36+0000\n"
+"POT-Creation-Date: 2026-09-12 20:55-0300\n"
 "PO-Revision-Date: 2024-11-19 04:18+0000\n"
-"Last-Translator: Jamenson Ferreira Espindula de Almeida Melo <jafesp@gmail."
-"com>\n"
-"Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/"
-"projects/linux-from-scratch/prologue_architecture/pt_BR/>\n"
+"Last-Translator: Jamenson Ferreira Espindula de Almeida Melo <jafesp@gmail.com>\n"
+"Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/projects/linux-from-scratch/prologue_architecture/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -27,7 +25,17 @@ msgstr "Arquiteturas Alvo do LFS"
 
 #. type: Content of: <sect1><para>
 #: lfs-en/prologue/architecture.xml:13
-#, xml-text
+#, fuzzy, xml-text
+#| msgid ""
+#| "The primary target architectures of LFS are the AMD/Intel x86 (32-bit)  and "
+#| "x86_64 (64-bit) CPUs.  On the other hand, the instructions in this book are "
+#| "also known to work, with some modifications, with the Power PC and ARM CPUs."
+#| " To build a system that utilizes one of these alternative CPUs, the main "
+#| "prerequisite, in addition to those on the next page, is an existing Linux "
+#| "system such as an earlier LFS installation, Ubuntu, Red Hat/Fedora, SuSE, or"
+#| " some other distribution that targets that architecture. (Note that a 32-bit"
+#| " distribution can be installed and used as a host system on a 64-bit "
+#| "AMD/Intel computer.)"
 msgid ""
 "The primary target architectures of LFS are the AMD/Intel x86 (32-bit)  and "
 "x86_64 (64-bit) CPUs.  On the other hand, the instructions in this book are "
@@ -95,7 +103,18 @@ msgstr ""
 
 #. type: Content of: <sect1><para>
 #: lfs-en/prologue/architecture.xml:39
-#, xml-text
+#, fuzzy, xml-text
+#| msgid ""
+#| "The default 64-bit build that results from LFS is a <quote>pure</quote> "
+#| "64-bit system. That is, it supports 64-bit executables only. Building a "
+#| "<quote>multi-lib</quote> system requires compiling many applications twice, "
+#| "once for a 32-bit system and once for a 64-bit system.  This is not directly"
+#| " supported in LFS because it would interfere with the educational objective "
+#| "of providing the minimal instructions needed for a basic Linux system. Some "
+#| "of the LFS/BLFS editors maintain a multilib fork of LFS, accessible at "
+#| "<ulink "
+#| "url=\"https://www.linuxfromscratch.org/~thomas/multilib/index.html\"/>. But "
+#| "that's an advanced topic."
 msgid ""
 "The default 64-bit build that results from LFS is a <quote>pure</quote> "
 "64-bit system. That is, it supports 64-bit executables only. Building a "
