@@ -4,5 +4,5 @@
 <![ %systemd; [
 <!ENTITY version          "r13.1-101-systemd-wip">
 ]]>
-<!ENTITY releasedate       "31 de agosto de 2026">
+<!ENTITY releasedate       "August 31st, 2026">
 <!ENTITY copyrightdate     "1999-2026">
