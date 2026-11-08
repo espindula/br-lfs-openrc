@@ -191,8 +191,7 @@ su tester -c "PATH=$PATH make -k check"</userinput></screen>
 -A7 Summ</userinput>.</para>
 
     <para>Os resultados podem ser comparados com aqueles localizados em <ulink
-url="&test-results;"/> e <ulink
-url="https://gcc.gnu.org/ml/gcc-testresults/"/>.</para>
+url="&test-results;"/>.</para>
 
     <para>Nos testes <filename class='directory'>gcc.target/i386</filename>, os testes
 nominados de <filename>auto-init-padding-9.c</filename>,
@@ -231,7 +230,7 @@ seguro continuar.</para>
 <screen><userinput remap="install">make install</userinput></screen>
 
     <para>O diretório de construção do GCC é de propriedade de <systemitem
-class="username"> tester</systemitem> agora e a titularidade de propriedade
+class="username">tester</systemitem> agora e a titularidade de propriedade
 do diretório instalado do cabeçalho (e o conteúdo dele) está incorreto. Mude
 a titularidade de propriedade para o(a) usante e grupo <systemitem
 class="username">root</systemitem>:</para>

@@ -38,704 +38,276 @@ livro.</para>
       </itemizedlist>
     </listitem>
 
-    Note:  If a change is only specific to sysv or systemd, then use
-    <listitem revision="sysv"> or <listitem revision="systemd"> as
+    Note:  If a change is only specific to openrc or systemd, then use
+    <listitem revision="openrc"> or <listitem revision="systemd"> as
     appropriate for the entry or if needed the entire day's listitem.
     -->
 <listitem>
+      <para>2026-10-26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Atualização para Python3-3.15.2 (atualização de
+segurança). Corrige <ulink url="&lfs-ticket-root;6059">#6059</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Atualização para patch-2.8.1 (atualização de segurança). Corrige
+<ulink url="&lfs-ticket-root;6062">#6062</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
+      <para>2026-10-25</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Atualização para elfutils-0.197. Corrige <ulink
+url="&lfs-ticket-root;6055">#6055</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Atualização para iana-etc-20261015. Endereça <ulink
+url="&lfs-ticket-root;5006">#5006</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Atualização para iproute2-7.3.0. Corrige <ulink
+url="&lfs-ticket-root;6057">#6057</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Atualização para linux-7.3. Corrige <ulink
+url="&lfs-ticket-root;6050">#6050</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Atualização para man-pages-6.20. Corrige <ulink
+url="&lfs-ticket-root;6058">#6058</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Atualização para openssl-4.1.0. Corrige <ulink
+url="&lfs-ticket-root;6061">#6061</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Atualização para pkgconf-3.0.10. Corrige <ulink
+url="&lfs-ticket-root;6051">#6051</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Atualização para Python3-3.15.1. Corrige <ulink
+url="&lfs-ticket-root;6046">#6046</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Atualização para setuptools-84.2.1 (módulo Python). Corrige
+<ulink url="&lfs-ticket-root;6056">#6056</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Atualização para sqlite-3.54.1. Corrige <ulink
+url="&lfs-ticket-root;6053">#6053</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Atualização para systemd-262.1. Corrige <ulink
+url="&lfs-ticket-root;6054">#6054</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Atualização para vim-9.2.1225 (atualização de segurança). Corrige
+<ulink url="&lfs-ticket-root;6060">#6060</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem revision='openrc'>
+      <para>2026-10-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[zeckma] - Atualização para sysklogd-2.8.0. Corrige <ulink
+url="&lfs-ticket-root;6052">#6052</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
+      <para>2026-10-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Atualização para expat-2.9.0 (atualização de segurança). Corrige
+<ulink url="&lfs-ticket-root;6039">#6039</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Atualização para grub-2.16. Corrige <ulink
+url="&lfs-ticket-root;6038">#6038</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Atualização para iana-etc-20261009. Endereça <ulink
+url="&lfs-ticket-root;5006">#5006</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Atualização para linux-7.2.10. Corrige <ulink
+url="&lfs-ticket-root;6037">#6037</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Atualização para markupsafe-3.0.4. Corrige <ulink
+url="&lfs-ticket-root;6036">#6036</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Atualização para pkgconf-3.0.8. Corrige <ulink
+url="&lfs-ticket-root;6045">#6045</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Atualização para sqlite-3.54.0. Corrige <ulink
+url="&lfs-ticket-root;6047">#6047</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Atualização para vim-9.2.1178 (atualização de segurança). Corrige
+<ulink url="&lfs-ticket-root;6048">#6048</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
+      <para>2026-10-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Atualização para Python-3.14.8 (atualização de
+segurança). Corrige <ulink url="&lfs-ticket-root;6007">#6007</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
+      <para>2026-10-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Atualização para coreutils-9.12. Corrige <ulink
+url="&lfs-ticket-root;6020">#6020</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Atualização para expat-2.8.5 (atualização de segurança). Corrige
+<ulink url="&lfs-ticket-root;6027">#6027</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Atualização para flit_core-4.1.0 (módulo Python). Corrige <ulink
+url="&lfs-ticket-root;6021">#6021</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Atualização para groff-1.24.2. Corrige <ulink
+url="&lfs-ticket-root;6034">#6034</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Atualização para gzip-1.15. Corrige <ulink
+url="&lfs-ticket-root;6025">#6025</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Atualização para less-710. Corrige <ulink
+url="&lfs-ticket-root;6024">#6024</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Atualização para linux-7.2.8. Corrige <ulink
+url="&lfs-ticket-root;6024">#6024</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Atualização para meson-1.12.1. Corrige <ulink
+url="&lfs-ticket-root;6029">#6029</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Atualização para openssl-4.0.3 (atualização de
+segurança). Corrige <ulink url="&lfs-ticket-root;6033">#6033</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Atualização para pcre2-10.49 (atualização de segurança). Corrige
+<ulink url="&lfs-ticket-root;6032">#6032</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Atualização para shadow-4.20.3. Corrige <ulink
+url="&lfs-ticket-root;6031">#6031</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Atualização para systemd-262. Corrige <ulink
+url="&lfs-ticket-root;6030">#6030</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Atualização para tzdata2026e. Corrige <ulink
+url="&lfs-ticket-root;6035">#6035</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Atualização para util-linux-2.42.4 (atualização de
+segurança). Corrige <ulink url="&lfs-ticket-root;6014">#6014</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
+      <para>2026-09-18</para>
+      <itemizedlist>
+        <listitem>
+          <para>[xry111] - Atualizar glibc; remendo de correções de fluxo de desenvolvimento
+(atualização de segurança). Corrige <ulink
+url="&lfs-ticket-root;6023">#6023</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
+      <para>2026-09-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Atualização para automake-1.19. Corrige <ulink
+url="&lfs-ticket-root;6017">#6017</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Atualização para elfutils-0.196. Corrige <ulink
+url="&lfs-ticket-root;6091">#6001</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Atualização para expat-2.8.4 (atualização de segurança). Corrige
+<ulink url="&lfs-ticket-root;6012">#6012</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Atualização para iana-etc-20260911. Endereça <ulink
+url="&lfs-ticket-root;5006">#5006</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Atualização para iproute2-7.2.0. Corrige <ulink
+url="&lfs-ticket-root;6015">#6015</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Atualização para linux-7.2.6. Corrige <ulink
+url="&lfs-ticket-root;6002">#6002</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Atualização para man-pages-6.19. Corrige <ulink
+url="&lfs-ticket-root;6004">#6004</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Atualização para openssl-4.0.2 (atualização de
+segurança). Corrige <ulink url="&lfs-ticket-root;6005">#6005</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Atualização para pcre2-10.48 (atualização de segurança). Corrige
+<ulink url="&lfs-ticket-root;6013">#6013</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Atualização para pkgconf-3.0.7. Corrige <ulink
+url="&lfs-ticket-root;6003">#6003</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Atualização para systemd-261.3. Corrige <ulink
+url="&lfs-ticket-root;6018">#6018</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Atualização para tzdata2026d. Corrige <ulink
+url="&lfs-ticket-root;6019">#6019</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Atualização para vim-9.2.1099. Endereça <ulink
+url="&lfs-ticket-root;4500">#4500</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Atualização para xz-5.8.4 (atualização de segurança). Corrige
+<ulink url="&lfs-ticket-root;6016">#6015</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2026-09-01</para>
       <itemizedlist>
         <listitem>
           <para>[bdubbs] - LFS-13.1 lançado.</para>
-        </listitem>
-      </itemizedlist>
-    </listitem>
-
-    <listitem>
-      <para>2026-08-31</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - Atualização para vim-9.2.1025 (atualização de segurança). Corrige
-<ulink url="&lfs-ticket-root;6006">#6006</ulink>.</para>
-        </listitem>
-      </itemizedlist>
-    </listitem>
-
-    <listitem>
-      <para>2026-08-15</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - Atualização para expat-2.8.3 (atualização de segurança). Corrige
-<ulink url="&lfs-ticket-root;5996">#5996</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para iana-etc-20260805. Endereça <ulink
-url="&lfs-ticket-root;5006">#5006</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para libffi-3.8.0. Corrige <ulink
-url="&lfs-ticket-root;5993">#5993</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para linux-7.1.8. Corrige <ulink
-url="&lfs-ticket-root;5997">#5997</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para meson-1.12.0. Corrige <ulink
-url="&lfs-ticket-root;5998">#5998</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para procps-ng-4.0.7. Corrige <ulink
-url="&lfs-ticket-root;6000">#6000</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para setuptools-84.0.0 (módulo Python). Corrige
-<ulink url="&lfs-ticket-root;5994">#5994</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para shadow-4.20.2. Corrige <ulink
-url="&lfs-ticket-root;5995">#5995</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para vim-9.2.0954. Endereça <ulink
-url="&lfs-ticket-root;4500">#4500</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para wheel-0.48.0 (módulo Python). Corrige <ulink
-url="&lfs-ticket-root;5999">#5999</ulink>.</para>
-        </listitem>
-      </itemizedlist>
-    </listitem>
-
-    <listitem>
-      <para>2026-08-07</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - Atualização para flit_core-4.0.2 (módulo Python). Corrige <ulink
-url="&lfs-ticket-root;5989">#5989</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para gcc-16.2.0. Corrige <ulink
-url="&lfs-ticket-root;5992">#5992</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para linux-7.1.7. Corrige <ulink
-url="&lfs-ticket-root;5988">#5988</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para packaging-26.3 (módulo Python). Corrige <ulink
-url="&lfs-ticket-root;5990">#5990</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para pkgconf-3.0.5. Corrige <ulink
-url="&lfs-ticket-root;5987">#5987</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para Python-3.14.7 (atualização de
-segurança). Corrige <ulink url="&lfs-ticket-root;5991">#5991</ulink>.</para>
-        </listitem>
-      </itemizedlist>
-    </listitem>
-
-    <listitem>
-      <para>2026-08-01</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - Atualização para shadow-4.20.0. Corrige <ulink
-url="&lfs-ticket-root;5986">#5986</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para vim-9.2.0858 (atualização de segurança). Corrige
-<ulink url="&lfs-ticket-root;5982">#5982</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para systemd-261.2. Corrige <ulink
-url="&lfs-ticket-root;5981">#5981</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para sqlite-3.53.4. Corrige <ulink
-url="&lfs-ticket-root;5984">#5984</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para pkgconf-3.0.4. Corrige <ulink
-url="&lfs-ticket-root;5977">#5977</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para perl-5.44.0. Corrige <ulink
-url="&lfs-ticket-root;5980">#5980</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para linux-7.1.5. Corrige <ulink
-url="&lfs-ticket-root;5979">#5979</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para libtool-2.6.2. Corrige <ulink
-url="&lfs-ticket-root;5978">#5978</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para iana-etc-20260723. Endereça <ulink
-url="&lfs-ticket-root;5006">#5006</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para glibc-2.44 (atualização de segurança). Corrige
-<ulink url="&lfs-ticket-root;5983">#5983</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para binutils-2.47. Corrige <ulink
-url="&lfs-ticket-root;5985">#5985</ulink>.</para>
-        </listitem>
-      </itemizedlist>
-    </listitem>
-
-    <listitem>
-      <para>2026-07-15</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - Adicionar mpdecimal-4.0.1. Corrige <ulink
-url="&lfs-ticket-root;5963">#5963</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para tzdata-2026c. Corrige <ulink
-url="&lfs-ticket-root;5971">#5971</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para setuptools-83.0.0. Corrige <ulink
-url="&lfs-ticket-root;5969">#5969</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para pkgconf-3.0.2. Corrige <ulink
-url="&lfs-ticket-root;5962">#5962</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para meson-1.11.2. Corrige <ulink
-url="&lfs-ticket-root;5975">#5975</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para libffi-3.7.1. Corrige <ulink
-url="&lfs-ticket-root;5970">#5970</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para linux-7.1.3. Corrige <ulink
-url="&lfs-ticket-root;5968">#5968</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para gawk-5.4.1. Corrige <ulink
-url="&lfs-ticket-root;5973">#5973</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para findutils-4.11.0. Corrige <ulink
-url="&lfs-ticket-root;5974">#5974</ulink>.</para>
-        </listitem>
-      </itemizedlist>
-    </listitem>
-
-    <listitem>
-      <para>2026-07-01</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - Adicionar tar-1.35-acl_fix-1.patch. Endereça problema emergente
-originário do acl-2.4.0.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Adicionar correções consolidadas do Python3-3.14.6 (remendo de
-segurança). Corrige <ulink url="&lfs-ticket-root;5961">#5961</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para attr-2.6.0 (atualização de segurança). Corrige
-<ulink url="&lfs-ticket-root;5967">#5967</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para acl-2.4.0 (atualização de segurança). Corrige
-<ulink url="&lfs-ticket-root;5966">#5966</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para expat-2.8.2 (atualização de segurança). Corrige
-<ulink url="&lfs-ticket-root;5964">#5964</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para iana-etc-20260617. Endereça <ulink
-url="&lfs-ticket-root;5006">#5006</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para iproute2-7.1.0. Corrige <ulink
-url="&lfs-ticket-root;5954">#5954</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para libffi-3.6.0. Corrige <ulink
-url="&lfs-ticket-root;5958">#5958</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para linux-7.1.1. Corrige <ulink
-url="&lfs-ticket-root;5953">#5953</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para sqlite-autoconf-3.53.3. Corrige <ulink
-url="&lfs-ticket-root;5965">#5965</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para systemd-261. Corrige <ulink
-url="&lfs-ticket-root;5959">#5959</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para util-linux-2.42.2 (atualização de
-segurança). Corrige <ulink url="&lfs-ticket-root;5955">#5955</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para vim-9.2.0752 (atualização de segurança). Corrige
-<ulink url="&lfs-ticket-root;5956">#5956</ulink>.</para>
-        </listitem>
-      </itemizedlist>
-    </listitem>
-
-    <listitem>
-      <para>2026-06-15</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - Atualização para binutils-2.46.1. Corrige <ulink
-url="&lfs-ticket-root;5950">#5950</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para file-5.48. Corrige <ulink
-url="&lfs-ticket-root;5949">#5949</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para less-704. Corrige <ulink
-url="&lfs-ticket-root;5948">#5948</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para linux-7.0.12. Corrige <ulink
-url="&lfs-ticket-root;5945">#5945</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para openssl-4.0.1. Corrige <ulink
-url="&lfs-ticket-root;5951">#5951</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para Python3-3.14.6. Corrige <ulink
-url="&lfs-ticket-root;5952">#5952</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para sqlite-autoconf-3.53.2. Corrige <ulink
-url="&lfs-ticket-root;5946">#5946</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para vim-9.2.0640 (atualização de segurança). Corrige
-<ulink url="&lfs-ticket-root;5947">#5947</ulink>.</para>
-        </listitem>
-      </itemizedlist>
-    </listitem>
-
-    <listitem>
-      <para>2026-06-01</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - Atualização para systemd-260.2. Corrige <ulink
-url="&lfs-ticket-root;5944">#5944</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para kbd-2.10.0. Corrige <ulink
-url="&lfs-ticket-root;5943">#5943</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para util-linux-2.42.1. Corrige <ulink
-url="&lfs-ticket-root;5939">#5939</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para less-702. Corrige <ulink
-url="&lfs-ticket-root;5941">#5941</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para vim-9.2.0567 (atualização de segurança). Corrige
-<ulink url="&lfs-ticket-root;5940">#5940</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para iana-etc-20260529. Endereça <ulink
-url="&lfs-ticket-root;5006">#5006</ulink>.</para>
-        </listitem>
-      </itemizedlist>
-    </listitem>
-
-    <listitem>
-      <para>2026-05-24</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - Atualização para linux-7.0.10 (atualização de segurança). Corrige
-<ulink url="&lfs-ticket-root;5942">#5942</ulink>.</para>
-        </listitem>
-      </itemizedlist>
-    </listitem>
-
-    <listitem>
-      <para>2026-05-20</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - Atualização para linux-7.0.9 (atualização de segurança). Corrige
-<ulink url="&lfs-ticket-root;5928">#5928</ulink>.</para>
-        </listitem>
-      </itemizedlist>
-    </listitem>
-
-    <listitem>
-      <para>2026-05-18</para>
-      <itemizedlist>
-        <listitem>
-          <para>[xry111] - Corrigir CVE-2026-4046, CVE-2026-5450 e CVE-2026-5928 na glibc
-(atualização de segurança). Corrige <ulink
-url="&lfs-ticket-root;5930">#5930</ulink>.</para>
-        </listitem>
-      </itemizedlist>
-    </listitem>
-
-    <listitem>
-      <para>2026-05-14</para>
-      <itemizedlist>
-        <listitem>
-          <para>[renodr] - Atualização para expat-2.8.1 (atualização de segurança). Corrige
-<ulink url="&lfs-ticket-root;5933">#5933</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[renodr] - Atualização para tcl-8.6.18. Corrige <ulink
-url="&lfs-ticket-root;5935">#5935</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[renodr] - Atualização para vim-9.2.0480 (atualização de segurança). Corrige
-<ulink url="&lfs-ticket-root;5928">#5928</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[renodr] - Atualização para linux-7.0.7 (atualização de segurança). Corrige
-<ulink url="&lfs-ticket-root;5932">#5932</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[renodr] - Corrigir CVE-2026-7210 e CVE-2026-8328 no Python (atualização de
-segurança). Corrige <ulink url="&lfs-ticket-root;5934">#5934</ulink>.</para>
-        </listitem>
-      </itemizedlist>
-    </listitem>
-
-    <listitem>
-      <para>2026-05-11</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - Atualização para vim-9.2.0461 (atualização de segurança). Corrige
-<ulink url='&lfs-ticket-root;5938'>#5938</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para sqlite-3.53.1. Corrige <ulink
-url='&lfs-ticket-root;5929'>#5929</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para Python-3.14.5. Corrige <ulink
-url='&lfs-ticket-root;5931'>#5931</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para openssl-4.0.0. Corrige <ulink
-url='&lfs-ticket-root;5912'>#5912</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para linux-7.0.5. Corrige <ulink
-url='&lfs-ticket-root;5917'>#5917</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para iana-etc-20260504. Endereça <ulink
-url='&lfs-ticket-root;5006'>#5006</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Adicionar remendo de construção linux7 do Python-3.14.5. Endereça
-<ulink url='&lfs-ticket-root;5931'>#5931</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Adicionar remendo de correções do linux7 da glibc.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Adicionar remendo de construção openssl4 do systemd. Endereça
-<ulink url='&lfs-ticket-root;5912'>#5912</ulink>.</para>
-        </listitem>
-      </itemizedlist>
-    </listitem>
-
-    <listitem>
-      <para>2026-05-08</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - Atualização para gcc-16.1.0.. Corrige <ulink
-url='&lfs-ticket-root;5927'>#5927</ulink>.</para>
-        </listitem>
-      </itemizedlist>
-    </listitem>
-
-    <listitem>
-      <para>2026-05-01</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - Atualização para wheel-0.47.0 (módulo Python). Corrige <ulink
-url='&lfs-ticket-root;5922'>#5922</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para tzdata2026b. Corrige <ulink
-url='&lfs-ticket-root;5923'>#5923</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para sed-4.10. Corrige <ulink
-url='&lfs-ticket-root;5921'>#5921</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para packaging-26.2 (módulo Python). Corrige <ulink
-url='&lfs-ticket-root;5913'>#5913</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para mpc-1.4.1. Corrige <ulink
-url='&lfs-ticket-root;5916'>#5916</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para meson-1.11.1. Corrige <ulink
-url='&lfs-ticket-root;5919'>#5919</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para vim-9.2.0421 (atualização de segurança). Corrige
-<ulink url='&lfs-ticket-root;5914'>#5914</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para man-pages-6.18. Corrige <ulink
-url='&lfs-ticket-root;5920'>#5920</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para iproute2-7.0.0. Corrige <ulink
-url='&lfs-ticket-root;5925'>#5925</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para inetutils-2.8. Corrige <ulink
-url='&lfs-ticket-root;5926'>#5926</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para expat-2.8.0 (atualização de segurança). Corrige
-<ulink url='&lfs-ticket-root;5924'>#5924</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para elfutils-0.195 (libelf). Corrige <ulink
-url='&lfs-ticket-root;5915'>#5915</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para coreutils-9.11. Corrige <ulink
-url='&lfs-ticket-root;5918'>#5918</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para iana-etc-20260424. Endereça <ulink
-url='&lfs-ticket-root;5006'>#5006</ulink>.</para>
-        </listitem>
-      </itemizedlist>
-    </listitem>
-
-    <listitem>
-      <para>2026-04-15</para>
-      <itemizedlist>
-        <listitem>
-          <para>[jlocash] - Atualizar o remendo do Python-3.14.4 para 2 problemas mais
-(atualização de segurança). Endereça <ulink
-url='&lfs-ticket-root;5910'>#5910</ulink>.</para>
-        </listitem>
-      </itemizedlist>
-    </listitem>
-
-    <listitem>
-      <para>2026-04-15</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - Atualização para meson-1.11.0. Corrige <ulink
-url='&lfs-ticket-root;5911'>#5911</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Mover intltool e XML-Parser para o BLFS. Corrige <ulink
-url='&lfs-ticket-root;4964'>#4964</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para vim-9.2.0340 (atualização de segurança). Corrige
-<ulink url='&lfs-ticket-root;5904'>#5904</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para util-linux-2.42 (atualização de
-segurança). Corrige <ulink url='&lfs-ticket-root;5900'>#5900</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para sqlite-3.53.0. Corrige <ulink
-url='&lfs-ticket-root;5909'>#5909</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para Python3-3.14.4 (atualização de
-segurança). Corrige <ulink url='&lfs-ticket-root;5907'>#5907</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para openssl-3.6.2 (atualização de
-segurança). Corrige <ulink url='&lfs-ticket-root;5906'>#5906</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para linux-6.19.12. Corrige <ulink
-url='&lfs-ticket-root;5903'>#5903</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para libcap-2.78 (atualização de segurança). Corrige
-<ulink url='&lfs-ticket-root;5905'>#5905</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para iana-etc-20260409. Endereça <ulink
-url='&lfs-ticket-root;5006'>#5006</ulink>.</para>
-        </listitem>
-      </itemizedlist>
-    </listitem>
-
-    <listitem>
-      <para>2026-04-04</para>
-      <itemizedlist>
-        <listitem>
-          <para>[zeckma] - Fornece suporte de inicialização UEFI. Corrige <ulink
-url='&lfs-ticket-root;5819'>#5819</ulink>.</para>
-        </listitem>
-      </itemizedlist>
-    </listitem>
-
-    <listitem>
-      <para>2026-04-01</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - Atualização para xz-5.8.3 (atualização de segurança). Corrige
-<ulink url='&lfs-ticket-root;5899'>#5899</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para XML-Parser-2.54 (atualização de
-segurança). Corrige (novamente) <ulink
-url='&lfs-ticket-root;5892'>#5892</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização apara vim-9.2.0272. Endereça <ulink
-url='&lfs-ticket-root;4500'>#4500</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para systemd-260.1. Corrige <ulink
-url='&lfs-ticket-root;5890'>#5890</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para perl-5.42.2. Corrige <ulink
-url='&lfs-ticket-root;5898'>#5898</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para mpc-1.4.0. Corrige <ulink
-url='&lfs-ticket-root;5894'>#5894</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para meson-1.10.2. Corrige <ulink
-url='&lfs-ticket-root;5889'>#5889</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para linux-6.19.10. Corrige <ulink
-url='&lfs-ticket-root;5893'>#5893</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para iana-etc-20260327. Endereça <ulink
-url='&lfs-ticket-root;5006'>#5006</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para groff-1.24.1. Corrige <ulink
-url='&lfs-ticket-root;5888'>#5888</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para autoconf-2.73. Corrige <ulink
-url='&lfs-ticket-root;5897'>#5897</ulink>.</para>
-        </listitem>
-      </itemizedlist>
-    </listitem>
-
-    <listitem>
-      <para>2026-03-26</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - Atualização para XML-Parser-2.53 (atualização de
-segurança). Corrige <ulink url='&lfs-ticket-root;5892'>#5892</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Adicionar um sed ao glibc-2.43 (atualização de
-segurança). Corrige <ulink url='&lfs-ticket-root;5895'>#5895</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Adicionar um remendo ao Python-3.14.3 (atualização de
-segurança). Corrige <ulink url='&lfs-ticket-root;5896'>#5896</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para expat-2.7.5 (atualização de segurança). Corrige
-<ulink url='&lfs-ticket-root;5891'>#5891</ulink>.</para>
-        </listitem>
-      </itemizedlist>
-    </listitem>
-
-    <listitem>
-      <para>2026-03-15</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - Atualização para vim-9.2.0161. Endereça <ulink
-url='&lfs-ticket-root;4500'>#4500</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para tzdata-2026a. Corrige <ulink
-url='&lfs-ticket-root;5882'>#5882</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para texinfo-7.3. Corrige <ulink
-url='&lfs-ticket-root;5883'>#5883</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para systemd-259.5. Corrige <ulink
-url='&lfs-ticket-root;5879'>#5879</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para sqlite-autoconf-3510300 (3.51.3). Corrige <ulink
-url='&lfs-ticket-root;5885'>#5885</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para shadow-4.19.4. Corrige <ulink
-url='&lfs-ticket-root;5881'>#5881</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para setuptools-82.0.1 (módulo Python). Corrige
-<ulink url='&lfs-ticket-root;5887'>#5887</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para perl-5.42.1. Corrige <ulink
-url='&lfs-ticket-root;5886'>#5886</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para linux-6.19.8. Corrige <ulink
-url='&lfs-ticket-root;5867'>#5867</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para iproute2-6.19.0. Corrige <ulink
-url='&lfs-ticket-root;5874'>#5874</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para iana-etc-20260306. Endereça <ulink
-url='&lfs-ticket-root;5006'>#5006</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para groff-1.24.0. Corrige <ulink
-url='&lfs-ticket-root;5880'>#5880</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para gawk-5.4.0. Corrige <ulink
-url='&lfs-ticket-root;5876'>#5876</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para file-5.47. Corrige <ulink
-url='&lfs-ticket-root;5878'>#5878</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Atualização para e2fsprogs-1.47.4. Corrige <ulink
-url='&lfs-ticket-root;5884'>#5884</ulink>.</para>
-        </listitem>
-      </itemizedlist>
-    </listitem>
-
-    <listitem>
-      <para>2026-03-05</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - LFS-13.0 lançado.</para>
         </listitem>
       </itemizedlist>
     </listitem>

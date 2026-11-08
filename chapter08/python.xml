@@ -41,11 +41,13 @@ linguagem interpretada de computador.</para>
   <sect2 role="installation">
     <title>Instalação do Python 3</title>
 
-    <para>Primeiro, aplique um remendo para compatibilidade com OpenSSL 4:</para>
+    <!--
+    <para>
+First, apply a patch for compatibility with OpenSSL 4:</para>
 
 <screen><userinput remap="pre">patch -Np1 -i ../&python-openssl4-fixes-patch;</userinput></screen>
-
-    <para>Prepare o Python para compilação:</para>
+-->
+<para>Prepare o Python para compilação:</para>
 
 <screen><userinput remap="configure">./configure --prefix=/usr          \
             --enable-shared        \
@@ -100,9 +102,8 @@ como passado.</para>
     <!-- DO NOT REMOVE EVEN IF IT'S NOT REPRODUCIBLE IN JHALFS:
          jhalfs creates /etc/resolv.conf, that's different from the
          by-hand build.  -->
-<para>Dois testes, <literal>test_urllib2</literal> e
-<literal>test_urllibnet</literal>, são conhecidos por falharem porque a
-resolução de nomes não está configurada no ambiente incompleto do LFS.</para>
+<para>Dois testes, <literal>test_os2</literal> e <literal>test_httplib</literal>,
+são conhecidos por falharem.</para> 
 
     <para>Instale o pacote:</para>
 

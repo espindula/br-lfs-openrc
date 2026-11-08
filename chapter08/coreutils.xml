@@ -156,6 +156,8 @@ chroot do LFS):</para>
 <screen><userinput remap="test">su tester -c "PATH=$PATH make -k RUN_EXPENSIVE_TESTS=yes check" \
    &lt; /dev/null</userinput></screen>
 
+    <para>Um teste, test-regex-el, é conhecido por falhar.</para>
+
     <para>Remova o grupo temporário:</para>
 
 <screen><userinput remap="test">groupdel dummy</userinput></screen>

@@ -58,9 +58,10 @@ procedimento de construção tenha sido atualizado.</para>
       <listitem>
         <para>Bash</para>
 
-        <para>Esse pacote satisfaz uma exigência central do LSB para fornecer uma
-interface Bourne Shell para o sistema. Foi escolhido em vez de outros
-pacotes de shell por causa do uso comum e capacidades extensas dele.</para>
+        <para>Esse pacote fornece um shell que consegue executar em um modo estritamente
+conformante com a especificação POSIX. Ele foi escolhido em detrimento de
+outros pacotes de shell devido ao uso generalizado e recursos abrangentes
+dele.</para>
       </listitem>
 
       <listitem>

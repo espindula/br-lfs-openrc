@@ -196,7 +196,8 @@ provável que seja a entrada de outro carregador de inicialização (por
 exemplo, a instalação do GRUB proveniente da distribuição anfitriã ou o
 Gerenciador de Inicialização do Windows). Produza uma cópia de segurança do
 arquivo, de modo que ele possa ser restaurado posteriormente ou carregado
-como um carregador secundário de inicialização pela nova instalação do GRUB
+como um carregador secundário de inicialização (via funcionalidade do GRUB
+nominada <quote>carregamento em cadeia</quote>) pela nova instalação do GRUB
 originária do LFS.</para>
       </warning>
 
@@ -225,43 +226,78 @@ necessário para o GRUB registrar o local na variável EFI.
 
       <note>
         <para>
-          Algumas implementações de firmware UEFI, embora raras, ignoram o caminho EFI
-padrão. Tais sistemas, na maioria das vezes, são antigos, como Lenovo
-ThinkPads ou desktops/laptops HP. Quando a entrada de inicialização estiver
-ausente na configuração do firmware, você precisará instalar o pacote do
-BLFS <ulink url="&blfs-book;postlfs/efibootmgr.html">efibootmgr</ulink> para
-criar uma entrada de inicialização para UEFI. Se for mais fácil, o pacote
-pode ser instalado pelo gerenciador de pacotes da distribuição, se
-aplicável, e usado no anfitrião em vez de no sistema LFS. Isso consegue
-evitar a necessidade de baixar mais tarballs para o sistema LFS por
-enquanto.
+          O uso do local padrão possivelmente não funcione em alguns cenários:
         </para>
+
+        <itemizedlist>
+          <listitem>
+            <para>
+              Algumas implementações de firmware UEFI ignoram completamente o caminho EFI
+padrão
+            </para>
+          </listitem>
+
+          <listitem>
+            <para>
+              Se um carregador de inicialização <quote>bem conhecido</quote> (notadamente,
+o Gerenciador de Inicialização do Windows) existir na mesma ESP, algumas
+implementações de firmware UEFI carregarão esse carregador de inicialização
+em vez daquele no caminho padrão
+            </para>
+          </listitem>
+
+          <listitem>
+            <para>
+              Com uma configuração de inicialização múltipla, os outros sistemas
+operacionais possivelmente sobrescrevam o arquivo no caminho EFI padrão
+(especialmente durante uma atualização do sistema) e quebrem a instalação do
+grub do LFS
+            </para>
+          </listitem>
+        </itemizedlist>
+
         <para>
-          Primeiro instale o pacote e, em seguida, monte o sistema de arquivos da
-variável EFI, se ele já não estiver montado:
+          Nesses cenários, você precisará instalar o pacote do BLFS <ulink
+url="&blfs-book;postlfs/efibootmgr.html">efibootmgr</ulink> para criar uma
+entrada de inicialização para UEFI. Primeiro, instale o pacote e, em
+seguida, monte o sistema de arquivos de variáveis EFI, se ele ainda não
+estiver montado:
         </para>
+
 <screen role="nodump"><userinput>mountpoint /sys/firmware/efi/efivars ||
   mount -v -t efivarfs efivarfs /sys/firmware/efi/efivars</userinput></screen>
+
         <para>
-          Agora crie uma entrada de inicialização para a EFI:
+          Agora, instale o GRUB em um local específico para o LFS e adicione uma
+entrada rotulada como <quote>LFS</quote> para a EFI:
         </para>
-<screen role="nodump"><userinput>efibootmgr -c -d /dev/sd<replaceable>&lt;x&gt;</replaceable> \
-  -p <replaceable>&lt;y&gt;</replaceable> -L "LFS" -l '\EFI\BOOT\BOOT<replaceable>&lt;X64&gt;</replaceable>.EFI'</userinput></screen>
+
+<screen role="nodump"><userinput>efibootmgr -B -L <replaceable>LFS</replaceable>
+grub-install --target=x86_64-efi --bootloader-id=<replaceable>LFS</replaceable></userinput></screen>
+
         <para>
-          A unidade <literal>/dev/sd<replaceable>&lt;x&gt;</replaceable></literal>
-deveria ser o nó de dispositivo para o disco onde a ESP existir. O número da
-partição <replaceable>&lt;y&gt;</replaceable> deveria corresponder ao número
-da ESP. Se a ESP estiver em <literal>/dev/sda2</literal>, então o número da
-partição seria <literal>2</literal>. Se você estiver usando UEFI de 32 bits,
-substitua <replaceable>&lt;X64&gt;</replaceable> por
-<literal>IA32</literal>.
+          O comando <command>efibootmgr -B</command> remove a entrada de inicialização
+de uma instalação anterior do LFS (se uma existir). Você pode substituir
+<replaceable>LFS</replaceable> por outro identificador, se estiver
+instalando múltiplos sistemas LFS na máquina e queira manter os carregadores
+deles de inicialização independentes.
         </para>
 
         <para>
-          Algum firmware (quebrado) possivelmente exija parâmetros adicionais para
-<command>efibootmgr</command>, como <parameter>--full-dev-path</parameter>
-ou <parameter>-e 1 -E</parameter>. Leia-se a página de manual <ulink
-role='man' url='&man;efibootmgr.8'>efibootmgr(8)</ulink> para detalhes.
+          Alguns firmwares (quebrados) podem exigir que se invoque o comando
+<command>efibootmgr -c</command> diretamente, pois essas implementações de
+firmware precisam de parâmetros adicionais que o
+<command>grub-install</command> não passa, como
+<parameter>--full-dev-path</parameter> ou <parameter>-e 1
+-E</parameter>. Leia-se a página de manual <ulink role='man'
+url='&man;efibootmgr.8'>efibootmgr(8)</ulink> para como usar o comando
+<command>efibootmgr -c</command>. Pode ser mais fácil pospor
+<literal>--debug |&amp; efibootmgr</literal> para mostrar o comando
+<command>efibootmgr -c</command> invocado pelo
+<command>grub-install</command> e, então, editá-lo. Lembre-se de executar o
+comando <command>efibootmgr -B</command> novamente para remover a entrada
+criada pelo grub antes de executar o comando <command>efibootmgr
+-c</command> editado.
         </para>
 
         <para>

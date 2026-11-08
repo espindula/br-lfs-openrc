@@ -76,16 +76,11 @@ bits.</para>
 
     <para>Compile o pacote:</para>
 
-<!-- To editors: "pmap {X,XX} with unreachable process" tests don't work
-         as root.  They may seem to pass due to some Tcl/Expect/DejaGNU
-         internal hazards with some "luck" though.  -->
 <screen><userinput remap="make">make</userinput></screen>
 
-    
-    <para>Para executar a suíte de teste, execute:</para>
+    <para> Para executar a suíte de teste, execute:</para>
 
-<screen><userinput remap="test">chown -R tester .
-su tester -c "PATH=$PATH make check"</userinput></screen>
+<screen><userinput remap="test">make check</userinput></screen>
 
     <para>Um teste chamado <literal>ps com sinalizador de saída
 bsdtime,cputime,etime,etimes</literal> é conhecido por falhar se o núcleo do

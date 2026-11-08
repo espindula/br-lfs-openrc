@@ -3,7 +3,7 @@
   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
   <!ENTITY % general-entities SYSTEM "../general.ent">
   %general-entities;
-  <!ENTITY kernel-directory "https://www.kernel.org/pub/linux/kernel/v6.x">
+  <!ENTITY kernel-directory "&kernel;linux/kernel/v&linux-major-version;.x">
 ]>
 
 <sect1 id="ch-materials-packages">
@@ -268,15 +268,19 @@ Home page: <ulink url="&bzip2-home;"/></para>-->
 
         <note>
           <para>
-            Os(As) desenvolvedores(as) da Glibc mantém uma <ulink
+            Os(As) desenvolvedores(as) da Glibc mantêm uma <ulink
 url='https://sourceware.org/git/?p=glibc.git;a=shortlog;h=refs/heads/release/&glibc-version;/master'>ramificação
-Git</ulink> contendo remendos considerados valiosos para a
-Glibc-&glibc-version;, porém infelizmente desenvolvidos depois do lançamento
-da Glibc-&glibc-version;. Os(As) editores(as) do LFS emitirão um aviso de
-segurança se alguma correção de segurança for acrescentada na ramificação,
-porém nenhuma ação será tomada para outros remendos acrescentados
-recentemente. Você possivelmente reveja os remendos você mesmo(a) e
-incorpore alguns remendos se você os considerar importantes.
+Git</ulink> contendo remendos considerados relevantes para a
+Glibc-&glibc-version;, mas, infelizmente, desenvolvidos depois do lançamento
+da Glibc-&glibc-version;. Os(As) editores(as) do LFS adicionarão um remendo
+de correções de fluxo de desenvolvimento da glibc (ou atualizarão um
+existente) para o livro de desenvolvimento do LFS siga essa ramificação se
+uma correção importante for adicionada (por exemplo, uma correção de
+segurança) e poderão emitir uma errata (ou um aviso de segurança) se a
+correção for exigida para o lançamento estável recente do LFS; no entanto,
+nenhuma ação será tomada para remendos de menor importância. Você mesmo(a)
+pode revisar os remendos e incorporar alguns deles, se os considerar
+importantes.
           </para>
         </note>
       </listitem>

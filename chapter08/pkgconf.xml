@@ -41,7 +41,11 @@ ferramentas durante as fases "configure" e "make" de instalações de pacotes.</
 
     <title>Instalação do Pkgconf</title>
 
-    <para>Primeiro, contorne uma dependência circular do meson:</para>
+    <para>Primeiro, remova um teste que faz a construção falhar:</para>
+
+<screen><userinput remap="pre">sed '/^test_api_util_exe/,/^test(.*test_api_util_exe)/d' -i meson.build</userinput></screen>
+
+    <para>Agora, contorne uma dependência circular do meson:</para>
 
 <screen><userinput remap="pre">tar -xf ../meson-&meson-version;.tar.gz</userinput></screen>
 

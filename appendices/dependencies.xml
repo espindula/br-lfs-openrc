@@ -1387,7 +1387,8 @@ Texinfo e Zlib</seg>
       </segmentedlist>
 
 
-      <!-- Begin Intltool dependency info 
+
+  <!-- Begin Intltool dependency info 
   <bridgehead renderas="sect2" id="intltool-dep">
 Intltool</bridgehead>
 
@@ -1397,11 +1398,12 @@ Intltool</bridgehead>
           <seg>Bash, Gawk, Glibc, Make, Perl, Sed, and XML::Parser</seg>
         </seglistitem>
       </segmentedlist>
--->
-<segmentedlist id="intltool-rundeps">
+
+      <segmentedlist id="intltool-rundeps">
         <segtitle>&runtime;</segtitle>
         <seglistitem>
-          <seg>Autoconf, Automake, Bash, Glibc, Grep, Perl e Sed</seg>
+          <seg>Autoconf, Automake, Bash, Glibc, Grep, Perl, and
+          Sed</seg>
         </seglistitem>
       </segmentedlist>
 
@@ -1415,19 +1417,18 @@ Intltool</bridgehead>
       <segmentedlist id="intltool-before">
         <segtitle>&before;</segtitle>
         <seglistitem>
-          <seg>Nenhum</seg>
+          <seg>None</seg>
         </seglistitem>
       </segmentedlist>
 
       <segmentedlist id="intltool-optdeps">
         <segtitle>&external;</segtitle>
         <seglistitem>
-          <seg>Nenhum</seg>
+          <seg>None</seg>
         </seglistitem>
       </segmentedlist>
-
-
-  <!-- Begin IProute2 dependency info -->
+-->
+<!-- Begin IProute2 dependency info -->
 <bridgehead renderas="sect2" id="iproute2-dep">IProute2</bridgehead>
 
       <segmentedlist id="iproute2-depends">
@@ -2722,7 +2723,7 @@ Sed e Zlib</seg>
       <segmentedlist id="pkgconf-before">
         <segtitle>&before;</segtitle>
         <seglistitem>
-          <seg>Binutils, <phrase revision='systemd'>D-Bus, </phrase> E2fsprogs, IProute2,
+          <seg>Binutils, <phrase revision='systemd'>D-Bus, </phrase>E2fsprogs, IProute2,
 Kmod, Man-DB, Procps-ng, Python, &systemd-udev; e Util-linux</seg>
         </seglistitem>
       </segmentedlist>
@@ -3214,7 +3215,7 @@ Inetutils, Make, Sed e Texinfo</seg>
         </seglistitem>
       </segmentedlist>
 
-      <segmentedlist id="tar-befors">
+      <segmentedlist id="tar-before">
         <segtitle>&before;</segtitle>
         <seglistitem>
           <seg>Nenhum</seg>
@@ -3485,7 +3486,8 @@ url="&blfs-book;general/gpm.html">GPM</ulink>
       </segmentedlist>
 
 
-      <!-- Begin XML::Parser dependency info 
+
+  <!-- Begin XML::Parser dependency info 
   <bridgehead renderas="sect2" id="xml-parser-dep">
 XML::Parser</bridgehead>
 
@@ -3496,11 +3498,11 @@ XML::Parser</bridgehead>
           Perl</seg>
         </seglistitem>
       </segmentedlist>
--->
-<segmentedlist id="xml-parser-rundeps">
+
+      <segmentedlist id="xml-parser-rundeps">
         <segtitle>&runtime;</segtitle>
         <seglistitem>
-          <seg>Expat, Glibc e Perl</seg>
+          <seg>Expat, Glibc, and Perl</seg>
         </seglistitem>
       </segmentedlist>
 
@@ -3522,13 +3524,13 @@ XML::Parser</bridgehead>
         <segtitle>&external;</segtitle>
         <seglistitem>
           <seg>
-            <ulink url="https://metacpan.org/pod/LWP::UserAgent">LWP::UserAgent</ulink>
+            <ulink
+            url="https://metacpan.org/pod/LWP::UserAgent">LWP::UserAgent</ulink>
           </seg>
         </seglistitem>
       </segmentedlist>
-
-
-  <!-- Begin Xz-utils dependency info -->
+-->
+<!-- Begin Xz-utils dependency info -->
 <bridgehead renderas="sect2" id="xz-dep">Xz</bridgehead>
 
       <segmentedlist id="xz-depends">

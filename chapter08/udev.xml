@@ -80,7 +80,7 @@ meson setup ..                  \
       -D vconsole=false</userinput></screen>
 
     <variablelist>
-      <title>O significado das opções "meson":</title>
+      <title>O significado das opções do meson:</title>
 
       <varlistentry>
         <term><parameter>--buildtype=release</parameter></term>

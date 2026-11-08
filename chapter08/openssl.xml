@@ -70,14 +70,6 @@ você quiser usar menos núcleos, anteponha
 <parameter>HARNESS_JOBS=<replaceable>&lt;N&gt;</replaceable></parameter>,
 com N substituído pelo número de núcleos lógicos de CPU que deseja usar.</para>
 
-    <para>Um teste, 30-test_afalg.t, é conhecido por falhar se o núcleo do anfitrião
-não tiver <option>CONFIG_CRYPTO_USER_API_SKCIPHER</option> habilitado ou não
-tiver quaisquer opções fornecendo um AES com implementação CBC (por exemplo,
-a combinação de <option>CONFIG_CRYPTO_AES</option> e
-<option>CONFIG_CRYPTO_CBC</option>; ou
-<option>CONFIG_CRYPTO_AES_NI_INTEL</option> se a CPU suportar AES-NI)
-habilitado. Se falhar, pode ser seguramente ignorado.</para>
-
     <para>Instale o pacote (configurar-se uma <envar>INSTALL_LIBS</envar> vazia impede
 a instalação das bibliotecas estáticas):</para>
 
@@ -125,7 +117,7 @@ precisam ser parados e reiniciados. Leiam-se as entradas relacionadas em
 
       <seglistitem>
         <seg>
-          c_rehash e openssl
+          openssl
         </seg>
         <seg>
           libcrypto.so e libssl.so
@@ -139,22 +131,25 @@ precisam ser parados e reiniciados. Leiam-se as entradas relacionadas em
 
     <variablelist>
       <bridgehead renderas="sect3">Descrições Curtas</bridgehead>
-      <?dbfo list-presentation="list"?> <?dbhtml list-presentation="table"?>
-
+      <!--
       <varlistentry id="c_rehash">
+
         <term><command>c_rehash</command></term>
         <listitem>
           <para>
-            é um script <application>Perl</application> que escaneia todos os arquivos
-em um diretório e adiciona links simbólicos para os valores de hash deles. O
-uso do <command>c_rehash</command> é considerado obsoleto e deveria ser
-substituído pelo comando <command>openssl rehash</command>
+            is a <application>Perl</application> script that
+            scans all files in a directory and adds symbolic links to their
+            hash values.  Use of <command>c_rehash</command> is considered
+            obsolete and should be replaced by
+            <command>openssl rehash</command> command
           </para>
           <indexterm zone="ch-system-openssl c_rehash">
             <primary sortas="b-c_rehash">c_rehash</primary>
           </indexterm>
         </listitem>
       </varlistentry>
+-->
+<?dbfo list-presentation="list"?> <?dbhtml list-presentation="table"?>
 
       <varlistentry id="openssl-prog">
         <term><command>openssl</command></term>
