@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-09-13 12:03-0300\n"
+"POT-Creation-Date: 2026-11-08 00:30-0300\n"
 "PO-Revision-Date: 2026-08-17 04:18+0000\n"
 "Last-Translator: Jamenson Ferreira Espindula de Almeida Melo <jafesp@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/projects/linux-from-scratch/chapter03_patches/pt_BR/>\n"
@@ -191,35 +191,7 @@ msgid "MD5 sum: <literal>&openrc-lock-patch-md5;</literal>"
 msgstr "Soma de verificação MD5: <literal>&expect-gcc15-patch-md5;</literal>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><term>
-#: lfs-en/chapter03/patches.xml:137
-#, xml-text
-msgid ""
-"Python Openssl4 Patch - <token>&python-openssl4-fixes-patch-size;</token>:"
-msgstr ""
-"Remendo Openssl4 do Python - <token>&python-openssl4-fixes-patch-"
-"size;</token>:"
-
-#. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/patches.xml:139
-#, fuzzy, xml-text
-#| msgid ""
-#| "Download: <ulink url=\"&patches-root;&python-openssl4-fixes-patch;\"/>"
-msgid ""
-"Download: <ulink url=\"&patches-root;Python/&python-openssl4-fixes-"
-"patch;\"/>"
-msgstr ""
-"Transferência: <ulink url=\"&patches-root;&python-openssl4-fixes-patch;\"/>"
-
-#. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/patches.xml:140
-#, xml-text
-msgid "MD5 sum: <literal>&python-openssl4-fixes-patch-md5;</literal>"
-msgstr ""
-"Soma de verificação MD5: <literal>&python-openssl4-fixes-patch-"
-"md5;</literal>"
-
-#. type: Content of: <sect1><variablelist><varlistentry><term>
-#: lfs-en/chapter03/patches.xml:171
+#: lfs-en/chapter03/patches.xml:164
 #, xml-text
 msgid "Tar Upstream Patch - <token>&tar-aclfix-patch-size;</token>:"
 msgstr ""
@@ -227,26 +199,26 @@ msgstr ""
 "size;</token>:"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/patches.xml:173
+#: lfs-en/chapter03/patches.xml:166
 #, fuzzy, xml-text
 #| msgid "Download: <ulink url=\"&patches-root;&tar-aclfix-patch;\"/>"
 msgid "Download: <ulink url=\"&patches-root;tar/&tar-aclfix-patch;\"/>"
 msgstr "Transferência: <ulink url=\"&patches-root;&tar-aclfix-patch;\"/>"
 
 #. type: Content of: <sect1><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter03/patches.xml:174
+#: lfs-en/chapter03/patches.xml:167
 #, xml-text
 msgid "MD5 sum: <literal>&tar-aclfix-patch-md5;</literal>"
 msgstr "Soma de verificação MD5: <literal>&tar-aclfix-patch-md5;</literal>"
 
 #. type: Content of: <sect1><para>
-#: lfs-en/chapter03/patches.xml:197
+#: lfs-en/chapter03/patches.xml:190
 #, xml-text
 msgid "Total size of these patches: about <returnvalue/>"
 msgstr "Tamanho total desses remendos: cerca de <returnvalue/>"
 
 #. type: Content of: <sect1><para>
-#: lfs-en/chapter03/patches.xml:199
+#: lfs-en/chapter03/patches.xml:192
 #, xml-text
 msgid ""
 "In addition to the above required patches, there exist a number of optional "
@@ -281,6 +253,24 @@ msgstr ""
 #~ msgid "MD5 sum: <literal>&sysvinit-consolidated-patch-md5;</literal>"
 #~ msgstr ""
 #~ "Soma de verificação MD5: <literal>&sysvinit-consolidated-patch-"
+#~ "md5;</literal>"
+
+#, xml-text
+#~ msgid ""
+#~ "Python Openssl4 Patch - <token>&python-openssl4-fixes-patch-size;</token>:"
+#~ msgstr ""
+#~ "Remendo Openssl4 do Python - <token>&python-openssl4-fixes-patch-"
+#~ "size;</token>:"
+
+#, xml-text
+#~ msgid "Download: <ulink url=\"&patches-root;&python-openssl4-fixes-patch;\"/>"
+#~ msgstr ""
+#~ "Transferência: <ulink url=\"&patches-root;&python-openssl4-fixes-patch;\"/>"
+
+#, xml-text
+#~ msgid "MD5 sum: <literal>&python-openssl4-fixes-patch-md5;</literal>"
+#~ msgstr ""
+#~ "Soma de verificação MD5: <literal>&python-openssl4-fixes-patch-"
 #~ "md5;</literal>"
 
 #, xml-text

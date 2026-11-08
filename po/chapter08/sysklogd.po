@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-09-13 12:02-0300\n"
-"PO-Revision-Date: 2026-09-08 05:55+0000\n"
+"POT-Creation-Date: 2026-11-08 00:29-0300\n"
+"PO-Revision-Date: 2026-10-20 02:00+0000\n"
 "Last-Translator: Jamenson Espindula <jafesp@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/projects/linux-from-scratch/chapter08_sysklogd/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -217,34 +217,58 @@ msgstr "Conteúdo do Sysklogd"
 msgid "Installed program"
 msgstr "Aplicativo instalado"
 
+#. type: Content of: <sect1><sect2><segmentedlist><segtitle>
+#: lfs-en/chapter08/sysklogd.xml:104
+#, xml-text
+msgid "Installed library"
+msgstr "Biblioteca instalada"
+
+#. type: Content of: <sect1><sect2><segmentedlist><segtitle>
+#: lfs-en/chapter08/sysklogd.xml:105
+#, xml-text
+msgid "Installed directory"
+msgstr "Diretório instalado"
+
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/sysklogd.xml:106 lfs-en/chapter08/sysklogd.xml:123
+#: lfs-en/chapter08/sysklogd.xml:107 lfs-en/chapter08/sysklogd.xml:126
 #, xml-text
 msgid "syslogd"
 msgstr "syslogd"
 
+#. type: Content of: <sect1><sect2><segmentedlist><seglistitem><seg>
+#: lfs-en/chapter08/sysklogd.xml:108
+#, xml-text
+msgid "libsyslog.so"
+msgstr "libsyslog.so"
+
+#. type: Content of: <sect1><sect2><segmentedlist><seglistitem><seg>
+#: lfs-en/chapter08/sysklogd.xml:109
+#, xml-text
+msgid "/usr/include/syslog"
+msgstr "/usr/include/syslog"
+
 #. type: Content of: <sect1><sect2><variablelist><bridgehead>
-#: lfs-en/chapter08/sysklogd.xml:111
+#: lfs-en/chapter08/sysklogd.xml:114
 #, xml-text
 msgid "Short Descriptions"
 msgstr "Descrições Curtas"
 
 #. type: Content of: <sect1><sect2><variablelist>
-#: lfs-en/chapter08/sysklogd.xml:112
+#: lfs-en/chapter08/sysklogd.xml:115
 #, xml-text
 msgid "<?dbfo list-presentation=\"list\"?> <?dbhtml list-presentation=\"table\"?>"
 msgstr "<?dbfo list-presentation=\"list\"?> <?dbhtml list-presentation=\"table\"?>"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/sysklogd.xml:116
+#: lfs-en/chapter08/sysklogd.xml:119
 #, xml-text
 msgid "<command>syslogd</command>"
 msgstr "<command>syslogd</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/sysklogd.xml:118
+#: lfs-en/chapter08/sysklogd.xml:121
 #, xml-text
 msgid ""
 "Logs the messages that system programs offer for logging [Every logged "

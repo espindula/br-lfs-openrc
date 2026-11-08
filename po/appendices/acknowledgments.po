@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-09-13 12:04-0300\n"
-"PO-Revision-Date: 2026-09-08 05:54+0000\n"
+"POT-Creation-Date: 2026-11-08 00:30-0300\n"
+"PO-Revision-Date: 2026-09-23 02:00+0000\n"
 "Last-Translator: Jamenson Espindula <jafesp@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/projects/linux-from-scratch/appendices_acknowledgments/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -227,10 +227,10 @@ msgstr ""
 #, xml-text
 msgid ""
 "<ulink url=\"mailto:justin@knierim.org\">Justin Knierim</ulink> "
-"&lt;tim@idge.net&gt; &ndash; lfs-matrix.net mirror"
+"&lt;justin@knierim.org&gt; &ndash; lfs-matrix.net mirror"
 msgstr ""
 "<ulink url=\"mailto:justin@knierim.org\">Justin Knierim</ulink> "
-"&lt;tim@idge.net&gt; &ndash; espelho lfs-matrix.net"
+"&lt;justin@knierim.org&gt; &ndash; espelho lfs-matrix.net"
 
 #. type: Content of: <appendix><bridgehead>
 #: lfs-en/appendices/acknowledgments.xml:138

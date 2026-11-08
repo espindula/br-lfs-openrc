@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-09-13 12:03-0300\n"
-"PO-Revision-Date: 2026-09-08 05:55+0000\n"
+"POT-Creation-Date: 2026-11-08 00:30-0300\n"
+"PO-Revision-Date: 2026-09-09 05:31+0000\n"
 "Last-Translator: Jamenson Espindula <jafesp@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/projects/linux-from-scratch/chapter08_udev/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -194,7 +194,7 @@ msgstr ""
 #: lfs-en/chapter08/udev.xml:84
 #, xml-text
 msgid "The meaning of the meson options:"
-msgstr "O significado das opções \"meson\":"
+msgstr "O significado das opções do meson:"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
 #: lfs-en/chapter08/udev.xml:87

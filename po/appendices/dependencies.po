@@ -6,10 +6,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-09-13 12:03-0300\n"
-"PO-Revision-Date: 2026-09-11 10:00+0000\n"
+"POT-Creation-Date: 2026-11-08 00:30-0300\n"
+"PO-Revision-Date: 2026-09-08 05:54+0000\n"
 "Last-Translator: Jamenson Espindula <jafesp@gmail.com>\n"
-"Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/projects/linux-from-scratch-13-1/appendices_dependencies/pt_BR/>\n"
+"Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/projects/linux-from-scratch/appendices_dependencies/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -253,7 +253,6 @@ msgstr ""
 #: lfs-en/appendices/dependencies.xml:1270
 #: lfs-en/appendices/dependencies.xml:1308
 #: lfs-en/appendices/dependencies.xml:1347
-#: lfs-en/appendices/dependencies.xml:1385
 #: lfs-en/appendices/dependencies.xml:1425
 #: lfs-en/appendices/dependencies.xml:1469
 #: lfs-en/appendices/dependencies.xml:1508
@@ -303,7 +302,6 @@ msgstr ""
 #: lfs-en/appendices/dependencies.xml:3339
 #: lfs-en/appendices/dependencies.xml:3391
 #: lfs-en/appendices/dependencies.xml:3435
-#: lfs-en/appendices/dependencies.xml:3476
 #: lfs-en/appendices/dependencies.xml:3517
 #: lfs-en/appendices/dependencies.xml:3555
 #: lfs-en/appendices/dependencies.xml:3593
@@ -374,7 +372,6 @@ msgstr "Glibc"
 #: lfs-en/appendices/dependencies.xml:1277
 #: lfs-en/appendices/dependencies.xml:1315
 #: lfs-en/appendices/dependencies.xml:1354
-#: lfs-en/appendices/dependencies.xml:1393
 #: lfs-en/appendices/dependencies.xml:1432
 #: lfs-en/appendices/dependencies.xml:1476
 #: lfs-en/appendices/dependencies.xml:1515
@@ -424,7 +421,6 @@ msgstr "Glibc"
 #: lfs-en/appendices/dependencies.xml:3346
 #: lfs-en/appendices/dependencies.xml:3398
 #: lfs-en/appendices/dependencies.xml:3442
-#: lfs-en/appendices/dependencies.xml:3483
 #: lfs-en/appendices/dependencies.xml:3524
 #: lfs-en/appendices/dependencies.xml:3562
 #: lfs-en/appendices/dependencies.xml:3600
@@ -473,7 +469,6 @@ msgstr "Automake, Diffutils, Findutils e Libtool"
 #: lfs-en/appendices/dependencies.xml:1284
 #: lfs-en/appendices/dependencies.xml:1322
 #: lfs-en/appendices/dependencies.xml:1361
-#: lfs-en/appendices/dependencies.xml:1400
 #: lfs-en/appendices/dependencies.xml:1439
 #: lfs-en/appendices/dependencies.xml:1483
 #: lfs-en/appendices/dependencies.xml:1522
@@ -523,7 +518,6 @@ msgstr "Automake, Diffutils, Findutils e Libtool"
 #: lfs-en/appendices/dependencies.xml:3353
 #: lfs-en/appendices/dependencies.xml:3405
 #: lfs-en/appendices/dependencies.xml:3449
-#: lfs-en/appendices/dependencies.xml:3490
 #: lfs-en/appendices/dependencies.xml:3531
 #: lfs-en/appendices/dependencies.xml:3569
 #: lfs-en/appendices/dependencies.xml:3607
@@ -571,7 +565,6 @@ msgstr "Coreutils, Sed, Tar e Vim"
 #: lfs-en/appendices/dependencies.xml:1291
 #: lfs-en/appendices/dependencies.xml:1329
 #: lfs-en/appendices/dependencies.xml:1368
-#: lfs-en/appendices/dependencies.xml:1407
 #: lfs-en/appendices/dependencies.xml:1446
 #: lfs-en/appendices/dependencies.xml:1490
 #: lfs-en/appendices/dependencies.xml:1529
@@ -621,7 +614,6 @@ msgstr "Coreutils, Sed, Tar e Vim"
 #: lfs-en/appendices/dependencies.xml:3360
 #: lfs-en/appendices/dependencies.xml:3412
 #: lfs-en/appendices/dependencies.xml:3458
-#: lfs-en/appendices/dependencies.xml:3497
 #: lfs-en/appendices/dependencies.xml:3538
 #: lfs-en/appendices/dependencies.xml:3576
 #: lfs-en/appendices/dependencies.xml:3615
@@ -677,8 +669,6 @@ msgstr "&external;"
 #: lfs-en/appendices/dependencies.xml:1331
 #: lfs-en/appendices/dependencies.xml:1356
 #: lfs-en/appendices/dependencies.xml:1370
-#: lfs-en/appendices/dependencies.xml:1402
-#: lfs-en/appendices/dependencies.xml:1409
 #: lfs-en/appendices/dependencies.xml:1441
 #: lfs-en/appendices/dependencies.xml:1492
 #: lfs-en/appendices/dependencies.xml:1517
@@ -1108,12 +1098,10 @@ msgstr ""
 "Bash, Binutils, Coreutils, Gawk, GCC, Gettext, Glibc, Grep, Make, Sed e "
 "Texinfo"
 
-#. type: Content of: <appendix><segmentedlist><seglistitem><seg>
+#. type: Content of: <appendix><bridgehead>
 #: lfs-en/appendices/dependencies.xml:546
 #: lfs-en/appendices/dependencies.xml:1324
-#: lfs-en/appendices/dependencies.xml:1395
 #: lfs-en/appendices/dependencies.xml:2619
-#: lfs-en/appendices/dependencies.xml:3485
 #, xml-text
 msgid "Perl"
 msgstr "Perl"
@@ -1670,12 +1658,6 @@ msgstr "GCC, Glibc, Ncurses e Readline"
 #, xml-text
 msgid "Tar"
 msgstr "Tar"
-
-#. type: Content of: <appendix><segmentedlist><seglistitem><seg>
-#: lfs-en/appendices/dependencies.xml:1387
-#, xml-text
-msgid "Autoconf, Automake, Bash, Glibc, Grep, Perl, and Sed"
-msgstr "Autoconf, Automake, Bash, Glibc, Grep, Perl e Sed"
 
 #. type: Content of: <appendix><bridgehead>
 #: lfs-en/appendices/dependencies.xml:1414
@@ -2397,7 +2379,7 @@ msgid ""
 "Binutils, <phrase revision='systemd'>D-Bus, </phrase> E2fsprogs, IProute2, "
 "Kmod, Man-DB, Procps-ng, Python, &systemd-udev;, and Util-linux"
 msgstr ""
-"Binutils, <phrase revision='systemd'>D-Bus, </phrase> E2fsprogs, IProute2, "
+"Binutils, <phrase revision='systemd'>D-Bus, </phrase>E2fsprogs, IProute2, "
 "Kmod, Man-DB, Procps-ng, Python, &systemd-udev; e Util-linux"
 
 #. type: Content of: <appendix><bridgehead>
@@ -2912,28 +2894,6 @@ msgstr "Python, Flit-core e packaging"
 msgid "Jinja2, MarkupSafe, Meson, and Setuptools"
 msgstr "Jinja2, MarkupSafe, Meson e Setuptools"
 
-#. type: Content of: <appendix><segmentedlist><seglistitem><seg>
-#: lfs-en/appendices/dependencies.xml:3478
-#, xml-text
-msgid "Expat, Glibc, and Perl"
-msgstr "Expat, Glibc e Perl"
-
-#. type: Content of: <appendix><segmentedlist><seglistitem><seg>
-#: lfs-en/appendices/dependencies.xml:3492
-#, xml-text
-msgid "Intltool"
-msgstr "Intltool"
-
-#. type: Content of: <appendix><segmentedlist><seglistitem><seg>
-#: lfs-en/appendices/dependencies.xml:3500
-#, xml-text
-msgid ""
-"<ulink "
-"url=\"https://metacpan.org/pod/LWP::UserAgent\">LWP::UserAgent</ulink>"
-msgstr ""
-"<ulink "
-"url=\"https://metacpan.org/pod/LWP::UserAgent\">LWP::UserAgent</ulink>"
-
 #. type: Content of: <appendix><bridgehead>
 #: lfs-en/appendices/dependencies.xml:3507
 #, xml-text
@@ -2989,6 +2949,26 @@ msgstr "Binutils, File, GCC, Kmod, Libelf, Python e &systemd-udev;"
 #, xml-text
 #~ msgid "Binutils, Coreutils, GCC, Glibc, Make, and Sed"
 #~ msgstr "Binutils, Coreutils, GCC, Glibc, Make e Sed"
+
+#, xml-text
+#~ msgid "Autoconf, Automake, Bash, Glibc, Grep, Perl, and Sed"
+#~ msgstr "Autoconf, Automake, Bash, Glibc, Grep, Perl e Sed"
+
+#, xml-text
+#~ msgid "Expat, Glibc, and Perl"
+#~ msgstr "Expat, Glibc e Perl"
+
+#, xml-text
+#~ msgid "Intltool"
+#~ msgstr "Intltool"
+
+#, xml-text
+#~ msgid ""
+#~ "<ulink "
+#~ "url=\"https://metacpan.org/pod/LWP::UserAgent\">LWP::UserAgent</ulink>"
+#~ msgstr ""
+#~ "<ulink "
+#~ "url=\"https://metacpan.org/pod/LWP::UserAgent\">LWP::UserAgent</ulink>"
 
 #, xml-text
 #~ msgid ""

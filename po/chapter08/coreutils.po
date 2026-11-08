@@ -6,16 +6,16 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-09-13 12:03-0300\n"
-"PO-Revision-Date: 2026-07-11 08:30+0000\n"
-"Last-Translator: Jamenson Ferreira Espindula de Almeida Melo <jafesp@gmail.com>\n"
+"POT-Creation-Date: 2026-11-08 00:29-0300\n"
+"PO-Revision-Date: 2026-10-02 02:00+0000\n"
+"Last-Translator: Jamenson Espindula <jafesp@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/projects/linux-from-scratch/chapter08_coreutils/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.15.2\n"
+"X-Generator: Weblate 2026.9\n"
 
 #. type: Content of: <sect1><sect1info><address>
 #: lfs-en/chapter08/coreutils.xml:14
@@ -314,35 +314,41 @@ msgstr ""
 #. type: Content of: <sect1><sect2><para>
 #: lfs-en/chapter08/coreutils.xml:157
 #, xml-text
+msgid "One test, test-regex-el, is known to fail."
+msgstr "Um teste, test-regex-el, é conhecido por falhar."
+
+#. type: Content of: <sect1><sect2><para>
+#: lfs-en/chapter08/coreutils.xml:159
+#, xml-text
 msgid "Remove the temporary group:"
 msgstr "Remova o grupo temporário:"
 
 #. type: Content of: <sect1><sect2><screen>
-#: lfs-en/chapter08/coreutils.xml:159
+#: lfs-en/chapter08/coreutils.xml:161
 #, no-wrap, xml-text
 msgid "<userinput remap=\"test\">groupdel dummy</userinput>"
 msgstr "<userinput remap=\"test\">groupdel dummy</userinput>"
 
 #. type: Content of: <sect1><sect2><para>
-#: lfs-en/chapter08/coreutils.xml:161
+#: lfs-en/chapter08/coreutils.xml:163
 #, xml-text
 msgid "Install the package:"
 msgstr "Instale o pacote:"
 
 #. type: Content of: <sect1><sect2><screen>
-#: lfs-en/chapter08/coreutils.xml:163
+#: lfs-en/chapter08/coreutils.xml:165
 #, no-wrap, xml-text
 msgid "<userinput remap=\"install\">make install</userinput>"
 msgstr "<userinput remap=\"install\">make install</userinput>"
 
 #. type: Content of: <sect1><sect2><para>
-#: lfs-en/chapter08/coreutils.xml:165
+#: lfs-en/chapter08/coreutils.xml:167
 #, xml-text
 msgid "Move programs to the locations specified by the FHS:"
 msgstr "Mova aplicativos para os locais especificados pelo FHS:"
 
 #. type: Content of: <sect1><sect2><screen>
-#: lfs-en/chapter08/coreutils.xml:167
+#: lfs-en/chapter08/coreutils.xml:169
 #, no-wrap, xml-text
 msgid ""
 "<userinput remap=\"install\">mv -v /usr/bin/chroot /usr/sbin\n"
@@ -354,31 +360,31 @@ msgstr ""
 "sed -i 's/\"1\"/\"8\"/' /usr/share/man/man8/chroot.8</userinput>"
 
 #. type: Content of: <sect1><sect2><title>
-#: lfs-en/chapter08/coreutils.xml:174
+#: lfs-en/chapter08/coreutils.xml:176
 #, xml-text
 msgid "Contents of Coreutils"
 msgstr "Conteúdo do Coreutils"
 
 #. type: Content of: <sect1><sect2><segmentedlist><segtitle>
-#: lfs-en/chapter08/coreutils.xml:177
+#: lfs-en/chapter08/coreutils.xml:179
 #, xml-text
 msgid "Installed programs"
 msgstr "Programas instalados"
 
 #. type: Content of: <sect1><sect2><segmentedlist><segtitle>
-#: lfs-en/chapter08/coreutils.xml:178
+#: lfs-en/chapter08/coreutils.xml:180
 #, xml-text
 msgid "Installed library"
 msgstr "Biblioteca instalada"
 
 #. type: Content of: <sect1><sect2><segmentedlist><segtitle>
-#: lfs-en/chapter08/coreutils.xml:179
+#: lfs-en/chapter08/coreutils.xml:181
 #, xml-text
 msgid "Installed directory"
 msgstr "Diretório instalado"
 
 #. type: Content of: <sect1><sect2><segmentedlist><seglistitem><seg>
-#: lfs-en/chapter08/coreutils.xml:182
+#: lfs-en/chapter08/coreutils.xml:184
 #, xml-text
 msgid ""
 "[, b2sum, base32, base64, basename, basenc, cat, chgrp, chmod, chown, "
@@ -404,38 +410,38 @@ msgstr ""
 " vdir, wc, who, whoami e yes"
 
 #. type: Content of: <sect1><sect2><segmentedlist><seglistitem><seg>
-#: lfs-en/chapter08/coreutils.xml:193
+#: lfs-en/chapter08/coreutils.xml:195
 #, xml-text
 msgid "libstdbuf.so (in /usr/libexec/coreutils)"
 msgstr "libstdbuf.so (em /usr/libexec/coreutils)"
 
 #. type: Content of: <sect1><sect2><segmentedlist><seglistitem><seg>
-#: lfs-en/chapter08/coreutils.xml:194
+#: lfs-en/chapter08/coreutils.xml:196
 #, xml-text
 msgid "/usr/libexec/coreutils"
 msgstr "/usr/libexec/coreutils"
 
 #. type: Content of: <sect1><sect2><variablelist><bridgehead>
-#: lfs-en/chapter08/coreutils.xml:199
+#: lfs-en/chapter08/coreutils.xml:201
 #, xml-text
 msgid "Short Descriptions"
 msgstr "Descrições Curtas"
 
 #. type: Content of: <sect1><sect2><variablelist>
-#: lfs-en/chapter08/coreutils.xml:200
+#: lfs-en/chapter08/coreutils.xml:202
 #, xml-text
 msgid "<?dbfo list-presentation=\"list\"?> <?dbhtml list-presentation=\"table\"?>"
 msgstr "<?dbfo list-presentation=\"list\"?> <?dbhtml list-presentation=\"table\"?>"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:204
+#: lfs-en/chapter08/coreutils.xml:206
 #, xml-text
 msgid "<command>[</command>"
 msgstr "<command>[</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:206
+#: lfs-en/chapter08/coreutils.xml:208
 #, xml-text
 msgid ""
 "Is an actual command, /usr/bin/[; it is a synonym for the "
@@ -446,20 +452,20 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:209
+#: lfs-en/chapter08/coreutils.xml:211
 #, xml-text
 msgid "["
 msgstr "["
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:215
+#: lfs-en/chapter08/coreutils.xml:217
 #, xml-text
 msgid "<command>base32</command>"
 msgstr "<command>base32</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:217
+#: lfs-en/chapter08/coreutils.xml:219
 #, xml-text
 msgid ""
 "Encodes and decodes data according to the base32 specification (RFC 4648)"
@@ -468,20 +474,20 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:220 lfs-en/chapter08/coreutils.xml:231
+#: lfs-en/chapter08/coreutils.xml:222 lfs-en/chapter08/coreutils.xml:233
 #, xml-text
 msgid "base64"
 msgstr "base64"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:226
+#: lfs-en/chapter08/coreutils.xml:228
 #, xml-text
 msgid "<command>base64</command>"
 msgstr "<command>base64</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:228
+#: lfs-en/chapter08/coreutils.xml:230
 #, xml-text
 msgid ""
 "Encodes and decodes data according to the base64 specification (RFC 4648)"
@@ -489,114 +495,114 @@ msgstr ""
 "Codifica e decodifica dados de acordo com a especificação base64 (RFC 4648)"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:237
+#: lfs-en/chapter08/coreutils.xml:239
 #, xml-text
 msgid "<command>b2sum</command>"
 msgstr "<command>b2sum</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:239
+#: lfs-en/chapter08/coreutils.xml:241
 #, xml-text
 msgid "Prints or checks BLAKE2 (512-bit) checksums"
 msgstr "Imprime ou verifica somas de verificação BLAKE2 (512 bits)"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:241
+#: lfs-en/chapter08/coreutils.xml:243
 #, xml-text
 msgid "b2sum"
 msgstr "b2sum"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:247
+#: lfs-en/chapter08/coreutils.xml:249
 #, xml-text
 msgid "<command>basename</command>"
 msgstr "<command>basename</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:249
+#: lfs-en/chapter08/coreutils.xml:251
 #, xml-text
 msgid "Strips any path and a given suffix from a file name"
 msgstr "Remove qualquer caminho e um dado sufixo de um nome de arquivo"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:251
+#: lfs-en/chapter08/coreutils.xml:253
 #, xml-text
 msgid "basename"
 msgstr "basename"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:257
+#: lfs-en/chapter08/coreutils.xml:259
 #, xml-text
 msgid "<command>basenc</command>"
 msgstr "<command>basenc</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:259
+#: lfs-en/chapter08/coreutils.xml:261
 #, xml-text
 msgid "Encodes or decodes data using various algorithms"
 msgstr "Codifica ou decodifica dados usando vários algoritmos"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:261
+#: lfs-en/chapter08/coreutils.xml:263
 #, xml-text
 msgid "basenc"
 msgstr "basenc"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:267
+#: lfs-en/chapter08/coreutils.xml:269
 #, xml-text
 msgid "<command>cat</command>"
 msgstr "<command>cat</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:269
+#: lfs-en/chapter08/coreutils.xml:271
 #, xml-text
 msgid "Concatenates files to standard output"
 msgstr "Concatena arquivos para saída gerada padrão"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:271
+#: lfs-en/chapter08/coreutils.xml:273
 #, xml-text
 msgid "cat"
 msgstr "cat"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:289
+#: lfs-en/chapter08/coreutils.xml:291
 #, xml-text
 msgid "<command>chgrp</command>"
 msgstr "<command>chgrp</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:291
+#: lfs-en/chapter08/coreutils.xml:293
 #, xml-text
 msgid "Changes the group ownership of files and directories"
 msgstr "Muda a propriedade do grupo de arquivos e diretórios"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:293
+#: lfs-en/chapter08/coreutils.xml:295
 #, xml-text
 msgid "chgrp"
 msgstr "chgrp"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:299
+#: lfs-en/chapter08/coreutils.xml:301
 #, xml-text
 msgid "<command>chmod</command>"
 msgstr "<command>chmod</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:301
+#: lfs-en/chapter08/coreutils.xml:303
 #, xml-text
 msgid ""
 "Changes the permissions of each file to the given mode; the mode can be "
@@ -609,20 +615,20 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:305
+#: lfs-en/chapter08/coreutils.xml:307
 #, xml-text
 msgid "chmod"
 msgstr "chmod"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:311
+#: lfs-en/chapter08/coreutils.xml:313
 #, xml-text
 msgid "<command>chown</command>"
 msgstr "<command>chown</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:313
+#: lfs-en/chapter08/coreutils.xml:315
 #, xml-text
 msgid "Changes the user and/or group ownership of files and directories"
 msgstr ""
@@ -631,20 +637,20 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:316
+#: lfs-en/chapter08/coreutils.xml:318
 #, xml-text
 msgid "chown"
 msgstr "chown"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:322
+#: lfs-en/chapter08/coreutils.xml:324
 #, xml-text
 msgid "<command>chroot</command>"
 msgstr "<command>chroot</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:324
+#: lfs-en/chapter08/coreutils.xml:326
 #, xml-text
 msgid ""
 "Runs a command with the specified directory as the <filename "
@@ -655,20 +661,20 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:327
+#: lfs-en/chapter08/coreutils.xml:329
 #, xml-text
 msgid "chroot"
 msgstr "chroot"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:333
+#: lfs-en/chapter08/coreutils.xml:335
 #, xml-text
 msgid "<command>cksum</command>"
 msgstr "<command>cksum</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:335
+#: lfs-en/chapter08/coreutils.xml:337
 #, xml-text
 msgid ""
 "Prints the Cyclic Redundancy Check (CRC) checksum and the byte counts of "
@@ -679,20 +685,20 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:338
+#: lfs-en/chapter08/coreutils.xml:340
 #, xml-text
 msgid "cksum"
 msgstr "cksum"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:344
+#: lfs-en/chapter08/coreutils.xml:346
 #, xml-text
 msgid "<command>comm</command>"
 msgstr "<command>comm</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:346
+#: lfs-en/chapter08/coreutils.xml:348
 #, xml-text
 msgid ""
 "Compares two sorted files, outputting in three columns the lines that are "
@@ -703,40 +709,40 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:349
+#: lfs-en/chapter08/coreutils.xml:351
 #, xml-text
 msgid "comm"
 msgstr "comm"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:355
+#: lfs-en/chapter08/coreutils.xml:357
 #, xml-text
 msgid "<command>cp</command>"
 msgstr "<command>cp</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:357
+#: lfs-en/chapter08/coreutils.xml:359
 #, xml-text
 msgid "Copies files"
 msgstr "Copia arquivos"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:359
+#: lfs-en/chapter08/coreutils.xml:361
 #, xml-text
 msgid "cp"
 msgstr "cp"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:365
+#: lfs-en/chapter08/coreutils.xml:367
 #, xml-text
 msgid "<command>csplit</command>"
 msgstr "<command>csplit</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:367
+#: lfs-en/chapter08/coreutils.xml:369
 #, xml-text
 msgid ""
 "Splits a given file into several new files, separating them according to "
@@ -749,20 +755,20 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:371
+#: lfs-en/chapter08/coreutils.xml:373
 #, xml-text
 msgid "csplit"
 msgstr "csplit"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:377
+#: lfs-en/chapter08/coreutils.xml:379
 #, xml-text
 msgid "<command>cut</command>"
 msgstr "<command>cut</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:379
+#: lfs-en/chapter08/coreutils.xml:381
 #, xml-text
 msgid ""
 "Prints sections of lines, selecting the parts according to given fields or "
@@ -773,20 +779,20 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:382
+#: lfs-en/chapter08/coreutils.xml:384
 #, xml-text
 msgid "cut"
 msgstr "cut"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:388
+#: lfs-en/chapter08/coreutils.xml:390
 #, xml-text
 msgid "<command>date</command>"
 msgstr "<command>date</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:390
+#: lfs-en/chapter08/coreutils.xml:392
 #, xml-text
 msgid ""
 "Displays the current date and time in the given format, or sets the system "
@@ -797,20 +803,20 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:393
+#: lfs-en/chapter08/coreutils.xml:395
 #, xml-text
 msgid "date"
 msgstr "date"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:399
+#: lfs-en/chapter08/coreutils.xml:401
 #, xml-text
 msgid "<command>dd</command>"
 msgstr "<command>dd</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:401
+#: lfs-en/chapter08/coreutils.xml:403
 #, xml-text
 msgid ""
 "Copies a file using the given block size and count, while optionally "
@@ -821,20 +827,20 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:404
+#: lfs-en/chapter08/coreutils.xml:406
 #, xml-text
 msgid "dd"
 msgstr "dd"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:410
+#: lfs-en/chapter08/coreutils.xml:412
 #, xml-text
 msgid "<command>df</command>"
 msgstr "<command>df</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:412
+#: lfs-en/chapter08/coreutils.xml:414
 #, xml-text
 msgid ""
 "Reports the amount of disk space available (and used) on all mounted file "
@@ -846,20 +852,20 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:416
+#: lfs-en/chapter08/coreutils.xml:418
 #, xml-text
 msgid "df"
 msgstr "df"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:422
+#: lfs-en/chapter08/coreutils.xml:424
 #, xml-text
 msgid "<command>dir</command>"
 msgstr "<command>dir</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:424
+#: lfs-en/chapter08/coreutils.xml:426
 #, xml-text
 msgid ""
 "Lists the contents of each given directory (the same as the "
@@ -870,20 +876,20 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:427
+#: lfs-en/chapter08/coreutils.xml:429
 #, xml-text
 msgid "dir"
 msgstr "dir"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:433
+#: lfs-en/chapter08/coreutils.xml:435
 #, xml-text
 msgid "<command>dircolors</command>"
 msgstr "<command>dircolors</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:435
+#: lfs-en/chapter08/coreutils.xml:437
 #, xml-text
 msgid ""
 "Outputs commands to set the <envar>LS_COLOR</envar> environment variable to "
@@ -895,40 +901,40 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:439
+#: lfs-en/chapter08/coreutils.xml:441
 #, xml-text
 msgid "dircolors"
 msgstr "dircolors"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:445
+#: lfs-en/chapter08/coreutils.xml:447
 #, xml-text
 msgid "<command>dirname</command>"
 msgstr "<command>dirname</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:447
+#: lfs-en/chapter08/coreutils.xml:449
 #, xml-text
 msgid "Extracts the directory portion(s) of the given name(s)"
 msgstr "Extrai a(s) porção(ões) de diretório(s) do(s) nome(s) dado(s)"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:449
+#: lfs-en/chapter08/coreutils.xml:451
 #, xml-text
 msgid "dirname"
 msgstr "dirname"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:455
+#: lfs-en/chapter08/coreutils.xml:457
 #, xml-text
 msgid "<command>du</command>"
 msgstr "<command>du</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:457
+#: lfs-en/chapter08/coreutils.xml:459
 #, xml-text
 msgid ""
 "Reports the amount of disk space used by the current directory, by each of "
@@ -941,120 +947,120 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:461
+#: lfs-en/chapter08/coreutils.xml:463
 #, xml-text
 msgid "du"
 msgstr "du"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:467
+#: lfs-en/chapter08/coreutils.xml:469
 #, xml-text
 msgid "<command>echo</command>"
 msgstr "<command>echo</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:469
+#: lfs-en/chapter08/coreutils.xml:471
 #, xml-text
 msgid "Displays the given strings"
 msgstr "Exibe as sequências de caracteres dadas"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:471
+#: lfs-en/chapter08/coreutils.xml:473
 #, xml-text
 msgid "echo"
 msgstr "echo"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:477
+#: lfs-en/chapter08/coreutils.xml:479
 #, xml-text
 msgid "<command>env</command>"
 msgstr "<command>env</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:479
+#: lfs-en/chapter08/coreutils.xml:481
 #, xml-text
 msgid "Runs a command in a modified environment"
 msgstr "Executa um comando em um ambiente modificado"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:481
+#: lfs-en/chapter08/coreutils.xml:483
 #, xml-text
 msgid "env"
 msgstr "env"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:487
+#: lfs-en/chapter08/coreutils.xml:489
 #, xml-text
 msgid "<command>expand</command>"
 msgstr "<command>expand</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:489
+#: lfs-en/chapter08/coreutils.xml:491
 #, xml-text
 msgid "Converts tabs to spaces"
 msgstr "Converte tabulação para espaços"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:491
+#: lfs-en/chapter08/coreutils.xml:493
 #, xml-text
 msgid "expand"
 msgstr "expand"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:497
+#: lfs-en/chapter08/coreutils.xml:499
 #, xml-text
 msgid "<command>expr</command>"
 msgstr "<command>expr</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:499
+#: lfs-en/chapter08/coreutils.xml:501
 #, xml-text
 msgid "Evaluates expressions"
 msgstr "Avalia expressões"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:501
+#: lfs-en/chapter08/coreutils.xml:503
 #, xml-text
 msgid "expr"
 msgstr "expr"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:507
+#: lfs-en/chapter08/coreutils.xml:509
 #, xml-text
 msgid "<command>factor</command>"
 msgstr "<command>factor</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:509
+#: lfs-en/chapter08/coreutils.xml:511
 #, xml-text
 msgid "Prints the prime factors of the specified integers"
 msgstr "Imprime os fatores primos dos inteiros especificados"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:511
+#: lfs-en/chapter08/coreutils.xml:513
 #, xml-text
 msgid "factor"
 msgstr "factor"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:517
+#: lfs-en/chapter08/coreutils.xml:519
 #, xml-text
 msgid "<command>false</command>"
 msgstr "<command>false</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:519
+#: lfs-en/chapter08/coreutils.xml:521
 #, xml-text
 msgid ""
 "Does nothing, unsuccessfully; it always exits with a status code indicating "
@@ -1065,80 +1071,80 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:522
+#: lfs-en/chapter08/coreutils.xml:524
 #, xml-text
 msgid "false"
 msgstr "false"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:528
+#: lfs-en/chapter08/coreutils.xml:530
 #, xml-text
 msgid "<command>fmt</command>"
 msgstr "<command>fmt</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:530
+#: lfs-en/chapter08/coreutils.xml:532
 #, xml-text
 msgid "Reformats the paragraphs in the given files"
 msgstr "Reformata os parágrafos nos arquivos dados"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:532
+#: lfs-en/chapter08/coreutils.xml:534
 #, xml-text
 msgid "fmt"
 msgstr "fmt"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:538
+#: lfs-en/chapter08/coreutils.xml:540
 #, xml-text
 msgid "<command>fold</command>"
 msgstr "<command>fold</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:540
+#: lfs-en/chapter08/coreutils.xml:542
 #, xml-text
 msgid "Wraps the lines in the given files"
 msgstr "Quebra as linhas nos arquivos dados"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:542
+#: lfs-en/chapter08/coreutils.xml:544
 #, xml-text
 msgid "fold"
 msgstr "fold"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:548
+#: lfs-en/chapter08/coreutils.xml:550
 #, xml-text
 msgid "<command>groups</command>"
 msgstr "<command>groups</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:550
+#: lfs-en/chapter08/coreutils.xml:552
 #, xml-text
 msgid "Reports a user's group memberships"
 msgstr "Informa as associações de grupo de um(a) usante"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:552
+#: lfs-en/chapter08/coreutils.xml:554
 #, xml-text
 msgid "groups"
 msgstr "groups"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:558
+#: lfs-en/chapter08/coreutils.xml:560
 #, xml-text
 msgid "<command>head</command>"
 msgstr "<command>head</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:560
+#: lfs-en/chapter08/coreutils.xml:562
 #, xml-text
 msgid ""
 "Prints the first ten lines (or the given number of lines)  of each given "
@@ -1149,40 +1155,40 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:563
+#: lfs-en/chapter08/coreutils.xml:565
 #, xml-text
 msgid "head"
 msgstr "head"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:569
+#: lfs-en/chapter08/coreutils.xml:571
 #, xml-text
 msgid "<command>hostid</command>"
 msgstr "<command>hostid</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:571
+#: lfs-en/chapter08/coreutils.xml:573
 #, xml-text
 msgid "Reports the numeric identifier (in hexadecimal) of the host"
 msgstr "Informa o identificador numérico (em hexadecimal) do dispositivo"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:573
+#: lfs-en/chapter08/coreutils.xml:575
 #, xml-text
 msgid "hostid"
 msgstr "hostid"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:579
+#: lfs-en/chapter08/coreutils.xml:581
 #, xml-text
 msgid "<command>id</command>"
 msgstr "<command>id</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:581
+#: lfs-en/chapter08/coreutils.xml:583
 #, xml-text
 msgid ""
 "Reports the effective user ID, group ID, and group memberships of the "
@@ -1193,20 +1199,20 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:584
+#: lfs-en/chapter08/coreutils.xml:586
 #, xml-text
 msgid "id"
 msgstr "id"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:590
+#: lfs-en/chapter08/coreutils.xml:592
 #, xml-text
 msgid "<command>install</command>"
 msgstr "<command>install</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:592
+#: lfs-en/chapter08/coreutils.xml:594
 #, xml-text
 msgid ""
 "Copies files while setting their permission modes and, if possible, their "
@@ -1217,20 +1223,20 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:595
+#: lfs-en/chapter08/coreutils.xml:597
 #, xml-text
 msgid "install"
 msgstr "install"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:601
+#: lfs-en/chapter08/coreutils.xml:603
 #, xml-text
 msgid "<command>join</command>"
 msgstr "<command>join</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:603
+#: lfs-en/chapter08/coreutils.xml:605
 #, xml-text
 msgid ""
 "Joins the lines that have identical join fields from two separate files"
@@ -1240,140 +1246,140 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:606
+#: lfs-en/chapter08/coreutils.xml:608
 #, xml-text
 msgid "join"
 msgstr "join"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:612
+#: lfs-en/chapter08/coreutils.xml:614
 #, xml-text
 msgid "<command>link</command>"
 msgstr "<command>link</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:614
+#: lfs-en/chapter08/coreutils.xml:616
 #, xml-text
 msgid "Creates a hard link (with the given name) to a file"
 msgstr "Cria um link rígido (com o nome dado) para um arquivo"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:616
+#: lfs-en/chapter08/coreutils.xml:618
 #, xml-text
 msgid "link"
 msgstr "link"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:622
+#: lfs-en/chapter08/coreutils.xml:624
 #, xml-text
 msgid "<command>ln</command>"
 msgstr "<command>ln</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:624
+#: lfs-en/chapter08/coreutils.xml:626
 #, xml-text
 msgid "Makes hard links or soft (symbolic) links between files"
 msgstr "Faz links rígidos ou links flexíveis (simbólicos) entre arquivos"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:626
+#: lfs-en/chapter08/coreutils.xml:628
 #, xml-text
 msgid "ln"
 msgstr "ln"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:632
+#: lfs-en/chapter08/coreutils.xml:634
 #, xml-text
 msgid "<command>logname</command>"
 msgstr "<command>logname</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:634
+#: lfs-en/chapter08/coreutils.xml:636
 #, xml-text
 msgid "Reports the current user's login name"
 msgstr "Informa o nome de login do(a) usante atual"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:636
+#: lfs-en/chapter08/coreutils.xml:638
 #, xml-text
 msgid "logname"
 msgstr "logname"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:642
+#: lfs-en/chapter08/coreutils.xml:644
 #, xml-text
 msgid "<command>ls</command>"
 msgstr "<command>ls</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:644
+#: lfs-en/chapter08/coreutils.xml:646
 #, xml-text
 msgid "Lists the contents of each given directory"
 msgstr "Lista o conteúdo de cada diretório dado"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:646
+#: lfs-en/chapter08/coreutils.xml:648
 #, xml-text
 msgid "ls"
 msgstr "ls"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:652
+#: lfs-en/chapter08/coreutils.xml:654
 #, xml-text
 msgid "<command>md5sum</command>"
 msgstr "<command>md5sum</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:654
+#: lfs-en/chapter08/coreutils.xml:656
 #, xml-text
 msgid "Reports or checks Message Digest 5 (MD5) checksums"
 msgstr "Informa ou verifica somas de verificação Message Digest 5 (MD5)"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:656
+#: lfs-en/chapter08/coreutils.xml:658
 #, xml-text
 msgid "md5sum"
 msgstr "md5sum"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:662
+#: lfs-en/chapter08/coreutils.xml:664
 #, xml-text
 msgid "<command>mkdir</command>"
 msgstr "<command>mkdir</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:664
+#: lfs-en/chapter08/coreutils.xml:666
 #, xml-text
 msgid "Creates directories with the given names"
 msgstr "Cria diretórios com os nomes dados"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:666
+#: lfs-en/chapter08/coreutils.xml:668
 #, xml-text
 msgid "mkdir"
 msgstr "mkdir"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:672
+#: lfs-en/chapter08/coreutils.xml:674
 #, xml-text
 msgid "<command>mkfifo</command>"
 msgstr "<command>mkfifo</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:674
+#: lfs-en/chapter08/coreutils.xml:676
 #, xml-text
 msgid ""
 "Creates First-In, First-Outs (FIFOs), \"named pipes\" in UNIX parlance, with"
@@ -1384,20 +1390,20 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:677
+#: lfs-en/chapter08/coreutils.xml:679
 #, xml-text
 msgid "mkfifo"
 msgstr "mkfifo"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:683
+#: lfs-en/chapter08/coreutils.xml:685
 #, xml-text
 msgid "<command>mknod</command>"
 msgstr "<command>mknod</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:685
+#: lfs-en/chapter08/coreutils.xml:687
 #, xml-text
 msgid ""
 "Creates device nodes with the given names; a device node is a character "
@@ -1408,20 +1414,20 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:688
+#: lfs-en/chapter08/coreutils.xml:690
 #, xml-text
 msgid "mknod"
 msgstr "mknod"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:694
+#: lfs-en/chapter08/coreutils.xml:696
 #, xml-text
 msgid "<command>mktemp</command>"
 msgstr "<command>mktemp</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:696
+#: lfs-en/chapter08/coreutils.xml:698
 #, xml-text
 msgid "Creates temporary files in a secure manner; it is used in scripts"
 msgstr ""
@@ -1430,80 +1436,80 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:698
+#: lfs-en/chapter08/coreutils.xml:700
 #, xml-text
 msgid "mktemp"
 msgstr "mktemp"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:704
+#: lfs-en/chapter08/coreutils.xml:706
 #, xml-text
 msgid "<command>mv</command>"
 msgstr "<command>mv</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:706
+#: lfs-en/chapter08/coreutils.xml:708
 #, xml-text
 msgid "Moves or renames files or directories"
 msgstr "Move ou renomeia arquivos ou diretórios"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:708
+#: lfs-en/chapter08/coreutils.xml:710
 #, xml-text
 msgid "mv"
 msgstr "mv"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:714
+#: lfs-en/chapter08/coreutils.xml:716
 #, xml-text
 msgid "<command>nice</command>"
 msgstr "<command>nice</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:716
+#: lfs-en/chapter08/coreutils.xml:718
 #, xml-text
 msgid "Runs a program with modified scheduling priority"
 msgstr "Executa um aplicativo com prioridade de agendamento modificada"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:718
+#: lfs-en/chapter08/coreutils.xml:720
 #, xml-text
 msgid "nice"
 msgstr "nice"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:724
+#: lfs-en/chapter08/coreutils.xml:726
 #, xml-text
 msgid "<command>nl</command>"
 msgstr "<command>nl</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:726
+#: lfs-en/chapter08/coreutils.xml:728
 #, xml-text
 msgid "Numbers the lines from the given files"
 msgstr "Numera as linhas a partir dos arquivos dados"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:728
+#: lfs-en/chapter08/coreutils.xml:730
 #, xml-text
 msgid "nl"
 msgstr "nl"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:734
+#: lfs-en/chapter08/coreutils.xml:736
 #, xml-text
 msgid "<command>nohup</command>"
 msgstr "<command>nohup</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:736
+#: lfs-en/chapter08/coreutils.xml:738
 #, xml-text
 msgid ""
 "Runs a command immune to hangups, with its output redirected to a log file"
@@ -1513,20 +1519,20 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:739
+#: lfs-en/chapter08/coreutils.xml:741
 #, xml-text
 msgid "nohup"
 msgstr "nohup"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:745
+#: lfs-en/chapter08/coreutils.xml:747
 #, xml-text
 msgid "<command>nproc</command>"
 msgstr "<command>nproc</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:747
+#: lfs-en/chapter08/coreutils.xml:749
 #, xml-text
 msgid "Prints the number of processing units available to a process"
 msgstr ""
@@ -1534,20 +1540,20 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:750
+#: lfs-en/chapter08/coreutils.xml:752
 #, xml-text
 msgid "nproc"
 msgstr "nproc"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:756
+#: lfs-en/chapter08/coreutils.xml:758
 #, xml-text
 msgid "<command>numfmt</command>"
 msgstr "<command>numfmt</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:758
+#: lfs-en/chapter08/coreutils.xml:760
 #, xml-text
 msgid "Converts numbers to or from human-readable strings"
 msgstr ""
@@ -1556,40 +1562,40 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:760
+#: lfs-en/chapter08/coreutils.xml:762
 #, xml-text
 msgid "numfmt"
 msgstr "numfmt"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:766
+#: lfs-en/chapter08/coreutils.xml:768
 #, xml-text
 msgid "<command>od</command>"
 msgstr "<command>od</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:768
+#: lfs-en/chapter08/coreutils.xml:770
 #, xml-text
 msgid "Dumps files in octal and other formats"
 msgstr "Despeja arquivos em octal e outros formatos"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:770
+#: lfs-en/chapter08/coreutils.xml:772
 #, xml-text
 msgid "od"
 msgstr "od"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:776
+#: lfs-en/chapter08/coreutils.xml:778
 #, xml-text
 msgid "<command>paste</command>"
 msgstr "<command>paste</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:778
+#: lfs-en/chapter08/coreutils.xml:780
 #, xml-text
 msgid ""
 "Merges the given files, joining sequentially corresponding lines side by "
@@ -1600,40 +1606,40 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:781
+#: lfs-en/chapter08/coreutils.xml:783
 #, xml-text
 msgid "paste"
 msgstr "paste"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:787
+#: lfs-en/chapter08/coreutils.xml:789
 #, xml-text
 msgid "<command>pathchk</command>"
 msgstr "<command>pathchk</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:789
+#: lfs-en/chapter08/coreutils.xml:791
 #, xml-text
 msgid "Checks if file names are valid or portable"
 msgstr "Verifica se nomes de arquivos são válidos ou portáveis"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:791
+#: lfs-en/chapter08/coreutils.xml:793
 #, xml-text
 msgid "pathchk"
 msgstr "pathchk"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:797
+#: lfs-en/chapter08/coreutils.xml:799
 #, xml-text
 msgid "<command>pinky</command>"
 msgstr "<command>pinky</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:799
+#: lfs-en/chapter08/coreutils.xml:801
 #, xml-text
 msgid ""
 "Is a lightweight finger client; it reports some information about the given "
@@ -1644,60 +1650,60 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:802
+#: lfs-en/chapter08/coreutils.xml:804
 #, xml-text
 msgid "pinky"
 msgstr "pinky"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:808
+#: lfs-en/chapter08/coreutils.xml:810
 #, xml-text
 msgid "<command>pr</command>"
 msgstr "<command>pr</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:810
+#: lfs-en/chapter08/coreutils.xml:812
 #, xml-text
 msgid "Paginates and columnates files for printing"
 msgstr "Pagina e coluna arquivos para impressão"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:812
+#: lfs-en/chapter08/coreutils.xml:814
 #, xml-text
 msgid "pr"
 msgstr "pr"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:818
+#: lfs-en/chapter08/coreutils.xml:820
 #, xml-text
 msgid "<command>printenv</command>"
 msgstr "<command>printenv</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:820
+#: lfs-en/chapter08/coreutils.xml:822
 #, xml-text
 msgid "Prints the environment"
 msgstr "Imprime o ambiente"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:822
+#: lfs-en/chapter08/coreutils.xml:824
 #, xml-text
 msgid "printenv"
 msgstr "printenv"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:828
+#: lfs-en/chapter08/coreutils.xml:830
 #, xml-text
 msgid "<command>printf</command>"
 msgstr "<command>printf</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:830
+#: lfs-en/chapter08/coreutils.xml:832
 #, xml-text
 msgid ""
 "Prints the given arguments according to the given format, much like the C "
@@ -1708,20 +1714,20 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:833
+#: lfs-en/chapter08/coreutils.xml:835
 #, xml-text
 msgid "printf"
 msgstr "printf"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:839
+#: lfs-en/chapter08/coreutils.xml:841
 #, xml-text
 msgid "<command>ptx</command>"
 msgstr "<command>ptx</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:841
+#: lfs-en/chapter08/coreutils.xml:843
 #, xml-text
 msgid ""
 "Produces a permuted index from the contents of the given files, with each "
@@ -1732,120 +1738,120 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:844
+#: lfs-en/chapter08/coreutils.xml:846
 #, xml-text
 msgid "ptx"
 msgstr "ptx"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:850
+#: lfs-en/chapter08/coreutils.xml:852
 #, xml-text
 msgid "<command>pwd</command>"
 msgstr "<command>pwd</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:852
+#: lfs-en/chapter08/coreutils.xml:854
 #, xml-text
 msgid "Reports the name of the current working directory"
 msgstr "Informa o nome do diretório de trabalho atual"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:854
+#: lfs-en/chapter08/coreutils.xml:856
 #, xml-text
 msgid "pwd"
 msgstr "pwd"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:860
+#: lfs-en/chapter08/coreutils.xml:862
 #, xml-text
 msgid "<command>readlink</command>"
 msgstr "<command>readlink</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:862
+#: lfs-en/chapter08/coreutils.xml:864
 #, xml-text
 msgid "Reports the value of the given symbolic link"
 msgstr "Informa o valor do link simbólico dado"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:864
+#: lfs-en/chapter08/coreutils.xml:866
 #, xml-text
 msgid "readlink"
 msgstr "readlink"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:870
+#: lfs-en/chapter08/coreutils.xml:872
 #, xml-text
 msgid "<command>realpath</command>"
 msgstr "<command>realpath</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:872
+#: lfs-en/chapter08/coreutils.xml:874
 #, xml-text
 msgid "Prints the resolved path"
 msgstr "Imprime o caminho resolvido"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:874
+#: lfs-en/chapter08/coreutils.xml:876
 #, xml-text
 msgid "realpath"
 msgstr "realpath"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:880
+#: lfs-en/chapter08/coreutils.xml:882
 #, xml-text
 msgid "<command>rm</command>"
 msgstr "<command>rm</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:882
+#: lfs-en/chapter08/coreutils.xml:884
 #, xml-text
 msgid "Removes files or directories"
 msgstr "Remove arquivos ou diretórios"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:884
+#: lfs-en/chapter08/coreutils.xml:886
 #, xml-text
 msgid "rm"
 msgstr "rm"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:890
+#: lfs-en/chapter08/coreutils.xml:892
 #, xml-text
 msgid "<command>rmdir</command>"
 msgstr "<command>rmdir</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:892
+#: lfs-en/chapter08/coreutils.xml:894
 #, xml-text
 msgid "Removes directories if they are empty"
 msgstr "Remove diretórios se eles estiverem vazios"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:894
+#: lfs-en/chapter08/coreutils.xml:896
 #, xml-text
 msgid "rmdir"
 msgstr "rmdir"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:912
+#: lfs-en/chapter08/coreutils.xml:914
 #, xml-text
 msgid "<command>seq</command>"
 msgstr "<command>seq</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:914
+#: lfs-en/chapter08/coreutils.xml:916
 #, xml-text
 msgid ""
 "Prints a sequence of numbers within a given range and with a given increment"
@@ -1855,20 +1861,20 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:917
+#: lfs-en/chapter08/coreutils.xml:919
 #, xml-text
 msgid "seq"
 msgstr "seq"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:923
+#: lfs-en/chapter08/coreutils.xml:925
 #, xml-text
 msgid "<command>sha1sum</command>"
 msgstr "<command>sha1sum</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:925
+#: lfs-en/chapter08/coreutils.xml:927
 #, xml-text
 msgid "Prints or checks 160-bit Secure Hash Algorithm 1 (SHA1)  checksums"
 msgstr ""
@@ -1877,20 +1883,20 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:928
+#: lfs-en/chapter08/coreutils.xml:930
 #, xml-text
 msgid "sha1sum"
 msgstr "sha1sum"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:934
+#: lfs-en/chapter08/coreutils.xml:936
 #, xml-text
 msgid "<command>sha224sum</command>"
 msgstr "<command>sha224sum</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:936
+#: lfs-en/chapter08/coreutils.xml:938
 #, xml-text
 msgid "Prints or checks 224-bit Secure Hash Algorithm checksums"
 msgstr ""
@@ -1899,20 +1905,20 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:938
+#: lfs-en/chapter08/coreutils.xml:940
 #, xml-text
 msgid "sha224sum"
 msgstr "sha224sum"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:944
+#: lfs-en/chapter08/coreutils.xml:946
 #, xml-text
 msgid "<command>sha256sum</command>"
 msgstr "<command>sha256sum</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:946
+#: lfs-en/chapter08/coreutils.xml:948
 #, xml-text
 msgid "Prints or checks 256-bit Secure Hash Algorithm checksums"
 msgstr ""
@@ -1921,20 +1927,20 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:948
+#: lfs-en/chapter08/coreutils.xml:950
 #, xml-text
 msgid "sha256sum"
 msgstr "sha256sum"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:954
+#: lfs-en/chapter08/coreutils.xml:956
 #, xml-text
 msgid "<command>sha384sum</command>"
 msgstr "<command>sha384sum</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:956
+#: lfs-en/chapter08/coreutils.xml:958
 #, xml-text
 msgid "Prints or checks 384-bit Secure Hash Algorithm checksums"
 msgstr ""
@@ -1943,20 +1949,20 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:958
+#: lfs-en/chapter08/coreutils.xml:960
 #, xml-text
 msgid "sha384sum"
 msgstr "sha384sum"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:964
+#: lfs-en/chapter08/coreutils.xml:966
 #, xml-text
 msgid "<command>sha512sum</command>"
 msgstr "<command>sha512sum</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:966
+#: lfs-en/chapter08/coreutils.xml:968
 #, xml-text
 msgid "Prints or checks 512-bit Secure Hash Algorithm checksums"
 msgstr ""
@@ -1965,20 +1971,20 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:968
+#: lfs-en/chapter08/coreutils.xml:970
 #, xml-text
 msgid "sha512sum"
 msgstr "sha512sum"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:974
+#: lfs-en/chapter08/coreutils.xml:976
 #, xml-text
 msgid "<command>shred</command>"
 msgstr "<command>shred</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:976
+#: lfs-en/chapter08/coreutils.xml:978
 #, xml-text
 msgid ""
 "Overwrites the given files repeatedly with complex patterns, making it "
@@ -1989,120 +1995,120 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:979
+#: lfs-en/chapter08/coreutils.xml:981
 #, xml-text
 msgid "shred"
 msgstr "shred"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:985
+#: lfs-en/chapter08/coreutils.xml:987
 #, xml-text
 msgid "<command>shuf</command>"
 msgstr "<command>shuf</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:987
+#: lfs-en/chapter08/coreutils.xml:989
 #, xml-text
 msgid "Shuffles lines of text"
 msgstr "Embaralha linhas do texto"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:989
+#: lfs-en/chapter08/coreutils.xml:991
 #, xml-text
 msgid "shuf"
 msgstr "shuf"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:995
+#: lfs-en/chapter08/coreutils.xml:997
 #, xml-text
 msgid "<command>sleep</command>"
 msgstr "<command>sleep</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:997
+#: lfs-en/chapter08/coreutils.xml:999
 #, xml-text
 msgid "Pauses for the given amount of time"
 msgstr "Pausa pelo período de tempo dado"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:999
+#: lfs-en/chapter08/coreutils.xml:1001
 #, xml-text
 msgid "sleep"
 msgstr "sleep"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:1005
+#: lfs-en/chapter08/coreutils.xml:1007
 #, xml-text
 msgid "<command>sort</command>"
 msgstr "<command>sort</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:1007
+#: lfs-en/chapter08/coreutils.xml:1009
 #, xml-text
 msgid "Sorts the lines from the given files"
 msgstr "Ordena as linhas a partir dos arquivos dados"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:1009
+#: lfs-en/chapter08/coreutils.xml:1011
 #, xml-text
 msgid "sort"
 msgstr "sort"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:1015
+#: lfs-en/chapter08/coreutils.xml:1017
 #, xml-text
 msgid "<command>split</command>"
 msgstr "<command>split</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:1017
+#: lfs-en/chapter08/coreutils.xml:1019
 #, xml-text
 msgid "Splits the given file into pieces, by size or by number of lines"
 msgstr "Divide o arquivo dado em pedaços, por tamanho ou por número de linhas"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:1020
+#: lfs-en/chapter08/coreutils.xml:1022
 #, xml-text
 msgid "split"
 msgstr "split"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:1026
+#: lfs-en/chapter08/coreutils.xml:1028
 #, xml-text
 msgid "<command>stat</command>"
 msgstr "<command>stat</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:1028
+#: lfs-en/chapter08/coreutils.xml:1030
 #, xml-text
 msgid "Displays file or filesystem status"
 msgstr "Exibe a situação de arquivo ou sistema de arquivos"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:1030
+#: lfs-en/chapter08/coreutils.xml:1032
 #, xml-text
 msgid "stat"
 msgstr "stat"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:1036
+#: lfs-en/chapter08/coreutils.xml:1038
 #, xml-text
 msgid "<command>stdbuf</command>"
 msgstr "<command>stdbuf</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:1038
+#: lfs-en/chapter08/coreutils.xml:1040
 #, xml-text
 msgid ""
 "Runs commands with altered buffering operations for its standard streams"
@@ -2111,40 +2117,40 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:1041
+#: lfs-en/chapter08/coreutils.xml:1043
 #, xml-text
 msgid "stdbuf"
 msgstr "stdbuf"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:1047
+#: lfs-en/chapter08/coreutils.xml:1049
 #, xml-text
 msgid "<command>stty</command>"
 msgstr "<command>stty</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:1049
+#: lfs-en/chapter08/coreutils.xml:1051
 #, xml-text
 msgid "Sets or reports terminal line settings"
 msgstr "Configura ou informa configurações de linha de terminal"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:1051
+#: lfs-en/chapter08/coreutils.xml:1053
 #, xml-text
 msgid "stty"
 msgstr "stty"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:1057
+#: lfs-en/chapter08/coreutils.xml:1059
 #, xml-text
 msgid "<command>sum</command>"
 msgstr "<command>sum</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:1059
+#: lfs-en/chapter08/coreutils.xml:1061
 #, xml-text
 msgid "Prints checksum and block counts for each given file"
 msgstr ""
@@ -2152,20 +2158,20 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:1061
+#: lfs-en/chapter08/coreutils.xml:1063
 #, xml-text
 msgid "sum"
 msgstr "sum"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:1067
+#: lfs-en/chapter08/coreutils.xml:1069
 #, xml-text
 msgid "<command>sync</command>"
 msgstr "<command>sync</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:1069
+#: lfs-en/chapter08/coreutils.xml:1071
 #, xml-text
 msgid ""
 "Flushes file system buffers; it forces changed blocks to disk and updates "
@@ -2176,40 +2182,40 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:1072
+#: lfs-en/chapter08/coreutils.xml:1074
 #, xml-text
 msgid "sync"
 msgstr "sync"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:1078
+#: lfs-en/chapter08/coreutils.xml:1080
 #, xml-text
 msgid "<command>tac</command>"
 msgstr "<command>tac</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:1080
+#: lfs-en/chapter08/coreutils.xml:1082
 #, xml-text
 msgid "Concatenates the given files in reverse"
 msgstr "Concatena os arquivos dados em ordem reversa"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:1082
+#: lfs-en/chapter08/coreutils.xml:1084
 #, xml-text
 msgid "tac"
 msgstr "tac"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:1088
+#: lfs-en/chapter08/coreutils.xml:1090
 #, xml-text
 msgid "<command>tail</command>"
 msgstr "<command>tail</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:1090
+#: lfs-en/chapter08/coreutils.xml:1092
 #, xml-text
 msgid ""
 "Prints the last ten lines (or the given number of lines) of each given file"
@@ -2219,20 +2225,20 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:1093
+#: lfs-en/chapter08/coreutils.xml:1095
 #, xml-text
 msgid "tail"
 msgstr "tail"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:1099
+#: lfs-en/chapter08/coreutils.xml:1101
 #, xml-text
 msgid "<command>tee</command>"
 msgstr "<command>tee</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:1101
+#: lfs-en/chapter08/coreutils.xml:1103
 #, xml-text
 msgid ""
 "Reads from standard input while writing both to standard output and to the "
@@ -2243,60 +2249,60 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:1104
+#: lfs-en/chapter08/coreutils.xml:1106
 #, xml-text
 msgid "tee"
 msgstr "tee"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:1110
+#: lfs-en/chapter08/coreutils.xml:1112
 #, xml-text
 msgid "<command>test</command>"
 msgstr "<command>test</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:1112
+#: lfs-en/chapter08/coreutils.xml:1114
 #, xml-text
 msgid "Compares values and checks file types"
 msgstr "Compara valores e verifica tipos de arquivos"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:1114
+#: lfs-en/chapter08/coreutils.xml:1116
 #, xml-text
 msgid "test"
 msgstr "test"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:1120
+#: lfs-en/chapter08/coreutils.xml:1122
 #, xml-text
 msgid "<command>timeout</command>"
 msgstr "<command>timeout</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:1122
+#: lfs-en/chapter08/coreutils.xml:1124
 #, xml-text
 msgid "Runs a command with a time limit"
 msgstr "Executa um comando com um limite de tempo"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:1124
+#: lfs-en/chapter08/coreutils.xml:1126
 #, xml-text
 msgid "timeout"
 msgstr "timeout"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:1130
+#: lfs-en/chapter08/coreutils.xml:1132
 #, xml-text
 msgid "<command>touch</command>"
 msgstr "<command>touch</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:1132
+#: lfs-en/chapter08/coreutils.xml:1134
 #, xml-text
 msgid ""
 "Changes file timestamps, setting the access and modification times of the "
@@ -2309,20 +2315,20 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:1136
+#: lfs-en/chapter08/coreutils.xml:1138
 #, xml-text
 msgid "touch"
 msgstr "touch"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:1142
+#: lfs-en/chapter08/coreutils.xml:1144
 #, xml-text
 msgid "<command>tr</command>"
 msgstr "<command>tr</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:1144
+#: lfs-en/chapter08/coreutils.xml:1146
 #, xml-text
 msgid ""
 "Translates, squeezes, and deletes the given characters from standard input"
@@ -2332,20 +2338,20 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:1147
+#: lfs-en/chapter08/coreutils.xml:1149
 #, xml-text
 msgid "tr"
 msgstr "tr"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:1153
+#: lfs-en/chapter08/coreutils.xml:1155
 #, xml-text
 msgid "<command>true</command>"
 msgstr "<command>true</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:1155
+#: lfs-en/chapter08/coreutils.xml:1157
 #, xml-text
 msgid ""
 "Does nothing, successfully; it always exits with a status code indicating "
@@ -2356,40 +2362,40 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:1158
+#: lfs-en/chapter08/coreutils.xml:1160
 #, xml-text
 msgid "true"
 msgstr "true"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:1164
+#: lfs-en/chapter08/coreutils.xml:1166
 #, xml-text
 msgid "<command>truncate</command>"
 msgstr "<command>truncate</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:1166
+#: lfs-en/chapter08/coreutils.xml:1168
 #, xml-text
 msgid "Shrinks or expands a file to the specified size"
 msgstr "Reduz ou expande um arquivo para o tamanho especificado"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:1168
+#: lfs-en/chapter08/coreutils.xml:1170
 #, xml-text
 msgid "truncate"
 msgstr "truncate"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:1174
+#: lfs-en/chapter08/coreutils.xml:1176
 #, xml-text
 msgid "<command>tsort</command>"
 msgstr "<command>tsort</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:1176
+#: lfs-en/chapter08/coreutils.xml:1178
 #, xml-text
 msgid ""
 "Performs a topological sort; it writes a completely ordered list according "
@@ -2400,20 +2406,20 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:1179
+#: lfs-en/chapter08/coreutils.xml:1181
 #, xml-text
 msgid "tsort"
 msgstr "tsort"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:1185
+#: lfs-en/chapter08/coreutils.xml:1187
 #, xml-text
 msgid "<command>tty</command>"
 msgstr "<command>tty</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:1187
+#: lfs-en/chapter08/coreutils.xml:1189
 #, xml-text
 msgid "Reports the file name of the terminal connected to standard input"
 msgstr ""
@@ -2421,140 +2427,140 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:1190
+#: lfs-en/chapter08/coreutils.xml:1192
 #, xml-text
 msgid "tty"
 msgstr "tty"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:1196
+#: lfs-en/chapter08/coreutils.xml:1198
 #, xml-text
 msgid "<command>uname</command>"
 msgstr "<command>uname</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:1198
+#: lfs-en/chapter08/coreutils.xml:1200
 #, xml-text
 msgid "Reports system information"
 msgstr "Informa informação de sistema"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:1200
+#: lfs-en/chapter08/coreutils.xml:1202
 #, xml-text
 msgid "uname"
 msgstr "uname"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:1206
+#: lfs-en/chapter08/coreutils.xml:1208
 #, xml-text
 msgid "<command>unexpand</command>"
 msgstr "<command>unexpand</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:1208
+#: lfs-en/chapter08/coreutils.xml:1210
 #, xml-text
 msgid "Converts spaces to tabs"
 msgstr "Converte espaços para tabulação"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:1210
+#: lfs-en/chapter08/coreutils.xml:1212
 #, xml-text
 msgid "unexpand"
 msgstr "unexpand"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:1216
+#: lfs-en/chapter08/coreutils.xml:1218
 #, xml-text
 msgid "<command>uniq</command>"
 msgstr "<command>uniq</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:1218
+#: lfs-en/chapter08/coreutils.xml:1220
 #, xml-text
 msgid "Discards all but one of successive identical lines"
 msgstr "Descarta todas, exceto uma das sucessivas linhas idênticas"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:1220
+#: lfs-en/chapter08/coreutils.xml:1222
 #, xml-text
 msgid "uniq"
 msgstr "uniq"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:1226
+#: lfs-en/chapter08/coreutils.xml:1228
 #, xml-text
 msgid "<command>unlink</command>"
 msgstr "<command>unlink</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:1228
+#: lfs-en/chapter08/coreutils.xml:1230
 #, xml-text
 msgid "Removes the given file"
 msgstr "Remove o arquivo dado"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:1230
+#: lfs-en/chapter08/coreutils.xml:1232
 #, xml-text
 msgid "unlink"
 msgstr "unlink"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:1236
+#: lfs-en/chapter08/coreutils.xml:1238
 #, xml-text
 msgid "<command>users</command>"
 msgstr "<command>users</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:1238
+#: lfs-en/chapter08/coreutils.xml:1240
 #, xml-text
 msgid "Reports the names of the users currently logged on"
 msgstr "Informa os nomes dos(as) usantes atualmente logados(as)"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:1240
+#: lfs-en/chapter08/coreutils.xml:1242
 #, xml-text
 msgid "users"
 msgstr "users"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:1246
+#: lfs-en/chapter08/coreutils.xml:1248
 #, xml-text
 msgid "<command>vdir</command>"
 msgstr "<command>vdir</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:1248
+#: lfs-en/chapter08/coreutils.xml:1250
 #, xml-text
 msgid "Is the same as <command>ls -l</command>"
 msgstr "É o mesmo que <command>ls -l</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:1250
+#: lfs-en/chapter08/coreutils.xml:1252
 #, xml-text
 msgid "vdir"
 msgstr "vdir"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:1256
+#: lfs-en/chapter08/coreutils.xml:1258
 #, xml-text
 msgid "<command>wc</command>"
 msgstr "<command>wc</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:1258
+#: lfs-en/chapter08/coreutils.xml:1260
 #, xml-text
 msgid ""
 "Reports the number of lines, words, and bytes for each given file, as well "
@@ -2565,60 +2571,60 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:1261
+#: lfs-en/chapter08/coreutils.xml:1263
 #, xml-text
 msgid "wc"
 msgstr "wc"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:1267
+#: lfs-en/chapter08/coreutils.xml:1269
 #, xml-text
 msgid "<command>who</command>"
 msgstr "<command>who</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:1269
+#: lfs-en/chapter08/coreutils.xml:1271
 #, xml-text
 msgid "Reports who is logged on"
 msgstr "Informa quem está logado(a)"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:1271
+#: lfs-en/chapter08/coreutils.xml:1273
 #, xml-text
 msgid "who"
 msgstr "who"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:1277
+#: lfs-en/chapter08/coreutils.xml:1279
 #, xml-text
 msgid "<command>whoami</command>"
 msgstr "<command>whoami</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:1279
+#: lfs-en/chapter08/coreutils.xml:1281
 #, xml-text
 msgid "Reports the user name associated with the current effective user ID"
 msgstr "Informa o nome de usante associado com o ID efetivo atual de usante"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:1282
+#: lfs-en/chapter08/coreutils.xml:1284
 #, xml-text
 msgid "whoami"
 msgstr "whoami"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:1288
+#: lfs-en/chapter08/coreutils.xml:1290
 #, xml-text
 msgid "<command>yes</command>"
 msgstr "<command>yes</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:1290
+#: lfs-en/chapter08/coreutils.xml:1292
 #, xml-text
 msgid ""
 "Repeatedly outputs <literal>y</literal> or a given string, until killed"
@@ -2628,27 +2634,27 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:1293
+#: lfs-en/chapter08/coreutils.xml:1295
 #, xml-text
 msgid "yes"
 msgstr "yes"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/coreutils.xml:1299
+#: lfs-en/chapter08/coreutils.xml:1301
 #, xml-text
 msgid "<filename class=\"libraryfile\">libstdbuf</filename>"
 msgstr "<filename class=\"libraryfile\">libstdbuf</filename>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/coreutils.xml:1301
+#: lfs-en/chapter08/coreutils.xml:1303
 #, xml-text
 msgid "Library used by <command>stdbuf</command>"
 msgstr "Biblioteca usada por <command>stdbuf</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/coreutils.xml:1303
+#: lfs-en/chapter08/coreutils.xml:1305
 #, xml-text
 msgid "libstdbuf"
 msgstr "libstdbuf"

@@ -6,16 +6,16 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-09-13 12:04-0300\n"
-"PO-Revision-Date: 2026-08-08 11:03+0000\n"
-"Last-Translator: Jamenson Ferreira Espindula de Almeida Melo <jafesp@gmail.com>\n"
+"POT-Creation-Date: 2026-11-08 00:31-0300\n"
+"PO-Revision-Date: 2026-10-03 14:00+0000\n"
+"Last-Translator: Jamenson Espindula <jafesp@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/projects/linux-from-scratch/chapter01_whatsnew/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.15.2\n"
+"X-Generator: Weblate 2026.9\n"
 
 #. type: Content of: <sect1><title>
 #: lfs-en/chapter01/whatsnew.xml:12
@@ -38,17 +38,237 @@ msgstr ""
 msgid "Upgraded to:"
 msgstr "Atualizado para:"
 
+#. type: Content of: <sect1><itemizedlist><listitem><para>
+#: lfs-en/chapter01/whatsnew.xml:39
+#, xml-text
+msgid "Automake-&automake-version;"
+msgstr "Automake-&automake-version;"
+
+#. type: Content of: <sect1><itemizedlist><listitem><para>
+#: lfs-en/chapter01/whatsnew.xml:57
+#, xml-text
+msgid "Coreutils-&coreutils-version;"
+msgstr "Coreutils-&coreutils-version;"
+
+#. type: Content of: <sect1><itemizedlist><listitem><para>
+#: lfs-en/chapter01/whatsnew.xml:72
+#, xml-text
+msgid "Expat-&expat-version;"
+msgstr "Expat-&expat-version;"
+
+#. type: Content of: <sect1><itemizedlist><listitem><para>
+#: lfs-en/chapter01/whatsnew.xml:87
+#, xml-text
+msgid "Flit-Core-&flit-core-version;"
+msgstr "Flit-Core-&flit-core-version;"
+
+#. type: Content of: <sect1><itemizedlist><listitem><para>
+#: lfs-en/chapter01/whatsnew.xml:114
+#, xml-text
+msgid "Groff-&groff-version;"
+msgstr "Groff-&groff-version;"
+
+#. type: Content of: <sect1><itemizedlist><listitem><para>
+#: lfs-en/chapter01/whatsnew.xml:117
+#, xml-text
+msgid "GRUB-&grub-version;"
+msgstr "GRUB-&grub-version;"
+
+#. type: Content of: <sect1><itemizedlist><listitem><para>
+#: lfs-en/chapter01/whatsnew.xml:120
+#, xml-text
+msgid "Gzip-&gzip-version;"
+msgstr "Gzip-&gzip-version;"
+
+#. type: Content of: <sect1><itemizedlist><listitem><para>
+#: lfs-en/chapter01/whatsnew.xml:123
+#, xml-text
+msgid "Iana-Etc-&iana-etc-version;"
+msgstr "Iana-Etc-&iana-etc-version;"
+
+#. type: Content of: <sect1><itemizedlist><listitem><para>
+#: lfs-en/chapter01/whatsnew.xml:132
+#, xml-text
+msgid "IPRoute2-&iproute2-version;"
+msgstr "IPRoute2-&iproute2-version;"
+
+#. type: Content of: <sect1><itemizedlist><listitem><para>
+#: lfs-en/chapter01/whatsnew.xml:144
+#, xml-text
+msgid "Less-&less-version;"
+msgstr "Less-&less-version;"
+
+#. type: Content of: <sect1><itemizedlist><listitem><para>
+#: lfs-en/chapter01/whatsnew.xml:153
+#, xml-text
+msgid "Libelf from Elfutils-&elfutils-version;"
+msgstr "Libelf originário do Elfutils-&elfutils-version;"
+
+#. type: Content of: <sect1><itemizedlist><listitem><para>
+#: lfs-en/chapter01/whatsnew.xml:168
+#, xml-text
+msgid "Linux-&linux-version;"
+msgstr "Linux-&linux-version;"
+
+#. type: Content of: <sect1><itemizedlist><listitem><para>
+#: lfs-en/chapter01/whatsnew.xml:183
+#, xml-text
+msgid "Man-pages-&man-pages-version;"
+msgstr "Man-pages-&man-pages-version;"
+
+#. type: Content of: <sect1><itemizedlist><listitem><para>
+#: lfs-en/chapter01/whatsnew.xml:186
+#, xml-text
+msgid "MarkupSafe-&markupsafe-version;"
+msgstr "MarkupSafe-&markupsafe-version;"
+
+#. type: Content of: <sect1><itemizedlist><listitem><para>
+#: lfs-en/chapter01/whatsnew.xml:189
+#, xml-text
+msgid "Meson-&meson-version;"
+msgstr "Meson-&meson-version;"
+
+#. type: Content of: <sect1><itemizedlist><listitem><para>
+#: lfs-en/chapter01/whatsnew.xml:207
+#, xml-text
+msgid "OpenSSL-&openssl-version;"
+msgstr "OpenSSL-&openssl-version;"
+
+#. type: Content of: <sect1><itemizedlist><listitem><para>
+#: lfs-en/chapter01/whatsnew.xml:213
+#, xml-text
+msgid "Patch-&patch-version;"
+msgstr "Patch-&patch-version;"
+
+#. type: Content of: <sect1><itemizedlist><listitem><para>
+#: lfs-en/chapter01/whatsnew.xml:216
+#, xml-text
+msgid "Pcre2-&pcre2-version;"
+msgstr "Pcre2-&pcre2-version;"
+
+#. type: Content of: <sect1><itemizedlist><listitem><para>
+#: lfs-en/chapter01/whatsnew.xml:222
+#, xml-text
+msgid "Pkgconf-&pkgconf-version;"
+msgstr "Pkgconf-&pkgconf-version;"
+
+#. type: Content of: <sect1><itemizedlist><listitem><para>
+#: lfs-en/chapter01/whatsnew.xml:231
+#, xml-text
+msgid "Python-&python-version;"
+msgstr "Python-&python-version;"
+
+#. type: Content of: <sect1><itemizedlist><listitem><para>
+#: lfs-en/chapter01/whatsnew.xml:240
+#, xml-text
+msgid "Setuptools-&setuptools-version;"
+msgstr "Setuptools-&setuptools-version;"
+
+#. type: Content of: <sect1><itemizedlist><listitem><para>
+#: lfs-en/chapter01/whatsnew.xml:243
+#, xml-text
+msgid "Shadow-&shadow-version;"
+msgstr "Shadow-&shadow-version;"
+
+#. type: Content of: <sect1><itemizedlist><listitem><para>
+#: lfs-en/chapter01/whatsnew.xml:246
+#, xml-text
+msgid "Sqlite-&sqlite-version;"
+msgstr "Sqlite-&sqlite-version;"
+
+#. type: Content of: <sect1><itemizedlist><listitem><para>
+#: lfs-en/chapter01/whatsnew.xml:249
+#, xml-text
+msgid "Sysklogd-&sysklogd-version;"
+msgstr "Sysklogd-&sysklogd-version;"
+
+#. type: Content of: <sect1><itemizedlist><listitem><para>
+#: lfs-en/chapter01/whatsnew.xml:252
+#, xml-text
+msgid "Systemd-&systemd-version;"
+msgstr "Systemd-&systemd-version;"
+
+#. type: Content of: <sect1><itemizedlist><listitem><para>
+#: lfs-en/chapter01/whatsnew.xml:267
+#, xml-text
+msgid "Tzdata-&tzdata-version;"
+msgstr "Tzdata-&tzdata-version;"
+
+#. type: Content of: <sect1><itemizedlist><listitem><para>
+#: lfs-en/chapter01/whatsnew.xml:270
+#, xml-text
+msgid "Udev from Systemd-&systemd-version;"
+msgstr "Udev originário de Systemd-&systemd-version;"
+
+#. type: Content of: <sect1><itemizedlist><listitem><para>
+#: lfs-en/chapter01/whatsnew.xml:273
+#, xml-text
+msgid "Util-linux-&util-linux-version;"
+msgstr "Util-linux-&util-linux-version;"
+
+#. type: Content of: <sect1><itemizedlist><listitem><para>
+#: lfs-en/chapter01/whatsnew.xml:276
+#, xml-text
+msgid "Vim-&vim-version;"
+msgstr "Vim-&vim-version;"
+
+#. type: Content of: <sect1><itemizedlist><listitem><para>
+#: lfs-en/chapter01/whatsnew.xml:285
+#, xml-text
+msgid "Xz-&xz-version;"
+msgstr "Xz-&xz-version;"
+
 #. type: Content of: <sect1><itemizedlist><title>
 #: lfs-en/chapter01/whatsnew.xml:305
 #, xml-text
 msgid "Added:"
 msgstr "Adicionado:"
 
+#. type: Content of: <sect1><itemizedlist><listitem><para>
+#: lfs-en/chapter01/whatsnew.xml:307
+#, xml-text
+msgid "coreutils-9.12-i18n-1.patch"
+msgstr "coreutils-9.12-i18n-1.patch"
+
+#. type: Content of: <sect1><itemizedlist><listitem><para>
+#: lfs-en/chapter01/whatsnew.xml:308
+#, xml-text
+msgid "glibc-2.44-upstream_fixes-3.patch"
+msgstr "glibc-2.44-upstream_fixes-3.patch"
+
+#. type: Content of: <sect1><itemizedlist><listitem><para>
+#: lfs-en/chapter01/whatsnew.xml:309
+#, xml-text
+msgid "Python-3.14.8-openssl_4-1.patch"
+msgstr "Python-3.14.8-openssl_4-1.patch"
+
 #. type: Content of: <sect1><itemizedlist><title>
-#: lfs-en/chapter01/whatsnew.xml:310
+#: lfs-en/chapter01/whatsnew.xml:313
 #, xml-text
 msgid "Removed:"
 msgstr "Removido:"
+
+#. type: Content of: <sect1><itemizedlist><listitem><para>
+#: lfs-en/chapter01/whatsnew.xml:315
+#, xml-text
+msgid "coreutils-9.11-i18n-1.patch"
+msgstr "coreutils-9.11-i18n-1.patch"
+
+#. type: Content of: <sect1><itemizedlist><listitem><para>
+#: lfs-en/chapter01/whatsnew.xml:316
+#, xml-text
+msgid "glibc-2.44-upstream_fixes-1.patch"
+msgstr "glibc-2.44-upstream_fixes-1.patch"
+
+#. type: Content of: <sect1><itemizedlist><listitem><para>
+#: lfs-en/chapter01/whatsnew.xml:317
+#, xml-text
+msgid "Python-3.14.7-openssl_4-1.patch"
+msgstr "Python-3.14.7-openssl_4-1.patch"
+
+#, xml-text
+#~ msgid "Kmod-&kmod-version;"
+#~ msgstr "Kmod-&kmod-version;"
 
 #, xml-text
 #~ msgid "Acl-&acl-version;"
@@ -67,16 +287,8 @@ msgstr "Removido:"
 #~ msgstr "Binutils-&binutils-version;"
 
 #, xml-text
-#~ msgid "Coreutils-&coreutils-version;"
-#~ msgstr "Coreutils-&coreutils-version;"
-
-#, xml-text
 #~ msgid "E2fsprogs-&e2fsprogs-version;"
 #~ msgstr "E2fsprogs-&e2fsprogs-version;"
-
-#, xml-text
-#~ msgid "Expat-&expat-version;"
-#~ msgstr "Expat-&expat-version;"
 
 #, xml-text
 #~ msgid "File-&file-version;"
@@ -85,10 +297,6 @@ msgstr "Removido:"
 #, xml-text
 #~ msgid "Findutils-&findutils-version;"
 #~ msgstr "Findutils-&findutils-version;"
-
-#, xml-text
-#~ msgid "Flit-Core-&flit-core-version;"
-#~ msgstr "Flit-Core-&flit-core-version;"
 
 #, xml-text
 #~ msgid "Gawk-&gawk-version;"
@@ -103,36 +311,16 @@ msgstr "Removido:"
 #~ msgstr "Glibc-&glibc-version;"
 
 #, xml-text
-#~ msgid "Groff-&groff-version;"
-#~ msgstr "Groff-&groff-version;"
-
-#, xml-text
-#~ msgid "Iana-Etc-&iana-etc-version;"
-#~ msgstr "Iana-Etc-&iana-etc-version;"
-
-#, xml-text
 #~ msgid "Inetutils-&inetutils-version;"
 #~ msgstr "Inetutils-&inetutils-version;"
-
-#, xml-text
-#~ msgid "IPRoute2-&iproute2-version;"
-#~ msgstr "IPRoute2-&iproute2-version;"
 
 #, xml-text
 #~ msgid "Kbd-&kbd-version;"
 #~ msgstr "Kbd-&kbd-version;"
 
 #, xml-text
-#~ msgid "Less-&less-version;"
-#~ msgstr "Less-&less-version;"
-
-#, xml-text
 #~ msgid "Libcap-&libcap-version;"
 #~ msgstr "Libcap-&libcap-version;"
-
-#, xml-text
-#~ msgid "Libelf from Elfutils-&elfutils-version;"
-#~ msgstr "Libelf originário do Elfutils-&elfutils-version;"
 
 #, xml-text
 #~ msgid "Libffi-&libffi-version;"
@@ -143,24 +331,8 @@ msgstr "Removido:"
 #~ msgstr "Libtool-&libtool-version;"
 
 #, xml-text
-#~ msgid "Linux-&linux-version;"
-#~ msgstr "Linux-&linux-version;"
-
-#, xml-text
-#~ msgid "Man-pages-&man-pages-version;"
-#~ msgstr "Man-pages-&man-pages-version;"
-
-#, xml-text
-#~ msgid "Meson-&meson-version;"
-#~ msgstr "Meson-&meson-version;"
-
-#, xml-text
 #~ msgid "MPC-&mpc-version;"
 #~ msgstr "MPC-&mpc-version;"
-
-#, xml-text
-#~ msgid "OpenSSL-&openssl-version;"
-#~ msgstr "OpenSSL-&openssl-version;"
 
 #, xml-text
 #~ msgid "Packaging-&packaging-version;"
@@ -171,36 +343,12 @@ msgstr "Removido:"
 #~ msgstr "Perl-&perl-version;"
 
 #, xml-text
-#~ msgid "Pkgconf-&pkgconf-version;"
-#~ msgstr "Pkgconf-&pkgconf-version;"
-
-#, xml-text
 #~ msgid "Procps-ng-&procps-ng-version;"
 #~ msgstr "Procps-ng-&procps-ng-version;"
 
 #, xml-text
-#~ msgid "Python-&python-version;"
-#~ msgstr "Python-&python-version;"
-
-#, xml-text
 #~ msgid "Sed-&sed-version;"
 #~ msgstr "Sed-&sed-version;"
-
-#, xml-text
-#~ msgid "Setuptools-&setuptools-version;"
-#~ msgstr "Setuptools-&setuptools-version;"
-
-#, xml-text
-#~ msgid "Shadow-&shadow-version;"
-#~ msgstr "Shadow-&shadow-version;"
-
-#, xml-text
-#~ msgid "Sqlite-&sqlite-version;"
-#~ msgstr "Sqlite-&sqlite-version;"
-
-#, xml-text
-#~ msgid "Systemd-&systemd-version;"
-#~ msgstr "Systemd-&systemd-version;"
 
 #, xml-text
 #~ msgid "Tcl-&tcl-version;"
@@ -211,24 +359,8 @@ msgstr "Removido:"
 #~ msgstr "Texinfo-&texinfo-version;"
 
 #, xml-text
-#~ msgid "Tzdata-&tzdata-version;"
-#~ msgstr "Tzdata-&tzdata-version;"
-
-#, xml-text
-#~ msgid "Util-linux-&util-linux-version;"
-#~ msgstr "Util-linux-&util-linux-version;"
-
-#, xml-text
-#~ msgid "Vim-&vim-version;"
-#~ msgstr "Vim-&vim-version;"
-
-#, xml-text
 #~ msgid "Wheel-&wheel-version;"
 #~ msgstr "Wheel-&wheel-version;"
-
-#, xml-text
-#~ msgid "Xz-&xz-version;"
-#~ msgstr "Xz-&xz-version;"
 
 #, xml-text
 #~ msgid "mpdecimal-4.0.1"
@@ -255,10 +387,6 @@ msgstr "Removido:"
 #~ msgstr "glibc-2.43-linux7_fixes-1.patch"
 
 #, xml-text
-#~ msgid "Python-3.14.6-openssl_4-1.patch"
-#~ msgstr "Python-3.14.6-openssl_4-1.patch"
-
-#, xml-text
 #~ msgid "systemd-260.1-buildfix-1.patch"
 #~ msgstr "systemd-260.1-buildfix-1.patch"
 
@@ -271,20 +399,12 @@ msgstr "Removido:"
 #~ msgstr "Gettext-&gettext-version;"
 
 #, xml-text
-#~ msgid "GRUB-&grub-version;"
-#~ msgstr "GRUB-&grub-version;"
-
-#, xml-text
 #~ msgid "Libxcrypt-&libxcrypt-version;"
 #~ msgstr "Libxcrypt-&libxcrypt-version;"
 
 #, xml-text
 #~ msgid "M4-&m4-version;"
 #~ msgstr "M4-&m4-version;"
-
-#, xml-text
-#~ msgid "MarkupSafe-&markupsafe-version;"
-#~ msgstr "MarkupSafe-&markupsafe-version;"
 
 #, xml-text
 #~ msgid "Ncurses-&ncurses-version;"
@@ -295,16 +415,8 @@ msgstr "Removido:"
 #~ msgstr "Ninja-&ninja-version;"
 
 #, xml-text
-#~ msgid "Pcre2-&pcre2-version;"
-#~ msgstr "Pcre2-&pcre2-version;"
-
-#, xml-text
 #~ msgid "Zlib-&zlib-version;"
 #~ msgstr "Zlib-&zlib-version;"
-
-#, xml-text
-#~ msgid "Coreutils-9.10-i18n-1.patch"
-#~ msgstr "Coreutils-9.10-i18n-1.patch"
 
 #, xml-text
 #~ msgid "Coreutils-9.7-i18n-1.patch"
@@ -313,10 +425,6 @@ msgstr "Removido:"
 #, xml-text
 #~ msgid "Coreutils-9.7-upstream_fix-1.patch"
 #~ msgstr "Coreutils-9.7-upstream_fix-1.patch"
-
-#, xml-text
-#~ msgid "Glibc-2.42-upstream_fixes-1.patch"
-#~ msgstr "Glibc-2.42-upstream_fixes-1.patch"
 
 #, xml-text
 #~ msgid "Coreutils-9.8-i18n-2.patch"
@@ -329,10 +437,6 @@ msgstr "Removido:"
 #, xml-text
 #~ msgid "sqlite"
 #~ msgstr "sqlite"
-
-#, xml-text
-#~ msgid "Automake-&automake-version;"
-#~ msgstr "Automake-&automake-version;"
 
 #, xml-text
 #~ msgid "Bash-&bash-version;"
@@ -351,16 +455,8 @@ msgstr "Removido:"
 #~ msgstr "Grep-&grep-version;"
 
 #, xml-text
-#~ msgid "Gzip-&gzip-version;"
-#~ msgstr "Gzip-&gzip-version;"
-
-#, xml-text
 #~ msgid "Jinja2-&jinja2-version;"
 #~ msgstr "Jinja2-&jinja2-version;"
-
-#, xml-text
-#~ msgid "Kmod-&kmod-version;"
-#~ msgstr "Kmod-&kmod-version;"
 
 #, xml-text
 #~ msgid "LFS-Bootscripts-&lfs-bootscripts-version;"
@@ -371,16 +467,8 @@ msgstr "Removido:"
 #~ msgstr "Man-DB-&man-db-version;"
 
 #, xml-text
-#~ msgid "Patch-&patch-version;"
-#~ msgstr "Patch-&patch-version;"
-
-#, xml-text
 #~ msgid "Readline-&readline-version;"
 #~ msgstr "Readline-&readline-version;"
-
-#, xml-text
-#~ msgid "Sysklogd-&sysklogd-version;"
-#~ msgstr "Sysklogd-&sysklogd-version;"
 
 #, xml-text
 #~ msgid "Check-0.15.2"
@@ -405,10 +493,6 @@ msgstr "Removido:"
 #, xml-text
 #~ msgid "SysVinit-&sysvinit-version;"
 #~ msgstr "SysVinit-&sysvinit-version;"
-
-#, xml-text
-#~ msgid "Udev from Systemd-&systemd-version;"
-#~ msgstr "Udev originário de Systemd-&systemd-version;"
 
 #, xml-text
 #~ msgid "Zstd-&zstd-version;"

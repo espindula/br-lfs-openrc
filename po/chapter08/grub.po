@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-09-13 12:02-0300\n"
+"POT-Creation-Date: 2026-11-08 00:29-0300\n"
 "PO-Revision-Date: 2026-09-08 05:55+0000\n"
 "Last-Translator: Jamenson Espindula <jafesp@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/projects/linux-from-scratch/chapter08_grub/pt_BR/>\n"
@@ -137,22 +137,6 @@ msgstr "&grub-fin-du;"
 #, xml-text
 msgid "Installation of GRUB for BIOS"
 msgstr "Instalação do GRUB para BIOS"
-
-#. type: Content of: <sect1><sect2><para>
-#: lfs-en/chapter08/grub.xml:66
-#, xml-text
-msgid "First fix a bug introduced in grub-2.14:"
-msgstr "Primeiro corrija um defeito introduzido no grub-2.14:"
-
-#. type: Content of: <sect1><sect2><screen>
-#: lfs-en/chapter08/grub.xml:68
-#, no-wrap, xml-text
-msgid ""
-"<userinput remap=\"pre\">sed 's/--image-base/--nonexist-linker-option/' -i "
-"configure</userinput>"
-msgstr ""
-"<userinput remap=\"pre\">sed 's/--image-base/--nonexist-linker-option/' -i "
-"configure</userinput>"
 
 #. type: Content of: <sect1><sect2><para>
 #: lfs-en/chapter08/grub.xml:70
@@ -1031,6 +1015,18 @@ msgstr ""
 #, xml-text
 msgid "grub-syslinux2cfg"
 msgstr "grub-syslinux2cfg"
+
+#, xml-text
+#~ msgid "First fix a bug introduced in grub-2.14:"
+#~ msgstr "Primeiro corrija um defeito introduzido no grub-2.14:"
+
+#, no-wrap, xml-text
+#~ msgid ""
+#~ "<userinput remap=\"pre\">sed 's/--image-base/--nonexist-linker-option/' -i "
+#~ "configure</userinput>"
+#~ msgstr ""
+#~ "<userinput remap=\"pre\">sed 's/--image-base/--nonexist-linker-option/' -i "
+#~ "configure</userinput>"
 
 #, xml-text
 #~ msgid "Fix a bug introduced in grub-2.14:"

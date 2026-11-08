@@ -6,16 +6,16 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-09-13 12:04-0300\n"
-"PO-Revision-Date: 2026-07-16 04:18+0000\n"
-"Last-Translator: Jamenson Ferreira Espindula de Almeida Melo <jafesp@gmail.com>\n"
+"POT-Creation-Date: 2026-11-08 00:31-0300\n"
+"PO-Revision-Date: 2026-09-17 14:00+0000\n"
+"Last-Translator: Jamenson Espindula <jafesp@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/projects/linux-from-scratch/prologue_why/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.15.2\n"
+"X-Generator: Weblate 2026.9\n"
 
 #. type: Content of: <sect1><title>
 #: lfs-en/prologue/why.xml:11
@@ -125,13 +125,14 @@ msgstr "Bash"
 #: lfs-en/prologue/why.xml:60
 #, xml-text
 msgid ""
-"This package satisfies an LSB core requirement to provide a Bourne Shell "
-"interface to the system.  It was chosen over other shell packages because of"
+"This package provides a shell that can run in a mode strictly conforming to "
+"the POSIX specification.  It was chosen over other shell packages because of"
 " its common usage and extensive capabilities."
 msgstr ""
-"Esse pacote satisfaz uma exigência central do LSB para fornecer uma "
-"interface Bourne Shell para o sistema. Foi escolhido em vez de outros "
-"pacotes de shell por causa do uso comum e capacidades extensas dele."
+"Esse pacote fornece um shell que consegue executar em um modo estritamente "
+"conformante com a especificação POSIX. Ele foi escolhido em detrimento de "
+"outros pacotes de shell devido ao uso generalizado e recursos abrangentes "
+"dele."
 
 #. type: Content of: <sect1><itemizedlist><listitem><para>
 #: lfs-en/prologue/why.xml:67

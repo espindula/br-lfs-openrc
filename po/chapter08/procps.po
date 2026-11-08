@@ -6,16 +6,16 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-09-13 12:02-0300\n"
-"PO-Revision-Date: 2026-07-10 10:50+0000\n"
-"Last-Translator: Jamenson Ferreira Espindula de Almeida Melo <jafesp@gmail.com>\n"
+"POT-Creation-Date: 2026-11-08 00:28-0300\n"
+"PO-Revision-Date: 2026-09-21 20:47+0000\n"
+"Last-Translator: Jamenson Espindula <jafesp@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.linuxfromscratch.org/projects/linux-from-scratch/chapter08_procps/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.15.2\n"
+"X-Generator: Weblate 2026.9\n"
 
 #. type: Content of: <sect1><sect1info><address>
 #: lfs-en/chapter08/procps.xml:14
@@ -175,23 +175,19 @@ msgid "<userinput remap=\"make\">make</userinput>"
 msgstr "<userinput remap=\"make\">make</userinput>"
 
 #. type: Content of: <sect1><sect2><para>
-#: lfs-en/chapter08/procps.xml:86
+#: lfs-en/chapter08/procps.xml:83
 #, xml-text
 msgid "To run the test suite, run:"
 msgstr "Para executar a suíte de teste, execute:"
 
 #. type: Content of: <sect1><sect2><screen>
-#: lfs-en/chapter08/procps.xml:88
+#: lfs-en/chapter08/procps.xml:85
 #, no-wrap, xml-text
-msgid ""
-"<userinput remap=\"test\">chown -R tester .\n"
-"su tester -c \"PATH=$PATH make check\"</userinput>"
-msgstr ""
-"<userinput remap=\"test\">chown -R tester .\n"
-"su tester -c \"PATH=$PATH make check\"</userinput>"
+msgid "<userinput remap=\"test\">make check</userinput>"
+msgstr "<userinput remap=\"test\">make check</userinput>"
 
 #. type: Content of: <sect1><sect2><para>
-#: lfs-en/chapter08/procps.xml:91
+#: lfs-en/chapter08/procps.xml:87
 #, xml-text
 msgid ""
 "One test named <literal>ps with output flag "
@@ -204,43 +200,43 @@ msgstr ""
 " habilitado."
 
 #. type: Content of: <sect1><sect2><para>
-#: lfs-en/chapter08/procps.xml:96
+#: lfs-en/chapter08/procps.xml:92
 #, xml-text
 msgid "Install the package:"
 msgstr "Instale o pacote:"
 
 #. type: Content of: <sect1><sect2><screen>
-#: lfs-en/chapter08/procps.xml:98
+#: lfs-en/chapter08/procps.xml:94
 #, no-wrap, xml-text
 msgid "<userinput remap=\"install\">make install</userinput>"
 msgstr "<userinput remap=\"install\">make install</userinput>"
 
 #. type: Content of: <sect1><sect2><title>
-#: lfs-en/chapter08/procps.xml:103
+#: lfs-en/chapter08/procps.xml:99
 #, xml-text
 msgid "Contents of Procps-ng"
 msgstr "Conteúdo do Procps-ng"
 
 #. type: Content of: <sect1><sect2><segmentedlist><segtitle>
-#: lfs-en/chapter08/procps.xml:106
+#: lfs-en/chapter08/procps.xml:102
 #, xml-text
 msgid "Installed programs"
 msgstr "Programas instalados"
 
 #. type: Content of: <sect1><sect2><segmentedlist><segtitle>
-#: lfs-en/chapter08/procps.xml:107
+#: lfs-en/chapter08/procps.xml:103
 #, xml-text
 msgid "Installed library"
 msgstr "Biblioteca instalada"
 
 #. type: Content of: <sect1><sect2><segmentedlist><segtitle>
-#: lfs-en/chapter08/procps.xml:108
+#: lfs-en/chapter08/procps.xml:104
 #, xml-text
 msgid "Installed directories"
 msgstr "Diretórios instalados"
 
 #. type: Content of: <sect1><sect2><segmentedlist><seglistitem><seg>
-#: lfs-en/chapter08/procps.xml:111
+#: lfs-en/chapter08/procps.xml:107
 #, xml-text
 msgid ""
 "free, pgrep, pidof, pkill, pmap, ps, pwdx, slabtop, sysctl, tload, top, "
@@ -250,38 +246,38 @@ msgstr ""
 "uptime, vmstat, w e watch"
 
 #. type: Content of: <sect1><sect2><segmentedlist><seglistitem><seg>
-#: lfs-en/chapter08/procps.xml:113
+#: lfs-en/chapter08/procps.xml:109
 #, xml-text
 msgid "libproc-2.so"
 msgstr "libproc-2.so"
 
 #. type: Content of: <sect1><sect2><segmentedlist><seglistitem><seg>
-#: lfs-en/chapter08/procps.xml:114
+#: lfs-en/chapter08/procps.xml:110
 #, xml-text
 msgid "/usr/include/procps and /usr/share/doc/procps-ng-&procps-ng-version;"
 msgstr "/usr/include/procps e /usr/share/doc/procps-ng-&procps-ng-version;"
 
 #. type: Content of: <sect1><sect2><variablelist><bridgehead>
-#: lfs-en/chapter08/procps.xml:119
+#: lfs-en/chapter08/procps.xml:115
 #, xml-text
 msgid "Short Descriptions"
 msgstr "Descrições Curtas"
 
 #. type: Content of: <sect1><sect2><variablelist>
-#: lfs-en/chapter08/procps.xml:120
+#: lfs-en/chapter08/procps.xml:116
 #, xml-text
 msgid "<?dbfo list-presentation=\"list\"?> <?dbhtml list-presentation=\"table\"?>"
 msgstr "<?dbfo list-presentation=\"list\"?> <?dbhtml list-presentation=\"table\"?>"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/procps.xml:124
+#: lfs-en/chapter08/procps.xml:120
 #, xml-text
 msgid "<command>free</command>"
 msgstr "<command>free</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/procps.xml:126
+#: lfs-en/chapter08/procps.xml:122
 #, xml-text
 msgid ""
 "Reports the amount of free and used memory (both physical and swap memory) "
@@ -292,200 +288,200 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/procps.xml:129
+#: lfs-en/chapter08/procps.xml:125
 #, xml-text
 msgid "free"
 msgstr "free"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/procps.xml:135
+#: lfs-en/chapter08/procps.xml:131
 #, xml-text
 msgid "<command>pgrep</command>"
 msgstr "<command>pgrep</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/procps.xml:137
+#: lfs-en/chapter08/procps.xml:133
 #, xml-text
 msgid "Looks up processes based on their name and other attributes"
 msgstr "Procura por processos baseado nos nomes deles e outros atributos"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/procps.xml:139
+#: lfs-en/chapter08/procps.xml:135
 #, xml-text
 msgid "pgrep"
 msgstr "pgrep"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/procps.xml:145
+#: lfs-en/chapter08/procps.xml:141
 #, xml-text
 msgid "<command>pidof</command>"
 msgstr "<command>pidof</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/procps.xml:147
+#: lfs-en/chapter08/procps.xml:143
 #, xml-text
 msgid "Reports the PIDs of the given programs"
 msgstr "Informa os PIDs dos aplicativos dados"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/procps.xml:149
+#: lfs-en/chapter08/procps.xml:145
 #, xml-text
 msgid "pidof"
 msgstr "pidof"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/procps.xml:155
+#: lfs-en/chapter08/procps.xml:151
 #, xml-text
 msgid "<command>pkill</command>"
 msgstr "<command>pkill</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/procps.xml:157
+#: lfs-en/chapter08/procps.xml:153
 #, xml-text
 msgid "Signals processes based on their name and other attributes"
 msgstr "Sinaliza processos baseado nos nomes deles e outros atributos"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/procps.xml:159
+#: lfs-en/chapter08/procps.xml:155
 #, xml-text
 msgid "pkill"
 msgstr "pkill"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/procps.xml:165
+#: lfs-en/chapter08/procps.xml:161
 #, xml-text
 msgid "<command>pmap</command>"
 msgstr "<command>pmap</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/procps.xml:167
+#: lfs-en/chapter08/procps.xml:163
 #, xml-text
 msgid "Reports the memory map of the given process"
 msgstr "Informa o mapeamento de memória do processo dado"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/procps.xml:169
+#: lfs-en/chapter08/procps.xml:165
 #, xml-text
 msgid "pmap"
 msgstr "pmap"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/procps.xml:175
+#: lfs-en/chapter08/procps.xml:171
 #, xml-text
 msgid "<command>ps</command>"
 msgstr "<command>ps</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/procps.xml:177
+#: lfs-en/chapter08/procps.xml:173
 #, xml-text
 msgid "Lists the current running processes"
 msgstr "Lista os processos em execução atualmente"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/procps.xml:179
+#: lfs-en/chapter08/procps.xml:175
 #, xml-text
 msgid "ps"
 msgstr "ps"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/procps.xml:196
+#: lfs-en/chapter08/procps.xml:192
 #, xml-text
 msgid "<command>pwdx</command>"
 msgstr "<command>pwdx</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/procps.xml:198
+#: lfs-en/chapter08/procps.xml:194
 #, xml-text
 msgid "Reports the current working directory of a process"
 msgstr "Informa o diretório atual de trabalho de um processo"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/procps.xml:200
+#: lfs-en/chapter08/procps.xml:196
 #, xml-text
 msgid "pwdx"
 msgstr "pwdx"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/procps.xml:206
+#: lfs-en/chapter08/procps.xml:202
 #, xml-text
 msgid "<command>slabtop</command>"
 msgstr "<command>slabtop</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/procps.xml:208
+#: lfs-en/chapter08/procps.xml:204
 #, xml-text
 msgid "Displays detailed kernel slab cache information in real time"
 msgstr "Exibe informação detalhada do cache slab do núcleo em tempo real"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/procps.xml:210
+#: lfs-en/chapter08/procps.xml:206
 #, xml-text
 msgid "slabtop"
 msgstr "slabtop"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/procps.xml:216
+#: lfs-en/chapter08/procps.xml:212
 #, xml-text
 msgid "<command>sysctl</command>"
 msgstr "<command>sysctl</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/procps.xml:218
+#: lfs-en/chapter08/procps.xml:214
 #, xml-text
 msgid "Modifies kernel parameters at run time"
 msgstr "Modifica parâmetros do núcleo em tempo de execução"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/procps.xml:220
+#: lfs-en/chapter08/procps.xml:216
 #, xml-text
 msgid "sysctl"
 msgstr "sysctl"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/procps.xml:226
+#: lfs-en/chapter08/procps.xml:222
 #, xml-text
 msgid "<command>tload</command>"
 msgstr "<command>tload</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/procps.xml:228
+#: lfs-en/chapter08/procps.xml:224
 #, xml-text
 msgid "Prints a graph of the current system load average"
 msgstr "Imprime um gráfico da média atual da carga do sistema"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/procps.xml:230
+#: lfs-en/chapter08/procps.xml:226
 #, xml-text
 msgid "tload"
 msgstr "tload"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/procps.xml:236
+#: lfs-en/chapter08/procps.xml:232
 #, xml-text
 msgid "<command>top</command>"
 msgstr "<command>top</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/procps.xml:238
+#: lfs-en/chapter08/procps.xml:234
 #, xml-text
 msgid ""
 "Displays a list of the most CPU intensive processes; it provides an ongoing "
@@ -496,20 +492,20 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/procps.xml:241
+#: lfs-en/chapter08/procps.xml:237
 #, xml-text
 msgid "top"
 msgstr "top"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/procps.xml:247
+#: lfs-en/chapter08/procps.xml:243
 #, xml-text
 msgid "<command>uptime</command>"
 msgstr "<command>uptime</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/procps.xml:249
+#: lfs-en/chapter08/procps.xml:245
 #, xml-text
 msgid ""
 "Reports how long the system has been running, how many users are logged on, "
@@ -520,20 +516,20 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/procps.xml:252
+#: lfs-en/chapter08/procps.xml:248
 #, xml-text
 msgid "uptime"
 msgstr "uptime"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/procps.xml:258
+#: lfs-en/chapter08/procps.xml:254
 #, xml-text
 msgid "<command>vmstat</command>"
 msgstr "<command>vmstat</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/procps.xml:260
+#: lfs-en/chapter08/procps.xml:256
 #, xml-text
 msgid ""
 "Reports virtual memory statistics, giving information about processes, "
@@ -545,20 +541,20 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/procps.xml:264
+#: lfs-en/chapter08/procps.xml:260
 #, xml-text
 msgid "vmstat"
 msgstr "vmstat"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/procps.xml:270
+#: lfs-en/chapter08/procps.xml:266
 #, xml-text
 msgid "<command>w</command>"
 msgstr "<command>w</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/procps.xml:272
+#: lfs-en/chapter08/procps.xml:268
 #, xml-text
 msgid "Shows which users are currently logged on, where, and since when"
 msgstr ""
@@ -566,20 +562,20 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/procps.xml:275
+#: lfs-en/chapter08/procps.xml:271
 #, xml-text
 msgid "w"
 msgstr "w"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/procps.xml:281
+#: lfs-en/chapter08/procps.xml:277
 #, xml-text
 msgid "<command>watch</command>"
 msgstr "<command>watch</command>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/procps.xml:283
+#: lfs-en/chapter08/procps.xml:279
 #, xml-text
 msgid ""
 "Runs a given command repeatedly, displaying the first screen-full of its "
@@ -591,30 +587,38 @@ msgstr ""
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/procps.xml:287
+#: lfs-en/chapter08/procps.xml:283
 #, xml-text
 msgid "watch"
 msgstr "watch"
 
 #. type: Content of: <sect1><sect2><variablelist><varlistentry><term>
-#: lfs-en/chapter08/procps.xml:293
+#: lfs-en/chapter08/procps.xml:289
 #, xml-text
 msgid "<filename class=\"libraryfile\">libproc-2</filename>"
 msgstr "<filename class=\"libraryfile\">libproc-2</filename>"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><para>
-#: lfs-en/chapter08/procps.xml:295
+#: lfs-en/chapter08/procps.xml:291
 #, xml-text
 msgid "Contains the functions used by most programs in this package"
 msgstr "Contém as funções usadas pela maioria dos aplicativos nesse pacote"
 
 #. type: Content of:
 #. <sect1><sect2><variablelist><varlistentry><listitem><indexterm><primary>
-#: lfs-en/chapter08/procps.xml:298
+#: lfs-en/chapter08/procps.xml:294
 #, xml-text
 msgid "libproc-2"
 msgstr "libproc-2"
+
+#, no-wrap, xml-text
+#~ msgid ""
+#~ "<userinput remap=\"test\">chown -R tester .\n"
+#~ "su tester -c \"PATH=$PATH make check\"</userinput>"
+#~ msgstr ""
+#~ "<userinput remap=\"test\">chown -R tester .\n"
+#~ "su tester -c \"PATH=$PATH make check\"</userinput>"
 
 #, no-wrap, xml-text
 #~ msgid ""
